@@ -45,7 +45,7 @@ guifanchaxun/
 
 **数据布局**(`library_data/<book_id>/`):`meta.json`(元数据+probe 证据+chapter_list)、`toc.md`(章节索引表,查询导航核心)、`clauses.idx`(条文号→页码 TSV,含 expl/ocr/低置信标记)、`chapters/chNN-*.md`(分章全文,头部注释含页码/条文号范围,正文每页前有 `【第 N 页】`)、`ocr/NNN.txt`(仅 OCR 书,唯一文本来源)。
 
-**book_id 规则**:`序号-规范名称-规范编号`(如 `01-公路桥涵养护规范-JTG 5120-2021`),序号取自源 PDF 文件名数字前缀。**人工元数据优先**:`_index_one` 里若 bookshelf 已有同源文件条目,则 std_no/title/version/id 以书架为准(文件名没写编号的书,人工在 bookshelf.json 补 std_no 即可,如 06-公路隧道养护技术规范-JTG 5130—2026)。
+**book_id 规则**:`= 源文件名去 .pdf`(如 `1.公路桥涵养护规范(JTG 5120-2021)`),与 guifansrc 里的规范原名一一对应。**guifansrc 支持多层文件夹**:`file` 字段存相对 library_dir 的路径(`rglob` 递归收集,`status` 一致性检查用相对路径键避免同名混淆);同名不同路径时 book_id 加父目录前缀。**人工元数据优先**:`_index_one` 里若 bookshelf 已有同源文件条目,则 std_no/title/version/id 以书架为准(文件名没写编号的书,人工在 bookshelf.json 补 std_no 即可,如 6.公路隧道养护技术规范 的 std_no=JTG 5130—2026)。
 
 ## 关键设计决策(改代码勿重蹈)
 

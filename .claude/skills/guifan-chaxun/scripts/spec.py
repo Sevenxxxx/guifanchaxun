@@ -160,11 +160,21 @@ def parse_filename(name):
 
 
 def make_book_id(seq, title, std_no):
-    """book_id = 序号-名称-编号(如 01-公路桥涵养护规范-JTG 5120-2021)。"""
+    """(兼容保留) 旧规则: 序号-名称-编号。新书 book_id 直接用源文件名(去 .pdf)。"""
     parts = [f"{seq:02d}" if seq else '', title.strip()]
     if std_no:
         parts.append(std_no)
     return '-'.join(p for p in parts if p)
+
+
+def _rel_pdf(pdf_path, cfg):
+    """PDF 相对 library_dir 的路径(正斜杠),支持多层文件夹。"""
+    lib = Path(cfg["library_dir"]).resolve()
+    p = pdf_path.resolve()
+    try:
+        return p.relative_to(lib).as_posix()
+    except ValueError:
+        return pdf_path.name
 
 
 # ---------- 质量检测 ----------
@@ -821,13 +831,22 @@ def _index_one(pdf_path, cfg, chars):
         shelf = load_shelf(data_dir)
         title, std_no, version, seq = parse_filename(pdf_path.name)
         mtime = datetime.fromtimestamp(pdf_path.stat().st_mtime).strftime("%Y-%m-%d %H:%M:%S")
-        # 人工元数据优先: 书架里同源文件的条目可修正编号/书名(id 也会被尊重)
-        old = next((b for b in shelf["books"] if b["file"] == pdf_path.name), None)
+        # file 记录相对 library_dir 的路径(guifansrc 可多层文件夹),book_id = 源文件名去 .pdf
+        rel = _rel_pdf(pdf_path, cfg)
+        base_id = Path(rel).stem.rstrip(' .')  # 去尾空格/点(Windows 文件名尾空格不合法)
+        old = next((b for b in shelf["books"] if b["file"] == rel), None)
         if old:
             std_no = old.get("std_no") or std_no
             title = old.get("title") or title
             version = old.get("version") or version
-        book_id = old["id"] if old else make_book_id(seq, title, std_no)
+        # book_id: 源文件名;与旧书架 id 兼容(迁移后 id=文件名);同 stem 不同路径时加父目录前缀
+        book_id = old["id"] if old else base_id
+        if not old:
+            dup = next((b for b in shelf["books"]
+                        if b["file"] != rel and Path(b["file"]).stem == base_id), None)
+            if dup:
+                book_id = (Path(rel).parent.name + '-' + base_id
+                           if Path(rel).parent.name != '.' else base_id)
         if old and not cfg.get("force") and old.get("status") == "indexed" and old.get("pdf_mtime") == mtime:
             return pdf_path, "skip", f"已是最新索引(book_id={book_id})", None
         probe = probe_pdf(pdf_path, chars)
@@ -899,10 +918,10 @@ def _index_one(pdf_path, cfg, chars):
                     prev_page = max(prev_page, merged_ch[str(n)][1])
                     continue
                 for p in range(prev_page, min(prev_page + 16, pages) + 1):
-                    title = _heading_on_page(texts, p, str(n))
-                    if title and len(re.sub(r'[\s　\xa0]+', '', title)) <= 15 \
-                            and '。' not in title:
-                        merged_ch[str(n)] = (title, p)
+                    ch_t = _heading_on_page(texts, p, str(n))
+                    if ch_t and len(re.sub(r'[\s　\xa0]+', '', ch_t)) <= 15 \
+                            and '。' not in ch_t:
+                        merged_ch[str(n)] = (ch_t, p)
                         prev_page = p
                         break
             if len(merged_ch) >= 2:
@@ -949,7 +968,7 @@ def _index_one(pdf_path, cfg, chars):
                                             encoding="utf-8")
         # 更新书架(保留人工字段)
         new_entry = {
-            "id": book_id, "title": title, "std_no": std_no, "file": pdf_path.name,
+            "id": book_id, "title": title, "std_no": std_no, "file": rel,
             "category": "", "pages": pages, "type": probe["type"],
             "status": "indexed", "toc_source": meta["toc_source"], "version": version,
             "alias": [], "replaces": [], "replaced_by": None,
@@ -1093,9 +1112,12 @@ def cmd_read(args, cfg):
 
 
 def _find_pdf(cfg, b):
-    for p in Path(cfg["library_dir"]).rglob("*.pdf"):
-        if p.name == b["file"]:
-            return str(p)
+    p = Path(cfg["library_dir"]) / b["file"]
+    if p.exists():
+        return str(p)
+    # 兼容旧记录(纯文件名,无子目录)
+    for q in Path(cfg["library_dir"]).rglob(b["file"]):
+        return str(q)
     die(f"库目录中找不到源 PDF: {b['file']}")
 
 
@@ -1159,7 +1181,9 @@ def cmd_ocr(args, cfg):
 
 def cmd_status(args, cfg):
     shelf = load_shelf(cfg["data_dir"])
-    lib = {p.name: str(p) for p in Path(cfg["library_dir"]).rglob("*.pdf")}
+    # 键用相对 library_dir 路径(guifansrc 可多层文件夹,同名文件不混淆)
+    lib = {p.relative_to(Path(cfg["library_dir"]).resolve()).as_posix(): str(p)
+           for p in Path(cfg["library_dir"]).rglob("*.pdf")}
     books = shelf.get("books", [])
     indexed_names = {b["file"] for b in books}
     new_pdfs = sorted(set(lib) - indexed_names)
