@@ -1,0 +1,11 @@
+{
+  "library_dir": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc",
+  "data_dir": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\library_data",
+  "tesseract_cmd": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+  "ocr_lang": "chi_sim",
+  "ocr_tessdata_dir": "scripts/tessdata",
+  "ocr_dpi": 300,
+  "ocr_psm": 3,
+  "grep_default_max": 30,
+  "common_chars": "scripts/common_chars.txt"
+}
