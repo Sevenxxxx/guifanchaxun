@@ -239,9 +239,11 @@ def probe_pdf(pdf_path, chars):
     bad = [s for _, s in body if
            s["cov"] is None or s["cov"] < 0.95 or (s["punct"] is not None and s["punct"] > 0.08)]
     bad_ratio = len(bad) / len(body) if body else 1
-    # 条文号命中仲裁: 前 30% 页
+    # 条文号命中仲裁: 前 30% 页(至少 3 页;页数不足时不能越界——1-2 页的管理文件)
     hits = 0
     for p in range(1, max(3, int(pages * 0.3)) + 1):
+        if p > pages:
+            break
         for ln in doc[p - 1].get_text().splitlines():
             if CLAUSE_RE.match(ln):
                 hits += 1
@@ -725,7 +727,9 @@ def write_chapters(book_dir, texts, meta, chapters, idx_rows):
         shutil.rmtree(pages_dir)
     written = []
     for i, c in enumerate(chapters, 1):
-        end = chapters[i]["start"] - 1 if i + 1 < len(chapters) else meta["pages"]
+        # 1-based i: 有下一章(i < len)时 end = 下一章起点-1;否则到书末。
+        # 旧代码 i+1 < len 把倒数第二章当最后一章,其文件吞入最后一章全部内容
+        end = chapters[i]["start"] - 1 if i < len(chapters) else meta["pages"]
         end = max(end, c["start"])
         fname = f"ch{i:02d}-{slug_title(c['label'], c['title'])}.md"
         offset = meta.get("offset")
@@ -1390,7 +1394,7 @@ def build_parser():
     p.add_argument("pattern", help="正则")
     p.add_argument("-i", "--ignore-case", action="store_true")
     p.add_argument("--ctx", type=int, default=1, help="上下文行数")
-    p.add_argument("--max", type=int, default=None, help="命中上限(默认 30)")
+    p.add_argument("--max", type=int, default=30, help="命中上限(默认 30;0 = 不限,用于列命中书清单)")
     p.add_argument("--all", dest="all_books", action="store_true", help="跨全部已索引书")
     p.set_defaults(func=cmd_grep)
 

@@ -11,3 +11,6 @@ library_data/
 # Python
 __pycache__/
 *.pyc
+
+# 提交前审查标记(本地状态,每次刷新变化,不入库)
+.claude/review-stamp
