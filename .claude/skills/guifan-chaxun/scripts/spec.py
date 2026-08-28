@@ -41,6 +41,37 @@ CLAUSE_RE = re.compile(
     r'(?=[ \t　\xa0]*$|[ \t　\xa0]*[一-鿿])')
 # 裸数字行(条下列项 "1"/"2"),不是条文
 BARE_NUM_RE = re.compile(r'^[ \t　\xa0]*\d{1,2}[ \t　\xa0]*$')
+
+
+def _spaced_variant_ok(s, m):
+    """空格变体行(条文号部分含提取间距,如 "4. 2. 12")内容校验:
+    幽灵条文(量词行/短节标题)与伪交叉引用行(引用连词开头)跳过,真条文保留。
+    2 级(X.Y)在 GB 两层编号书里就是真条文号,不能一律丢弃——只有量词/连词/
+    短标题(≤6 字无标点)形态判定为幽灵("1. 2 标题"/"3 . 5 米"/"4. 2 条规定");
+    长正文("4. 2 桥梁养护的内容…")保留。3 级(X.Y.Z)只拒量词/连词,条文标题
+    ("4. 2. 1 一般规定")保留。连词集合限高判别力(按/符合/依据常见于真条文
+    正文开头,如 "符合下列规定时…",不拒)。"""
+    rest = s[m.end():].lstrip(' \t　\xa0')
+    # 量词/数字开头(米/倍/条/次/天/年;实测"个/元"词首误伤真条文已剔除)
+    if not rest or rest[0].isdigit() or rest[0] in '米倍条次天年％%':
+        return False
+    # 引用连词开头(和/与/及/或/图/表/见/至/同)
+    if rest[0] in '和与及或图表见至同':
+        return False
+    # 2 级短标题/无标点短行 = 节编号("1. 2 标题"/"4. 2 一般规定")
+    if m.group(3) is None and not re.search(r'[，。；：、]', rest) \
+            and len(re.sub(r'[\s　\xa0]+', '', rest)) <= 6:
+        return False
+    return True
+
+
+def _clause_match_ok(s):
+    """CLAUSE_RE 匹配 + 空格变体行过滤(幽灵条文/伪交叉引用)。返回 m 或 None。
+    build_clauses / _clause_prefix_first_pages / _is_expl_page 共用。"""
+    m = CLAUSE_RE.match(s)
+    if m and re.search(r'\.[ \t　\xa0]+', s[:m.end()]) and not _spaced_variant_ok(s, m):
+        return None
+    return m
 # 目录行解析见 _parse_toc_line(宽容版: 页码可有可无)
 # 章标题: 数字+空白+汉字(同行式 "4 桥梁养护与维修")
 CHAPTER_INLINE_RE = re.compile(r'^[ \t　\xa0]*(\d{1,2})[ \t　\xa0]+([一-鿿][^\n]*)')
@@ -53,18 +84,19 @@ TOC_MARKER_RE = re.compile(r'目\s*[次录]')
 EXPL_MARKER_RE = re.compile(r'^\s*条\s*文\s*说\s*明')
 EXPL_TITLE_RE = re.compile(r'^[ \t　\xa0]*条[ \t　\xa0]*文[ \t　\xa0]*说[ \t　\xa0]*明[ \t　\xa0]*$')
 
+# 全角数字/变体点单源(文字版条文号 "１􀆰０􀆰１" = 1.0.1);FULLWIDTH_NORM 与
+# OCR_NORM_TABLE 共用,防两表漂移。注意不含 '〇'——正文日期 "二〇二六年" 是
+# 合法文字(整页翻译会破坏原文),仅 OCR_NORM_TABLE 用于条文号/目录行短上下文
+_FULLWIDTH_MAP = {'１': '1', '２': '2', '３': '3', '４': '4',
+                  '５': '5', '６': '6', '７': '7', '８': '8', '９': '9',
+                  '０': '0', '．': '.', '􀆰': '.'}
 OCR_NORM_TABLE = str.maketrans({'l': '1', '|': '1', '丨': '1', 'I': '1', '丿': '1',
-                                'O': '0', 'o': '0', '０': '0', '〇': '0', 'D': '0',
+                                'O': '0', 'o': '0', '〇': '0', 'D': '0',
                                 's': '5', 'S': '5', '$': '', '^': '',
-                                # 文字版全角数字/变体点(如标准体系书的 "１􀆰０􀆰１" = 1.0.1)
-                                '１': '1', '２': '2', '３': '3', '４': '4',
-                                '５': '5', '６': '6', '７': '7', '８': '8', '９': '9',
-                                '．': '.', '􀆰': '.'})
-# 章节文件正文用(不含 OCR 混淆映射 l→1 等): 全角数字/变体点 → 半角,
-# 使 grep 章节文件与 clause 直查一致(否则 "１􀆰０􀆰１" 在章节文件里 grep 搜不到)
-FULLWIDTH_NORM = str.maketrans({'１': '1', '２': '2', '３': '3', '４': '4',
-                                '５': '5', '６': '6', '７': '7', '８': '8', '９': '9',
-                                '０': '0', '．': '.', '􀆰': '.'})
+                                **_FULLWIDTH_MAP})
+# 章节文件正文用(不含 OCR 混淆映射 l→1 等,不含 '〇'——见 _FULLWIDTH_MAP 注释):
+# 全角数字/变体点 → 半角,使 grep 章节文件与 clause 直查一致
+FULLWIDTH_NORM = str.maketrans(_FULLWIDTH_MAP)
 ILLEGAL_FNAME = re.compile(r'[\\/:*?"<>|\r\n\t]')
 
 
@@ -101,7 +133,7 @@ def load_config(args):
 def book_data_dir(cfg, b):
     """索引数据目录 = data_dir / 源文件相对父目录 / book_id(与 guifansrc 目录结构一致)。
     gonglu/xxx.pdf → library_data/gonglu/<book_id>/;根目录书 → library_data/<book_id>/"""
-    return Path(cfg["data_dir"]) / Path(b.get("file", "")).parent / b["id"]
+    return Path(cfg["data_dir"]) / Path(b.get("file") or "").parent / b["id"]
 
 
 def load_shelf(data_dir):
@@ -142,7 +174,8 @@ def find_book(shelf, key):
 
 
 def norm_no(s):
-    return re.sub(r'[\s]+', '', str(s or '')).lower()
+    # \s 不含 U+200B 等零宽(Cf 类),PDF 提取/复制可能插入——一并去掉
+    return re.sub(r'[\s​‌‍﻿]+', '', str(s or '')).lower()
 
 
 def slug_id(s):
@@ -239,18 +272,17 @@ def probe_pdf(pdf_path, chars):
     bad = [s for _, s in body if
            s["cov"] is None or s["cov"] < 0.95 or (s["punct"] is not None and s["punct"] > 0.08)]
     bad_ratio = len(bad) / len(body) if body else 1
-    # 条文号命中仲裁: 前 30% 页(至少 3 页;页数不足时不能越界——1-2 页的管理文件)
+    # 条文号命中仲裁: 前 30% 页(至少 3 页;min 上界防 1-2 页管理文件越界)
     hits = 0
-    for p in range(1, max(3, int(pages * 0.3)) + 1):
-        if p > pages:
+    for p in range(1, min(pages, max(3, int(pages * 0.3))) + 1):
+        if hits > 200:
             break
         for ln in doc[p - 1].get_text().splitlines():
-            if CLAUSE_RE.match(ln):
+            # 与 build_clauses 同口径(空格变体幽灵行不计入仲裁)
+            if _clause_match_ok(ln.translate(OCR_NORM_TABLE)):
                 hits += 1
                 if hits > 200:
                     break
-        if hits > 200:
-            break
     doc.close()
     # 扫描判定阈值: 0.9→0.7,抓 70%+ 无字页的扫描件(如 012 护栏评价,78.6% 无字误判 text)
     is_scan = empty_ratio > 0.7
@@ -329,6 +361,16 @@ def run_ocr_range(pdf_path, book_dir, cfg, start, end, force):
             print(f"  ocr {done}/{total} ({100 * done // total}%)", flush=True)
     doc.close()
     return failed
+
+
+def _ocr_book(pdf_path, book_dir, cfg, pages, label):
+    """整本 OCR + 读回文本(断点续跑:缓存跳过,--force 不重 OCR)。
+    返回 (failed_pages, texts)。index 的 OCR 分支与全文二次检测分支共用。"""
+    failed = run_ocr_range(pdf_path, book_dir, cfg, 1, pages, False)
+    if failed:
+        # label 带 [book_id] 前缀(--jobs 并行时失败日志可归属具体书)
+        print(f"[{label}] OCR 失败 {len(failed)} 页: {failed[:10]}...", flush=True)
+    return failed, load_book_texts(book_dir, pages, "ocr")
 
 
 def load_book_texts(book_dir, page_count, kind):
@@ -417,8 +459,11 @@ BODY_CLAUSE_LINE_RE = re.compile(
 def _is_body_page(t):
     # 排除目录行: 长标题+点线+"页码"("3.1 桥梁抗震设防分类……9")是目录特征,
     # 会被 BODY_CLAUSE_LINE_RE 误判为正文条文行,导致目录页没被识别(015/065)
+    # 目录点线是行尾形态("3.1 桥梁抗震设防分类……9");正文省略号 "……" 在句中,
+    # 不能排除(否则含省略号的正文页失去正文信号,目录区延伸吞页)
     return len([ln for ln in t.splitlines()
-                if BODY_CLAUSE_LINE_RE.match(ln) and not re.search(r'[.．·…]{3,}', ln)]) >= 3
+                if BODY_CLAUSE_LINE_RE.match(ln)
+                and not re.search(r'[.．·…]{2,}\s*\d{0,3}\s*$', ln)]) >= 3
 
 
 def _parse_toc_line(ln, page_count):
@@ -481,7 +526,8 @@ def find_toc_zone(texts, page_count):
         toc_hits = sum(1 for ln in t.splitlines() if _parse_toc_line(ln, page_count))
         # 注意: findall 第二参是 pos 非 flags,且 $ 前瞻在无 MULTILINE 时只匹配串尾
         # → 按行 match 才算数(曾导致 clause_hits 恒为 0,目录页识别失效)
-        clause_hits = sum(1 for ln in t.splitlines() if CLAUSE_RE.match(ln))
+        clause_hits = sum(1 for ln in t.splitlines()
+                          if _clause_match_ok(ln.translate(OCR_NORM_TABLE)))
         if not start:
             # 起始页必须带"目次/目录"标记(前言/封面页不算)
             if TOC_MARKER_RE.search(t) and (toc_hits >= 3 or clause_hits >= 5):
@@ -547,7 +593,7 @@ def _clause_prefix_first_pages(texts, zone, pages):
         if not t:
             continue
         for ln in t.splitlines():
-            m = CLAUSE_RE.match(ln.translate(OCR_NORM_TABLE))
+            m = _clause_match_ok(ln.translate(OCR_NORM_TABLE))
             if m:
                 n = int(m.group(1))
                 if n not in first:
@@ -639,8 +685,14 @@ def _is_expl_page(text, page, page_count):
     if not any(EXPL_TITLE_RE.match(ln) for ln in lines):
         return False
     for ln in text.splitlines():
-        m = CLAUSE_RE.match(ln.translate(OCR_NORM_TABLE))
+        s_n = ln.translate(OCR_NORM_TABLE)
+        m = CLAUSE_RE.match(s_n)
         if m and m.group(1) == '1':
+            # 空格变体行仅排除量词/数字形态;2 级 "1. 1 条文" 是条文说明区
+            # 重编号特征,不能按节标题过滤(否则 expl 独立章丢失)
+            rest = s_n[m.end():].lstrip(' \t　\xa0')
+            if rest and (rest[0].isdigit() or rest[0] in '米倍条次天年％%'):
+                continue
             return True
     return False
 
@@ -776,7 +828,7 @@ def build_clauses(texts, meta, offset):
             if BARE_NUM_RE.match(s):
                 continue
             s_norm = ln.translate(OCR_NORM_TABLE)
-            m = CLAUSE_RE.match(s_norm)
+            m = _clause_match_ok(s_norm)
             if not m:
                 # 2025 新版排版: 条文号拆成 "4." 行 + 下一行 "5"(= 4.5),跨行组合(低置信)
                 m_solo = re.match(
@@ -787,6 +839,14 @@ def build_clauses(texts, meta, offset):
                             r'^[ \t　\xa0]*(\d{1,3})(?=[ \t　\xa0]|$|[一-鿿])',
                             lines[j].translate(OCR_NORM_TABLE))
                         if m2:
+                            # 组合行同样过内容校验(短标题/量词行不组合成幽灵条文);
+                            # rest 为空(独立数字行排版 "5."+下一行 "63")是真条文号,保留
+                            rest2 = lines[j].translate(OCR_NORM_TABLE)[m2.end():].lstrip(' \t　\xa0')
+                            if rest2 and (rest2[0].isdigit() or rest2[0] in '米倍条次天年％%'):
+                                break
+                            if rest2 and not re.search(r'[，。；：、]', rest2) \
+                                    and len(re.sub(r'[\s　\xa0]+', '', rest2)) <= 6:
+                                break
                             no = f"{m_solo.group(1)}.{m2.group(1)}"
                             printed = p - offset if offset else ''
                             page_rows.append((no, str(p), str(printed),
@@ -794,11 +854,6 @@ def build_clauses(texts, meta, offset):
                                               '1' if meta["type"] == "ocr" else '0',
                                               'low', lines[j].strip()[:40].replace('\t', ' ')))
                             break
-                continue
-            # 空格变体(OCR 字距/提取间距)行: 条文号后 20 字符内再出现 X.Y 模式
-            # → 交叉引用行("4. 2. 12 和 图 4.3.3-1 的 规定"),不是条文,跳过
-            if re.search(r'\.[ \t　\xa0]+', s_norm[:m.end()]) and \
-                    re.search(r'\d[ \t　\xa0]*\.[ \t　\xa0]*\d', s_norm[m.end():m.end() + 20]):
                 continue
             no = '.'.join(g for g in m.groups() if g)
             printed = p - offset if offset else ''
@@ -899,29 +954,37 @@ def _index_one(pdf_path, cfg, chars):
                 book_id = (Path(rel).parent.name + '-' + base_id
                            if Path(rel).parent.name != '.' else base_id)
         if old and not cfg.get("force") and old.get("status") == "indexed" and old.get("pdf_mtime") == mtime:
-            return pdf_path, "skip", f"已是最新索引(book_id={book_id})", None
+            # 迁移 gap 防御: 书架已登记但新布局路径无索引数据(旧布局书永久不可达)。
+            # 旧布局 data_dir/<book_id>/ 数据(含 OCR 缓存)存在 → 移到新路径复用,
+            # 避免整本重 OCR;否则才重索引
+            bdir_key = {"file": rel, "id": book_id}
+            new_bd = Path(book_data_dir(cfg, bdir_key))
+            if (new_bd / "meta.json").exists():
+                return pdf_path, "skip", f"已是最新索引(book_id={book_id})", None
+            old_bd = Path(data_dir) / book_id
+            if old_bd.exists():
+                import shutil
+                shutil.move(str(old_bd), str(new_bd))
+                print(f"[{book_id}] 迁移旧布局数据 {old_bd} → {new_bd}", flush=True)
+            print(f"[{book_id}] 书架已登记但新路径无索引数据,重索引", flush=True)
         probe = probe_pdf(pdf_path, chars)
         # 索引数据目录与 guifansrc 结构一致: data_dir / 源文件相对父目录 / book_id
-        book_dir = Path(data_dir) / Path(rel).parent / book_id
+        book_dir = Path(book_data_dir(cfg, {"file": rel, "id": book_id}))
         book_dir.mkdir(parents=True, exist_ok=True)
         doc = fitz.open(pdf_path)
         pages = doc.page_count
         meta = {
             "id": book_id, "title": title, "std_no": std_no, "version": version,
-            "file": pdf_path.name, "pdf_abs": str(pdf_path), "pages": pages,
+            # file 用相对 library_dir 路径,与书架条目一致(book_data_dir 的入参形态,
+            # 防止未来 book_data_dir(cfg, meta) 解析到错误目录)
+            "file": rel, "pdf_abs": str(pdf_path), "pages": pages,
             "type": probe["type"], "probe": probe,
             "pdf_mtime": mtime, "indexed_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         }
         if probe["type"] == "ocr":
             print(f"[{book_id}] 扫描/乱码书,整本 OCR(共 {pages} 页)...", flush=True)
-            ocr_dir = Path(book_dir) / "ocr"
-            done_pages = len(list(ocr_dir.glob("*.txt"))) if ocr_dir.exists() else 0
-            # OCR 缓存跳过(--force 不重 OCR;要重识别用 spec.py ocr --force)
-            failed = run_ocr_range(pdf_path, book_dir, cfg, 1, pages, False)
+            failed, texts = _ocr_book(pdf_path, book_dir, cfg, pages, book_id)
             meta["ocr"] = {"failed_pages": failed, "pages_done": pages - len(failed)}
-            if failed:
-                print(f"[{book_id}] OCR 失败 {len(failed)} 页: {failed[:10]}...", flush=True)
-            texts = load_book_texts(book_dir, pages, "ocr")
         else:
             texts = extract_text_pages(doc, book_dir, pages)  # 文字书内存提取,不落盘
             # 全文质量二次检测: probe 抽样可能漏判伪文字版(部分页 ToUnicode CMap 损坏,
@@ -932,16 +995,15 @@ def _index_one(pdf_path, cfg, chars):
             full_cov = len([c for c in cjk if c in chars]) / len(cjk) if cjk else 0
             ext_ratio = len([c for c in cjk if not (0x4E00 <= ord(c) <= 0x9FFF)]) / len(cjk) if cjk else 0
             ctrl_ratio = len([c for c in nonws if ord(c) < 32 or ord(c) == 0xFFFD]) / len(nonws) if nonws else 0
-            if full_cov < 0.92 or ext_ratio > 0.15 or ctrl_ratio > 0.05:
+            # 无 CJK 的书(管理文件/英文手册): 覆盖率恒 0,不得触发 OCR 判定;
+            # ctrl_ratio 独立于 cjk,控制字符泛滥仍转 OCR
+            if (cjk and (full_cov < 0.92 or ext_ratio > 0.15)) or (nonws and ctrl_ratio > 0.05):
                 print(f"[{book_id}] 全文质量二次检测不过(覆盖率{full_cov:.3f}/扩展区{ext_ratio:.3f}/控制字符{ctrl_ratio:.3f}),转整本 OCR...", flush=True)
                 probe = dict(probe, type="ocr", rule=probe.get("rule", []) + ["rescued-by-fulltext-check"])
                 meta["type"] = "ocr"
                 meta["probe"] = probe
-                failed = run_ocr_range(pdf_path, book_dir, cfg, 1, pages, False)
+                failed, texts = _ocr_book(pdf_path, book_dir, cfg, pages, book_id)
                 meta["ocr"] = {"failed_pages": failed, "pages_done": pages - len(failed)}
-                if failed:
-                    print(f"[{book_id}] OCR 失败 {len(failed)} 页: {failed[:10]}...", flush=True)
-                texts = load_book_texts(book_dir, pages, "ocr")
             else:
                 meta["ocr"] = {"failed_pages": [], "pages_done": 0}
         missing = [p for p in range(1, pages + 1) if p not in texts]
@@ -1004,7 +1066,8 @@ def _index_one(pdf_path, cfg, chars):
             first_pages = _clause_prefix_first_pages(texts, zone_end, pages)
             have = {int(e[0]) for e in entries if e[0].isdigit()}
             for n in sorted(first_pages):
-                if n < 1 or n in have or first_pages[n] <= zone_end:
+                # 章号上界与 OCR 路径一致(1-40),防 "58 . 2 …" 幽灵章号补出伪章
+                if n < 1 or n > 40 or n in have or first_pages[n] <= zone_end:
                     continue
                 # 条文说明区(expl 后)的条文号不补章;占位标题保证章边界(标题行
                 # 缺失的真章不丢,如 015/065);同页 ≥2 个占位章再丢弃(171 伪章)
@@ -1109,7 +1172,8 @@ def cmd_clause(args, cfg):
     if not f.exists():
         die(f"{b['id']} 没有 clauses.idx,先 `spec.py index`")
     rows = [ln.split("\t") for ln in f.read_text(encoding="utf-8").splitlines()[1:] if ln.strip()]
-    q = args.clause.strip().translate(OCR_NORM_TABLE).lower()
+    # 查询词去空白归一化(从章文件复制 "4. 2. 12" 直查也能命中归一化条文号索引)
+    q = norm_no(args.clause).translate(OCR_NORM_TABLE)
     hits = [r for r in rows if r[0].lower() == q]
     if hits:
         for r in hits:
@@ -1250,7 +1314,15 @@ def cmd_ocr(args, cfg):
     shelf = load_shelf(cfg["data_dir"])
     b = find_book(shelf, args.book)
     pdf = _find_pdf(cfg, b)
-    start, end = args.start or 1, args.end or b["pages"]
+    # 参数 clamp 到 [1, pages](防 fitz 越界报错);start>end 报错(防静默空跑)。
+    # end 不做 max(1): 负端(--end -3)留给 start>end 守卫报错,不静默成第 1 页;
+    # 显式 0 是 typo(--end 0 会 or 成全书)→ 报错而非静默整本 OCR
+    if args.start == 0 or args.end == 0:
+        die("页码从 1 开始,--start/--end 不能为 0")
+    start = max(1, min(args.start or 1, b["pages"]))
+    end = min(args.end or b["pages"], b["pages"])
+    if start > end:
+        die(f"--start({start}) 大于 --end({end}),OCR 范围无效")
     print(f"OCR {b['id']} 第 {start}-{end} 页(共 {b['pages']} 页)...", flush=True)
     failed = run_ocr_range(pdf, book_data_dir(cfg, b), cfg, start, end, args.force)
     if failed:
