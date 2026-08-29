@@ -9,9 +9,9 @@ description: 查询中国工程规范(JTG/GB 5768 等)PDF 原文权威条文。�
 
 ## 关键路径
 
-- 本 skill 目录(绝对路径):`C:/Users/Seven/Desktop/guifanchaxun/tools/guifan-chaxun`
-- 唯一程序:`C:/Users/Seven/Desktop/guifanchaxun/tools/guifan-chaxun-scripts/scripts/spec.py`(10 个子命令,依赖 pymupdf + tesseract)
-- 配置:`C:/Users/Seven/Desktop/guifanchaxun/tools/guifan-chaxun-scripts/config.json` — `library_dir`(规范 PDF 库目录)、`data_dir`(索引数据目录)
+- 本 skill 目录:`<skill>`(本文件所在目录,仓库内为 `tools/guifan-chaxun/`)
+- 唯一程序:`<skill>/../guifan-chaxun-scripts/scripts/spec.py`(10 个子命令,依赖 pymupdf + tesseract)
+- 配置:`<skill>/../guifan-chaxun-scripts/config.json` — `library_dir`(规范 PDF 库目录)、`data_dir`(索引数据目录)
 - 书架:`<data_dir>/bookshelf.json`
 - 每本书:`<data_dir>/<源文件相对父目录>/<book_id>/` 下有(**目录结构与 guifansrc 一致**:`gonglu/` 子目录的书在 `<data_dir>/gonglu/<book_id>/`,库根目录的书在 `<data_dir>/<book_id>/`):
   - `toc.md` — 章节索引表(章序/标题/PDF 页/章文件),查询导航核心
@@ -25,7 +25,7 @@ description: 查询中国工程规范(JTG/GB 5768 等)PDF 原文权威条文。�
 
 触发:用户说"更新索引/登记新规范/重新索引/删除某本规范"等;或查询前发现库有变化。
 
-1. `python "C:/Users/Seven/Desktop/guifanchaxun/tools/guifan-chaxun-scripts/scripts/spec.py" status` — 库一致性检查:
+1. `python "<skill>/../guifan-chaxun-scripts/scripts/spec.py" status` — 库一致性检查:
    - `[新增]` 未建索引的 PDF → `spec.py index "<PDF路径>"`。扫描/乱码书会自动整本 OCR,耗时长(约 3-8 秒/页),须先告知用户预计时长;中途可断,重跑自动续。
    - `[缺失]` 源 PDF 已不在库 → `spec.py remove <id>` 清理索引。
    - 疑似换版 → 与用户确认后 `spec.py index <新PDF>` + `spec.py remove <旧id> --mark-superseded <新id>`(旧索引保留,查询时提示替代关系)。
@@ -63,7 +63,7 @@ description: 查询中国工程规范(JTG/GB 5768 等)PDF 原文权威条文。�
 
 ## 强制学习
 
-处理任何 PDF、跑 index/ocr 之前,必须先 Read `C:/Users/Seven/Desktop/guifanchaxun/tools/guifan-chaxun/references/pdf_reading.md`。
+处理任何 PDF、跑 index/ocr 之前,必须先 Read `<skill>/references/pdf_reading.md`。
 
 ## 禁令
 
@@ -75,4 +75,4 @@ description: 查询中国工程规范(JTG/GB 5768 等)PDF 原文权威条文。�
 
 ## 配置
 
-换库/复制 PDF 进项目:改 `C:/Users/Seven/Desktop/guifanchaxun/tools/guifan-chaxun-scripts/config.json` 的 `library_dir` 与 `data_dir`,然后 `spec.py index --all`(增量,已索引且未变的书自动跳过)。
+换库/复制 PDF 进项目:改 `<skill>/../guifan-chaxun-scripts/config.json` 的 `library_dir` 与 `data_dir`,然后 `spec.py index --all`(增量,已索引且未变的书自动跳过)。

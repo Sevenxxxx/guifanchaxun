@@ -4,44 +4,54 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 项目概览
 
-**规范查询 skill 工程**:一个 Claude Code skill(`guifan-chaxun`),让 agent 按"翻书"方式查询中国工程规范 PDF——书架 → 目录 → 章节 → 条文原文。**不做向量库**,全部索引产物是文件系统上的明文(可 grep、可 Read)。试点 15 本(guifansrc),实际规模 200+ 本,设计支持批量扩展。
+**规范查询 skill 工程**:一个 Claude Code skill(`guifan-chaxun`),让 agent 按"翻书"方式查询中国工程规范 PDF——书架 → 目录 → 章节 → 条文原文。**不做向量库**,全部索引产物是文件系统上的明文(可 grep、可 Read)。实际规模 530+ 本(guifansrc),设计支持批量扩展。
 
 **两态模型**:①查询态——按索引翻书查规范(纯文件操作,零 Python);②维护态——库有增删时先更新索引再查询(增=index、删=remove、换版=标记替代),**该 OCR 就 OCR**。
 
 ## 常用命令(开发/维护视角)
 
-skill 唯一程序是 `scripts/spec.py`(10 子命令),依赖 pymupdf + tesseract(路径与语言包在 `config.json`):
+skill 唯一程序是 `tools/guifan-chaxun-scripts/scripts/spec.py`(10 子命令),依赖 pymupdf + tesseract(路径与语言包在 `config.json`):
 
 ```bash
+# 以下命令在 tools/guifan-chaxun-scripts/ 目录下执行(python scripts/spec.py ...);
+# 从仓库根跑用全路径 python tools/guifan-chaxun-scripts/scripts/spec.py ...
+
 # 维护态
-python spec.py index <PDF...> | --all [--force] [--jobs N]   # 加书/建索引(质量检测→[OCR]→目录→切章→条文索引)
-python spec.py status                                         # 库一致性检查(新书/失效/换版)+ 书架健康
-python spec.py ocr <book> [--start N] [--end N]               # 整本批量 OCR(断点续跑,index 内部也会调)
-python spec.py remove <book> [--mark-superseded <新id>]       # 删索引/登记,或标记被替代(不物理删)
-python spec.py update-chars --from-pdfs <干净文字版PDF...>    # 重建常用字表(乱码检测资源,新领域书先跑)
+python scripts/spec.py index <PDF...> | --all [--force] [--jobs N]   # 加书/建索引(质量检测→[OCR]→目录→切章→条文索引)
+python scripts/spec.py status                                         # 库一致性检查(新书/失效/换版)+ 书架健康
+python scripts/spec.py ocr <book> [--start N] [--end N]               # 整本批量 OCR(断点续跑,index 内部也会调)
+python scripts/spec.py remove <book> [--mark-superseded <新id>]       # 删索引/登记,或标记被替代(不物理删)
+python scripts/spec.py update-chars --from-pdfs <干净文字版PDF...>    # 重建常用字表(乱码检测资源,新领域书先跑)
 
 # 查询态(纯文件;agent 走 SKILL.md 流程,这些是 CLI 调试用)
-python spec.py list [-q 关键词] / toc <book> / clause <book> <条文号> / read <book> <页> / grep <book> <正则> | --all
+python scripts/spec.py list [-q 关键词] / toc <book> / clause <book> <条文号> / read <book> <页> / grep <book> <正则> | --all
 ```
 
-- Python 3.12(`python` 命令);tesseract 5.4 装于 `C:\Program Files\Tesseract-OCR\`,chi_sim 语言包在 `scripts/tessdata/`(config `ocr_tessdata_dir` 指向,自包含)。
+- Python 3.12(`python` 命令);tesseract 5.4 装于 `C:\Program Files\Tesseract-OCR\`,chi_sim 语言包在 `tools/guifan-chaxun-scripts/scripts/tessdata/`(config `ocr_tessdata_dir` 指向,自包含)。
 - 控制台 GBK:spec.py 内部已 `sys.stdout.reconfigure(utf-8)`;自己写临时脚本加 `PYTHONIOENCODING=utf-8`。
 
 ## 架构
 
 ```
 guifanchaxun/
-├── .claude/skills/guifan-chaxun/     # skill 本体
-│   ├── SKILL.md                      # 查询/维护工作流(两态)、强制学习、禁令
-│   ├── config.json                   # library_dir(PDF 源)/ data_dir(索引)/ OCR 参数——换库唯一改动点
-│   ├── scripts/spec.py               # 唯一程序,全部子命令与流水线
-│   ├── scripts/common_chars.txt      # ~3500 常用字表(乱码检测资源)
-│   ├── scripts/tessdata/             # chi_sim 语言包(自包含)
-│   └── references/
-│       ├── pdf_reading.md            # 强制学习方法文档(处理 PDF 前必读)
-│       └── query_notes.md            # 场景化防漏清单(作业区布设等,实战易漏项沉淀)
-└── library_data/                     # 索引数据(bookshelf.json + 每书一个目录)
+├── tools/
+│   ├── guifan-chaxun/                # skill 本体(经软链 ~/.claude/skills/guifan-chaxun 加载)
+│   │   ├── SKILL.md                  # 查询/维护工作流(两态)、强制学习、禁令
+│   │   └── references/
+│   │       ├── pdf_reading.md        # 强制学习方法文档(处理 PDF 前必读)
+│   │       └── query_notes.md        # 场景化防漏清单(作业区布设等,实战易漏项沉淀)
+│   └── guifan-chaxun-scripts/        # 脚本与配置
+│       ├── config.json               # library_dir(PDF 源)/ data_dir(索引)/ OCR 参数——换库唯一改动点
+│       └── scripts/
+│           ├── spec.py               # 唯一程序,全部子命令与流水线
+│           ├── common_chars.txt      # ~3500 常用字表(乱码检测资源)
+│           └── tessdata/             # chi_sim 语言包(自包含)
+├── scripts/claude-hooks/             # 提交前审查 hook(pre-commit-review.sh + check_commit.py)
+├── library_data/                     # 索引数据(bookshelf.json + 每书一个目录)
+└── guifansrc/                        # 规范 PDF 源(不入库,见 .gitignore)
 ```
+
+**技能安装机制**:仓库内 `tools/guifan-chaxun/` 不是 Claude Code 技能发现路径(发现范围:全局 `~/.claude/skills/`、项目 `.claude/skills/`、插件)。本机通过软链 `~/.claude/skills/guifan-chaxun → tools/guifan-chaxun` 加载;**新机器克隆本仓库后需重建该软链**(或复制目录),否则技能不在技能列表里。
 
 **数据布局**(`library_data/<源文件相对父目录>/<book_id>/`,目录结构与 guifansrc 一致:`gonglu/` 子目录的书在 `library_data/gonglu/<book_id>/`,库根目录书在 `library_data/<book_id>/`):`meta.json`(元数据+probe 证据+chapter_list)、`toc.md`(章节索引表,查询导航核心)、`clauses.idx`(条文号→页码 TSV,含 expl/ocr/低置信标记)、`chapters/chNN-*.md`(分章全文,头部注释含页码/条文号范围,正文每页前有 `【第 N 页】`)、`ocr/NNN.txt`(仅 OCR 书,唯一文本来源)。
 

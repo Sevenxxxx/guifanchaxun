@@ -42,7 +42,7 @@
 - 控制台 GBK:spec.py 内部已 `sys.stdout.reconfigure(utf-8)`,无需处理;自己写临时脚本时加 `PYTHONIOENCODING=utf-8`。
 - 路径含中文/全角括号/空格:命令行参数必须加引号;支持通配符(如 `"*公路桥涵养护规范*.pdf"`)。
 - Python 命令:`python`(3.12)。
-- tesseract:装于 `C:\Program Files\Tesseract-OCR\`,语言包 chi_sim 已放 `<skill>/scripts/tessdata/`(config 里 `ocr_tessdata_dir` 指向,自包含可移植);验证:`"C:\Program Files\Tesseract-OCR\tesseract.exe" --list-langs`。
+- tesseract:装于 `C:\Program Files\Tesseract-OCR\`,语言包 chi_sim 已放 `<skill>/../guifan-chaxun-scripts/scripts/tessdata/`(config 里 `ocr_tessdata_dir` 指向,自包含可移植);验证:`"C:\Program Files\Tesseract-OCR\tesseract.exe" --list-langs`。
 - 全角空格 U+3000 与不换行空格 U+00A0 是规范 PDF 的合法标题/目录分隔符,正则已兼容,勿当噪声剔除。
 
 ## 6. 规范 PDF 格式速查(索引器已适配,勿重踩)

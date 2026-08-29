@@ -1226,10 +1226,15 @@ def cmd_read(args, cfg):
     if meta_f.exists():
         meta_local = json.loads(meta_f.read_text(encoding="utf-8"))
     offset = meta_local.get("offset")
-    pdf_abs = _find_pdf(cfg, b) or meta_local.get("pdf_abs")
-    if not pdf_abs or not Path(pdf_abs).exists():
-        die(f"找不到源 PDF: {b['id']}(库目录 {cfg['library_dir']}, file={b.get('file')})")
     is_ocr = b["type"] == "ocr"
+    # 定位源 PDF: meta 记录的绝对路径仍有效则优先(兼容库外索引的书),
+    # 否则按 file 字段/全库 rglob 查找; 仅文字书需要 PDF, OCR 书只读 ocr/ 缓存
+    pdf_abs = None
+    m = meta_local.get("pdf_abs")
+    if m and Path(m).exists():
+        pdf_abs = m
+    elif not is_ocr:
+        pdf_abs = _find_pdf(cfg, b)   # 找不到时内部 die 报错
     chars = load_chars(cfg["common_chars"])
     doc = None if is_ocr else fitz.open(pdf_abs)
     warn = False
@@ -1405,7 +1410,7 @@ def cmd_update_chars(args, cfg):
         shelf = load_shelf(cfg["data_dir"])
         for b in shelf.get("books", []):
             if b.get("type") == "text":
-                p = _find_pdf(cfg, b) or b.get("pdf_abs")
+                p = b.get("pdf_abs") or _find_pdf(cfg, b)
                 if Path(p).exists():
                     pdfs.append(Path(p))
     if not pdfs:
