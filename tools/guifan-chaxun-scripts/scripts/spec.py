@@ -1226,7 +1226,9 @@ def cmd_read(args, cfg):
     if meta_f.exists():
         meta_local = json.loads(meta_f.read_text(encoding="utf-8"))
     offset = meta_local.get("offset")
-    pdf_abs = meta_local.get("pdf_abs") or _find_pdf(cfg, b)
+    pdf_abs = _find_pdf(cfg, b) or meta_local.get("pdf_abs")
+    if not pdf_abs or not Path(pdf_abs).exists():
+        die(f"找不到源 PDF: {b['id']}(库目录 {cfg['library_dir']}, file={b.get('file')})")
     is_ocr = b["type"] == "ocr"
     chars = load_chars(cfg["common_chars"])
     doc = None if is_ocr else fitz.open(pdf_abs)
@@ -1403,7 +1405,7 @@ def cmd_update_chars(args, cfg):
         shelf = load_shelf(cfg["data_dir"])
         for b in shelf.get("books", []):
             if b.get("type") == "text":
-                p = b.get("pdf_abs") or _find_pdf(cfg, b)
+                p = _find_pdf(cfg, b) or b.get("pdf_abs")
                 if Path(p).exists():
                     pdfs.append(Path(p))
     if not pdfs:
