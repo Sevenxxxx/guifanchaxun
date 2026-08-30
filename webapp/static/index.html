@@ -58,12 +58,14 @@
   .msg .role { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
   .role .who { color: var(--muted); }
   .role .status { margin-left: 8px; color: var(--accent); }
-  .copy-btn {
-    font-size: 12px; padding: 2px 10px; border-radius: 5px; color: var(--muted);
-    background: transparent; border: 1px solid var(--border); line-height: 1.5;
+  .actions { display: flex; gap: 4px; margin-top: 6px; }
+  .action-btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 4px;
+    font-size: 12px; color: var(--muted); background: transparent;
+    border: none; border-radius: 5px; padding: 4px 7px; line-height: 1; cursor: pointer;
   }
-  .copy-btn:hover { color: var(--accent); border-color: var(--accent); }
-  .copy-btn.copied { color: #2e7d32; border-color: #2e7d32; }
+  .action-btn:hover { color: var(--accent); background: var(--user); }
+  .action-btn.copied { color: #2e7d32; }
   .cursor { display: inline-block; animation: blink 1s steps(2) infinite; color: var(--accent); }
   @keyframes blink { 50% { opacity: 0; } }
   .error-text { color: var(--err); }
@@ -149,15 +151,19 @@
       .replace(/javascript:/gi, '');
   }
 
+  var ICON_COPY = '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 5.5v-2a1.5 1.5 0 0 0-1.5-1.5h-5a1.5 1.5 0 0 0-1.5 1.5v5A1.5 1.5 0 0 0 4 10.5h2"/></svg>';
+  var ICON_CHECK = '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8.5l3 3 7-7"/></svg>';
+
   // 复制到剪贴板(支持 http 非安全上下文:fallback 到 execCommand)
   function copyToClipboard(text, btn) {
-    var done = function () {
-      var old = btn.textContent;
-      btn.textContent = '已复制';
+    var orig = btn.innerHTML;
+    function done() {
       btn.classList.add('copied');
-      setTimeout(function () { btn.textContent = old; btn.classList.remove('copied'); }, 1500);
-    };
-    var fallback = function () {
+      btn.innerHTML = ICON_CHECK + '<span>已复制</span>';
+      btn.title = '已复制';
+      setTimeout(function () { btn.classList.remove('copied'); btn.innerHTML = orig; btn.title = '复制'; }, 1500);
+    }
+    function fallback() {
       var ta = document.createElement('textarea');
       ta.value = text;
       ta.style.position = 'fixed';
@@ -165,9 +171,9 @@
       document.body.appendChild(ta);
       ta.select();
       try { document.execCommand('copy'); done(); }
-      catch (e) { btn.textContent = '复制失败'; }
+      catch (e) { btn.classList.add('copied'); }
       document.body.removeChild(ta);
-    };
+    }
     if (navigator.clipboard && window.isSecureContext) {
       navigator.clipboard.writeText(text).then(done, fallback);
     } else {
@@ -178,12 +184,18 @@
   function copyButton(getText) {
     var btn = document.createElement('button');
     btn.type = 'button';
-    btn.className = 'copy-btn';
-    btn.textContent = '复制';
-    btn.addEventListener('click', function () {
-      copyToClipboard(getText() || '', btn);
-    });
+    btn.className = 'action-btn';
+    btn.title = '复制';
+    btn.innerHTML = ICON_COPY;
+    btn.addEventListener('click', function () { copyToClipboard(getText() || '', btn); });
     return btn;
+  }
+
+  function makeActions(getText) {
+    var actions = document.createElement('div');
+    actions.className = 'actions';
+    actions.appendChild(copyButton(getText));
+    return actions;
   }
 
   function appendUser(text) {
@@ -192,9 +204,9 @@
     var role = document.createElement('div'); role.className = 'role';
     var who = document.createElement('span'); who.className = 'who'; who.textContent = '你';
     role.appendChild(who);
-    role.appendChild(copyButton(function () { return text; }));
     var bubble = document.createElement('div'); bubble.className = 'bubble'; bubble.textContent = text;
-    wrap.appendChild(role); wrap.appendChild(bubble);
+    var actions = makeActions(function () { return text; });
+    wrap.appendChild(role); wrap.appendChild(bubble); wrap.appendChild(actions);
     chatEl.appendChild(wrap);
     scrollBottom();
   }
@@ -211,7 +223,7 @@
     var statusSpan = document.createElement('span'); statusSpan.className = 'status';
     who.appendChild(statusSpan);
     role.appendChild(who);
-    role.appendChild(copyButton(function () { return rawText || textSpan.textContent; }));
+    var actions = makeActions(function () { return rawText || textSpan.textContent; });
 
     var bubble = document.createElement('div'); bubble.className = 'bubble';
     var textSpan = document.createElement('span'); textSpan.className = 'stream-text md';
@@ -228,7 +240,7 @@
     var list = document.createElement('ul');
     details.appendChild(summary); details.appendChild(list);
 
-    wrap.appendChild(role); wrap.appendChild(bubble); wrap.appendChild(details);
+    wrap.appendChild(role); wrap.appendChild(bubble); wrap.appendChild(actions); wrap.appendChild(details);
     chatEl.appendChild(wrap);
     scrollBottom();
 
