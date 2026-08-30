@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>规范查询 Web POC</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --ink: #1f2328; --muted: #6b7280;
+    --accent: #1a6fff; --border: #e3e6ea; --user: #e8f1ff; --asst: #ffffff;
+    --err: #c0392b; --mono: ui-monospace, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
+    background: var(--bg); color: var(--ink); height: 100vh;
+    display: flex; flex-direction: column;
+  }
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 20px; background: var(--card); border-bottom: 1px solid var(--border);
+  }
+  header h1 { font-size: 16px; margin: 0; }
+  .meta { display: flex; gap: 12px; align-items: center; font-size: 13px; color: var(--muted); }
+  button {
+    font: inherit; cursor: pointer; border: 1px solid var(--border); border-radius: 6px;
+    background: var(--card); padding: 6px 14px;
+  }
+  button:hover { border-color: var(--accent); color: var(--accent); }
+  button:disabled { opacity: .5; cursor: not-allowed; }
+  #chat {
+    flex: 1; overflow-y: auto; padding: 20px; max-width: 900px; width: 100%;
+    margin: 0 auto; display: flex; flex-direction: column; gap: 16px;
+  }
+  .msg { display: flex; flex-direction: column; max-width: 100%; }
+  .msg.user { align-items: flex-end; }
+  .bubble {
+    border: 1px solid var(--border); background: var(--asst); border-radius: 10px;
+    padding: 10px 14px; max-width: 86%; white-space: pre-wrap; word-break: break-word;
+    line-height: 1.6; font-size: 14.5px;
+  }
+  .msg.user .bubble { background: var(--user); }
+  .msg .role { font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+  .cursor { display: inline-block; animation: blink 1s steps(2) infinite; color: var(--accent); }
+  @keyframes blink { 50% { opacity: 0; } }
+  .error-text { color: var(--err); }
+  .notice { font-size: 12px; color: #b7791f; margin-top: 6px; }
+  details.activity {
+    margin-top: 6px; max-width: 86%; font-size: 12.5px; color: var(--muted);
+  }
+  details.activity summary { cursor: pointer; user-select: none; }
+  details.activity ul { margin: 6px 0 0; padding-left: 18px; font-family: var(--mono); font-size: 12px; }
+  details.activity li { margin: 2px 0; word-break: break-all; }
+  footer {
+    border-top: 1px solid var(--border); background: var(--card); padding: 12px 20px;
+  }
+  .input-row { display: flex; gap: 10px; max-width: 900px; margin: 0 auto; }
+  textarea {
+    flex: 1; font: inherit; font-size: 14.5px; resize: none; padding: 10px 12px;
+    border: 1px solid var(--border); border-radius: 8px; outline: none;
+  }
+  textarea:focus { border-color: var(--accent); }
+  #send { background: var(--accent); color: #fff; border: none; padding: 0 22px; font-weight: 600; }
+  #send:hover { opacity: .9; }
+  .hint { max-width: 900px; margin: 6px auto 0; font-size: 12px; color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <h1>规范查询 · Web POC <span style="color:var(--muted);font-weight:400">(DSH Agent Runtime + guifan-chaxun skill)</span></h1>
+  <div class="meta">
+    <span id="health">运行时: 检测中…</span>
+    <button id="reset" title="换一个会话 id,清空本页对话">新会话</button>
+  </div>
+</header>
+
+<main id="chat"></main>
+
+<footer>
+  <form id="form" class="input-row">
+    <textarea id="input" rows="2" placeholder="例如:JTG 5120-2021 对桥梁检查周期是怎么规定的?"></textarea>
+    <button id="send" type="submit">发送</button>
+  </form>
+  <div class="hint">Enter 发送,Shift+Enter 换行 · 回复流式输出 · 展开"活动日志"可看到 agent 调用 skill/工具的过程</div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  var chatEl = document.getElementById('chat');
+  var formEl = document.getElementById('form');
+  var inputEl = document.getElementById('input');
+  var sendBtn = document.getElementById('send');
+  var healthEl = document.getElementById('health');
+  var resetBtn = document.getElementById('reset');
+
+  var sessionId = localStorage.getItem('gfc_session_id');
+  if (!sessionId) { sessionId = newSessionId(); }
+  var busy = false;
+
+  function newSessionId() {
+    var id = (crypto.randomUUID ? crypto.randomUUID() : 's-' + Date.now() + '-' + Math.random().toString(16).slice(2));
+    localStorage.setItem('gfc_session_id', id);
+    return id;
+  }
+
+  function scrollBottom() { chatEl.scrollTop = chatEl.scrollHeight; }
+
+  function appendUser(text) {
+    var wrap = document.createElement('div');
+    wrap.className = 'msg user';
+    var role = document.createElement('div'); role.className = 'role'; role.textContent = '你';
+    var bubble = document.createElement('div'); bubble.className = 'bubble'; bubble.textContent = text;
+    wrap.appendChild(role); wrap.appendChild(bubble);
+    chatEl.appendChild(wrap);
+    scrollBottom();
+  }
+
+  // 助手消息气泡:流式文本 + 可折叠活动日志
+  function appendAssistant() {
+    var wrap = document.createElement('div');
+    wrap.className = 'msg assistant';
+
+    var role = document.createElement('div'); role.className = 'role';
+    var statusSpan = document.createElement('span'); statusSpan.style.marginLeft = '8px'; statusSpan.style.color = '#1a6fff';
+    role.appendChild(document.createTextNode('规范查询 Agent'));
+    role.appendChild(statusSpan);
+
+    var bubble = document.createElement('div'); bubble.className = 'bubble';
+    var textSpan = document.createElement('span'); textSpan.className = 'stream-text';
+    var cursor = document.createElement('span'); cursor.className = 'cursor'; cursor.textContent = '▍';
+    bubble.appendChild(textSpan); bubble.appendChild(cursor);
+
+    var details = document.createElement('details');
+    details.className = 'activity';
+    var summary = document.createElement('summary');
+    var countSpan = document.createElement('span'); countSpan.className = 'count'; countSpan.textContent = '0';
+    summary.appendChild(document.createTextNode('活动日志('));
+    summary.appendChild(countSpan);
+    summary.appendChild(document.createTextNode(')'));
+    var list = document.createElement('ul');
+    details.appendChild(summary); details.appendChild(list);
+
+    wrap.appendChild(role); wrap.appendChild(bubble); wrap.appendChild(details);
+    chatEl.appendChild(wrap);
+    scrollBottom();
+
+    var activityCount = 0;
+    return {
+      setStatus: function (text) { statusSpan.textContent = text; },
+      setText: function (text) {
+        textSpan.textContent = text;
+        bubble.classList.remove('error-text');
+        scrollBottom();
+      },
+      addActivity: function (type, summaryText) {
+        activityCount += 1;
+        countSpan.textContent = String(activityCount);
+        var li = document.createElement('li');
+        li.textContent = type + ': ' + summaryText;
+        li.title = type + ': ' + summaryText;
+        list.appendChild(li);
+      },
+      finish: function () { cursor.textContent = ''; statusSpan.textContent = ''; },
+      addNotice: function (text) {
+        var n = document.createElement('div');
+        n.className = 'notice';
+        n.textContent = text;
+        bubble.appendChild(n);
+      },
+      showError: function (message) {
+        cursor.textContent = '';
+        statusSpan.textContent = '';
+        textSpan.textContent = textSpan.textContent || '执行失败';
+        var err = document.createElement('div');
+        err.className = 'error-text';
+        err.textContent = message;
+        bubble.appendChild(err);
+      }
+    };
+  }
+
+  function handleFrame(frame, bubble, ctx) {
+    var event = 'message', data = '';
+    var lines = frame.split('\n');
+    for (var i = 0; i < lines.length; i++) {
+      var line = lines[i];
+      if (line.indexOf('event:') === 0) event = line.slice(6).trim();
+      else if (line.indexOf('data:') === 0) data += line.slice(5).trim();
+    }
+    if (!data) return;
+    var payload;
+    try { payload = JSON.parse(data); } catch (e) { return; }
+    switch (event) {
+      case 'status':
+        bubble.setStatus(payload.status === 'queued' ? '排队中…'
+          : payload.status === 'running' ? 'Agent 思考中…' : '');
+        break;
+      case 'text':
+        bubble.setText(payload.text || '');
+        break;
+      case 'activity':
+        bubble.addActivity(payload.type || 'event', payload.summary || '');
+        break;
+      case 'done':
+        bubble.setText(payload.final_response || '');
+        bubble.finish();
+        break;
+      case 'session_reset':
+        // 服务器重启导致旧会话失效:换新 id,由外层自动重发一次
+        sessionId = newSessionId();
+        if (ctx) ctx.needsRetry = true;
+        bubble.addNotice('会话已在服务端失效(服务器重启),已自动开启新会话并重发');
+        break;
+      case 'error':
+        bubble.showError(payload.message || '未知错误');
+        break;
+    }
+  }
+
+  async function consumeSse(body, bubble, ctx) {
+    var reader = body.getReader();
+    var decoder = new TextDecoder();
+    var buffer = '';
+    while (true) {
+      var step = await reader.read();
+      if (step.done) break;
+      buffer += decoder.decode(step.value, { stream: true });
+      var idx;
+      while ((idx = buffer.indexOf('\n\n')) >= 0) {
+        handleFrame(buffer.slice(0, idx), bubble, ctx);
+        buffer = buffer.slice(idx + 2);
+      }
+    }
+  }
+
+  // 跑一轮;会话失效时返回 true(已换新会话 id),由调用方重发一次
+  async function runTurn(message) {
+    var bubble = appendAssistant();
+    var ctx = { needsRetry: false };
+    try {
+      var res = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ session_id: sessionId, message: message })
+      });
+      if (!res.ok || !res.body) throw new Error('HTTP ' + res.status);
+      await consumeSse(res.body, bubble, ctx);
+    } catch (err) {
+      bubble.showError(err.message || String(err));
+    }
+    return ctx.needsRetry;
+  }
+
+  formEl.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    var message = inputEl.value.trim();
+    if (!message || busy) return;
+    busy = true; sendBtn.disabled = true;
+    appendUser(message);
+    inputEl.value = '';
+    try {
+      if (await runTurn(message)) {
+        await runTurn(message); // 自动换新会话重发一次
+      }
+    } finally {
+      busy = false; sendBtn.disabled = false; inputEl.focus();
+    }
+  });
+
+  inputEl.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); formEl.requestSubmit(); }
+  });
+
+  resetBtn.addEventListener('click', function () {
+    sessionId = newSessionId();
+    chatEl.innerHTML = '';
+  });
+
+  async function checkHealth() {
+    try {
+      var res = await fetch('/api/health');
+      var data = await res.json();
+      healthEl.textContent = '运行时: ' + (data.runtime_started ? '已启动' : '未启动(首问时启动)')
+        + ' · ' + data.model;
+    } catch (e) {
+      healthEl.textContent = '运行时: 后端不可达';
+    }
+  }
+  checkHealth();
+})();
+</script>
+</body>
+</html>
