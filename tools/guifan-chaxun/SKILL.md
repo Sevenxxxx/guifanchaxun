@@ -1,6 +1,6 @@
 ---
 name: guifan-chaxun
-description: 查询中国工程规范(JTG/GB 5768 等)PDF 原文权威条文。用户问规范条款内容、条文规定、标准要求、具体数值、条文号含义、规范间交叉引用,或需要"结论+规范号+条文号+原文摘录"格式答案时使用。也用于维护规范库索引:用户说"更新索引/登记新规范/删除某本规范/重新索引"等时,先更新索引(该 OCR 就 OCR)再答。按 规范→目录→条文→原文 层级检索(无向量库)。
+description: 查询中国工程规范(JTG/GB 5768 等)PDF 原文权威条文,以及知识库中公文/通知/表格等非 PDF 文档(Word/Excel/OFD/图片)。用户问规范条款内容、条文规定、标准要求、具体数值、条文号含义、规范间交叉引用,或需要"结论+规范号+条文号+原文摘录"格式答案时使用。也用于维护规范库索引:用户说"更新索引/登记新规范/删除某本规范/重新索引"等时,先更新索引(该 OCR 就 OCR)再答。按 规范→目录→条文→原文 层级检索(无向量库)。
 ---
 
 # 规范查询(guifan-chaxun)
@@ -10,14 +10,15 @@ description: 查询中国工程规范(JTG/GB 5768 等)PDF 原文权威条文。�
 ## 关键路径
 
 - 本 skill 目录:`<skill>`(本文件所在目录,仓库内为 `tools/guifan-chaxun/`)
-- 唯一程序:`<skill>/../guifan-chaxun-scripts/scripts/spec.py`(10 个子命令,依赖 pymupdf + tesseract)
-- 配置:`<skill>/../guifan-chaxun-scripts/config.json` — `library_dir`(规范 PDF 库目录)、`data_dir`(索引数据目录)
+- 唯一程序:`<skill>/../guifan-chaxun-scripts/scripts/spec.py`(10 个子命令,依赖 pymupdf + tesseract + python-docx/openpyxl;doc/xls/wps/et 老格式经 Office/WPS COM 转换)
+- 配置:`<skill>/../guifan-chaxun-scripts/config.json` — `library_dir`(知识库目录,PDF/Word/Excel/OFD/图片等)、`data_dir`(索引数据目录)
 - 书架:`<data_dir>/bookshelf.json`
 - 每本书:`<data_dir>/<源文件相对父目录>/<book_id>/` 下有(**目录结构与 guifansrc 一致**:`gonglu/` 子目录的书在 `<data_dir>/gonglu/<book_id>/`,库根目录的书在 `<data_dir>/<book_id>/`):
-  - `toc.md` — 章节索引表(章序/标题/PDF 页/章文件),查询导航核心
+  - `toc.md` — 章节索引表(章序/标题/页/章文件),查询导航核心
   - `chapters/chNN-*.md` — 分章文本(每章一个文件,头部注释含页码/条文范围,正文每页有 `【第 N 页】` 标记)
   - `clauses.idx` — 条文号→页码 TSV(含行首原文、expl 条文说明标记、ocr 标记)
-  - `ocr/NNN.txt`(仅 OCR 书)— 按页 OCR 原文缓存(文字书不落页缓存,`read` 按需现场提取)
+  - `ocr/NNN.txt`(仅 OCR 书:扫描 PDF/图片)— 按页 OCR 原文缓存
+  - `extracted/NNN.txt`(仅非 PDF 文本书)— 提取文本落盘(Word/Excel/OFD 等,虚拟页或物理页;`read` 读这里)
 
 ## 两态工作流
 
@@ -26,15 +27,17 @@ description: 查询中国工程规范(JTG/GB 5768 等)PDF 原文权威条文。�
 触发:用户说"更新索引/登记新规范/重新索引/删除某本规范"等;或查询前发现库有变化。
 
 1. `python "<skill>/../guifan-chaxun-scripts/scripts/spec.py" status` — 库一致性检查:
-   - `[新增]` 未建索引的 PDF → `spec.py index "<PDF路径>"`。扫描/乱码书会自动整本 OCR,耗时长(约 3-8 秒/页),须先告知用户预计时长;中途可断,重跑自动续。
-   - `[缺失]` 源 PDF 已不在库 → `spec.py remove <id>` 清理索引。
-   - 疑似换版 → 与用户确认后 `spec.py index <新PDF>` + `spec.py remove <旧id> --mark-superseded <新id>`(旧索引保留,查询时提示替代关系)。
+   - `[新增]` 未建索引的文件(任意格式:pdf/doc/docx/xls/xlsx/wps/et/ofd/png/tif/txt)→ `spec.py index "<文件路径>"`。扫描 PDF/图片书会自动整本 OCR,耗时长(约 3-8 秒/页),须先告知用户预计时长;中途可断,重跑自动续。doc/xls/wps/et 老格式经本机 Office/WPS COM 另存后提取(串行,约 1-3 秒/文件)。
+   - `[未索引]` zip 压缩包/无扩展名文件 → 暂不索引,仅提示(压缩包需解包后放入库目录)。
+   - `[缺失]` 源文件已不在库 → `spec.py remove <id>` 清理索引。
+   - 疑似换版 → 与用户确认后 `spec.py index <新文件>` + `spec.py remove <旧id> --mark-superseded <新id>`(旧索引保留,查询时提示替代关系)。
+2. 完成向用户汇报:新增/更新/删除/换版了哪些书、OCR 失败页数、COM 转换失败的文件(加密/损坏文档)。
 2. 完成向用户汇报:新增/更新/删除/换版了哪些书、OCR 失败页数。
 
 ### 查询态(按索引翻书)
 
 1. **读书架**:`spec.py list [-q 关键词]`。按 id/书名/规范号/别名匹配目标规范;候选多本时列给用户确认。条目带 `→已由 xx 替代` 时提醒用户该版本已被新规范替代(查新版,或两版对比)。
-2. **读目录**:Read `<data_dir>/<源文件相对父目录>/<book_id>/toc.md`(如 `library_data/gonglu/005-…/toc.md`;库根目录书为 `library_data/<book_id>/toc.md`),锁定相关章(标题/PDF 页/章文件)。
+2. **读目录**:Read `<data_dir>/<源文件相对父目录>/<book_id>/toc.md`(如 `library_data/gonglu/005-…/toc.md`;库根目录书为 `library_data/<book_id>/toc.md`),锁定相关章(标题/页/章文件)。非 PDF 书(Word/Excel 等)的页码为**虚拟页**(按 ~500 字符切分,toc.md 表头"页"而非"PDF 页"),`read` 页码同义。
 3. **读章节文件**(纯文件操作):
    - Read/Grep `<data_dir>/<源文件相对父目录>/<book_id>/chapters/chNN-*.md` — 先锁章再读,避免整本加载;
    - 条文号直查:`spec.py clause <book> <条文号>` — 未命中自动给出相邻条文;OCR 书的条文号可能被误读,用 grep 在页内二次确认;
@@ -44,7 +47,7 @@ description: 查询中国工程规范(JTG/GB 5768 等)PDF 原文权威条文。�
 4. **模糊记忆检索**(用户描述模糊,如"以前有个文件说…/有规定要求…")——agent 的语义改写 + 全文 grep 即"语义检索",无需向量库:
    ① 从描述提取关键概念 → ② 展开同义/上下位词 `grep --all` 跨库扫(如"防水"→ 防水层/铺装/防渗/排水)→ ③ 读书架 titles + 各书 toc.md 章标题筛候选 → ④ 读候选章文件开头/关键段判断相关性 → ⑤ 多轮迭代换角度换词,直到找到或确认库内没有;确认没有时如实告知,列出查过的词与范围,并给最接近的替代规范。
 5. **查场景要点速查**:问题命中 `references/query_notes.md` 中的场景(如养护作业区布设、安全设施配置等),**先 Read 对应场景小节,按清单逐项核对**再作答——这些是实战沉淀的易漏项(如作业区标志序列中的"车道数变少标志"设于警告区中点、解除限速在终止区末端),防止凭记忆漏查。
-6. **复核原文**(兜底):看表格/图/原始排版时 `spec.py read <book> <页> [末页]`(单次≤20 页;OCR 书输出带【OCR】标记;出现"疑似乱码"警告时该页勿当原文引用)。
+6. **复核原文**(兜底):看表格/图/原始排版时 `spec.py read <book> <页> [末页]`(单次≤20 页;OCR 书输出带【OCR】标记;非 PDF 文本书输出带【虚拟页】标记;出现"疑似乱码"警告时该页勿当原文引用)。
 7. **交叉检查**(多轮迭代,≤5 轮):
    - 术语章(通常第 2 章)先查定义;
    - 问"依据/解释"时:若 toc.md 有"条文说明"章,必翻该章对应条款号(**注意**:部分新排版规范的条文说明随条文内嵌,无独立章,直接读条文所在页即可);
@@ -75,4 +78,4 @@ description: 查询中国工程规范(JTG/GB 5768 等)PDF 原文权威条文。�
 
 ## 配置
 
-换库/复制 PDF 进项目:改 `<skill>/../guifan-chaxun-scripts/config.json` 的 `library_dir` 与 `data_dir`,然后 `spec.py index --all`(增量,已索引且未变的书自动跳过)。
+换库/复制文件进项目:改 `<skill>/../guifan-chaxun-scripts/config.json` 的 `library_dir` 与 `data_dir`,然后 `spec.py index --all`(增量,已索引且未变的书自动跳过;支持 `--only <ext>` 分批,如 `--only docx png`)。

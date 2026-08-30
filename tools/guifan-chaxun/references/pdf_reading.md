@@ -1,14 +1,14 @@
-# PDF 处理方法(处理规范 PDF 前必读)
+# 处理方法(处理知识库文件前必读:规范 PDF + 非 PDF 文档)
 
-本文档覆盖本 skill 处理规范 PDF 的全部工具与方法。跑 `spec.py index` 之前读完本文。
+本文档覆盖本 skill 处理规范 PDF 与非 PDF 文档(Word/Excel/OFD/图片)的全部工具与方法。跑 `spec.py index` 之前读完本文。
 
 ## 1. 工具优先级
 
 | 场景 | 工具 | 说明 |
 |---|---|---|
-| 加书/建索引(唯一主工具) | `spec.py index` | 内部用 pymupdf 提取 + tesseract OCR,自动分流 |
+| 加书/建索引(唯一主工具) | `spec.py index` | PDF 用 pymupdf + tesseract 自动分流;非 PDF 按格式提取(见 §7) |
 | 查询(主路径) | Read/Grep 章节文件 | 纯文件系统操作,零 Python 依赖 |
-| 按页复核(兜底) | `spec.py read` | 文字书现场从 PDF 提取(不落盘缓存);OCR 书读 ocr/NNN.txt |
+| 按页复核(兜底) | `spec.py read` | 文字 PDF 现场提取(不落盘);OCR 书读 ocr/NNN.txt;非 PDF 文本书读 extracted/NNN.txt |
 | 条文号直查 | `spec.py clause` | 读 clauses.idx;未命中给相邻条文 |
 | pdftotext | 仅文字书兜底 | **对坏 ToUnicode CMap 的"伪文字版"无效**(提取出的是乱码),此类书必须 OCR |
 | tesseract OCR | 仅索引时整本一次性 | 查询路径永不 OCR |
@@ -16,7 +16,7 @@
 ## 2. 页范围提取与 token 预算
 
 - 单次 `read` 最多 20 页;章节文件只读锁定的章,不整本加载。
-- 索引产物落盘(`chapters/`、`ocr/NNN.txt`[仅 OCR 书]);**文字书不保留按页缓存**,`read` 按需现场从 PDF 提取。
+- 索引产物落盘(`chapters/`、`ocr/NNN.txt`[仅 OCR 书]、`extracted/NNN.txt`[非 PDF 文本书]);**文字 PDF 不保留按页缓存**,`read` 按需现场提取;非 PDF 书 `read` 读 extracted/ 落盘(源文件重提取要 COM 转换,慢)。
 - `grep` 默认最多 30 条命中,`--ctx` 控制上下文行数,防 token 爆炸。
 
 ## 3. OCR 分支
@@ -52,3 +52,27 @@
 - 条文说明:JTG 老排版在书后半部独立成章(条文号与正文重复,索引已用 expl 标记区分);新排版(如 JTG 5130-2026 隧道规范)条文说明随条文内嵌,无独立章。
 - 目录页:页码有"- 1 -"包横线、纯点线无页码、残缺等多种形态;目录页正文页码与 PDF 页码有偏移(索引时自动校准,`toc.md` 标注"正文页")。
 - 伪文字版:GB 5768 系列等 ToUnicode CMap 损坏,提取中文全是乱码("犌犅５７６８"),pdftotext/pymupdf 均无效,只能 OCR。
+
+## 7. 非 PDF 知识文件(Word/Excel/OFD/图片)
+
+库目录除规范 PDF 外还可放公文/通知/附件/表格等知识文件,索引方式按格式分派(meta.json 的 `fmt` 字段标识):
+
+| 格式 | 提取方式 | 页模型 | 类型 |
+|---|---|---|---|
+| .docx | python-docx(段落+表格保序,页眉页脚前置) | 虚拟页 | text |
+| .xlsx | openpyxl(每工作表【工作表 i:名称】标记 + 逐行 tab 连接) | 虚拟页 | text |
+| .doc / .wps | 本机 Office/WPS COM 另存 .docx 再解析(串行) | 虚拟页 | text |
+| .xls / .et | Excel/WPS COM 另存 .xlsx 再解析(串行) | 虚拟页 | text |
+| .ofd | zipfile+XML 直接读文本层(有物理页,不虚拟分页) | 物理页 | text |
+| .png / .tif | tesseract 整图/逐帧 OCR(与 PDF OCR 书同构) | 每图 1 页 | ocr |
+| .txt / .md | 直接读 | 虚拟页 | text |
+| .zip | **不索引**,仅 status 提示(需解包后放入库目录) | — | — |
+
+要点:
+
+- **虚拟页**:非 PDF 文本无物理页,按段落累计 ~500 字符切一页(段落不撕裂,大文档自适应页数,上限 400 页)。toc.md 表头为"页"而非"PDF 页",`read` 输出带【虚拟页】标记,页码与 `read <书> <页>` 同义。查询时优先 grep/章文件,页号只作上下文定位。
+- **COM 转换**:doc/xls/wps/et 经 Office 2021 / WPS 12.1 的 COM 接口另存为临时 docx/xlsx 后走同一解析路径(表格结构保留)。索引时串行执行(COM 是 apartment 线程模型,严禁进线程池),每文件约 1-3 秒;连续 2 次失败自动重建实例,退出时清理临时文件与残留 WPS 进程(不碰用户已打开的)。
+- **COM 失败**:加密/损坏文档转换失败 → 该书 fail 并提示,不影响整批;全量后人工处理(可 `spec.py remove` 或修复源文件后重跑)。
+- **图片 OCR 质量**:截图/批阅笺识别噪声大,note 标注 low_confidence,不得当权威原文引用。
+- **空文档**:提取文本全空(空文件/纯图 doc)仍会索引并挂 note="文档无可提取文本(空/纯图)(low_confidence)",grep 不到内容时用 `spec.py list -q <关键词>` 查书架。
+- **重 OCR 图片书**:`spec.py ocr <book> --force` 与 PDF OCR 书同构(断点续跑)。

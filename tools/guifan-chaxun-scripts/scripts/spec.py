@@ -14,6 +14,7 @@
 """
 import argparse
 import json
+import math
 import re
 import subprocess
 import sys
@@ -34,6 +35,23 @@ DEFAULT_CONFIG = SKILL_DIR / "config.json"
 
 # ---------- 正则常量 ----------
 ASCII_PUNCT = set('!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~')
+
+# ---------- 支持的文件格式(库目录索引范围;.zip 等压缩包暂不索引) ----------
+INDEXABLE_EXTS = {".pdf", ".doc", ".docx", ".xls", ".xlsx", ".wps", ".et",
+                  ".ofd", ".png", ".tif", ".tiff", ".txt", ".md"}
+IMAGE_EXTS = {".png", ".tif", ".tiff"}      # 图片书: 整图/逐帧 tesseract,type=ocr
+COM_EXTS = {".doc", ".xls", ".wps", ".et"}  # 老格式: COM 另存 docx/xlsx 再解析(串行)
+VIRTUAL_EXTS = {".doc", ".docx", ".xls", ".xlsx", ".wps", ".et", ".txt", ".md"}  # 虚拟分页
+# fmt(无点扩展名)与带点集合的成员判定;dispatch 处 fmt 均为无点形式
+_IMAGE_FMTS = {e.lstrip(".") for e in IMAGE_EXTS}
+_COM_FMTS = {e.lstrip(".") for e in COM_EXTS}
+_VIRTUAL_FMTS = {e.lstrip(".") for e in VIRTUAL_EXTS}
+SKIP_HINTS = {".zip": "zip 压缩包暂不索引(需解包后放入库目录)"}
+VIRT_TARGET = 500        # 每虚拟页目标字符数
+VIRT_MAX_PAGES = 400     # 虚拟页数硬顶(防御大 xlsx 等)
+
+# COM 单例(仅在 cmd_index 的 COM 串行阶段使用,严禁进线程池)
+_COM_CTX = None
 
 # 条文号: 行首 X.Y 或 X.Y.Z,后跟空白/行尾/汉字(GB 两层、JTG 三层、同行粘连、全角空格都兼容)
 CLAUSE_RE = re.compile(
@@ -136,6 +154,16 @@ def book_data_dir(cfg, b):
     return Path(cfg["data_dir"]) / Path(b.get("file") or "").parent / b["id"]
 
 
+def _src_abs(meta):
+    """源文件绝对路径: 新字段 source_abs 优先,回退旧字段 pdf_abs(兼容期)。"""
+    return meta.get("source_abs") or meta.get("pdf_abs")
+
+
+def _src_mtime(entry):
+    """源文件 mtime: source_mtime 优先,回退 pdf_mtime(兼容期)。"""
+    return entry.get("source_mtime") or entry.get("pdf_mtime")
+
+
 def load_shelf(data_dir):
     p = Path(data_dir) / "bookshelf.json"
     if not p.exists():
@@ -170,7 +198,7 @@ def find_book(shelf, key):
         return list(uniq.values())[0]
     if len(uniq) > 1:
         die(f"「{key}」匹配到多本书: {', '.join(uniq)} — 请用更精确的 id/规范号")
-    die(f"书架中找不到「{key}」。先 `python spec.py list` 看书架,新书先 `spec.py index <pdf>`")
+    die(f"书架中找不到「{key}」。先 `python spec.py list` 看书架,新书先 `spec.py index <文件>`")
 
 
 def norm_no(s):
@@ -215,14 +243,58 @@ def make_book_id(seq, title, std_no):
     return '-'.join(p for p in parts if p)
 
 
-def _rel_pdf(pdf_path, cfg):
-    """PDF 相对 library_dir 的路径(正斜杠),支持多层文件夹。"""
+def _rel_source(src_path, cfg):
+    """源文件相对 library_dir 的路径(正斜杠),支持多层文件夹。"""
     lib = Path(cfg["library_dir"]).resolve()
-    p = pdf_path.resolve()
+    p = src_path.resolve()
     try:
         return p.relative_to(lib).as_posix()
     except ValueError:
-        return pdf_path.name
+        return src_path.name
+
+
+def _is_zip(path):
+    """魔数检测: 文件是否为 ZIP(PK 头;xlsx/docx 必须,doc/xls 若是则多为改名文件)。"""
+    try:
+        with open(path, "rb") as f:
+            return f.read(2) == b"PK"
+    except OSError:
+        return False
+
+
+def _short_id(base):
+    """book_id 超长截断(60+sha1): 目录内附件文件名 = 完整标题,与父目录名叠加
+    超 Windows 路径上限;截断后 id 不再等于文件名,但 find_book 按 file 字段仍可匹配。"""
+    if len(base) <= 80:
+        return base
+    import hashlib
+    return base[:60] + "_" + hashlib.sha1(base.encode("utf-8")).hexdigest()[:8]
+
+
+def scan_library(lib_dir):
+    """收集库目录所有可索引文件 → (indexable: {rel: abs}, hints: [(name, 原因)])。
+    index --all 与 status 共用,保证扩展名口径一致;zip/无扩展名等只提示不索引。"""
+    lib = Path(lib_dir).resolve()
+    indexable, hints = {}, []
+    for p in lib.rglob("*"):
+        try:
+            if not p.is_file():
+                continue
+        except OSError:
+            hints.append((p.name, "超长文件名无法读取,跳过"))
+            continue
+        ext = p.suffix.lower()
+        try:
+            rel = p.relative_to(lib).as_posix()
+        except ValueError:
+            rel = p.name
+        if ext in INDEXABLE_EXTS:
+            indexable[rel] = str(p)
+        elif ext in SKIP_HINTS:
+            hints.append((p.name, SKIP_HINTS[ext]))
+        elif not ext:
+            hints.append((p.name, "无扩展名,无法识别格式"))
+    return indexable, hints
 
 
 # ---------- 质量检测 ----------
@@ -309,6 +381,163 @@ def probe_pdf(pdf_path, chars):
 
 # ---------- 文本提取 / OCR ----------
 
+def probe_text(texts, chars):
+    """非 PDF 原生文本书的质量检测: 不做 OCR 分流(Office/OFD 提取即权威),
+    逐页统计作证据记录;全空文档由上层挂 low_confidence 提示。"""
+    stats = [page_stats(t, chars) for t in texts.values() if t]
+    body = [s for s in stats if s["n"] >= 20]
+    covs = [s["cov"] for s in body if s["cov"] is not None]
+    puncts = [s["punct"] for s in body if s["punct"] is not None]
+    return {"type": "text", "pages": len(texts), "rule": ["native-text"],
+            "cov_median": round(median(covs), 4) if covs else None,
+            "punct_median": round(median(puncts), 4) if puncts else None,
+            "empty_ratio": round(1 - len(body) / len(texts), 3) if texts else 1,
+            "bad_ratio": 0, "clause_hits": 0}
+
+
+def virtual_paginate(lines):
+    """非 PDF 文本书虚拟分页: 按段落累计 ~VIRT_TARGET 字符切页,段落不撕裂。
+    页数自适应(大文档 target 上调)+ VIRT_MAX_PAGES 硬顶,防章节文件爆炸。"""
+    if not lines:
+        return [""]
+    total = sum(len(ln) for ln in lines)
+    target = max(VIRT_TARGET, math.ceil(total / 300))
+    pages, cur, n = [], [], 0
+    for ln in lines:
+        if cur and n + len(ln) > target:
+            pages.append("\n".join(cur))
+            cur, n = [], 0
+        cur.append(ln)
+        n += len(ln) + 1
+    if cur:
+        pages.append("\n".join(cur))
+    if len(pages) > VIRT_MAX_PAGES:
+        pages = pages[:VIRT_MAX_PAGES - 1] + ["\n".join(pages[VIRT_MAX_PAGES - 1:])]
+    return pages
+
+
+def extract_docx(path):
+    """docx → 文本行: 段落+表格按文档体顺序保序,页眉/页脚(红头单位名)前置。"""
+    from docx import Document
+    from docx.table import Table
+    from docx.text.paragraph import Paragraph
+    doc = Document(path)
+    rows = []
+
+    def _collect_header_footer():
+        hf = []
+        for sect in doc.sections:
+            for p in list(sect.header.paragraphs) + list(sect.footer.paragraphs):
+                t = p.text.strip()
+                if (t and t not in hf and len(t) <= 40
+                        and not re.fullmatch(r'[\s\d\-—第页共]*', t)):
+                    hf.append(t)
+        return hf
+
+    rows.extend(_collect_header_footer())
+
+    def _cell_text(cell):
+        parts = [x.text.strip() for x in cell.paragraphs if x.text.strip()]
+        return " ".join(parts)
+
+    def _iter_blocks(parent):
+        for child in parent.element.body.iterchildren():
+            if child.tag.endswith("}p"):
+                yield Paragraph(child, parent)
+            elif child.tag.endswith("}tbl"):
+                yield Table(child, parent)
+
+    for block in _iter_blocks(doc):
+        if isinstance(block, Paragraph):
+            t = block.text.strip()
+            if t:
+                rows.append(t)
+        else:
+            for r in block.rows:
+                cells = [_cell_text(c) for c in r.cells]
+                cells = [c for c in cells if c]
+                if cells:
+                    rows.append("\t".join(cells))
+    return rows
+
+
+def extract_xlsx(path):
+    """xlsx → 文本行: 每工作表一行【工作表 i:名称】标记 + 逐行 tab 连接。"""
+    from openpyxl import load_workbook
+    wb = load_workbook(path, data_only=True, read_only=True)
+    rows = []
+    for i, ws in enumerate(wb.worksheets, 1):
+        rows.append(f"【工作表 {i}:{ws.title}】")
+        for r in ws.iter_rows(values_only=True):
+            cells = [str(v).strip() for v in r if v is not None and str(v).strip()]
+            if cells:
+                rows.append("\t".join(cells))
+    wb.close()
+    return rows
+
+
+def extract_ofd(path):
+    """ofd → 页文本列表: 每物理页 1 项(Content.xml 的 TextCode 文本层)。
+    纯 Python(zipfile + ElementTree),不碰 COM。"""
+    import zipfile
+    import xml.etree.ElementTree as ET
+    OFD_TAG = "{http://www.ofdspec.org/2016}"
+    pages = []
+    with zipfile.ZipFile(path) as z:
+        page_files = sorted(
+            (n for n in z.namelist()
+             if re.search(r'/Page_\d+/Content\.xml$', n)),
+            key=lambda n: int(re.search(r'/Page_(\d+)/', n).group(1)))
+        for pn in page_files:
+            root = ET.fromstring(z.read(pn))
+            texts = []
+            for obj in root.iter(OFD_TAG + "TextObject"):
+                codes = [tc.text or "" for tc in obj.iter(OFD_TAG + "TextCode")]
+                t = "".join(codes).strip()
+                if t:
+                    texts.append(t)
+            pages.append("\n".join(texts))
+    if not pages:
+        pages = [""]
+    return pages
+
+
+def extract_txt(path):
+    """txt/md → 文本行(编码容错)。"""
+    return [ln.strip() for ln in path.read_text(encoding="utf-8", errors="replace")
+            .splitlines() if ln.strip()]
+
+
+def image_page_count(path):
+    """图片书页数: PNG=1,TIF/TIFF=帧数。"""
+    if path.suffix.lower() == ".png":
+        return 1
+    from PIL import Image
+    with Image.open(path) as im:
+        return max(1, getattr(im, "n_frames", 1))
+
+
+def _image_frame_bytes(path, frame):
+    """图片书第 frame 帧的 PNG 字节(PNG=整文件;TIF 逐帧经 Pillow 转 PNG)。"""
+    if path.suffix.lower() == ".png":
+        return path.read_bytes()
+    from PIL import Image
+    import io
+    with Image.open(path) as im:
+        im.seek(frame - 1)
+        buf = io.BytesIO()
+        im.convert("RGB").save(buf, format="PNG")
+        return buf.getvalue()
+
+
+def _write_extracted(book_dir, texts):
+    """非 PDF 书文本落盘 extracted/NNN.txt(read 查询读这里;OCR 图片书另有 ocr/)。"""
+    d = Path(book_dir) / "extracted"
+    d.mkdir(parents=True, exist_ok=True)
+    for p, t in texts.items():
+        (d / f"{p:03d}.txt").write_text(t, encoding="utf-8")
+
+
 def extract_text_pages(doc, book_dir, page_count):
     """text 书: 逐页提取(仅内存,不落盘 pages/),返回 {页: 文本}"""
     texts = {}
@@ -330,11 +559,12 @@ def run_tesseract(png_bytes, cfg):
     return r.returncode, r.stdout.decode("utf-8", errors="replace")
 
 
-def run_ocr_range(pdf_path, book_dir, cfg, start, end, force):
-    """整本批量 OCR: 300dpi 渲染 → tesseract stdin 管道 → ocr/NNN.txt。断点续跑。"""
+def run_ocr_pages(src, book_dir, cfg, start, end, force, fmt):
+    """整本批量 OCR: PDF 300dpi 渲染 / 图片书整图逐帧 → tesseract → ocr/NNN.txt。
+    断点续跑,写缓存跳过,--force 重跑。"""
     ocr_dir = Path(book_dir) / "ocr"
     ocr_dir.mkdir(parents=True, exist_ok=True)
-    doc = fitz.open(pdf_path)
+    doc = fitz.open(src) if fmt == "pdf" else None
     dpi = int(cfg.get("ocr_dpi", 300))
     mat = fitz.Matrix(dpi / 72, dpi / 72)
     done, failed = 0, []
@@ -343,11 +573,12 @@ def run_ocr_range(pdf_path, book_dir, cfg, start, end, force):
         out = ocr_dir / f"{p:03d}.txt"
         if out.exists() and not force:
             continue
-        pix = doc[p - 1].get_pixmap(matrix=mat)
+        png = (doc[p - 1].get_pixmap(matrix=mat).tobytes("png") if fmt == "pdf"
+               else _image_frame_bytes(src, p))
         ok = False
         for attempt in (1, 2):
             try:
-                rc, txt = run_tesseract(pix.tobytes("png"), cfg)
+                rc, txt = run_tesseract(png, cfg)
                 if rc == 0:
                     out.write_text(txt, encoding="utf-8")
                     ok = True
@@ -359,18 +590,165 @@ def run_ocr_range(pdf_path, book_dir, cfg, start, end, force):
         done += 1
         if done % 10 == 0:
             print(f"  ocr {done}/{total} ({100 * done // total}%)", flush=True)
-    doc.close()
+    if doc:
+        doc.close()
     return failed
 
 
-def _ocr_book(pdf_path, book_dir, cfg, pages, label):
+def _ocr_book(src, book_dir, cfg, pages, label, fmt):
     """整本 OCR + 读回文本(断点续跑:缓存跳过,--force 不重 OCR)。
-    返回 (failed_pages, texts)。index 的 OCR 分支与全文二次检测分支共用。"""
-    failed = run_ocr_range(pdf_path, book_dir, cfg, 1, pages, False)
+    返回 (failed_pages, texts)。PDF 与图片书共用。"""
+    failed = run_ocr_pages(src, book_dir, cfg, 1, pages, False, fmt)
     if failed:
         # label 带 [book_id] 前缀(--jobs 并行时失败日志可归属具体书)
         print(f"[{label}] OCR 失败 {len(failed)} 页: {failed[:10]}...", flush=True)
     return failed, load_book_texts(book_dir, pages, "ocr")
+
+
+class ComContext:
+    """COM 单例: 每 ProgID 一个 Application 多文档复用;连续失败重建;退出 QuitAll。
+    COM 是 apartment 线程模型,本类只在主线程/COM 串行阶段使用,严禁进线程池。"""
+
+    _PROGIDS = {"word": ("Word.Application", "docx"),
+                "excel": ("Excel.Application", "xlsx"),
+                "wps": ("kwps.Application", "docx"),
+                "et": ("ket.Application", "xlsx")}
+    _FMT_DOCX, _FMT_XLSX = 12, 51  # wdFormatXMLDocument / xlOpenXMLWorkbook
+
+    def __init__(self):
+        self._apps = {}
+        self._fails = Counter()
+        self._tmpdir = None
+        self._pre_pids = self._snapshot_pids()
+
+    def _get_app(self, kind):
+        app = self._apps.get(kind)
+        if app is not None:
+            return app
+        import pythoncom
+        import win32com.client
+        pythoncom.CoInitialize()
+        app = win32com.client.DispatchEx(self._PROGIDS[kind][0])
+        for attr in ("Visible",):
+            try:
+                setattr(app, attr, False)
+            except Exception:
+                pass
+        try:
+            app.DisplayAlerts = 0
+        except Exception:
+            pass
+        if kind in ("word", "wps"):  # 禁宏,防转换弹窗
+            try:
+                app.AutomationSecurity = 3
+            except Exception:
+                pass
+        self._apps[kind] = app
+        return app
+
+    def convert(self, src, kind):
+        """打开 → 另存临时 .docx/.xlsx → 返回临时文件路径。失败抛异常。"""
+        app = self._get_app(kind)
+        if self._tmpdir is None:
+            import tempfile
+            self._tmpdir = Path(tempfile.mkdtemp(prefix="spec_com_"))
+        import hashlib
+        name = src.stem[:60] + "_" + hashlib.sha1(str(src).encode("utf-8")).hexdigest()[:8]
+        dest = self._tmpdir / (name + "." + self._PROGIDS[kind][1])
+        try:
+            if kind in ("word", "wps"):
+                doc = app.Documents.Open(str(src), ReadOnly=True, AddToRecentFiles=False)
+                try:
+                    doc.SaveAs2(str(dest), FileFormat=self._FMT_DOCX)
+                except Exception:
+                    doc.SaveAs(str(dest), FileFormat=self._FMT_DOCX)
+                doc.Close(False)
+            else:
+                wb = app.Workbooks.Open(str(src), ReadOnly=True, UpdateLinks=0)
+                try:
+                    wb.SaveAs(str(dest), FileFormat=self._FMT_XLSX)
+                except Exception:
+                    wb.SaveAs(str(dest), FileFormat=self._FMT_XLSX)
+                wb.Close(False)
+            self._fails[kind] = 0
+            return dest
+        except Exception as e:
+            self._fails[kind] += 1
+            if self._fails[kind] >= 2:  # 连续失败 → 重建 Application(防状态污染连带后续)
+                self._quit(kind)
+            raise
+        finally:
+            pass
+
+    @staticmethod
+    def _snapshot_pids():
+        """当前 wps/pet 等套件进程 PID(Quit 后差分清理,避免误杀用户已开的 WPS)。"""
+        pids = set()
+        for name in ("wps.exe", "pet.exe", "et.exe", "wpp.exe"):
+            try:
+                r = subprocess.run(["tasklist", "/FI", f"IMAGENAME eq {name}",
+                                    "/FO", "CSV", "/NH"], capture_output=True,
+                                   text=True, timeout=30)
+                for ln in r.stdout.splitlines():
+                    m = re.match(r'^"([^"]+)","(\d+)"', ln.strip())
+                    if m:
+                        pids.add(int(m.group(2)))
+            except Exception:
+                pass
+        return pids
+
+    def _kill_leftover(self):
+        """Quit 后 WPS 套件常残留子进程(pet 等),清掉本次新建的(差分)。"""
+        for pid in sorted(self._snapshot_pids() - self._pre_pids):
+            try:
+                subprocess.run(["taskkill", "/PID", str(pid), "/F"],
+                               capture_output=True, timeout=30)
+            except Exception:
+                pass
+
+    def _quit(self, kind):
+        app = self._apps.pop(kind, None)
+        if app is not None:
+            try:
+                app.Quit()
+            except Exception:
+                pass
+
+    def quit_all(self):
+        for kind in list(self._apps):
+            self._quit(kind)
+        self._kill_leftover()
+        if self._tmpdir is not None:
+            import shutil
+            shutil.rmtree(self._tmpdir, ignore_errors=True)
+            self._tmpdir = None
+
+
+def extract_word_com(src, cfg, com):
+    """doc/wps → COM 另存临时 docx → extract_docx(单一解析路径,表格结构保留)。
+    MS Office 拒绝打开时跨应用用 WPS 兜底(部分损坏/老格式文档 Office 拒开而 WPS 能开)。"""
+    kind = "word" if src.suffix.lower() == ".doc" else "wps"
+    try:
+        tmp = com.convert(src, kind)
+    except Exception:
+        if kind != "wps":
+            tmp = com.convert(src, "wps")
+        else:
+            raise
+    return extract_docx(tmp)
+
+
+def extract_excel_com(src, cfg, com):
+    """xls/et → COM 另存临时 xlsx → extract_xlsx。Excel 拒绝时 WPS 表格(ket)兜底。"""
+    kind = "excel" if src.suffix.lower() == ".xls" else "et"
+    try:
+        tmp = com.convert(src, kind)
+    except Exception:
+        if kind != "et":
+            tmp = com.convert(src, "et")
+        else:
+            raise
+    return extract_xlsx(tmp)
 
 
 def load_book_texts(book_dir, page_count, kind):
@@ -753,11 +1131,15 @@ def clause_range(chapters, i, idx_rows):
 
 def write_toc_md(book_dir, meta, chapters):
     offset = meta.get("offset")
+    virtual = meta.get("virtual")
+    col = "页" if virtual else "PDF 页"
     lines = [f"# {meta.get('title')}({meta.get('std_no')}) 目录", ""]
     if offset:
         lines.append(f"> 页码说明: PDF 页 = 正文页 + {offset}(1-based);chapters 章文件内用【第 N 页】标 PDF 页")
+    if virtual:
+        lines.append("> 页码为虚拟页(按 ~500 字符切分,非原文档页码),read 页码同义")
     lines.append("")
-    lines.append("| 序号 | 章 | 标题 | PDF 页 | 正文页 | 章文件 |")
+    lines.append(f"| 序号 | 章 | 标题 | {col} | 正文页 | 章文件 |")
     lines.append("|---|---|---|---|---|---|")
     for i, c in enumerate(chapters, 1):
         fname = f"chapters/ch{i:02d}-{slug_title(c['label'], c['title'])}.md"
@@ -885,24 +1267,50 @@ def cmd_index(args, cfg):
     Path(data_dir).mkdir(parents=True, exist_ok=True)
     shelf = load_shelf(data_dir)
     chars = load_chars(cfg["common_chars"])
+    only = {e.lower().lstrip(".") for e in (args.only or [])}
     if args.all:
-        pdfs = sorted(Path(cfg["library_dir"]).rglob("*.pdf"))
-        if not pdfs:
-            die(f"库目录没有 PDF: {cfg['library_dir']}")
+        files_map, _hints = scan_library(Path(cfg["library_dir"]))
+        if not files_map:
+            die(f"库目录没有支持的文件: {cfg['library_dir']}")
+        sources = [Path(v) for v in files_map.values()]
+        if only:
+            sources = [p for p in sources if p.suffix.lower().lstrip(".") in only]
     else:
-        pdfs = [Path(p) for p in args.pdfs]
-        for p in pdfs:
+        sources = [Path(p) for p in args.pdfs]
+        for p in sources:
             if not p.exists():
-                die(f"PDF 不存在: {p}")
-    if not pdfs:
-        die("请指定 PDF 路径,或用 --all 处理库目录全部 PDF")
-    print(f"待处理 {len(pdfs)} 本,并行度 {args.jobs}")
+                die(f"文件不存在: {p}")
+        if only:
+            sources = [p for p in sources if p.suffix.lower().lstrip(".") in only]
+    if not sources:
+        die("请指定源文件路径,或用 --all 处理库目录全部支持的文件")
+    print(f"待处理 {len(sources)} 个文件,并行度 {args.jobs}")
+    global _COM_CTX
+    _COM_CTX = ComContext()
+
+    def _needs_com(p):
+        """魔数分流: xlsx/docx 非 zip(伪格式/加密)→ COM;doc/xls 是 zip(改名)→ 纯 Python。"""
+        fmt = p.suffix.lower().lstrip(".")
+        if fmt in ("docx", "xlsx") and not _is_zip(p):
+            return True
+        if fmt in ("doc", "xls") and _is_zip(p):
+            return False
+        return fmt in _COM_FMTS
+
     results = []
-    if args.jobs > 1 and len(pdfs) > 1:
+    pure = [p for p in sources if not _needs_com(p)]
+    com = [p for p in sources if _needs_com(p)]
+    # 纯 Python 格式进线程池;COM 格式串行(apartment 模型,严禁进线程池)
+    if args.jobs > 1 and len(pure) > 1:
         with ThreadPoolExecutor(max_workers=args.jobs) as ex:
-            results = list(ex.map(lambda p: _index_one(p, cfg, chars), pdfs))
+            results = list(ex.map(lambda p: _index_one(p, cfg, chars), pure))
     else:
-        results = [_index_one(p, cfg, chars) for p in pdfs]
+        results = [_index_one(p, cfg, chars) for p in pure]
+    for i, p in enumerate(com, 1):
+        print(f"[COM {i}/{len(com)} 串行] {p.name}", flush=True)
+        results.append(_index_one(p, cfg, chars))
+    _COM_CTX.quit_all()
+    _COM_CTX = None
     # 书架合并必须在单线程做(_index_one 并行时不写 bookshelf.json)
     shelf = load_shelf(data_dir)
     ok = skip = fail = 0
@@ -930,16 +1338,19 @@ def cmd_index(args, cfg):
         sys.exit(1)
 
 
-def _index_one(pdf_path, cfg, chars):
-    pdf_path = Path(pdf_path)
+def _index_one(src_path, cfg, chars):
+    src_path = Path(src_path)
     try:
         data_dir = cfg["data_dir"]
         shelf = load_shelf(data_dir)
-        title, std_no, version, seq = parse_filename(pdf_path.name)
-        mtime = datetime.fromtimestamp(pdf_path.stat().st_mtime).strftime("%Y-%m-%d %H:%M:%S")
-        # file 记录相对 library_dir 的路径(guifansrc 可多层文件夹),book_id = 源文件名去 .pdf
-        rel = _rel_pdf(pdf_path, cfg)
-        base_id = Path(rel).stem.rstrip(' .')  # 去尾空格/点(Windows 文件名尾空格不合法)
+        title, std_no, version, seq = parse_filename(src_path.name)
+        mtime = datetime.fromtimestamp(src_path.stat().st_mtime).strftime("%Y-%m-%d %H:%M:%S")
+        # file 记录相对 library_dir 的路径(guifansrc 可多层文件夹),book_id = 源文件名去扩展名
+        rel = _rel_source(src_path, cfg)
+        fmt = src_path.suffix.lower().lstrip(".") or "unknown"
+        if fmt not in {e.lstrip(".") for e in INDEXABLE_EXTS}:
+            return src_path, "fail", f"不支持的扩展名: .{fmt}(支持: {', '.join(sorted(INDEXABLE_EXTS))})", None
+        base_id = Path(rel).stem.rstrip(' .')  # 去尾空格/点(dup 碰撞检测用全名,截断见下)
         old = next((b for b in shelf["books"] if b["file"] == rel), None)
         if old:
             std_no = old.get("std_no") or std_no
@@ -953,72 +1364,132 @@ def _index_one(pdf_path, cfg, chars):
             if dup:
                 book_id = (Path(rel).parent.name + '-' + base_id
                            if Path(rel).parent.name != '.' else base_id)
-        if old and not cfg.get("force") and old.get("status") == "indexed" and old.get("pdf_mtime") == mtime:
+            # 新 id 才截断: dup 前缀与文件名叠加(父目录名+文件名)易超 Windows 路径上限;
+            # 旧 id(bookshelf 已登记)保持原样,防书架 id 与目录不一致
+            book_id = _short_id(book_id)
+        if old and not cfg.get("force") and old.get("status") == "indexed" and _src_mtime(old) == mtime:
             # 迁移 gap 防御: 书架已登记但新布局路径无索引数据(旧布局书永久不可达)。
             # 旧布局 data_dir/<book_id>/ 数据(含 OCR 缓存)存在 → 移到新路径复用,
             # 避免整本重 OCR;否则才重索引
             bdir_key = {"file": rel, "id": book_id}
             new_bd = Path(book_data_dir(cfg, bdir_key))
             if (new_bd / "meta.json").exists():
-                return pdf_path, "skip", f"已是最新索引(book_id={book_id})", None
+                return src_path, "skip", f"已是最新索引(book_id={book_id})", None
             old_bd = Path(data_dir) / book_id
             if old_bd.exists():
                 import shutil
                 shutil.move(str(old_bd), str(new_bd))
                 print(f"[{book_id}] 迁移旧布局数据 {old_bd} → {new_bd}", flush=True)
             print(f"[{book_id}] 书架已登记但新路径无索引数据,重索引", flush=True)
-        probe = probe_pdf(pdf_path, chars)
         # 索引数据目录与 guifansrc 结构一致: data_dir / 源文件相对父目录 / book_id
         book_dir = Path(book_data_dir(cfg, {"file": rel, "id": book_id}))
         book_dir.mkdir(parents=True, exist_ok=True)
-        doc = fitz.open(pdf_path)
-        pages = doc.page_count
+        # 按格式分派提取: pdf=现有全流程(probe→text/ocr);图片=整图 OCR;
+        # ofd=物理页文本层直取;其余=文本行→虚拟分页(COM 格式先另存 docx/xlsx)
+        pages = 0
+        probe = None
+        texts = {}
+        pages_dir = None
+        meta_ocr = {"failed_pages": [], "pages_done": 0}
+        note_low = ""
+        if fmt == "pdf":
+            probe = probe_pdf(src_path, chars)
+            doc = fitz.open(src_path)
+            pages = doc.page_count
+            if probe["type"] == "ocr":
+                print(f"[{book_id}] 扫描/乱码书,整本 OCR(共 {pages} 页)...", flush=True)
+                failed, texts = _ocr_book(src_path, book_dir, cfg, pages, book_id, "pdf")
+                meta_ocr = {"failed_pages": failed, "pages_done": pages - len(failed)}
+                pages_dir = "ocr"
+            else:
+                texts = extract_text_pages(doc, book_dir, pages)  # 文字书内存提取,不落盘
+                # 全文质量二次检测: probe 抽样可能漏判伪文字版(部分页 ToUnicode CMap 损坏,
+                # 提取为控制字符或 CJK 扩展区乱码,如 139/140;三项任一显著 → 转整本 OCR)
+                full = ''.join(texts.values())
+                nonws = [c for c in full if not c.isspace()]
+                cjk = [c for c in nonws if is_cjk(c)]
+                full_cov = len([c for c in cjk if c in chars]) / len(cjk) if cjk else 0
+                ext_ratio = len([c for c in cjk if not (0x4E00 <= ord(c) <= 0x9FFF)]) / len(cjk) if cjk else 0
+                ctrl_ratio = len([c for c in nonws if ord(c) < 32 or ord(c) == 0xFFFD]) / len(nonws) if nonws else 0
+                # 无 CJK 的书(管理文件/英文手册): 覆盖率恒 0,不得触发 OCR 判定;
+                # ctrl_ratio 独立于 cjk,控制字符泛滥仍转 OCR
+                if (cjk and (full_cov < 0.92 or ext_ratio > 0.15)) or (nonws and ctrl_ratio > 0.05):
+                    print(f"[{book_id}] 全文质量二次检测不过(覆盖率{full_cov:.3f}/扩展区{ext_ratio:.3f}/控制字符{ctrl_ratio:.3f}),转整本 OCR...", flush=True)
+                    probe = dict(probe, type="ocr", rule=probe.get("rule", []) + ["rescued-by-fulltext-check"])
+                    failed, texts = _ocr_book(src_path, book_dir, cfg, pages, book_id, "pdf")
+                    meta_ocr = {"failed_pages": failed, "pages_done": pages - len(failed)}
+                    pages_dir = "ocr"
+            doc.close()
+        elif fmt in _IMAGE_FMTS:
+            # 图片书: 每图/每帧 = 1 页,tesseract 整图 OCR(与 PDF OCR 书同构)
+            pages = image_page_count(src_path)
+            probe = {"type": "ocr", "pages": pages, "rule": ["image-source"],
+                     "cov_median": None, "punct_median": None,
+                     "empty_ratio": 1, "bad_ratio": 1, "clause_hits": 0}
+            print(f"[{book_id}] 图片书,整本 OCR(共 {pages} 页)...", flush=True)
+            failed, texts = _ocr_book(src_path, book_dir, cfg, pages, book_id, fmt)
+            meta_ocr = {"failed_pages": failed, "pages_done": pages - len(failed)}
+            pages_dir = "ocr"
+        elif fmt == "ofd":
+            # OFD 有物理页: Content.xml 文本层直取(纯 Python),不虚拟分页
+            page_texts = extract_ofd(src_path)
+            pages = len(page_texts)
+            texts = {i + 1: t for i, t in enumerate(page_texts)}
+            probe = probe_text(texts, chars)
+            pages_dir = "extracted"
+            _write_extracted(book_dir, texts)
+        else:
+            # 虚拟分页文本书(含 COM 转换): 行列表 → 虚拟页 → 落盘 extracted/
+            if fmt == "docx":
+                rows = extract_docx(src_path) if _is_zip(src_path) \
+                    else extract_word_com(src_path, cfg, _COM_CTX)
+            elif fmt == "xlsx":
+                rows = extract_xlsx(src_path) if _is_zip(src_path) \
+                    else extract_excel_com(src_path, cfg, _COM_CTX)
+            elif fmt in ("txt", "md"):
+                rows = extract_txt(src_path)
+            elif fmt in _COM_FMTS:
+                if fmt == "doc" and _is_zip(src_path):
+                    rows = extract_docx(src_path)   # 扩展名 .doc 实为 docx(改名文件)
+                elif fmt == "xls" and _is_zip(src_path):
+                    rows = extract_xlsx(src_path)   # 扩展名 .xls 实为 xlsx
+                else:
+                    rows = (extract_word_com(src_path, cfg, _COM_CTX)
+                            if fmt in ("doc", "wps") else extract_excel_com(src_path, cfg, _COM_CTX))
+            else:
+                return src_path, "fail", f"不支持的扩展名: .{fmt}", None
+            pages_text = virtual_paginate(rows)
+            pages = len(pages_text)
+            texts = {i + 1: t for i, t in enumerate(pages_text)}
+            probe = probe_text(texts, chars)
+            pages_dir = "extracted"
+            _write_extracted(book_dir, texts)
         meta = {
             "id": book_id, "title": title, "std_no": std_no, "version": version,
             # file 用相对 library_dir 路径,与书架条目一致(book_data_dir 的入参形态,
             # 防止未来 book_data_dir(cfg, meta) 解析到错误目录)
-            "file": rel, "pdf_abs": str(pdf_path), "pages": pages,
-            "type": probe["type"], "probe": probe,
-            "pdf_mtime": mtime, "indexed_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "file": rel, "source_abs": str(src_path), "pdf_abs": str(src_path),
+            "pages": pages, "type": probe["type"], "probe": probe,
+            "source_mtime": mtime, "pdf_mtime": mtime,  # 双写兼容期
+            "fmt": fmt, "virtual": fmt in _VIRTUAL_FMTS,
+            "pages_dir": pages_dir, "ocr": meta_ocr,
+            "indexed_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         }
-        if probe["type"] == "ocr":
-            print(f"[{book_id}] 扫描/乱码书,整本 OCR(共 {pages} 页)...", flush=True)
-            failed, texts = _ocr_book(pdf_path, book_dir, cfg, pages, book_id)
-            meta["ocr"] = {"failed_pages": failed, "pages_done": pages - len(failed)}
-        else:
-            texts = extract_text_pages(doc, book_dir, pages)  # 文字书内存提取,不落盘
-            # 全文质量二次检测: probe 抽样可能漏判伪文字版(部分页 ToUnicode CMap 损坏,
-            # 提取为控制字符或 CJK 扩展区乱码,如 139/140;三项任一显著 → 转整本 OCR)
-            full = ''.join(texts.values())
-            nonws = [c for c in full if not c.isspace()]
-            cjk = [c for c in nonws if is_cjk(c)]
-            full_cov = len([c for c in cjk if c in chars]) / len(cjk) if cjk else 0
-            ext_ratio = len([c for c in cjk if not (0x4E00 <= ord(c) <= 0x9FFF)]) / len(cjk) if cjk else 0
-            ctrl_ratio = len([c for c in nonws if ord(c) < 32 or ord(c) == 0xFFFD]) / len(nonws) if nonws else 0
-            # 无 CJK 的书(管理文件/英文手册): 覆盖率恒 0,不得触发 OCR 判定;
-            # ctrl_ratio 独立于 cjk,控制字符泛滥仍转 OCR
-            if (cjk and (full_cov < 0.92 or ext_ratio > 0.15)) or (nonws and ctrl_ratio > 0.05):
-                print(f"[{book_id}] 全文质量二次检测不过(覆盖率{full_cov:.3f}/扩展区{ext_ratio:.3f}/控制字符{ctrl_ratio:.3f}),转整本 OCR...", flush=True)
-                probe = dict(probe, type="ocr", rule=probe.get("rule", []) + ["rescued-by-fulltext-check"])
-                meta["type"] = "ocr"
-                meta["probe"] = probe
-                failed, texts = _ocr_book(pdf_path, book_dir, cfg, pages, book_id)
-                meta["ocr"] = {"failed_pages": failed, "pages_done": pages - len(failed)}
-            else:
-                meta["ocr"] = {"failed_pages": [], "pages_done": 0}
+        if not any(t.strip() for t in texts.values()):
+            note_low = "文档无可提取文本(空/纯图)(low_confidence)"
+            meta["note"] = note_low
         missing = [p for p in range(1, pages + 1) if p not in texts]
         if missing:
             meta["status"] = "indexing"
             (book_dir / "meta.json").write_text(
                 json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
-            return pdf_path, "fail", f"缺 {len(missing)} 页文本,OCR/提取未完成,status=indexing,重跑 index 续跑", None
-        doc.close()
+            return src_path, "fail", f"缺 {len(missing)} 页文本,OCR/提取未完成,status=indexing,重跑 index 续跑", None
         # TOC 三路径
         toc_zone = find_toc_zone(texts, pages)
         zone_end = toc_zone[1]
         entries, offset, toc_source = None, None, None
-        if probe["type"] == "text":
-            d = fitz.open(pdf_path)
+        if probe["type"] == "text" and fmt == "pdf":
+            d = fitz.open(src_path)
             bm = toc_from_bookmarks(d)
             d.close()
             if bm:
@@ -1116,13 +1587,14 @@ def _index_one(pdf_path, cfg, chars):
             "status": "indexed", "toc_source": meta["toc_source"], "version": version,
             "alias": [], "replaces": [], "replaced_by": None,
             "ocr": meta["ocr"], "indexed_at": meta["indexed_at"],
-            "pdf_mtime": mtime, "probe": probe, "note": meta.get("note", ""),
+            "source_mtime": mtime, "pdf_mtime": mtime,  # 双写兼容期
+            "fmt": fmt, "probe": probe, "note": meta.get("note", ""),
         }
-        return pdf_path, "ok", (f"book_id={book_id} type={probe['type']} "
+        return src_path, "ok", (f"book_id={book_id} type={probe['type']} fmt={fmt} "
                                 f"toc={meta['toc_source']} 章数={len(chapters)} "
                                 f"条文数={len(idx_rows)}"), new_entry
     except Exception as e:
-        return pdf_path, "fail", str(e), None
+        return src_path, "fail", str(e), None
 
 
 def cmd_list(args, cfg):
@@ -1145,8 +1617,8 @@ def cmd_list(args, cfg):
         if meta_f.exists():
             cc = json.loads(meta_f.read_text(encoding="utf-8")).get("clause_count", "?")
         repl = f" →已由 {b['replaced_by']} 替代" if b.get("replaced_by") else ""
-        print(f"{b['id']}\t{b.get('std_no','')}\t{b['title']}\t{b['type']}\t{b['pages']}页"
-              f"\t{b['status']}\t{b.get('category') or '-'}\t条文{cc}{repl}")
+        print(f"{b['id']}\t{b.get('std_no','')}\t{b['title']}\t{b['type']}\t{b.get('fmt','pdf')}"
+              f"\t{b['pages']}页\t{b['status']}\t{b.get('category') or '-'}\t条文{cc}{repl}")
 
 
 def cmd_toc(args, cfg):
@@ -1227,28 +1699,36 @@ def cmd_read(args, cfg):
         meta_local = json.loads(meta_f.read_text(encoding="utf-8"))
     offset = meta_local.get("offset")
     is_ocr = b["type"] == "ocr"
-    # 定位源 PDF: meta 记录的绝对路径仍有效则优先(兼容库外索引的书),
-    # 否则按 file 字段/全库 rglob 查找; 仅文字书需要 PDF, OCR 书只读 ocr/ 缓存
-    pdf_abs = None
-    m = meta_local.get("pdf_abs")
+    virtual = meta_local.get("virtual")
+    # 文本来源分派: pages_dir=ocr(OCR 书/图片书) / extracted(非 PDF 文本落盘) /
+    # 缺省(PDF 文字书现场提取)
+    pages_dir = meta_local.get("pages_dir")
+    src_abs = None
+    m = _src_abs(meta_local)
     if m and Path(m).exists():
-        pdf_abs = m
-    elif not is_ocr:
-        pdf_abs = _find_pdf(cfg, b)   # 找不到时内部 die 报错
+        src_abs = m
+    elif not pages_dir and not is_ocr:
+        src_abs = _find_source(cfg, b)   # 找不到时内部 die 报错
     chars = load_chars(cfg["common_chars"])
-    doc = None if is_ocr else fitz.open(pdf_abs)
+    doc = None if (pages_dir or is_ocr) else fitz.open(src_abs)
     warn = False
     try:
         for p in range(args.page, end + 1):
-            if is_ocr:
+            if pages_dir == "ocr":
                 f = book_dir / "ocr" / f"{p:03d}.txt"
                 if not f.exists():
                     die(f"ocr/{p:03d}.txt 缺失 — OCR 未完成,先 `spec.py ocr {b['id']}` 或重跑 index")
                 t = f.read_text(encoding="utf-8")
+            elif pages_dir == "extracted":
+                f = book_dir / "extracted" / f"{p:03d}.txt"
+                if not f.exists():
+                    die(f"extracted/{p:03d}.txt 缺失 — 提取未完成,重跑 index")
+                t = f.read_text(encoding="utf-8")
             else:
-                t = doc[p - 1].get_text()  # 文字书现场提取,不落盘
+                t = doc[p - 1].get_text()  # PDF 文字书现场提取,不落盘
             printed = f"|正文页{p - offset}" if offset else ""
-            marker = f"【第 {p} 页{printed}】" + ("【OCR】" if is_ocr else "")
+            marker = f"【第 {p} 页{printed}】" + ("【OCR】" if is_ocr else "") \
+                + ("【虚拟页】" if virtual else "")
             print(f"===== {marker} =====")
             print(t.strip())
             # 质量自检: 疑似乱码页提示勿引用
@@ -1262,14 +1742,14 @@ def cmd_read(args, cfg):
         print("[警告] 部分页疑似乱码,勿作为原文引用,建议 `spec.py ocr` 该页")
 
 
-def _find_pdf(cfg, b):
+def _find_source(cfg, b):
     p = Path(cfg["library_dir"]) / b["file"]
     if p.exists():
         return str(p)
     # 兼容旧记录(纯文件名,无子目录)
     for q in Path(cfg["library_dir"]).rglob(b["file"]):
         return str(q)
-    die(f"库目录中找不到源 PDF: {b['file']}")
+    die(f"库目录中找不到源文件: {b['file']}")
 
 
 def cmd_grep(args, cfg):
@@ -1320,7 +1800,10 @@ def cmd_grep(args, cfg):
 def cmd_ocr(args, cfg):
     shelf = load_shelf(cfg["data_dir"])
     b = find_book(shelf, args.book)
-    pdf = _find_pdf(cfg, b)
+    fmt = b.get("fmt", "pdf")
+    if fmt not in ("pdf",) and fmt not in _IMAGE_FMTS:
+        die(f"本书为文字格式(fmt={fmt}),无 OCR 需求")
+    src = _find_source(cfg, b)
     # 参数 clamp 到 [1, pages](防 fitz 越界报错);start>end 报错(防静默空跑)。
     # end 不做 max(1): 负端(--end -3)留给 start>end 守卫报错,不静默成第 1 页;
     # 显式 0 是 typo(--end 0 会 or 成全书)→ 报错而非静默整本 OCR
@@ -1331,7 +1814,7 @@ def cmd_ocr(args, cfg):
     if start > end:
         die(f"--start({start}) 大于 --end({end}),OCR 范围无效")
     print(f"OCR {b['id']} 第 {start}-{end} 页(共 {b['pages']} 页)...", flush=True)
-    failed = run_ocr_range(pdf, book_data_dir(cfg, b), cfg, start, end, args.force)
+    failed = run_ocr_pages(src, book_data_dir(cfg, b), cfg, start, end, args.force, fmt)
     if failed:
         print(f"失败 {len(failed)} 页: {failed}")
         sys.exit(1)
@@ -1341,22 +1824,21 @@ def cmd_ocr(args, cfg):
 def cmd_status(args, cfg):
     shelf = load_shelf(cfg["data_dir"])
     # 键用相对 library_dir 路径(guifansrc 可多层文件夹,同名文件不混淆)
-    lib = {p.relative_to(Path(cfg["library_dir"]).resolve()).as_posix(): str(p)
-           for p in Path(cfg["library_dir"]).rglob("*.pdf")}
+    lib, hints = scan_library(Path(cfg["library_dir"]))
     books = shelf.get("books", [])
     indexed_names = {b["file"] for b in books}
-    new_pdfs = sorted(set(lib) - indexed_names)
+    new_sources = sorted(set(lib) - indexed_names)
     missing = [b for b in books if b["file"] not in lib]
-    # 疑似换版: 新 PDF 归一化名与已索引书名相同
+    # 疑似换版: 新文件归一化名与已索引书名相同
     def norm_name(x):
         x = re.sub(r'[（(][^（）()]*[）)]', '', x)
         x = re.sub(r'[\s.+—\-_]', '', x.lower())
         return re.sub(r'\d{4}', '', x)
     title_map = {norm_name(b["title"] + b.get("std_no", "")): b["id"] for b in books}
     print("== 库一致性检查 ==")
-    if not new_pdfs and not missing:
+    if not new_sources and not missing:
         print("一致: 库目录与书架索引同步")
-    for n in new_pdfs:
+    for n in new_sources:
         hint = ""
         key = norm_name(Path(n).stem)
         for tk, bid in title_map.items():
@@ -1365,7 +1847,9 @@ def cmd_status(args, cfg):
                 break
         print(f"[新增] {n} 未建索引 → `spec.py index \"{lib[n]}\"{hint}")
     for b in missing:
-        print(f"[缺失] {b['id']}({b['file']}) 源 PDF 已不在库目录 → `spec.py remove {b['id']}` 清理")
+        print(f"[缺失] {b['id']}({b['file']}) 源文件已不在库目录 → `spec.py remove {b['id']}` 清理")
+    for name, why in hints:
+        print(f"[未索引] {name}({why})")
     print("")
     print("== 书架健康 ==")
     for b in books:
@@ -1376,8 +1860,9 @@ def cmd_status(args, cfg):
                       + list((book_data_dir(cfg, b) / "chapters").glob("*.txt")))
             ocr_failed = m.get("ocr", {}).get("failed_pages", [])
             repl = f" 已被 {b['replaced_by']} 替代" if b.get("replaced_by") else ""
-            print(f"{b['id']}\t{b['type']}\t{b['status']}\ttoc={m.get('toc_source')}\t"
-                  f"章文件={n_ch}\t条文={m.get('clause_count')}\tOCR失败页={len(ocr_failed)}{repl}")
+            print(f"{b['id']}\t{b['type']}\t{b['status']}\t{b.get('fmt', 'pdf')}\t"
+                  f"toc={m.get('toc_source')}\t章文件={n_ch}\t条文={m.get('clause_count')}\t"
+                  f"OCR失败页={len(ocr_failed)}{repl}")
         else:
             print(f"{b['id']}\t{b.get('type','?')}\t{b.get('status','?')}\t(无 meta.json)")
 
@@ -1404,13 +1889,13 @@ def cmd_remove(args, cfg):
 
 
 def cmd_update_chars(args, cfg):
-    """生成/刷新常用字表: 从干净文字版 PDF 统计字频,取前 3500 字。"""
+    """生成/刷新常用字表: 从干净文字版 PDF 统计字频,取前 3500 字(仅 PDF 参与)。"""
     pdfs = [Path(p) for p in (args.from_pdfs or [])]
     if not pdfs:
         shelf = load_shelf(cfg["data_dir"])
         for b in shelf.get("books", []):
-            if b.get("type") == "text":
-                p = b.get("pdf_abs") or _find_pdf(cfg, b)
+            if b.get("type") == "text" and b.get("fmt", "pdf") == "pdf":
+                p = _src_abs(b) or _find_source(cfg, b)
                 if Path(p).exists():
                     pdfs.append(Path(p))
     if not pdfs:
@@ -1439,10 +1924,15 @@ def build_parser():
     ap.add_argument("--config", help="config.json 路径(默认 skill 目录下)")
 
     p = sub.add_parser("index", help="加书/建索引: 质量检测→(OCR)→目录→切章→条文索引")
-    p.add_argument("pdfs", nargs="*", help="PDF 路径(多个)")
-    p.add_argument("--all", action="store_true", help="库目录全部 PDF(增量,已索引且未变则跳过)")
+    p.add_argument("pdfs", nargs="*",
+                   help="源文件路径(多个,支持 pdf/doc/docx/xls/xlsx/wps/et/ofd/png/tif/txt)")
+    p.add_argument("--all", action="store_true",
+                   help="库目录全部支持的文件(增量,已索引且未变则跳过)")
+    p.add_argument("--only", nargs="+", metavar="EXT",
+                   help="只处理指定扩展名(如 --only docx png,与 --all 或显式路径联用)")
     p.add_argument("--force", action="store_true", help="强制重建")
-    p.add_argument("--jobs", type=int, default=1, help="并行度(默认 1)")
+    p.add_argument("--jobs", type=int, default=1,
+                   help="并行度(默认 1;COM 转换格式 doc/xls/wps/et 固定串行)")
     p.set_defaults(func=cmd_index)
 
     p = sub.add_parser("list", help="读书架")
