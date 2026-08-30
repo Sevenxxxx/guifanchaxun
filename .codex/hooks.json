@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash scripts/claude-hooks/pre-commit-review.sh",
+            "timeout": 10,
+            "statusMessage": "提交前审查检查…"
+          }
+        ]
+      }
+    ]
+  }
+}

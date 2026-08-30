@@ -15,9 +15,12 @@
 import argparse
 import json
 import math
+import os
 import re
 import subprocess
 import sys
+import tempfile
+from contextlib import contextmanager
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
@@ -148,6 +151,46 @@ def load_config(args):
     return cfg
 
 
+def atomic_write_text(path, text, encoding="utf-8"):
+    """同目录临时文件 + replace，避免中断时留下截断的索引/书架文件。"""
+    p = Path(path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    tmp_name = None
+    try:
+        with tempfile.NamedTemporaryFile("w", encoding=encoding, dir=p.parent,
+                                         prefix=f".{p.name}.", suffix=".tmp",
+                                         delete=False) as f:
+            tmp_name = f.name
+            f.write(text)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp_name, p)
+    finally:
+        if tmp_name and os.path.exists(tmp_name):
+            os.unlink(tmp_name)
+
+
+@contextmanager
+def library_lock(data_dir):
+    """同一索引库只允许一个维护命令写入，防止并发进程互相覆盖书架。"""
+    root = Path(data_dir)
+    root.mkdir(parents=True, exist_ok=True)
+    lock = root / ".spec.lock"
+    try:
+        fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+    except FileExistsError:
+        die(f"索引库正在被另一维护命令使用: {lock}。确认无运行任务后删除该锁文件再重试")
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            f.write(f"pid={os.getpid()}\n")
+        yield
+    finally:
+        try:
+            lock.unlink()
+        except FileNotFoundError:
+            pass
+
+
 def book_data_dir(cfg, b):
     """索引数据目录 = data_dir / 源文件相对父目录 / book_id(与 guifansrc 目录结构一致)。
     gonglu/xxx.pdf → library_data/gonglu/<book_id>/;根目录书 → library_data/<book_id>/"""
@@ -164,6 +207,21 @@ def _src_mtime(entry):
     return entry.get("source_mtime") or entry.get("pdf_mtime")
 
 
+def source_signature(path):
+    """增量索引的源文件指纹；纳秒 mtime + 大小避免秒级时间戳漏检。"""
+    st = Path(path).stat()
+    return {"mtime_ns": st.st_mtime_ns, "size": st.st_size,
+            "display_mtime": datetime.fromtimestamp(st.st_mtime).strftime("%Y-%m-%d %H:%M:%S")}
+
+
+def entry_matches_source(entry, sig):
+    """兼容旧书架：旧记录仍按展示用 mtime 比较，新记录使用精确指纹。"""
+    if "source_mtime_ns" in entry or "source_size" in entry:
+        return (entry.get("source_mtime_ns") == sig["mtime_ns"]
+                and entry.get("source_size") == sig["size"])
+    return _src_mtime(entry) == sig["display_mtime"]
+
+
 def load_shelf(data_dir):
     p = Path(data_dir) / "bookshelf.json"
     if not p.exists():
@@ -176,7 +234,7 @@ def load_shelf(data_dir):
 
 def save_shelf(data_dir, shelf):
     p = Path(data_dir) / "bookshelf.json"
-    p.write_text(json.dumps(shelf, ensure_ascii=False, indent=2), encoding="utf-8")
+    atomic_write_text(p, json.dumps(shelf, ensure_ascii=False, indent=2) + "\n")
 
 
 def find_book(shelf, key):
@@ -269,6 +327,43 @@ def _short_id(base):
         return base
     import hashlib
     return base[:60] + "_" + hashlib.sha1(base.encode("utf-8")).hexdigest()[:8]
+
+
+def _path_book_id(rel, base, used_ids):
+    """同名源文件的稳定 ID。父目录同名时仍由完整相对路径哈希保证唯一。"""
+    import hashlib
+    stem = f"{base}_{hashlib.sha1(rel.encode('utf-8')).hexdigest()[:10]}"
+    candidate = _short_id(stem)
+    # SHA1 前缀碰撞极罕见，但书架 ID 是主键，仍显式兜底。
+    n = 1
+    while candidate in used_ids:
+        candidate = _short_id(f"{stem}_{n}")
+        n += 1
+    return candidate
+
+
+def plan_book_ids(sources, cfg, shelf):
+    """在进入线程池前预分配 book_id，避免同一批同名文件互相覆盖。"""
+    existing_by_file = {b.get("file"): b for b in shelf.get("books", [])}
+    used_ids = {b.get("id") for b in shelf.get("books", []) if b.get("id")}
+    pending = []
+    for src in sources:
+        rel = _rel_source(Path(src), cfg)
+        if rel not in existing_by_file:
+            pending.append((rel, Path(rel).stem.rstrip(' .')))
+    counts = Counter(base for _, base in pending)
+    existing_stems = {Path(b.get("file") or "").stem.rstrip(' .')
+                      for b in shelf.get("books", [])}
+    plan = {rel: b["id"] for rel, b in existing_by_file.items() if b.get("id")}
+    for rel, base in sorted(pending):
+        # 独占文件保留易读的文件名 ID；只要出现同 stem(含后续新增)则使用路径哈希。
+        if counts[base] == 1 and base not in existing_stems and base not in used_ids:
+            book_id = base
+        else:
+            book_id = _path_book_id(rel, base, used_ids)
+        plan[rel] = book_id
+        used_ids.add(book_id)
+    return plan
 
 
 def scan_library(lib_dir):
@@ -535,7 +630,7 @@ def _write_extracted(book_dir, texts):
     d = Path(book_dir) / "extracted"
     d.mkdir(parents=True, exist_ok=True)
     for p, t in texts.items():
-        (d / f"{p:03d}.txt").write_text(t, encoding="utf-8")
+        atomic_write_text(d / f"{p:03d}.txt", t)
 
 
 def extract_text_pages(doc, book_dir, page_count):
@@ -580,7 +675,7 @@ def run_ocr_pages(src, book_dir, cfg, start, end, force, fmt):
             try:
                 rc, txt = run_tesseract(png, cfg)
                 if rc == 0:
-                    out.write_text(txt, encoding="utf-8")
+                    atomic_write_text(out, txt)
                     ok = True
                     break
             except Exception:
@@ -595,10 +690,10 @@ def run_ocr_pages(src, book_dir, cfg, start, end, force, fmt):
     return failed
 
 
-def _ocr_book(src, book_dir, cfg, pages, label, fmt):
+def _ocr_book(src, book_dir, cfg, pages, label, fmt, force=False):
     """整本 OCR + 读回文本(断点续跑:缓存跳过,--force 不重 OCR)。
     返回 (failed_pages, texts)。PDF 与图片书共用。"""
-    failed = run_ocr_pages(src, book_dir, cfg, 1, pages, False, fmt)
+    failed = run_ocr_pages(src, book_dir, cfg, 1, pages, force, fmt)
     if failed:
         # label 带 [book_id] 前缀(--jobs 并行时失败日志可归属具体书)
         print(f"[{label}] OCR 失败 {len(failed)} 页: {failed[:10]}...", flush=True)
@@ -1145,7 +1240,7 @@ def write_toc_md(book_dir, meta, chapters):
         fname = f"chapters/ch{i:02d}-{slug_title(c['label'], c['title'])}.md"
         printed = c["start"] - offset if offset else ''
         lines.append(f"| {i} | {c['label']} | {c['title']} | {c['start']} | {printed} | {fname} |")
-    (Path(book_dir) / "toc.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    atomic_write_text(Path(book_dir) / "toc.md", "\n".join(lines) + "\n")
 
 
 def write_chapters(book_dir, texts, meta, chapters, idx_rows):
@@ -1187,7 +1282,7 @@ def write_chapters(book_dir, texts, meta, chapters, idx_rows):
             # 否则 clause 直查命中而 grep 二次确认搜不到
             parts.append(t.strip().translate(FULLWIDTH_NORM))
             parts.append("")
-        (ch_dir / fname).write_text("\n".join(header) + "\n" + "\n".join(parts), encoding="utf-8")
+        atomic_write_text(ch_dir / fname, "\n".join(header) + "\n" + "\n".join(parts))
         written.append(fname)
     return written
 
@@ -1254,15 +1349,14 @@ def build_clauses(texts, meta, offset):
 
 
 def write_clauses(book_dir, rows):
-    with open(Path(book_dir) / "clauses.idx", "w", encoding="utf-8") as f:
-        f.write("条文号\tPDF页\t正文页\texpl\tocr\t低置信\t行首原文\n")
-        for r in rows:
-            f.write("\t".join(str(x) for x in r) + "\n")
+    lines = ["条文号\tPDF页\t正文页\texpl\tocr\t低置信\t行首原文"]
+    lines.extend("\t".join(str(x) for x in r) for r in rows)
+    atomic_write_text(Path(book_dir) / "clauses.idx", "\n".join(lines) + "\n")
 
 
 # ---------- 子命令 ----------
 
-def cmd_index(args, cfg):
+def _cmd_index(args, cfg):
     data_dir = cfg["data_dir"]
     Path(data_dir).mkdir(parents=True, exist_ok=True)
     shelf = load_shelf(data_dir)
@@ -1284,6 +1378,8 @@ def cmd_index(args, cfg):
             sources = [p for p in sources if p.suffix.lower().lstrip(".") in only]
     if not sources:
         die("请指定源文件路径,或用 --all 处理库目录全部支持的文件")
+    # 必须在并发前冻结分配；_index_one 只读此映射。
+    cfg["_book_ids"] = plan_book_ids(sources, cfg, shelf)
     print(f"待处理 {len(sources)} 个文件,并行度 {args.jobs}")
     global _COM_CTX
     _COM_CTX = ComContext()
@@ -1338,13 +1434,19 @@ def cmd_index(args, cfg):
         sys.exit(1)
 
 
+def cmd_index(args, cfg):
+    with library_lock(cfg["data_dir"]):
+        _cmd_index(args, cfg)
+
+
 def _index_one(src_path, cfg, chars):
     src_path = Path(src_path)
     try:
         data_dir = cfg["data_dir"]
         shelf = load_shelf(data_dir)
         title, std_no, version, seq = parse_filename(src_path.name)
-        mtime = datetime.fromtimestamp(src_path.stat().st_mtime).strftime("%Y-%m-%d %H:%M:%S")
+        sig = source_signature(src_path)
+        mtime = sig["display_mtime"]
         # file 记录相对 library_dir 的路径(guifansrc 可多层文件夹),book_id = 源文件名去扩展名
         rel = _rel_source(src_path, cfg)
         fmt = src_path.suffix.lower().lstrip(".") or "unknown"
@@ -1357,17 +1459,9 @@ def _index_one(src_path, cfg, chars):
             title = old.get("title") or title
             version = old.get("version") or version
         # book_id: 源文件名;与旧书架 id 兼容(迁移后 id=文件名);同 stem 不同路径时加父目录前缀
-        book_id = old["id"] if old else base_id
-        if not old:
-            dup = next((b for b in shelf["books"]
-                        if b["file"] != rel and Path(b["file"]).stem == base_id), None)
-            if dup:
-                book_id = (Path(rel).parent.name + '-' + base_id
-                           if Path(rel).parent.name != '.' else base_id)
-            # 新 id 才截断: dup 前缀与文件名叠加(父目录名+文件名)易超 Windows 路径上限;
-            # 旧 id(bookshelf 已登记)保持原样,防书架 id 与目录不一致
-            book_id = _short_id(book_id)
-        if old and not cfg.get("force") and old.get("status") == "indexed" and _src_mtime(old) == mtime:
+        book_id = cfg.get("_book_ids", {}).get(rel) or (old["id"] if old else _short_id(base_id))
+        source_changed = old is not None and not entry_matches_source(old, sig)
+        if old and not cfg.get("force") and old.get("status") == "indexed" and not source_changed:
             # 迁移 gap 防御: 书架已登记但新布局路径无索引数据(旧布局书永久不可达)。
             # 旧布局 data_dir/<book_id>/ 数据(含 OCR 缓存)存在 → 移到新路径复用,
             # 避免整本重 OCR;否则才重索引
@@ -1398,7 +1492,8 @@ def _index_one(src_path, cfg, chars):
             pages = doc.page_count
             if probe["type"] == "ocr":
                 print(f"[{book_id}] 扫描/乱码书,整本 OCR(共 {pages} 页)...", flush=True)
-                failed, texts = _ocr_book(src_path, book_dir, cfg, pages, book_id, "pdf")
+                failed, texts = _ocr_book(src_path, book_dir, cfg, pages, book_id, "pdf",
+                                           force=bool(cfg.get("force") or source_changed))
                 meta_ocr = {"failed_pages": failed, "pages_done": pages - len(failed)}
                 pages_dir = "ocr"
             else:
@@ -1416,7 +1511,8 @@ def _index_one(src_path, cfg, chars):
                 if (cjk and (full_cov < 0.92 or ext_ratio > 0.15)) or (nonws and ctrl_ratio > 0.05):
                     print(f"[{book_id}] 全文质量二次检测不过(覆盖率{full_cov:.3f}/扩展区{ext_ratio:.3f}/控制字符{ctrl_ratio:.3f}),转整本 OCR...", flush=True)
                     probe = dict(probe, type="ocr", rule=probe.get("rule", []) + ["rescued-by-fulltext-check"])
-                    failed, texts = _ocr_book(src_path, book_dir, cfg, pages, book_id, "pdf")
+                    failed, texts = _ocr_book(src_path, book_dir, cfg, pages, book_id, "pdf",
+                                               force=bool(cfg.get("force") or source_changed))
                     meta_ocr = {"failed_pages": failed, "pages_done": pages - len(failed)}
                     pages_dir = "ocr"
             doc.close()
@@ -1427,7 +1523,8 @@ def _index_one(src_path, cfg, chars):
                      "cov_median": None, "punct_median": None,
                      "empty_ratio": 1, "bad_ratio": 1, "clause_hits": 0}
             print(f"[{book_id}] 图片书,整本 OCR(共 {pages} 页)...", flush=True)
-            failed, texts = _ocr_book(src_path, book_dir, cfg, pages, book_id, fmt)
+            failed, texts = _ocr_book(src_path, book_dir, cfg, pages, book_id, fmt,
+                                       force=bool(cfg.get("force") or source_changed))
             meta_ocr = {"failed_pages": failed, "pages_done": pages - len(failed)}
             pages_dir = "ocr"
         elif fmt == "ofd":
@@ -1471,6 +1568,7 @@ def _index_one(src_path, cfg, chars):
             "file": rel, "source_abs": str(src_path), "pdf_abs": str(src_path),
             "pages": pages, "type": probe["type"], "probe": probe,
             "source_mtime": mtime, "pdf_mtime": mtime,  # 双写兼容期
+            "source_mtime_ns": sig["mtime_ns"], "source_size": sig["size"],
             "fmt": fmt, "virtual": fmt in _VIRTUAL_FMTS,
             "pages_dir": pages_dir, "ocr": meta_ocr,
             "indexed_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
@@ -1481,8 +1579,7 @@ def _index_one(src_path, cfg, chars):
         missing = [p for p in range(1, pages + 1) if p not in texts]
         if missing:
             meta["status"] = "indexing"
-            (book_dir / "meta.json").write_text(
-                json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
+            atomic_write_text(book_dir / "meta.json", json.dumps(meta, ensure_ascii=False, indent=2) + "\n")
             return src_path, "fail", f"缺 {len(missing)} 页文本,OCR/提取未完成,status=indexing,重跑 index 续跑", None
         # TOC 三路径
         toc_zone = find_toc_zone(texts, pages)
@@ -1578,8 +1675,7 @@ def _index_one(src_path, cfg, chars):
                                       for i, c in enumerate(chapters, 1)],
                      "clause_count": len(idx_rows),
                      "status": "indexed", "note": meta.get("note", "")})
-        (book_dir / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2),
-                                            encoding="utf-8")
+        atomic_write_text(book_dir / "meta.json", json.dumps(meta, ensure_ascii=False, indent=2) + "\n")
         # 更新书架(保留人工字段)
         new_entry = {
             "id": book_id, "title": title, "std_no": std_no, "file": rel,
@@ -1588,6 +1684,7 @@ def _index_one(src_path, cfg, chars):
             "alias": [], "replaces": [], "replaced_by": None,
             "ocr": meta["ocr"], "indexed_at": meta["indexed_at"],
             "source_mtime": mtime, "pdf_mtime": mtime,  # 双写兼容期
+            "source_mtime_ns": sig["mtime_ns"], "source_size": sig["size"],
             "fmt": fmt, "probe": probe, "note": meta.get("note", ""),
         }
         return src_path, "ok", (f"book_id={book_id} type={probe['type']} fmt={fmt} "
@@ -1829,6 +1926,15 @@ def cmd_status(args, cfg):
     indexed_names = {b["file"] for b in books}
     new_sources = sorted(set(lib) - indexed_names)
     missing = [b for b in books if b["file"] not in lib]
+    changed = []
+    for b in books:
+        src = lib.get(b.get("file"))
+        if src:
+            try:
+                if not entry_matches_source(b, source_signature(src)):
+                    changed.append((b, src))
+            except OSError as e:
+                print(f"[警告] 无法读取 {b['file']} 的文件属性: {e}")
     # 疑似换版: 新文件归一化名与已索引书名相同
     def norm_name(x):
         x = re.sub(r'[（(][^（）()]*[）)]', '', x)
@@ -1836,7 +1942,7 @@ def cmd_status(args, cfg):
         return re.sub(r'\d{4}', '', x)
     title_map = {norm_name(b["title"] + b.get("std_no", "")): b["id"] for b in books}
     print("== 库一致性检查 ==")
-    if not new_sources and not missing:
+    if not new_sources and not missing and not changed:
         print("一致: 库目录与书架索引同步")
     for n in new_sources:
         hint = ""
@@ -1848,6 +1954,8 @@ def cmd_status(args, cfg):
         print(f"[新增] {n} 未建索引 → `spec.py index \"{lib[n]}\"{hint}")
     for b in missing:
         print(f"[缺失] {b['id']}({b['file']}) 源文件已不在库目录 → `spec.py remove {b['id']}` 清理")
+    for b, src in changed:
+        print(f"[更新] {b['file']} 源文件已变更 → `spec.py index \"{src}\"`")
     for name, why in hints:
         print(f"[未索引] {name}({why})")
     print("")
@@ -1867,14 +1975,18 @@ def cmd_status(args, cfg):
             print(f"{b['id']}\t{b.get('type','?')}\t{b.get('status','?')}\t(无 meta.json)")
 
 
-def cmd_remove(args, cfg):
+def _cmd_remove(args, cfg):
     shelf = load_shelf(cfg["data_dir"])
     b = find_book(shelf, args.book)
     if args.mark_superseded:
+        if args.mark_superseded == b["id"]:
+            die("替代目标不能是该书自身")
+        tgt = next((x for x in shelf["books"] if x["id"] == args.mark_superseded), None)
+        if not tgt:
+            die(f"替代目标不存在: {args.mark_superseded}。请先 index 新版本，再标记替代关系")
         b["status"] = "superseded"
         b["replaced_by"] = args.mark_superseded
-        tgt = next((x for x in shelf["books"] if x["id"] == args.mark_superseded), None)
-        if tgt and b["id"] not in tgt.get("replaces", []):
+        if b["id"] not in tgt.get("replaces", []):
             tgt.setdefault("replaces", []).append(b["id"])
         save_shelf(cfg["data_dir"], shelf)
         print(f"{b['id']} 已标记为 superseded,由 {args.mark_superseded} 替代(索引保留,历史版本仍可查)")
@@ -1886,6 +1998,11 @@ def cmd_remove(args, cfg):
     shelf["books"] = [x for x in shelf["books"] if x["id"] != b["id"]]
     save_shelf(cfg["data_dir"], shelf)
     print(f"已删除 {b['id']} 的索引与书架登记(源 PDF 未动)")
+
+
+def cmd_remove(args, cfg):
+    with library_lock(cfg["data_dir"]):
+        _cmd_remove(args, cfg)
 
 
 def cmd_update_chars(args, cfg):
@@ -1912,8 +2029,7 @@ def cmd_update_chars(args, cfg):
     top = [ch for ch, _ in counts.most_common(3500)]
     out = SKILL_DIR / cfg["common_chars"]
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text("\n".join("".join(top[i:i + 50]) for i in range(0, len(top), 50)) + "\n",
-                   encoding="utf-8")
+    atomic_write_text(out, "\n".join("".join(top[i:i + 50]) for i in range(0, len(top), 50)) + "\n")
     print(f"常用字表已写入 {out}({len(top)} 字)")
 
 

@@ -56,9 +56,9 @@ guifanchaxun/
 
 **数据布局**(`library_data/<源文件相对父目录>/<book_id>/`,目录结构与 guifansrc 一致:`gonglu/` 子目录的书在 `library_data/gonglu/<book_id>/`,库根目录书在 `library_data/<book_id>/`):`meta.json`(元数据+probe 证据+chapter_list,含 fmt/virtual/pages_dir/source_abs 字段)、`toc.md`(章节索引表,查询导航核心)、`clauses.idx`(条文号→页码 TSV,含 expl/ocr/低置信标记)、`chapters/chNN-*.md`(分章全文,头部注释含页码/条文号范围,正文每页前有 `【第 N 页】`)、`ocr/NNN.txt`(仅 OCR 书:扫描 PDF/图片)、`extracted/NNN.txt`(仅非 PDF 文本书:Word/Excel/OFD 提取文本,虚拟页或物理页)。
 
-**book_id 规则**:`= 源文件名去扩展名`(如 `1.公路桥涵养护规范(JTG 5120-2021)`、`27.《城市桥梁设计规范》局部修订条文`),与 guifansrc 里的知识文件一一对应。**guifansrc 支持多层文件夹**:`file` 字段存相对 library_dir 的路径(`rglob` 递归收集,`status` 一致性检查用相对路径键避免同名混淆);同名不同路径时 book_id 加父目录前缀。**人工元数据优先**:`_index_one` 里若 bookshelf 已有同源文件条目,则 std_no/title/version/id 以书架为准(文件名没写编号的书,人工在 bookshelf.json 补 std_no 即可,如 6.公路隧道养护技术规范 的 std_no=JTG 5130—2026)。
+**book_id 规则**:`= 源文件名去扩展名`(如 `1.公路桥涵养护规范(JTG 5120-2021)`、`27.《城市桥梁设计规范》局部修订条文`),与 guifansrc 里的知识文件一一对应。**guifansrc 支持多层文件夹**:`file` 字段存相对 library_dir 的路径(`rglob` 递归收集,`status` 一致性检查用相对路径键避免同名混淆);同名不同路径时 book_id 加完整相对路径的稳定哈希后缀(父目录重名也不会碰撞)。**人工元数据优先**:`_index_one` 里若 bookshelf 已有同源文件条目,则 std_no/title/version/id 以书架为准(文件名没写编号的书,人工在 bookshelf.json 补 std_no 即可,如 6.公路隧道养护技术规范 的 std_no=JTG 5130—2026)。
 
-**页模型**:PDF/OFD/图片书 = 物理页;Word/Excel/txt 等无物理页的文档按段落累计 ~500 字符切**虚拟页**(段落不撕裂,上限 400 页),meta 里 `virtual=true`,toc.md 表头"页"而非"PDF 页",`read` 输出带【虚拟页】标记。**read 分派**:`pages_dir=ocr` 读 ocr/NNN.txt、`pages_dir=extracted` 读 extracted/NNN.txt、缺省(PDF 文字书)现场 fitz 提取。**字段兼容**:meta/bookshelf 双写 source_abs/source_mtime 与旧 pdf_abs/pdf_mtime,读取一律新字段优先、旧字段回退,重索引自然升级。
+**页模型**:PDF/OFD/图片书 = 物理页;Word/Excel/txt 等无物理页的文档按段落累计 ~500 字符切**虚拟页**(段落不撕裂,上限 400 页),meta 里 `virtual=true`,toc.md 表头"页"而非"PDF 页",`read` 输出带【虚拟页】标记。**read 分派**:`pages_dir=ocr` 读 ocr/NNN.txt、`pages_dir=extracted` 读 extracted/NNN.txt、缺省(PDF 文字书)现场 fitz 提取。**字段兼容**:meta/bookshelf 双写 source_abs/source_mtime 与旧 pdf_abs/pdf_mtime，并记录 `source_mtime_ns`+`source_size` 作精确增量判定；读取一律新字段优先、旧字段回退,重索引自然升级。
 
 ## 关键设计决策(改代码勿重蹈)
 
