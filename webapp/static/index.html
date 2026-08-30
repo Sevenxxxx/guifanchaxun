@@ -55,7 +55,15 @@
   .md blockquote { margin: .5em 0; padding-left: 1em; border-left: 3px solid var(--border); color: var(--muted); }
   .md hr { border: none; border-top: 1px solid var(--border); margin: .8em 0; }
   .md a { color: var(--accent); }
-  .msg .role { font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+  .msg .role { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+  .role .who { color: var(--muted); }
+  .role .status { margin-left: 8px; color: var(--accent); }
+  .copy-btn {
+    font-size: 12px; padding: 2px 10px; border-radius: 5px; color: var(--muted);
+    background: transparent; border: 1px solid var(--border); line-height: 1.5;
+  }
+  .copy-btn:hover { color: var(--accent); border-color: var(--accent); }
+  .copy-btn.copied { color: #2e7d32; border-color: #2e7d32; }
   .cursor { display: inline-block; animation: blink 1s steps(2) infinite; color: var(--accent); }
   @keyframes blink { 50% { opacity: 0; } }
   .error-text { color: var(--err); }
@@ -141,10 +149,50 @@
       .replace(/javascript:/gi, '');
   }
 
+  // 复制到剪贴板(支持 http 非安全上下文:fallback 到 execCommand)
+  function copyToClipboard(text, btn) {
+    var done = function () {
+      var old = btn.textContent;
+      btn.textContent = '已复制';
+      btn.classList.add('copied');
+      setTimeout(function () { btn.textContent = old; btn.classList.remove('copied'); }, 1500);
+    };
+    var fallback = function () {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); done(); }
+      catch (e) { btn.textContent = '复制失败'; }
+      document.body.removeChild(ta);
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(done, fallback);
+    } else {
+      fallback();
+    }
+  }
+
+  function copyButton(getText) {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'copy-btn';
+    btn.textContent = '复制';
+    btn.addEventListener('click', function () {
+      copyToClipboard(getText() || '', btn);
+    });
+    return btn;
+  }
+
   function appendUser(text) {
     var wrap = document.createElement('div');
     wrap.className = 'msg user';
-    var role = document.createElement('div'); role.className = 'role'; role.textContent = '你';
+    var role = document.createElement('div'); role.className = 'role';
+    var who = document.createElement('span'); who.className = 'who'; who.textContent = '你';
+    role.appendChild(who);
+    role.appendChild(copyButton(function () { return text; }));
     var bubble = document.createElement('div'); bubble.className = 'bubble'; bubble.textContent = text;
     wrap.appendChild(role); wrap.appendChild(bubble);
     chatEl.appendChild(wrap);
@@ -156,10 +204,14 @@
     var wrap = document.createElement('div');
     wrap.className = 'msg assistant';
 
+    var rawText = '';
     var role = document.createElement('div'); role.className = 'role';
-    var statusSpan = document.createElement('span'); statusSpan.style.marginLeft = '8px'; statusSpan.style.color = '#1a6fff';
-    role.appendChild(document.createTextNode('规范查询 Agent'));
-    role.appendChild(statusSpan);
+    var who = document.createElement('span'); who.className = 'who';
+    who.appendChild(document.createTextNode('规范查询 Agent'));
+    var statusSpan = document.createElement('span'); statusSpan.className = 'status';
+    who.appendChild(statusSpan);
+    role.appendChild(who);
+    role.appendChild(copyButton(function () { return rawText || textSpan.textContent; }));
 
     var bubble = document.createElement('div'); bubble.className = 'bubble';
     var textSpan = document.createElement('span'); textSpan.className = 'stream-text md';
@@ -185,6 +237,7 @@
       finished: false,
       setStatus: function (text) { statusSpan.textContent = text; },
       setText: function (text) {
+        rawText = text;
         textSpan.innerHTML = renderMd(text);
         bubble.classList.remove('error-text');
         scrollBottom();
