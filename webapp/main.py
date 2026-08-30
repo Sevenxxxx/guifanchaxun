@@ -62,13 +62,19 @@ async def chat(req: ChatRequest) -> StreamingResponse:
 
     def emit(event: dict) -> None:
         # 从 SDK 读取线程回调 -> 投递到事件循环队列,保证 SSE 顺序
-        loop.call_soon_threadsafe(queue.put_nowait, event)
+        try:
+            loop.call_soon_threadsafe(queue.put_nowait, event)
+        except RuntimeError:
+            pass  # 事件循环已关闭(进程退出):丢弃后续事件,避免杀死 SDK 读取线程
 
     async def runner():
         try:
             return await asyncio.to_thread(service.run_turn, req.session_id, req.message, emit)
         finally:
-            loop.call_soon_threadsafe(queue.put_nowait, _SENTINEL)
+            try:
+                loop.call_soon_threadsafe(queue.put_nowait, _SENTINEL)
+            except RuntimeError:
+                pass
 
     # 在创建自己的 runner 之前判定:若此刻已有别的轮次在跑 → 真排队
     initial_status = "queued" if service.busy else "starting"
@@ -87,7 +93,7 @@ async def chat(req: ChatRequest) -> StreamingResponse:
             yield _sse(kind, event)
         try:
             result = await task
-        except BaseException as exc:  # noqa: BLE001 —— 把运行时/协议错误透给前端
+        except Exception as exc:  # noqa: BLE001 —— 把运行时/协议错误透给前端(CancelledError 不在此列,自然传播)
             message = str(exc) or type(exc).__name__
             service.last_error = message
             if isinstance(exc, DshTurnError) and exc.is_collision:

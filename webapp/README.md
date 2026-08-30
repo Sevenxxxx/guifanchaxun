@@ -65,7 +65,7 @@ error/turn 事件，诊断用）。
 |---|---|---|
 | `DSH_CHECKOUT` | `C:\Users\Seven\Desktop\deepseek-harness` | 与 `dsh_launcher.cmd` 同步修改 |
 | `DSH_HOME` | `webapp/dsh-home` | 独立 home；被污染时删除该目录重跑 setup |
-| `GFC_MODEL` | `deepseek-v4-pro` | 环境变量可覆盖（provider/reasoning_effort 同理） |
+| `GFC_MODEL` | `deepseek-v4-flash` | 环境变量可覆盖（provider/reasoning_effort 同理） |
 | `GFC_PORT` | `8090` | 避开 DSH GUI 的 3080 |
 
 ## API

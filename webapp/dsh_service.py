@@ -12,6 +12,7 @@ from webapp import config
 # 零安装引入 checkout 内的官方 Python SDK(纯 Python,仅依赖已装好的 pydantic)
 sys.path.insert(0, str(config.DSH_CHECKOUT / "python" / "sdk" / "src"))
 from deepseek_harness import DeepSeekHarness  # noqa: E402
+from deepseek_harness.errors import TransportClosedError  # noqa: E402
 
 EventSink = Callable[[dict], None]
 
@@ -134,7 +135,8 @@ class DshService:
         """执行一轮对话(阻塞)。emit 从 SDK 读取线程回调,必须线程安全。"""
         with self._turn_lock:
             self.start()
-            assert self._harness is not None
+            if self._harness is None:
+                raise RuntimeError("DSH 运行时未初始化")
             session = self._harness.start_session(session_id)
 
             def on_notification(notification) -> None:
@@ -142,7 +144,13 @@ class DshService:
                 if event is not None:
                     emit(event)
 
-            result = session.run(message, on_notification=on_notification)
+            try:
+                result = session.run(message, on_notification=on_notification)
+            except TransportClosedError:
+                # 运行时子进程已死:丢弃实例,下一轮自动重启(避免卡死到 Web 重启)
+                self._harness = None
+                self._started = False
+                raise
             error_message = _turn_error_message(result)
             if error_message is not None:
                 raise DshTurnError(error_message, result.finish_reason)

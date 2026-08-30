@@ -182,6 +182,7 @@
 
     var activityCount = 0;
     return {
+      finished: false,
       setStatus: function (text) { statusSpan.textContent = text; },
       setText: function (text) {
         textSpan.innerHTML = renderMd(text);
@@ -241,15 +242,18 @@
       case 'done':
         bubble.setText(payload.final_response || '');
         bubble.finish();
+        bubble.finished = true;
         break;
       case 'session_reset':
         // 服务器重启导致旧会话失效:换新 id,由外层自动重发一次
         sessionId = newSessionId();
         if (ctx) ctx.needsRetry = true;
         bubble.addNotice('会话已在服务端失效(服务器重启),已自动开启新会话并重发');
+        bubble.finished = true;
         break;
       case 'error':
         bubble.showError(payload.message || '未知错误');
+        bubble.finished = true;
         break;
     }
   }
@@ -258,15 +262,24 @@
     var reader = body.getReader();
     var decoder = new TextDecoder();
     var buffer = '';
-    while (true) {
-      var step = await reader.read();
-      if (step.done) break;
-      buffer += decoder.decode(step.value, { stream: true });
+    function drain() {
       var idx;
       while ((idx = buffer.indexOf('\n\n')) >= 0) {
         handleFrame(buffer.slice(0, idx), bubble, ctx);
         buffer = buffer.slice(idx + 2);
       }
+    }
+    while (true) {
+      var step = await reader.read();
+      if (step.done) break;
+      buffer += decoder.decode(step.value, { stream: true });
+      drain();
+    }
+    buffer += decoder.decode(); // 流结束,flush 多字节残留
+    drain();
+    if (!bubble.finished) {
+      bubble.finish();
+      bubble.addNotice('连接中断,回复可能不完整');
     }
   }
 
