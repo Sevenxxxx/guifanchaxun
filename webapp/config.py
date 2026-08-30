@@ -11,10 +11,11 @@ DSH_CHECKOUT = Path(r"C:\Users\Seven\Desktop\deepseek-harness")  # 与 dsh_launc
 DSH_HOME = WEBAPP_DIR / "dsh-home"  # POC 独立 home:会话/凭据/设置与 GUI 隔离
 LAUNCHER = WEBAPP_DIR / "dsh_launcher.cmd"  # dsh CLI 启动包装
 
-# LLM 路由(默认与当前 GUI 会话一致)
+# LLM 路由(POC 默认 flash,更快更省;GUI 会话仍用 pro,互不影响)
 PROVIDER = os.environ.get("GFC_PROVIDER", "deepseek-official")
-MODEL = os.environ.get("GFC_MODEL", "deepseek-v4-pro")
-REASONING_EFFORT = os.environ.get("GFC_REASONING_EFFORT", "max")
+MODEL = os.environ.get("GFC_MODEL", "deepseek-v4-flash")
+# flash 默认不指定推理强度,保留模型自身默认;pro 可设 GFC_REASONING_EFFORT=max
+REASONING_EFFORT = os.environ.get("GFC_REASONING_EFFORT") or None
 
 # Web 服务(避开 GUI 的 3080)
 HOST = os.environ.get("GFC_HOST", "127.0.0.1")
