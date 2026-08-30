@@ -70,12 +70,14 @@ async def chat(req: ChatRequest) -> StreamingResponse:
         finally:
             loop.call_soon_threadsafe(queue.put_nowait, _SENTINEL)
 
+    # 在创建自己的 runner 之前判定:若此刻已有别的轮次在跑 → 真排队
+    initial_status = "queued" if service.busy else "starting"
     task = asyncio.create_task(runner())
     _background_tasks.add(task)
     task.add_done_callback(_background_tasks.discard)
 
     async def gen():
-        yield _sse("status", {"status": "queued"})
+        yield _sse("status", {"status": initial_status})
         while True:
             item = await queue.get()
             if item is _SENTINEL:

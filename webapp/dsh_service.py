@@ -106,6 +106,11 @@ class DshService:
     def started(self) -> bool:
         return self._started
 
+    @property
+    def busy(self) -> bool:
+        """是否有轮次正在运行(用于前端区分"启动中"与"真排队")。"""
+        return self._turn_lock.locked()
+
     def start(self) -> None:
         """懒启动运行时(幂等);阻塞至 initialize 握手完成。"""
         with self._init_lock:

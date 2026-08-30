@@ -72,7 +72,7 @@ error/turn 事件，诊断用）。
 
 - `GET /api/health` → `{ok, runtime_started, last_error, model}`
 - `POST /api/chat` body `{session_id, message}` → **SSE 流**，事件：
-  - `status` `{status: queued|running|idle}` —— 排队/思考/结束
+  - `status` `{status: starting|queued|running|idle}` —— 启动中/排队(前一轮未完成)/思考/结束
   - `text` `{text}` —— 当前 assistant 回复全文**替换**（流式增量渲染）
   - `activity` `{type, summary}` —— 工具/skill 调用等活动（`tool/result`、`tool/executing`、`subagent.*`…）
   - `done` `{finish_reason, final_response}`

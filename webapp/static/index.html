@@ -228,7 +228,8 @@
     try { payload = JSON.parse(data); } catch (e) { return; }
     switch (event) {
       case 'status':
-        bubble.setStatus(payload.status === 'queued' ? '排队中…'
+        bubble.setStatus(payload.status === 'queued' ? '排队中…(前一问未完成,请稍候)'
+          : payload.status === 'starting' ? '启动中…'
           : payload.status === 'running' ? 'Agent 思考中…' : '');
         break;
       case 'text':
