@@ -24,6 +24,26 @@ python -m webapp
 #    http://127.0.0.1:8090
 ```
 
+## 局域网 / Tailscale 访问（让其他电脑用浏览器打开）
+
+默认只绑本机 `127.0.0.1`。局域网或 Tailscale（tailnet）里的其他电脑要访问，两步：
+
+1. **放行防火墙**（管理员 PowerShell 执行；只对 tailnet 与局域网 192.168.1.0/24 放行 8090）：
+   ```powershell
+   New-NetFirewallRule -DisplayName "DSH Web POC 8090" -Direction Inbound -Action Allow -Protocol TCP -LocalPort 8090 -Profile Any -RemoteAddress 100.64.0.0/10,192.168.1.0/24
+   ```
+2. **用 `webapp/start.ps1` 启动**（绑定 0.0.0.0）：
+   ```powershell
+   powershell -ExecutionPolicy Bypass -File webapp\start.ps1
+   ```
+
+其他电脑浏览器访问：
+- Tailscale：`http://100.85.0.30:8090`
+- 局域网：`http://192.168.1.9:8090`
+
+安全提示：POC 无鉴权。`0.0.0.0` 绑定 = 任何能到达该端口的网络都能用；想收窄可用
+`GFC_HOST` 只绑具体 IP（如 `100.85.0.30`），或把上面的 `RemoteAddress` 改小。
+
 验证问题示例：`JTG 5120-2021 对桥梁检查周期是怎么规定的？`
 展开回复下方的“活动日志”，应能看到 agent 调用 `guifan-chaxun` skill 并执行
 `spec.py list/toc/clause/grep/read` 等命令（经 pwsh 工具）。
