@@ -93,6 +93,17 @@ def _purge_dsh_session(session_id: str) -> None:
             shutil.rmtree(path, ignore_errors=True)
 
 
+def _evict_oldest_sessions() -> list[str]:
+    """超上限时淘汰最旧会话,返回被淘汰会话的 dsh_session_id(调用方按需清理持久化目录)。"""
+    evicted = []
+    while len(_convos) > config.SESSION_CAP:
+        oldest = min(_convos.values(), key=lambda c: c.last_used)
+        _convos.pop(oldest.token, None)
+        evicted.append(oldest.dsh_session_id)
+        _logger.info("session:evicted token=%s", oldest.token[:8])
+    return evicted
+
+
 async def _cleanup_loop() -> None:
     """每分钟:淘汰过期/超上限会话并清理其持久化目录与限流桶。"""
     while True:
@@ -105,11 +116,8 @@ async def _cleanup_loop() -> None:
                 _convos.pop(token, None)
                 await asyncio.to_thread(_purge_dsh_session, conv.dsh_session_id)
                 _logger.info("session:expired token=%s dsh=%s", token[:8], conv.dsh_session_id)
-        while len(_convos) > config.SESSION_CAP:
-            oldest = min(_convos.values(), key=lambda c: c.last_used)
-            _convos.pop(oldest.token, None)
-            await asyncio.to_thread(_purge_dsh_session, oldest.dsh_session_id)
-            _logger.info("session:evicted token=%s", oldest.token[:8])
+        for sid in _evict_oldest_sessions():
+            await asyncio.to_thread(_purge_dsh_session, sid)
         for token in list(_rate_session):
             if token not in _convos:
                 _rate_session.pop(token, None)
@@ -152,9 +160,8 @@ async def new_session(request: Request) -> JSONResponse:
         last_used=time.time(),
     )
     _convos[token] = conv
-    while len(_convos) > config.SESSION_CAP:
-        oldest = min(_convos.values(), key=lambda c: c.last_used)
-        _convos.pop(oldest.token, None)
+    for sid in _evict_oldest_sessions():
+        await asyncio.to_thread(_purge_dsh_session, sid)
     ip = request.client.host if request.client else "?"
     _logger.info("session:new token=%s dsh=%s ip=%s", token[:8], conv.dsh_session_id, ip)
     return JSONResponse({"token": token})

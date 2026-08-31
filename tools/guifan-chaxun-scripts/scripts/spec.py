@@ -1988,7 +1988,13 @@ def cmd_set_page(args, cfg):
         meta = json.loads(mf.read_text(encoding="utf-8"))
     pages_dir = meta.get("pages_dir")
     if pages_dir not in ("ocr", "extracted"):
-        die("本书无落盘页文本(纯 PDF 文字书按需现场提取),不支持 set-page;仅 OCR 书/非 PDF 文本书可回写")
+        # 旧索引 meta 可能缺 pages_dir,但目录里已有落盘页文本;按目录推断
+        if (book_dir / "ocr").exists():
+            pages_dir = "ocr"
+        elif (book_dir / "extracted").exists():
+            pages_dir = "extracted"
+        else:
+            die("本书无落盘页文本(纯 PDF 文字书按需现场提取),不支持 set-page;仅 OCR 书/非 PDF 文本书可回写")
     page = args.page
     if page < 1 or page > b["pages"]:
         die(f"页码超界: 本书共 {b['pages']} 页")

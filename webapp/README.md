@@ -63,7 +63,7 @@ error/turn 事件，诊断用）。
 | `GFC_RATE_GLOBAL` / `GFC_RATE_SESSION` | `120` / `30` | 限流（次/分） |
 | `GFC_MAX_CONCURRENT` | `5` | **同时使用上限(人):超过直接拒绝 429,不排队** |
 | `GFC_SESSION_TTL` / `GFC_SESSION_CAP` | `24` / `100` | 会话闲置过期(小时)/活跃上限 |
-| `GFC_ACCESS_TOKEN` | 空（不启用） | 非空=启用访问口令（X-Access-Token 头） |
+| `GFC_ACCESS_TOKEN` | 空（不启用） | 非空=启用访问口令；访问方式见下（`?token=`/`?access=`） |
 
 提示词护栏：`webapp/sdk-guardrail.patch.yml`（经 SDK `patches=` 注入，防注入+不输出凭据）。
 审计日志：`webapp/logs/poc.log`。
@@ -130,7 +130,9 @@ error/turn 事件，诊断用）。
 - **读范围**：DSH 沙箱只管"写"，不限制"读"——agent 技术上可读工作区外文件；云上无个人数据 +
   护栏提示词（防注入、不输出凭据）为当前策略（选 A）。
 - 公网 + 无鉴权 + web 工具启用：陌生人可用你的 key（成本已被限流/超时/轮数/token 封顶），
-  建议启用 `GFC_ACCESS_TOKEN` 或安全组 IP 白名单。
+  建议启用 `GFC_ACCESS_TOKEN` 或安全组 IP 白名单。启用访问口令后，给同事一个带口令的入口：
+  `http://<服务器>:8090/?token=<口令>`（也可用 `?access=`）。前端会把它作为 `X-Access-Token`
+  头发给所有 API，并记入本地 localStorage；此后打开同源页面无需再带参数。
 
 ## 故障排查
 

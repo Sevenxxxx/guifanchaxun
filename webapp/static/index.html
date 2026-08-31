@@ -70,11 +70,6 @@
   @keyframes blink { 50% { opacity: 0; } }
   .error-text { color: var(--err); }
   .notice { font-size: 12px; color: #b7791f; margin-top: 6px; }
-  .queued-banner {
-    display: block; background: #fff7e6; border: 1px solid #f0c36d; color: #8a5a00;
-    border-radius: 6px; padding: 7px 10px; font-size: 13px; font-weight: 600;
-    margin-bottom: 8px; line-height: 1.5;
-  }
   details.activity {
     margin-top: 6px; max-width: 86%; font-size: 12.5px; color: var(--muted);
   }
@@ -129,8 +124,28 @@
   var sessionToken = null;
   var busy = false;
 
+  // 访问口令(可选):服务端 GFC_ACCESS_TOKEN 非空时启用。取 URL ?token= / ?access= 或
+  // localStorage 记忆,统一作为 X-Access-Token 头随每个 API 请求发送。
+  var _accessToken = null;
+  function getAccessToken() {
+    if (_accessToken === null) {
+      var sp = new URLSearchParams(location.search);
+      var t = sp.get('token') || sp.get('access') || localStorage.getItem('gfc_access_token') || '';
+      _accessToken = t;
+      if (t) { localStorage.setItem('gfc_access_token', t); }
+      else { localStorage.removeItem('gfc_access_token'); }
+    }
+    return _accessToken;
+  }
+  function authHeaders() {
+    var h = { 'Content-Type': 'application/json' };
+    var t = getAccessToken();
+    if (t) { h['X-Access-Token'] = t; }
+    return h;
+  }
+
   async function newSessionToken() {
-    var res = await fetch('/api/session', { method: 'POST' });
+    var res = await fetch('/api/session', { method: 'POST', headers: authHeaders() });
     if (!res.ok) {
       var detail = '';
       try { var j = await res.json(); detail = (j && j.detail) ? j.detail : ''; } catch (e) {}
@@ -146,13 +161,6 @@
   }
 
   function scrollBottom() { chatEl.scrollTop = chatEl.scrollHeight; }
-
-  function formatEta(seconds) {
-    if (!seconds || seconds <= 0) return '一会儿';
-    if (seconds < 60) return '约 ' + Math.round(seconds) + ' 秒';
-    var m = Math.round(seconds / 60);
-    return '约 ' + m + ' 分钟';
-  }
 
   function escapeHtml(s) {
     var d = document.createElement('div');
@@ -248,11 +256,9 @@
     var actions = makeActions(function () { return rawText || textSpan.textContent; });
 
     var bubble = document.createElement('div'); bubble.className = 'bubble';
-    var queuedBanner = document.createElement('div'); queuedBanner.className = 'queued-banner';
-    queuedBanner.style.display = 'none';
     var textSpan = document.createElement('span'); textSpan.className = 'stream-text md';
     var cursor = document.createElement('span'); cursor.className = 'cursor'; cursor.textContent = '▍';
-    bubble.appendChild(queuedBanner); bubble.appendChild(textSpan); bubble.appendChild(cursor);
+    bubble.appendChild(textSpan); bubble.appendChild(cursor);
 
     var details = document.createElement('details');
     details.className = 'activity';
@@ -272,13 +278,6 @@
     return {
       finished: false,
       setStatus: function (text) { statusSpan.textContent = text; },
-      showQueued: function (position, etaSeconds) {
-        queuedBanner.style.display = 'block';
-        queuedBanner.textContent = '⏳ 排队中:前有 ' + (position || 1) + ' 个问题,预计等待'
-          + formatEta(etaSeconds) + '。上一问完成后会自动开始,请勿关闭页面。';
-        scrollBottom();
-      },
-      hideQueued: function () { queuedBanner.style.display = 'none'; },
       setText: function (text) {
         rawText = text;
         textSpan.innerHTML = renderMd(text);
@@ -295,7 +294,6 @@
       },
       finish: function () {
         cursor.textContent = ''; statusSpan.textContent = '';
-        queuedBanner.style.display = 'none';
       },
       addNotice: function (text) {
         var n = document.createElement('div');
@@ -306,7 +304,6 @@
       showError: function (message) {
         cursor.textContent = '';
         statusSpan.textContent = '';
-        queuedBanner.style.display = 'none';
         textSpan.textContent = textSpan.textContent || '执行失败';
         var err = document.createElement('div');
         err.className = 'error-text';
@@ -329,14 +326,8 @@
     try { payload = JSON.parse(data); } catch (e) { return; }
     switch (event) {
       case 'status':
-        if (payload.status === 'queued') {
-          bubble.setStatus('排队中…');
-          bubble.showQueued(payload.position, payload.eta_seconds);
-        } else {
-          bubble.hideQueued();
-          bubble.setStatus(payload.status === 'starting' ? '启动中…'
-            : payload.status === 'running' ? 'Agent 思考中…' : '');
-        }
+        bubble.setStatus(payload.status === 'starting' ? '启动中…'
+          : payload.status === 'running' ? 'Agent 思考中…' : '');
         break;
       case 'text':
         bubble.setText(payload.text || '');
@@ -396,7 +387,7 @@
       var token = await ensureSessionToken();
       var res = await fetch('/api/chat', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: authHeaders(),
         body: JSON.stringify({ token: token, message: message })
       });
       if (!res.ok || !res.body) {
@@ -439,7 +430,7 @@
 
   async function checkHealth() {
     try {
-      var res = await fetch('/api/health');
+      var res = await fetch('/api/health', { headers: authHeaders() });
       var data = await res.json();
       healthEl.textContent = '运行时: ' + (data.runtime_started ? '已启动' : '未启动(首问时启动)')
         + ' · ' + data.model

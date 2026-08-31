@@ -1,8 +1,11 @@
 """护栏验收:对指定端口跑各类拒绝路径检查(不消耗 LLM)。
 
 用法:
-    python webapp\\api_guard_test.py --port 8109 --case badtoken|toolong|rate|queue|turns|all
-先按需设置服务端环境变量再启动(如 GFC_RATE_SESSION=0 / GFC_MAX_QUEUED=0 / GFC_MAX_TURNS=0)。
+    python webapp\\api_guard_test.py --port 8109 --case badtoken|toolong|rate|capacity|turns|all
+- badtoken/toolong:无需特殊配置,`all` 默认只跑这两个。
+- rate/capacity/turns:需服务端以对应环境变量单独启动再验证——
+    GFC_RATE_SESSION=0(限流) / GFC_MAX_CONCURRENT=0(容量已满) / GFC_MAX_TURNS=0(轮数上限)。
+  三者互斥,不能在一次启动里同时验证,故须逐个跑。
 """
 from __future__ import annotations
 
@@ -46,11 +49,6 @@ def case_rate(port: int) -> None:
     request(port, "POST", "/api/chat", {"token": token, "message": "你好"}, 429)
 
 
-def case_queue(port: int) -> None:
-    token = new_token(port)
-    request(port, "POST", "/api/chat", {"token": token, "message": "你好"}, 429)
-
-
 def case_turns(port: int) -> None:
     token = new_token(port)
     request(port, "POST", "/api/chat", {"token": token, "message": "你好"}, 429)
@@ -67,7 +65,11 @@ def main() -> None:
     ap.add_argument("--port", type=int, default=8109)
     ap.add_argument("--case", default="all", choices=["badtoken", "toolong", "rate", "capacity", "turns", "all"])
     args = ap.parse_args()
-    cases = [args.case] if args.case != "all" else ["badtoken", "toolong", "rate", "capacity", "turns"]
+    if args.case == "all":
+        print("注:rate/capacity/turns 需服务端以对应环境变量单独启动验证,故 all 只跑无需特殊配置的 badtoken/toolong。")
+        cases = ["badtoken", "toolong"]
+    else:
+        cases = [args.case]
     for case in cases:
         globals()[f"case_{case}"](args.port)
 
