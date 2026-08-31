@@ -10,7 +10,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 常用命令(开发/维护视角)
 
-skill 唯一程序是 `tools/guifan-chaxun-scripts/scripts/spec.py`(13 子命令:index/list/toc/clause/read/grep/ocr/status/remove/update-chars/img/recheck/set-page),依赖 pymupdf + tesseract(路径与语言包在 `config.json`):
+skill 唯一程序是 `tools/guifan-chaxun-scripts/scripts/spec.py`(14 子命令:index/list/toc/clause/read/grep/ocr/status/remove/update-chars/img/recheck/set-page/cleanup-orphans),依赖 pymupdf + tesseract(路径与语言包在 `config.json`):
 
 ```bash
 # 以下命令在 tools/guifan-chaxun-scripts/ 目录下执行(python scripts/spec.py ...);
@@ -19,6 +19,7 @@ skill 唯一程序是 `tools/guifan-chaxun-scripts/scripts/spec.py`(13 子命令
 # 维护态
 python scripts/spec.py index <文件...> | --all [--force] [--jobs N] [--only ext...]  # 加书/建索引(质量检测→[OCR]→目录→切章→条文索引)
 python scripts/spec.py status                                         # 库一致性检查(新书/失效/换版/未索引格式)+ 书架健康
+python scripts/spec.py cleanup-orphans [--yes]                        # 一致性清扫: 未登记孤儿目录+空目录+源文件缺失的登记书(缺省 dry-run)
 python scripts/spec.py ocr <book> [--start N] [--end N]               # 整本批量 OCR(断点续跑,index 内部也会调;图片书同构)
 python scripts/spec.py remove <book> [--mark-superseded <新id>]       # 删索引/登记,或标记被替代(不物理删)
 python scripts/spec.py update-chars --from-pdfs <干净文字版PDF...>    # 重建常用字表(乱码检测资源,新领域书先跑)
@@ -75,6 +76,8 @@ guifanchaxun/
 7. **章文件后缀 .md**:`write_chapters` 清理时兼容 `*.txt`+`*.md`;grep/status 的 glob 同兼容。toc.md 里章文件引用同步。
 8. **控制台/Windows**:路径含中文/全角括号必须引号;文件名首尾空格、全角破折号"—"是合法字符;`\xa0`/`\u3000` 是规范 PDF 的合法标题分隔符,正则字符类必须包含。
 9. **常见正则**:条文号 `^\d{1,2}\.\d{1,2}(?:\.\d{1,3})?(?=空白|汉字)`(排除裸数字行列项);章标题兼容同行/粘连/独立数字行三种排版。
+10. **library_data 残留 `status` 看不见,靠 `cleanup-orphans` 清**:`status` 只校验「登记↔源文件」「书目录↔登记」,不校验磁盘上多出来的残留目录。因此 `library_data` 里可能残留:有 `meta.json` 但 bookshelf 未登记的**孤儿目录**、**空目录**、有索引内容但无 `meta.json` 的**残废目录**、**编号错位的重复容器**——它们会让 `library_data` 该层顶层目录数多于 `guifansrc` 对应层顶层子项数,而 `status` 仍报"一致"。**对齐标准**:每层 `guifansrc/<顶层文件夹>` 的顶层子项数(一个子文件夹或一个源文件=1 项)== `library_data/<同层>` 顶层目录数;不等即有多余残留。**清理用 `spec.py cleanup-orphans`**(缺省 dry-run,加 `--yes` 才删),清三类:未登记孤儿目录、空目录、以及**源文件已从 guifansrc 缺失的登记书**(后者同时删书目录并从 bookshelf 移除登记,带 `library_lock`)。**原则**:源文件没了→library_data 对应书目录+数据不留(`remove`)。
+    注意:book_id 因同名不同路径/不同格式加了 `-标题`/`_hash` 后缀时,书目录名可能与源文件夹名不同(如库内 `37.250429…` 实为源文件夹 `27.250429…` 的去重容器),属正常去重,勿当残留误删。
 
 ## 扩展约定
 
@@ -88,3 +91,4 @@ guifanchaxun/
 - **git 操作需明确指示**:未经用户明确指示(如"保存/提交/上传/推送"等字样),不得执行 git commit / push 等版本控制操作;只修改代码并汇报结果,提交与否等用户发话。
 - 用户说"写进去/加个功能/改一下"时,默认只改文件、不动 git。
 - **每次保存版本(git commit)都必做 Code Review(用户约定)**:每次 git 保存版本(commit,含 push/上传)前,必须对本次将要提交的改动(暂存区 + 未暂存)做一遍代码审查,重点找 bug、安全隐患、逻辑错误、规范违反;发现问题先修复再提交。审查-修复循环**最多 2 轮**:每轮后若工作区已收敛(无新改动)即停止;2 轮仍未收敛则停下向用户报告,绝不无限循环。紧急跳过:仅当用户明确说"跳过审查/直接提交"时才可免。
+- **guifansrc 变更自动同步 library_data(用户约定)**:用户改动库内文件(新增/删除/改名/换版)后**无需单独指示**;检测到 guifansrc 有变化(或用户说"我改了库/加了文件")时,自动执行同步——`spec.py status` 探测 `[新增]/[缺失]/[更新]`,然后新增→`index`、缺失→`remove`、变更(同文件换版/更新)→`index` 重索引,循环到 `status` 显示"一致: 库目录与书架索引同步"。zip 不解包不索引(status 会提示);该 OCR 就 OCR。同步后向用户汇报"新增 X / 删除 Y / 更新 Z"。library_data 目录骨架与 guifansrc 一一镜像(每个源文件→同相对父目录下一个同名书目录,book_id=源文件名去扩展名,同名不同路径加哈希后缀);目录内是派生索引产物(meta/toc/clauses/chapters/ocr/extracted),数量多于源文件属正常。

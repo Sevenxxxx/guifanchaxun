@@ -3,7 +3,7 @@
 """spec.py — 「规范查询」skill 唯一程序。
 
 子命令(两态模型):
-  维护态: index / ocr / status / remove / update-chars
+  维护态: index / ocr / status / cleanup-orphans / remove / update-chars
   查询态: list / toc / clause / read / grep
 
 设计要点:
@@ -2065,6 +2065,100 @@ def cmd_status(args, cfg):
             print(f"{b['id']}\t{b.get('type','?')}\t{b.get('status','?')}\t(无 meta.json)")
 
 
+def cmd_cleanup_orphans(args, cfg):
+    """扫描并(可选)清理三类一致性残留:
+       (a) 有 meta.json 但 bookshelf 未登记的孤儿目录;
+       (b) 空目录;
+       (c) bookshelf 登记了、但源文件已从 guifansrc 缺失的书(删索引+登记)。
+
+    默认只报告(等价 dry-run);加 --yes 才实际删除。删除绝不触碰源文件仍存在的登记书。
+    删后自动剪枝为空且无 meta.json 的父目录(仍装有真实书的父容器会保留)。
+    """
+    import shutil
+    data = Path(cfg["data_dir"])
+    shelf = load_shelf(cfg["data_dir"])
+    books = shelf.get("books", [])
+    expected = set()
+    for e in books:
+        f = e.get("file")
+        if not f:
+            continue
+        p = Path(f.replace("\\", "/"))
+        pid = e.get("id") or p.stem
+        rel = str(p.parent).replace("\\", "/")
+        rel = "" if rel == "." else rel
+        expected.add((rel + "/" + pid) if rel else pid)
+    disk = {str(p.parent.relative_to(data)).replace("\\", "/"): p.parent
+            for p in data.rglob("meta.json")}
+    meta_orphans = sorted(k for k in disk if k not in expected)
+    empties = sorted([d for d in data.rglob("*") if d.is_dir() and not list(d.iterdir())],
+                     key=lambda d: len(str(d)), reverse=True)
+    # (c) 登记但源文件已从 guifansrc 缺失的书
+    src_missing = sorted(
+        [e for e in books
+         if e.get("file") and not (Path(cfg["library_dir"]) / e["file"].replace("\\", "/")).exists()],
+        key=lambda e: e.get("id", ""))
+    if not meta_orphans and not empties and not src_missing:
+        print("无残留: library_data 与 guifansrc 一致,无孤儿目录/空目录/源缺失登记。")
+        return
+    if meta_orphans:
+        print(f"发现孤儿目录 {len(meta_orphans)} 处(有 meta.json 但未登记):")
+        for k in meta_orphans:
+            print(f"  {k}")
+    if empties:
+        print(f"发现空目录 {len(empties)} 处:")
+        for d in empties:
+            print(f"  {str(d.relative_to(data)).replace(chr(92), '/')}")
+    if src_missing:
+        print(f"发现源文件缺失的登记书 {len(src_missing)} 本(guifansrc 已无此文件):")
+        for e in src_missing:
+            print(f"  id={e.get('id')}  <-  {e.get('file')}")
+    if not getattr(args, "yes", False):
+        print("(dry-run 未删除;确认后加 --yes 执行)")
+        return
+    removed = 0
+    # (1) 删空目录(深处先删,父目录留待剪枝)
+    for d in empties:
+        try:
+            if d.exists() and not list(d.iterdir()):
+                d.rmdir()
+                removed += 1
+        except OSError:
+            pass
+    # (2) 删 meta 孤儿
+    for k in meta_orphans:
+        t = disk[k]
+        if t.exists():
+            shutil.rmtree(t, ignore_errors=True)
+            removed += 1
+    # (3) 删源缺失的登记书: 删书目录 + 从 bookshelf 移除登记
+    if src_missing:
+        dead_ids = {e.get("id") for e in src_missing}
+        with library_lock(cfg["data_dir"]):
+            for e in src_missing:
+                bd = book_data_dir(cfg, e)
+                if bd.exists():
+                    shutil.rmtree(bd, ignore_errors=True)
+                    removed += 1
+            shelf["books"] = [x for x in shelf["books"] if x.get("id") not in dead_ids]
+            save_shelf(cfg["data_dir"], shelf)
+    # (4) 剪枝: 反复删空目录,直到无空目录(处理删孤儿/删书后新变空的父目录)
+    while True:
+        e = sorted([d for d in data.rglob("*") if d.is_dir() and not list(d.iterdir())],
+                   key=lambda d: len(str(d)), reverse=True)
+        if not e:
+            break
+        for d in e:
+            try:
+                d.rmdir()
+                removed += 1
+            except OSError:
+                pass
+    remain_orphan = [k for k in meta_orphans if disk[k].exists()]
+    remain_empty = [d for d in data.rglob("*") if d.is_dir() and not list(d.iterdir())]
+    print(f"已清理 {removed} 处;剩余孤儿目录 {len(remain_orphan)}, 剩余空目录 {len(remain_empty)}。")
+
+
 def _cmd_remove(args, cfg):
     shelf = load_shelf(cfg["data_dir"])
     b = find_book(shelf, args.book)
@@ -2202,6 +2296,10 @@ def build_parser():
 
     p = sub.add_parser("status", help="库一致性检查 + 书架健康")
     p.set_defaults(func=cmd_status)
+
+    p = sub.add_parser("cleanup-orphans", help="一致性清扫: 未登记孤儿目录+空目录+源缺失登记书(--yes 才删除)")
+    p.add_argument("--yes", action="store_true", help="实际删除(缺省仅报告 dry-run)")
+    p.set_defaults(func=cmd_cleanup_orphans)
 
     p = sub.add_parser("remove", help="删除索引/登记,或标记被替代")
     p.add_argument("book")
