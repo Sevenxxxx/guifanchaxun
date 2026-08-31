@@ -1,7 +1,11 @@
-# 局域网/Tailscale 访问启动脚本:绑定 0.0.0.0,其他电脑浏览器可直接访问
-#   Tailscale:   http://100.85.0.30:8090
-#   局域网 WLAN: http://192.168.1.9:8090
-# 前置:已放行防火墙 8090(见 README"局域网/Tailscale 访问"一节)
+# Start script: bind 0.0.0.0 so other PCs / public IP / Tailscale can access.
+# Compatible with Task Scheduler autostart: switch to the repo root first
+# (python -m webapp requires it). Prereq: firewall 8090 opened.
+$scriptPath = $MyInvocation.MyCommand.Path
+$repo = Split-Path -Parent (Split-Path -Parent $scriptPath)  # parent of webapp = repo root
+Set-Location $repo
 $env:PYTHONIOENCODING = 'utf-8'
 $env:GFC_HOST = '0.0.0.0'
+# Concurrency cap defaults to 5 (config.py GFC_MAX_CONCURRENT). Override here if needed:
+# $env:GFC_MAX_CONCURRENT = '3'
 python -m webapp

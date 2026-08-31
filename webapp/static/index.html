@@ -70,6 +70,11 @@
   @keyframes blink { 50% { opacity: 0; } }
   .error-text { color: var(--err); }
   .notice { font-size: 12px; color: #b7791f; margin-top: 6px; }
+  .queued-banner {
+    display: block; background: #fff7e6; border: 1px solid #f0c36d; color: #8a5a00;
+    border-radius: 6px; padding: 7px 10px; font-size: 13px; font-weight: 600;
+    margin-bottom: 8px; line-height: 1.5;
+  }
   details.activity {
     margin-top: 6px; max-width: 86%; font-size: 12.5px; color: var(--muted);
   }
@@ -120,17 +125,34 @@
   var healthEl = document.getElementById('health');
   var resetBtn = document.getElementById('reset');
 
-  var sessionId = localStorage.getItem('gfc_session_id');
-  if (!sessionId) { sessionId = newSessionId(); }
+  // 服务端发放的对话令牌:只存内存,刷新页面=新对话;同页多轮复用
+  var sessionToken = null;
   var busy = false;
 
-  function newSessionId() {
-    var id = (crypto.randomUUID ? crypto.randomUUID() : 's-' + Date.now() + '-' + Math.random().toString(16).slice(2));
-    localStorage.setItem('gfc_session_id', id);
-    return id;
+  async function newSessionToken() {
+    var res = await fetch('/api/session', { method: 'POST' });
+    if (!res.ok) {
+      var detail = '';
+      try { var j = await res.json(); detail = (j && j.detail) ? j.detail : ''; } catch (e) {}
+      throw new Error(detail || ('无法创建会话(HTTP ' + res.status + ')'));
+    }
+    var data = await res.json();
+    return data.token;
+  }
+
+  async function ensureSessionToken() {
+    if (!sessionToken) sessionToken = await newSessionToken();
+    return sessionToken;
   }
 
   function scrollBottom() { chatEl.scrollTop = chatEl.scrollHeight; }
+
+  function formatEta(seconds) {
+    if (!seconds || seconds <= 0) return '一会儿';
+    if (seconds < 60) return '约 ' + Math.round(seconds) + ' 秒';
+    var m = Math.round(seconds / 60);
+    return '约 ' + m + ' 分钟';
+  }
 
   function escapeHtml(s) {
     var d = document.createElement('div');
@@ -226,9 +248,11 @@
     var actions = makeActions(function () { return rawText || textSpan.textContent; });
 
     var bubble = document.createElement('div'); bubble.className = 'bubble';
+    var queuedBanner = document.createElement('div'); queuedBanner.className = 'queued-banner';
+    queuedBanner.style.display = 'none';
     var textSpan = document.createElement('span'); textSpan.className = 'stream-text md';
     var cursor = document.createElement('span'); cursor.className = 'cursor'; cursor.textContent = '▍';
-    bubble.appendChild(textSpan); bubble.appendChild(cursor);
+    bubble.appendChild(queuedBanner); bubble.appendChild(textSpan); bubble.appendChild(cursor);
 
     var details = document.createElement('details');
     details.className = 'activity';
@@ -248,6 +272,13 @@
     return {
       finished: false,
       setStatus: function (text) { statusSpan.textContent = text; },
+      showQueued: function (position, etaSeconds) {
+        queuedBanner.style.display = 'block';
+        queuedBanner.textContent = '⏳ 排队中:前有 ' + (position || 1) + ' 个问题,预计等待'
+          + formatEta(etaSeconds) + '。上一问完成后会自动开始,请勿关闭页面。';
+        scrollBottom();
+      },
+      hideQueued: function () { queuedBanner.style.display = 'none'; },
       setText: function (text) {
         rawText = text;
         textSpan.innerHTML = renderMd(text);
@@ -262,7 +293,10 @@
         li.title = type + ': ' + summaryText;
         list.appendChild(li);
       },
-      finish: function () { cursor.textContent = ''; statusSpan.textContent = ''; },
+      finish: function () {
+        cursor.textContent = ''; statusSpan.textContent = '';
+        queuedBanner.style.display = 'none';
+      },
       addNotice: function (text) {
         var n = document.createElement('div');
         n.className = 'notice';
@@ -272,6 +306,7 @@
       showError: function (message) {
         cursor.textContent = '';
         statusSpan.textContent = '';
+        queuedBanner.style.display = 'none';
         textSpan.textContent = textSpan.textContent || '执行失败';
         var err = document.createElement('div');
         err.className = 'error-text';
@@ -294,9 +329,14 @@
     try { payload = JSON.parse(data); } catch (e) { return; }
     switch (event) {
       case 'status':
-        bubble.setStatus(payload.status === 'queued' ? '排队中…(前一问未完成,请稍候)'
-          : payload.status === 'starting' ? '启动中…'
-          : payload.status === 'running' ? 'Agent 思考中…' : '');
+        if (payload.status === 'queued') {
+          bubble.setStatus('排队中…');
+          bubble.showQueued(payload.position, payload.eta_seconds);
+        } else {
+          bubble.hideQueued();
+          bubble.setStatus(payload.status === 'starting' ? '启动中…'
+            : payload.status === 'running' ? 'Agent 思考中…' : '');
+        }
         break;
       case 'text':
         bubble.setText(payload.text || '');
@@ -310,10 +350,10 @@
         bubble.finished = true;
         break;
       case 'session_reset':
-        // 服务器重启导致旧会话失效:换新 id,由外层自动重发一次
-        sessionId = newSessionId();
+        // 服务端运行时重启导致会话失效:旧令牌作废,由外层取新令牌自动重发
+        sessionToken = null;
         if (ctx) ctx.needsRetry = true;
-        bubble.addNotice('会话已在服务端失效(服务器重启),已自动开启新会话并重发');
+        bubble.addNotice('会话已在服务端失效,已自动开启新会话并重发');
         bubble.finished = true;
         break;
       case 'error':
@@ -348,17 +388,22 @@
     }
   }
 
-  // 跑一轮;会话失效时返回 true(已换新会话 id),由调用方重发一次
+  // 跑一轮;会话失效时返回 true(旧令牌已作废),由调用方取新令牌重发一次
   async function runTurn(message) {
     var bubble = appendAssistant();
     var ctx = { needsRetry: false };
     try {
+      var token = await ensureSessionToken();
       var res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ session_id: sessionId, message: message })
+        body: JSON.stringify({ token: token, message: message })
       });
-      if (!res.ok || !res.body) throw new Error('HTTP ' + res.status);
+      if (!res.ok || !res.body) {
+        var detail = '';
+        try { var j = await res.json(); detail = (j && j.detail) ? j.detail : ''; } catch (e2) {}
+        throw new Error(detail || ('HTTP ' + res.status));
+      }
       await consumeSse(res.body, bubble, ctx);
     } catch (err) {
       bubble.showError(err.message || String(err));
@@ -386,8 +431,9 @@
     if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); formEl.requestSubmit(); }
   });
 
-  resetBtn.addEventListener('click', function () {
-    sessionId = newSessionId();
+  resetBtn.addEventListener('click', async function () {
+    sessionToken = null;
+    try { sessionToken = await newSessionToken(); } catch (e) {}
     chatEl.innerHTML = '';
   });
 
@@ -396,12 +442,14 @@
       var res = await fetch('/api/health');
       var data = await res.json();
       healthEl.textContent = '运行时: ' + (data.runtime_started ? '已启动' : '未启动(首问时启动)')
-        + ' · ' + data.model;
+        + ' · ' + data.model
+        + (data.permission_mode ? (' · 沙箱:' + data.permission_mode) : '');
     } catch (e) {
       healthEl.textContent = '运行时: 后端不可达';
     }
   }
   checkHealth();
+  ensureSessionToken().catch(function () { /* 首问时再重试 */ });
 })();
 </script>
 </body>

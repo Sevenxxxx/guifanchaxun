@@ -31,6 +31,8 @@ description: 查询中国工程规范(JTG/GB 5768 等)PDF 原文权威条文,以
    - `[未索引]` zip 压缩包/无扩展名文件 → 暂不索引,仅提示(压缩包需解包后放入库目录)。
    - `[缺失]` 源文件已不在库 → `spec.py remove <id>` 清理索引。
    - 疑似换版 → 与用户确认后 `spec.py index <新文件>` + `spec.py remove <旧id> --mark-superseded <新id>`(旧索引保留,查询时提示替代关系)。
+   - **视觉复核(可选,仅当你有看图能力,如 `read_image`)**:索引后若书有 `failed_pages` 或低置信条文(`spec.py recheck <book>` 可查),对每个问题页:
+     ① `spec.py img <book> <页码>` 渲染该页为 PNG;② 用你的视觉读原图,纠正 tesseract 误识的**条文号/表格/章标题**;③ `spec.py set-page <book> <页码> --text "<修正文本>"` 回写该页;④ `spec.py index "<该书源文件绝对路径>" --rebuild` 重新派生章/条文/目录(不重 OCR)。无看图能力则跳过;此为增强步骤,不阻断索引。
 2. 完成向用户汇报:新增/更新/删除/换版了哪些书、OCR 失败页数、COM 转换失败的文件(加密/损坏文档)。
 
 ### 查询态(按索引翻书)

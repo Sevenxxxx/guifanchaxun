@@ -19,3 +19,5 @@ __pycache__/
 webapp/dsh-home/
 webapp/dump-default-config.txt
 webapp/__pycache__/
+
+webapp/logs/

@@ -5,6 +5,8 @@ from __future__ import annotations
 import json
 import sys
 import threading
+import time
+from collections import deque
 from typing import Callable
 
 from webapp import config
@@ -100,17 +102,15 @@ class DshService:
         self._harness: DeepSeekHarness | None = None
         self._started = False
         self._init_lock = threading.Lock()
-        self._turn_lock = threading.Lock()
+        # 并发执行槽:同一时刻最多 MAX_CONCURRENT 轮并行(DSH 单进程多会话原生支持并行)
+        self._slots = threading.BoundedSemaphore(max(1, config.MAX_CONCURRENT))
         self.last_error: str | None = None
+        # 最近 N 轮真实执行耗时(不含排队),供前端预估等待时长
+        self.exec_durations: deque = deque(maxlen=10)
 
     @property
     def started(self) -> bool:
         return self._started
-
-    @property
-    def busy(self) -> bool:
-        """是否有轮次正在运行(用于前端区分"启动中"与"真排队")。"""
-        return self._turn_lock.locked()
 
     def start(self) -> None:
         """懒启动运行时(幂等);阻塞至 initialize 握手完成。"""
@@ -126,17 +126,29 @@ class DshService:
                     profile="sdk",
                     dsh_home=str(config.DSH_HOME),
                     initialize_timeout_seconds=config.INIT_TIMEOUT_SECONDS,
+                    max_tokens=config.MAX_TOKENS,
+                    request_timeout_seconds=config.TURN_TIMEOUT_SEC,
+                    patches=(
+                        (str(config.GUARDRAIL_PATCH),)
+                        if config.GUARDRAIL_PATCH.exists()
+                        else ()
+                    ),
+                    env={
+                        "DSH_PERMISSION_MODE": config.PERMISSION_MODE,
+                        "DSH_TELEMETRY_MODE": config.TELEMETRY_MODE,
+                    },
                 )
             if not self._started:
                 self._harness.start()
                 self._started = True
 
     def run_turn(self, session_id: str, message: str, emit: EventSink):
-        """执行一轮对话(阻塞)。emit 从 SDK 读取线程回调,必须线程安全。"""
-        with self._turn_lock:
+        """执行一轮对话(阻塞)。并发度受 _slots 约束;emit 从 SDK 读取线程回调,必须线程安全。"""
+        with self._slots:
             self.start()
             if self._harness is None:
                 raise RuntimeError("DSH 运行时未初始化")
+            t0 = time.monotonic()
             session = self._harness.start_session(session_id)
 
             def on_notification(notification) -> None:
@@ -151,6 +163,8 @@ class DshService:
                 self._harness = None
                 self._started = False
                 raise
+            finally:
+                self.exec_durations.append(time.monotonic() - t0)
             error_message = _turn_error_message(result)
             if error_message is not None:
                 raise DshTurnError(error_message, result.finish_reason)

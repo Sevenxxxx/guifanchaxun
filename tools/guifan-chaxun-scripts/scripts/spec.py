@@ -1461,7 +1461,7 @@ def _index_one(src_path, cfg, chars):
         # book_id: 源文件名;与旧书架 id 兼容(迁移后 id=文件名);同 stem 不同路径时加父目录前缀
         book_id = cfg.get("_book_ids", {}).get(rel) or (old["id"] if old else _short_id(base_id))
         source_changed = old is not None and not entry_matches_source(old, sig)
-        if old and not cfg.get("force") and old.get("status") == "indexed" and not source_changed:
+        if old and not cfg.get("force") and not cfg.get("rebuild") and old.get("status") == "indexed" and not source_changed:
             # 迁移 gap 防御: 书架已登记但新布局路径无索引数据(旧布局书永久不可达)。
             # 旧布局 data_dir/<book_id>/ 数据(含 OCR 缓存)存在 → 移到新路径复用,
             # 避免整本重 OCR;否则才重索引
@@ -1918,6 +1918,90 @@ def cmd_ocr(args, cfg):
     print("OCR 完成")
 
 
+def cmd_img(args, cfg):
+    """渲染书源 PDF 的一页(或范围)为 PNG,供 agent 视觉复核/看图。
+    输出写入 <book_dir>/recheck/pNNN.png,并把路径打印到 stdout。读只操作,不改索引。"""
+    shelf = load_shelf(cfg["data_dir"])
+    b = find_book(shelf, args.book)
+    if b.get("fmt", "pdf") != "pdf":
+        die(f"本书 fmt={b.get('fmt')},非 PDF,无法渲染页面")
+    src = _find_source(cfg, b)
+    end = args.end or args.page
+    if args.page < 1 or end > b["pages"] or args.page > end:
+        die(f"页码超界: 本书共 {b['pages']} 页;要求 1<=start<=end<=pages")
+    book_dir = book_data_dir(cfg, b)
+    recheck_dir = book_dir / "recheck"
+    recheck_dir.mkdir(exist_ok=True)
+    doc = fitz.open(src)
+    out = []
+    try:
+        for p in range(args.page, end + 1):
+            pix = doc.load_page(p - 1).get_pixmap(dpi=args.dpi)
+            png = recheck_dir / f"p{p:03d}.png"
+            pix.save(str(png))
+            out.append(str(png))
+    finally:
+        doc.close()
+    print("\n".join(out))
+
+
+def cmd_recheck(args, cfg):
+    """报告一本书的低置信/失败页(供 agent 决定视觉复核哪些页)。只读。"""
+    shelf = load_shelf(cfg["data_dir"])
+    b = find_book(shelf, args.book)
+    book_dir = book_data_dir(cfg, b)
+    meta = {}
+    mf = book_dir / "meta.json"
+    if mf.exists():
+        meta = json.loads(mf.read_text(encoding="utf-8"))
+    print(f"book_id={b['id']} pages={b.get('pages')} type={b.get('type')} pages_dir={meta.get('pages_dir')} toc={b.get('toc_source')}")
+    failed = (meta.get("ocr") or {}).get("failed_pages") or []
+    print(f"failed_pages: {failed if failed else '(无)'}")
+    if meta.get("note"):
+        print(f"note: {meta['note']}")
+    idx = book_dir / "clauses.idx"
+    low = []
+    if idx.exists():
+        lines = idx.read_text(encoding="utf-8").splitlines()
+        for line in lines[1:]:
+            cols = line.split("\t")
+            if len(cols) > 5 and cols[5].strip():
+                low.append((cols[0], cols[1], cols[5]))
+    print(f"low_confidence_clauses: {len(low)}")
+    for clause, pdfp, marker in low[:args.max]:
+        print(f"  {clause}\tp{pdfp}\t{marker}")
+    if len(low) > args.max:
+        print(f"  ...(余 {len(low) - args.max} 条)")
+    if not failed and not low and not meta.get("note"):
+        print("未发现问题页(无需视觉复核)")
+
+
+def cmd_set_page(args, cfg):
+    """回写某页被修正的文本(ocr/NNN.txt 或 extracted/NNN.txt),供 agent 视觉修正后落盘。
+    配合 `index <源文件> --rebuild` 重新派生章/条文。仅限有落盘页文本的书(OCR 书/非 PDF 文本书)。"""
+    shelf = load_shelf(cfg["data_dir"])
+    b = find_book(shelf, args.book)
+    book_dir = book_data_dir(cfg, b)
+    meta = {}
+    mf = book_dir / "meta.json"
+    if mf.exists():
+        meta = json.loads(mf.read_text(encoding="utf-8"))
+    pages_dir = meta.get("pages_dir")
+    if pages_dir not in ("ocr", "extracted"):
+        die("本书无落盘页文本(纯 PDF 文字书按需现场提取),不支持 set-page;仅 OCR 书/非 PDF 文本书可回写")
+    page = args.page
+    if page < 1 or page > b["pages"]:
+        die(f"页码超界: 本书共 {b['pages']} 页")
+    text = args.text if args.text is not None else sys.stdin.read()
+    target = book_dir / pages_dir / f"{page:03d}.txt"
+    target.parent.mkdir(parents=True, exist_ok=True)
+    atomic_write_text(target, text)
+    src_rel = b["file"]
+    full = Path(cfg["library_dir"]) / src_rel
+    print(f"wrote {target} ({len(text)} chars)")
+    print(f"NEXT: `spec.py index \"{full}\" --rebuild` 重新派生章/条文/目录")
+
+
 def cmd_status(args, cfg):
     shelf = load_shelf(cfg["data_dir"])
     # 键用相对 library_dir 路径(guifansrc 可多层文件夹,同名文件不混淆)
@@ -2047,6 +2131,8 @@ def build_parser():
     p.add_argument("--only", nargs="+", metavar="EXT",
                    help="只处理指定扩展名(如 --only docx png,与 --all 或显式路径联用)")
     p.add_argument("--force", action="store_true", help="强制重建")
+    p.add_argument("--rebuild", action="store_true",
+                   help="从已有文本(ocr/extracted)重建目录/章/条文,不重 OCR(配合 set-page 视觉修正后生效)")
     p.add_argument("--jobs", type=int, default=1,
                    help="并行度(默认 1;COM 转换格式 doc/xls/wps/et 固定串行)")
     p.set_defaults(func=cmd_index)
@@ -2090,6 +2176,24 @@ def build_parser():
     p.add_argument("--force", action="store_true", help="重跑已 OCR 页")
     p.set_defaults(func=cmd_ocr)
 
+    p = sub.add_parser("img", help="渲染源 PDF 页为 PNG,供 agent 视觉复核/看图")
+    p.add_argument("book")
+    p.add_argument("page", type=int)
+    p.add_argument("end", nargs="?", type=int, help="末页(缺省 = page;单页)")
+    p.add_argument("--dpi", type=int, default=300)
+    p.set_defaults(func=cmd_img)
+
+    p = sub.add_parser("recheck", help="报告低置信/失败页(视觉复核清单)")
+    p.add_argument("book")
+    p.add_argument("--max", type=int, default=20, help="低置信条文最多列几条")
+    p.set_defaults(func=cmd_recheck)
+
+    p = sub.add_parser("set-page", help="回写某页被修正文本;配合 `index --rebuild` 生效")
+    p.add_argument("book")
+    p.add_argument("page", type=int)
+    p.add_argument("--text", default=None, help="修正文本(缺省读 stdin)")
+    p.set_defaults(func=cmd_set_page)
+
     p = sub.add_parser("status", help="库一致性检查 + 书架健康")
     p.set_defaults(func=cmd_status)
 
@@ -2108,6 +2212,7 @@ def main():
     args = build_parser().parse_args()
     cfg = load_config(args)
     cfg["force"] = getattr(args, "force", False)
+    cfg["rebuild"] = getattr(args, "rebuild", False)
     if args.cmd == "grep" and args.max is None:
         args.max = int(cfg.get("grep_default_max", 30))
     args.func(args, cfg)

@@ -10,7 +10,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 常用命令(开发/维护视角)
 
-skill 唯一程序是 `tools/guifan-chaxun-scripts/scripts/spec.py`(10 子命令),依赖 pymupdf + tesseract(路径与语言包在 `config.json`):
+skill 唯一程序是 `tools/guifan-chaxun-scripts/scripts/spec.py`(13 子命令:index/list/toc/clause/read/grep/ocr/status/remove/update-chars/img/recheck/set-page),依赖 pymupdf + tesseract(路径与语言包在 `config.json`):
 
 ```bash
 # 以下命令在 tools/guifan-chaxun-scripts/ 目录下执行(python scripts/spec.py ...);
@@ -22,6 +22,10 @@ python scripts/spec.py status                                         # 库一�
 python scripts/spec.py ocr <book> [--start N] [--end N]               # 整本批量 OCR(断点续跑,index 内部也会调;图片书同构)
 python scripts/spec.py remove <book> [--mark-superseded <新id>]       # 删索引/登记,或标记被替代(不物理删)
 python scripts/spec.py update-chars --from-pdfs <干净文字版PDF...>    # 重建常用字表(乱码检测资源,新领域书先跑)
+python scripts/spec.py index <源文件> --rebuild                       # 从已有文本重建章/条文/目录(不重 OCR;视觉修正后生效)
+python scripts/spec.py img <book> <页>                                # 渲染源 PDF 页为 PNG(供 agent 视觉复核)
+python scripts/spec.py recheck <book>                                 # 报告低置信/失败页(视觉复核清单)
+python scripts/spec.py set-page <book> <页> --text "..."              # 回写修正后页文本(配合 index --rebuild)
 
 # 查询态(纯文件;agent 走 SKILL.md 流程,这些是 CLI 调试用)
 python scripts/spec.py list [-q 关键词] / toc <book> / clause <book> <条文号> / read <book> <页> / grep <book> <正则> | --all

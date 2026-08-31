@@ -21,5 +21,21 @@ REASONING_EFFORT = os.environ.get("GFC_REASONING_EFFORT") or None
 HOST = os.environ.get("GFC_HOST", "127.0.0.1")
 PORT = int(os.environ.get("GFC_PORT", "8090"))
 
-# 首次启动运行时(含模型路由握手)的时限;轮次本身不设超时(规范查询可能多步工具调用)
+# 首次启动运行时(含模型路由握手)的时限
 INIT_TIMEOUT_SECONDS = float(os.environ.get("GFC_INIT_TIMEOUT", "60"))
+
+# ===== 安全/成本护栏(云部署+同事使用;全部可用环境变量覆盖) =====
+PERMISSION_MODE = os.environ.get("GFC_PERMISSION_MODE", "read-only")   # 只读沙箱(写保护,必选)
+TELEMETRY_MODE = os.environ.get("GFC_TELEMETRY_MODE", "DISABLED")      # 关闭会话遥测上传
+MAX_TOKENS = int(os.environ.get("GFC_MAX_TOKENS", "32768"))            # 单轮输出封顶(放宽)
+TURN_TIMEOUT_SEC = float(os.environ.get("GFC_TURN_TIMEOUT", "1800"))   # 单轮超时(秒,放宽 30 分钟)
+MAX_MESSAGE_CHARS = int(os.environ.get("GFC_MAX_MESSAGE_CHARS", "8000"))  # 消息长度上限(放宽)
+MAX_TURNS = int(os.environ.get("GFC_MAX_TURNS", "100"))                # 每会话轮数上限(放宽)
+RATE_GLOBAL_MIN = int(os.environ.get("GFC_RATE_GLOBAL", "120"))        # 全局限流(次/分)
+RATE_SESSION_MIN = int(os.environ.get("GFC_RATE_SESSION", "30"))       # 每会话限流(次/分)
+MAX_CONCURRENT = int(os.environ.get("GFC_MAX_CONCURRENT", "5"))        # 同时使用上限(超了直接拒绝,不排队)
+SESSION_TTL_HOURS = float(os.environ.get("GFC_SESSION_TTL", "24"))     # 会话闲置过期(小时)
+SESSION_CAP = int(os.environ.get("GFC_SESSION_CAP", "100"))            # 活跃会话上限
+ACCESS_TOKEN = os.environ.get("GFC_ACCESS_TOKEN", "")                  # 非空=启用访问口令(可选)
+GUARDRAIL_PATCH = WEBAPP_DIR / "sdk-guardrail.patch.yml"               # 提示词护栏 patch
+LOG_DIR = WEBAPP_DIR / "logs"                                          # 审计日志目录
