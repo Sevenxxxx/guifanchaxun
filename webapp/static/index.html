@@ -103,7 +103,6 @@
   <div class="meta">
     <span id="health">运行时: 检测中…</span>
     <button id="reset" title="换一个会话 id,清空本页对话">新会话</button>
-    <button id="logout" style="display:none" title="清除访问密码,重新登录">退出</button>
   </div>
 </header>
 
@@ -172,7 +171,6 @@
   var pwInput = document.getElementById('pw-input');
   var pwError = document.getElementById('pw-error');
   var pwBtn = document.getElementById('pw-btn');
-  var logoutBtn = document.getElementById('logout');
 
   function showPasswordOverlay() {
     pwError.textContent = '';
@@ -189,7 +187,6 @@
     try {
       await ensureSessionToken(); // 调 /api/session 验证密码(带 X-Access-Token);对才放行
       hidePasswordOverlay();
-      if (logoutBtn) logoutBtn.style.display = '';
       pwError.textContent = '';
       pwInput.value = '';
     } catch (e) {
@@ -205,10 +202,8 @@
       var s = await r.json();
       if (!s.password_required) {
         hidePasswordOverlay();
-        if (logoutBtn) logoutBtn.style.display = 'none';
         return;
       }
-      if (logoutBtn) logoutBtn.style.display = '';
       if (getAccessToken()) {
         try { await ensureSessionToken(); hidePasswordOverlay(); return; }
         catch (e2) { clearAccessToken(); }
@@ -222,10 +217,6 @@
   pwBtn.addEventListener('click', submitPassword);
   pwInput.addEventListener('keydown', function (e) {
     if (e.key === 'Enter') { e.preventDefault(); submitPassword(); }
-  });
-  if (logoutBtn) logoutBtn.addEventListener('click', function () {
-    clearAccessToken();
-    showPasswordOverlay();
   });
 
   async function newSessionToken() {
