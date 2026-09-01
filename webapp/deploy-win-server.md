@@ -34,7 +34,7 @@ C:\poc\
 上传方式（按大小选）：
 - `webapp` + `library_data`（小）：RDP 复制粘贴 / 共享文件夹 / 网盘均可
 - `deepseek-harness`（2GB）：RDP 磁盘映射或 WinSCP；**Windows→Windows 直接复制，原生二进制兼容，无需重装依赖**
-- `guifansrc`（4GB，最大头）：推荐 WinSCP(OpenSSH)断点续传 或 腾讯云 COS 中转；RDP 拖拽慢（后议，可最后传）
+- `guifansrc`（4GB，最大头）：推荐 WinSCP(OpenSSH)断点续传 或 腾讯云 COS 中转。**必传**：文字 PDF 书 `read`/`img` 直接读该源（现场 fitz 提取页文本/渲染页图）；OCR/非 PDF 书靠 `library_data` 缓存、不依赖源。上线前要传完，否则文字规范书一 `read` 就报"源文件缺失"。
 
 ## 3. skills 目录（服务器上）
 
@@ -86,6 +86,8 @@ powershell -ExecutionPolicy Bypass -File webapp\start.ps1              # 前台�
 Invoke-WebRequest http://127.0.0.1:8090/api/health -UseBasicParsing
 ```
 
+**进入密码（可选，默认无）**：默认不需要密码。若要在 `webapp\access.txt` 写一个密码（如 `test1`），刷新页面即要求输入；换密码 = 改该文件内容；删/清空 = 关闭。该文件已 gitignore（不提交真实密码），服务器上手动建（`Set-Content webapp\access.txt 'test1' -Encoding utf8`）。输错会 401，前端自动重弹。
+
 ## 7. 防火墙放行（服务器本地防火墙，管理员）
 
 ```powershell
@@ -118,6 +120,8 @@ schtasks /Run /TN "DSHWebPOC"    # 立即跑一次验证
 - [ ] 只读生效：让 agent 写文件 → 被拒；问"更新索引" → 失败
 - [ ] 刷新页面 = 新对话；两台设备同时问 → 并行
 - [ ] 第 6 人同时提问 → 提示"当前同时使用人数已达上限(5 人)"
+- [ ] **断流/锁屏**：回答中途锁屏 → 解锁后自动补取该轮结果（`/api/status`，不重跑）
+- [ ] **进入密码（若启用 `access.txt`）**：未登录/密码错 → 401 弹密码框；输对才进
 - [ ] 审计日志 `webapp\logs\poc.log` 有记录
 
 ## 11. 日常维护

@@ -61,7 +61,7 @@ C:\poc\
 **每个目录/文件的角色**:
 - `webapp\` : FastAPI 源码 + 启动/部署脚本。**同事访问的就是它**。
 - `library_data\` : **知识库索引**。服务器上只读(查询用);更新在**你本机**做,改完增量上传这里。
-- `guifansrc\` : 原始规范。服务器上**查询时不直接读它**(读的是索引),除非视觉复核。
+- `guifansrc\` : 规范 PDF 源。**文字 PDF 书 `read`/`img` 会直接读它**(现场 fitz 提取页文本 / 渲染页图);OCR 书读 `library_data` 里的 `ocr/` 缓存、非 PDF 书读 `extracted/` 缓存,那些不读源。所以**服务器必须上传 guifansrc**,否则文字规范书一 `read` 就报"源文件缺失"。
 - `deepseek-harness\` : DSH 运行时。**Node 依赖已含,Windows→Windows 无需重装**,直接复制即可。
 
 **上传方式(按大小)推荐**:
@@ -189,6 +189,8 @@ Invoke-WebRequest http://127.0.0.1:8090/api/health -UseBasicParsing
 - `permission_mode:"read-only"`:只读沙箱,防 agent 写文件。看健康接口返回这个字段就知道沙箱生效。
 - 可以本机问一句(用 `e2e_test.py` 或浏览器 `http://127.0.0.1:8090`),确认首问成功、能正常流式回答。
 
+**进入密码(可选,默认无)**:默认不需要密码。若要在 `webapp\access.txt` 写一个密码(如 `test1`),刷新页面即要求输入;换密码 = 改文件内容;删/清空 = 关闭。该文件已 gitignore(不提交真实密码),服务器上手动建(`Set-Content webapp\access.txt 'test1' -Encoding utf8`)。输错 401,前端自动重弹。
+
 ---
 
 ## 9. 防火墙放行 8090(服务器本地防火墙)
@@ -246,6 +248,7 @@ schtasks /Run /TN "DSHWebPOC"     # 立即跑一次验证
 - [ ] 刷新页面 = 新对话;两台设备同时问 → **并行**。
 - [ ] 第 6 人同时提问 → 提示"当前同时使用人数已达上限(5 人)"。
 - [ ] 断流/锁屏:回答中途锁屏 → 解锁后自动补结果(方案1,`/api/status`)。
+- [ ] 进入密码(若启用 `access.txt`):未登录/密码错 → 401 弹密码框;输对才进。
 - [ ] 审计日志 `webapp\logs\poc.log` 有记录。
 
 ---
