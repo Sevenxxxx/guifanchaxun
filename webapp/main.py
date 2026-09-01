@@ -45,6 +45,8 @@ class Conv:
     created: float
     last_used: float
     turns: int = 0
+    last_final_response: str | None = None
+    last_finish_reason: str | None = None
 
 _convos: dict[str, Conv] = {}
 
@@ -170,6 +172,30 @@ async def new_session(request: Request) -> JSONResponse:
     return JSONResponse({"token": token})
 
 
+@app.get("/api/status")
+async def session_status(request: Request) -> JSONResponse:
+    """查询某会话是否有一轮在跑;跑完则返回该会话最近一轮的最终回复。
+
+    供客户端在 SSE 流中断(锁屏/网络抖动)后补取已完成一轮的结果,不必重跑模型。
+    """
+    _check_access_token(request)
+    token = request.query_params.get("session")
+    if not token:
+        raise HTTPException(status_code=400, detail="缺少 session 参数")
+    conv = _convos.get(token)
+    if conv is None:
+        _logger.warning("status:bad-token ip=%s", request.client.host if request.client else "?")
+        raise HTTPException(status_code=422, detail="会话不存在或已过期,请刷新页面")
+    running = token in _running_tokens
+    result = None
+    if not running and conv.last_final_response:
+        result = {
+            "final_response": conv.last_final_response,
+            "finish_reason": conv.last_finish_reason,
+        }
+    return JSONResponse({"running": running, "result": result})
+
+
 @app.post("/api/chat")
 async def chat(req: ChatRequest, request: Request) -> StreamingResponse:
     _check_access_token(request)
@@ -252,6 +278,8 @@ async def chat(req: ChatRequest, request: Request) -> StreamingResponse:
             _logger.info("chat:error token=%s dur=%.1fs err=%s", req.token[:8], time.time() - started, str(exc)[:200])
         else:
             result = done_task.result()
+            conv.last_final_response = result.final_response
+            conv.last_finish_reason = result.finish_reason
             _logger.info(
                 "chat:done token=%s dur=%.1fs finish=%s",
                 req.token[:8], time.time() - started, result.finish_reason,

@@ -310,16 +310,6 @@
         err.textContent = message;
         bubble.appendChild(err);
       },
-      resetForRetry: function (note) {
-        this.finished = false;
-        rawText = '';
-        textSpan.textContent = '';
-        textSpan.innerHTML = '';
-        bubble.classList.remove('error-text');
-        cursor.textContent = '▍';
-        statusSpan.textContent = '';
-        this.addNotice(note);
-      },
       addRetryButton: function (onClick) {
         var b = document.createElement('button');
         b.type = 'button';
@@ -394,8 +384,8 @@
     buffer += decoder.decode(); // 流结束,flush 多字节残留
     drain();
     if (!bubble.finished) {
-      bubble.finish();
-      bubble.addNotice('连接中断,回复可能不完整');
+      // 流结束但未收到 done/error → 视为可恢复断流(锁屏/网络中断),让外层去补取已完成结果
+      throw new TypeError('connection closed before done');
     }
   }
 
@@ -404,45 +394,72 @@
 
   function delayMs(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
 
+  // 断流/锁屏后: 轮询服务端,等该会话当前一轮跑完,并补取它的最终回复(不重跑模型)。
+  // 返回 true=已补到完整结果并渲染; false=无法补取(无结果/超时/会话失效)。
+  var RECOVER_WAIT_MS = 8 * 60 * 1000; // 最多等 8 分钟
+  async function recoverCompleted(token, bubble, ctx) {
+    if (!token) return false;
+    var deadline = Date.now() + RECOVER_WAIT_MS;
+    while (Date.now() < deadline) {
+      var status = null;
+      try {
+        var r = await fetch('/api/status?session=' + encodeURIComponent(token), { headers: authHeaders() });
+        if (r.status === 422) { // 会话失效: 交还外层换新令牌重发
+          if (ctx) { ctx.needsRetry = true; sessionToken = null; }
+          return false;
+        }
+        if (!r.ok) { await delayMs(2000); continue; }
+        status = await r.json();
+      } catch (e) { await delayMs(2000); continue; }
+      if (status && status.running) {
+        bubble.setStatus('上一问仍在服务端处理中,请稍候…');
+        await delayMs(2000);
+        continue;
+      }
+      // running 已 false: 该轮跑完
+      if (status && status.result && status.result.final_response) {
+        bubble.setText(status.result.final_response);
+        bubble.finish();
+        bubble.finished = true;
+        return true;
+      }
+      return false; // 无结果(可能出错)
+    }
+    return false; // 超时
+  }
+
   // 跑一轮;会话失效时返回 true(旧令牌已作废),由调用方取新令牌重发一次。
-  // 网络中断(流被硬断)且未收完: 自愈重试一次;仍失败则保留已收内容 + 重新生成按钮。
+  // 流中断(锁屏/网络抖动)且未收完: 轮询 /api/status 补取该轮已完成结果(方案1),不重跑;补不到才回落"重新生成"按钮。
   async function runTurn(message) {
     var bubble = appendAssistant();
     var ctx = { needsRetry: false };
-    var tries = 0;
-    while (true) {
-      try {
-        var token = await ensureSessionToken();
-        var res = await fetch('/api/chat', {
-          method: 'POST',
-          headers: authHeaders(),
-          body: JSON.stringify({ token: token, message: message })
-        });
-        if (!res.ok || !res.body) {
-          var detail = '';
-          try { var j = await res.json(); detail = (j && j.detail) ? j.detail : ''; } catch (e2) {}
-          throw new Error(detail || ('HTTP ' + res.status));
-        }
-        await consumeSse(res.body, bubble, ctx);
-        return ctx.needsRetry;
-      } catch (err) {
-        // 网络中断(流被硬断)且未收完 → 自愈重试一次(同一气泡)
-        if (isNetworkError(err) && !bubble.finished && tries < 1) {
-          tries += 1;
-          bubble.resetForRetry('网络中断,回复可能不完整;正在自动重新生成…');
-          await delayMs(1500); // 等上一轮在服务端回收完,避免触发"会话忙"
-          continue;
-        }
-        // 仍失败(已试过): 保留已收内容 + 明确提示 + 重新生成按钮
-        if (isNetworkError(err) && !bubble.finished) {
-          bubble.setStatus('');
-          bubble.addNotice('网络中断,回复可能不完整。请检查网络后点击下方"重新生成"。');
-          bubble.addRetryButton(function () { regenerate(message); });
-          return ctx.needsRetry;
-        }
-        bubble.showError(err.message || String(err));
+    var token = null;
+    try {
+      token = await ensureSessionToken();
+      var res = await fetch('/api/chat', {
+        method: 'POST',
+        headers: authHeaders(),
+        body: JSON.stringify({ token: token, message: message })
+      });
+      if (!res.ok || !res.body) {
+        var detail = '';
+        try { var j = await res.json(); detail = (j && j.detail) ? j.detail : ''; } catch (e2) {}
+        throw new Error(detail || ('HTTP ' + res.status));
+      }
+      await consumeSse(res.body, bubble, ctx);
+      return ctx.needsRetry;
+    } catch (err) {
+      if (isNetworkError(err) && !bubble.finished) {
+        // 流中断 → 补取已完成结果(方案1,不重跑)
+        if (await recoverCompleted(token, bubble, ctx)) return ctx.needsRetry;
+        if (ctx.needsRetry) return ctx.needsRetry; // 会话失效,交回外层换新令牌重发
+        bubble.setStatus('');
+        bubble.addNotice('网络中断,回复未完整收到。请检查网络后点击下方"重新生成"。');
+        bubble.addRetryButton(function () { regenerate(message); });
         return ctx.needsRetry;
       }
+      bubble.showError(err.message || String(err));
+      return ctx.needsRetry;
     }
   }
 

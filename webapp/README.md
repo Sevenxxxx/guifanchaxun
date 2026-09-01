@@ -72,6 +72,7 @@ error/turn 事件，诊断用）。
 
 - `POST /api/session` → `{token}`：发放一次性对话令牌（每次打开页面调一次；旧令牌一律不认）
 - `GET /api/health` → `{ok, runtime_started, last_error, model, permission_mode, active_sessions}`
+- `GET /api/status?session=<token>` → `{running, result?:{final_response, finish_reason}}` —— 查询某会话是否有一轮在跑;跑完返回该轮最终回复(供客户端断流/锁屏后补取,不重跑模型)
 - `POST /api/chat` body `{token, message}` → **SSE 流**，事件：
   - `status` `{status: starting|running|idle}` —— 启动中/思考/结束
   - `text` `{text}` —— 当前 assistant 回复全文**替换**（流式增量渲染）
