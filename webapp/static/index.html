@@ -175,6 +175,8 @@
     try { html = marked.parse(text || '', { breaks: true }); }
     catch (e) { return escapeHtml(text || ''); }
     return html
+      // 不把 ~x~ / ~~x~~ 渲染成删除线(规范里 ~ 常是范围/约等号),还原为字面波浪号
+      .replace(/<(?:del|s|strike)>([\s\S]*?)<\/(?:del|s|strike)>/gi, '~$1~')
       .replace(/<script[\s\S]*?<\/script>/gi, '')
       .replace(/<iframe[\s\S]*?<\/iframe>/gi, '')
       .replace(/\son\w+\s*=\s*("[^"]*"|'[^']*'|[^\s>]+)/gi, '')

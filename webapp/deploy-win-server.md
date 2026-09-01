@@ -13,7 +13,8 @@
 ```powershell
 # Python 3.12(官网 python.org 下载 Windows x64 安装包;安装时勾选 Add python.exe to PATH)
 python --version
-python -m pip install fastapi uvicorn sse-starlette
+# 注意: pymupdf(spec.py 顶层 import fitz)是查询态必装;缺了它 skill 一调用就崩。
+python -m pip install fastapi uvicorn sse-starlette pymupdf Pillow
 
 # Node.js LTS(官网 nodejs.org 下载 msi 安装)
 node --version
