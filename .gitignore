@@ -21,3 +21,4 @@ webapp/dump-default-config.txt
 webapp/__pycache__/
 
 webapp/logs/
+webapp/access.txt

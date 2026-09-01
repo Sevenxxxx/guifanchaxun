@@ -88,6 +88,13 @@
   #send { background: var(--accent); color: #fff; border: none; padding: 0 22px; font-weight: 600; }
   #send:hover { opacity: .9; }
   .hint { max-width: 900px; margin: 6px auto 0; font-size: 12px; color: var(--muted); }
+  .pw-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.55); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+  .pw-box { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 22px 26px; width: 300px; text-align: center; }
+  .pw-title { font-weight: 600; margin-bottom: 12px; }
+  .pw-box input { width: 100%; padding: 9px 10px; font: inherit; border: 1px solid var(--border); border-radius: 7px; outline: none; box-sizing: border-box; }
+  .pw-box input:focus { border-color: var(--accent); }
+  .pw-error { color: var(--err); font-size: 12px; min-height: 16px; margin-top: 6px; }
+  .pw-box button { margin-top: 10px; width: 100%; background: var(--accent); color: #fff; border: none; padding: 9px 0; border-radius: 7px; font-weight: 600; cursor: pointer; }
 </style>
 </head>
 <body>
@@ -96,10 +103,20 @@
   <div class="meta">
     <span id="health">运行时: 检测中…</span>
     <button id="reset" title="换一个会话 id,清空本页对话">新会话</button>
+    <button id="logout" style="display:none" title="清除访问密码,重新登录">退出</button>
   </div>
 </header>
 
 <main id="chat"></main>
+
+<div id="pw-overlay" class="pw-overlay" style="display:none">
+  <div class="pw-box">
+    <div class="pw-title">🔒 此站点需要访问密码</div>
+    <input id="pw-input" type="password" placeholder="输入访问密码" autocomplete="off">
+    <div id="pw-error" class="pw-error"></div>
+    <button id="pw-btn" type="button">进入</button>
+  </div>
+</div>
 
 <footer>
   <form id="form" class="input-row">
@@ -143,6 +160,73 @@
     if (t) { h['X-Access-Token'] = t; }
     return h;
   }
+
+  function setAccessToken(pw) {
+    _accessToken = pw;
+    if (pw) { localStorage.setItem('gfc_access_token', pw); }
+    else { localStorage.removeItem('gfc_access_token'); }
+  }
+  function clearAccessToken() { setAccessToken(''); }
+
+  var pwOverlay = document.getElementById('pw-overlay');
+  var pwInput = document.getElementById('pw-input');
+  var pwError = document.getElementById('pw-error');
+  var pwBtn = document.getElementById('pw-btn');
+  var logoutBtn = document.getElementById('logout');
+
+  function showPasswordOverlay() {
+    pwError.textContent = '';
+    pwInput.value = '';
+    pwOverlay.style.display = 'flex';
+    setTimeout(function () { pwInput.focus(); }, 0);
+  }
+  function hidePasswordOverlay() { pwOverlay.style.display = 'none'; }
+
+  async function submitPassword() {
+    var pw = pwInput.value.trim();
+    if (!pw) { pwError.textContent = '请输入密码'; return; }
+    setAccessToken(pw);
+    try {
+      await ensureSessionToken(); // 调 /api/session 验证密码(带 X-Access-Token);对才放行
+      hidePasswordOverlay();
+      if (logoutBtn) logoutBtn.style.display = '';
+      pwError.textContent = '';
+      pwInput.value = '';
+    } catch (e) {
+      clearAccessToken();
+      pwError.textContent = '密码错误,请重试';
+      pwInput.select();
+    }
+  }
+
+  async function initAuth() {
+    try {
+      var r = await fetch('/api/auth/status');
+      var s = await r.json();
+      if (!s.password_required) {
+        hidePasswordOverlay();
+        if (logoutBtn) logoutBtn.style.display = 'none';
+        return;
+      }
+      if (logoutBtn) logoutBtn.style.display = '';
+      if (getAccessToken()) {
+        try { await ensureSessionToken(); hidePasswordOverlay(); return; }
+        catch (e2) { clearAccessToken(); }
+      }
+      showPasswordOverlay();
+    } catch (e) {
+      hidePasswordOverlay(); // auth/status 失败(网络等):按默认走,首问时再拦
+    }
+  }
+
+  pwBtn.addEventListener('click', submitPassword);
+  pwInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') { e.preventDefault(); submitPassword(); }
+  });
+  if (logoutBtn) logoutBtn.addEventListener('click', function () {
+    clearAccessToken();
+    showPasswordOverlay();
+  });
 
   async function newSessionToken() {
     var res = await fetch('/api/session', { method: 'POST', headers: authHeaders() });
@@ -508,7 +592,7 @@
     }
   }
   checkHealth();
-  ensureSessionToken().catch(function () { /* 首问时再重试 */ });
+  initAuth();
 })();
 </script>
 </body>

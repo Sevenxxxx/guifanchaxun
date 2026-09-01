@@ -69,11 +69,32 @@ def _sse(event: str, data: dict) -> str:
     return f"event: {event}\ndata: {json.dumps(data, ensure_ascii=False)}\n\n"
 
 
+# 访问口令(密码)缓存:优先读 PASSWORD_FILE(改文件即生效,靠 mtime),否则用 env GFC_ACCESS_TOKEN。
+_pw_cache: dict = {"mtime": None, "val": config.ACCESS_TOKEN}
+
+
+def _effective_access_token() -> str:
+    """返回当前生效的访问口令(密码)。有密码文件且非空则用之;否则回退 env;都无则空=不要求密码。"""
+    pf = config.PASSWORD_FILE
+    try:
+        m = pf.stat().st_mtime_ns
+        if _pw_cache["mtime"] != m:
+            _pw_cache["mtime"] = m
+            # utf-8-sig 自动去 BOM(避免 Notepad/PS 保存带回 BOM 导致密码匹配不上/空文件被判非空)
+            _pw_cache["val"] = pf.read_text(encoding="utf-8-sig").strip()
+        return _pw_cache["val"]
+    except OSError:
+        # 文件不存在/被删/读不了 → 回退 env(或空=不要求密码)
+        _pw_cache["mtime"] = None
+        return config.ACCESS_TOKEN
+
+
 def _check_access_token(request: Request) -> None:
-    if not config.ACCESS_TOKEN:
+    pw = _effective_access_token()
+    if not pw:
         return
     provided = request.headers.get("X-Access-Token") or request.query_params.get("token")
-    if provided != config.ACCESS_TOKEN:
+    if provided != pw:
         _logger.warning("auth:reject ip=%s", request.client.host if request.client else "?")
         raise HTTPException(status_code=401, detail="访问口令错误")
 
@@ -151,6 +172,12 @@ async def health() -> JSONResponse:
             "active_sessions": len(_convos),
         }
     )
+
+
+@app.get("/api/auth/status")
+async def auth_status() -> JSONResponse:
+    """是否要求进入密码(供前端决定是否弹密码框)。public。"""
+    return JSONResponse({"password_required": bool(_effective_access_token())})
 
 
 @app.post("/api/session")

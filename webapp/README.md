@@ -63,7 +63,8 @@ error/turn 事件，诊断用）。
 | `GFC_RATE_GLOBAL` / `GFC_RATE_SESSION` | `120` / `30` | 限流（次/分） |
 | `GFC_MAX_CONCURRENT` | `5` | **同时使用上限(人):超过直接拒绝 429,不排队** |
 | `GFC_SESSION_TTL` / `GFC_SESSION_CAP` | `24` / `100` | 会话闲置过期(小时)/活跃上限 |
-| `GFC_ACCESS_TOKEN` | 空（不启用） | 非空=启用访问口令；访问方式见下（`?token=`/`?access=`） |
+| `GFC_ACCESS_TOKEN` | 空（不启用） | 非空=启用访问口令；**优先用 `webapp/access.txt`（单密码，改即生效，无需重启）**；无文件才回退此环境变量 |
+| `GFC_PASSWORD_FILE` | `webapp/access.txt` | 单密码文件路径；文件存在且非空=进入需输密码；换密码=改文件内容；删/清空=关闭 |
 
 提示词护栏：`webapp/sdk-guardrail.patch.yml`（经 SDK `patches=` 注入，防注入+不输出凭据）。
 审计日志：`webapp/logs/poc.log`。
@@ -72,6 +73,7 @@ error/turn 事件，诊断用）。
 
 - `POST /api/session` → `{token}`：发放一次性对话令牌（每次打开页面调一次；旧令牌一律不认）
 - `GET /api/health` → `{ok, runtime_started, last_error, model, permission_mode, active_sessions}`
+- `GET /api/auth/status` → `{password_required}` —— 是否要求进入密码（前端据此弹密码框）；`password_required:true` 时未带对的 `X-Access-Token` 会被 `401` 拦
 - `GET /api/status?session=<token>` → `{running, result?:{final_response, finish_reason}}` —— 查询某会话是否有一轮在跑;跑完返回该轮最终回复(供客户端断流/锁屏后补取,不重跑模型)
 - `POST /api/chat` body `{token, message}` → **SSE 流**，事件：
   - `status` `{status: starting|running|idle}` —— 启动中/思考/结束
