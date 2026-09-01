@@ -10,7 +10,7 @@ description: 查询中国工程规范(JTG/GB 5768 等)PDF 原文权威条文,以
 ## 关键路径
 
 - 本 skill 目录:`<skill>`(本文件所在目录,仓库内为 `tools/guifan-chaxun/`)
-- 唯一程序:`<skill>/../guifan-chaxun-scripts/scripts/spec.py`(10 个子命令,依赖 pymupdf + tesseract + python-docx/openpyxl;doc/xls/wps/et 老格式经 Office/WPS COM 转换)
+- 唯一程序:`<skill>/../guifan-chaxun-scripts/scripts/spec.py`(15 个子命令,依赖 pymupdf + tesseract + python-docx/openpyxl;doc/xls/wps/et 老格式经 Office/WPS COM 转换)
 - 配置:`<skill>/../guifan-chaxun-scripts/config.json` — `library_dir`(知识库目录,PDF/Word/Excel/OFD/图片等)、`data_dir`(索引数据目录)
 - 书架:`<data_dir>/bookshelf.json`
 - 每本书:`<data_dir>/<源文件相对父目录>/<book_id>/` 下有(**目录结构与 guifansrc 一致**:`gonglu/` 子目录的书在 `<data_dir>/gonglu/<book_id>/`,库根目录的书在 `<data_dir>/<book_id>/`):
@@ -31,6 +31,10 @@ description: 查询中国工程规范(JTG/GB 5768 等)PDF 原文权威条文,以
    - `[未索引]` zip 压缩包/无扩展名文件 → 暂不索引,仅提示(压缩包需解包后放入库目录)。
    - `[缺失]` 源文件已不在库 → `spec.py remove <id>` 清理索引。
    - 疑似换版 → 与用户确认后 `spec.py index <新文件>` + `spec.py remove <旧id> --mark-superseded <新id>`(旧索引保留,查询时提示替代关系)。
+   - **删除后序号往前对齐(重编号)**:删掉一批顶层文件/文件夹后,若用户要求"序号往前对齐/重新编号/序号连续化",用 `spec.py renumber <相对目录>`(如 `renumber quguanli`;缺省=库根):
+     ① 先 **dry-run**(不带 `--yes`)打印完整映射核对:只重编「数字+点」前缀的顶层项(如 `22.250301…`→`16.250301…`,保留日期段;`41.25附件1…`→`29.25附件1…` 保留子序号;`21. 18年…` 保留空格),无序号/非「数字.」格式(如 `005-xxx`)的项保持原名不动;
+     ② 与用户确认后 `spec.py renumber <相对目录> --yes` 执行——自动两阶段重命名(先临时名防中间态撞车),并同步**四处**:源文件名、`library_data` 书目录名、`bookshelf.json`(顶层文件的 `id`/`file` + 文件夹内条目的 `file` 前缀)、每本书 `meta.json`(`id`/`file`/`source_abs`/`pdf_abs`);执行前自动备份 `bookshelf.json.bak_renumber`;
+     ③ 完成后 `spec.py status` 复查一致性(应与之前一样报"一致")。**注意**:重编号会改 `book_id`,若历史消息/笔记引用了旧 id,查询用 `list -q 关键词` 按书名找新 id。
    - **视觉复核(可选,仅当你有看图能力,如 `read_image`)**:索引后若书有 `failed_pages` 或低置信条文(`spec.py recheck <book>` 可查),对每个问题页:
      ① `spec.py img <book> <页码>` 渲染该页为 PNG;② 用你的视觉读原图,纠正 tesseract 误识的**条文号/表格/章标题**;③ `spec.py set-page <book> <页码> --text "<修正文本>"` 回写该页;④ `spec.py index "<该书源文件绝对路径>" --rebuild` 重新派生章/条文/目录(不重 OCR)。无看图能力则跳过;此为增强步骤,不阻断索引。
 2. 完成向用户汇报:新增/更新/删除/换版了哪些书、OCR 失败页数、COM 转换失败的文件(加密/损坏文档)。

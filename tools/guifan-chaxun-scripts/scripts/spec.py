@@ -3,7 +3,7 @@
 """spec.py — 「规范查询」skill 唯一程序。
 
 子命令(两态模型):
-  维护态: index / ocr / status / cleanup-orphans / remove / update-chars
+  维护态: index / ocr / status / cleanup-orphans / remove / renumber / update-chars
   查询态: list / toc / clause / read / grep
 
 设计要点:
@@ -2189,6 +2189,177 @@ def cmd_remove(args, cfg):
         _cmd_remove(args, cfg)
 
 
+def cmd_renumber(args, cfg):
+    """删除文件后序号往前对齐: 对 library_dir 下某目录的顶层项按序号重编为 1..N,
+    同步源文件名 / 书目录名 / bookshelf(id,file) / meta(id,file,source_abs,pdf_abs)。
+
+    只处理「数字+点」前缀的顶层项(如 22.xxx / 41.25附件1.xxx);无序号或
+    非「数字.」格式(如 gonglu 下 005-xxx)的项保持原名不动、排在有序号项之后。
+    缺省 dry-run 打印映射,--yes 执行;执行前自动备份 bookshelf.json。
+    """
+    import shutil
+    lib = Path(cfg["library_dir"])
+    rel = (getattr(args, "dir", "") or "").strip().strip("/").replace("\\", "/")
+    target = lib / rel if rel else lib
+    if not target.is_dir():
+        die(f"目录不存在: {target}")
+    data = Path(cfg["data_dir"])
+    data_target = (data / rel) if rel else data
+
+    PREFIX = re.compile(r"^(\d+)\.")
+    names = sorted(p.name for p in target.iterdir())
+    ordered = []
+    for n in names:
+        m = PREFIX.match(n)
+        ordered.append({"name": n, "isdir": (target / n).is_dir(),
+                        "num": int(m.group(1)) if m else None})
+    # 有序号项按 (序号, 名称) 排,无序号项(保持原名)按名称排其后
+    ordered.sort(key=lambda x: (0 if x["num"] is not None else 1,
+                                x["num"] if x["num"] is not None else 0, x["name"]))
+    if not ordered:
+        die(f"目录为空: {target}")
+
+    mapping = []  # {old, new, isdir}
+    idx = 0
+    for it in ordered:
+        if it["num"] is None:
+            mapping.append({"old": it["name"], "new": it["name"], "isdir": it["isdir"]})
+            continue
+        idx += 1
+        rest = PREFIX.sub("", it["name"], count=1)
+        mapping.append({"old": it["name"], "new": f"{idx}.{rest}", "isdir": it["isdir"]})
+
+    old2new = {m["old"]: m["new"] for m in mapping if m["old"] != m["new"]}
+    if not old2new:
+        print("无需重排: 序号已连续且无缺失")
+        return
+
+    print(f"目标目录: {rel or '<库根>'}(顶层 {len(mapping)} 项,将重编 {len(old2new)} 项)")
+    for m in mapping:
+        if m["old"] == m["new"]:
+            continue
+        print(f"  {'DIR ' if m['isdir'] else 'FILE'} {m['old']}")
+        print(f"        -> {m['new']}")
+    # 冲突检查: 新名不得与任一旧名撞车(两阶段临时名已防重名,这里防覆盖丢失)
+    oldset = {m["old"] for m in mapping}
+    collide = [m["new"] for m in mapping if m["new"] in oldset and m["new"] != m["old"]]
+    if collide:
+        die(f"重排会导致覆盖(新名与现有项同名): {collide}")
+
+    if not getattr(args, "yes", False):
+        print("(dry-run 未执行;确认后加 --yes)")
+        return
+
+    bs_path = data / "bookshelf.json"
+    if bs_path.exists():
+        shutil.copy2(bs_path, data / "bookshelf.json.bak_renumber")
+        print("bookshelf.json 已备份 -> bookshelf.json.bak_renumber")
+
+    def dir_new(m):
+        # 顶层文件书目录名 = 源文件名去扩展名;顶层文件夹镜像目录名 = 文件夹名
+        return m["new"] if m["isdir"] else os.path.splitext(m["new"])[0]
+
+    def dir_old(m):
+        return m["old"] if m["isdir"] else os.path.splitext(m["old"])[0]
+
+    # id 映射(仅顶层文件): 旧 id(文件名去扩展名) -> 新 id
+    id_map = {}
+    for m in mapping:
+        if not m["isdir"] and m["old"] != m["new"]:
+            id_map[os.path.splitext(m["old"])[0]] = os.path.splitext(m["new"])[0]
+
+    def path_rewrite(v):
+        """把路径里的旧顶层项名替换为新名(相对路径段与绝对路径段都覆盖)。
+        库根书(无目录段)的相对路径按文件名级替换。"""
+        nv = v
+        for o, n in old2new.items():
+            if rel:
+                nv = nv.replace(rel + "/" + o, rel + "/" + n)
+                nv = nv.replace(rel + "\\" + o, rel + "\\" + n)
+            else:
+                nv = nv.replace("/" + o, "/" + n)
+                nv = nv.replace("\\" + o, "\\" + n)
+                nv = nv.replace(o + "/", n + "/")   # 库根文件夹内书: 相对路径前缀无分隔符
+        if not rel and "/" not in v and "\\" not in v:
+            for o, n in old2new.items():
+                nv = nv.replace(o, n)
+        return nv
+
+    with library_lock(data):
+        shelf = load_shelf(data)
+        # 1) 两阶段重命名源(先全部临时名,再落新名,避免中间态撞车)
+        tmp1 = []
+        for i, m in enumerate(mapping):
+            if m["old"] == m["new"]:
+                continue
+            t = f"__rn_tmp_{i:03d}__"
+            os.rename(target / m["old"], target / t)
+            tmp1.append((t, m["new"]))
+        for t, n in tmp1:
+            os.rename(target / t, target / n)
+        # 2) 两阶段重命名索引目录
+        tmp2 = []
+        for i, m in enumerate(mapping):
+            if m["old"] == m["new"]:
+                continue
+            t = f"__rn_tmp_{i:03d}__"
+            os.rename(data_target / dir_old(m), data_target / t)
+            tmp2.append((t, dir_new(m)))
+        for t, n in tmp2:
+            os.rename(data_target / t, data_target / n)
+        # 3) 更新 bookshelf: id(顶层文件)+ file(顶层文件与文件夹内条目前缀)
+        bs_updated = 0
+        for b in shelf.get("books", []):
+            frel = b.get("file", "")
+            if rel:
+                if not frel.startswith(rel + "/"):
+                    continue
+                rest = frel[len(rel) + 1:]
+            else:
+                rest = frel
+            if "/" in rest:
+                folder = rest.split("/", 1)[0]
+                if folder in old2new:
+                    b["file"] = (rel + "/" if rel else "") + old2new[folder] + "/" + rest.split("/", 1)[1]
+                    bs_updated += 1
+            else:
+                if rest in old2new:
+                    b["id"] = os.path.splitext(old2new[rest])[0]
+                    b["file"] = (rel + "/" if rel else "") + old2new[rest]
+                    bs_updated += 1
+                elif b.get("id") in id_map:
+                    b["id"] = id_map[b["id"]]
+                    b["file"] = path_rewrite(frel)
+                    bs_updated += 1
+        save_shelf(data, shelf)
+        # 4) 更新 meta.json(id + 路径字段)
+        meta_updated = 0
+        for meta_path in data_target.rglob("meta.json"):
+            try:
+                meta = json.loads(meta_path.read_text(encoding="utf-8"))
+            except Exception as e:
+                print(f"  跳过(meta 读取失败): {meta_path} ({e})")
+                continue
+            ch = False
+            if meta.get("id") in id_map:
+                meta["id"] = id_map[meta["id"]]
+                ch = True
+            for key in ("file", "source_abs", "pdf_abs"):
+                v = meta.get(key)
+                if not v:
+                    continue
+                nv = path_rewrite(v)
+                if nv != v:
+                    meta[key] = nv
+                    ch = True
+            if ch:
+                atomic_write_text(meta_path, json.dumps(meta, ensure_ascii=False, indent=2) + "\n")
+                meta_updated += 1
+        print(f"完成: 源重命名 {len(tmp1)} 项, 索引目录 {len(tmp2)} 项, "
+              f"bookshelf 更新 {bs_updated} 条, meta 更新 {meta_updated} 个")
+        print("建议: spec.py status 复查一致性")
+
+
 def cmd_update_chars(args, cfg):
     """生成/刷新常用字表: 从干净文字版 PDF 统计字频,取前 3500 字(仅 PDF 参与)。"""
     pdfs = [Path(p) for p in (args.from_pdfs or [])]
@@ -2305,6 +2476,12 @@ def build_parser():
     p.add_argument("book")
     p.add_argument("--mark-superseded", metavar="NEW_ID", help="标记被新书替代(不删除)")
     p.set_defaults(func=cmd_remove)
+
+    p = sub.add_parser("renumber", help="删除文件后序号往前对齐(重编顶层项序号,同步源/索引/书架;缺省 dry-run)")
+    p.add_argument("dir", nargs="?", default="",
+                   help="library_dir 下的相对目录(如 quguanli;缺省=库根)")
+    p.add_argument("--yes", action="store_true", help="实际执行(缺省仅打印映射 dry-run)")
+    p.set_defaults(func=cmd_renumber)
 
     p = sub.add_parser("update-chars", help="生成/刷新常用字表(乱码检测资源)")
     p.add_argument("--from-pdfs", nargs="+", help="来源 PDF(干净文字版)")

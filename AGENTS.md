@@ -6,11 +6,11 @@ This file provides guidance to Codex (Codex.ai/code) when working with code in t
 
 **规范查询 skill 工程**:一个 Codex skill(`guifan-chaxun`),让 agent 按"翻书"方式查询中国工程规范 PDF 及库内公文/通知等知识文件——书架 → 目录 → 章节 → 条文原文。**不做向量库**,全部索引产物是文件系统上的明文(可 grep、可 Read)。实际规模 530+ 本 PDF + 350+ 个非 PDF 知识文件(guifansrc),设计支持批量扩展。
 
-**两态模型**:①查询态——按索引翻书查规范(纯文件操作,零 Python);②维护态——库有增删时先更新索引再查询(增=index、删=remove、换版=标记替代),**该 OCR 就 OCR**。
+**两态模型**:①查询态——按索引翻书查规范(纯文件操作,零 Python);②维护态——库有增删时先更新索引再查询(增=index、删=remove、换版=标记替代、删除后序号对齐=renumber),**该 OCR 就 OCR**。
 
 ## 常用命令(开发/维护视角)
 
-skill 唯一程序是 `tools/guifan-chaxun-scripts/scripts/spec.py`(14 子命令:index/list/toc/clause/read/grep/ocr/status/remove/update-chars/img/recheck/set-page/cleanup-orphans),依赖 pymupdf + tesseract(路径与语言包在 `config.json`):
+skill 唯一程序是 `tools/guifan-chaxun-scripts/scripts/spec.py`(15 子命令:index/list/toc/clause/read/grep/ocr/status/remove/renumber/update-chars/img/recheck/set-page/cleanup-orphans),依赖 pymupdf + tesseract(路径与语言包在 `config.json`):
 
 ```bash
 # 以下命令在 tools/guifan-chaxun-scripts/ 目录下执行(python scripts/spec.py ...);
@@ -22,6 +22,7 @@ python scripts/spec.py status                                         # 库一�
 python scripts/spec.py cleanup-orphans [--yes]                        # 一致性清扫: 未登记孤儿目录+空目录+源文件缺失的登记书(缺省 dry-run)
 python scripts/spec.py ocr <book> [--start N] [--end N]               # 整本批量 OCR(断点续跑,index 内部也会调;图片书同构)
 python scripts/spec.py remove <book> [--mark-superseded <新id>]       # 删索引/登记,或标记被替代(不物理删)
+python scripts/spec.py renumber <相对目录> [--yes]                    # 删除后序号往前对齐(重编顶层序号,同步源/索引/书架;缺省 dry-run)
 python scripts/spec.py update-chars --from-pdfs <干净文字版PDF...>    # 重建常用字表(乱码检测资源,新领域书先跑)
 python scripts/spec.py index <源文件> --rebuild                       # 从已有文本重建章/条文/目录(不重 OCR;视觉修正后生效)
 python scripts/spec.py img <book> <页>                                # 渲染源 PDF 页为 PNG(供 agent 视觉复核)
