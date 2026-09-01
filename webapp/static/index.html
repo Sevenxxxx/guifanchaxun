@@ -309,6 +309,26 @@
         err.className = 'error-text';
         err.textContent = message;
         bubble.appendChild(err);
+      },
+      resetForRetry: function (note) {
+        this.finished = false;
+        rawText = '';
+        textSpan.textContent = '';
+        textSpan.innerHTML = '';
+        bubble.classList.remove('error-text');
+        cursor.textContent = '▍';
+        statusSpan.textContent = '';
+        this.addNotice(note);
+      },
+      addRetryButton: function (onClick) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'action-btn';
+        b.textContent = '↻ 重新生成';
+        b.addEventListener('click', onClick);
+        var act = document.createElement('div'); act.className = 'actions';
+        act.appendChild(b);
+        bubble.appendChild(act);
       }
     };
   }
@@ -379,27 +399,56 @@
     }
   }
 
-  // 跑一轮;会话失效时返回 true(旧令牌已作废),由调用方取新令牌重发一次
+  // 网络错误(SSE 流硬断/连接被重置): fetch/流层抛 TypeError; HTTP 业务错误是普通 Error
+  function isNetworkError(err) { return err instanceof TypeError; }
+
+  function delayMs(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
+
+  // 跑一轮;会话失效时返回 true(旧令牌已作废),由调用方取新令牌重发一次。
+  // 网络中断(流被硬断)且未收完: 自愈重试一次;仍失败则保留已收内容 + 重新生成按钮。
   async function runTurn(message) {
     var bubble = appendAssistant();
     var ctx = { needsRetry: false };
-    try {
-      var token = await ensureSessionToken();
-      var res = await fetch('/api/chat', {
-        method: 'POST',
-        headers: authHeaders(),
-        body: JSON.stringify({ token: token, message: message })
-      });
-      if (!res.ok || !res.body) {
-        var detail = '';
-        try { var j = await res.json(); detail = (j && j.detail) ? j.detail : ''; } catch (e2) {}
-        throw new Error(detail || ('HTTP ' + res.status));
+    var tries = 0;
+    while (true) {
+      try {
+        var token = await ensureSessionToken();
+        var res = await fetch('/api/chat', {
+          method: 'POST',
+          headers: authHeaders(),
+          body: JSON.stringify({ token: token, message: message })
+        });
+        if (!res.ok || !res.body) {
+          var detail = '';
+          try { var j = await res.json(); detail = (j && j.detail) ? j.detail : ''; } catch (e2) {}
+          throw new Error(detail || ('HTTP ' + res.status));
+        }
+        await consumeSse(res.body, bubble, ctx);
+        return ctx.needsRetry;
+      } catch (err) {
+        // 网络中断(流被硬断)且未收完 → 自愈重试一次(同一气泡)
+        if (isNetworkError(err) && !bubble.finished && tries < 1) {
+          tries += 1;
+          bubble.resetForRetry('网络中断,回复可能不完整;正在自动重新生成…');
+          await delayMs(1500); // 等上一轮在服务端回收完,避免触发"会话忙"
+          continue;
+        }
+        // 仍失败(已试过): 保留已收内容 + 明确提示 + 重新生成按钮
+        if (isNetworkError(err) && !bubble.finished) {
+          bubble.setStatus('');
+          bubble.addNotice('网络中断,回复可能不完整。请检查网络后点击下方"重新生成"。');
+          bubble.addRetryButton(function () { regenerate(message); });
+          return ctx.needsRetry;
+        }
+        bubble.showError(err.message || String(err));
+        return ctx.needsRetry;
       }
-      await consumeSse(res.body, bubble, ctx);
-    } catch (err) {
-      bubble.showError(err.message || String(err));
     }
-    return ctx.needsRetry;
+  }
+
+  // 手动重新生成: 由 runTurn 新建气泡,不复用旧气泡
+  async function regenerate(message) {
+    await runTurn(message);
   }
 
   formEl.addEventListener('submit', async function (e) {

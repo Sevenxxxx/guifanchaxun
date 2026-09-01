@@ -36,6 +36,7 @@ RATE_SESSION_MIN = int(os.environ.get("GFC_RATE_SESSION", "30"))       # 每会�
 MAX_CONCURRENT = int(os.environ.get("GFC_MAX_CONCURRENT", "5"))        # 同时使用上限(超了直接拒绝,不排队)
 SESSION_TTL_HOURS = float(os.environ.get("GFC_SESSION_TTL", "24"))     # 会话闲置过期(小时)
 SESSION_CAP = int(os.environ.get("GFC_SESSION_CAP", "100"))            # 活跃会话上限
+SSE_HEARTBEAT_SEC = float(os.environ.get("GFC_SSE_HEARTBEAT", "15"))    # SSE 心跳(秒),长回复保活防中断
 ACCESS_TOKEN = os.environ.get("GFC_ACCESS_TOKEN", "")                  # 非空=启用访问口令(可选)
 GUARDRAIL_PATCH = WEBAPP_DIR / "sdk-guardrail.patch.yml"               # 提示词护栏 patch
 LOG_DIR = WEBAPP_DIR / "logs"                                          # 审计日志目录

@@ -54,6 +54,8 @@ _rate_session: dict[str, deque] = {}
 
 # 排队/运行中的轮次数(含当前正在跑的)
 _pending_box = [0]
+# 正在跑的会话 token(同一会话禁止并行两轮,避免 DSH 会话被并发打乱)
+_running_tokens: set[str] = set()
 
 
 class ChatRequest(BaseModel):
@@ -121,6 +123,7 @@ async def _cleanup_loop() -> None:
         for token in list(_rate_session):
             if token not in _convos:
                 _rate_session.pop(token, None)
+        _running_tokens &= set(_convos)
 
 
 @app.on_event("startup")
@@ -198,6 +201,10 @@ async def chat(req: ChatRequest, request: Request) -> StreamingResponse:
             detail=f"当前同时使用人数已达上限({config.MAX_CONCURRENT} 人),请稍后再试",
         )
 
+    if req.token in _running_tokens:
+        _logger.warning("chat:session-busy token=%s ip=%s", req.token[:8], ip)
+        raise HTTPException(status_code=429, detail="本会话上一问仍在处理中,请等待完成后再提问")
+
     conv.last_used = now
     conv.turns += 1
     if conv.turns > config.MAX_TURNS:
@@ -209,6 +216,7 @@ async def chat(req: ChatRequest, request: Request) -> StreamingResponse:
         req.token[:8], conv.turns, len(req.message), ip,
     )
     _pending_box[0] += 1
+    _running_tokens.add(req.token)
 
     queue: asyncio.Queue = asyncio.Queue()
     loop = asyncio.get_running_loop()
@@ -238,6 +246,7 @@ async def chat(req: ChatRequest, request: Request) -> StreamingResponse:
     def on_task_done(done_task: asyncio.Task) -> None:
         # 无论客户端是否断开都记录结果(观测缺口修复)
         _pending_box[0] = max(0, _pending_box[0] - 1)
+        _running_tokens.discard(req.token)
         exc = done_task.exception()
         if exc is not None:
             _logger.info("chat:error token=%s dur=%.1fs err=%s", req.token[:8], time.time() - started, str(exc)[:200])
@@ -253,7 +262,12 @@ async def chat(req: ChatRequest, request: Request) -> StreamingResponse:
     async def gen():
         yield _sse("status", initial_status)
         while True:
-            item = await queue.get()
+            try:
+                item = await asyncio.wait_for(queue.get(), timeout=config.SSE_HEARTBEAT_SEC)
+            except asyncio.TimeoutError:
+                # 心跳: 发 SSE 注释行保活长连接(代理/网络不会因空闲掐断)
+                yield ": ping\n\n"
+                continue
             if item is _SENTINEL:
                 break
             event: dict = item
