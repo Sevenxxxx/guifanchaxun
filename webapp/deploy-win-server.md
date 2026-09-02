@@ -36,6 +36,8 @@ C:\poc\
 - `deepseek-harness`（2GB）：RDP 磁盘映射或 WinSCP；**Windows→Windows 直接复制，原生二进制兼容，无需重装依赖**
 - `guifansrc`（4GB，最大头）：推荐 WinSCP(OpenSSH)断点续传 或 腾讯云 COS 中转。**必传**：文字 PDF 书 `read`/`img` 直接读该源（现场 fitz 提取页文本/渲染页图）；OCR/非 PDF 书靠 `library_data` 缓存、不依赖源。上线前要传完，否则文字规范书一 `read` 就报"源文件缺失"。
 
+**也可用 git 拉代码（可选）**：不必整包上传 `webapp/`，服务器上 `git clone <你的仓库> C:\poc\guifanchaxun`，以后代码更新用 `git pull`。但 `guifansrc`/`library_data`（在 .gitignore）和 `deepseek-harness`（另一仓库）**不在 guifanchaxun 仓库**，需单独放到 `C:\poc\guifanchaxun\guifansrc`、`C:\poc\guifanchaxun\library_data`、`C:\poc\deepseek-harness`（一次性上传或单独同步）。配合第 4 步用 `GFC_DSH_CHECKOUT` 环境变量，git pull 不会覆盖路径设置。
+
 ## 3. skills 目录（服务器上）
 
 ```powershell
@@ -54,17 +56,17 @@ Copy-Item C:\poc\guifanchaxun\tools\guifan-chaxun-scripts "$env:USERPROFILE\.age
 }
 ```
 
-## 4. 改 POC 的 3 处路径（必做）
+## 4. 设置 DSH 路径(环境变量,推荐;git pull 安全)
 
-1. `C:\poc\guifanchaxun\webapp\config.py`：
-   - `DSH_CHECKOUT = Path(r"C:\poc\deepseek-harness")`
-   - `DSH_HOME = WEBAPP_DIR / "dsh-home"`（不变）
-   - `LAUNCHER = WEBAPP_DIR / "dsh_launcher.cmd"`（不变）
-2. `C:\poc\guifanchaxun\webapp\dsh_launcher.cmd`：
-   ```cmd
-   cd /d "C:\poc\deepseek-harness"
-   node apps\cli\lib\bin.js %*
-   ```
+`config.py` 的 `DSH_CHECKOUT` 和 `dsh_launcher.cmd` 已改为读 `GFC_DSH_CHECKOUT` 环境变量(未设则回退本机路径)。服务器设它即可,**不用再改 config.py / dsh_launcher.cmd**——这样用 git 拉代码也不会被覆盖。`DSH_HOME`/`LAUNCHER` 相对仓库自动适应,无需改。
+
+```powershell
+# 服务器上设 Machine 级环境变量(重启 PowerShell 会话生效)
+[Environment]::SetEnvironmentVariable('GFC_DSH_CHECKOUT','C:\poc\deepseek-harness','Machine')
+# 验证:
+[Environment]::GetEnvironmentVariable('GFC_DSH_CHECKOUT','Machine')
+```
+（想回退:删除该环境变量即回到本机默认路径。）
 
 ## 5. 设置 DEEPSEEK_API_KEY（你自己输入，不落任何文件/脚本）
 

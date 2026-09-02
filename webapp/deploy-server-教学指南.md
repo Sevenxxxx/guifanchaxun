@@ -71,6 +71,8 @@ C:\poc\
 
 > 为什么 WinSCP 断点续传好:4GB 中途断网不会从头再来;RDP 拖拽对超大目录又慢又易中断。
 
+**也可用 git 拉代码(可选)**:不必整包上传 `webapp/`,服务器上 `git clone <你的仓库> C:\poc\guifanchaxun`,以后代码更新用 `git pull`。但 `guifansrc`/`library_data`(在 .gitignore)和 `deepseek-harness`(另一仓库)**不在 guifanchaxun 仓库**里,需单独放到 `C:\poc\guifanchaxun\guifansrc`、`C:\poc\guifanchaxun\library_data`、`C:\poc\deepseek-harness`。配合第 5 步用 `GFC_DSH_CHECKOUT` 环境变量,`git pull` 不会覆盖路径设置。
+
 ---
 
 ## 3. 安装环境(在服务器上,管理员 PowerShell)
@@ -121,24 +123,18 @@ Copy-Item C:\poc\guifanchaxun\tools\guifan-chaxun-scripts "$env:USERPROFILE\.age
 
 ---
 
-## 5. 改 webapp 的 2 处本地路径(必做,否则起不来)
+## 5. 用环境变量指 DSH 路径(推荐;git pull 安全)
 
-**为什么**:`config.py` 和 `dsh_launcher.cmd` 里写死的是**本机** `C:\Users\Seven\Desktop\deepseek-harness`,服务器上没有这个路径,DSH 开不起来。
+**为什么**:`config.py` 的 `DSH_CHECKOUT` 和 `dsh_launcher.cmd` 以前写死的是**本机** `C:\Users\Seven\Desktop\deepseek-harness`。现在改为读环境变量 `GFC_DSH_CHECKOUT`,未设则回退本机路径。服务器设它即可,**不用改文件**——这样用 git 拉代码也不会被覆盖。
 
 **怎么做**:
-1. `C:\poc\guifanchaxun\webapp\config.py`:
-   ```python
-   DSH_CHECKOUT = Path(r"C:\poc\deepseek-harness")     # 改为服务器路径
-   DSH_HOME     = WEBAPP_DIR / "dsh-home"             # 不变
-   LAUNCHER     = WEBAPP_DIR / "dsh_launcher.cmd"     # 不变
-   ```
-2. `C:\poc\guifanchaxun\webapp\dsh_launcher.cmd`:
-   ```cmd
-   cd /d "C:\poc\deepseek-harness"
-   node apps\cli\lib\bin.js %*
-   ```
-
-> 提示:两处要**保持一致**(注释也写着 `Keep checkout path in sync with DSH_CHECKOUT`)。
+```powershell
+# 服务器上设 Machine 级环境变量(重启 PowerShell 会话生效)
+[Environment]::SetEnvironmentVariable('GFC_DSH_CHECKOUT','C:\poc\deepseek-harness','Machine')
+# 验证:
+[Environment]::GetEnvironmentVariable('GFC_DSH_CHECKOUT','Machine')
+```
+`DSH_HOME`/`LAUNCHER` 相对仓库自动适应,无需改。想回退:删掉该环境变量即回本机默认路径。
 
 ---
 

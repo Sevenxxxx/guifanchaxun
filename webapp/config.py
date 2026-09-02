@@ -7,7 +7,7 @@ from pathlib import Path
 # 仓库根(guifanchaxun)与 DSH checkout
 REPO_ROOT = Path(__file__).resolve().parent.parent
 WEBAPP_DIR = Path(__file__).resolve().parent
-DSH_CHECKOUT = Path(r"C:\Users\Seven\Desktop\deepseek-harness")  # 与 dsh_launcher.cmd 保持一致
+DSH_CHECKOUT = Path(os.environ.get("GFC_DSH_CHECKOUT", r"C:\Users\Seven\Desktop\deepseek-harness"))  # 服务器用 GFC_DSH_CHECKOUT 覆盖,git pull 不影响;与 dsh_launcher.cmd 保持一致
 DSH_HOME = WEBAPP_DIR / "dsh-home"  # POC 独立 home:会话/凭据/设置与 GUI 隔离
 LAUNCHER = WEBAPP_DIR / "dsh_launcher.cmd"  # dsh CLI 启动包装
 
