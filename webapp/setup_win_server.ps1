@@ -1,7 +1,7 @@
 # Windows Server one-time setup: isolated DSH home + sdk profile materialization.
 # Unlike setup.ps1, NO credential file copy: the server uses the DEEPSEEK_API_KEY
 # environment variable (set it yourself).
-# Prereqs (see deploy-win-server.md): config.py paths + dsh_launcher.cmd point to server locations.
+# Prereqs (see deploy-server-教学指南.md): config.py paths + dsh_launcher.cmd point to server locations.
 # Usage (admin PowerShell, on the server): powershell -ExecutionPolicy Bypass -File webapp\setup_win_server.ps1
 $ErrorActionPreference = 'Stop'
 

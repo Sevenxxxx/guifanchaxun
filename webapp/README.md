@@ -117,9 +117,9 @@ error/turn 事件，诊断用）。
 5. 安全组放行 TCP 8090（公网 + Tailscale）；可选 `GFC_ACCESS_TOKEN`
 
 **Windows Server 步骤**：与本地几乎一致（launcher .cmd 路径改绝对），守护用任务计划/NSSM。
-**完整照抄版**：见 `webapp/deploy-win-server.md`（Windows Server 2022 部署 runbook：
-目录规划、3 处路径修改、环境变量凭据、2G 内存 pagefile 调优、防火墙、任务计划开机自启、
-验证清单；服务器版初始化用 `webapp/setup_win_server.ps1`——不复制凭据文件）。
+**完整照抄版**：见 `webapp/deploy-server-教学指南.md`（Windows Server 2022 部署手把手：
+目录规划、依赖、skill 配置、DSH 路径环境变量、凭据、2G 内存 pagefile 调优、防火墙、任务计划开机自启、
+进入密码、验证清单；服务器版初始化用 `webapp/setup_win_server.ps1`——不复制凭据文件）。
 
 **维护策略**：OCR/索引在你的电脑上做，完成后增量上传 `library_data/` 覆盖即可（云上只跑查询态）。
 
