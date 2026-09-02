@@ -38,7 +38,7 @@ guifansrc(规范 PDF 源) + library_data(索引:meta/toc/clauses/chapters…)
 |---|---|---|
 | 1 | 一台 Windows Server 2022(腾讯云,拿到**公网 IP** + 管理员密码) | 本文的部署目标 |
 | 2 | 本机的 `guifanchaxun` 项目(已 clone 到 `C:\Users\Seven\Desktop\guifanchaxun`) | 含 `webapp/`、`tools/`、`library_data/`、`guifansrc/` |
-| 3 | 本机的 `deepseek-harness` checkout(`C:\Users\Seven\Desktop\deepseek-harness`,约 2GB) | DSH 运行时本体,服务器要用 |
+| 3 | 本机的 `deepseek-harness` checkout(`C:\Users\Seven\Desktop\deepseek-harness`,约 2GB) | DSH 运行时本体,**方案 A:整个文件夹拷过来**;钉在 tag `dsh-v0.1.2-alpha.2`(commit `0a53fb55be`) |
 
 > **关键**:`guifansrc`(约 4GB)和 `library_data`(约 138MB)是**知识库**;`deepseek-harness` 是**大脑**。两者都要传,少一个就"有入口没知识"或"有知识没大脑"。
 
@@ -62,11 +62,11 @@ C:\poc\
 - `webapp\` : FastAPI 源码 + 启动/部署脚本。**同事访问的就是它**。
 - `library_data\` : **知识库索引**(现已入 git)。服务器上只读(查询用);更新在**你本机**做(增删书/索引),改完 `git commit`+`push`,服务器 `git pull` 即同步。
 - `guifansrc\` : 规范 PDF 源。**文字 PDF 书 `read`/`img` 会直接读它**(现场 fitz 提取页文本 / 渲染页图);OCR 书读 `library_data` 里的 `ocr/` 缓存、非 PDF 书读 `extracted/` 缓存,那些不读源。所以**服务器必须上传 guifansrc**,否则文字规范书一 `read` 就报"源文件缺失"。
-- `deepseek-harness\` : DSH 运行时。**Node 依赖已含,Windows→Windows 无需重装**,直接复制即可。**webapp 绑定特定 DSH 版本**(`config.py` 的 `DSH_VERSION`),升级 DSH 需先在本机重测;若启动日志出现"DSH 版本与绑定不一致"告警,说明服务器 DSH 与该版本不符。
+- `deepseek-harness\` : DSH 运行时。**方案 A(推荐):整文件夹拷贝**(本机就在钉住版本 `dsh-v0.1.2-alpha.2` 上,自带 node_modules + 已 build 的 `apps\cli\lib\bin.js`,**免装依赖、免 build、免联网**)。**不建议 git-clone**:clone 不含 node_modules,`lib\bin.js` 需 `pnpm install`+`pnpm build`(tsc/tsdown,2C2G 重、慢、且要联网 npm)。**webapp 绑定特定 DSH 版本**(`config.py` 的 `DSH_VERSION`),升级 DSH 需先在本机重测;若启动日志出现"DSH 版本与绑定不一致"告警,说明服务器 DSH 与该版本不符。
 
 **上传方式(按大小)推荐**:
 - `webapp`(代码,建议 git):`git clone`/`pull`。`library_data` 已入 git,随代码一起 `git pull` 即可,无需单独传。
-- `deepseek-harness`(2GB):RDP 磁盘映射或 WinSCP;**直接复制,原生二进制兼容**。
+- `deepseek-harness`(2GB,**方案 A 整文件夹拷贝**,本机即 tag `dsh-v0.1.2-alpha.2`):RDP 磁盘映射或 WinSCP;**直接复制,原生二进制兼容,自带 node_modules + build**。
 - `guifansrc`(4GB,最大):推荐 **WinSCP(OpenSSH)断点续传** 或 **腾讯云 COS 中转**;RDP 拖拽很慢(可最后传)。
 
 > 为什么 WinSCP 断点续传好:4GB 中途断网不会从头再来;RDP 拖拽对超大目录又慢又易中断。
