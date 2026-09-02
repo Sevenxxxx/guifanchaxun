@@ -1,0 +1,44 @@
+车 路 通信 协议
+
+iid Dsrec -DID OPTIONAL，
+ret ReturmnStatus
+
+|
+
+其 编码 规定 如 下 :
+
+Dsrc-DID:: =INTEGER (0. . 127，…) 无 扩展 ，ETC 拓展 应 用 目录 号 为 1， 取
+
+值 1;
+
+responseParameter 为 Container 类 型 ，Container. Type = 21 (GetSecureRs ) ， 在
+
+ETC 拓展 应 用 中 应 存在 。
+GetSecureRs 的 ASN. 1 数据 格式 说 明 如 下
+GetSecureRs: : = SEQUENCE |
+fileid FID ，
+
+fle File， 1 二
+authenticator 。 OCTET STRING (SIZE (8) 从 司 记
+
+|
+其 编码 规定 如 下 : -3A
+fileid FID，FID:: =INTECER (0 CC
+， 取 值 1;
+
+Action-Request:: =SEQUENCE |
+
+mode BOOLEAN ，
+did Dsrc-DID ，
+actionType ActionType，
+
+accessCredentials ”OCTECT STRING (SIZE (0. .127，…) ) OPTIONAL ，
+actionParameter Container OPIIONAL ，
+iid Dasrc-DID OPTIONAL
+
+|
+
+其 编码 规定 如 下 :
+
+mode: 采用 确认 模式 ， 取 值 为 1;
+

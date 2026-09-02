@@ -1,0 +1,149 @@
+{
+  "id": "123-公路隧道施工技术规范-JTGT3660-2020",
+  "title": "123-公路隧道施工技术规范-JTGT3660-2020",
+  "std_no": "",
+  "version": "",
+  "file": "123-公路隧道施工技术规范-JTGT3660-2020.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\123-公路隧道施工技术规范-JTGT3660-2020.pdf",
+  "pages": 246,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 246,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:37:40",
+  "indexed_at": "2026-08-26 03:14:04",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 246
+  },
+  "toc_zone_end": 7,
+  "offset": 8,
+  "toc_source": "clause_cluster",
+  "expl_start": 144,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "21",
+      "title": "第21章",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "1",
+      "title": "总 则",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "施工 准备",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "施工 测量",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "洞口 、 明 洞 与 浅 埋 段 工程",
+      "start": 38,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "润 届 开 控",
+      "start": 44,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "闭 酒 、 运 漆 与 弃 鲨",
+      "start": 59,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "文 护 与 衬砌",
+      "start": 65,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "10",
+      "title": "小 浆 距 隧道 及 连 拱 隧 道",
+      "start": 103,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "11",
+      "title": "防水 和 排水",
+      "start": 106,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "12",
+      "title": "风 、 水 、 电 供应",
+      "start": 121,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "13",
+      "title": "第13章",
+      "start": 129,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "14",
+      "title": "辅助 坑道",
+      "start": 136,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 144,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 512,
+  "status": "indexed",
+  "note": ""
+}

@@ -1,0 +1,135 @@
+{
+  "id": "067-公路钢混组合桥梁设计与施工规范-JTGTD64-01-2015",
+  "title": "067-公路钢混组合桥梁设计与施工规范-JTGTD64-01-2015",
+  "std_no": "",
+  "version": "",
+  "file": "067-公路钢混组合桥梁设计与施工规范-JTGTD64-01-2015.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\067-公路钢混组合桥梁设计与施工规范-JTGTD64-01-2015.pdf",
+  "pages": 84,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 84,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:54:30",
+  "indexed_at": "2026-08-26 01:36:32",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 84
+  },
+  "toc_zone_end": 5,
+  "offset": 5,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "承载 能 力 极 限 状态 : 包括 构件 和 连接 的 强",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "10",
+      "title": "第10章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语 和 符 扎",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "材料",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "设计 基本 规定",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "第5章",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "组 合 梁 桥 面板",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "组 合 梁 计 算",
+      "start": 24,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "第8章",
+      "start": 38,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "连接 件",
+      "start": 53,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "11",
+      "title": "连接 件 施工",
+      "start": 63,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "12",
+      "title": "第12章",
+      "start": 66,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "13",
+      "title": "第13章",
+      "start": 71,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "14",
+      "title": "索 塔 及 拱 座 钢 混 绪 合 部 施工",
+      "start": 76,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 230,
+  "status": "indexed",
+  "note": ""
+}

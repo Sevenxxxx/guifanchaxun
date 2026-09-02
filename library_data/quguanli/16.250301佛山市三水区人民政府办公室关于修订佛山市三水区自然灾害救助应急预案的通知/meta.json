@@ -1,0 +1,107 @@
+{
+  "id": "16.250301佛山市三水区人民政府办公室关于修订佛山市三水区自然灾害救助应急预案的通知",
+  "title": "250301佛山市三水区人民政府办公室关于修订佛山市三水区自然灾害救助应急预案的通知",
+  "std_no": "",
+  "version": "",
+  "file": "quguanli/16.250301佛山市三水区人民政府办公室关于修订佛山市三水区自然灾害救助应急预案的通知.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\16.250301佛山市三水区人民政府办公室关于修订佛山市三水区自然灾害救助应急预案的通知.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\16.250301佛山市三水区人民政府办公室关于修订佛山市三水区自然灾害救助应急预案的通知.pdf",
+  "pages": 40,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 40,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9567,
+    "punct_median": 0.0091,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.375,
+    "clause_hits": 51
+  },
+  "source_mtime": "2025-03-12 20:23:01",
+  "pdf_mtime": "2025-03-12 20:23:01",
+  "source_mtime_ns": 1741782181000000000,
+  "source_size": 355545,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:19:58",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "组织体系",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "灾害救助准备",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "灾情信息报告和发布",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "应急响应",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "10",
+      "title": "户以下；",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "灾后救助",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "保障措施",
+      "start": 26,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "附则",
+      "start": 31,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 115,
+  "status": "indexed",
+  "note": ""
+}

@@ -1,0 +1,51 @@
+{
+  "id": "17.250319必看！4月15日起，三水货车限行用新规",
+  "title": "250319必看！4月15日起，三水货车限行用新规",
+  "std_no": "",
+  "version": "",
+  "file": "quguanli/17.250319必看！4月15日起，三水货车限行用新规.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\17.250319必看！4月15日起，三水货车限行用新规.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\17.250319必看！4月15日起，三水货车限行用新规.pdf",
+  "pages": 8,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 8,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 0.8659,
+    "punct_median": 0.0381,
+    "empty_ratio": 0.5,
+    "bad_ratio": 1.0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-03-19 18:13:51",
+  "pdf_mtime": "2025-03-19 18:13:51",
+  "source_mtime_ns": 1742379231000000000,
+  "source_size": 4658141,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 8
+  },
+  "indexed_at": "2026-08-31 22:20:39",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

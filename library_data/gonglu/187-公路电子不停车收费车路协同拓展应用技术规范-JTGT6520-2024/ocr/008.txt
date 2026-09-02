@@ -1,0 +1,30 @@
+术语 和 符号
+
+2.1.7 信息 发 布设 施 information release facility
+用 于 向 公众 发 布 公路 出 行 信息 的 机 电 设施 。
+
+2.1.8 智能 信息 终端 intelligent information terminal
+内 肯 5. 8GHz 专用 短程 通信 模块 旦 能 与 RSU2. 0 进行 信息 交互 ， 向 用 户 提供 个 性 化
+服务 的 终端 产品 ， 如 智能 锥 桶 、 智 能 安全 帽 、 可 穿戴 设备 等 。
+
+2.1.9 订阅 subscription
+由 用 户 通过 手机 App (应 用 程序 ) 、 网 站 等 方式 向 发 行 服 务 桃 构 中
+行为 。
+
+2.2 符号
+
+ASK 一 一 幅 移 键 控 (Amplitude Shift Keying) ; < 人 =
+ASN 1 一 抽象 语法 标记 《Abstact Synta pio hg，
+
+LSB_ /如 多 有 效 位 (Least Significant Bit ) ;
+MAC 一 一 媒体 访问 控制 (Medium Access Control ) ;
+MTBF 一 一 平均 故障 间隔 时 间 (Mean Time Between Failure) ;
+0BD 一 一 车 辆 自 诊 断 系 统 (On Board Diagnostic ) ;
+0OBU 一 一 车 载 单 元 (On Board Unit ) ;
+0OTA 一 一 空中 下 载 技术 (Over-the-Air) ;
+PCI 一 一 外 设 部 件 互联 (Peripheral Component Interconnect ) ;
+PCI-E 一 一 高 速 外 设 部 件 互联 ( Peripheral Component Interconnect-Express ) ;
+PDU 一 一 协议 数据 单元 (Protocol Data Unit ) ;
+
+PSAM 一 一 消费 安全 访问 模块 〈(Payment Security Access Module) ;
+一 3 一

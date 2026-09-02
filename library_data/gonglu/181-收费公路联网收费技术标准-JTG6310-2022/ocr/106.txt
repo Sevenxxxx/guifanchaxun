@@ -1,0 +1,60 @@
+RSU 技术 要 求
+
+4 0BTU 车 辆 信息 帧 应 符合 表 节 . 4. 6-4 的 规定 。
+表
+
+E.4.6-4 OBU 车 辆 信息 帧
+
+位 置 | 字 节 数 人 参 数 说 明
+
+0 FrameType 数据 帧 类 型 标识 ， 此 处 取 值 0xB3
+
+1 4 OBUID OBUMAC 地 址
+
+5 ErrorCode 执行 状态 代码
+
+6 79 车 辆 信息 取 值 详 见 附 录 M
+
+85 BCC 异 或 校 验 值
+
+注 : 如 果 ErmrorCode 为 0x00， 说 明 后 续 车 辆 信息 合法 有 效 ; 如 果 ErrorCode 为 0x08 ,表示 死 DSRC 数据 返回 ; 如
+
+果 ErrorCode 为 0xFF， 表 示 该 帧 为 测试 帧 。
+
+5 ETC 用 户 卡 信息 帧 应 符合 表 下 . 4. 6-5 的 规定 。
+表 了 .4.6-$S ETC 用 户 卡 信息 帧
+位 置 | 字 节 数 人 参 数 说 明
+0 1 FrameType 类 型 标识 ， 此 处 取 值 0xB4
+1 4 OBUID OBUMAC 地 址
+5 1 ErrorCode 执行 状态 代码
+6 1 TransType 交易 类 型
+7 4 CardRestMoney 卡 余额
+11 50 IssuerInfo ETG- 用 户 卡 发 行 信 息 (00 玖 文件 内 容 )， 不 足 50 字 节 填充 0x00
+61 43 LastStation 上 次 过 站 信息 (ETG 上 用户 卡 过 站 信息 0019 记录 文件 )
+104 | RedpEndssi 读 取 亚 F04 文 估 全 邦 4 0x00y 成 功 ， 0x01- 失 政 (失败 时 ， 无 错误 码 ， 此 状态
+为 0&01， 是 否 继 续 痪 易 鲁 它 道 软件 控制 ) ， 无 操作 时 填 0x00
+105 |EF04Len| 全 POnfo C0 指令 指定 向 移 量 和 和 长度 的 OBU DFO1ZEF0O4 文件 信息
+ET 1 Bcc 异 或 校 验 秆
+
+注 : 坟 如 果 -HirorG5de 为 0x00， 说 明 后 续 ETC
+DSRC 数据 返回 ; 如果 ErrorCode 为 0xFF， 表 示 该 帧 为 测试 帧 。
+2.，EF04 文件 解析 需要 根据 初始 化 配置 参数 解析 。
+3，ErrorCode 非 0x00， 后 续 ETC 用 户 卡 +EF04 信息 填充 0x00。
+
+6 成 功 交 易 结束 帧 应 符合 表 民 4. 6-6 的 规定 。
+表 了 .4.6-6 成 功 交易 结束 帧
+
+户 卡 + OBU EF04 信息 有 效 ， 如果 ErrorCode 为 0x08 ， 表 示 无
+
+位 置 | 字 节 数 人 参 数 说 明
+
+0 1 FrameType 数据 帧 类 型 标识 ， 此 处 取 值 0xB5
+
+1 4 OBUID OBUMAC 地 址
+
+5 1 ErrorCode 执行 状态 代码 (复合 消费 错误 但 )
+
+6 6 PSAMNo PSAM 卡 终端 机 编号
+
+12 7 TransTime 交易 时 间 ，BCD 编码 ， 格 式 : YYYYMMDDhhmmss
+

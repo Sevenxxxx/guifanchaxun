@@ -1,0 +1,50 @@
+RSF 与 监测 设施 、 信 息 发 布设 施 的 接
+
+表 下 .0.3-5 数据 主动 请 求 返回
+
+字段 名
+
+序号 字段 名 字 节 数 描述
+1 CmdType 1 指令 代码 ， 取 值 0xBl
+2 Status 1 响应 状态 : 0x00 正常 ， 其 他 异常
+3 Datetime 7 当前 日 期 时 间 ，YYYYMMDDhhmmss
+4 DataContent N 数据 内 容 ， 根 据 监测 设施 提供 数据 填充
+5 Reserved 4 预 留 ， 缺 省 0x00
+表 耻 0.3-6 数据 主动 上 报
+
+CmdType
+
+Status
+
+Datetime
+
+DataContent
+
+表 PN.3-8 连接 确认
+
+描述
+
+指令 代码 ， 取 值 0xA3
+
+取 值 0x00
+
+字段 名
+
+取 值 0x08
+
+表 了 .0.3-9 心跳 信息
+
+描述
+
+CmdType
+
+指令 代码 ， 取 值 0xB3
+
+Content
+
+取 值 0x00
+
+Status
+
+取 值 0x80
+

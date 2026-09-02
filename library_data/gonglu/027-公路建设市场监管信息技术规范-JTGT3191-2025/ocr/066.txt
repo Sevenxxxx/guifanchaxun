@@ -1,0 +1,69 @@
+公路 建设 市 场 监管 信息 技术 规范 (JTGXT 3191 一 2025 )
+
+中 文 名 称
+
+字段 名 称
+
+表 A.2.7 投诉 举报 信息 数据
+
+举报 内 容
+
+Content
+
+举报 人
+
+accuU_User_name
+
+举报 人 身份 证
+号 码
+
+accu_idcard_no
+
+联系 方式
+
+phone
+
+举报 时 间
+
+accu_time
+
+相关 证 明 材料
+
+accu_file
+
+受理 部 门
+
+transfer_user_unit
+
+受理 人
+
+transfer_user_name
+
+反馈 时 间
+
+do_time
+
+投诉 举报 受理
+和 处 理 情 况
+
+数据 导出 时 间
+
+do_result
+
+一 62 一
+
+1 year 信用 评价 年 份 | 数字 型 .4
+建设 单位 ,勘察
+按 企业 类 型 设计 单位 施工 音
+企 OIpban an .
+?| 企业 作弄 PP | 区 分 子 得 弄 ?1 位 \ 监 理 单位 \ 质
+量 检测 机构
+全 国 综合 信用
+吾 儿 6 和 am. .
+3 信用 等 级 如 ad 评价 等 级 字符 型 S0 AAA、B、C、D
+处 于 该 等 级 的
+企 】 Compbany_nuUm 了 . .
+4 | 。 企业 数量 pany 企业 下 数字 型 8
+站 采用 24 小 时 | 日 期
+5 数据 导出 时 间 export_date 计时 法 时 间 型 YYYYMMDDHHMMSS
+

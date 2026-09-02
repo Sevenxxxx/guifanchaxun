@@ -1,0 +1,135 @@
+{
+  "id": "034-公路工程物探规程-JTGT3222-2020",
+  "title": "034-公路工程物探规程-JTGT3222-2020",
+  "std_no": "",
+  "version": "",
+  "file": "034-公路工程物探规程-JTGT3222-2020.pdf",
+  "pdf_abs": "guifansrc\\gonglu\\034-公路工程物探规程-JTGT3222-2020.pdf",
+  "pages": 154,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 154,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9874,
+    "punct_median": 0.0162,
+    "empty_ratio": 0.071,
+    "bad_ratio": 0.333,
+    "clause_hits": 201
+  },
+  "pdf_mtime": "2026-08-25 22:20:41",
+  "indexed_at": "2026-08-26 08:00:09",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 9,
+  "offset": 10,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语和符号",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本规定",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "物探应用",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "直流电法勘探",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "电磁法勘探",
+      "start": 64,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "地震波勘探与测试",
+      "start": 85,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "磁法勘探",
+      "start": 114,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "放射性勘探",
+      "start": 121,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "10",
+      "title": "地球物理测井",
+      "start": 126,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "11",
+      "title": "报告编制与成果提交",
+      "start": 138,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "12",
+      "title": "作业安全与环境保护",
+      "start": 142,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "附录A",
+      "title": "常见岩土主要物性参数",
+      "start": 152,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "附录B",
+      "title": "公路工程物探方法选用",
+      "start": 153,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 602,
+  "status": "indexed",
+  "note": ""
+}

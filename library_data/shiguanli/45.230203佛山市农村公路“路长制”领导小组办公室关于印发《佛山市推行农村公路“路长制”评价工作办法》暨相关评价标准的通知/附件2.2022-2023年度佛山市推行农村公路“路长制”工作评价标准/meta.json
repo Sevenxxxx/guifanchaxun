@@ -1,0 +1,51 @@
+{
+  "id": "附件2.2022-2023年度佛山市推行农村公路“路长制”工作评价标准",
+  "title": "附件2.2022-2023年度佛山市推行农村公路“路长制”工作评价标准",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/45.230203佛山市农村公路“路长制”领导小组办公室关于印发《佛山市推行农村公路“路长制”评价工作办法》暨相关评价标准的通知/附件2.2022-2023年度佛山市推行农村公路“路长制”工作评价标准.xls",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\45.230203佛山市农村公路“路长制”领导小组办公室关于印发《佛山市推行农村公路“路长制”评价工作办法》暨相关评价标准的通知\\附件2.2022-2023年度佛山市推行农村公路“路长制”工作评价标准.xls",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\45.230203佛山市农村公路“路长制”领导小组办公室关于印发《佛山市推行农村公路“路长制”评价工作办法》暨相关评价标准的通知\\附件2.2022-2023年度佛山市推行农村公路“路长制”工作评价标准.xls",
+  "pages": 17,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 17,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9889,
+    "punct_median": 0.0124,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:15:40",
+  "pdf_mtime": "2025-02-14 18:15:40",
+  "source_mtime_ns": 1739528140000000000,
+  "source_size": 40448,
+  "fmt": "xls",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:32:13",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

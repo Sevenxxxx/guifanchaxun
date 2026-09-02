@@ -1,0 +1,93 @@
+{
+  "id": "佛山市农村公路网规划（2021-2035年）图集",
+  "title": "佛山市农村公路网规划（2021-2035年）图集",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/31.佛山市交通运输局关于印发《佛山市农村公路网规划（2021-2035年）》的通知/佛山市农村公路网规划（2021-2035年）图集.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\31.佛山市交通运输局关于印发《佛山市农村公路网规划（2021-2035年）》的通知\\佛山市农村公路网规划（2021-2035年）图集.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\31.佛山市交通运输局关于印发《佛山市农村公路网规划（2021-2035年）》的通知\\佛山市农村公路网规划（2021-2035年）图集.pdf",
+  "pages": 50,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 50,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 0.7437,
+    "punct_median": 0.078,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1.0,
+    "clause_hits": 2
+  },
+  "source_mtime": "2025-02-14 18:16:15",
+  "pdf_mtime": "2025-02-14 18:16:15",
+  "source_mtime_ns": 1739528175000000000,
+  "source_size": 50467043,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 50
+  },
+  "indexed_at": "2026-09-01 01:21:34",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "闪 和 乡 目 .",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "6",
+      "title": "号 一",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "5",
+      "title": "路 州 村 委 会 图 个 1",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "7",
+      "title": "和 委 全 5 村 村 居 会",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "0",
+      "title": "迷 南 村 委 全",
+      "start": 40,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "2",
+      "title": "人 说",
+      "start": 43,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "3",
+      "title": "本 人",
+      "start": 45,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed",
+  "note": ""
+}

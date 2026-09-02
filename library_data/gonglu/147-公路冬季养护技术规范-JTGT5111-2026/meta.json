@@ -1,0 +1,86 @@
+{
+  "id": "147-公路冬季养护技术规范-JTGT5111-2026",
+  "title": "147-公路冬季养护技术规范-JTGT5111-2026",
+  "std_no": "",
+  "version": "",
+  "file": "147-公路冬季养护技术规范-JTGT5111-2026.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\147-公路冬季养护技术规范-JTGT5111-2026.pdf",
+  "pages": 46,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 46,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 0.0595,
+    "punct_median": 0.0,
+    "empty_ratio": 0.071,
+    "bad_ratio": 1.0,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:39:25",
+  "indexed_at": "2026-08-26 04:00:44",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 46
+  },
+  "toc_zone_end": 8,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "3",
+      "title": "第3章",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "4",
+      "title": "和 人 冬 前 检查 和 养护",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "1",
+      "title": "路面 排水 设施 是 否 存",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "2",
+      "title": "沥青 路",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "冬季 期 养护",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "公路 除 冰 雪 与 防 斌",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "越冬 后 养护 处 置",
+      "start": 34,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 181,
+  "status": "indexed",
+  "note": ""
+}

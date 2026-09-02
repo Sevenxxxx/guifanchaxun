@@ -1,0 +1,19 @@
+公路
+
+电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGZT 6520 一 2024 )
+
+RSF 一 一 路 侧 智能 站 (Roadside Smart Facility ) ;
+RSU 一 一 路 侧 单元 (Roadside Unit ) ;
+
+SAM 一 一 设备 安全 访问 模块 〈Security Access Module) ;
+SSL 一 一 安全 套 接 字 协 议 〈Secure Sockets Layer) ;
+
+TCP 一 一 传输 控制 协议 〈Transmission Control Protocol) ;
+TLS 一 一 传输 层 安 全 性 协议 〈Transport Layer Security) ;
+TPS 一 一 每 秒 事务 处 理 量 (Transactions Per Second ) ;
+VPN 一 一 虚拟 专用 网 络 〈Virtual Private Network ) ;
+
+VST 一 一 车 辆 服务 表 (Vehicle Service Table) 。
+
+勾 ;
+SR

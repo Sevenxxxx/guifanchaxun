@@ -1,0 +1,41 @@
+数据 资源 表
+
+表 A.2.1-4 从 业 企业 信用 评价 结果 信息 数据
+
+序 、 数据 是 否
+号 中 文 名 称 字段 名 称 说 明 类 型 数据 格式 值 域 必 填
+被 评价 单位 统
+会 信和 | credit_code am .
+1 院 一 社会 信用 代码 | erediLeode | 社会 信用 代码 | 字符 理 18 是
+2 单位 名 称 company_name 名 四 评价 单位 字符 型 an. .256 是
+3 期 次 evaluation_year 信用 评价 年 份 | 字符 型 am .4 是
+CC 勘察 设计 单
+、 友 | 住 施工 单位 监
+4 | 评价 类 型 代码 evaluate_type 字符 型 an .S0 中 理 单位 质量 检 是
+测 机 构
+部 级 .省 级 、 市
+5 评价 地 区 evaluate_area 级 县 级 等 地 区
+编码
+6 评价 级 别 evaluate_level 二
+7 | 投标 行为 得 分 Jid_score
+8 | 履约 行为 得 分 do_score
+9 | 其 他 行为 扣 分 | 。 other scome 0
+10 部 级 扣 分
+有 时 的 四
+11 项 用 人 ojeeE mn .3 是
+个 | 参与 评价 的 项
+12 合同 价 1 contract_amount | 目 合 同 总 价 ( 单 | 数字 型 n. . 12 ,4
+位 :万 元 )
+13 总 分 SUm_Sscore 数字 型 n..5,4 是
+14 信用 等 级 时 age 信用 等 级 名 称 | 字符 型 an. . 50 AAA、B、 CD
+15 备注 remark 字符 型 an. . 500
+16 状态 data_state 数字 型 ml 1 有 效 .0 失 效 | 是
+采用 24 小 时
+计时 法 , 例如 :
+站 20180522160822 | 日 期
+17| 数据 导出 时 间 export_date 表示 2018 年 5 | 时 间 型 YYYYMMDDHHMMSS 是
+月 22 日 16 点 零
+8 分 22 秒
+
+一 47 一
+

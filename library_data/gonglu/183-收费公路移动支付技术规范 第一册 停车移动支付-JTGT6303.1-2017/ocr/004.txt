@@ -1,0 +1,24 @@
+目 次
+1 总 则 ooeoesouooeooooosoooososooosoosooosoooooooooooooooooooooooooeooeoooooooooooooeoooeoooooouooooooooon 1
+2 术语 和 缩 略 语 2
+2.1 术语 2
+2.2 缩 略 语 4
+3 基本 规定 5
+4 系统 框架 及 功能 要 求 6
+4.1 系统 框 锅 Ne 6
+4.2 功能 要 求 7
+S$ 信息 编码 和 数据 接口 10
+4 和. 1 信息 编码 ooooeoooosoovoooooooooooooooooooiooooioaoioooooooiiooooooooooooooooooooooooooooooo 10
+5.2 数据 接口 11
+6 安全 防护 要 求人 人 et 14
+6.1 网 络 安全 防护 要 求 .pt 14
+6.2 设备 安全 防护 要 求 … 和 4 生生 16
+6.3 ”应 用 安全 防护 要 藻 . 可 和. 尖 - 生 和 18
+6.4 数据 安全 防护 要 求 | 本 20
+6.5 物理 和 环境 安全 防护 要 求 .本 生生 20
+附录 A 交易 流程 [向 - 和 0 21]
+附录 了 B 出 号 车 道 停车 移动 支付 关键 操作 流程 23
+附录 C “受理 终端 技术 要 求 24
+附录 D 8SE 模块 技术 要 怀 26
+
+本 规范 用 词 用语 说 了 明 Nt 27

@@ -1,0 +1,310 @@
+{
+  "id": "079-公路水下隧道设计规范-JTGT3371-2022",
+  "title": "079-公路水下隧道设计规范-JTGT3371-2022",
+  "std_no": "",
+  "version": "",
+  "file": "079-公路水下隧道设计规范-JTGT3371-2022.pdf",
+  "pdf_abs": "guifansrc\\gonglu\\079-公路水下隧道设计规范-JTGT3371-2022.pdf",
+  "pages": 249,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 249,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9844,
+    "punct_median": 0.0328,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.222,
+    "clause_hits": 201
+  },
+  "pdf_mtime": "2026-08-25 22:26:28",
+  "indexed_at": "2026-08-26 08:00:08",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 7,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语和符号",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "勘察与测量",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "建筑材料",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "17",
+      "title": "第17章",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "总体设计",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "结构设计",
+      "start": 38,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "钻爆隧道",
+      "start": 55,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "盾构隧道",
+      "start": 66,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "沉管隧道",
+      "start": 76,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "10",
+      "title": "堰筑隧道",
+      "start": 89,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "11",
+      "title": "附属工程",
+      "start": 100,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "12",
+      "title": "排水系统",
+      "start": 105,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "13",
+      "title": "交通工程设施与防灾救援",
+      "start": 111,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "14",
+      "title": "风险分析",
+      "start": 123,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "15",
+      "title": "结构安全监测",
+      "start": 129,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "附录A",
+      "title": "公路水下隧道建设条件分级",
+      "start": 133,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "附录B",
+      "title": "公路水下隧道环境作用等级",
+      "start": 134,
+      "is_expl": false
+    },
+    {
+      "no": 19,
+      "label": "附录C",
+      "title": "钢筋混凝土结构构件的裂缝宽度计算",
+      "start": 137,
+      "is_expl": false
+    },
+    {
+      "no": 20,
+      "label": "附录D",
+      "title": "钢筋混凝土结构构件的承载能力极限状态计算",
+      "start": 139,
+      "is_expl": false
+    },
+    {
+      "no": 21,
+      "label": "22",
+      "title": "第22章",
+      "start": 139,
+      "is_expl": false
+    },
+    {
+      "no": 22,
+      "label": "附录E",
+      "title": "公路水下隧道结构防水分级及设防要求",
+      "start": 142,
+      "is_expl": false
+    },
+    {
+      "no": 23,
+      "label": "附录F",
+      "title": "公路水下隧道消防及监控设施配置表",
+      "start": 143,
+      "is_expl": false
+    },
+    {
+      "no": 24,
+      "label": "附录G",
+      "title": "风险事件损失等级判断标准",
+      "start": 144,
+      "is_expl": false
+    },
+    {
+      "no": 25,
+      "label": "",
+      "title": "本规范用词用语说明",
+      "start": 145,
+      "is_expl": false
+    },
+    {
+      "no": 26,
+      "label": "1",
+      "title": "总则",
+      "start": 148,
+      "is_expl": false
+    },
+    {
+      "no": 27,
+      "label": "3",
+      "title": "勘察与测量",
+      "start": 149,
+      "is_expl": false
+    },
+    {
+      "no": 28,
+      "label": "4",
+      "title": "建筑材料",
+      "start": 154,
+      "is_expl": false
+    },
+    {
+      "no": 29,
+      "label": "5",
+      "title": "总体设计",
+      "start": 159,
+      "is_expl": false
+    },
+    {
+      "no": 30,
+      "label": "6",
+      "title": "结构设计",
+      "start": 165,
+      "is_expl": false
+    },
+    {
+      "no": 31,
+      "label": "7",
+      "title": "钻爆隧道",
+      "start": 177,
+      "is_expl": false
+    },
+    {
+      "no": 32,
+      "label": "8",
+      "title": "盾构隧道",
+      "start": 187,
+      "is_expl": false
+    },
+    {
+      "no": 33,
+      "label": "9",
+      "title": "沉管隧道",
+      "start": 196,
+      "is_expl": false
+    },
+    {
+      "no": 34,
+      "label": "10",
+      "title": "堰筑隧道",
+      "start": 206,
+      "is_expl": false
+    },
+    {
+      "no": 35,
+      "label": "11",
+      "title": "附属工程",
+      "start": 214,
+      "is_expl": false
+    },
+    {
+      "no": 36,
+      "label": "12",
+      "title": "排水系统",
+      "start": 221,
+      "is_expl": false
+    },
+    {
+      "no": 37,
+      "label": "13",
+      "title": "交通工程设施与防灾救援",
+      "start": 227,
+      "is_expl": false
+    },
+    {
+      "no": 38,
+      "label": "14",
+      "title": "风险分析",
+      "start": 237,
+      "is_expl": false
+    },
+    {
+      "no": 39,
+      "label": "15",
+      "title": "结构安全监测",
+      "start": 242,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 1362,
+  "status": "indexed",
+  "note": ""
+}

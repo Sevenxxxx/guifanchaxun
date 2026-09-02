@@ -1,0 +1,51 @@
+{
+  "id": "12.广东省县乡道与国省道平交路口“一清一灯一带”整治指导意见（修订）",
+  "title": "广东省县乡道与国省道平交路口“一清一灯一带”整治指导意见",
+  "std_no": "修订",
+  "version": "",
+  "file": "shiguanli/12.广东省县乡道与国省道平交路口“一清一灯一带”整治指导意见（修订）.doc",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\12.广东省县乡道与国省道平交路口“一清一灯一带”整治指导意见（修订）.doc",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\12.广东省县乡道与国省道平交路口“一清一灯一带”整治指导意见（修订）.doc",
+  "pages": 14,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 14,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9928,
+    "punct_median": 0.0123,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 17:59:35",
+  "pdf_mtime": "2025-02-14 17:59:35",
+  "source_mtime_ns": 1739527175000000000,
+  "source_size": 2741760,
+  "fmt": "doc",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:31:34",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

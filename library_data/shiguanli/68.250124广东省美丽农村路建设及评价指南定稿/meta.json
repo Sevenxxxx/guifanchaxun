@@ -1,0 +1,58 @@
+{
+  "id": "68.250124广东省美丽农村路建设及评价指南定稿",
+  "title": "250124广东省美丽农村路建设及评价指南定稿",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/68.250124广东省美丽农村路建设及评价指南定稿.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\68.250124广东省美丽农村路建设及评价指南定稿.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\68.250124广东省美丽农村路建设及评价指南定稿.pdf",
+  "pages": 57,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 57,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9932,
+    "punct_median": 0.0258,
+    "empty_ratio": 0.143,
+    "bad_ratio": 0.111,
+    "clause_hits": 60
+  },
+  "source_mtime": "2025-03-06 18:16:20",
+  "pdf_mtime": "2025-03-06 18:16:20",
+  "source_mtime_ns": 1741256180000000000,
+  "source_size": 8233136,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:52:28",
+  "toc_zone_end": 5,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "第2部分",
+      "title": "第2部分(无目录,按页均分)",
+      "start": 36,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 90,
+  "status": "indexed"
+}

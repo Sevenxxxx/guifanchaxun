@@ -1,0 +1,86 @@
+{
+  "id": "065-公路桥涵地基与基础设计规范-JTG3363-2019",
+  "title": "065-公路桥涵地基与基础设计规范-JTG3363-2019",
+  "std_no": "",
+  "version": "",
+  "file": "gonglu/065-公路桥涵地基与基础设计规范-JTG3363-2019.pdf",
+  "pdf_abs": "guifansrc\\gonglu\\065-公路桥涵地基与基础设计规范-JTG3363-2019.pdf",
+  "pages": 210,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 210,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9957,
+    "punct_median": 0.0451,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.444,
+    "clause_hits": 201
+  },
+  "pdf_mtime": "2026-08-25 22:22:35",
+  "indexed_at": "2026-08-28 18:39:51",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 6,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": 133,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "2",
+      "title": "承载力特征值乘以相应的抗力系数",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "3",
+      "title": "地基承载力抗力系数",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "1",
+      "title": "当基底只承受轴心荷载时：",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "8",
+      "title": "刃脚重力g 按下式计算：",
+      "start": 121,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "9",
+      "title": "作用在刃脚外侧的摩阻力",
+      "start": 121,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "4",
+      "title": "作用在井壁外侧的摩阻力",
+      "start": 122,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 133,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 967,
+  "status": "indexed",
+  "note": ""
+}

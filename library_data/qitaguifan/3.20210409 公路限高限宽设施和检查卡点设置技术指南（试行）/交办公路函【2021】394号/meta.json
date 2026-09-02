@@ -1,0 +1,44 @@
+{
+  "id": "交办公路函【2021】394号",
+  "title": "交办公路函【2021】394号",
+  "std_no": "",
+  "version": "",
+  "file": "交办公路函【2021】394号.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\3.20210409 公路限高限宽设施和检查卡点设置技术指南（试行）\\交办公路函【2021】394号.pdf",
+  "pages": 12,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 12,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2025-02-14 18:14:33",
+  "indexed_at": "2026-08-26 19:42:52",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 12
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

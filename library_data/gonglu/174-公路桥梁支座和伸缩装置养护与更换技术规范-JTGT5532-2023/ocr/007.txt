@@ -1,0 +1,52 @@
+2 术语
+
+2.0.1 文 座 养 护 bearing maintenance
+
+2.0.2 文 座 更 换 bearing replacement
+拆除 功能 失效 的 文 座 ， 更 换 满 足 设计 要 求 的 新 文 座 。
+
+2.0.3 桥梁 顶 升 bridge jack-up
+
+通过 对 文 座 和 文 座 一 梁 体 结构 连接 部 位 的 养护 修复 ， 以 恢复 文 座 功 能 。
+
+采用 项 升 拍 高 设备 将 梁 体 项 升 至 支 座 更 换 设计 允许 高 度 的 闪 4d 程 。
+
+2.0.4 桥 轨 顶 升 安全 控制 技术 指标 safety control technigalj“indicators
+jack-up
+
+确保 上 部 结构 主 梁 顶 升 受 力 安 全 的 理论 设计 顶 对 高 度 允 许 值 , 以 及
+落 梁 复位 后 标高 与 初始 标高 人 往 差 控制 值 ，
+
+of bridge
+
+主 梁 同 步
+
+2.0.$ 同步 液压 顶 升 控制 装置 syiehirenous hydrauliayjackirig control devices
+
+采用 多 个 千斤 顶 实 施 冰 伟 整体 预 升 时, 可 同步 控制 项 升力 和 顶 升 高
+顶 升 控制 装置
+
+2.0.6 文 座 反 力 转移 transfer ofbsaringsSreagtion force
+
+桥梁 顶 升 至 设计 高 度 后 , 将 区 三 及 为 转移 到 临时 支承 主 深 的 专用 设
+工 过 程 。
+
+210.7 价 时 文 承 装 置 ttmporary Support of devices
+文 庶 更 换 施工 时 ， 用 于 临时 文 承 主 粱 的 专用 设备 。
+
+2.0.8 先 简 支 后 连续 桥梁 simply-supported continuous bridge
+预制 装配 式 桥梁 所 采用 的 移 简 文 后 连续 结构 体系 , 分 为 体系 转换 (和
+
+度 的 液压
+
+备 上 的 施
+
+排 文 座 )
+
+和 体系 不 转换 〈 双 排 支 座 ) 两 种 。
+
+2.0.9 曲线 桥 curved bridge
+
+一 种 存在 平面 弯曲 或 立体 弯曲 《〈 臣 道 桥 和 立交 桥 ) 的 桥梁 ， 又 称 弯 桥 。
+
+2.0.10 斜 桥 skew bridge

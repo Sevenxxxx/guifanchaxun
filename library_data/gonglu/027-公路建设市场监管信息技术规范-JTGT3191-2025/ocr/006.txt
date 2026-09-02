@@ -1,0 +1,37 @@
+公路 建设 市 场 监管 信息 技术 规范 (JTGXT 3191 一 2025 )
+
+2 术语 和 符 续
+
+2.1 术语
+
+2.1.1 公路 建设 市 场 监管 信息 工程 supervision uusee
+struction market <
+
+由 计 算 机 攀 硬 件 、 信 息 资源 和 信息 用 户 等 组 成, 池 六 人
+
+of highway con-
+
+市 场 信用 管理 招标 投
+
+2. 1. 2 公路 建设 市 场 信 用 信息 credit aiopgn ipn 交 fghway construction market
+各 级 交通 运输 主管 部 门 、 公 路 建设 管理 和音 is 公 呈 行 业 入 组织 .法
+
+关 等 在 懂行 职责 过 程 中 ,以 及 从 业 企业 和 从 业 入 让 在 工作 过 从
+
+反映 公路 建设 从 业 企业 和 从 业 人 员 2
+
+ding and tendering 7 Na
+各 级 交通 运 条 主管 人 路 建设 人
+
+目 建 设 过 程 中 产生 、 记 录 、 归 集 的 能 够 反映 工程 建设 内 容 、 进 度 质量 .计量 工程 影像 等 工
+程 项 目的 各 类 信息 。
+
+2.1.5 公路 建设 市 场 秩序 检查 信息 “overseer information of highway construction market
+各 级 交通 运输 主管 部 门 公 路 建设 管理 有 关 部 门 或 单位 ,在 建设 市 场 秩序 检查 过 程 中
+
+产生 记录 归 集 的 能 够 反映 行业 管理 和 项 目 管理 情况 的 各 类 信息 。
+
+2.2 符号
+
+BI 一 一 商业 智能 (Business Intelligence ) ;
+一 2 一

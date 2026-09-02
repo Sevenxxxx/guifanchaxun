@@ -1,0 +1,121 @@
+{
+  "id": "113-公路路基施工技术规范-JTGT3610-2019",
+  "title": "113-公路路基施工技术规范-JTGT3610-2019",
+  "std_no": "",
+  "version": "",
+  "file": "113-公路路基施工技术规范-JTGT3610-2019.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\113-公路路基施工技术规范-JTGT3610-2019.pdf",
+  "pages": 168,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 168,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9958,
+    "punct_median": 0.0199,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.0,
+    "clause_hits": 201
+  },
+  "pdf_mtime": "2026-08-25 22:32:48",
+  "indexed_at": "2026-08-26 03:04:03",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 7,
+  "offset": 8,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语和符号",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "施工准备",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "一般路基",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "路基排水工程",
+      "start": 44,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "路基防护与支挡工程",
+      "start": 55,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "0",
+      "title": "第0章",
+      "start": 64,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "特殊路基",
+      "start": 88,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "冬期雨期路基施工",
+      "start": 136,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "路基施工安全",
+      "start": 140,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "10",
+      "title": "路基施工环境保护",
+      "start": 157,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "11",
+      "title": "路基整修与验收",
+      "start": 166,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 728,
+  "status": "indexed",
+  "note": ""
+}

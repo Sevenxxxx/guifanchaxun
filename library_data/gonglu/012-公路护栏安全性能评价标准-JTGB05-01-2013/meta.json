@@ -1,0 +1,79 @@
+{
+  "id": "012-公路护栏安全性能评价标准-JTGB05-01-2013",
+  "title": "012-公路护栏安全性能评价标准-JTGB05-01-2013",
+  "std_no": "",
+  "version": "",
+  "file": "gonglu/012-公路护栏安全性能评价标准-JTGB05-01-2013.pdf",
+  "pdf_abs": "guifansrc\\gonglu\\012-公路护栏安全性能评价标准-JTGB05-01-2013.pdf",
+  "pages": 48,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 48,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": 0.9618,
+    "punct_median": 0.0389,
+    "empty_ratio": 0.786,
+    "bad_ratio": 0.0,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 21:18:57",
+  "indexed_at": "2026-08-28 18:39:05",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 48
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": 33,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "4",
+      "title": "安全 性 能 评价 指标 6",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "5",
+      "title": "实 车 足 尺 碰撞 试验 .pt 10",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "2",
+      "title": "术语",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "3",
+      "title": "防护 等 级",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 33,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 95,
+  "status": "indexed",
+  "note": ""
+}

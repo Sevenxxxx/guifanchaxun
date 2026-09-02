@@ -1,0 +1,45 @@
+公路 工程 沥青 及 沥青 混合 料 试验 规程 (JTG 3410 一 2025 )
+
+2.1.19 沥青 混合 料 毛 体积 密度 bulk density of asphalt mixture
+沥青 混合 料 单位 体积 (含混 合 料 的 实体 矿物 成 分 及 不 吸收 水 分 的 闭口 孔 院 、 能 吸收
+水 分 的 开口 孔 阶 等 颗粒 表面 轮廓 线 所 包围 的 全 部 毛 体积 ) 的 干 质量 ,以 gcm 计 。
+
+2.1.20 沥青 混合 料 毛 体积 相对 密度 bujk specific density of asphalt mlxture
+沥青 混合 料 的 毛 体 积 密度 与 同 温度 水 的 密度 的 比值 ,无 量 纲 。
+
+2.1.21 沥青 混合 料 空隙 率 air voids of compacted asphalt mixture
+压 实 沥青 混合 料 内 矿 料 及 沥青 以 外 的 空 附 ( 不 包括 矿 料 自身 内 部 丐 被 汤 青 封闭 的 孔
+院 ) 的 体积 占 混 合 料 总 体积 的 百分率 ,以 三 表 示 。
+
+2.1.22 沥青 混合 料 池 青 体积 百分率 percentage of aspj 量 lt-yelume in compacted as-
+phalt mixture
+
+压 实 沥青 混合 料 内 沥青 部 分 的 体积 占 混 合 料 总 体积 的 百分率 ,以 网 表示 。
+
+2.1.23 沥青 混合 料 矿 料 间 隐 率 voidaofomirehal aggregate in compacted asphalt mix-
+
+ture
+
+压 实 沥青 混合 料 中 矿 料 以 外 的 体 各 点 混合 料 总 体积 的 百 分 潍 ,以 YNW4 表示 。
+
+2.1.24 沥青 混合 料 沥青 饱和 庆 voids of mifeialLaggregate filled with asphalt in com-
+pacted asphalt mixture
+
+压 实 沥青 混合 料 内 有效 沥青 的 体积 种 矿 料 以 录 的 体积 (JW4) 的 百分率 ,以 74 表示 。
+
+2.1.2S 粗 集 料 松 装 间 隙 率 Uncomipacted volds of coarse mineral aggregate
+干燥 粗 集 料 在 标准 容量 简 中 经 的 突 形 成 的 粗 集 料 部 分 以 外 的 体积 占 粗 集 料 总 体积 的
+百分率 , 忒 VE ， 表 示 。
+
+2.1.26“ 浪 混合 料 粗 集 料 间 隙 率 voids of coarse aggregate lin compacted asphalt mlx-
+
+压 实 沥青 混合 料 内 粗 集 料 部 分 以 外 的 体积 占 混 合 料 试 件 总 体积 的 百分率 ,以 TYC4
+表示 。
+
+2.1.27 马歇尔 稳定 度 Marshall stability
+按 规 定 条 件 采 用 马 软 尔 试验 仪 测定 的 沥青 混合 料 所 能 承受 的 最 大 答 载 ,以 kN 计 。
+
+2.1.28 流 值 flow value
+沥青 混合 料 马鞭 尔 试验 时 相应 于 最 大 荷载 时 试 件 的 竖 向 变形 ,以 mm 计 。
+一 4 一
+

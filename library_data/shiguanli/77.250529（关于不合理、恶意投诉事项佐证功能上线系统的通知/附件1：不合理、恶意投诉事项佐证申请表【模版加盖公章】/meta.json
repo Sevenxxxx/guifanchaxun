@@ -1,0 +1,51 @@
+{
+  "id": "附件1：不合理、恶意投诉事项佐证申请表【模版加盖公章】",
+  "title": "附件1：不合理、恶意投诉事项佐证申请表【模版加盖公章】",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/77.250529（关于不合理、恶意投诉事项佐证功能上线系统的通知/附件1：不合理、恶意投诉事项佐证申请表【模版加盖公章】.docx",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\77.250529（关于不合理、恶意投诉事项佐证功能上线系统的通知\\附件1：不合理、恶意投诉事项佐证申请表【模版加盖公章】.docx",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\77.250529（关于不合理、恶意投诉事项佐证功能上线系统的通知\\附件1：不合理、恶意投诉事项佐证申请表【模版加盖公章】.docx",
+  "pages": 2,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 2,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9565,
+    "punct_median": 0.0314,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-05-30 19:58:51",
+  "pdf_mtime": "2025-05-30 19:58:51",
+  "source_mtime_ns": 1748606331000000000,
+  "source_size": 14202,
+  "fmt": "docx",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:26:12",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

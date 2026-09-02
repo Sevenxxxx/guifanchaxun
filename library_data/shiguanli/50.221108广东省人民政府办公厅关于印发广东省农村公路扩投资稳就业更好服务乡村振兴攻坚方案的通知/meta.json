@@ -1,0 +1,65 @@
+{
+  "id": "50.221108广东省人民政府办公厅关于印发广东省农村公路扩投资稳就业更好服务乡村振兴攻坚方案的通知",
+  "title": "221108广东省人民政府办公厅关于印发广东省农村公路扩投资稳就业更好服务乡村振兴攻坚方案的通知",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/50.221108广东省人民政府办公厅关于印发广东省农村公路扩投资稳就业更好服务乡村振兴攻坚方案的通知.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\50.221108广东省人民政府办公厅关于印发广东省农村公路扩投资稳就业更好服务乡村振兴攻坚方案的通知.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\50.221108广东省人民政府办公厅关于印发广东省农村公路扩投资稳就业更好服务乡村振兴攻坚方案的通知.pdf",
+  "pages": 14,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 14,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 17:58:34",
+  "pdf_mtime": "2025-02-14 17:58:34",
+  "source_mtime_ns": 1739527114000000000,
+  "source_size": 6550346,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 14
+  },
+  "indexed_at": "2026-08-31 22:51:20",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "8",
+      "title": "一",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "24",
+      "title": "第24章",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "10",
+      "title": "一",
+      "start": 10,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 1,
+  "status": "indexed",
+  "note": ""
+}

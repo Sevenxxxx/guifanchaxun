@@ -1,0 +1,79 @@
+公路 建设 市 场 监管 信息 技术 规范 (JTGXT 3191 一 2025 )
+
+续 表 A. 1.3-1
+
+序 、 数据 是 否
+号 中 文 名 称 字段 名 称 说 明 类 型 数据 格式 值 域 必 填
+26 长 隘 道 累计 长 度 ]_tunnel_len 长 障 道 累计 长 数字 型 n. .18,2
+
+(my) 度 (m)
+27 中 隧道 数量 m_tumnnel_num 中 隧道 数 其 数字 型 mn .18
+28 中 隧道 累计 长 度 unel len 中 隧道 累计 长 数字 型
+
+(my) 度 (m)
+29| ” 短 隧 道 数量 s_tunnel_num 短 隧道 数量 《| 数字 型
+30 短 隧道 累计 长 度 iumnel len 短 隧 道 累 计 长 数字 型
+
+(my) 度 (m)
+31|j 项目 联系 人 contact 项 目 联系 人
+32 | 项 目 联 系 人 电话 contact_tel 项 目 联系 人
+
+电话
+新 建 、 改 建 、 扩
+33 建设 性 质 build_type 建 \ 改 扩建 、 移 植
+默认
+
+jw On ET 其
+
+项 目 建设 的 投
+资 额 等 信息
+
+an. . 4000
+
+plan_start_date
+
+计划 开工 日 期
+
+YYYYMMDD
+
+实际 开 了
+
+begin_date
+
+实际 开工 日 期
+
+YYYYMMDD
+
+计划 交 了
+日 期
+
+plan_hand_date
+
+计划 交工 验收
+日 期
+
+YYYYMMDD
+
+计划 竣 了
+日 期
+
+Plan_end_date
+
+计划 竣工 验收
+日 期
+
+YYYYMMDD
+
+项 目 负责 人 姓名
+
+项 目 负责 人
+姓名
+
+项 目 负 责 人
+身份 证 号 码
+
+manager_cert_code
+
+项 目 负责 人 身
+份 证 号 码
+

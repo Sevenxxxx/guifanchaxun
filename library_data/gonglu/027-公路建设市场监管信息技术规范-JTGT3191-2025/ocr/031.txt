@@ -1,0 +1,55 @@
+数据 资源 表
+
+10 ”从 业 企 业 财 务 信息 数据 宜 符合 表 A. 1. 1-10 的 规定 。
+表 A.1.1-10 从业 企业 财务 信息 数据
+
+字段 名 称
+
+credit_code
+
+company_name
+
+year
+
+income
+
+road_project_in_
+
+CoIme
+
+net_assets
+
+Teg_fund
+
+total_assets
+
+cuUITent_assets
+
+current_
+
+indebtedness
+
+负债 总 额 total_indebtedness 单 倍 s TENSS| 数 字 弄
+12 利润 总 额 total_profit | 允 | 数字 再
+13 净利 润 名 懒 字 和
+14| 现金 流量 净 额 数 案 型
+人 有 5
+15 | 主 营业 务 利润 率 光 字 型 n. .2,4
+天 柯 Ye
+16| ”资产 负债 率 一 ssetsu 下 世 数字 型 n. .2,4
+下 |
+17 速 动 此 这 = | duick_ratio 数字 型 n..2,4
+18 银行 发 人 起 及 后 nk_credit_amount 单位 :万 元 数字 型 n. . 18 ,4
+19| 银行 授信 级 bank_credit_grade 字符 型 an. . S0
+20 固定 资产 fixed_assets 单位 :万 元 ”| 数字 型 n. .18 ,4
+21 流动 比率 liquidity_ratio 单位 :万 元 数字 型 n. .2,4
+22| 总 资产 报酬 率 | total_reward_ratio 单位 :% 数字 型 mn .2,4
+23 净 资 产 收益 率 net_assets_ratio 单位 :% 数字 型 n. .2,4
+采用 24 小 时
+计时 法 , 例如 :
+亲 20180522160822 | 日 期
+24| 数据 导出 时 间 export_date 表示 2018 年 $ | 时 间 再 | YYYYMMDDHHMMSS 是
+月 22 日 16 点 零
+8 分 22 秒
+
+一 27 一

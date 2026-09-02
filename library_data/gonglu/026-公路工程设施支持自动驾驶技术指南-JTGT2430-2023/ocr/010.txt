@@ -1,0 +1,47 @@
+公路 工程 设施 支持 自动 驾驶 技术 指南 (JTGVT 2430-2023)
+
+ETL 数据 抽取 、 转 换 、 加 载 (Extract-Transform-Load);
+
+GNSS 全 球 导 航 卫 星系 统 (Global Navigation Satellite System );
+
+HTTP 一 一 超 文本 传输 协议 (Hyper Text Transmission ProtocoD);
+
+HTTPS 一 一 安全 超 文 本 传输 协议 〈Hypertext Transfer Protocol Secure );
+
+Iaay
+
+基础 设施 即 服 务 (Infrastructure as a Service);
+
+卫 一 一 互联 网 协议 (Internet ProtocoD);
+
+IPsec
+
+IO
+mA
+
+LTE_ 通 1 移动 进 信 技 术 的 长 期 演 埠 QI TeiniEvolution);
+
+UN LN
+MQTT- -一 消息 和 CN ansport);
+LAN
+
+MSTP 一 一 多 业务 传送 于 低 ]tHs ov 和 ， Platformy);
+
+TS
+
+< -Am
+P] 有 网 (Packet Transport Networlg;
+
+SNMP
+
+简单 网 络 管理 协议 (Simple Network Management Protocol;
+
+SSH_ ”安全 外 壳 协 议 (Secure ShelD);
+
+SSI 一 一 安全 套 接 层 (Secure Socket LayeT);
+
+SDH-- 一 同步 数字 体系 (Synchronous Digital Hierarchy );
+
+TCP 一 一 传输 控制 协议 (CTransmission Control Protocol ) 3
+
+一 4 一

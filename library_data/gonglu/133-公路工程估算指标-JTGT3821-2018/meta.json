@@ -1,0 +1,156 @@
+{
+  "id": "133-公路工程估算指标-JTGT3821-2018",
+  "title": "133-公路工程估算指标-JTGT3821-2018",
+  "std_no": "",
+  "version": "",
+  "file": "133-公路工程估算指标-JTGT3821-2018.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\133-公路工程估算指标-JTGT3821-2018.pdf",
+  "pages": 489,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 489,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:38:22",
+  "indexed_at": "2026-08-26 03:33:33",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 489
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "洞 雳 1 79",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "明 洞 105",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "油门 ee 110",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "冷 再生 基 属 .ee 49",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "6",
+      "title": "水 泥 混 凝 土路 面 面 展 和 pe 66",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "8",
+      "title": "路面 零 屋 工 程 pp 73",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "36",
+      "title": "一",
+      "start": 65,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "80",
+      "title": "一",
+      "start": 89,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "16",
+      "title": "读 18 19",
+      "start": 109,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "30",
+      "title": "以 内",
+      "start": 179,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "10",
+      "title": "以 内 20 以 内 40 以 内 60 以 内",
+      "start": 180,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "20",
+      "title": "以 内 40 以 内 60 以 内",
+      "start": 196,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "12",
+      "title": "三 14 15 16",
+      "start": 205,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "17",
+      "title": "到 19 20 21",
+      "start": 215,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "22",
+      "title": "妇 24 25 26",
+      "start": 224,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "15",
+      "title": "二 17 18",
+      "start": 338,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "13",
+      "title": "桥 区 VT5 系统 套 2000000",
+      "start": 488,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed",
+  "note": ""
+}

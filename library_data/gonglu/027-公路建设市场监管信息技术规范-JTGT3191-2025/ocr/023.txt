@@ -1,0 +1,49 @@
+数据 资源 表
+
+2 勘察 设计 单位 资质 信息 数据 宜 符合 表 A. 1. 1-2 的 规定 。
+表 A.1.1-2 勘察 设计 单位 资质 信息 数据
+
+字段 名 称
+
+credit_code
+
+qualifcaion ”| ， 资质 所 属 行业
+tradel _code 名 称
+
+qualification_type 设计 专业 阿 质 ;
+
+工程 设计 专项
+资质
+
+qualifcation ”| 资质 所 属 具体
+special_code 某 一 专项
+
+qualification_grade
+
+]
+6 qualification_code
+7
+
+发 证 机 关 issue_department Ab 漳
+8 发 证 日 期 issue_date Cn LA
+
+valid_end_date
+
+YYYYMMDDHHMMSS
+
+表 A.1.1-3 施工 单位 资质 信息 数据
+
+序 、 数据 是 否
+号 中 文 名 称 字段 名 称 说 明 类 型 数据 格式 值 域 必 填
+统一 社会 信用 .
+1 代码 credit_code 字符 型 an .18 是
+2 所 属 行业 qualiieaton 字符 型 an . 50 是
+tradel_code
+综合 资质 ; 施
+
+工 总 承包 资质 ;
+3 资质 类 别 qualification_type 字符 型 an. . S0 专业 承 包 宙 质 ， 是
+
+专业 作业 资质
+
+一 19 一

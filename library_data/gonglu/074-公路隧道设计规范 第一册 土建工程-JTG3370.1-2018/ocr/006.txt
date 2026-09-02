@@ -1,0 +1,38 @@
+公路 隧道 设计 规范 ”第 一 册 土建 工程 (JTG 3370. 1 一 2018)
+
+7.3 洞 门 工程 esooooooeeoeooeoooeooooeooooeoeoooeoooooooooooooooooooooooooooooooooooooooooooooooeooooo。 37
+8 衬砌 结构 设计 38
+8. 1 一 般 规定 eeeeseouuuoeoooeooooeoooosoooooooosooooooooooooooooooosoooooooooooooooooooooooooooooooo。 38
+8.2 喷 销 衬砌 eeeseeesouuoooooooooeoooosooosoooooooeooooooooooooooooooeoooooooesooeoooooooooooooooeooeeooo。 39
+8.3 整体 式 衬砌 eeseoeeoseseeooseoosooooeooooooooooooeooooooeoooooooooooooooooooooooooeoooooeeeeeooos 41
+8.4 复合 式 衬 楼 et 42
+8. 5 明 洞 衬砌 eeeeeosouuooooooooooooosooosoooooooeooooooooooooooooooeoooooooesooeoooooooooooooooeooeooo。 43
+8.6 构造 要 求 oooesuooeouoooeoeosooeooooooooooooooooooooooooooooooooooooooooooooooooooooooioeooeeoeeoo 44
+9 结构 计算 .pt 49
+9 1 一 般 规定 osueeosouuoooooooooooooooosoooooooooooooooooooooooeooosoooooooooocoo oa 49
+9 2 衬砌 计算 eeeeeseeeoooooeoooooeooooeoooooooooeooeoooooeoooooooeooeoeoeociaeasaoooooooooooooooooooooooo。 49
+9 3 明 洞 计算 oseeosouuooooooooooooosooosoooooooooooooooooooooooooooohooouooeoiaoooooooooooooooeooeooo。 2
+9.4 洞 门 计 算 症 Nt 92
+10 防水 与 排水 ee 54
+10. 1 一 般 规定 ooooouuoouooouooooosooosoooooooesoooosoooioooooooooooooooooooosooooosooooooouooosoooo。 4
+10 2 防水 ooeoeoeoeeeooosoooeooeoooooeoooooeooooooooooeoooaoeooeoooooooaeoioooooeooeooeoooeooooeoooeoeooeooooeoo。 54
+10.3 “排水 ee 55
+10.4 洞口 及 明 洞 防 排水 pp 56
+10.5 ”寒冷 地 区 隧道 防 排水 “生生 57
+11 特殊 形式 隧道 58
+11.1 一 般 规 定 oooioovisooooooooooooooooiaoooiooosoooooooooooooooooooooooooooooooooooooooooooooo。 8
+11.2 小 兆 虑 隧道 S8
+11. 3 连 拱 隧 道 oaosooeoeooooooooesooeooaooeioioooooooioooooeoooeooooooooooooooooeoooooooeoeoeooeoeoo 8
+11. 4 分 岔 隧道 oaooooooooooooooooooioooooooooooooooooooooooooooooooooooooooooooooooooooooooooo 9
+11. 4 棚 洞 ooeesooboooooooooooooooooooooooooooooooooooooooooooooooooeooooeoooeoooeooooooooooooooooooooo， 60
+12 辅助 通道 62
+12. 1 一 般 规定 ooooooooouooouooooooooooooooooouoooooooooooooooooooooooooooooooooooooouooooooooooo 62
+12. 2 竖井 eeeooooesooooesoooooooooooooeooooooooooooooooooooooooooooooeooooooooeooooeooooooooeoooooeooon 063
+12. 3 斜 并 ooooesoooouoooooooooooooosoooooooooooooooooooooooooooooooooooooooooooooooooooooooooeoooooon 063
+12.4 ”平行 通道 与 横 通 道 65
+12.5 风 道 及 地 下 机 房 65
+12. 6 夜叉 加 606
+13 辅助 工程 措施 ooeoososooooeuooeoeooesooooeooeoosoesoooooooooooooeooeooooeooesooooesooooooooooeooeooos 67
+13. 1 一 般 规 定 eeeeuuoesooeoooooeooeoooeoooooooeoooosoooooooooooooeooooooooooeoooooeoooooooooeoooeoeoo 67
+13.2 ” 围 岩 稳定 措施 67
+13.3 ”涌水 处 理 措施 70

@@ -1,0 +1,43 @@
+超 限 运输 车 辆 行驶 公路 管理 系统 技术 规范 {JTGZT 4620 一 2024
+
+一 4 一
+
+续 表 A-l
+序号 字段 说 明 字段 代码 | 数据 类 型 | 长 度 备注
+21 联系 人 电话 lxrdqh String 20 必要 ， 手 机 号
+22 | 站 (点 ) 图 片 zdzp binary
+23 | 站 〈 点 ) 用 地 性 质 ydxz String 1 超 限 检 测 站 必要 ，1: 征用 ; 2: 租赁
+24 占 地 面积 zdmj Float 超 限 检测 站 必要
+25 检测 场地 面积 jccmj Float 超 限 检 测 站 必要
+26 房屋 面积 fwmj Float 趣 限 检测 站 必要
+27 印 载 场面 积 xzcmj Float 超 限 检测 站 必要
+28 总 投资 ztz Float
+29 资金 来 源 ay String 20 ae
+30 | 是 否 有 站 前 电子 抓拍 | 。 dam suing | 1 | 1 有 0: 温和 一
+表 A-2 检测 设备 信息 数据 内 容 和 区 要 求
+序号 字段 说 明 字段 代码
+1 检测 车 道 标 识 equipId
+2 车 道 编号 heckLine (动态 自动 称 重 检测 设施 ) ，
+3 | 所 属 站 (点 ) 标识 siteld
+4 称 重 设备 类 型 equipType
+5 称 重 设备 斥 十 equipSizei | 只 S 了
+6 | 称 重 设备 检定 等 级 人
+7 | 称 重 设 备 实现 功能 | 所 吾 够 要 。 取 值 见 表 A-3 的 编码 说 明 EQUIP _FUNC
+8 1: 在 用 ; 2: 停 用 ; 3: 维修
+9
+10 称 重 设备 厂商 代码 ， 厂 商 在 部 级 注册 ， 部 级 提供 访
+问 接口
+
+11 于 instDate date 6 | 格式 : YYYYMMDD
+12 称 重 设备 检定 周期 checkZq Int 1 单位 月 数 ， 如 6， 代 表 6 个 月
+13 | 称 重 设备 检定 日 期 | checkDate date 6 | 格式 : YYYYMMDD
+FE
+15 | ”设备 检定 结果 ”| checkResult | ”String 50
+16 | 车 牌 识别 摄像 机 厂家 Cn String 200
+
+识 昂 recognilion
+1 Ca Sng 5
+18 | 是 否 有 称 重 控制 仪表 easy eghing Im 1
+
+Control
+

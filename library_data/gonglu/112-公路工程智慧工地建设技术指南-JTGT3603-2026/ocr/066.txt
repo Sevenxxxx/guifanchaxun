@@ -1,0 +1,36 @@
+公路 工程 智慧 工地 建设 技术 指南 (JTG/T 3603 一 2026)
+续 表 C. 0.9
+名 称 智能 设备 采集 参数
+参数 名 称 参数 类 型 是 否 必须 (YXZN)
+设备 状态 mt Y
+设备 厂家 Suing Y
+工作 时 长 Float Y
+进 场 时 间 Date Y
+离 场 时 间 Date N
+维修 记录 Float N
+构件 编号 Suing Y
+生产 状态 Suing Y
+预制 件 生 产 工 位 Suing Y
+存放 工 位 Suing Y
+主线 架设 位 置 Suing Y
+应 变 Float Y
+位 移 Riaat Y
+倾角 Flout Y
+施工 时 间 bt Y
+负责 人 员 Suing Y
+C. 0. 10 桥梁 钢 结构 制造 参数 宜 按 表 G. 0.10 采集 。
+表 C. 0.410N\ 桥梁 钢 结构 制 造
+名 称 桥梁 钢 结构 制造 采集 参数
+参数 名 称 参数 类 型 是 否 必须 (YXN)
+构件 编号 Suing Y
+生 新 再 间 Date Y
+生产 人 员 Suing Y
+检验 人 员 Suing Y
+检验 结果 mt Y
+存放 位 置 Suing Y
+出 厂 时 间 Date Y
+焊 缝 编号 Suing Y
+焊接 电流 Suing Y
+焊接 电压 Suing Y
+焊接 速度 Suing Y
+

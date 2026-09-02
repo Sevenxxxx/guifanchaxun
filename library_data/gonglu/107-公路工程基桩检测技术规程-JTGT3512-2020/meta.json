@@ -1,0 +1,142 @@
+{
+  "id": "107-公路工程基桩检测技术规程-JTGT3512-2020",
+  "title": "107-公路工程基桩检测技术规程-JTGT3512-2020",
+  "std_no": "",
+  "version": "",
+  "file": "107-公路工程基桩检测技术规程-JTGT3512-2020.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\107-公路工程基桩检测技术规程-JTGT3512-2020.pdf",
+  "pages": 98,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 98,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9971,
+    "punct_median": 0.0319,
+    "empty_ratio": 0.071,
+    "bad_ratio": 0.111,
+    "clause_hits": 122
+  },
+  "pdf_mtime": "2026-08-25 22:32:26",
+  "indexed_at": "2026-08-26 02:49:17",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 9,
+  "offset": 10,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语和符号",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本规定",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "成孔质量检测",
+      "start": 18,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "单桩竖向抗压静载试验",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "单桩竖向抗拔静载试验",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "单桩水平静载试验",
+      "start": 38,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "0",
+      "title": "第0章",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "低应变反射波法",
+      "start": 45,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "高应变法",
+      "start": 55,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "10",
+      "title": "超声波法",
+      "start": 68,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "11",
+      "title": "钻孔取芯法",
+      "start": 81,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "附录A",
+      "title": "桩身内力测试",
+      "start": 91,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "附录B",
+      "title": "混凝土桩的桩头加固处理",
+      "start": 95,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "附录C",
+      "title": "静载试验记录表",
+      "start": 96,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 365,
+  "status": "indexed",
+  "note": ""
+}

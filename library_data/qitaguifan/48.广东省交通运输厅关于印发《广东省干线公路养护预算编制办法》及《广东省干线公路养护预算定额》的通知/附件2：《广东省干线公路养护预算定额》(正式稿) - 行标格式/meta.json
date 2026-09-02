@@ -1,0 +1,170 @@
+{
+  "id": "附件2：《广东省干线公路养护预算定额》(正式稿) - 行标格式",
+  "title": "附件2：《广东省干线公路养护预算定额》(正式稿) - 行标格式",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/48.广东省交通运输厅关于印发《广东省干线公路养护预算编制办法》及《广东省干线公路养护预算定额》的通知/附件2：《广东省干线公路养护预算定额》(正式稿) - 行标格式.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\48.广东省交通运输厅关于印发《广东省干线公路养护预算编制办法》及《广东省干线公路养护预算定额》的通知\\附件2：《广东省干线公路养护预算定额》(正式稿) - 行标格式.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\48.广东省交通运输厅关于印发《广东省干线公路养护预算编制办法》及《广东省干线公路养护预算定额》的通知\\附件2：《广东省干线公路养护预算定额》(正式稿) - 行标格式.pdf",
+  "pages": 358,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 358,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9717,
+    "punct_median": 0.0784,
+    "empty_ratio": 0.071,
+    "bad_ratio": 0.667,
+    "clause_hits": 201
+  },
+  "source_mtime": "2025-12-10 18:49:23",
+  "pdf_mtime": "2025-12-10 18:49:23",
+  "source_mtime_ns": 1765363763000000000,
+  "source_size": 1765513,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 23:19:13",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "",
+      "title": "第1部分：路况检查及评定费用指标",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "1",
+      "title": "第1章",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "",
+      "title": "第2部分：日常养护定额",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "18",
+      "title": "第18章",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "9",
+      "title": "第9章",
+      "start": 34,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "25",
+      "title": "第25章",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "16",
+      "title": "第16章",
+      "start": 49,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "",
+      "title": "第3部分：养护工程定额（含日常维修）",
+      "start": 53,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "28",
+      "title": "第28章",
+      "start": 87,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "40",
+      "title": "第40章",
+      "start": 94,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "37",
+      "title": "第37章",
+      "start": 103,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "34",
+      "title": "第34章",
+      "start": 108,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "35",
+      "title": "第35章",
+      "start": 109,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "39",
+      "title": "第39章",
+      "start": 110,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "附录A",
+      "title": "广东省干线公路养护工程补充基本定额",
+      "start": 332,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "附录B",
+      "title": "广东省干线公路养护工程补充材料基价表",
+      "start": 338,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "附录C",
+      "title": "广东省干线公路养护工程机械台班费用补充定额",
+      "start": 350,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "附录D",
+      "title": "广东省干线公路日常养护费用参考指标",
+      "start": 355,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 4597,
+  "status": "indexed",
+  "note": ""
+}

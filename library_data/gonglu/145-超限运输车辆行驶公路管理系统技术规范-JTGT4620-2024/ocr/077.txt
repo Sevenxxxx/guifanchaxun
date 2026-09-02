@@ -1,0 +1,45 @@
+超 限 运输 车 辆 行驶 公路 管理 系统 技术 规范 {JTGZT 4620 一 2024
+
+续 表 A-16
+
+序号 字段 名 字段 说 明 数据 类 型 帮 备注
+
+7 | onaetNumber | 抄 告 省 份 联系 电话 Suing 是 抄 告 省 份 的 联系 人 姓名 ， 接 收 省 份 若 存 在 疑
+
+义 可 以 直接 沟通
+1 -地 驶 人 ; 2- 车 辆 和 运输 企业 ，3- 源 头 线索 ;
+| 下 对 名 Seng (1) | 时 | 4 高 速 公路 出 口 超 限
+9 | copyType 抄 告 信息 类 型 Suing “| 是 | 0- 跨 省 抄 告 ; 1- 省 内 抄 告
+| 必要 。 案 件 抄 告 时 间 ， 格 式 YYYYMMDDhh
+10 copyTime 抄 告 时 间 String (14) 是 24mmss ， 应 在 处 罚 聘 回 后
+11 | ”sopySaus 。 | 抄 告 信息 状态 代码 | sting (2) | 是 | 00- 撤 销 抄 告 9 Dj 相信
+
+er
+
+A.6 电子 运单 数据 7
+1
+多 国
+表 A-17 ”电子 运单 数据 内 容 及 i 式 革 求
+序号 字段 说 明 字段 代码 数据 | 涉 斋 _ 备注
+|
+运单 号 时 人 人
+3 货物 源头 装载 企业 aa
+社会 统一 信用 代码
+4 “| 货物 源头 装载 名 称
+5
+6
+7
+8 11
+9 4
+10 40
+11 6 必须 。 单 位 : 千克
+12 | 承运 车 辆 号 三 vehicleNo String 31 必须 。 识 别 出 的 车 牌号
+13 车 牌 颜色 vehicleColor String 4
+14 挂车 号 码 hangVehicleNo String 31
+15 轴 组 类 型 axlesType Int 2 | “ 兄 编 码 说 明 (HEX)
+16 轴 数 axles In 2 必须 。 轴 数 不 能 小 于 2
+17 出 厂 时 间 vehicleTime datetime
+18 轨 驶 人 姓名 name String 30
+19 驾驶 证 号 identificationno Sting 18
+
+一 IT2 一

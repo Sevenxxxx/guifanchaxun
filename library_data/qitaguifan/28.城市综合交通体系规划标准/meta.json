@@ -1,0 +1,121 @@
+{
+  "id": "28.城市综合交通体系规划标准",
+  "title": "城市综合交通体系规划标准",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/28.城市综合交通体系规划标准.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\28.城市综合交通体系规划标准.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\28.城市综合交通体系规划标准.pdf",
+  "pages": 62,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 62,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 0.8,
+    "punct_median": 0.0,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1.0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-05-27 20:11:31",
+  "pdf_mtime": "2025-05-27 20:11:31",
+  "source_mtime_ns": 1748347891000000000,
+  "source_size": 3761761,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 62
+  },
+  "indexed_at": "2026-08-31 22:10:58",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "5",
+      "title": "一 般 规 定 10",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "9",
+      "title": "一般 规 定 20",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "12",
+      "title": "城市 道路 33",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "1",
+      "title": "第1章",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "2",
+      "title": "术 二",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "4",
+      "title": "毕 合 交通 与 城市 空间 布局",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "40",
+      "title": "第40章",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "6",
+      "title": "规划 实施 评 佑",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "14",
+      "title": "交通 调查 与 需求 分 析",
+      "start": 55,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "15",
+      "title": "第15章",
+      "start": 57,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 248,
+  "status": "indexed",
+  "note": ""
+}

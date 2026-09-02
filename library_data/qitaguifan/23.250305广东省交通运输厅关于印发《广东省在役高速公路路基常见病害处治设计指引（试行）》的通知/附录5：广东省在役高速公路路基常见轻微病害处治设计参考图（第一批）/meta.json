@@ -1,0 +1,86 @@
+{
+  "id": "附录5：广东省在役高速公路路基常见轻微病害处治设计参考图（第一批）",
+  "title": "附录5：广东省在役高速公路路基常见轻微病害处治设计参考图",
+  "std_no": "第一批",
+  "version": "",
+  "file": "qitaguifan/23.250305广东省交通运输厅关于印发《广东省在役高速公路路基常见病害处治设计指引（试行）》的通知/附录5：广东省在役高速公路路基常见轻微病害处治设计参考图（第一批）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\23.250305广东省交通运输厅关于印发《广东省在役高速公路路基常见病害处治设计指引（试行）》的通知\\附录5：广东省在役高速公路路基常见轻微病害处治设计参考图（第一批）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\23.250305广东省交通运输厅关于印发《广东省在役高速公路路基常见病害处治设计指引（试行）》的通知\\附录5：广东省在役高速公路路基常见轻微病害处治设计参考图（第一批）.pdf",
+  "pages": 49,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 49,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.786,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-03-10 18:38:50",
+  "pdf_mtime": "2025-03-10 18:38:50",
+  "source_mtime_ns": 1741603130000000000,
+  "source_size": 19622936,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 49
+  },
+  "indexed_at": "2026-08-31 23:17:57",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "55",
+      "title": "本 囊 必 、 涌 从 治 方案",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "8",
+      "title": "钢筋 网",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "4",
+      "title": "二 214 6 4 2",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "1",
+      "title": "一 大 样",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "20",
+      "title": "人 有 现 党 雁 水 沟 )",
+      "start": 24,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "2",
+      "title": "训 rr -ATTTTTT0",
+      "start": 44,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed",
+  "note": ""
+}

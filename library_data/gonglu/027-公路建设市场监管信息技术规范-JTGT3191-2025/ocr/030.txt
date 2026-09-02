@@ -1,0 +1,75 @@
+公路 建设 市 场 监管 信息 技术 规范 (JTGXT 3191 一 2025 )
+
+9 质量 检测 机 构 业 绩 信息 数据 宜 符合 表 A. 1. 1-9 的 规定 。
+
+中 文 名 称
+
+表 A.1.1-9
+
+字段 名 称
+
+说 明
+
+质量 检测 机 构 业 绩 信息 数据
+
+项 目 编号
+
+project_code
+
+全 国 唯一 的 项
+目 编号
+
+项 目 名 称
+
+Project_name
+
+项 目 名 称
+
+合同 段 名 称
+
+segment_name
+
+合同 段 名 称
+
+质量 检测 机 构 统一
+社会 信用
+
+credit_code
+
+质量 检测 机 构
+统一 社会 信用
+代码
+
+company_name
+
+质量 检测 机 构
+名 称
+
+parenttest_name
+
+工地 试验 室 名 称
+
+laboratory_name
+
+person_in_charge
+
+8 分 22 秒
+
+一 26 一
+
+工地 试验 室 授 权 laboratory_in_
+开始 日 期
+工地 试验 室 授 权
+10| “结束 日 期 YYYYMMDD
+an. . 200
+YYYYMMDD
+日 期
+母体 检测 机 构
+14| ”服务 对 象 service_object 服务 对 象 字符 型 an. . 512
+15 备注 remark 备注 字符 型 an. . 4000
+采用 24 小 时
+计时 法 , 例如 :
+本 20180522160822 | 日 期
+16| 数据 导出 时 间 exporL_date | 表示 2018 年 5 | 时 间 再 | YYYYMMDDHHMMSS
+月 22 日 16 点 零
+

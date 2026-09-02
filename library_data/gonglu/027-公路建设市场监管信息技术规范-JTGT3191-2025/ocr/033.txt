@@ -1,0 +1,41 @@
+数据 资源 表
+
+续 表 A. 1.2-1
+序 、 数据 是 否
+号 中 文 名 称 字段 名 称 说 明 类 型 数据 格式 值 域 必 填
+3 证 件 类 型 cert_type 证 件 类 型 字符 型 an. . 50 身份 证 .护照 | 是
+4 证 件 叶 码 cert_code 证 件 号 码 字符 型 an . 50 是
+5 出 生日 期 birthday 人 呈 的 出 | 日期 型 YYYYMMDD
+6 国籍 nationajity 导 隐 卫 人 员 的 字符 型
+7 职务 duty 从 业 人 员 职 务 | 字符 型
+从 事 公 路 行业 egpgo0L- 各 - 从 事 本 专业 起 |
+8 起 始 日 期 specialtybegin_ 始 日 期 日 期 型
+date
+7
+固定 电话 (办 | )
+9 | 。 联系 电话 phone 公 电 话 ) 或 移动 | 党 竺 玫
+cos 的
+所 Th AL
+、| 数 宁 型
+11| 数据 导出 时 间 时 和 SN 本 和 要 YYYYMMpDHHMMsS 直
+
+字段 名 称
+
+Dame
+
+cert_type
+
+从 业 人 员 的 证
+件 号 码
+
+职业 资格 类 别 | qualification_type | ”职业 资格 类 别
+职业 资格 级 别 “| qualification_level 职业 资格 级 别
+
+证 件 号 码 cert_code
+
+qualification__
+major_code
+
+专业
+
+issue_dqepartment

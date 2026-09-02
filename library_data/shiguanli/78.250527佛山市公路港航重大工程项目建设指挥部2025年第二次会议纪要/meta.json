@@ -1,0 +1,51 @@
+{
+  "id": "78.250527佛山市公路港航重大工程项目建设指挥部2025年第二次会议纪要",
+  "title": "250527佛山市公路港航重大工程项目建设指挥部2025年第二次会议纪要",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/78.250527佛山市公路港航重大工程项目建设指挥部2025年第二次会议纪要.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\78.250527佛山市公路港航重大工程项目建设指挥部2025年第二次会议纪要.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\78.250527佛山市公路港航重大工程项目建设指挥部2025年第二次会议纪要.pdf",
+  "pages": 4,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 4,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-06-13 18:18:55",
+  "pdf_mtime": "2025-06-13 18:18:55",
+  "source_mtime_ns": 1749809935000000000,
+  "source_size": 253927,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:57:02",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

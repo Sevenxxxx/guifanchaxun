@@ -1,0 +1,43 @@
+公路 建设 市 场 监管 信息 技术 规范 (JTGXT 3191 一 2025 )
+
+续 表 A. 1. 1-1
+序 、 数据 是 否
+号 中 文 名称 字段 名 称 说 明 类 型 数据 格式 值 域 必 填
+9 登记 机 关 eqministration 字符 型 an. . 256
+name
+机 构 登 记 机 关
+或 批准 机 关 核 发
+的 有 效 证 照 或 批
+10| “法定 代表 人 | legal_person_name | 文 上 的 对 外 依法 | 字符 型
+行使 民事 权利 和
+义务 的 代表 人 或
+负责 人 的 姓名
+AN >
+法 定 代 表 人 legal_person_cert_ 公安 机 关 核 发
+开 身份 证 号 码 code 的 居民 身份 证 上
+的 号 码
+12 和 legal_person_tel
+
+company_tel
+
+economic_type
+
+reg_province_code 慎
+
+和 business_scope
+
+SOUrCe_company_
+
+21| 总 公司 名 本 字符 型 an. .256
+所 | _- 社 作
+22 1 3 全 soOUrce_credit_code 字符 型 am .18
+百 中
+| 投 疯 关 联 企业 | me 字符 型 | mu.4000
+24 状态 data_state 数字 型 nl 1 有 效 ;0 失效 | 是
+采用 24 小 时
+计时 法 , 例如 ;
+可 20180522160822 | 日 期
+25 | 数据 导出 时 间 erpor_date | 表示 2018 年 5 | 时 间 青 | YYYYMMDDHHMMSS 是
+月 22 日 16 点 零
+8 分 22 秒
+

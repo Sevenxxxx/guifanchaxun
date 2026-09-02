@@ -1,0 +1,51 @@
+{
+  "id": "13.《广东省干线公路桥梁养护管理工作规定（试行）》和《广东省农村公路桥梁养护管理工作规定（试行）》粤交基〔2021〕545号",
+  "title": "《广东省干线公路桥梁养护管理工作规定（试行）》和《广东省农村公路桥梁养护管理工作规定（试行）》粤交基〔2021〕545号",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/13.《广东省干线公路桥梁养护管理工作规定（试行）》和《广东省农村公路桥梁养护管理工作规定（试行）》粤交基〔2021〕545号.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\13.《广东省干线公路桥梁养护管理工作规定（试行）》和《广东省农村公路桥梁养护管理工作规定（试行）》粤交基〔2021〕545号.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\13.《广东省干线公路桥梁养护管理工作规定（试行）》和《广东省农村公路桥梁养护管理工作规定（试行）》粤交基〔2021〕545号.pdf",
+  "pages": 18,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 18,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.996,
+    "punct_median": 0.0,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 17:59:03",
+  "pdf_mtime": "2025-02-14 17:59:03",
+  "source_mtime_ns": 1739527143000000000,
+  "source_size": 830619,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:28:32",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

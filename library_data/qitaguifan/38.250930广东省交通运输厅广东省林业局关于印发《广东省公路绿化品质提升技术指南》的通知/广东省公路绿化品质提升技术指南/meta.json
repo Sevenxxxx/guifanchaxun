@@ -1,0 +1,93 @@
+{
+  "id": "广东省公路绿化品质提升技术指南",
+  "title": "广东省公路绿化品质提升技术指南",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/38.250930广东省交通运输厅广东省林业局关于印发《广东省公路绿化品质提升技术指南》的通知/广东省公路绿化品质提升技术指南.doc",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\38.250930广东省交通运输厅广东省林业局关于印发《广东省公路绿化品质提升技术指南》的通知\\广东省公路绿化品质提升技术指南.doc",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\38.250930广东省交通运输厅广东省林业局关于印发《广东省公路绿化品质提升技术指南》的通知\\广东省公路绿化品质提升技术指南.doc",
+  "pages": 23,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 23,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.975,
+    "punct_median": 0.0129,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-10-11 20:57:29",
+  "pdf_mtime": "2025-10-11 20:57:29",
+  "source_mtime_ns": 1760187449000000000,
+  "source_size": 118241,
+  "fmt": "doc",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:31:36",
+  "toc_zone_end": 1,
+  "offset": 2,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "总体要求",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "高速公路绿化品质提升",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "普通国省道绿化品质提升",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "出省通道省界段绿化品质提升",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "其他",
+      "start": 9,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 60,
+  "status": "indexed",
+  "note": ""
+}

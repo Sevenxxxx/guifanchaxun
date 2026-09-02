@@ -1,0 +1,55 @@
+公路 钢筋 混凝土 及 预 应 力 混凝土 桥涵 设计 规范 (JTC 3362 一 2018 )
+
+8 构件 计算 的 规定 .pp 74
+8. 1 组 合式 受 弯 构件 74
+8. 2 后 张 预 应 力 混凝土 锚固 区 7T8
+8. 3 支 座 处 横 隔 梁 81
+8.， 14 壤 人 台 盖 浴 eeeusoesoosoeooeoooooooooooeooesooooosoosoooosoooooooooooooeoooooooeoooeoeoooeoooeeooo。 82
+8.， 4 桩 基 承 台 eeseuoosoosoooosooooooooooeoosooooesoosoooosooooooooooosooesoooooooesoosoesoooeoooeeooo。 84
+8 6 贸 Woeeeeoeeeeooooooooooooesooooooeeooeoeooeosoooooosooeoeeoesoooeooeoeseooseeoseeosseosesesesseeseen 90
+8，7 支 座 ooeeoseeesoeeseoeueossioooseoeoeeooeeoseoeoooooooeooesooooeeeoooeoooeeoooeoeooooeooeooooeeeoeeeeose 91
+8. 8 桥梁 伸缩 装置 94
+
+9 构造 规定 pp 97
+9. 1 一 般 规 定 97
+9 2 板 oooooesoeoooouooooooooooooooooeoooooooooooooooooooooooooooooooooooooeooeooeoooooooooooooooo 102
+9 3 深 Woooesooooesooooooovooooooooooosooooooooooosoooooooooooooooiooooooooooaoooooooooooooooooooooooon 104
+9. 4 预 应 力 混凝土 上 部 结构 oooeoosooesooooooooooooooieoaesoooooooooooosooooooooooosooosooouoeooo 109
+9. 4 拱 桥 eeeeeesesssssssoooossoooosoosooooooosoosoaeiaoosoooouooaaoooooooosoosoesoooooooooooooesoooseoon 114
+9 0 柱 、 墩 台 和 相 基 承 台 ooosooooesooosooooiooiooooiooeoooooooosioooooesooooooooooosooeoooouooson 116
+9. 7 支 座 和 伸缩 装置 和 pp 120
+9. 8 涵洞 、 吊环 和 贸 eeeeeeeeoesoosoeosoeosieeesooooooooeoooooosoiooioooeooeooeoooooeoooeooeoeooeoooeoeesee。 120
+
+附录 A 桥梁 结构 的 实用 精细 化 分 析 模 型 .ps 121
+
+附录 了 。 拉 压 杆 模型 分 析 方 法 开 . 生 生生 123
+
+附录 C 混凝土 收缩 应 变 和 徐 变 系数 计算 及 钢筋 松弛 损失 中 间 值 与
+
+终极 值 的 比值 及 126
+
+附录 D 温差 作用 效应 计算 公式 和 下 生生 130
+
+附录 下 “ 受 压 构件 计算 长 度 的 简化 计算 公式 131
+
+附录 了 沿 周边 均匀 配置 纵向 钢筋 的 圆 形 截面 钢筋 混凝土 偏心 受 压
+
+构 休 正 截面 抗 压 承载 力 计算 和 133
+
+附录 G 预 应 力 曲线 钢筋 由 锚 具 变形 、 钢 筋 回 缩 和 接 缝 压缩 引起 的
+
+考虑 反 向 摩擦 后 的 预 应 力 损 失 简化 计算 RPR 137
+
+附录 了 后 张 法 预 应 力 混凝土 构件 弹性 压缩 损失 的 简化 计算 pp 139
+
+附录 本 允许 开裂 的 了 类 预 应 力 混 凝 土 受 弯 构 件 受 压 区 高 度 计 算 生 ppp 140
+
+本 规范 用 词 用 语 说 朋 . 和 es 141
+
+附件 《公路 钢筋 混凝土 及 预 应 力 混凝土 桥涵 设计 规范 》
+
+(JTC 3362 一 2018 ) 条 文 说 明 oooooooooooovsoooooooooooooooooovoooooooouooooooooooooeooo 143
+1 总 则 ouoseseoseioooueoeoeoooeooeoooooooeooeooooooooeoooeoooooooooooooooooeoooooeoooooooeooooeoooeooo 145$
+2 术语 和 符号 oooeovouooeuooeoooovooooooooouoovoooooooooooooooooosooooooovooooooooooeoeooooeoooo。 146
+3 材料 euoseuooeoosoooosooooooooooesooosoooooooesoocsoooooooooooooooesoooooooeooooooooooooooooooeoosoooo 147
+4 结构 设计 基本 规定 152

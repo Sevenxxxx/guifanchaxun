@@ -1,0 +1,48 @@
+数据 资源 表
+
+续 表 A. 2. 2-4
+
+值 域
+
+勘察 设计 人
+员 、 施 工人 员 , 监
+评价 类 型 代码 | evaluation_type ， 理 人 员 、 试 验 检
+测 人 员 、 造 价
+人 员
+
+信用 评价 的 级 严 部 级 省 级 .市
+evaluate_level 。 由
+
+别 代码
+
+evaluation_year 信用 评价 年 份
+evaluate_score 信用 评价 得 分
+
+信用 评价 地 区
+行政 区 划 代 码
+
+evaluate_area
+
+勘察 设计 从 业
+
+人 人员、 施工 从 业
+9 | 人 员 评 价 类 型 代码 | 。 person_type 人 人员、 监理 从 业
+人 员 、 其 他 从 业
+人 员
+10 1 有效 .0 失效 | 是
+11 YYYYMMDDHHMMSS 是
+
+A.2.3 招标 投标 信息 应 符合 下 列 规定 :
+1 招标 信息 数据 宜 符合 表 A. 2. 3-1 的 规定 。
+表 A.2.3-1 招标 信息 数据
+
+字段 名 称
+
+project_name
+
+bid_project_name
+
+road_jlevel
+
+tenderer
+

@@ -1,0 +1,24 @@
+# 章 9:其 他 工程 oooeoosseooeoossceoseoe
+# 规范: (052-公路土工合成材料应用技术规范-JTGT3332-2026) | 页码:PDF 5-5
+# 条文范围:8.4-9.2
+# 类型:正文
+# 生成:spec.py index 2026-08-26 | 页内标记【第 N 页】用于回源
+
+【第 5 页】
+公路 土工 合成 材料 应 用 技术 规范 (JTGVZT 3332 一 2026 )
+
+
+
+8 3 设计 计算 assoesaeseseseoeceoesosooooooeooeooooeooeoeoooooooeooeooooeooeooooooooooooesoooooooesoosoooo 68
+
+8.4 施工 要 丰 站 4 77
+
+9 其 他 工程 oooeoosseooeoossceoseoeoooooooeooeooooeooeoeooooooseoosooooeooosoeooooooooooosooosoooosooosooe。 79
+
+9. 1 防 沙 男 沙 eesessesoseeseooeeesosooeeeoososoeooeooeooeoooooeoeooesooeoeooeooeoeooeoeeoooesoooeooesoosoeooo 79
+
+9.2 膨胀 土路 基 处 洽 .4 82
+
+9.3” 盐 渍 土路 基 隔 离 与 构筑 物 防 证 站 86
+
+9. 人 4 路 面 裂 颖 防治 eeesooesoesooooooosooesooosoesooeoesoooooooeooosooooeooeoeooosoooooooosooooooooooeeooo。 89

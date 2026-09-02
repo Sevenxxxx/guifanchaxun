@@ -1,0 +1,45 @@
+收费 公路 联网 收费 技术 标准 (JTG 6310 一 2022 )
+
+续 表 了 .5.7-4
+位 置 “| 字 节 数 参 数 说 明
+ETC 门 架 系 统 RSU 天 线 状 态 信息
+1 字 节 天 线 IDD 编号 ，0x01 为 左边 起 第 一 个 RSU 天 线头 〈 超 车 道 开
+3 始 ) ， 甚 他 值 类 推 ;
+3 4 xnh AntennaStatus 1 字 节 天 线 运行 状态 ，0x00- 正 常 ，0x01- 通 信 状 态 异 常 (控制 器 与 天 线
+之 间 ) ，0x02- 天 线 射 频 模块 状态 异常 ，0x03- 其 他 异常 ;
+1 字 节 天 线 信道 ，0x00- 信 道 1，0x01- 信 道 2;
+1 字 节 功率 等 级 ， 取 值 0x00 ~ OxlF
+注 : 1. ETC 门 架 系 统 RSU 定时 向 车 道 控制 器 发 送 此 帧 ， 发 送 间 隔 为 2s (ETC 门 加 系统 旭 SU 与 车 道 控制 句 处 于
+B、C 帧 交互 流程 〈 如 交易 流程 、PSAM 在 线 授权 流程 ) 时 宜 等 本 次 交互 流程 需 成 后 再 发 送 此 帧 ， 忙 时 发
+送 间隔 可 适当 顺延 ， 顺 延 时 间 不 应 大 于 2s) ， 指 示 ETC 门 架 系 统 RSE 的 开 作 状态 。 车 道 控制 器 应 答 CF
+指令 。
+2. RSUControlStatusl 固定 对 应 卫 地 址 小 的 控制 器 ，RSUControlStatus2| 固定 对 应 卫 地 址 大 的 控制 需 ，RSU-
+ControlStatus3 对 应 两 个 控制 器 之 间 心 跳 线 的 通信 状态 。
+3. RSUControlStatus 字段 指示 ETC 门 架 系统 RSU 控制 器 运行 状态 s[ 控制 器 异常 包括 : 其 安装 的 PSAM 状态
+异常 〈 不 包含 未 授权 和 授权 失败 ) 及 控制 器 本 刁 的 他 些 异 常 疙 对 于 PSAM 卡 来 说 建议 异常 数量 影响 门
+架 成 功率 的 情况 下 再 将 控制 器 状态 置 蜡 常 14 ETC 疝 架 系统 RSU 控制 器 状态 (RSUControlStatusl 、
+RSUControlStatus2) 高 4 位 指示 控制 器 工作 模式 (生机 /从 机 )， 低 4 位 指示 控制 融 运 行 状 态 〈 正 常 /
+异 常 ) D
+4. ETC 门 架 系 统 RSU 未 进行 元 余 备 份 时 _ (只 有 一 套 设 备 ) ，RSUGontrolStafus2 字段 置 0x11 ，RSUControlSta-
+tus3 字段 置 0x01，PSAMNum2 字段 置 0x00 , 果 SAMStatus2 字 段 置 空 N
+5 0OBTU 信息 帧 格式 应 符合 表 SEN5.7-5 的 规定 人
+表 了 RS.7-S< OB 豆 信息 帧
+OBU 说 明
+裤 节 参 CPC 说 昌
+位 置 | 字 节 数 妆 (又 归 趟 单 片 式 ) 人
+0 1 Fianiefype 数据 帧 类 型 标识 ， 此 处 取 值 B2 数据 帧 类 型 标识 ， 此 处 取 值 B2
+1 才 OBUIDZCPC-MAC OBU MAC 地 址 CPC 的 MAC 地 址
+5 1 ErrorCode 执行 状态 代码 ， 取 值 0x00 执行 状态 代码 ， 取 值 0x00
+6 | AD 1 字 节 本 次 交易 的 天 线 ID 编号 ，0x01 为 左边 起 第 一 个 RSU 天 线头 〈 超 车 道
+ntenna _ 人
+开始 ) ， 其 他 值 类 推
+. OBU 类 型 : 0x01- 双 片 式 OBU，0x02- 单 片 式 OBU，0x03-CPC， 其 他 值
+7 1 DeviceType
+保留
+8 8 IssuerIdentifier 发 行商 代码 发 行商 代码
+10 1 ContractType OBU 协约 类 型 CPC 时 填充 0x00
+17 1 ContractVersion OBU 合同 版 本 CPC 版 本 号
+18 8 SerialNumber OBU 合同 序列 号 CPC 的 ID 号
+20 4 DateofIssue OBU 合同 签署 日 期 合同 签署 日 期
+
+一 114 一

@@ -1,0 +1,233 @@
+{
+  "id": "1.公路安全生命防护工程实施技术指南（试行）(OCR)",
+  "title": "公路安全生命防护工程实施技术指南（试行）",
+  "std_no": "OCR",
+  "version": "",
+  "file": "1.公路安全生命防护工程实施技术指南（试行）(OCR).pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\1.公路安全生命防护工程实施技术指南（试行）(OCR).pdf",
+  "pages": 199,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 199,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.983,
+    "punct_median": 0.0525,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.333,
+    "clause_hits": 81
+  },
+  "pdf_mtime": "2025-02-14 17:58:05",
+  "indexed_at": "2026-08-26 19:40:01",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "2",
+      "title": "民交通出版股份有限公司",
+      "start": 2,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "附录A",
+      "title": "A 公路风险评估方法 ⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯106",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "附录B",
+      "title": "B 现有一、二级公路排查实施案例⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯122",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "附录C",
+      "title": "C 公路技术指标简易测量方法 ⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯125",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "附录D",
+      "title": "D 护栏结构设计图 ⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯128",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "附录E",
+      "title": "E 普示设施结构设计图⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯165",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "附录F",
+      "title": "F 安全设施验收要求 ⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯168",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "附录G",
+      "title": "G 现有三、四级公路安全生命防护工程实施案例 ⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯179",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "1",
+      "title": "总则",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "3",
+      "title": "排查分类方法和实施顺序",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "5",
+      "title": "安HR<13",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "4",
+      "title": "方案设计",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "25",
+      "title": "且≤50m",
+      "start": 96,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "35",
+      "title": "且≤50a",
+      "start": 96,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "6",
+      "title": "工程验收与评估",
+      "start": 112,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "82",
+      "title": "第82章",
+      "start": 116,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "8",
+      "title": "交通量[0.397]",
+      "start": 129,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "13",
+      "title": "且5B",
+      "start": 140,
+      "is_expl": false
+    },
+    {
+      "no": 19,
+      "label": "9",
+      "title": "第9章",
+      "start": 140,
+      "is_expl": false
+    },
+    {
+      "no": 20,
+      "label": "08",
+      "title": "建星",
+      "start": 144,
+      "is_expl": false
+    },
+    {
+      "no": 21,
+      "label": "22",
+      "title": "第22章",
+      "start": 150,
+      "is_expl": false
+    },
+    {
+      "no": 22,
+      "label": "7",
+      "title": "号明后",
+      "start": 151,
+      "is_expl": false
+    },
+    {
+      "no": 23,
+      "label": "10",
+      "title": "第10章",
+      "start": 151,
+      "is_expl": false
+    },
+    {
+      "no": 24,
+      "label": "28",
+      "title": "第28章",
+      "start": 152,
+      "is_expl": false
+    },
+    {
+      "no": 25,
+      "label": "14",
+      "title": "因尸寸以ma为顺位",
+      "start": 157,
+      "is_expl": false
+    },
+    {
+      "no": 26,
+      "label": "21",
+      "title": "第21章",
+      "start": 160,
+      "is_expl": false
+    },
+    {
+      "no": 27,
+      "label": "43",
+      "title": "将怀",
+      "start": 171,
+      "is_expl": false
+    },
+    {
+      "no": 28,
+      "label": "24",
+      "title": "阳x35圆管",
+      "start": 175,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 401,
+  "status": "indexed",
+  "note": ""
+}

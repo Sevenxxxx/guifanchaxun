@@ -1,0 +1,184 @@
+{
+  "id": "4.CJJ 99-2017 城市桥梁养护技术标准(OCR)",
+  "title": "CJJ 99-2017 城市桥梁养护技术标准",
+  "std_no": "OCR",
+  "version": "",
+  "file": "4.CJJ 99-2017 城市桥梁养护技术标准(OCR).pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\4.CJJ 99-2017 城市桥梁养护技术标准(OCR).pdf",
+  "pages": 206,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 206,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9982,
+    "punct_median": 0.0314,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.0,
+    "clause_hits": 201
+  },
+  "pdf_mtime": "2025-12-02 21:26:46",
+  "indexed_at": "2026-08-26 19:45:44",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "附录A",
+      "title": "A 城市桥梁日常巡检报表⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯68",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "附录B",
+      "title": "B 城市桥梁资料卡⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯69",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "附录C",
+      "title": "C 城市桥梁设施量年报表⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯73",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "附录D",
+      "title": "D 评分等级、扣分表⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯74",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "附录E",
+      "title": "E 城市桥梁监控测试⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯105",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "附录F",
+      "title": "F 结构定期检测现场记录表⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯107",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "1",
+      "title": "总 则",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "2",
+      "title": "术语和代号",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "3",
+      "title": "基 本 规定",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "4",
+      "title": "检 测 评 估",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "5",
+      "title": "养护维修加固措施；",
+      "start": 26,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "8",
+      "title": "纵横梁连接铆钉松动；",
+      "start": 53,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "6",
+      "title": "下部结构养护",
+      "start": 62,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "7",
+      "title": "抗 震 设 施",
+      "start": 66,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "9",
+      "title": "隧 道",
+      "start": 68,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "10",
+      "title": "附属设施养护",
+      "start": 72,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "11",
+      "title": "城市桥梁安全防护",
+      "start": 77,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "12",
+      "title": "养护工程的检查及验收",
+      "start": 79,
+      "is_expl": false
+    },
+    {
+      "no": 19,
+      "label": "82",
+      "title": "第82章",
+      "start": 146,
+      "is_expl": false
+    },
+    {
+      "no": 20,
+      "label": "85",
+      "title": "第85章",
+      "start": 149,
+      "is_expl": false
+    },
+    {
+      "no": 21,
+      "label": "20",
+      "title": "第20章",
+      "start": 153,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 947,
+  "status": "indexed",
+  "note": ""
+}

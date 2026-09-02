@@ -1,0 +1,47 @@
+数据 资源 表
+
+续 表 A. 2. 5-6
+
+字段 名 称 说 明
+
+秩序 检查 意见
+及 整改 内 容
+
+is_send 是 否 下 发
+
+采用 24 小 时
+export_date 、 YYYYMMDDHHMMSS
+计时 法
+
+Content
+
+A.2.6 专家 库 信 息 数据 宜 符合 表 A. 2. 6 的 规定 。
+表 A.2.6 专家 库 信 息 数 据
+
+中 文 名称 说 明
+
+抽取 期 次 编号
+姓名
+
+抽取 确认 状态
+
+is | YYYYMMDDHHMMSS
+
+n. . 工
+
+YYYYMMDD
+
+YYYYMMDD
+是 否 请 假 nl
+
+draw_time 抽取 时 间 YYYYMMDDHHMMSS
+
+原因 an. . 500
+nl
+
+an. . 900
+
+YYYYMMDDHHMMSS
+
+A.2.7 投诉 举报 信息 数据 宜 符合 表 A. 2.7 的 规定 。
+一 61 一

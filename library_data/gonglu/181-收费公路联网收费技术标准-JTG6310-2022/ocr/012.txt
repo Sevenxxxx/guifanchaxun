@@ -1,0 +1,44 @@
+术语 和 符号
+
+2.2 符号
+
+APDU 应 用 协议 数据 单元 (Application Protocol Data Unit ) ;
+CO0S 一 一 卡片 操作 系统 (Chip Operating System ) ;
+CPC 复合 通行 卡 〈Compound Pass Card ) ;
+CPU 一 一 中 央 处 理 圳 (Central Processing Unit ) ;
+CRC 一 一 循环 元 余 校 验 (Cyclic Redundancy Check ) ;
+数据 加 密 算 法 (Data Encrpytion Algorithm ) ;
+DSRC 专用 短程 通信 (Dedicated Short Range Communication7 ;
+ETC 一 一 电子 不 停车 收费 (Electronic Toll Collection ) ;
+GIS 一 一 地 理 信息 系统 (Geographic Information System ) ;
+HTTPS 一 一 超 文本 传输 安全 协议 (Hyper Text TransferRrotocol ofer SSLZTLS ) ;
+IZ0 一 一 输入 /输出 〈Input/Output ) ;
+IC 一 一 集成 电路 〈Integrated Circuit ) ;
+ID 一 一 身份 标识 号 码 (Identity ) ;
+PP 一 一 因特网 协议 (Internet Protocal 入;
+JPEC 一 一 联合 图 像 专家 组 (Joint Phiotograpftic Experts CiodpyN;
+
+1
+
+MAC 信息 鉴别 码 (Message-Abthentication Codey ;
+MF 一 一 主 控 文 件 (MasteREileJN
+MTBF 平均 故障 间隔 时 间 (NMeiain Time .Between Failure) ;
+MTTR 平均 维护 时 间 人 所 MEaa Timesto Repairyz
+
+MTC 一 一 人 工 收费 \(CManual Toll Colleetion ) ;
+NFC 一 一 近 场 通信 MK(Near Field Coinomiinication ) ;
+OBE 一 一 车 载 设 答 ( On Board Equipient) ;
+0OBU 一 地 车 载 单元 (On Board Unit) ;
+OD 交通 起 止 点 (Origin Destination ) ;
+PCI 一 一 外 设 部 件 互 联 (Peripheral Component Interconnect ) ;
+PCI-E 一 一 高 速 外 设 部 件 互联 (Peripheral Component Interconnect-Express ) ;
+PICC 一 一 接近 式 卡 片 (Proximity Integrated Circuit Card ) ;
+PSAM 一 一 消费 安全 访问 模块 〈(Payment Security Access Module ) ;
+RAID 一 一 磁盘 阵列 (Redundant Arrays of Independent Drives ) ;
+RSU 一 一 路 侧 单元 (Road Side Unit) ;
+SAM 一 一 安全 访问 模块 〈Security Access Module ) ;
+SE 一 一 安全 单元 (Security Element ) ;
+SIP 一 一 会 话 初 始 协议 〈Session Initialization Protocol ) ;
+SNMP 简单 网 络 管理 协议 〈Simple Network Management Protocol) ;
+一 4 一
+

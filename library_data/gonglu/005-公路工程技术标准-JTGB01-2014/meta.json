@@ -1,0 +1,135 @@
+{
+  "id": "005-公路工程技术标准-JTGB01-2014",
+  "title": "005-公路工程技术标准-JTGB01-2014",
+  "std_no": "",
+  "version": "",
+  "file": "gonglu/005-公路工程技术标准-JTGB01-2014.pdf",
+  "source_abs": "guifansrc\\gonglu\\005-公路工程技术标准-JTGB01-2014.pdf",
+  "pdf_abs": "guifansrc\\gonglu\\005-公路工程技术标准-JTGB01-2014.pdf",
+  "pages": 115,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 115,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-08-25 21:18:41",
+  "pdf_mtime": "2026-08-25 21:18:41",
+  "source_mtime_ns": 1787663921071437200,
+  "source_size": 3748272,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 115
+  },
+  "indexed_at": "2026-08-31 20:59:00",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": 76,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "3",
+      "title": "基本 规定 5",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "9",
+      "title": "路 线 交 叉 和 0 33",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "10",
+      "title": "第10章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "1",
+      "title": "总 则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "2",
+      "title": "术语",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "4",
+      "title": "第4章",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "5",
+      "title": "路 基 路 面",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "6",
+      "title": "桥涵",
+      "start": 26,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "7",
+      "title": "汽车 及 人 和 群 倚 载",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "15",
+      "title": "第15章",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "8",
+      "title": "隧道",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "12",
+      "title": "第12章",
+      "start": 61,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 76,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 304,
+  "status": "indexed",
+  "note": ""
+}

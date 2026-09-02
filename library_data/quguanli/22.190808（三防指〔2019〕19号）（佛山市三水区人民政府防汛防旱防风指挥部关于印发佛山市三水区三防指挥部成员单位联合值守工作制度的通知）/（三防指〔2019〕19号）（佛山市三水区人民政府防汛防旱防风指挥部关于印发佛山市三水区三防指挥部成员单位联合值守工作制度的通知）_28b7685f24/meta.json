@@ -1,0 +1,51 @@
+{
+  "id": "（三防指〔2019〕19号）（佛山市三水区人民政府防汛防旱防风指挥部关于印发佛山市三水区三防指挥部成员单位联合值守工作制度的通知）_28b7685f24",
+  "title": "（三防指〔2019〕19号）",
+  "std_no": "佛山市三水区人民政府防汛防旱防风指挥部关于印发佛山市三水区三防指挥部成员单位联合值守工作制度的通知",
+  "version": "",
+  "file": "quguanli/22.190808（三防指〔2019〕19号）（佛山市三水区人民政府防汛防旱防风指挥部关于印发佛山市三水区三防指挥部成员单位联合值守工作制度的通知）/（三防指〔2019〕19号）（佛山市三水区人民政府防汛防旱防风指挥部关于印发佛山市三水区三防指挥部成员单位联合值守工作制度的通知）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\22.190808（三防指〔2019〕19号）（佛山市三水区人民政府防汛防旱防风指挥部关于印发佛山市三水区三防指挥部成员单位联合值守工作制度的通知）\\（三防指〔2019〕19号）（佛山市三水区人民政府防汛防旱防风指挥部关于印发佛山市三水区三防指挥部成员单位联合值守工作制度的通知）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\22.190808（三防指〔2019〕19号）（佛山市三水区人民政府防汛防旱防风指挥部关于印发佛山市三水区三防指挥部成员单位联合值守工作制度的通知）\\（三防指〔2019〕19号）（佛山市三水区人民政府防汛防旱防风指挥部关于印发佛山市三水区三防指挥部成员单位联合值守工作制度的通知）.pdf",
+  "pages": 4,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 4,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-08-22 18:42:51",
+  "pdf_mtime": "2025-08-22 18:42:51",
+  "source_mtime_ns": 1755859371000000000,
+  "source_size": 1389866,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 4
+  },
+  "indexed_at": "2026-09-01 01:06:45",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

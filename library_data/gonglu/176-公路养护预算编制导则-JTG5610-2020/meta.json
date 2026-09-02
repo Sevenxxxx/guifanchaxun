@@ -1,0 +1,100 @@
+{
+  "id": "176-公路养护预算编制导则-JTG5610-2020",
+  "title": "176-公路养护预算编制导则-JTG5610-2020",
+  "std_no": "",
+  "version": "",
+  "file": "176-公路养护预算编制导则-JTG5610-2020.pdf",
+  "pdf_abs": "guifansrc\\gonglu\\176-公路养护预算编制导则-JTG5610-2020.pdf",
+  "pages": 80,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 80,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.993,
+    "punct_median": 0.0215,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.111,
+    "clause_hits": 76
+  },
+  "pdf_mtime": "2026-08-25 22:42:57",
+  "indexed_at": "2026-08-26 08:00:10",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 5,
+  "offset": 5,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "养护预算费用组成",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "养护检查",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "日常养护",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "养护工程",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "7",
+      "title": "第7章",
+      "start": 18,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "附录A",
+      "title": "公路养护预算表格样式",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "附录B",
+      "title": "养护工程预算项目表",
+      "start": 56,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "附录C",
+      "title": "设备与材料的划分标准",
+      "start": 67,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 118,
+  "status": "indexed",
+  "note": ""
+}

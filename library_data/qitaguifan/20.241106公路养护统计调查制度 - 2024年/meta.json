@@ -1,0 +1,149 @@
+{
+  "id": "20.241106公路养护统计调查制度 - 2024年",
+  "title": "241106公路养护统计调查制度 - 2024年",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/20.241106公路养护统计调查制度 - 2024年.doc",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\20.241106公路养护统计调查制度 - 2024年.doc",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\20.241106公路养护统计调查制度 - 2024年.doc",
+  "pages": 158,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 158,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9895,
+    "punct_median": 0.0126,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 17:58:14",
+  "pdf_mtime": "2025-02-14 17:58:14",
+  "source_mtime_ns": 1739527094000000000,
+  "source_size": 2196451,
+  "fmt": "doc",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:31:32",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "03",
+      "title": "列≤01列；04列≤02列；",
+      "start": 24,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "01",
+      "title": "行=02行+08行+15行；",
+      "start": 85,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "08",
+      "title": "行=09行+11行+13行；",
+      "start": 85,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "10",
+      "title": "行≤09行；",
+      "start": 85,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "12",
+      "title": "行≤11行；",
+      "start": 86,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "14",
+      "title": "行≤13行；",
+      "start": 86,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "17",
+      "title": "列=09列+10列；",
+      "start": 94,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "11",
+      "title": "一级公路\t14\t四级公路",
+      "start": 111,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "0",
+      "title": "正常路段",
+      "start": 115,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "5",
+      "title": "本路段与前一路段在位置上不相连",
+      "start": 115,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "6",
+      "title": "断头路段",
+      "start": 115,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "1",
+      "title": "公路交通部门养护管理",
+      "start": 118,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "9",
+      "title": "其他部门养护管理",
+      "start": 118,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "2",
+      "title": "还贷\t9\t未收费",
+      "start": 119,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "3",
+      "title": "临时性",
+      "start": 124,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed",
+  "note": ""
+}

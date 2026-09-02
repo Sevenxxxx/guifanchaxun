@@ -1,0 +1,156 @@
+{
+  "id": "附件2：佛山市城市桥梁检测和养护维修中长期规划（2021年-2030年）",
+  "title": "附件2：佛山市城市桥梁检测和养护维修中长期规划",
+  "std_no": "2021年-2030年",
+  "version": "2021",
+  "file": "shiguanli/15.佛山市交通运输局关于印发《佛山市城市桥梁检测和养护维修中长期规划（2021—2030年）》的通知/附件2：佛山市城市桥梁检测和养护维修中长期规划（2021年-2030年）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\15.佛山市交通运输局关于印发《佛山市城市桥梁检测和养护维修中长期规划（2021—2030年）》的通知\\附件2：佛山市城市桥梁检测和养护维修中长期规划（2021年-2030年）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\15.佛山市交通运输局关于印发《佛山市城市桥梁检测和养护维修中长期规划（2021—2030年）》的通知\\附件2：佛山市城市桥梁检测和养护维修中长期规划（2021年-2030年）.pdf",
+  "pages": 112,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 112,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9776,
+    "punct_median": 0.0141,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.0,
+    "clause_hits": 45
+  },
+  "source_mtime": "2025-02-14 18:15:35",
+  "pdf_mtime": "2025-02-14 18:15:35",
+  "source_mtime_ns": 1739528135000000000,
+  "source_size": 5247396,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:19:14",
+  "toc_zone_end": 2,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "规划背景、范围与依据",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "桥梁养护管理政策及规范梳理",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "桥梁养护维修现状及存在问题",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "既有中长期规划（2011-2020）完成情况",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "规划目标",
+      "start": 46,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "规划目标实现途径及措施",
+      "start": 51,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "",
+      "title": "附件1 佛山市城市桥梁基本信息一览表",
+      "start": 67,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "25",
+      "title": "第25章",
+      "start": 71,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "16",
+      "title": "第16章",
+      "start": 72,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "18",
+      "title": "第18章",
+      "start": 79,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "24",
+      "title": "第24章",
+      "start": 80,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "33",
+      "title": "第33章",
+      "start": 82,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "28",
+      "title": "第28章",
+      "start": 91,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "",
+      "title": "附件2 佛山市城市隧道基本信息一览表",
+      "start": 107,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "",
+      "title": "附件3 规划目标完成时间计划表",
+      "start": 108,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "",
+      "title": "附件4 佛山市城市桥梁养护管理台账",
+      "start": 112,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 1297,
+  "status": "indexed",
+  "note": ""
+}

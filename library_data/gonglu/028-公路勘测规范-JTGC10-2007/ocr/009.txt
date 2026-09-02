@@ -1,0 +1,26 @@
+村
+
+为 满足 桥 、 隧 .交叉 以 及 其 他 工 点 设计 需要 而 建立 的 控制 测量 网 。
+
+SN
+
+2.0.9 地 形 网 修 测 modifying survey of relief map
+修改 原 地 形 图 中 地 形 、 地 物 已 发 生变 化 部 分 的 测量 活动 。
+
+2.0.10 补 测 supplement Survey
+于 原 地 形 图 的 测绘 范围 不 人 够 或 控制 点 被 损坏 等 进行 的 补充 测量 活动 。
+
+2.0.11 正 射影 像 地 形 网 orthophotomap
+将 航 摄影 像 或 迁 感 图 像 的 微小 面积 作为 纠正 单元 ,通过 纠正 香 元 对 像 片 倾斜 和 地 形
+
+伏 引起 的 像 点 位 移 进行 纠正 并 绘 有 等 高 线 的 影像 图 。
+
+2.0.12 控制 测量 桩 stakes for control measure
+GPS 点 三角 点 .导线 点 \ 水 准点 等 控制 点 桩 。
+
+2.0.13 路线 控 制 桩 stakes for control line
+路 线 起 终点 桩 .公里 桩 .曲线 要 素 桩 < 交点 桩 、 转 点 桩 ^ 断 链 桩 等 。
+
+2.0.14 标志 桩 stakes for centef line afmid indicatidn
+路 线 中 桩 和 指示 桩 。
+

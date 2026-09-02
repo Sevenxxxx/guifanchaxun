@@ -1,0 +1,41 @@
+超 限 检测 数据 格式 要 求
+
+续 表 A-15
+| nr | 是 否 、
+序号 字段 名 称 字段 说 明 数据 类 型 必 填 备注
+7 yehicleQuaCode 道路 运输 证 号 String
+8 companyName 道路 运输 企业 名 称 String
+， . 运输 企业 社会 统一 ，
+9 un 让 edCreditCode 信用 代码 String
+10 | companyQuaCode | 道路 运输 经 营 许可 证 号 String
+11 earBoSouroe 货物 源头 单位 名 称 String
+Company
+货物 装 载 源头 单位 统一 | . 4
+12 cargoSourceId 社会 信用 代码 String A
+-二
+13 ilegalTime 违法 时 间 String 是 | 是 Yuw 和 24mmss
+| CU | 行政 处 馈 决 定 书 文 号 /| 。 。 | 下 全 人 多 各 门 处 罚 的 对 应 行政 处 罚 决 定 书 文 号 。
+文书 编号 FF 5 管 部 门 处 罚 的 对 应 文书 编号
+15 punishmentDate 处 罚 时 间 YMMDDhh24mmss
+16 | panishMoney 罚款 金 玫 全 。 序 S 保 留 2 位 小 数
+17 tra 值 cManagement 庆
+Scores
+18 punishment
+Department
+
+案件 抄 告 数据 内 容 与 格式 要 求
+序号 7/ 有 字段 说 明 数据 类 型 下 在 备注
+必 填
+案件 抄 告 信息 数据 . 32 位 长 度 随机 字符 串 ， 作 为 每 条 记录 的 唯
+1 copyCaseld 唯一 标识 String (32) | 是 _ 标识
+2 fromDistCode “| 抄 告 省 份 行政 区 划 代 码 | String (6) | 是 | 发 起 案件 抄 告 省 份 的 行政 区 划 代 码
+对 应 抄 告 信息 中 的 “数据 唯一 标识 ”字段
+二 应 抄 告 信 ，
+3 | 。 chaogaold 对 应 抄 千 信息 的 | Stang (32) | 是 | 如 路 面 治 超 案件 信息 、 称 重 检测 信息 的 “ 数
+唯一 标志 也 _、
+据 唯 一 标识 ”
+4 toDistCode 。” 睹 收 省 份 行政 区 划 代 码 String (6) | 是 | 案件 抄 告 目 标 省 份 的 行政 区 划 代码
+5 copyOrgName 抄 告 机 构 String (128) | 是 案件 抄 告 机 构 名 称
+， . 抄 告 省 份 的 联系 人 姓名 ， 接 收 省 份 若 存在 疑
+6 contactPerson 抄 告 省 份 联系 人 String 是 义 可 以 直接 沟通
+

@@ -1,0 +1,107 @@
+{
+  "id": "007-城镇化地区公路工程技术标准-JTG2112-2021",
+  "title": "007-城镇化地区公路工程技术标准-JTG2112-2021",
+  "std_no": "",
+  "version": "",
+  "file": "007-城镇化地区公路工程技术标准-JTG2112-2021.pdf",
+  "pdf_abs": "guifansrc\\gonglu\\007-城镇化地区公路工程技术标准-JTG2112-2021.pdf",
+  "pages": 73,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 73,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9937,
+    "punct_median": 0.0223,
+    "empty_ratio": 0.071,
+    "bad_ratio": 0.0,
+    "clause_hits": 128
+  },
+  "pdf_mtime": "2026-08-25 21:18:42",
+  "indexed_at": "2026-08-26 08:00:11",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 6,
+  "offset": 6,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本规定",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "路线",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "路基路面",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "桥涵",
+      "start": 18,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "隧道",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "路线交叉",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "交通工程及沿线设施",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "10",
+      "title": "管线综合、雨水工程、景观",
+      "start": 35,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 332,
+  "status": "indexed",
+  "note": ""
+}

@@ -1,0 +1,39 @@
+智慧 工地 业务 内 容 采 集 参 数 建议 表
+
+续 表 C. 0. 15
+名 称 盾 构 施工 环境 监测 采集 参数
+参数 名 称 参数 类 型 是 否 必须 (YXN)
+湿度 Float Y
+一 氧化 碳 浓度 Float Y
+硫化 氢 浓 度 Float Y
+甲烷 浓度 Float Y
+监测 时 间 Date Y
+名 称 管 片 钢筋 笼 生 产 采 集 参 妓
+参数 名 称 参数 类 型 是 否 必 须 (Y7N)
+管 片 厂 名 称 Suing Y
+管 片 类 型 mi Y
+钢筋 笼 数量 Float Y
+生产 日 期 Date Y
+名 称 管 片 遇 j= 各 工序 采集 参数
+参数 名 称 参数 类 型 是 否 必须 (YXN)
+管 片 厂 名 称 Sing Y
+管 片 类 型 总 Y
+管 片 编号 Suing Y
+生产 线 名 称 SO Y
+模具 名 称 Sai Y
+清 模 时 间 Dais Y
+涂 油 时 间 Date 站
+入 笼 时 间 Date 了
+庶 筑 时 间 Date 了
+浇 氏 重 Floal Y
+振 的 时 间 Date Y
+振 的 平均 频率 Float Y
+静养 时 间 Date Y
+蒸 养 持续 时 间 Float Y
+蒸 养 温度 Floal Y
+蒸 养 湿 度 Floal Y
+脱 模 时 间 Date Y
+管 片 水 养 时 间 Date Y
+水 池 温 度 Float Y
+水 池 pH 值 Float Y
+

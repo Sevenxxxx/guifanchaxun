@@ -1,0 +1,18 @@
+超 限 运输 车 辆 行驶 公路 管理 系统 技术 规范 (JTGZT 4620 一 2024 )
+
+续 表 A-9
+字段 名 称 字段 说 明 数据 类 型 内 说 明
+enStationName 口 收费 站 名 称 String 高 速 公 路 收费 站 出 口 数据 必 填
+enStationId 入口 收费 站 编号 String 高 速 公路 收费 站 出 口 数据 必 填
+enTollLaneId 人 口 车 道 编 号 String 高 速 公路 收费 站 出 口 数据 必 填
+
+高 速 公路 收费 站 出 口 数据 必 填 ，YYYYM-
+MDDh24hmmss
+
+enTime 人 口 时 间 String
+
+enWeight 人 口 车 货 总 质量 JInteger 高 速 公 路 收费 站 出 口
+enAlexCount 和信 口 车 辆 轴 数 Jnteger 1
+
+表 A-10 车辆 轴 型 编码 说 明
+

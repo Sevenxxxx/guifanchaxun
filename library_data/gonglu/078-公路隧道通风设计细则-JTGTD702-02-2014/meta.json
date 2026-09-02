@@ -1,0 +1,114 @@
+{
+  "id": "078-公路隧道通风设计细则-JTGTD702-02-2014",
+  "title": "078-公路隧道通风设计细则-JTGTD702-02-2014",
+  "std_no": "",
+  "version": "",
+  "file": "078-公路隧道通风设计细则-JTGTD702-02-2014.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\078-公路隧道通风设计细则-JTGTD702-02-2014.pdf",
+  "pages": 133,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 133,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:26:23",
+  "indexed_at": "2026-08-26 01:54:33",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 133
+  },
+  "toc_zone_end": 7,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": 94,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "第1章",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "通风 规划 与 调查",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "通风 方式",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "通风 标准",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "需 风量",
+      "start": 35,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "通风 计算",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "第8章",
+      "start": 69,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "风机 房 与 通风 井",
+      "start": 77,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "10",
+      "title": "第10章",
+      "start": 86,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 94,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 274,
+  "status": "indexed",
+  "note": ""
+}

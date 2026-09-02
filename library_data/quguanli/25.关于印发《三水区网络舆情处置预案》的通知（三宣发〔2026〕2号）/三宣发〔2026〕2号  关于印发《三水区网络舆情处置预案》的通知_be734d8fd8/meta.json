@@ -1,0 +1,51 @@
+{
+  "id": "三宣发〔2026〕2号  关于印发《三水区网络舆情处置预案》的通知_be734d8fd8",
+  "title": "三宣发〔2026〕2号  关于印发《三水区网络舆情处置预案》的通知",
+  "std_no": "",
+  "version": "",
+  "file": "quguanli/25.关于印发《三水区网络舆情处置预案》的通知（三宣发〔2026〕2号）/三宣发〔2026〕2号  关于印发《三水区网络舆情处置预案》的通知.doc",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\25.关于印发《三水区网络舆情处置预案》的通知（三宣发〔2026〕2号）\\三宣发〔2026〕2号  关于印发《三水区网络舆情处置预案》的通知.doc",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\25.关于印发《三水区网络舆情处置预案》的通知（三宣发〔2026〕2号）\\三宣发〔2026〕2号  关于印发《三水区网络舆情处置预案》的通知.doc",
+  "pages": 9,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 9,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9368,
+    "punct_median": 0.0023,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-03-27 18:18:51",
+  "pdf_mtime": "2026-03-27 18:18:51",
+  "source_mtime_ns": 1774606731000000000,
+  "source_size": 69287,
+  "fmt": "doc",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:31:49",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

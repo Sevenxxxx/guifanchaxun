@@ -1,0 +1,55 @@
+数据 资源 表
+
+字段 名 称
+
+续 表 A. 1. 1-6
+
+设计 负责 人
+
+technical_person_
+
+name
+
+设计 负责 人
+
+字符 型
+
+stake_start
+
+合同 金额 (万 元 )
+
+contract_amount
+
+设计 阶段
+
+初步 设计 开始
+日 期
+
+design_start_date
+
+初步 设计 结束
+日 期
+
+design_end_date
+
+15 初步 设计 审批
+通过 日 期
+施工 图 设计
+1 YYYYMMDD
+6 开始 日 期
+17 YYYYMMDD
+18 ne 批 通过 日 期 日 期 型 YYYYMMDD
+19 入 major_work 设计 主要 内 容 | 字符 型 am. . 4000
+20| 合同 开始 日 期 |jcontract_begin_date| ”合同 开始 日 期 | 日 期 型 YYYYMMDD
+21 合同 结束 日 期 contract_endq_date 合同 结束 日 期 日 期 型 YYYYMMDD
+采用 24 小 时
+计时 法 , 例如 :
+几 20180522160822 | 日 期
+22| 数据 导出 时 间 export_date 表示 2018 年 5 | 时 间 型 YYYYMMDDHHMMSS 是
+月 22 日 16 点 零
+8 分 22 秒
+
+7 施工 单位 业绩 信息 数据 宜 符合 表 A. 1. 1-7 的 规定 。
+
+一 23 一
+

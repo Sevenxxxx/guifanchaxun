@@ -1,0 +1,100 @@
+{
+  "id": "015-公路桥梁抗震设计规范-JTGT2231-01-2020",
+  "title": "015-公路桥梁抗震设计规范-JTGT2231-01-2020",
+  "std_no": "",
+  "version": "",
+  "file": "gonglu/015-公路桥梁抗震设计规范-JTGT2231-01-2020.pdf",
+  "pdf_abs": "guifansrc\\gonglu\\015-公路桥梁抗震设计规范-JTGT2231-01-2020.pdf",
+  "pages": 136,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 136,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9962,
+    "punct_median": 0.043,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.0,
+    "clause_hits": 170
+  },
+  "pdf_mtime": "2026-08-25 21:19:15",
+  "indexed_at": "2026-08-28 18:39:06",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 7,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": 81,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语和符号",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本要求",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "场地、地基和基础",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "地震作用",
+      "start": 41,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "抗震分析",
+      "start": 51,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "20",
+      "title": "第20章",
+      "start": 51,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "强度与变形验算",
+      "start": 77,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 81,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 504,
+  "status": "indexed",
+  "note": ""
+}

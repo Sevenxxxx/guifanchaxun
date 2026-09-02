@@ -1,0 +1,53 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGXT 6520 一 2024 )
+续 表 B. 0. 4-4
+
+序号 字段 名 数据 类 型 是 否 可 空 说 明
+4 StartLng int 否 统计 区 间 起 点 经 度 ， 单 位 : 0. 0000001。
+5 StartLat int 否 统计 区 间 起 点 纬度 ， 单 位 : 0. 0000001。
+6 EndLng int 否 统计 区 间 止 点 经 度 ， 单 位 : 0. 0000001。
+7 EndLat int 否 统计 区 间 止 点 维度 ， 单 位 : 0. 0000001。
+8 AveSpeed double 否 车 道 级 平均 速度 ， 单 位 : 千 米 / 小 时
+9 “| TimeOccupancy double 理 车 道 级 时 间 占 有 率
+10 TimeHeadway double 否 车 道 级 平均 车 头 时 上 ，
+11 |SpaceOccupancy double 理 车 道 级 区 间 空 间 占 有
+12 VehNum int 理 车 辆 数量 -一
+13 Direction int 是 上 下 行 : 0 千 全 天 2 双向 ，3 未 知
+
+说 明
+
+消息 类 型 ， 应 符合 表 B. 0. 3 规定
+
+消息 发 出 时 间 ， 格 式 为 yyy-MM-dd HH:， mm: ss，SSS
+
+消息 卫 ， 范 围 为 0 ~0xFFFFFFFF ， 循 环 使 用
+
+RSF 的 设备 也， 应 符合 表 正 0. 4-14 规定
+
+拓展 应 用 平台 D
+
+事件 ID， 范围 为 0 ~OxFFFFFFFF， 循 环 使 用
+
+EventType
+
+碎 | 芭 | 驴 | 玉 | 芒 | 宙 | 让 罗 区
+
+事件 类 型 ， 见 本 规范 附录 A
+
+EventStatu S
+
+int
+
+一
+
+事件 状态 : 1 事件 产生 ，2 事件 持续 ，3 事件 消失 ，
+4 事件 更 新
+
+了 EventLevel
+
+int
+
+事件 等 级 : 0 默认 ，
+4 特大
+
+1 轻微 ,2 一 般 ，3 重大 ，
+

@@ -1,0 +1,107 @@
+{
+  "id": "052-公路土工合成材料应用技术规范-JTGT3332-2026",
+  "title": "052-公路土工合成材料应用技术规范-JTGT3332-2026",
+  "std_no": "",
+  "version": "",
+  "file": "052-公路土工合成材料应用技术规范-JTGT3332-2026.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\052-公路土工合成材料应用技术规范-JTGT3332-2026.pdf",
+  "pages": 108,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 108,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:21:34",
+  "indexed_at": "2026-08-26 01:18:41",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 108
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "8",
+      "title": "第8章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "9",
+      "title": "其 他 工程 oooeoosseooeoossceoseoe",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "10",
+      "title": "第10章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "2",
+      "title": "术语 和 符 续",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "3",
+      "title": "土工 合成 材料 及 其 工程 应 用",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "4",
+      "title": "路 基 加 筋",
+      "start": 18,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "5",
+      "title": "路 基 防 排水",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "6",
+      "title": "路 基 防 护",
+      "start": 41,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "7",
+      "title": "路基 不 均匀 这 降 防治",
+      "start": 53,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 174,
+  "status": "indexed",
+  "note": ""
+}

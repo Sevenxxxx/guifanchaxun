@@ -1,0 +1,79 @@
+{
+  "id": "2．广东省佛山市三水区云东海街道履行职责事项清单（内部印发版）",
+  "title": "广东省佛山市三水区云东海街道履行职责事项清单",
+  "std_no": "内部印发版",
+  "version": "",
+  "file": "quguanli/21.250710中共佛山市三水区委、佛山市三水区人民政府关于印发佛山市三水区镇（街道）履行职责事项清单的通知/2．广东省佛山市三水区云东海街道履行职责事项清单（内部印发版）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\21.250710中共佛山市三水区委、佛山市三水区人民政府关于印发佛山市三水区镇（街道）履行职责事项清单的通知\\2．广东省佛山市三水区云东海街道履行职责事项清单（内部印发版）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\21.250710中共佛山市三水区委、佛山市三水区人民政府关于印发佛山市三水区镇（街道）履行职责事项清单的通知\\2．广东省佛山市三水区云东海街道履行职责事项清单（内部印发版）.pdf",
+  "pages": 483,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 483,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 0.9496,
+    "punct_median": 0.0238,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.556,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-07-19 17:38:29",
+  "pdf_mtime": "2025-07-19 17:38:29",
+  "source_mtime_ns": 1752917909000000000,
+  "source_size": 3365441,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 483
+  },
+  "indexed_at": "2026-09-01 00:31:50",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "4",
+      "title": "型 村",
+      "start": 48,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "1",
+      "title": "虞 于 局 :",
+      "start": 69,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "5",
+      "title": "准 有 关 申 请 事项 ;",
+      "start": 90,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "2",
+      "title": "性 行 广 东 省 投资 项 目 在 线 审",
+      "start": 249,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "0",
+      "title": "下 人 AN 危 工作 方式 ; 工",
+      "start": 417,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed",
+  "note": ""
+}

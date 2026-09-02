@@ -1,0 +1,44 @@
+ASN.、1 消息 集
+
+|
+VehicleInfoList: : = SEQUENCE (SIZE (1..127，…) ) OF VehicleInfo
+
+SpeedLimit: : = SEQUENCE |
+modelLimit SpeedLimitData ，
+-- 车 型 限 速 2 字 节
+laneLimit SpeedLimitData
+-- 车 道 限 速 值 2 字 节
+
+|
+LaneDepartureInfo: : = SEQUENCE |
+
+specialLane LaneNum ，
+-- 专用 车 道 号
+
+drivingLane LaneNum
+
+-- 行 驶 车 道 号
+
+TrafficLimitData:; = SEQUENCE | 2
+fil BIT STRING (SIZE (4) AN
+
+4
+heightLimit TrafficLimit ，
+
+一 限 高 2 字 节 【元
+
+limnitTime OCTET STRING (SIZE (8) ) OPTIONAL ，
+
+-- 特 定时 间 段 8 字 节 ，UnixTime， 前 四 个 字 节 表示 开始 时 间 ， 后 四
+
+-- 个 字 节 表示 结束 时 间
+
+|
+EtceLatitudeAndLongitude:: = SEQUENCE |
+
+fl BIT STRING (SIZE (7) ) ，
+latitude Double2IntType ，
+
+-- 纬 度 ， 小 数 精确 到 7 位 数 ， 数 据 需要 乘 以 10000000
+longitude Double2IntType ，
+

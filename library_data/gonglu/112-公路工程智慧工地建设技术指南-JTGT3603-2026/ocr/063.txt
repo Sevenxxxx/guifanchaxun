@@ -1,0 +1,46 @@
+C.0.6 沥青 路
+
+掉 捧 铺 参 数
+
+按 表 C. 0.6 采集 。
+
+智慧 工地 业务 内 容 采 集 参数 建议 表
+续 表 C. 0.4
+
+名 称 水 稳 混合 料 拌和 采集 参数
+
+参数 名 称 参数 类 型 是 否 必 须 (YXN)
+水 泥 用 量 Float Y
+
+砂 率 Float Y
+配合 比 Float Y
+生产 时 间 Date Y
+材料 类 型 Suing Y
+油 石 比 Suing Y
+混合 料 级 配 Suing Y
+沥青 重量 Float Y
+集 料 重量 Float Y
+矿 粉 重 Float Y
+拌和 温度 Flo 杰 Y
+拌和 时 辣 Flaat 了
+出 料 温度 Float Y
+出 料 时 间 Tie Y
+
+C.0.5 沥青 混合 料 运输 参数 宜 按 表 C.0. 5 采集
+表 C. 0 区 ”沥青 混合 料 运输
+
+名 称 沥青 混合 料 运输 采集 参数
+
+参数 名 称 参数 类 型 是 否 必 须 (YXN)
+拌和 站 名 称 Suing N
+材料 类 理 Suing Y
+车 牌号 Suing Y
+开始 时 间 Date Y
+结束 时 间 Date Y
+运输 重量 Float Y
+混合 料 温度 Float Y
+
+经 度 Float Y
+
+纬度 Float Y
+

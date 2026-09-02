@@ -1,0 +1,79 @@
+{
+  "id": "67.省物价局关于交通建设工程现场检测和工程材料试（检）验收问题的复函（粤价函〔2012〕1490）",
+  "title": "省物价局关于交通建设工程现场检测和工程材料试（检）验收问题的复函",
+  "std_no": "粤价函〔2012〕1490",
+  "version": "2012",
+  "file": "qitaguifan/67.省物价局关于交通建设工程现场检测和工程材料试（检）验收问题的复函（粤价函〔2012〕1490）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\67.省物价局关于交通建设工程现场检测和工程材料试（检）验收问题的复函（粤价函〔2012〕1490）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\67.省物价局关于交通建设工程现场检测和工程材料试（检）验收问题的复函（粤价函〔2012〕1490）.pdf",
+  "pages": 26,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 26,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-08-05 12:33:33",
+  "pdf_mtime": "2026-08-05 12:33:33",
+  "source_mtime_ns": 1785904413000000000,
+  "source_size": 491176,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 26
+  },
+  "indexed_at": "2026-08-31 22:15:39",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "3",
+      "title": "米 直 尺",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "4",
+      "title": "和 混合 料 性 能 检",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "8",
+      "title": "级 以 上 每 加 1",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "1",
+      "title": "路 基",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "2",
+      "title": "试验 固 结 不 排水 组",
+      "start": 23,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed",
+  "note": ""
+}

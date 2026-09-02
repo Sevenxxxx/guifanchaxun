@@ -1,0 +1,93 @@
+{
+  "id": "002-公路工程行业标准制修订管理导则-JTG1002-2022",
+  "title": "002-公路工程行业标准制修订管理导则-JTG1002-2022",
+  "std_no": "",
+  "version": "",
+  "file": "002-公路工程行业标准制修订管理导则-JTG1002-2022.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\002-公路工程行业标准制修订管理导则-JTG1002-2022.pdf",
+  "pages": 43,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 43,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 21:18:52",
+  "indexed_at": "2026-08-26 00:07:46",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 43
+  },
+  "toc_zone_end": 4,
+  "offset": 4,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "第2章",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "标准 立项",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "标准 制 修订",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "标准 批准 与 发 布",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "标准 出 版 与 发 行",
+      "start": 24,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "标准 局 部 修订 与 发 布",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "第8章",
+      "start": 27,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 118,
+  "status": "indexed",
+  "note": ""
+}

@@ -1,0 +1,48 @@
+超 限 检测 数据 格式 要 求
+
+续 表 A-2
+序号 字段 说 明 字段 代码 | 数据 类 型 | 长 度 备注
+19 | 是 否 有 车 辆 分 离 器 | es enee Int 1
+Separator
+20 | 是 否 有 轮轴 识别 铝 me Int 1
+Recogmizer
+21 | 是 否 有 斥 二 检测 设备 ae easur ng Int 1
+上 quipment
+加 昌 hasAutomic
+22 | 是 否 有 自动 栏杆 Railing Int
+23 是 否 有 显示 屏 en Int
+Screen
+4 是 否 安装 路 侧 单元 asReu T
+(RSU )
+业务 分 类 代码
+
+EQUIP_TYPE
+
+EQUIP_ TYPE
+EQUIP_TYBE_。
+
+卫 _ TYPF
+
+卫 _ TYPF
+
+卫 _ TYPF
+
+卫 _ TYPF
+
+卫 _ TYPF
+
+卫 _ TYPF
+
+卫 _ LEVEL
+
+卫 _ LEVEL
+
+卫 _ LEVEL
+
+重 设 备 检定 等 级 卫 _ LEVEL
+卫 ”LEVEL
+
+卫 _ LEVEL
+
+卫 _ LEVEL
+

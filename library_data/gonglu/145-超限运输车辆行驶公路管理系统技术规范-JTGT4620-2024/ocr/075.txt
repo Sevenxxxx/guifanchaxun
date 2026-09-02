@@ -1,0 +1,39 @@
+超 限 运输 车 辆 行驶 公路 管理 系统 技术 规范 {JTGZT 4620 一 2024
+
+续 表 A-14
+序号 字段 名 称 字段 说 明 数据 类 型 | 必 填 备注
+6 四 1 3 不 一
+19 ycsfAnjuanCode 机 罚 天 二 政 String
+ycsfPunishment “一 超 四 罚 ” 案 件 _ 了 上 由 、
+2 Decision 处 罚 决 定 Sn 处 罚 必定 书 摘 述
+. “一 超 四 罚 ” 案 件 ，
+21 jycesfPunishmentDate 处 罚 时 间 String YYYYMMDDhh24mmss
+22 | ycsfPunishMoney 本 Double
+rt 停止 从 事 营 业 性 运输 ，
+23 ycsfPunishTime 或 停业 整顿 时 长 String
+24 ycsfCloseTime “一直 四 罚 ” 结 案 时 间 String
+ycsfPunishment “一 超 四 罚 ” 案件 。
+和 Department 处 罚 机 构 Sng
+“一 超 四 计 ?”
+26 ycsfLawPeople 执法 人 员 本
+27 | ycsfCertificateNo 一直 四 罚
+7
+28 ide 一 超 四 罚 ” ” | -行政 处 罚 决 定 书 扫描 件 经 BASE64 转 码 后 的
+yCSUUQ8eLmage 处 罚 次 JSON 对 象 数组
+29 ycsfCaseStatus | -起 上 1 1- 有 效 ; 2- 已 撤销
+jj 超 史 时"“ 作 补充 上 传 的 其 他 文件 经 BASE64 转 码 后 的
+30 Pa 和 与 | 上 JSON 对 象 数 组
+= 一。 系 人 -15 “一 超 四 罚 ” 关 联 案件 信息 数据 内 容 与 格式 要 求
+7 1 总 本
+序 | 。 池 度 该 备注
+1 1 对 应 路 面 治 超 案件 suing (32) 对 应 路 面 治 超 案件 信息 中 的 “数据 唯一 标
+信息 的 唯一 标志 ID 识 ” 字 段
+2 driverName 驾驶 人 姓名 String driverName
+， 驾驶 人 身份 证 号 / 、 ，
+3 driverIdCard 驾驶 证 叶 String driverIdCard
+4 driverQuaCard ”| 道路 运输 从 业 资格 证 号 String
+5 vehicleNo 车 牌号 码 String 必要
+0- 蓝 色 ; 1- 黄 色 ; 2- 黑 色 ; 3- 白 色 ; 4- 渐 变
+6 plateColor 车 牌 颜色 Integer 绿色 ; 5- 黄 绿 双 拼 色 ; 6- 蓝 白 渐 变色 ; 9- 未 确
+定 ; 11- 绿 色 ; 12- 红 色
+

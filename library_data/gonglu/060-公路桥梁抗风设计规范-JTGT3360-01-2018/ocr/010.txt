@@ -1,0 +1,44 @@
+术语 和 符号
+
+2.1.24 涡 激 共振 Vortex Tesonance
+风 经 过 结构 时 产生 洲 涡 脱落 ， 当 洲 涡 脱落 频率 与 结构 或 构件 的 自 振 频率 接近 或 相等
+时 ， 由 涡 激 力 所 激发 出 的 结构 或 构件 的 一 种 共振 现象 。
+
+2.1.25 拌 振 buffeting
+
+在 风 的 脉动 力 、 上 游 构造 物 尾 流 的 脉动 力 或 风 绕 流 结构 的 率 流 脉动 力 的 作用 下 ， 结
+构 或 构件 发 生 的 一 种 随机 振动 现象 。
+
+2.1.26 拌 振 惯性 荷载 buffeting inertial load
+结构 拌 振 引起 的 惯性 作用 力 。
+
+2. 1. 27 风雨 激 振 wind-rain induced Vibration
+拉 索 或 吊 索 在 风 和 十 共同 作用 下 发 生 的 一 种 驰 振 现象 。
+
+2. 1.28 ”参数 共振 ”parameter oscillation
+桥 面 或 桥 塔 在 斜 拉 索 弦 长 方向 的 小 幅 振 劲 引起 的 一 种 斜 拉 索 横向 振动 放大 现象 。
+
+2.1.29 线性 内 部 共振 linearly intermmialvresonance oscillatioh
+桥 面 或 桥 塔 在 垂直 于 斜 拉 索 纺 长 方向 的 小 幅 振动 引起 的 一 种 斜 拉 索 横 向 振动 放大
+现象 。
+
+2.1.30 静 风 失 稳 临界 风速 ` ycriticalkwindsspeed of aerostatic instability
+
+结构 发 生 苦 风 横 向 失 稳 和 毅 风 捍 转发 散 的 最 低 风 速 ， 相 应 的 临界 风速 也 称 为 静 风 横
+向 失 稳 临 界 风 速 和 静 册 扭转 发 散 临界 风速 。
+
+2.1.311 颜 振 临 界 风 速 flutter critical wind speed
+结构 或 构件 发 生 赢 振 的 最 低 风 速 。
+
+2.1.32 驰 振 临界 风速 galloping critical wind speed
+结构 或 构件 发 生 驰 振 的 最 低 风 速 。
+
+2.1.33 涡 激 共振 起 振 风 速 ”vortex resonance onset wind speed
+结构 或 构件 发 生 涡 激 共振 的 最 低 风 速 。
+
+2.1.34 风 洞 ”wind tunnel
+
+以 人 工 的 方式 产生 并 且 控 制 有 一 定 流动 特性 的 气流 ， 用 来 模拟 试验 对 象 周 围 气 体 的
+流动 情况 ， 并 根据 相似 性 原理 进行 各 种 空气 动力 学 试验 的 一 种 管道 状 试验 设备 。
+
+一 $ 一

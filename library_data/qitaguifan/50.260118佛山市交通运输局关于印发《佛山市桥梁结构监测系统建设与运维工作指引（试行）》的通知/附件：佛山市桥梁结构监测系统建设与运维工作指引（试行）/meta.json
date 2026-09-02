@@ -1,0 +1,177 @@
+{
+  "id": "附件：佛山市桥梁结构监测系统建设与运维工作指引（试行）",
+  "title": "附件：佛山市桥梁结构监测系统建设与运维工作指引",
+  "std_no": "试行",
+  "version": "",
+  "file": "qitaguifan/50.260118佛山市交通运输局关于印发《佛山市桥梁结构监测系统建设与运维工作指引（试行）》的通知/附件：佛山市桥梁结构监测系统建设与运维工作指引（试行）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\50.260118佛山市交通运输局关于印发《佛山市桥梁结构监测系统建设与运维工作指引（试行）》的通知\\附件：佛山市桥梁结构监测系统建设与运维工作指引（试行）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\50.260118佛山市交通运输局关于印发《佛山市桥梁结构监测系统建设与运维工作指引（试行）》的通知\\附件：佛山市桥梁结构监测系统建设与运维工作指引（试行）.pdf",
+  "pages": 53,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 53,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.994,
+    "punct_median": 0.0343,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.111,
+    "clause_hits": 152
+  },
+  "source_mtime": "2026-01-23 21:26:51",
+  "pdf_mtime": "2026-01-23 21:26:51",
+  "source_mtime_ns": 1769174811000000000,
+  "source_size": 3478291,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 23:19:17",
+  "toc_zone_end": 7,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "",
+      "title": "前言",
+      "start": 2,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "1",
+      "title": "总则",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "基本规定",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "系统设计",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "现场实施",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "软件开发",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "数据管理",
+      "start": 26,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "系统维护",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "系统应用",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "附录A",
+      "title": "大型桥梁测点布设示意图",
+      "start": 34,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "附录B",
+      "title": "常规桥梁群监测内容、监测方法及测点布设",
+      "start": 35,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "附录C",
+      "title": "设备技术要求及数据要求",
+      "start": 39,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "附录D",
+      "title": "设备设施标识",
+      "start": 43,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "附录E",
+      "title": "调试报告",
+      "start": 45,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "附录F",
+      "title": "系统信息表",
+      "start": 47,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "附录G",
+      "title": "系统故障及维护台账",
+      "start": 49,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "附录H",
+      "title": "市级平台数据接口",
+      "start": 50,
+      "is_expl": false
+    },
+    {
+      "no": 19,
+      "label": "",
+      "title": "参考文献",
+      "start": 53,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 308,
+  "status": "indexed",
+  "note": ""
+}

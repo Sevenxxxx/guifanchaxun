@@ -1,0 +1,52 @@
+公路 建设 市 场 监管 信息 技术 规范 (JTGXT 3191 一 2025 )
+
+续 表 A. 2. 1-1
+
+Je 获奖 单位 类 型 位 施工 单位 、 监
+3 | 获奖 单位 类 型 company_gpe | 名 称 字符 型 an . 50 本 间 位 质量 检
+测 机 构 、 其 他
+奖项 名 称 awards_name 字符 型 是
+获奖 项 目 projectL_name 字符 型 是
+
+获奖 人 员
+
+Winners_person
+
+字符 型
+
+~ 人 LA 上
+
+奖项 年 度
+
+year
+
+等 级
+
+Erade
+
+issue_department
+
+winners_date
+
+所 获奖 项 的 等
+级 名 称
+
+content
+
+YYYYMMDDHHMMSS
+
+企业 不 良 行为 信息 数据 宜 符合 表 A. 2. 1-2 的 规定 。
+
+表 A. 2. 1-2 ”从 业 企 业 不 良 行为 信息 数据
+
+序 、 数据 是 否
+号 中 文 名 称 字段 名 称 说 明 类 型 数据 格式 值 域 必 填
+1 单位 名 称 company_name 单位 名 称 字符 型 an .256 是
+
+统一 社会 信用 . 统一 社会 信用
+2 代码 credit_code 代码 字符 型 an .18 是
+勤 察 设计 单
+ye 位 施工 单位 、 监
+3 | 。 单位 类 型 | company type | 单位 类 型 。 | 字符 型 an .50 天 单位 质量 检 | 是
+测 机 构 、 其 他
+

@@ -1,0 +1,359 @@
+{
+  "id": "038-公路工程混凝土结构耐久性设计规范-JTGT3310-2019",
+  "title": "038-公路工程混凝土结构耐久性设计规范-JTGT3310-2019",
+  "std_no": "",
+  "version": "",
+  "file": "038-公路工程混凝土结构耐久性设计规范-JTGT3310-2019.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\038-公路工程混凝土结构耐久性设计规范-JTGT3310-2019.pdf",
+  "pages": 83,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 83,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9923,
+    "punct_median": 0.0376,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.111,
+    "clause_hits": 90
+  },
+  "pdf_mtime": "2026-08-25 22:20:48",
+  "indexed_at": "2026-08-26 00:42:45",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 10,
+  "offset": 9,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语和符号",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本规定",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "环境",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "材料",
+      "start": 31,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "0",
+      "title": "第0章",
+      "start": 34,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "桥涵",
+      "start": 40,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "隧道",
+      "start": 51,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "防腐蚀附加措施",
+      "start": 55,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "10",
+      "title": "第10章",
+      "start": 64,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "12",
+      "title": "第12章",
+      "start": 64,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "15",
+      "title": "第15章",
+      "start": 64,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "11",
+      "title": "第11章",
+      "start": 66,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "14",
+      "title": "第14章",
+      "start": 78,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "17",
+      "title": "第17章",
+      "start": 78,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "19",
+      "title": "第19章",
+      "start": 78,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "20",
+      "title": "第20章",
+      "start": 78,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "21",
+      "title": "第21章",
+      "start": 78,
+      "is_expl": false
+    },
+    {
+      "no": 19,
+      "label": "22",
+      "title": "第22章",
+      "start": 78,
+      "is_expl": false
+    },
+    {
+      "no": 20,
+      "label": "23",
+      "title": "第23章",
+      "start": 78,
+      "is_expl": false
+    },
+    {
+      "no": 21,
+      "label": "26",
+      "title": "第26章",
+      "start": 78,
+      "is_expl": false
+    },
+    {
+      "no": 22,
+      "label": "28",
+      "title": "第28章",
+      "start": 78,
+      "is_expl": false
+    },
+    {
+      "no": 23,
+      "label": "29",
+      "title": "第29章",
+      "start": 78,
+      "is_expl": false
+    },
+    {
+      "no": 24,
+      "label": "31",
+      "title": "第31章",
+      "start": 78,
+      "is_expl": false
+    },
+    {
+      "no": 25,
+      "label": "36",
+      "title": "第36章",
+      "start": 78,
+      "is_expl": false
+    },
+    {
+      "no": 26,
+      "label": "37",
+      "title": "第37章",
+      "start": 78,
+      "is_expl": false
+    },
+    {
+      "no": 27,
+      "label": "18",
+      "title": "第18章",
+      "start": 79,
+      "is_expl": false
+    },
+    {
+      "no": 28,
+      "label": "33",
+      "title": "第33章",
+      "start": 79,
+      "is_expl": false
+    },
+    {
+      "no": 29,
+      "label": "35",
+      "title": "第35章",
+      "start": 79,
+      "is_expl": false
+    },
+    {
+      "no": 30,
+      "label": "39",
+      "title": "第39章",
+      "start": 79,
+      "is_expl": false
+    },
+    {
+      "no": 31,
+      "label": "41",
+      "title": "第41章",
+      "start": 79,
+      "is_expl": false
+    },
+    {
+      "no": 32,
+      "label": "42",
+      "title": "第42章",
+      "start": 79,
+      "is_expl": false
+    },
+    {
+      "no": 33,
+      "label": "46",
+      "title": "第46章",
+      "start": 79,
+      "is_expl": false
+    },
+    {
+      "no": 34,
+      "label": "47",
+      "title": "第47章",
+      "start": 79,
+      "is_expl": false
+    },
+    {
+      "no": 35,
+      "label": "48",
+      "title": "第48章",
+      "start": 79,
+      "is_expl": false
+    },
+    {
+      "no": 36,
+      "label": "49",
+      "title": "第49章",
+      "start": 79,
+      "is_expl": false
+    },
+    {
+      "no": 37,
+      "label": "50",
+      "title": "第50章",
+      "start": 79,
+      "is_expl": false
+    },
+    {
+      "no": 38,
+      "label": "56",
+      "title": "第56章",
+      "start": 79,
+      "is_expl": false
+    },
+    {
+      "no": 39,
+      "label": "60",
+      "title": "第60章",
+      "start": 79,
+      "is_expl": false
+    },
+    {
+      "no": 40,
+      "label": "43",
+      "title": "第43章",
+      "start": 81,
+      "is_expl": false
+    },
+    {
+      "no": 41,
+      "label": "52",
+      "title": "第52章",
+      "start": 81,
+      "is_expl": false
+    },
+    {
+      "no": 42,
+      "label": "54",
+      "title": "第54章",
+      "start": 81,
+      "is_expl": false
+    },
+    {
+      "no": 43,
+      "label": "59",
+      "title": "第59章",
+      "start": 81,
+      "is_expl": false
+    },
+    {
+      "no": 44,
+      "label": "65",
+      "title": "第65章",
+      "start": 81,
+      "is_expl": false
+    },
+    {
+      "no": 45,
+      "label": "66",
+      "title": "第66章",
+      "start": 81,
+      "is_expl": false
+    },
+    {
+      "no": 46,
+      "label": "79",
+      "title": "第79章",
+      "start": 81,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 430,
+  "status": "indexed",
+  "note": ""
+}

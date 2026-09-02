@@ -1,0 +1,36 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应
+
+技术 规范 (JITGXT 6520 一 2024)
+
+拓展 应 用 3
+
+区 会
+六 全
+
+周围 车 辆
+OBU2.0 OBU2.0 RSU2.0 RSF
+BST
+VST |
+[Get Secure.rq
+Get Secure.Ts 」 OBU 过 车 信息 (0x21)
+_ 取 车 辆
+TrafficInfo.rq | 定位 信息 (0xA2)
+| 塌 取 车 辆 定位 信息 )
+TrafficInfo.rs
+(车 辆 定位 信息 ) |
+车 辆 定位 信息 上 报 (0x22) |
+EventReport
+| 一 ( 唆 放 链 路 )
+TrafficInforq
+(车 路 交互 信息 )
+| TrafficInfo.rq
+(车 路 交互 信息 响应 )
+TrafficInfo.rq 朱 遥 撕
+(休眠 时 间 指 示 )
+Taffcmnforq
+(响应 )
+EventReport
+(释放 链 路 ) ZVY
+
+一 110 一
+

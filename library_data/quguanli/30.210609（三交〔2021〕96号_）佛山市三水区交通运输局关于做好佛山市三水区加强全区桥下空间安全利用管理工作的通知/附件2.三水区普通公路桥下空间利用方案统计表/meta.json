@@ -1,0 +1,51 @@
+{
+  "id": "附件2.三水区普通公路桥下空间利用方案统计表",
+  "title": "附件2.三水区普通公路桥下空间利用方案统计表",
+  "std_no": "",
+  "version": "",
+  "file": "quguanli/30.210609（三交〔2021〕96号_）佛山市三水区交通运输局关于做好佛山市三水区加强全区桥下空间安全利用管理工作的通知/附件2.三水区普通公路桥下空间利用方案统计表.xls",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\30.210609（三交〔2021〕96号_）佛山市三水区交通运输局关于做好佛山市三水区加强全区桥下空间安全利用管理工作的通知\\附件2.三水区普通公路桥下空间利用方案统计表.xls",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\30.210609（三交〔2021〕96号_）佛山市三水区交通运输局关于做好佛山市三水区加强全区桥下空间安全利用管理工作的通知\\附件2.三水区普通公路桥下空间利用方案统计表.xls",
+  "pages": 5,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 5,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9583,
+    "punct_median": 0.0525,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-07-30 19:39:42",
+  "pdf_mtime": "2026-07-30 19:39:42",
+  "source_mtime_ns": 1785411582000000000,
+  "source_size": 26112,
+  "fmt": "xls",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:31:51",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

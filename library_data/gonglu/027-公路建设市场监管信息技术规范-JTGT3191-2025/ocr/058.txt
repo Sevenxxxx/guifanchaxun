@@ -1,0 +1,35 @@
+公路 建设 市 场 监管 信息 技术 规范 (JTGXT 3191 一 2025 )
+
+A.2.4 工程 项 目 监管 信息 应 符合 下 列 规 定 :
+
+1 项 目 交工 信息 数据 宜 符合 表 A. 2. 4-1 的 规定 。
+表 A.2.4-1 项 目 交 工 信 息 数据
+
+字段 名 称
+
+project_code
+
+project_name
+
+finished_date
+
+description
+
+export_date
+
+3 年 度 计量 进度 计划 信息 数据 宜 符合 表 A. 2. 4-3 的 规定 。
+一 4 一
+
+各 roject_name 字符 型 an. . 2S6
+3 complete_date 日 期 型 YYYYMMDD
+4 description 文本 型
+优良 、 合 格 \ 不
+S ] 村 型 .S0
+Tesul]t 字符 am. 合格
+采用 24 小 时
+计时 法 , 例如 :
+. 村 20180522160822 日 期
+6 | 数据 导出 时 间 export_date 表示 2018 年 5 | 时 间 弄 YYYYMMDDHHMMSS
+月 22 日 16 点 零
+8 分 22 秘
+

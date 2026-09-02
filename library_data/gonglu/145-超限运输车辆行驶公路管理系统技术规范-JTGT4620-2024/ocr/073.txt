@@ -1,0 +1,39 @@
+超 限 运输 车 辆 行驶 公路 管理 系统 技术 规范 {JTGZT 4620 一 2024
+
+续 表 A-13
+序号 字段 名 字段 说 明 数据 类 型 | 必 填 备注
+totalNumberOf | 道路 运输 企业 拥有 、 L
+55 Vi 车 辆 冲 数 Integer 道路 运输 企业 拥有 车 辆 总 数
+56 limitTotal 车 辆 最 大 允许 总 质量 | 。 Integer 是 精确 到 个 位 。 单 位 : 千克
+57 total 钾 载 前 车 货 总 质量 Integer 是 精确 到 个 位 。 单 位 : 千克
+58 unloadTotal 件 载 后 车 货 总 质量 JInteger 精确 到 个 位 。 单 位 : 千克
+59 overRate 超 限 超载 比例 Double 单位 : 百分比 ， 保 留 2 位 小 数
+60 evidenceImage “| 称 重 和 钊 载 单 扫描 件 Shing
+行政 处 罚 决 定 书 - 避 州 大
+61 judgeImage 和 关 人 String 是 | JSON 对 红 人
+0 婚 央 及 出 品 ，0200 石河、 天然气 及 钢
+和 Go3D0- 爹 属 矿石 ， 0400- 钢 铁 ; 0500- 矿 物性
+| 建筑 材料 ;0600- 水 泥 ; 0700- 木 材 ; 0800- 非 金
+62 cargoClass /各 属 矿石 ;x0900- 肥 料及 农药 ; 1000- 盐 ; 1100- 粮
+全 LA| 食 ; 1200; 灾 拭 设 备 、 电 器 ; 1300- 化 工 原料 及
+制 厄 ; 剖 00< 个 色 金 属 ，1500- 轻 工 、 医 药 产品 ;
+1600- 前 & 订 s 牧 、 渔 类 产品 ; 1700- 其 他 货 类
+6 | 。 curegoName 逢 | 货 物 具体 名 称
+64 CargoSouree 货运 源头 单位 名 称
+Company
+65 货物 装载 源头 单位 统一 社会 信用 代码
+66 货运 源头 单位 详细 地 址
+67 行政 区 划 代 码 ， 至 少 精 确 到 地 市
+68 | 货物 目的 单位 名 称 String
+69 货物 目的 单位 地 址 Sting 货运 源头 单位 详细 地 址
+70 cargoDestDist 货物 目的 单位 地 区 String 行政 区 划 代 码 ， 至 少 精确 到 地 市
+货物 装载 单 图 片 经 BASE64 转 码 后 的 JSON
+71 | freightbillImage 货物 装载 单 图 片 Sting 本 组 音
+2 ae 包含 货运 源头 单位 的 Si 询问 笔录 图 片 经 BASE64 转 码 后 的 JSON 对
+罗 询问 笔录 图 片 了 象 数组
+73 isllegalMod 是 否 非法 改装 Jnteger 1- 是 ; 0- 否
+74 | inegalModDese | 非法 改装 情况 说 明 String 非法 改装 车 辆 的 具体 情况 描述
+7S caseStatus 案件 状态 JInteger 是 1- 有 效 ; 2- 已 撤销
+. . 补充 上 传 的 其 他 文件 经 BASE64 转 码 后 的
+76 otherFiles 补充 上 传 的 其 他 文件 String JSON 对 象 数组
+

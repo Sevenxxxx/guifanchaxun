@@ -1,0 +1,142 @@
+{
+  "id": "56.251218关于转发《四川省交通运输厅关于印发四川省普通公路桥梁定检报告范本）的通知》的通知",
+  "title": "251218关于转发《四川省交通运输厅关于印发四川省普通公路桥梁定检报告范本）的通知》的通知",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/56.251218关于转发《四川省交通运输厅关于印发四川省普通公路桥梁定检报告范本）的通知》的通知.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\56.251218关于转发《四川省交通运输厅关于印发四川省普通公路桥梁定检报告范本）的通知》的通知.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\56.251218关于转发《四川省交通运输厅关于印发四川省普通公路桥梁定检报告范本）的通知》的通知.pdf",
+  "pages": 66,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 66,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-04-30 23:19:00",
+  "pdf_mtime": "2026-04-30 23:19:00",
+  "source_mtime_ns": 1777562340000000000,
+  "source_size": 26397728,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 66
+  },
+  "indexed_at": "2026-08-31 22:11:05",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "二 程 概 壕 二 和 人 让 10",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "3",
+      "title": "村 原 状 讽 扩 基 ee 29",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "检测 目的 与 依据",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "检测 内 容 与 方法",
+      "start": 31,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "桥梁 检查 结果",
+      "start": 41,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "29",
+      "title": "第29章",
+      "start": 50,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "第6章",
+      "start": 52,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "与 上 一 次 定期 检查 结果 对 比",
+      "start": 55,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "主要 病害 分 析",
+      "start": 56,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "检测 结论",
+      "start": 56,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "10",
+      "title": "建议",
+      "start": 57,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "13",
+      "title": "上 次 检查 时 15 本 次 检查 时",
+      "start": 62,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "22",
+      "title": "桥梁 技术 状 24 预防 及 修复",
+      "start": 62,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "25",
+      "title": "记录 人 27 人",
+      "start": 62,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 34,
+  "status": "indexed",
+  "note": ""
+}

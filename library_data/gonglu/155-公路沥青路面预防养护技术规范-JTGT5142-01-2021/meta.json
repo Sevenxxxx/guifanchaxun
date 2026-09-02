@@ -1,0 +1,121 @@
+{
+  "id": "155-公路沥青路面预防养护技术规范-JTGT5142-01-2021",
+  "title": "155-公路沥青路面预防养护技术规范-JTGT5142-01-2021",
+  "std_no": "",
+  "version": "",
+  "file": "155-公路沥青路面预防养护技术规范-JTGT5142-01-2021.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\155-公路沥青路面预防养护技术规范-JTGT5142-01-2021.pdf",
+  "pages": 66,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 66,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9975,
+    "punct_median": 0.0533,
+    "empty_ratio": 0.071,
+    "bad_ratio": 0.222,
+    "clause_hits": 98
+  },
+  "pdf_mtime": "2026-08-25 22:41:01",
+  "indexed_at": "2026-08-26 04:12:25",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 11,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": 44,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语和符号",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本规定",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "预防养护决策",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "预防养护技术分类",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "预防养护工程设计",
+      "start": 24,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "灌缝和贴缝",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "雾封层",
+      "start": 32,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "0",
+      "title": "第0章",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "碎石封层和纤维封层",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "10",
+      "title": "微表处和稀浆封层",
+      "start": 41,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 44,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 313,
+  "status": "indexed",
+  "note": ""
+}

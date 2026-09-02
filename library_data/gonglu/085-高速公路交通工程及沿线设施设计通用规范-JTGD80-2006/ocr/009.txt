@@ -1,0 +1,14 @@
+高 速 公 路 交通 工程 及 沿线 设施 设计 通用 规范 (JTC D80 一 2006)
+
+2.2.2 IP (Intemet Protocol) 一 一 因特网 协议
+
+2.2.3 ”STM-1(Synchronous Transfer Mode) 一 一 同步 传送 基本 模块
+2.2.4 STM-4、STM-16 一 一 同步 传送 高 阶 模块
+
+2.2.5 ISDN (Integrated Services Digital Network) 一 一 综合 业务 接 人 网
+
+2.2.6 ”PRC (Primary Reference Clock) 一 全国 基准 时 钟
+
+2.2.7 LPR (Local Primary Reference) 一 一 区 域 基准 时 钟
+
+2.2.8 BITS (Building Integrated Timing System) 一 一 通信 楼 综合 定时 供给 系统

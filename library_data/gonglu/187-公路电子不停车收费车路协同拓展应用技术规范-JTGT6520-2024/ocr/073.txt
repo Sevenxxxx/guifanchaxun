@@ -1,0 +1,41 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGZT 6520 一 2024)
+
+bee (0) ，-- 蜂 鸣
+text (1) ，-- 文 本
+audio (2) ，-- 音 频
+pic (3) ，-- 图 片
+other (4) -- 保留
+上 (SIZE (16) )
+CoodsTemperature:: = INTECER ( -127..127)
+
+-一 货物 温 度 单位 : 摄氏 度
+CoodsHumidity:: = INTECER (0. . 255 )
+
+--0 到 100 的 百分比
+DangerousCoodsStateImnfo :: = SEQUENCE |
+
+fill BIT STRING (SIZE (2) ) ， | PR
+goodBehavior CoodBehavior OPTIONAL 。 |
+
+-- 定 义 货 物 状 态
+
+过 省 徊 向
+和， IONK 入
+
+goodsWeightNTEGER (0. :es
+-- 货 物 重量 ， 单 位 :十 训
+
+-- 车 辆 运行 异常 类 型
+description Description OPITIONAL
+
+-- 车 辆 运行 异常 描述
+
+|
+EmergencyRescue:: =SEQUENCE |
+
+vehDangerousType INTEGER (0. . 127 ) ，
+
+__ 车 辆 危险 信息 类 型 ，0， 车 胎 异 常 ，1， 发 动机 异常 ，…….
+description ”Description OPIIONAL
+
+-- 车 辆 危险 信息 内 容

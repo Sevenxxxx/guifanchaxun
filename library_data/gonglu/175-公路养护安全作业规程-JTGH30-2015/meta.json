@@ -1,0 +1,135 @@
+{
+  "id": "175-公路养护安全作业规程-JTGH30-2015",
+  "title": "175-公路养护安全作业规程-JTGH30-2015",
+  "std_no": "",
+  "version": "",
+  "file": "175-公路养护安全作业规程-JTGH30-2015.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\175-公路养护安全作业规程-JTGH30-2015.pdf",
+  "pages": 140,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 140,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:42:53",
+  "indexed_at": "2026-08-26 04:35:06",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 140
+  },
+  "toc_zone_end": 5,
+  "offset": 6,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "公路 养护 作业 控制 区",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "公路 养护 安全 设施",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "高 速 公路 及 一 级 公路 养护 作业 控制 区 布置",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "二 、 三 级 公路 养护 作业 控制 区 布置",
+      "start": 38,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "四 级 公路 养护 作业 控制 区 布置",
+      "start": 58,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "桥涵 养护 作业 控制 区 布置",
+      "start": 65,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "10",
+      "title": "第10章",
+      "start": 73,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "11",
+      "title": "平面 交叉 养护 作业 控制 区 布置",
+      "start": 82,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "12",
+      "title": "第12章",
+      "start": 99,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "13",
+      "title": "第13章",
+      "start": 109,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "14",
+      "title": "第14章",
+      "start": 112,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 192,
+  "status": "indexed",
+  "note": ""
+}

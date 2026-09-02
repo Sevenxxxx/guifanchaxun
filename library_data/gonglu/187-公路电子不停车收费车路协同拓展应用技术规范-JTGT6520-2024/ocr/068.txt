@@ -1,0 +1,35 @@
+ASN. 1 消息 集
+
+附录 G ASN.1 消 息 集
+
+G.0.1 消息 层 数 据 集 应 由 1 个 消息 帧 、6 个 消息 体 及 相应 的 数据 帧 和 数据 元 素 组 成 。
+
+G.0.2 消息 帧 应 符合 下 列 规 定 :
+
+MessageFrame:: =CHOICE | 了
+rsiEtcFrame [0 EtcRoaqdSideInformation ， 1 1 六
+-= 路 侧 消息 播报
+megEtcFrame [1] EtcMessage，
+-- 纯 文本 消息 播报
+
+VirEtcFrame [2] oa
+-- 车 辆 附属 信息 1
+bnaryInfo [3 BepinanI 8 首 k
+
+一 人 XN
+
+config [5 ( 7
+
+G. 0. 体 应 符合 下 列 规定 :
+ee : =SEQUENCE |
+
+fillBIT STRING (SIZE (2) ) ，
+idMsg IdFrameType，
+-= 消息 站 ， 防 止 相 同 消息 重复 接收
+obuDirection RoadDirection ，
+--0OBU 所 在 道路 上 下 行
+rtas EtcRTAList ，
+-- 包 含 全 部 道路 交通 应 用 场景 信息
+hciSrvRes HciResType，
+
+-- 包 含 道 路 所 能 提供 提示 的 资源 信息

@@ -1,0 +1,177 @@
+{
+  "id": "41.城市桥梁隧道结构安全保护技术规范（DBJ∕T 15-213-2021）",
+  "title": "城市桥梁隧道结构安全保护技术规范",
+  "std_no": "DBJ∕T 15-213-2021",
+  "version": "2021",
+  "file": "qitaguifan/41.城市桥梁隧道结构安全保护技术规范（DBJ∕T 15-213-2021）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\41.城市桥梁隧道结构安全保护技术规范（DBJ∕T 15-213-2021）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\41.城市桥梁隧道结构安全保护技术规范（DBJ∕T 15-213-2021）.pdf",
+  "pages": 43,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 43,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9982,
+    "punct_median": 0.0426,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.111,
+    "clause_hits": 75
+  },
+  "source_mtime": "2025-11-28 17:23:14",
+  "pdf_mtime": "2025-11-28 17:23:14",
+  "source_mtime_ns": 1764321794000000000,
+  "source_size": 528407,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:11:03",
+  "toc_zone_end": 6,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总  则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术  语",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基 本 规 定",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "控制保护要求",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "外部作业",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "安全监测",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "信息管理",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "附录A",
+      "title": "接近程度和外部作业的工程影响分区",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "附录B",
+      "title": "城市桥梁隧道结构安全控制指标值",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "",
+      "title": "本规范用词说明",
+      "start": 31,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "",
+      "title": "引用标准名录",
+      "start": 31,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "",
+      "title": "制订说明",
+      "start": 34,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "1",
+      "title": "总则",
+      "start": 35,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "3",
+      "title": "基本规定",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "4",
+      "title": "控制保护要求",
+      "start": 37,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "5",
+      "title": "安全保护区域外部作业",
+      "start": 39,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "6",
+      "title": "安全监测",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "附录A",
+      "title": "接近程度和外部作业的工程影响分区",
+      "start": 43,
+      "is_expl": false
+    },
+    {
+      "no": 19,
+      "label": "附录B",
+      "title": "城市桥梁隧道结构安全控制指标值",
+      "start": 43,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 204,
+  "status": "indexed",
+  "note": ""
+}

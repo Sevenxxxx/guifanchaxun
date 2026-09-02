@@ -1,0 +1,37 @@
+收费 公路 联网 收费 技术 标准 (JTG 6310 一 2022 )
+
+续 表 耻 . 5. 7-17
+位 置 | 字 节 数 参 数 说 明
+正确 接收 到 的 数据 帧 个 数 ， 收 到 局 动 接收 测试 指令 〈RxStatus = 0x01 的
+2 2 RevNum 、
+FB 指令 ) 时 清 零
+加 RevNum 不 为 0x0000 时 ， 返 回 当前 测试 接收 到 的 第 一 个 上 行 原 语 ; Rev-
+4 N Primitive
+Num 为 0x0000 时 此 数据 域 长 度 为 0
+rp 招 全 iff = 寸 ， 与 第 一 个 上 行 原 语 不 同 尼
+AN ， DRevNU B 指令 中 IIRevDataDi=0x01 时 ， 与 接收 到 的 第 一 个 上 行 原 语 不 同 的 数
+据 帧 个 数
+] 性 险 、 品 名 光 个 2 二 测试 指令
+ON ) RevNum_ CRCE 收 到 完整 但 CRC 校 验 错误 帧 的 数据 由 仆 数 2SI 收 到 启动 接收 测试 指令
+(RxStatus =0x01 的 FB 指令 ) 时 清 零
+
+注 : 1. 测试 信号 信息 帧 用 于 ETC 门 架 系 统 RSU 接收 测试 信号 返回 测试 结果 给 车 道 控制 器 。
+2. 收 到 FB 指令 后 立即 回复 本 帧 。
+3. 当 TFB 指令 中 RxStatus =0x00 时 ， 被 测 ETC 门 架 系统 RSU 停止 当前 测试 并 按 本 帧 格式 回复 已 完成 的 测试
+结果 。
+18 ”BeaconID 设置 信息 帧 〈 可 选 ) 应 符合 表 ESYTs18 的 规定 。
+
+表 卫 . $.7-18 ”BeaconID 设 置信 息 帧
+
+位 置 | 字 节 数 参 数 说 滑
+
+0 1 FrameType 数据 帧 类 型 标识 、 此 处 取 值 0 垩 C
+
+1 1 Status 0x00- 正 确 抠 答 NO0x01- 执 行医 败 ， 基 他 保留
+
+2 1 BeaconIDStatus 0x00:BeacorilD 为 固定 状态 4 0801-BeaconID 为 变化 状态 ; 其 他 保留
+3 4 BeaconID 当 抽 BeaconID 值
+
+注 : BeaconID 设置 信息 帧 用 于 了 TC 门 架 系 统 RSUs 返 回 BeacinID 设置 结果 给 车 道 控制 器 。
+
+一 122 一

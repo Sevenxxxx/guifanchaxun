@@ -1,0 +1,16 @@
+公路 建设 市 场 监管 信息 技术 规范 (JTGXT 3191 一 2025 )
+
+参数 名 称 是 否 能 为 空 类 型 及 范围 最 大 长 度 说 明
+certCode 否 String 6 证 件 号 码 ,身份 证 等
+数据 最 后 更 新 时 间 ( 查 询 指定 最 后 更 新
+lastUpdateDate 是 String 时 间 到 现在 为 止 , 若 为 空 值 则 查询 全 部 数
+据 ) 参 数 格式 :YYYYMMDD HH ,mm :ss
+currPage 否 int 当前 页 数
+pageSize 否 int 每 页 大 小 ,最 大 值 为 1000
+输出 结果 :
+返回 值 字段 “| 。 字段 类 型 字段 说 明 /全 壬
+Tesult Boolean. true 上 成 功 可 :失败 汪
+Is 名 String
+
+一 82 一
+

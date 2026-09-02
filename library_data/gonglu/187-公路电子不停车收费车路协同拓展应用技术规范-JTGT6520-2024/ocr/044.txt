@@ -1,0 +1,69 @@
+EventStatus
+
+表 C. 0. 4-1 ”事件 信息 更 新 推送 数据 参数 表
+序号 字段 名 数据 类 型 是 否 可 空 说 明
+1 MsgType int 否 消息 类 型 ， 应 符合 表 C. 0. 3 规定
+2 ReportTime datetime 否 RN ， 格式 为 797 MMrdd HH mm: 5，
+3 MsgId int 否 消息 ID， 范围 为 0 ~0xFFFFFFFF， 循 环 使 用
+4 RsfId String 否 RSF 的 设备 ID ， 应 符合 表 了 . 0. 4-14 规定
+5 EspId string 否 业务 平台 ID 下
+6 EventType int 否 事件 类 型 ， 见 本 规范 附 最 和
+7 EventId int 否
+8 EventOccurTime datetime 否
+EventEndTime datetime
+
+r 一 一 二 一 | 一 一 二
+\ Co 心 CN (LAn 少 LD MD 二
+
+List < int >
+
+受 交 通 事件 影响 的 车 道 号
+
+String
+
+并 | 各
+
+事件 处 置信 息
+
+EventLevel
+
+事件 等 级 : 0 默认 ，
+
+特大
+
+1 轻微 ,2 一 般 ，3 重大 ，4
+
+InfoLevel
+
+int
+
+信息 优先 级 : 0 默认，1 一 级 ，2 二 级 ，3 最 高 级
+
+RoadID
+
+List < string >
+
+受 影响 的 路 段 标识
+
+EventRange
+
+int
+
+影响 范围 ， 单 位 :
+
+Direction
+
+int
+
+上 下 行 : 0 上 行 ,1 下 行 ，2 双向 ，3 未 知
+
+Deseription
+
+string
+
+部 | 闸 | 友 | 各 | 部 | 部
+
+事件 描述 信息 及 预 贸
+
+2 事件 信息 更 新 响应 参数 应 符合 表 C. 0. 4-2 的 规定 。
+

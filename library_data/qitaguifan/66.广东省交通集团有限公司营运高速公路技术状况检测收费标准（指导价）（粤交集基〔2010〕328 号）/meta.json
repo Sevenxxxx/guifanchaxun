@@ -1,0 +1,51 @@
+{
+  "id": "66.广东省交通集团有限公司营运高速公路技术状况检测收费标准（指导价）（粤交集基〔2010〕328 号）",
+  "title": "广东省交通集团有限公司营运高速公路技术状况检测收费标准（指导价）",
+  "std_no": "粤交集基〔2010〕328 号",
+  "version": "2010",
+  "file": "qitaguifan/66.广东省交通集团有限公司营运高速公路技术状况检测收费标准（指导价）（粤交集基〔2010〕328 号）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\66.广东省交通集团有限公司营运高速公路技术状况检测收费标准（指导价）（粤交集基〔2010〕328 号）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\66.广东省交通集团有限公司营运高速公路技术状况检测收费标准（指导价）（粤交集基〔2010〕328 号）.pdf",
+  "pages": 15,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 15,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-08-05 12:33:29",
+  "pdf_mtime": "2026-08-05 12:33:29",
+  "source_mtime_ns": 1785904409000000000,
+  "source_size": 2378667,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 15
+  },
+  "indexed_at": "2026-08-31 22:14:46",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

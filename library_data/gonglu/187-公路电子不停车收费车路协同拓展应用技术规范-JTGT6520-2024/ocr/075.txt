@@ -1,0 +1,49 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGZT 6520 一 2024)
+
+serviceAreaName OCTET STRING (SIZE (1..255) ) ，
+
+-= 服务 区 名 称
+seIViceAreaType ServiceAreaType，
+
+-= 服务 区 类 型
+saServiceList SaServiceList ，
+
+-- 服务 区 提供 的 服务 列表
+coordinate EtcLatitudeAndLongitude OPIIONAL，
+
+-- 服 务 区 位 置信 息 ， 经 纬度 表示
+
+actualDistance DistanceDataType ，
+
+-- 实 际 距 离
+content OCTET STRINC (SIZE (1..255) ) ，
+-- 服 务 区 服务 内 容 / 加 油 站 服务 内 容
+
+|
+ServiceAreaParkingImnfo:: =SEQUENCE |
+
+parkingLotType ParkingLotType， 2 力
+-=- 车 位 类 型
+parkingNum AN
+
+-一 车 位 数
+
+remainParkingLoh
+
+-- 剩 余 :
+
+elecPowerPrice ElecPowerPrice OPIIONAL ，
+
+-- 充 电 相 单 价
+elecPowerChargeType ElecPowerChargeType OPITIONAL，
+
+-- 充 电 方式
+parkingLotWidth OCTET STRING (SIZE (3) ) OPTIONAL，
+
+-- 车 位 宽 3 个 字 节 ， 单 位 : 毫米
+parkingLotHeight OCTET STRING (SIZE (3) ) OPTIONAL，
+
+-- 车 位 长 3 个 字 节 ， 单 位 : 毫米
+description DescriptionOPIIONAL，
+
+-- 车 位 描述 信息

@@ -1,0 +1,114 @@
+{
+  "id": "51.低空无人机应用公路桥梁巡检技术指南（试行）",
+  "title": "低空无人机应用公路桥梁巡检技术指南",
+  "std_no": "试行",
+  "version": "",
+  "file": "qitaguifan/51.低空无人机应用公路桥梁巡检技术指南（试行）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\51.低空无人机应用公路桥梁巡检技术指南（试行）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\51.低空无人机应用公路桥梁巡检技术指南（试行）.pdf",
+  "pages": 31,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 31,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9861,
+    "punct_median": 0.0159,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.0,
+    "clause_hits": 53
+  },
+  "source_mtime": "2026-03-03 19:34:57",
+  "pdf_mtime": "2026-03-03 19:34:57",
+  "source_mtime_ns": 1772537697000000000,
+  "source_size": 1460744,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:11:04",
+  "toc_zone_end": 5,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本规定",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "巡检方案",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "巡检作业",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "数据处理与成果",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "安全管理与应急响应",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "附录A",
+      "title": "巡检方案模板",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "附录B",
+      "title": "巡检报告模板",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "附录C",
+      "title": "病害智能识别方法",
+      "start": 29,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 110,
+  "status": "indexed",
+  "note": ""
+}

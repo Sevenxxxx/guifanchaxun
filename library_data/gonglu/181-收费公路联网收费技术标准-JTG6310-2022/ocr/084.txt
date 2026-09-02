@@ -1,0 +1,46 @@
+发 行 流程
+
+B. 0.8 多 逻辑 通道 OBU 的 OBE-IC 通道 二 次 发 行 流程
+
+合 网 B.0.8 的 规定 。
+
+OBE-IC ] [oau | | _oBU 二 发 系统 “| 。 [部 级 在 线 密 钼 管理 与 服务 平台
+激活 OBU(BST)
+建立 链 路 (VST)
+选择 MF
+选择 MEF | .Tq)
+MF 和 进 择 返回 (Ta 了 全 snow) |
+选择 DF0I 应 用 目录
+| 选择 DF0I 目 录 (TransferChannel.rq)
+选择 应 答
+目录 选择 返 巴 | 0 .rs) ]
+获取 CPU 卡 内 部 编号
+_ 读 0015 文 件 13 一 20 字 节 人
+返回 CPU 卡 内 部 编号 (TransferChannel.rs) |
+CE
+二 SS
+可 应 各
+返回 4 字 节 随机 数 了 | 尼 CPU 卡 内 部 编号 为 分 散 因子 ，
+CE 正式 应 用 维护 密 钥 计算 MAC |
+更 新 卡片 发 行 基本 数据 文件 返回 MAC
+CTransferChannsisrqy 一 一 六
+更 新 卡片 发 行 基本 数据 文件 |
+让 一 一 -1 更 新 卡片 发 行 革 本 数据 六 件 返 回应 答
+更 新 发 行 基本 数据 文件 返回 (Trans 人 erCfannskcrs)
+
+肯 广 提示 (SetMMI.rq)
+钙 户 提示 返回 (SIMMI.rs )
+
+链 路 释放
+(EYRnts Reporb
+
+验证
+
+记录
+
+按 需 进行 消费
+
+生成 二 次 发 行
+
+图 B. 0.8 ”多 逻辑 通道 OBU 的 OBE-IC 通道 二 次 发 行 流程
+

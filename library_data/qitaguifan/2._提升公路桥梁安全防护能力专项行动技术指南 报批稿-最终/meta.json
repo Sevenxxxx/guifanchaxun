@@ -1,0 +1,142 @@
+{
+  "id": "2._提升公路桥梁安全防护能力专项行动技术指南 报批稿-最终",
+  "title": "_提升公路桥梁安全防护能力专项行动技术指南 报批稿-最终",
+  "std_no": "",
+  "version": "",
+  "file": "2._提升公路桥梁安全防护能力专项行动技术指南 报批稿-最终.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\2._提升公路桥梁安全防护能力专项行动技术指南 报批稿-最终.pdf",
+  "pages": 84,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 84,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9985,
+    "punct_median": 0.0725,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.333,
+    "clause_hits": 92
+  },
+  "pdf_mtime": "2025-02-14 17:57:42",
+  "indexed_at": "2026-08-26 19:40:05",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 5,
+  "offset": 4,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "2",
+      "title": "资料收集与现场调查",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "3",
+      "title": "排查评估与分类标准",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "4",
+      "title": "方案与设计",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "1",
+      "title": "钢筋和锚栓的钢材型号、规格和性能等级；",
+      "start": 24,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "工程施工与验收",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "附录A",
+      "title": "在役公路桥梁基础资料格式",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "附录B",
+      "title": "公路桥梁护栏和桥面板承载能力验算示例",
+      "start": 32,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "16",
+      "title": "第16章",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "第9章",
+      "start": 39,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "7",
+      "title": "第7章",
+      "start": 40,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "32",
+      "title": "第32章",
+      "start": 45,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "75",
+      "title": "第75章",
+      "start": 46,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "11",
+      "title": "第11章",
+      "start": 48,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "26",
+      "title": "第26章",
+      "start": 57,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "附录C",
+      "title": "新增安全防护设施设计示例",
+      "start": 71,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 140,
+  "status": "indexed",
+  "note": ""
+}

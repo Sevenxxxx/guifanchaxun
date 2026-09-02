@@ -1,0 +1,86 @@
+{
+  "id": "27.城市道路工程技术规范",
+  "title": "城市道路工程技术规范",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/27.城市道路工程技术规范.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\27.城市道路工程技术规范.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\27.城市道路工程技术规范.pdf",
+  "pages": 32,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 32,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 0.8,
+    "punct_median": 0.0,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1.0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-05-27 20:11:32",
+  "pdf_mtime": "2025-05-27 20:11:32",
+  "source_mtime_ns": 1748347892000000000,
+  "source_size": 3959859,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 32
+  },
+  "indexed_at": "2026-08-31 22:10:58",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "3",
+      "title": "道路 4",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "5",
+      "title": "施工 18",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "6",
+      "title": "第6章",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "1",
+      "title": "总 则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "2",
+      "title": "基本 规定",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "4",
+      "title": "桥 荣",
+      "start": 18,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 169,
+  "status": "indexed",
+  "note": ""
+}

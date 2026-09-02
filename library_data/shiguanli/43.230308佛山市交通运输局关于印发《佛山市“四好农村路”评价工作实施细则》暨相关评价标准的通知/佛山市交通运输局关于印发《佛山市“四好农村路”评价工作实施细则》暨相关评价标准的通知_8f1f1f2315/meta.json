@@ -1,0 +1,51 @@
+{
+  "id": "佛山市交通运输局关于印发《佛山市“四好农村路”评价工作实施细则》暨相关评价标准的通知_8f1f1f2315",
+  "title": "佛山市交通运输局关于印发《佛山市“四好农村路”评价工作实施细则》暨相关评价标准的通知",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/43.230308佛山市交通运输局关于印发《佛山市“四好农村路”评价工作实施细则》暨相关评价标准的通知/佛山市交通运输局关于印发《佛山市“四好农村路”评价工作实施细则》暨相关评价标准的通知.doc",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\43.230308佛山市交通运输局关于印发《佛山市“四好农村路”评价工作实施细则》暨相关评价标准的通知\\佛山市交通运输局关于印发《佛山市“四好农村路”评价工作实施细则》暨相关评价标准的通知.doc",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\43.230308佛山市交通运输局关于印发《佛山市“四好农村路”评价工作实施细则》暨相关评价标准的通知\\佛山市交通运输局关于印发《佛山市“四好农村路”评价工作实施细则》暨相关评价标准的通知.doc",
+  "pages": 1,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 1,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9466,
+    "punct_median": 0.0045,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:16:00",
+  "pdf_mtime": "2025-02-14 18:16:00",
+  "source_mtime_ns": 1739528160000000000,
+  "source_size": 23208,
+  "fmt": "doc",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:32:10",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

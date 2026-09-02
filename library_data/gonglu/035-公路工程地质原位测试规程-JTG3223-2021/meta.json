@@ -1,0 +1,114 @@
+{
+  "id": "035-公路工程地质原位测试规程-JTG3223-2021",
+  "title": "035-公路工程地质原位测试规程-JTG3223-2021",
+  "std_no": "",
+  "version": "",
+  "file": "035-公路工程地质原位测试规程-JTG3223-2021.pdf",
+  "pdf_abs": "guifansrc\\gonglu\\035-公路工程地质原位测试规程-JTG3223-2021.pdf",
+  "pages": 234,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 234,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9975,
+    "punct_median": 0.0343,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.111,
+    "clause_hits": 201
+  },
+  "pdf_mtime": "2026-08-25 22:20:41",
+  "indexed_at": "2026-08-26 08:00:02",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 9,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": 131,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "2",
+      "title": "第2章",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "3",
+      "title": "在碎石土地基中试验时，承压板直径或边长应大于受压层最大颗粒粒",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "4",
+      "title": "第4章",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "5",
+      "title": "第5章",
+      "start": 26,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "1",
+      "title": "第1章",
+      "start": 38,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "9",
+      "title": "第9章",
+      "start": 40,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "",
+      "title": "——上覆非液化土层厚度",
+      "start": 46,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "14",
+      "title": "第14章",
+      "start": 46,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "",
+      "title": "- 相应于",
+      "start": 47,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "34",
+      "title": "第34章",
+      "start": 92,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 131,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 1275,
+  "status": "indexed",
+  "note": ""
+}

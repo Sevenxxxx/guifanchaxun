@@ -1,0 +1,142 @@
+{
+  "id": "126-公路机电工程施工技术规范-JTGT3673-2025",
+  "title": "126-公路机电工程施工技术规范-JTGT3673-2025",
+  "std_no": "",
+  "version": "",
+  "file": "126-公路机电工程施工技术规范-JTGT3673-2025.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\126-公路机电工程施工技术规范-JTGT3673-2025.pdf",
+  "pages": 88,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 88,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 0.8462,
+    "punct_median": 0.1867,
+    "empty_ratio": 0.071,
+    "bad_ratio": 1.0,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:37:53",
+  "indexed_at": "2026-08-26 03:22:21",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 88
+  },
+  "toc_zone_end": 8,
+  "offset": 7,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "3",
+      "title": "设备 及 主要 安装 材料 进 场 机 性 及 时 报 验 ",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "4",
+      "title": "施工 准备",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "5",
+      "title": "接地 与 雷电 你 护 设 施 安 钱 与 调试",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "6",
+      "title": "第6章",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "7",
+      "title": "监控 设施 安 狗 与 调试",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "8",
+      "title": "第8章",
+      "start": 34,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "9",
+      "title": "第9章",
+      "start": 40,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "10",
+      "title": "超 限 检测 设施 安 半 与 调试",
+      "start": 46,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "11",
+      "title": "第11章",
+      "start": 53,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "1",
+      "title": "公路 供 配 电 一 般 在 路 侧 设置 箱 式 变 电 ",
+      "start": 55,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "2",
+      "title": "柜 、 台 V 箱 和 色 江",
+      "start": 55,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "12",
+      "title": "第12章",
+      "start": 62,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "13",
+      "title": "交 绵 、 电 绑 数 设 与 接续",
+      "start": 67,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "14",
+      "title": "系统 联 调 及 工程 交 付",
+      "start": 73,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "15",
+      "title": "第15章",
+      "start": 78,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 308,
+  "status": "indexed",
+  "note": ""
+}

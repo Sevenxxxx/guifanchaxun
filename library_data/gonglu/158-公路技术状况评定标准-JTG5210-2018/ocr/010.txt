@@ -1,0 +1,12 @@
+公路 技术 状况 评定 标准 (JTG 5210 一 2018 )
+
+RQI 一 一 路 面 行驶 质量 指数 (Pavement Riding Quality Index ) ;
+
+RDI 一 一 路 面 车 入 深 度 指 数 (Pavement Rutting Depth Indqex ) ;
+
+PBI 一 一 路 面 跳 车 指数 (Pavement Bumping Index) ;
+
+PWI 一 一 路 面 磨 耗 指数 (Pavement Surface Wearing Index ) ;
+
+SRI 一 一 路 面 抗 滑 性 能 指数 (Pavement Skidding Resistance Index ) ;
+PSSI 一 一 路 面 结构 强度 指数 (Pavement Structure Strength Index) 。

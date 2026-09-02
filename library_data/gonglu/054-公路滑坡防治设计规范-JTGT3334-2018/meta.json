@@ -1,0 +1,107 @@
+{
+  "id": "054-公路滑坡防治设计规范-JTGT3334-2018",
+  "title": "054-公路滑坡防治设计规范-JTGT3334-2018",
+  "std_no": "",
+  "version": "",
+  "file": "054-公路滑坡防治设计规范-JTGT3334-2018.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\054-公路滑坡防治设计规范-JTGT3334-2018.pdf",
+  "pages": 89,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 89,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:21:40",
+  "indexed_at": "2026-08-26 01:19:30",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 89
+  },
+  "toc_zone_end": 6,
+  "offset": 6,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "10",
+      "title": "第10章",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "滑坡 分 类 与 防治 工程 安全 等 级",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "滑坡 勘察",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "滑坡 稳定 性 分 析 评 价",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "滑坡 防治 设计 要 扣",
+      "start": 40,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "滑坡 防治 工程 设计",
+      "start": 53,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "滑坡 防治 监测 与 预测 预警",
+      "start": 75,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "滑坡 防治 工程 动态 设计 与 应 急 抢 险工 程 设 ",
+      "start": 84,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 278,
+  "status": "indexed",
+  "note": ""
+}

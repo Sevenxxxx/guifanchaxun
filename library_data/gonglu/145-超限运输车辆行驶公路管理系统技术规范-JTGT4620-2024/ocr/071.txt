@@ -1,0 +1,47 @@
+超 限 运输 车 辆 行驶 公路 管理 系统 技术 规范 {JTGZT 4620 一 2024
+
+续 表 A-13
+序号 字段 名 字段 说 明 数据 类 型 | 必 填 备注
+9 punishmentBasis 处 罚 依据 String
+交通 部 门 执法 的 必须 。01- 警 告 ; 02- 罚 款 ;
+10 | punishmentType 交通 处 罚 种 类 String 03- 没 收 违法 所 得 ; 04- 暂 扣 或 吊销 证 照 ; 99- 不
+予 行政 处 罚
+、 、 公安 交管 部 门 执法 的 必须 。1- 行 政 处 罚 决定
+1 9 文 蔬 妆 出 Sring 书 ; 3- 强 制 措施 凭证 ;6- 违 法 处 理 通知 书
+12 anjuanCode 行政 处 罚 决定 书
+) 文 号 /文书 编号
+13 codel 违法 行为 代码 1
+14 punishment 处 罚 决 定 / 违 法 行为
+Decisionl 描述 1
+15 code2 违法 行为 代码 2
+punishment 处 罚 决 定 /违法 行为
+16 可
+Decision2 描述 2
+
+punishment
+Decision3
+
+违法 行为 代码 3
+
+19 code4
+20 punishment
+Decision4
+21 code5
+- 叹 攻 |
+
+punisb 台 enf ij 决 定 /违法 行为 『 全 .
+22 描述 5 Strng
+23 处 罚 时 间 Sking 是
+24 罚款 金额 Double 是 单位 : 元 ， 保 留 2 位 小 数
+
+punishment 。
+和 Department 处 罚 机 和 构 Song 是
+20 closeTime 结案 时 间 String 是
+27 et 交管 超载 处 罚 记 分 数 | ”Integer 是 处 罚 机 构 类 型 为 “公安 交管 部 门 ”的 必须
+28 lawPeople 执法 人 员 姓 名 Sking 是 多 人 时 以 英文 半角 逗号 隔 开
+29 certificateNo 执法 证 件 号 String 多 人 时 以 英文 半角 逗号 隔 开
+
+- 1- 超 限 检测 站 检测 发 现 ; 2- 流 动 答 查 ; 3- 非
+
+0 ose50nree 案件 来 源 Sn 基 现场 取证 ; 4- 高 速 公路 取证 ; 0- 其 他
+

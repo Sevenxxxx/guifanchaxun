@@ -1,0 +1,53 @@
+车 路 通信 交互 流程
+
+行 《 收 费 公 路 联网 收费 技术 标准 》(JTCG 6310) 附录 N 的 有 关 规 定 ) 。
+
+2 RSU2. 0 对 事件 信息 〈 明 文 与 密 文 组 合 ) 进行 CRC 计算 (多 项 式 丰 + 和 十 站 十
+1， 起 始 0xFFTF) 获取 CRCO、CRC1 和 RndOBU 并 使 用 PSAM 计算 安全 报 文 信息 〈 计
+算 过 程 应 符合 现行 《收费 公路 联网 收费 技术 标准 》(JTG 6310) 附录 N 的 有 关 规 定 )
+MessageMAC。
+
+3 ”RSU2.0 将 MessageMAC 和 交通 事件 信息 (明文 与 密 文 组 合 ) 等 一 同 发 送
+至 0BU2.0。
+
+4 0BU2.0 将 收 到 的 交通 事件 信息 〈 明 文 与 密 文 组 合 ) 进行 CRC 计算 (多 项 式
+25+8 + 和 +1， 起 始 0xFFFF) 获取 CRC2 和 CRC3 。
+
+$ 0BU2.0 将 CRC2 、CRC3 和 MessageMAC 发 送 至
+MessageMAC。
+
+6 若 MessageMAC 校 验 通过 ， 则 0BU2. 0 将 交通 事件 税 息 :
+行 解密 ， 解 密 成 功 后 0BU2. 0 进行 播报 ; 若 Meseagg
+
+一
+
+<
+
+OBU2.0 RSF
+
+GetSeeure.rq
+
+ietgecure.rsw SS
+
+< 坊
+
+TrafficImn 作 守
+
+(|( 携 莫 < 后 作 台 标识 、
+交通 事件 信息 等 )
+
+TrafficInfo.rs
+
+(响应 ) 本
+
+| 交通 事件 信息 响应
+TrafficInfo.rq 休 眼
+L_ (休眠 时 间 )
+TrafficInfo.rs
+(响应 )
+EventReport
+(释放 链 路 )
+
+图 本 4.2-1 单 播 交 互 流程
+
+一 103 一

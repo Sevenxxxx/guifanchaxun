@@ -1,0 +1,93 @@
+{
+  "id": "144-涉路施工安全评价技术规范-JTGT4520-2025",
+  "title": "144-涉路施工安全评价技术规范-JTGT4520-2025",
+  "std_no": "",
+  "version": "",
+  "file": "144-涉路施工安全评价技术规范-JTGT4520-2025.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\144-涉路施工安全评价技术规范-JTGT4520-2025.pdf",
+  "pages": 46,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 46,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 1.0,
+    "punct_median": 0.1838,
+    "empty_ratio": 0.071,
+    "bad_ratio": 1.0,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:39:07",
+  "indexed_at": "2026-08-26 03:55:27",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 46
+  },
+  "toc_zone_end": 4,
+  "offset": 5,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "蜗 越 式 涉 路 施工",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "穿越 式 涉 路 施工",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "平 交 与 接 和 人 式 涉 路 施工",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "并行 式 涉 路 施工",
+      "start": 31,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "附 春 式 涉 路 施工",
+      "start": 33,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 127,
+  "status": "indexed",
+  "note": ""
+}

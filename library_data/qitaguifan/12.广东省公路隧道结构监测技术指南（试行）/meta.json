@@ -1,0 +1,170 @@
+{
+  "id": "12.广东省公路隧道结构监测技术指南（试行）",
+  "title": "广东省公路隧道结构监测技术指南",
+  "std_no": "试行",
+  "version": "",
+  "file": "12.广东省公路隧道结构监测技术指南（试行）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\12.广东省公路隧道结构监测技术指南（试行）.pdf",
+  "pages": 46,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 46,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9955,
+    "punct_median": 0.0253,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.333,
+    "clause_hits": 72
+  },
+  "pdf_mtime": "2025-02-14 17:58:06",
+  "indexed_at": "2026-08-26 19:40:01",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 2,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "",
+      "title": "目    次",
+      "start": 2,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "",
+      "title": "前  言",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "",
+      "title": "引  言",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "1",
+      "title": "范围",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "2",
+      "title": "规范性引用文件",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "3",
+      "title": "术语和定义",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "4",
+      "title": "基本规定",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "5",
+      "title": "监测对象和范围",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "6",
+      "title": "监测内容和方法",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "7",
+      "title": "监测方案设计",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "8",
+      "title": "监测系统",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "9",
+      "title": "数据管理",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "10",
+      "title": "监测应用",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "",
+      "title": "（规范性）",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "",
+      "title": "监测点布设位置及代号",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "",
+      "title": "（规范性）",
+      "start": 31,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "",
+      "title": "隧道风险评估方法",
+      "start": 31,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "",
+      "title": "（规范性）",
+      "start": 39,
+      "is_expl": false
+    },
+    {
+      "no": 19,
+      "label": "",
+      "title": "数据接口",
+      "start": 39,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 196,
+  "status": "indexed",
+  "note": ""
+}

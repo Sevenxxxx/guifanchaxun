@@ -1,0 +1,57 @@
+超 限 运输 车 辆 行驶 公路 管理 系统 技术 规范 {JTGZT 4620 一 2024
+
+业务 分 类 代码
+
+续 表 A-3
+
+重 设备 实现 功能
+
+表 A-4 检测 机 构 信 息 数 据 内 容 与 格式 要 求
+序号 字段 说 明 字段 代码 数据 类 型 | 长 度
+1 机 构 ID orgld Sting | 32
+2 上 级 机 构 ID parentld Sting | 32
+3 机 构 类 型 代码 orgType String 8
+4 机 构 名 称 orgName Sting | 100
+5 行政 区 划 distCode String
+4
+9 联系 人 contactor
+10 联系 电话
+11 机 构 性 质 代码
+12 职权 取得 方式
+es
+亲本
+LI 和 1 se
+15 资金 来 涡 AAS | oueeotna INSiaing | 40
+16 给 制 数 】 staffing 5
+17 和 和 employee TInt 5
+18 在 编 人 数 peopleonpayroll Int 5
+19 经 度 longitude Int 18
+20 纬度 latimde Int 18
+
+业务 分 类 代码
+
+表 A-5 检测 机 构 编 码 说 明
+分 类
+
+名 称
+
+ORG_ TYPE
+
+治 超 管理 部 门
+
+ORG_ TYPE
+
+交通 运输 主管 部 门
+
+ORG_ TYPE
+
+综合 执法 部 门
+
+ORG_ TYPE
+
+行政 许可
+
+ORG_ TYPE
+
+公安 交管 部 门
+

@@ -1,0 +1,114 @@
+{
+  "id": "112-公路工程智慧工地建设技术指南-JTGT3603-2026",
+  "title": "112-公路工程智慧工地建设技术指南-JTGT3603-2026",
+  "std_no": "",
+  "version": "",
+  "file": "112-公路工程智慧工地建设技术指南-JTGT3603-2026.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\112-公路工程智慧工地建设技术指南-JTGT3603-2026.pdf",
+  "pages": 75,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 75,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 1.0,
+    "punct_median": 0.1702,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1.0,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:32:45",
+  "indexed_at": "2026-08-26 03:01:32",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 75
+  },
+  "toc_zone_end": 5,
+  "offset": 6,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 册",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "第3章",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "项 目 管 理",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "路 基 施 工",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "第6章",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "桥 染 施工",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "第8章",
+      "start": 39,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "交通 工程 及 沿线 设施 施工",
+      "start": 43,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "10",
+      "title": "数字 化 交付",
+      "start": 47,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "11",
+      "title": "系统 文 返",
+      "start": 49,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 252,
+  "status": "indexed",
+  "note": ""
+}

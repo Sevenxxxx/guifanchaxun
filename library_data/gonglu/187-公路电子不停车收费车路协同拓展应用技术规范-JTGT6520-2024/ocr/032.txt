@@ -1,0 +1,128 @@
+RSF 与 拓展 应 用 平
+
+合 接
+
+附录 B RSF 与 拓展 应 用 平台 接口
+
+B.0.1 RSF 与 拓展 应 用 平台 间 的 通信 接口 后
+
+1 应 支持 以 太 网 接口 。
+
+2 应 采用 HTTP/ZHTTPS 协议 ，
+
+B.0.2 RSF 与 拓展 应 了 有 全 间 开 拒 唱 的 区 捕 格 允 二
+
+or 格式 ， 接 口 应 符合
+
+表 B. 0. 2 的 规定 。
+
+接口 名 称
+
+车 辆 接 人 位 置
+信息 通知
+
+车 辆 位 置信 息
+
+交通 参数 信息
+
+交通 事件 信息
+
+交通 信息 请 : 球
+
+|
+
+车 辆 订阅 何 Bh
+
+设备 心跳
+
+设备 注册
+
+安全 预警 消息
+
+交通 服务 消息
+
+车辆 订阅 信息 数据 更 新
+
+表 B.0.2
+
+据 更 新 方 主动
+向 对 方 推送 信息
+
+应 符合 下 列 规定 ，
+
+可 支持 消息 中 间 件 等 方式 通
+
+用 平台 通知 车 辆 接
+
+RSF F 向 拓展 应 用 平台 发 送 车 辆 位
+
+置信 息
+
+RSF 向 拓展 应 用 平台 发 送 交 通 参
+
+数 信息
+
+RSF 向 拓展 应 用 平台 发 送 交 通 事
+
+件 信息
+
+RSF 向 拓展 应 月
+
+昌平 台 发 送 交 通 服
+
+务 消 息 请 求
+
+schema: /< 记 > [: port] /
+
+esp-access/v1/vehicle-register/report
+
+RSF 向 拓展 应 有
+
+昌平 台 发 送 车 辆 订
+
+阅 信 息
+
+schema: /< i 记 > [: port] /
+esp-dm/vl/device-heartbeat/report
+
+RSF 向 拓展 应 月
+
+跳 信息
+
+平台 发 送 设备 心
+
+schema: /[/<ip > [: port] /
+
+esp-dm/vl/device-register/report
+
+RSF 向 拓展 应 月
+
+乎 台 发 送 设 备注
+
+册 信 息
+
+schema: /< ip > [: port]
+
+Isf-mm/vl/safety-alert-msg
+
+拓展 应 月
+警 消息
+
+平台 向 RSF 发 送 安 全 预
+
+schema: /< ip > [: port]
+Tsf-mm/vl/ira 抽 c-service-msg
+
+拓展 应 月
+务 消 息
+
+平台 向 RSF 发 送 交 通 服
+
+schema: // < 记 > [: port] /rsf-
+mm/Xvl/vehicle-subscription/update
+
+拓展 应 月
+阅 信息 数据
+
+上 平台 向 RSF 发 送 车 辆 订
+

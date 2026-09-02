@@ -1,0 +1,142 @@
+{
+  "id": "124-公路隧道交通工程与附属设施施工技术规范-JTGT3661-2025",
+  "title": "124-公路隧道交通工程与附属设施施工技术规范-JTGT3661-2025",
+  "std_no": "",
+  "version": "",
+  "file": "124-公路隧道交通工程与附属设施施工技术规范-JTGT3661-2025.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\124-公路隧道交通工程与附属设施施工技术规范-JTGT3661-2025.pdf",
+  "pages": 113,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 113,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:37:46",
+  "indexed_at": "2026-08-26 03:14:38",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 113
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "7",
+      "title": "第7章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "8",
+      "title": "交通 监控 设施 .PR 32",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "9",
+      "title": "紧急 呼叫 设施 站 2 全 冯 本 44",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "10",
+      "title": "第10章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "11",
+      "title": "消防 与 通道 设施 RN 93",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "12",
+      "title": "供 配 电 设 施 &- 交 和 生 和 于 相 和 生生 ",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "13",
+      "title": "第13章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "1",
+      "title": "总 则",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "4",
+      "title": "施工 准备",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "5",
+      "title": "标志 、 标 线",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "6",
+      "title": "通风 设施",
+      "start": 24,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "14",
+      "title": "接地 与 防 雷 设施",
+      "start": 98,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "15",
+      "title": "第15章",
+      "start": 103,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 315,
+  "status": "indexed",
+  "note": ""
+}

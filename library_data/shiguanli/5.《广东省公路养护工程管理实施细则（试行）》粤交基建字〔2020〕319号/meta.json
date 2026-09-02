@@ -1,0 +1,51 @@
+{
+  "id": "5.《广东省公路养护工程管理实施细则（试行）》粤交基建字〔2020〕319号",
+  "title": "《广东省公路养护工程管理实施细则（试行）》粤交基建字〔2020〕319号",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/5.《广东省公路养护工程管理实施细则（试行）》粤交基建字〔2020〕319号.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\5.《广东省公路养护工程管理实施细则（试行）》粤交基建字〔2020〕319号.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\5.《广东省公路养护工程管理实施细则（试行）》粤交基建字〔2020〕319号.pdf",
+  "pages": 14,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 14,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9988,
+    "punct_median": 0.0,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 17:59:09",
+  "pdf_mtime": "2025-02-14 17:59:09",
+  "source_mtime_ns": 1739527149000000000,
+  "source_size": 545398,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:47:36",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "089-小交通量农村公路交通安全设施设计细则-JTGT3381-03-2024",
+  "title": "089-小交通量农村公路交通安全设施设计细则-JTGT3381-03-2024",
+  "std_no": "",
+  "version": "",
+  "file": "089-小交通量农村公路交通安全设施设计细则-JTGT3381-03-2024.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\089-小交通量农村公路交通安全设施设计细则-JTGT3381-03-2024.pdf",
+  "pages": 81,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 81,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:31:17",
+  "indexed_at": "2026-08-26 02:17:34",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 81
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "5",
+      "title": "第5章",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "总 体 设计",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "交通 标志",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "交通 标 线",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "护栏、 栏杆 与 拦 挡 设 施",
+      "start": 39,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "减速 丘 与 块 体 路 面",
+      "start": 51,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "16",
+      "title": "第16章",
+      "start": 54,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "36",
+      "title": "第36章",
+      "start": 54,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "8",
+      "title": "凸 面 镜",
+      "start": 57,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "9",
+      "title": "限 高 架 与 限 宽 墩",
+      "start": 60,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 137,
+  "status": "indexed",
+  "note": ""
+}

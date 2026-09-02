@@ -1,0 +1,289 @@
+{
+  "id": "119-特大跨径公路桥梁施工测量规范-JTGT3650-02-2019",
+  "title": "119-特大跨径公路桥梁施工测量规范-JTGT3650-02-2019",
+  "std_no": "",
+  "version": "",
+  "file": "119-特大跨径公路桥梁施工测量规范-JTGT3650-02-2019.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\119-特大跨径公路桥梁施工测量规范-JTGT3650-02-2019.pdf",
+  "pages": 143,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 143,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9964,
+    "punct_median": 0.0391,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.0,
+    "clause_hits": 201
+  },
+  "pdf_mtime": "2026-08-25 22:36:56",
+  "indexed_at": "2026-08-26 03:10:34",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 7,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "",
+      "title": "JTG",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "",
+      "title": "中华人民共和国行业推荐性标准         JTG/T 3650-02—2019",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "",
+      "title": "Specifications for Long-span Highway Bridge Constr",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "",
+      "title": "Specifications for Long-span Highway Bridge Constr",
+      "start": 2,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "",
+      "title": "JTG/T 3650-02—2019",
+      "start": 2,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "",
+      "title": "前   言",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "",
+      "title": "目   次",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "1",
+      "title": "总则",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "2",
+      "title": "术语和符号",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "3",
+      "title": "平面控制测量",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "0",
+      "title": "第0章",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "28",
+      "title": "第28章",
+      "start": 18,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "32",
+      "title": "第32章",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "10",
+      "title": "第10章",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "12",
+      "title": "第12章",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "14",
+      "title": "第14章",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "17",
+      "title": "第17章",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "4",
+      "title": "高程控制测量",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 19,
+      "label": "25",
+      "title": "第25章",
+      "start": 44,
+      "is_expl": false
+    },
+    {
+      "no": 20,
+      "label": "29",
+      "title": "第29章",
+      "start": 44,
+      "is_expl": false
+    },
+    {
+      "no": 21,
+      "label": "5",
+      "title": "施工测量的基本工作",
+      "start": 63,
+      "is_expl": false
+    },
+    {
+      "no": 22,
+      "label": "6",
+      "title": "桥梁施工测量",
+      "start": 74,
+      "is_expl": false
+    },
+    {
+      "no": 23,
+      "label": "7",
+      "title": "桥梁变形测量",
+      "start": 91,
+      "is_expl": false
+    },
+    {
+      "no": 24,
+      "label": "8",
+      "title": "交工测量",
+      "start": 102,
+      "is_expl": false
+    },
+    {
+      "no": 25,
+      "label": "9",
+      "title": "资料管理",
+      "start": 109,
+      "is_expl": false
+    },
+    {
+      "no": 26,
+      "label": "附录A",
+      "title": "测量桩点的基础处理",
+      "start": 113,
+      "is_expl": false
+    },
+    {
+      "no": 27,
+      "label": "附录B",
+      "title": "测量墩标",
+      "start": 115,
+      "is_expl": false
+    },
+    {
+      "no": 28,
+      "label": "附录C",
+      "title": "悬挂钢尺传高法和全站仪精密传高法",
+      "start": 117,
+      "is_expl": false
+    },
+    {
+      "no": 29,
+      "label": "附录D",
+      "title": "放样方法的精度估算",
+      "start": 120,
+      "is_expl": false
+    },
+    {
+      "no": 30,
+      "label": "附录E",
+      "title": "自由设站测量",
+      "start": 127,
+      "is_expl": false
+    },
+    {
+      "no": 31,
+      "label": "附录F",
+      "title": "跨河水准测量照准标志",
+      "start": 130,
+      "is_expl": false
+    },
+    {
+      "no": 32,
+      "label": "附录G",
+      "title": "GNSS RTK放样",
+      "start": 132,
+      "is_expl": false
+    },
+    {
+      "no": 33,
+      "label": "附录H",
+      "title": "CORS系统运行测试",
+      "start": 135,
+      "is_expl": false
+    },
+    {
+      "no": 34,
+      "label": "附录J",
+      "title": "关于坐标系统和高程基准的定义及转换",
+      "start": 137,
+      "is_expl": false
+    },
+    {
+      "no": 35,
+      "label": "附录K",
+      "title": "测量仪器高、觇标高的精密方法",
+      "start": 140,
+      "is_expl": false
+    },
+    {
+      "no": 36,
+      "label": "",
+      "title": "本规范用词用语说明",
+      "start": 143,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 506,
+  "status": "indexed",
+  "note": ""
+}

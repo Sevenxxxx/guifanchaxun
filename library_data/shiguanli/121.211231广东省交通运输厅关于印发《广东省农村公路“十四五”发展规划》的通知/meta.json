@@ -1,0 +1,58 @@
+{
+  "id": "121.211231广东省交通运输厅关于印发《广东省农村公路“十四五”发展规划》的通知",
+  "title": "211231广东省交通运输厅关于印发《广东省农村公路“十四五”发展规划》的通知",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/121.211231广东省交通运输厅关于印发《广东省农村公路“十四五”发展规划》的通知.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\121.211231广东省交通运输厅关于印发《广东省农村公路“十四五”发展规划》的通知.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\121.211231广东省交通运输厅关于印发《广东省农村公路“十四五”发展规划》的通知.pdf",
+  "pages": 36,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 36,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-08-17 12:24:27",
+  "pdf_mtime": "2026-08-17 12:24:27",
+  "source_mtime_ns": 1786940667000000000,
+  "source_size": 14317863,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 36
+  },
+  "indexed_at": "2026-08-31 22:28:32",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "第2部分",
+      "title": "第2部分(无目录,按页均分)",
+      "start": 31,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

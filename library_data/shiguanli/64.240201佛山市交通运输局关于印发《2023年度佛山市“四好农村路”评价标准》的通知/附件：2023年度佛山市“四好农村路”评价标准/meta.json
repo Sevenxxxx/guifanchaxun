@@ -1,0 +1,58 @@
+{
+  "id": "附件：2023年度佛山市“四好农村路”评价标准",
+  "title": "附件：2023年度佛山市“四好农村路”评价标准",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/64.240201佛山市交通运输局关于印发《2023年度佛山市“四好农村路”评价标准》的通知/附件：2023年度佛山市“四好农村路”评价标准.xls",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\64.240201佛山市交通运输局关于印发《2023年度佛山市“四好农村路”评价标准》的通知\\附件：2023年度佛山市“四好农村路”评价标准.xls",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\64.240201佛山市交通运输局关于印发《2023年度佛山市“四好农村路”评价标准》的通知\\附件：2023年度佛山市“四好农村路”评价标准.xls",
+  "pages": 33,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 33,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9815,
+    "punct_median": 0.0216,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:16:04",
+  "pdf_mtime": "2025-02-14 18:16:04",
+  "source_mtime_ns": 1739528164000000000,
+  "source_size": 86016,
+  "fmt": "xls",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:32:25",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "第2部分",
+      "title": "第2部分(无目录,按页均分)",
+      "start": 31,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 15,
+  "status": "indexed"
+}

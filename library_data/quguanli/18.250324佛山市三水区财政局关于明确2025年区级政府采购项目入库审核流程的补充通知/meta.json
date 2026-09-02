@@ -1,0 +1,51 @@
+{
+  "id": "18.250324佛山市三水区财政局关于明确2025年区级政府采购项目入库审核流程的补充通知",
+  "title": "250324佛山市三水区财政局关于明确2025年区级政府采购项目入库审核流程的补充通知",
+  "std_no": "",
+  "version": "",
+  "file": "quguanli/18.250324佛山市三水区财政局关于明确2025年区级政府采购项目入库审核流程的补充通知.PDF",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\18.250324佛山市三水区财政局关于明确2025年区级政府采购项目入库审核流程的补充通知.PDF",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\18.250324佛山市三水区财政局关于明确2025年区级政府采购项目入库审核流程的补充通知.PDF",
+  "pages": 3,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 3,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-03-25 19:54:54",
+  "pdf_mtime": "2025-03-25 19:54:54",
+  "source_mtime_ns": 1742903694000000000,
+  "source_size": 457896,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 3
+  },
+  "indexed_at": "2026-08-31 22:20:47",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

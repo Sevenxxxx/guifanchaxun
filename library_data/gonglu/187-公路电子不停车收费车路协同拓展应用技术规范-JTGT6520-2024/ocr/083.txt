@@ -1,0 +1,40 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGXT 6520 一 2024 )
+
+-- 充 电 桩 功率
+ElecPowerPrice:: =INTECER (0. . 63535 )
+
+-- 充电 桩 单价
+ElecPowerChargeType:, =INTECER (0. .255)
+-= 充电 方式 ，0: 快 充 ，1: 慢 充
+SpeedLimitData: : = INTEGER (0.. 65535 )
+-- 车 道 限 速 。 单 位 : 千 米 / 小 时
+TrafficLimit: : = INTEGER (0. . 65535 )
+-= 限行 数据 〈 限 高 、 宽 、 长 等 )
+SignificantCondition: : = INTEGER (0. . 255)
+-- 有 效 状 态
+-- 0: 无 效
+--1: 有 效
+GoodBehavior: : = BIT STRING |
+-- 货 物 状态 类 型
+leaking (0) ，
+volatilizing (1) ，
+
+bursting (2) ，
+
+Double2IntType:: = INTECER (0. .2147483647 )
+SaServiceList: : = BIT STRING |
+
+unknow (0) ， -= 未 知
+
+park (1) ，-- 停 车场
+
+petrol (2) ，-- 加 油 站
+
+gas (3) ，-- 加 气 站
+
+charge (4) ，-- 充 电 桩
+
+addwater ($) ，-=- 加 水
+
+maintenance (6) ， -= 维修 站
+一 78 一

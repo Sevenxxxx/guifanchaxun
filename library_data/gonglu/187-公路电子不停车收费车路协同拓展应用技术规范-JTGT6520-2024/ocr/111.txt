@@ -1,0 +1,60 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGZT 6520 一 2024 )
+
+1 RSF 本 地 查询 该 车 辆 订阅 的 服务 信息 ， 如 RSF 本 地 不 存在 该 车 辆 订阅 的 服务 信
+息 ， 则 由 RSF 向 拓展 应 用 平台 发 送 车 辆 订阅 信息 查询 请 求 ; 如 RSF 本 地 存在 该 车 辆 订
+阅 的 服务 信息 ， 则 跳 转 至 步骤 3。
+
+2 拓展 应 用 平台 接收 车 辆 订阅 信息 查询 请 求 并 响应 。
+
+3 RSF 将 车 辆 订阅 信息 数据 传递 至 相 邻 RSF。
+
+本 4.5 RSU2.0 与 0BU2. 0 基础 服务 场景 应 符合 下 列 规定 :
+1 特殊 路 段 行 车 风险 预警 的 系统 交互 流程 应 符合 图 本 4. 5-1 的 规定 。
+
+OBU2.0 RSU2.0
+
+BST
+
+VST
+GetSecure.rq
+
+GetSecure.Ts
+
+TrafficInfo.rq
+(信息 播报 )
+
+TrafficInfo.rs
+(信息 播报 响应 )
+
+TrafficInfo.rq
+(休眠 时 间 指 示 ) PN、
+TrafficInfo.rs 放 司 rs
+
+图 本 4. 5-2 的 规定 。
+
+RSF
+
+| - BST 特定 限行 路 段 通行
+
+VSI - 预警 信息 提示
+GetSecure.Tq
+
+GetSecure.rs | OBU 过 车 信息 (0x21T)
+
+TrafficInfo.rq |_ 车 路 信息 交互 (0xA5)
+(安全 预警 信息 播报 )
+六 TrafficInfo.rs
+
+(安全 预警 信息 响应 ) -| 车 路 信息 交互 响应 (0x25)
+TrafficInfo.rq 一 |
+(休眠 时 间 指 示 ) | 休眠 指示 (0x93)
+TrafficInfo.rs
+
+(响应 )
+
+EventReport
+(释放 链 路 )
+
+图 本 4.5-2 ”特定 限行 路 段 通行 预警 系统 交互 流
+一 106 一
+

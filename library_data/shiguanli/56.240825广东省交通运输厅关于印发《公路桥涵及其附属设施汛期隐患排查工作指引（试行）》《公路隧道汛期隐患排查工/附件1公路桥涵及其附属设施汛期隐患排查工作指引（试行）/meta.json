@@ -1,0 +1,58 @@
+{
+  "id": "附件1公路桥涵及其附属设施汛期隐患排查工作指引（试行）",
+  "title": "附件1公路桥涵及其附属设施汛期隐患排查工作指引",
+  "std_no": "试行",
+  "version": "",
+  "file": "shiguanli/56.240825广东省交通运输厅关于印发《公路桥涵及其附属设施汛期隐患排查工作指引（试行）》《公路隧道汛期隐患排查工/附件1公路桥涵及其附属设施汛期隐患排查工作指引（试行）.docx",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\56.240825广东省交通运输厅关于印发《公路桥涵及其附属设施汛期隐患排查工作指引（试行）》《公路隧道汛期隐患排查工\\附件1公路桥涵及其附属设施汛期隐患排查工作指引（试行）.docx",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\56.240825广东省交通运输厅关于印发《公路桥涵及其附属设施汛期隐患排查工作指引（试行）》《公路隧道汛期隐患排查工\\附件1公路桥涵及其附属设施汛期隐患排查工作指引（试行）.docx",
+  "pages": 53,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 53,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 1.0,
+    "punct_median": 0.0244,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:15:50",
+  "pdf_mtime": "2025-02-14 18:15:50",
+  "source_mtime_ns": 1739528150000000000,
+  "source_size": 571189,
+  "fmt": "docx",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:23:42",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "第2部分",
+      "title": "第2部分(无目录,按页均分)",
+      "start": 31,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 20,
+  "status": "indexed"
+}

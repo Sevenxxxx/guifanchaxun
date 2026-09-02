@@ -1,0 +1,109 @@
+公路 建设 市 场 监管 信息 技术 规范 (JTGXT 3191 一 2025 )
+
+吕 腹
+
+中 文 名称
+
+字段 名 称
+
+续 表 A. 1. 3-4
+
+说 明
+
+数据
+类 型
+
+数据 格式
+
+值 域
+
+是 否
+必 填
+
+交工 验收 日 期
+
+finishedq_dqate
+
+交工 验收 日 期
+
+日 期 型
+
+YYYYMMDD
+
+数据 导出 时 间
+
+export_date
+
+采用 24 小 时
+计时 法 , 例如 :
+20180522160822
+表示 2018 年 5
+月 22 日 16 点 零
+8 分 22 秒
+
+日 期
+时 间 型
+
+YYYYMMDDHHMMSS
+
+母体 检测 机 构
+
+project_name
+Segment_narme
+
+Parenttest_name
+
+工地 试验 室 名 称
+
+begin_date
+
+权 开 始 日 期
+
+YYYYMMDD
+
+授权 结束 日
+
+laboratory_in_
+end_date
+
+工地 试验 室 授
+权 结 束 日 期
+
+YYYYMMDD
+
+证 书 编号
+
+certificate_number
+
+证 书 编号
+
+an . 200
+
+母体 检测 机 构 证 书
+有 效 期 开始 日 期
+
+valid_begin_date
+
+母体 检测 机 构
+证 书 有 效 期 开始
+日 期
+
+YYYYMMDD
+
+母体 检测 机 构 证 书
+有 效 期 截止 日 期
+
+valid_end_date
+
+母体 检测 机 构
+证 书 有 效 期 截止
+日 期
+
+YYYYMMDD
+
+服务 对 象
+
+service_object
+
+服务 对 象
+

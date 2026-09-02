@@ -1,0 +1,100 @@
+{
+  "id": "39.城市道路交通设施设计规范",
+  "title": "城市道路交通设施设计规范",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/39.城市道路交通设施设计规范.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\39.城市道路交通设施设计规范.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\39.城市道路交通设施设计规范.pdf",
+  "pages": 58,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 58,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-11-28 17:23:13",
+  "pdf_mtime": "2025-11-28 17:23:13",
+  "source_mtime_ns": 1764321793000000000,
+  "source_size": 19932494,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 58
+  },
+  "indexed_at": "2026-08-31 22:11:03",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "8",
+      "title": "交通 信号 灯",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "9",
+      "title": "交通 监控 系统",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "11",
+      "title": "道路 照明 及 变 配 电 PN",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "1",
+      "title": "第1章",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "3",
+      "title": "第3章",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "第5章",
+      "start": 18,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "10",
+      "title": "服务 设施",
+      "start": 45,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "12",
+      "title": "管理 处 所 及 设备",
+      "start": 56,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 273,
+  "status": "indexed",
+  "note": ""
+}

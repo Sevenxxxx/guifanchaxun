@@ -1,0 +1,36 @@
+术语
+
+2.0.10 遥感 图 像 处 理 remote sensing image processing
+对 遥感 图 像 进行 处 理 以 达到 预期 目的 的 技术 。
+
+2.0.11 立体 观测 stereo observation
+利用 立体 图 像 对 目标 物 的 大 小 、 空 间 位 置 和 属性 进行 观测 的 过 程 。
+
+2. 0. 12 ”数字 高 程 模型 digital elevation model(DEM )
+用 一 组 有 序数 值 阵列 形式 表示 地 面 高 程 的 数据 集 。
+
+2.0.13 ”数字 正 射影 像 图 digital orthophoto map(DOM)
+
+经 过 正 射 投影 改正 的 影像 图 。 <
+2.0.14 影像 特征 image feature
+影像 几何 形态 、 大 小 、 岁 案 、 色 彩 或 色调 、 经 影 、 位 置 和 布局 。
+
+2.0.15 解 译 标志 interpretation mark Z 久
+能 反映 或 判别 地 质 现象 或 地 质 体 ， 吉 能 次 明 有 其 性 质 和 和 硝 双 闪 系 的 影像 特征 。
+
+ZNR vv
+
+2.0.16 地 质 遥 感 解 译 rem sensihgihterpret
+运用 解 译 标 志和 先 验 知 误 和 1
+
+置 、 方 向 、 范 围 的 过 程 .r YX Sey
+
+2.0. 17 地 质 灾 妹 、gSyjegfGa AN
+月 然 必 生 的 RCR 入 对 天 和 从 改造 成 公害 或 洲 在 危 守 的 地 记 现 角 。
+
+习
+
+2. 0. 全 Tom highway engineering geological map of remote sensing
+以 数字 焉 尉 影像 图 为 背景 ， 示 出 地 形 地 貌 、 地 层 罕 性 、 地 质 构造 、 不 良 地 质 、 特 丈
+性 岩 土 、 公 路 工程 方案 的 地 质 平面 图 。
+

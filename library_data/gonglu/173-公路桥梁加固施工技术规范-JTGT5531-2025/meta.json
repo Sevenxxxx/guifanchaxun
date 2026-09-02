@@ -1,0 +1,149 @@
+{
+  "id": "173-公路桥梁加固施工技术规范-JTGT5531-2025",
+  "title": "173-公路桥梁加固施工技术规范-JTGT5531-2025",
+  "std_no": "",
+  "version": "",
+  "file": "173-公路桥梁加固施工技术规范-JTGT5531-2025.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\173-公路桥梁加固施工技术规范-JTGT5531-2025.pdf",
+  "pages": 103,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 103,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.929,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:42:40",
+  "indexed_at": "2026-08-26 04:32:24",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 103
+  },
+  "toc_zone_end": 5,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": 99,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "10",
+      "title": "第10章",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "施工 准备",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "病害 修复",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "增 大 鹤 面 加 固",
+      "start": 26,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "粘贴 钢板 加 固",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "粘贴 纤维 复合 材料 加 男",
+      "start": 45,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "增设 体外 预 应 力 加 固",
+      "start": 51,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "深 桥 上 部 结构 加 国",
+      "start": 58,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "11",
+      "title": "和 斜 拉 桥 加 固",
+      "start": 77,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "12",
+      "title": "第12章",
+      "start": 81,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "13",
+      "title": "第13章",
+      "start": 86,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "14",
+      "title": "第14章",
+      "start": 91,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "15",
+      "title": "桥 染 抗震 加 固",
+      "start": 97,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 99,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 184,
+  "status": "indexed",
+  "note": ""
+}

@@ -1,0 +1,72 @@
+{
+  "id": "097-装配化工字组合梁钢桥通用图-JTGT3911-2021",
+  "title": "097-装配化工字组合梁钢桥通用图-JTGT3911-2021",
+  "std_no": "",
+  "version": "",
+  "file": "097-装配化工字组合梁钢桥通用图-JTGT3911-2021.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\097-装配化工字组合梁钢桥通用图-JTGT3911-2021.pdf",
+  "pages": 84,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 84,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:31:39",
+  "indexed_at": "2026-08-26 02:24:30",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 84
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "4",
+      "title": "主要 材料",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "1",
+      "title": "设计 范围",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "主要 技术 指标",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "5",
+      "title": "第5章",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "6",
+      "title": "施工 要 操",
+      "start": 12,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 22,
+  "status": "indexed",
+  "note": ""
+}

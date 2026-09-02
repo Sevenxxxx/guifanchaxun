@@ -1,0 +1,135 @@
+{
+  "id": "009-公路工程质量检验评定标准 第一册 土建工程-JTGF801-2017",
+  "title": "009-公路工程质量检验评定标准 第一册 土建工程-JTGF801-2017",
+  "std_no": "",
+  "version": "",
+  "file": "009-公路工程质量检验评定标准 第一册 土建工程-JTGF801-2017.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\009-公路工程质量检验评定标准 第一册 土建工程-JTGF801-2017.pdf",
+  "pages": 252,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 252,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 21:18:53",
+  "indexed_at": "2026-08-26 00:07:51",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 252
+  },
+  "toc_zone_end": 7,
+  "offset": 7,
+  "toc_source": "clause_cluster",
+  "expl_start": 183,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "10",
+      "title": "第10章",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "在 分 部 工程 中 ， 根 据 施工 工序 、 工 艺 或",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "路 基 土 石 方 工程",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "排水 工程",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "防护 文 挡 工程",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "路 面 工 程",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "桥 染 工程",
+      "start": 46,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "12",
+      "title": "第12章",
+      "start": 112,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "9",
+      "title": "涵洞 工程",
+      "start": 113,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "11",
+      "title": "交通 安全 设施",
+      "start": 133,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "13",
+      "title": "第13章",
+      "start": 146,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 183,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 506,
+  "status": "indexed",
+  "note": ""
+}

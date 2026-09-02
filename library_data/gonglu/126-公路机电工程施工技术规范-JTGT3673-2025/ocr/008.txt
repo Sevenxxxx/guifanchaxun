@@ -1,0 +1,57 @@
+公路 机 电工 程 施工 技术 规范 (JTGXT 3673 一 2025 )
+2 术语 和 符号
+2.1 术语
+2.1.1 公路 机 电工 程 ” highway electrical and mechanical engineepakg
+根据 设计 ， 按 照 一 定 工艺 和 方法 ， 将 不 同 规格 、 型 号 性能、 屠 质 的 公路 监控 设
+施 、 收 费 设施 、 通 信 设 施 、 超 限 检测 设施 、 供 配 电 设施 及 早 明 设施 等 有 机 组 合 ， 用 于 保
+障 公 路 通行 能 力 及 服务 水 平 、 提 高 公路 运营 管理 效 牵 2 次 择 公 路 综合 效益 、 实 现 约定 功
+
+能 目标 的 工程 实体 。
+
+2.1.2 完工 测试 tests on completion
+
+公路 机
+
+工程 安装 完成 后 ，
+
+外 工程 安装 质量 及 系统 功能 的
+
+进行 的 科 装 调试 位 查 .系统 功能 和 技术 指标 测试 ， 是 机
+
+首次 完整 测试
+
+2.1.3 自然 接地 极 “natul 浊 人 证 衣 记 g electfod6
+可 作为 接地 用 的 直接 村 头 好 有 良好 接 钥 的 答 种 金属 构件 、 金 属 井 管 、 钢 筋 混 凝 土 中
+
+的 钢筋 、 埋
+
+地 金属 管道 和 设施 的 统称 。
+
+2. 1.4 ETGdy 并 系统 人 ETC gan 证 ys 六 FEm
+
+及 配套 谈 施 。
+
+在 收费 公路 兴 线 央 面 建设 的 具备 通行 费 分 段 计 费 、 车 牌 图 像 识别 等 功能 的 专用 系统
+
+2.1.5$ 超 限 检测 站 ”weigh and size station
+
+设施 。
+
+2.2 符号
+
+在 公路 上 设立 的 ， 对 车 有
+
+ACD
+ATS
+
+BIM 一 一 建筑 信息
+
+实施 超 限 检测 ， 认 定 、 查 处 和 纠正 违法 行为 的 执法 场所 和
+
+自动 呼叫 分 配 系统 ( Automatic Call Distribution ) ;
+自动 转换 开关 (Automatic Transfer Switching Equipment ) ;
+模型 (Building Information Modeling ) ;
+
+CCC 一 一 中 国 强 制 认证 标志 (China Compulsory Certification ) ;
+
+一 2 一

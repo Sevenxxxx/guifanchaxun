@@ -1,0 +1,28 @@
+公路 工程 智慧 工地 建设 技术 指南 (JTG/T 3603 一 2026
+续 表 C. 0. 15
+名 称 盾 构 施工 注 浆 采 集 参 数
+参数 名 称 参数 类 型 是 否 必须 (YAN)
+注 浆 位 置 String Y
+注 浆 速度 Float Y
+注 浆 压力 Float Y
+注 浆 流 量 Float Y
+注 浆 均 匀 性 String Y
+注 浆 结 果 String Y
+注 浆 时 间 Date 了
+名 称 泥水 平衡 盾 构 输送 采集 参数
+参数 名 称 参数 类 型 是 否 必须 (YAN)
+位 置 String Y
+泥浆 流量 Float Y
+泥浆 浓度 Float Y
+泥浆 压力 Raat Y
+监测 时 间 Dale Y
+名 称 盾 构 工程 内 部 结构 施工 采集 参数
+参数 名 称 参数 类 型 是 否 必须 (YAN)
+位 置 String Y
+箱 涵 尺 二 Fibat Y
+烟 道 板 尺 二 Fiaat Y
+温度 Float Y
+湿度 Rioa Y
+从 移 Float Y
+时 间 Date 了
+

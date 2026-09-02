@@ -1,18 +1,18 @@
-# 规范 PDF 原件(�?575MB):用户资料,不入版本�?�?config.json �?library_dir 提供
+# 规范 PDF 原件(�?575MB):用户资料,不入版本�?�?config.json �?library_dir 提供
 guifansrc/
 
-# 可再生索引数�?重跑 python spec.py index 即可重建(体积�?
-library_data/
+# 可再生索引数�?重跑 python spec.py index 即可重建(体积�?
 
-# 第三方语言�?chi_sim(�?43MB):可从 tessdata_best 重新下载,
-# 或运�?spec.py 时按 config.json �?ocr_tessdata_dir 恢复
+
+# 第三方语言�?chi_sim(�?43MB):可从 tessdata_best 重新下载,
+# 或运�?spec.py 时按 config.json �?ocr_tessdata_dir 恢复
 tools/guifan-chaxun-scripts/scripts/tessdata/
 
 # Python
 __pycache__/
 *.pyc
 
-# 提交前审查标�?本地状�?每次刷新变化,不入�?
+# 提交前审查标�?本地状�?每次刷新变化,不入�?
 .claude/review-stamp
 
 # Web POC
@@ -21,4 +21,5 @@ webapp/dump-default-config.txt
 webapp/__pycache__/
 
 webapp/logs/
+
 webapp/access.txt

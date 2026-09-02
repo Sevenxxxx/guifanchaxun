@@ -1,0 +1,43 @@
+基本 规定
+
+3 基本 规定
+
+3.0.1 农村 公路 技术 状况 评定 对 象 应 包括 路 基 、 路 面 、 桥 隧 构 造物 和 沿线 设施 。
+
+3.0.2 农村 公路 技术 状况 评定 指标 应 采用 农村 公路 技术 状况 指 才
+标 ， 指 标 体 系 见 图 3. 0.2， 各 指标 值 域 均 为 0 ~100。 Ne
+
+《SCI)
+
+《PCI)
+
+和 相应 分 项 指
+
+农村 公路 技术 状况 指数
+C(MQD)
+
+CRQI)
+结构 强度 指数
+(PSSI)
+图 中 : MQI 一 一 ura Highway Maintenance Quajlity Index ) ;
+SCT 8
+PQI ement Maintenance Quality Index ) ;
+
+物 技术 状况 指数 (Bridge，Tunnel and Culvert Condition Index) ;
+在 线 设施 技术 状况 指数 (Traffic Facility Condition Index ) ;
+
+PCL 路 面 损坏 状况 指数 (Pavement Surface Condition Index ) ;
+
+RQI 一 一 路 面 行驶 质量 指数 ( Pavement Riding Quality Index) ;
+
+PSSI 一 一 路 面 结构 强度 指数 (Pavement Structure Strength Index ) 。
+
+条 文 说 明
+
+通过 广泛 调研 我 国 农村 公路 养护 管理 的 实际 需求 ， 综 合 考 虑 国内 外 公路 技术 状况 评
+定 指标 体系 的 构成 情况 和 自动 化 检测 的 技术 能 力 ， 确 定 了 农村 公路 技术 状况 评定 指标 体
+系 ， 其 中 路 面 技 术 状 况 评 定 又 包括 路 面 损坏 状况 、 路 面 行驶 质量 和 路 面 结 构 强 度 三 项 内
+容 。 将 路 面 结构 强度 纳入 评定 范围 ， 一 是 考虑 到 我 国 农村 公路 量 大 面 广 ， 建 设 标准 相对
+较 低 ， 为 了 保证 路 网 技术 状况 和 长 期 服役 能 力 ， 除 了 要 对 路 面 功 能 性 能 进行 检测 评定
+
+一 3 一

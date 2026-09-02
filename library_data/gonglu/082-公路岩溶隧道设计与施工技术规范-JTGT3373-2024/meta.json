@@ -1,0 +1,114 @@
+{
+  "id": "082-公路岩溶隧道设计与施工技术规范-JTGT3373-2024",
+  "title": "082-公路岩溶隧道设计与施工技术规范-JTGT3373-2024",
+  "std_no": "",
+  "version": "",
+  "file": "082-公路岩溶隧道设计与施工技术规范-JTGT3373-2024.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\082-公路岩溶隧道设计与施工技术规范-JTGT3373-2024.pdf",
+  "pages": 92,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 92,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:31:00",
+  "indexed_at": "2026-08-26 02:06:10",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 92
+  },
+  "toc_zone_end": 5,
+  "offset": 5,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "第3章",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "勘察",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "第5章",
+      "start": 26,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "结构 设计",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "防水 与 排水",
+      "start": 41,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "第8章",
+      "start": 50,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "郑 深 隧道 施工",
+      "start": 59,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "10",
+      "title": "超前 地 质 预报",
+      "start": 68,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "11",
+      "title": "监控 量 测",
+      "start": 77,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 265,
+  "status": "indexed",
+  "note": ""
+}

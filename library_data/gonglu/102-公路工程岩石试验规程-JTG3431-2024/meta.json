@@ -1,0 +1,86 @@
+{
+  "id": "102-公路工程岩石试验规程-JTG3431-2024",
+  "title": "102-公路工程岩石试验规程-JTG3431-2024",
+  "std_no": "",
+  "version": "",
+  "file": "102-公路工程岩石试验规程-JTG3431-2024.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\102-公路工程岩石试验规程-JTG3431-2024.pdf",
+  "pages": 63,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 63,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.929,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:32:07",
+  "indexed_at": "2026-08-26 02:29:40",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 63
+  },
+  "toc_zone_end": 5,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "1",
+      "title": "一 “修正 后 的 点 荷载 强度 指数 ;",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "取样 、 试 件 制 备 及 摘 述",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "郑 石 试验",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "结果 整理",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "量 封 法",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "第7章",
+      "start": 21,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 160,
+  "status": "indexed",
+  "note": ""
+}

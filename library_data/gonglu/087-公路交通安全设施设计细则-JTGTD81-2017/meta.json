@@ -1,0 +1,135 @@
+{
+  "id": "087-公路交通安全设施设计细则-JTGTD81-2017",
+  "title": "087-公路交通安全设施设计细则-JTGTD81-2017",
+  "std_no": "",
+  "version": "",
+  "file": "087-公路交通安全设施设计细则-JTGTD81-2017.pdf",
+  "pdf_abs": "guifansrc\\gonglu\\087-公路交通安全设施设计细则-JTGTD81-2017.pdf",
+  "pages": 228,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 228,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9929,
+    "punct_median": 0.0234,
+    "empty_ratio": 0.071,
+    "bad_ratio": 0.111,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 21:17:17",
+  "indexed_at": "2026-08-26 08:00:01",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 8,
+  "offset": null,
+  "toc_source": "parsed",
+  "expl_start": 211,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "设计代号",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "总体设计",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "交通标志",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "交通标线",
+      "start": 48,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "护栏和栏杆",
+      "start": 58,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "58",
+      "title": "第58章",
+      "start": 89,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "视线诱导设施",
+      "start": 116,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "隔离栅",
+      "start": 123,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "防落网",
+      "start": 129,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "10",
+      "title": "防眩设施",
+      "start": 135,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "11",
+      "title": "避险车道",
+      "start": 145,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "12",
+      "title": "其他交通安全设施",
+      "start": 153,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 211,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 482,
+  "status": "indexed",
+  "note": ""
+}

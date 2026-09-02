@@ -1,0 +1,51 @@
+{
+  "id": "（以此件为准）关于推荐桥下空间绿化配置的函",
+  "title": "（以此件为准）关于推荐桥下空间绿化配置的函",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/58.260520（以此件为准）关于推荐桥下空间绿化配置的函/（以此件为准）关于推荐桥下空间绿化配置的函.doc",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\58.260520（以此件为准）关于推荐桥下空间绿化配置的函\\（以此件为准）关于推荐桥下空间绿化配置的函.doc",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\58.260520（以此件为准）关于推荐桥下空间绿化配置的函\\（以此件为准）关于推荐桥下空间绿化配置的函.doc",
+  "pages": 6,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 6,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.8755,
+    "punct_median": 0.0134,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-05-25 18:40:16",
+  "pdf_mtime": "2026-05-25 18:40:16",
+  "source_mtime_ns": 1779705616000000000,
+  "source_size": 77824,
+  "fmt": "doc",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:31:37",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

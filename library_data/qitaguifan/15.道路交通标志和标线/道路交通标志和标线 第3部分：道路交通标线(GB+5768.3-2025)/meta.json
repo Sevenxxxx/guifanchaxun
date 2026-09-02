@@ -1,0 +1,128 @@
+{
+  "id": "道路交通标志和标线 第3部分：道路交通标线(GB+5768.3-2025)",
+  "title": "道路交通标志和标线 第3部分：道路交通标线",
+  "std_no": "GB 5768.3-2025",
+  "version": "5768",
+  "file": "道路交通标志和标线 第3部分：道路交通标线(GB+5768.3-2025).pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\15.道路交通标志和标线\\道路交通标志和标线 第3部分：道路交通标线(GB+5768.3-2025).pdf",
+  "pages": 123,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 123,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9839,
+    "punct_median": 0.0786,
+    "empty_ratio": 0.143,
+    "bad_ratio": 0.375,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-17 12:44:52",
+  "indexed_at": "2026-08-25 21:47:32",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 6,
+  "offset": null,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "范围",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "5",
+      "title": "使用",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "6",
+      "title": "路口导向线",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "7",
+      "title": "换道线",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "8",
+      "title": "人行横道线",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "9",
+      "title": "车距确认标线",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "10",
+      "title": "停车位标线",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "11",
+      "title": "停靠站标线",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "12",
+      "title": "减速丘标线",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "13",
+      "title": "导向箭头",
+      "start": 35,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "14",
+      "title": "路面文字标记",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "15",
+      "title": "路面图形标记",
+      "start": 44,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "16",
+      "title": "非机动车横道线",
+      "start": 48,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 379,
+  "status": "indexed",
+  "note": ""
+}

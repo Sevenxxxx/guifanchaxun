@@ -1,0 +1,93 @@
+{
+  "id": "佛山市城市家具设置技术导则",
+  "title": "佛山市城市家具设置技术导则",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/57.241022佛山市城市管理和综合执法局关于印发《佛山市城市家具设置技术导则》的通知/佛山市城市家具设置技术导则.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\57.241022佛山市城市管理和综合执法局关于印发《佛山市城市家具设置技术导则》的通知\\佛山市城市家具设置技术导则.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\57.241022佛山市城市管理和综合执法局关于印发《佛山市城市家具设置技术导则》的通知\\佛山市城市家具设置技术导则.pdf",
+  "pages": 194,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 194,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9612,
+    "punct_median": 0.0176,
+    "empty_ratio": 0.143,
+    "bad_ratio": 0.375,
+    "clause_hits": 111
+  },
+  "source_mtime": "2025-02-14 18:15:58",
+  "pdf_mtime": "2025-02-14 18:15:58",
+  "source_mtime_ns": 1739528158000000000,
+  "source_size": 123959449,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:23:45",
+  "toc_zone_end": 6,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "第2部分",
+      "title": "第2部分(无目录,按页均分)",
+      "start": 37,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "第3部分",
+      "title": "第3部分(无目录,按页均分)",
+      "start": 67,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "第4部分",
+      "title": "第4部分(无目录,按页均分)",
+      "start": 97,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "第5部分",
+      "title": "第5部分(无目录,按页均分)",
+      "start": 127,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "第6部分",
+      "title": "第6部分(无目录,按页均分)",
+      "start": 157,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "第7部分",
+      "title": "第7部分(无目录,按页均分)",
+      "start": 187,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 159,
+  "status": "indexed"
+}

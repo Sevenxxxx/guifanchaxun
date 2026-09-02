@@ -1,0 +1,56 @@
+超 限 检测 数据 格式 要 求
+
+人 A.7
+
+称 重 检测 异常 数据 处 理 信息
+
+站 允 话
+
+续 表 A-17
+
+序号 字段 说 明 字段 代码 数据 类 型 | 长 度 备注
+
+20 | 驾驶 人 联系 方式 driverTel String 11
+
+21 营运 证 号 companyQuaCode Sting 18
+
+22 资格 证 号 driverQouaCard Shing 19
+
+23 | 道路 运输 证 号 vehicleQuaCode Shing 16
+
+24 计 重 人 checkName Suing “| 40
+
+25 货源 地 hyd String 100 | ， 车辆 所 载 货物 货源 地 行政 区 划 代 码
+26 | 。 装载 地 zzd Suing 。 | 100 | 车 琐 所 载 货物 装载 地 行政 区 划 代 码
+27 目的 地 mdd suing “| 100 | 车辆 所 载 货 杀 年 的 约 竺 政 区 划 代码
+
+7
+
+书
+
+最
+
+虽 于
+7
+ji
+
+“ 语 和 站 名 称
+
+站 〈 点 ) 编号 = 行政 区 划 代 码 6 位 +4 位 数
+字 。 编 号 由 部 级 系统 统一 生成
+
+5
+6
+0- 蓝 色 ; 1- 黄 色 ; 2- 黑 色 ; 3- 白 色 ; 4- 渐 变
+7 绿色 ; 5- 黄 绿 双 拼 色 ; 6- 蓝 白 渐 变色 ; 9- 未 确
+定 ; 11- 绿 色 ; 12- 红 色
+8 updatepldecalor 修改 的 车 牌 颜色 JInteger 是 同上
+9 limitWeight 最 大 允许 总 质量 Jnteger 是 精确 到 个 位 。 单 位 : 千克
+10 |updateLimitWeight | 修改 的 最 大 允许 总 质量 | Integer 是 | 同上
+11 overWeight 超 限量 Integer 是 精确 到 个 位 。 单 位 : 千克
+12 | updateOverWeight 修改 的 超 限 量 JInteger 是 同上
+13 overRate 超 限 超载 率 Double 是 精确 到 小 数 点 后 2 位 。 单 位 :%
+14 | updateOverRate | 修改 的 超 限 超载 率 Double 是 同上
+15 operateType 操作 类 型 Sturing 是 1- 修 改 ; 2- 删 除
+1 | waemme | 。 癌 间 | sa | 是 | pbhodmmssS， 在 兴 和
+

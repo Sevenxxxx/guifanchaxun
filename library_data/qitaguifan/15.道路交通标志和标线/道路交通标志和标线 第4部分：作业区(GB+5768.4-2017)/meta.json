@@ -1,0 +1,100 @@
+{
+  "id": "道路交通标志和标线 第4部分：作业区(GB+5768.4-2017)",
+  "title": "道路交通标志和标线 第4部分：作业区",
+  "std_no": "GB 5768.4-2017",
+  "version": "5768",
+  "file": "道路交通标志和标线 第4部分：作业区(GB+5768.4-2017).pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\15.道路交通标志和标线\\道路交通标志和标线 第4部分：作业区(GB+5768.4-2017).pdf",
+  "pages": 82,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 82,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 0.9048,
+    "punct_median": 0.0,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.889,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-17 12:44:16",
+  "indexed_at": "2026-08-25 21:47:27",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 82
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "3",
+      "title": "术语 和 定义",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "1",
+      "title": "范 国",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "规范 性 引用 文件",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "作业 区 组 成",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "作业 区 道路 交通 标志 和 标 线",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "作业 区 布置 的 一 般 规 定",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "高 速 公 路 .一 级 公路 作业 区 布置 要 求",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "双 车 道 和 单车 道 公 路 作业 区 布置 要 求",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "城市 道路 作业 区 布置 要 求",
+      "start": 20,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 88,
+  "status": "indexed",
+  "note": ""
+}

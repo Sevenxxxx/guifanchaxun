@@ -1,0 +1,79 @@
+{
+  "id": "附件：佛山市三水区交通运输局关于道路（桥隧涵）养护管理安全生产应急预案",
+  "title": "附件：佛山市三水区交通运输局关于道路（桥隧涵）养护管理安全生产应急预案",
+  "std_no": "",
+  "version": "",
+  "file": "quguanli/19.250507（三交〔2025〕45号）关于印发《佛山市三水区交通运输局关于道路（桥隧涵）养护管理安全生产应急预案》的通知/附件：佛山市三水区交通运输局关于道路（桥隧涵）养护管理安全生产应急预案.docx",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\19.250507（三交〔2025〕45号）关于印发《佛山市三水区交通运输局关于道路（桥隧涵）养护管理安全生产应急预案》的通知\\附件：佛山市三水区交通运输局关于道路（桥隧涵）养护管理安全生产应急预案.docx",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\19.250507（三交〔2025〕45号）关于印发《佛山市三水区交通运输局关于道路（桥隧涵）养护管理安全生产应急预案》的通知\\附件：佛山市三水区交通运输局关于道路（桥隧涵）养护管理安全生产应急预案.docx",
+  "pages": 10,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 10,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9865,
+    "punct_median": 0.0094,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-05-08 18:57:15",
+  "pdf_mtime": "2025-05-08 18:57:15",
+  "source_mtime_ns": 1746701835000000000,
+  "source_size": 24221,
+  "fmt": "docx",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 23:20:08",
+  "toc_zone_end": 5,
+  "offset": null,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "2",
+      "title": "第2章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "3",
+      "title": "应急响应",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "5",
+      "title": "物资设备保障",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "第4章",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "6",
+      "title": "附则",
+      "start": 10,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 14,
+  "status": "indexed",
+  "note": ""
+}

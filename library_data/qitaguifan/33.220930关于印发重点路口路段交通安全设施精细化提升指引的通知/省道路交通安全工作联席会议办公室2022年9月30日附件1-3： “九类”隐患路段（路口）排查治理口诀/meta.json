@@ -1,0 +1,51 @@
+{
+  "id": "省道路交通安全工作联席会议办公室2022年9月30日附件1-3： “九类”隐患路段（路口）排查治理口诀",
+  "title": "省道路交通安全工作联席会议办公室2022年9月30日附件1-3： “九类”隐患路段（路口）排查治理口诀",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/33.220930关于印发重点路口路段交通安全设施精细化提升指引的通知/省道路交通安全工作联席会议办公室2022年9月30日附件1-3： “九类”隐患路段（路口）排查治理口诀.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\33.220930关于印发重点路口路段交通安全设施精细化提升指引的通知\\省道路交通安全工作联席会议办公室2022年9月30日附件1-3： “九类”隐患路段（路口）排查治理口诀.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\33.220930关于印发重点路口路段交通安全设施精细化提升指引的通知\\省道路交通安全工作联席会议办公室2022年9月30日附件1-3： “九类”隐患路段（路口）排查治理口诀.pdf",
+  "pages": 5,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 5,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-06-26 20:47:39",
+  "pdf_mtime": "2025-06-26 20:47:39",
+  "source_mtime_ns": 1750942059000000000,
+  "source_size": 200172,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 23:18:07",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

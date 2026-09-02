@@ -1,0 +1,61 @@
+RSF 间接
+
+字段 名
+
+数据 类 型
+
+说 明
+
+VehPlate
+
+string
+
+车 牌号 ， 示 例 “ 京 A12345”， 采 用 UTF-8 编码
+
+VehSubInfoList
+
+List < VehSubImfo >
+
+车 辆 订阅 业务 列表 ， 应 符合 表 了 0. 4-11 规定
+
+VehInfo
+
+VehImnfo
+
+车 辆 基本 信息 ， 应 符合 表 下 . 0. 4-12 规定
+
+6 车 辆 订阅 信息 数据 更 新 响应 参数 应 符合 表 下 上. 0. 4-8 的 规定 。
+表 匡 0.4-8 车 辆 订阅 信息 数据 更 新 响应 参数 表
+
+并 明 兴
+
+序号 | 。 字段 名 数据 类 型 。。 | 是 否 可 空 明 A
+1 Code int 否 状态 码 ， 应 符合 表 开 0.4.9 哮 定 ”
+sr
+. 人 义 描述 ， 如 返回 失败 时 对 失败 具
+2 Message string 是 ，
+
+摄像 机
+
+能 见 度 检测 器
+
+字段 名
+
+表 了 .0. 4-11 VehSubInfo 参数 说 明
+
+说 明
+
+ServiceId
+
+业务 编号 ， 应 符合 表 忆 0. 4-13 规定
+
+业务 提供 方 URL， 示 例 ，https: //hostname
+
+ServiceProviderUR
+
+[ : port] / serviceProviderl/v1/Svepw
+
+ServiceProviderDsc
+
+业务 提供 方 信息 描述
+

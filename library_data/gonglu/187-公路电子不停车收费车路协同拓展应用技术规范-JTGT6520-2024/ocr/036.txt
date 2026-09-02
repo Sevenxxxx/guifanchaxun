@@ -1,0 +1,51 @@
+RSF 与 拓展 应 用 平台 接
+续 表 B. 0. 4-6
+
+序号 字段 名 数据 类 型 是 否 可 空 说 明
+
+10 InfoLevel int 否 信息 优先 级 : 0 默认 ，1 一 级 ，2 二 级 ，3 最 高 级
+11 | EventOccurTime datetime 否 事件 发 生 时 间 ， 格 式 为 yyyy-MM-dd HH: mm: ss，SSS
+12 “| EventEndTime datetime 是 | 和 Ma HE mm 下，
+13 StartLng int 是 事件 起 点 经 度 ， 单 位 : 0. 0000001。
+
+14 StartLat int 是 事件 起 点 纬度 ， 单 位 : 0.0000001。
+
+15 StartAlt it 是 事件 起 点 高 程 ， 单 位 0, 外 太
+
+16 EndLng int 是 0600
+
+17 EndLat int 是
+
+18 EndAlt int 是
+
+19 RoadID List < string > 是
+
+20 EventRange int 是
+
+21 StartStake string 是
+
+22 EndStake string 是
+
+23 AffectLan
+
+24 DevCtrList
+
+List < DeviceControl >
+
+24 Direction int 生
+26 VehList |List < TargetGi 和 NS
+27 DealInfo 是 吧 “为
+28 Deseription | 二 6，
+攻关
+LA ”DAN
+4 表 了 . 0. 平 ， DeviceConftrol 参数 说 明
+序号 | -六 殿 名。 上。 数据 类 型 是 否 可 空 说 明
+1 | 了 Penoe int 否 设备 类 型 ， 应 符合 表 卫 0. 4-10 规定
+2 int 否 设备 也
+3 int 否 指令 耳 ， 标 志 指令 的 唯一 性 ，0 ~OxFFFFFFFF
+4 StartTime datetime 否 设备 控制 开始 时 间 ， 格 浆 为 777- MM-dd HH: mm ss，
+SSS
+4 EndTime datetime 否 ai 格 却 为 777-MM-dd HH mm ss，
+6 AlertTxt string 是 指令 内 容
+7 LaneCtrList | List <laneControl > 否 车 道 控制 内 容 ， 应 符合 表 B, 0. 4-8 规定
+

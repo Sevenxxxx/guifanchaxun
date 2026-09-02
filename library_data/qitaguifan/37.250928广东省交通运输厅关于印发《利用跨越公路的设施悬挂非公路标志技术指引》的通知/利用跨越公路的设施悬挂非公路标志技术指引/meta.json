@@ -1,0 +1,100 @@
+{
+  "id": "利用跨越公路的设施悬挂非公路标志技术指引",
+  "title": "利用跨越公路的设施悬挂非公路标志技术指引",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/37.250928广东省交通运输厅关于印发《利用跨越公路的设施悬挂非公路标志技术指引》的通知/利用跨越公路的设施悬挂非公路标志技术指引.docx",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\37.250928广东省交通运输厅关于印发《利用跨越公路的设施悬挂非公路标志技术指引》的通知\\利用跨越公路的设施悬挂非公路标志技术指引.docx",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\37.250928广东省交通运输厅关于印发《利用跨越公路的设施悬挂非公路标志技术指引》的通知\\利用跨越公路的设施悬挂非公路标志技术指引.docx",
+  "pages": 6,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 6,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9884,
+    "punct_median": 0.0188,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-09-30 20:57:03",
+  "pdf_mtime": "2025-09-30 20:57:03",
+  "source_mtime_ns": 1759237023000000000,
+  "source_size": 20723,
+  "fmt": "docx",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 23:18:07",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语及定义",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "一般要求",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "设计要求",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "施工要求",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "验收要求",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "养护管理",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "附则",
+      "start": 6,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 30,
+  "status": "indexed",
+  "note": ""
+}

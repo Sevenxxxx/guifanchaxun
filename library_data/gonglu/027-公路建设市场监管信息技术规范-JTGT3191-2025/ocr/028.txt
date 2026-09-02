@@ -1,0 +1,46 @@
+公路 建设 市 场 监管 信息 技术 规范 (JTGXT 3191 一 2025 )
+
+表 A.1.1-7 施工 单位 业绩 信息 数据
+
+序 、 数据 是 否
+号 中 文 名 称 字段 名 称 说 明 类 型 数据 格式 值 域 必 填
+全 国 唯一 的 项
+项 Toject_code am. .
+1 页 目 编 号 project_cod 日 编号 字符 型 100 是
+2 项 目 名 称 project_name 项 目 名 称 字符 型 an. .256 是
+3 | “合同 段 名 称 segment_name 合同 段 名称 ”| 字符 型 an. . 256 是
+4 建设 状态 Project_status 建设 状态 字符 型 是
+项 目 所 属 省 级
+省 级 行 Tovince_code 广
+5 | 所 属 省 级 行政 区 | p ecod 行政 区 字符 型 是
+6 起 止 桩 号 stake_start 起 止 桩 号
+高 速 公 路 、 一
+
+级 公路 、 二 级 公
+7 技术 等 级 road_jlevel 路 、 三 级 公路 四 是
+
+级 公路
+8 长 度 (kmy) construction_len
+9 | 桥 隧 比例 (% ) bridge 1
+10 | 合同 金额 (万 元 ) contract_amouiit 册 几 个 S 是
+
+施工 单位 统一 AT
+， | 社会 信用 代码 CA 生
+12 是
+13 是
+14 是
+15 字符 型 am. . 4000 是
+16 日 期 型 YYYYMMDD 是
+17 fnished_date 日 期 型 YYYYMMDD
+18 complete_date 日 期 型 YYYYMMDD
+路 基 路 面 、 路
+
+面 工程 .桥梁 工
+19| 标 段 类 型 代码 |。 segment_type | 标 段 类 型 的 代码 | 字符 型 an .50 下
+
+程 . 机 电工 程 、 房
+
+建 工程
+
+一 24 一
+

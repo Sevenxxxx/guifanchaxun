@@ -1,0 +1,40 @@
+术语 和 符号
+
+2.1.9 在 线 计 费 _ online billing
+根据 在 途 车 辆 通行 记录 、 车 牌 识别 结果 等 信息 ， 由 后 台 系 统 进行 拟 合 计 费 的 方式 。
+
+2.1.10 ETC 门 架 系统 ETC gantry system
+
+在 收费 公路 沿线 断面 建设 的 具备 通行 费 分 段 计 宽 、 车 牌 图 像 识别 等 功能 的 专用 系统
+及 配套 设施 。
+
+2.1.11 复合 通行 卡 compound pass card
+集 5.8GHz 和 13. 56MHz 通信 功能 于 一 体 ， 具 备 无 线 读 写 功 能 念 二 重复 使 用 的 通行
+介质 ， 简称 CPC。
+
+2.1.12 纸 质 通行 券 paper pass ticket
+车 辆 通行 收费 公路 时 ， 用 于 记录 和 车辆 和 人 口 信息 的 纸 质 通行 赁 证。
+
+2.1.13 FETC 交易 流水 FETC transaction reeords
+通过 ETC 账户 文 付 通行 费 产 生 的 具有 万 可 抵赖 性 的 交易 数据 。
+
+2. 1. 14 MTC 交易 流水 MTC transactiohrecords
+通过 现金 支付 、 手 机 支付 等 次 晕 产 生 的 交易 数据 。
+
+2.1.1S 通行 凭证 pass woucher
+
+ETC 门 架 系统 对 单 片 式 OBU 完成 分 段 讨 费 3 所 产生 的 具有 不 可 抵赖 性 的 用 于 后 台
+记 账 和 结算 的 凭证
+
+2.1.16_ 页 CZMYTC 混 合 车 道 ETCZAMTC hybrid lane
+同时 支持 ETC 和 MTC 收费 方式 的 车 道 。
+
+2.1.17 自助 交易 设备 self-assistant transaction equipment
+j 于 向 用 户 提 供 自主 领取 CPC 或 交还 CPC 并 缴费 等 服务 的 设备 。
+
+2.1.18 PCI 密码 卡 “PCI cryptocard
+基于 PCI 或 PCI-E 接口 的 一 种 密码 卡 ， 可 模拟 多 张 独立 的 PSAM 卡 。
+
+2.1.19 便携 式 收费 终端 “portable collection terminal
+能 支持 ETC 和 MTC 的 便携 式 收 费 设 备 。
+

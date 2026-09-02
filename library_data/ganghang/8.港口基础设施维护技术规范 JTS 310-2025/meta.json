@@ -1,0 +1,100 @@
+{
+  "id": "8.港口基础设施维护技术规范 JTS 310-2025",
+  "title": "港口基础设施维护技术规范 JTS 310-2025",
+  "std_no": "",
+  "version": "",
+  "file": "ganghang/8.港口基础设施维护技术规范 JTS 310-2025.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\ganghang\\8.港口基础设施维护技术规范 JTS 310-2025.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\ganghang\\8.港口基础设施维护技术规范 JTS 310-2025.pdf",
+  "pages": 66,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 66,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-09-01 20:38:30",
+  "pdf_mtime": "2026-09-01 20:38:30",
+  "source_mtime_ns": 1788266310829977800,
+  "source_size": 9682341,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 66
+  },
+  "indexed_at": "2026-09-01 23:13:32",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术 语",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "维护 计划",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "设施 检查",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "检测 评 佑",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "设施 维修",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "技术 档案",
+      "start": 23,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 85,
+  "status": "indexed",
+  "note": ""
+}

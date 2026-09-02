@@ -1,0 +1,35 @@
+公路 工程 智慧 工地 建设 技术 指南 (JTGZT 3603 一 2026 )
+续 表 C. 0. 11
+名 称 玮 堰 施工 监测 参数 采集
+参数 名 称 参数 类 型 是 否 必须 (YAN)
+土 压 力 Float 了
+水 流 压力 Ploat 立
+浮力 Ploat 立
+支撑 结构 内 力 Float Y
+水 流速 度 Float Y
+浪 高 Float Y
+C.0.12 塔 、 墩 、 缆 、 索 施工 参数 宜 按 表 C. 0. 12 采集
+表 C.0.12 塔 、 墩 、 缆 、 索 施工
+名 称 和 斜 拉 索 4 费 索 施工 参数 采集
+参数 名 称 参数 类 型 是 否 必须 (YAN)
+主 梁 线形 sing Y
+生 索 力 Float Y
+温度 ElOat TY
+名 称 索 塔 施工 参数 采集
+参数 名 称 参数 类 型 是 否 必须 (YAN)
+风力 了 oat Y
+防护 完好 性 String Y
+线形 String Y
+控制 截面 应 为 Float Y
+名 称 疏 模 施工 参数 采集
+参数 各 称 参数 类 型 是 否 必须 〈YZN)
+模板 沉降 Float Y
+模板 侧 压力 Float Y
+疏 模 油缸 压力 Float Y
+同步 性 String 立
+行程 Float TY
+速度 Float Y
+衍 载 Float Y
+
+C.0.13 ” 销 爆 隧道 参数
+

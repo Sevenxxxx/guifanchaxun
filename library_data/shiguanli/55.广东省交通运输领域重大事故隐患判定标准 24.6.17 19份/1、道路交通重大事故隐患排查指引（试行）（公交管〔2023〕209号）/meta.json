@@ -1,0 +1,51 @@
+{
+  "id": "1、道路交通重大事故隐患排查指引（试行）（公交管〔2023〕209号）",
+  "title": "道路交通重大事故隐患排查指引（试行）",
+  "std_no": "公交管〔2023〕209号",
+  "version": "2023",
+  "file": "shiguanli/55.广东省交通运输领域重大事故隐患判定标准 24.6.17 19份/1、道路交通重大事故隐患排查指引（试行）（公交管〔2023〕209号）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\55.广东省交通运输领域重大事故隐患判定标准 24.6.17 19份\\1、道路交通重大事故隐患排查指引（试行）（公交管〔2023〕209号）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\55.广东省交通运输领域重大事故隐患判定标准 24.6.17 19份\\1、道路交通重大事故隐患排查指引（试行）（公交管〔2023〕209号）.pdf",
+  "pages": 2,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 2,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:14:49",
+  "pdf_mtime": "2025-02-14 18:14:49",
+  "source_mtime_ns": 1739528089000000000,
+  "source_size": 205163,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:23:14",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

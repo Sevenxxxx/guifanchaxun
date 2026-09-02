@@ -1,0 +1,19 @@
+收费 公路 联网 收费 技术 标准 (JTG 6310 一 2022 )
+
+SSH 一 一 安全 外 壳 〈Secure Shell ) ;
+
+TAC 交易 认证 码 (Transaction Authorization Cryptogram ) ;
+
+TCP 一 一 传输 控制 协议 〈Transmission Control Protocol ) ;
+
+TPS 一 一 每 秒 处 理 的 事务 数目 (Transactions Per Second ) ;
+
+UPS 司 断 电源 〈Uninterruptible Power Supply ) ;
+
+USB 通用 串 行 总 线 (Universal Serial Bus ) ;
+VLAN 一 一 虚拟 局 域 网 (Virtual Local Area Network ) ;
+VPDN 一 一 虚拟 拨号 专用 网 络 〈Virtual Private Dial-up Network ) ;
+3DES 一 一 三 重 数据 加 密 标 准 (Triple Data Encryption Standard ) 。
+
+福
+

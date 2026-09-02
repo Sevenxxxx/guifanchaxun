@@ -1,0 +1,79 @@
+{
+  "id": "135-公路工程概算定额-JTGT3831-2018",
+  "title": "135-公路工程概算定额-JTGT3831-2018",
+  "std_no": "",
+  "version": "",
+  "file": "135-公路工程概算定额-JTGT3831-2018.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\135-公路工程概算定额-JTGT3831-2018.pdf",
+  "pages": 439,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 439,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:38:28",
+  "indexed_at": "2026-08-26 03:36:18",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 439
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "7",
+      "title": "第7章",
+      "start": 129,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "4",
+      "title": "第4章",
+      "start": 131,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "1",
+      "title": "第1章",
+      "start": 411,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "8",
+      "title": "第8章",
+      "start": 411,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "13",
+      "title": "第13章",
+      "start": 411,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "15",
+      "title": "第15章",
+      "start": 411,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 29,
+  "status": "indexed",
+  "note": ""
+}

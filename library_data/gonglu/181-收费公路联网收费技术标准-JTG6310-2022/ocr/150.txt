@@ -1,0 +1,63 @@
+OBU 技术 要 求
+
+3 GetTollData 原 语 用 于 完成 OBU 和 RSU 之 间 的 双向 认证 ， 并 可 对 返回 的 信息 进
+行 完 整 性 保护 。GetTollData 默认 获取 OBU 中 “ETC 应 用 车 辆 信息 文件 ”，“ 信 /出口 信
+息 文 件 ” 根 据 实 际 应 用 场景 可 选 。
+
+1 ) CetTollData. request 参数 要 求 应 符合 表 本 4.3-2 的 规定 。
+
+表 J. 4.3-2 GetTollData. request 参数 要 求
+参 数 取 值 参数 说 明
+mode TRUE 确认 模式 ， 需 应 答
+did Dsrc-DID FTC 应 用 等 于 1
+actionType 5 等 于 5
+accessCredentials OCTET STRING (SIZE (0..127，... ) ) 所 选
+GetTollDataRq:: =SEQUENCE |
+fIBIT BIT STRING (SIZE (4) ) 填充 位
+transType OCTET STRING (SIZE (1) ) 交易 类 型
+vehicleInfo RangeOfFile 待 读 取 的 车 辆 信息 范围
+actionParameter tollInfo RangeOfFile OPTIONAL 待 读 取 的 过 站 信息 范围
+rndRSE Rand OPTIONAL 随 初 数 ， 若 存在 O0BU 响应 authenticator
+keyIdForAC INTECER (0..255) OPTIONAL 访问 许可 认证 密 钥 标 识
+keyIdForAuthen INTEGER (0..255) QETIONAT 信息 鉴别 密 钥 版 本
+|
+iid 一 不 存在
+注 : 1. accessCredentials RSU 对 8 字 节 mdOBE 加 密 计算 得 到 ， 计算 方法 参见 《电子 收费 专用 短程 通信 第
+4 部 分 : 设备 应 用 层 》(GBXT20 呈 二 4 一 20f9) 中 “8 访问 许可 ””
+2. RangeOfFile 的 ASN. 1 定 交 如下:
+RangeOffile:， = SEQUENCEM4
+offset INTECER (0 .32767 水 .. ) ， 侍 读 取 偏 移 遇
+length INTEGCEKR (04/127，... ) 立 读 取 长 度
+|
+2) GetToHpDaid. 论 signse 参数 要 求 应 符合 表 本 4.3-3 的 规定 。
+表 汪 4.3-3 GetTollData. response 参数 要 求
+参 / 王 取 值 参数 说 明
+did Dsrc-DID ETC 应 用 对 应 1
+GetTollDataRs:: =SEQUENCE |
+fIBIT BIT STRING (SIZE (6)) 填充 位
+vehicleInfo File 车 辆 信息
+TesponseParameter . AL
+tollInfo File OPTIONAL 过 站 信息
+authenticator ”OCTET STRING (SIZE (8) ) OPTIONAL 鉴别 码
+|
+iid 一 不 存在
+ret ReturnStatus 必 备
+注 :， authenticator 可 用 于 RSU 对 OBU 的 身份 认证 ， 同 时 对 车 辆 信息 和 过 站 信息 (可 选 ) 进行 完整 性 保护 。
+
+authentic ator 的 订
+
+[ 算 域 为 车 辆 信息 〈vehiclemnfo) 和 待 读
+
+参见 《电子 收费
+
+专
+
+短程 通信 第 4 部 分 : 设备 应
+
+层 》(GBXT 20851. 4 一 2019)
+
+一 143 一
+
+取 的 本 次 过 站 信息 (tollinfo， 如 果 存 在 ) 。 计 算 方 法
+
+PP“8.3 信息 鉴别 ”。

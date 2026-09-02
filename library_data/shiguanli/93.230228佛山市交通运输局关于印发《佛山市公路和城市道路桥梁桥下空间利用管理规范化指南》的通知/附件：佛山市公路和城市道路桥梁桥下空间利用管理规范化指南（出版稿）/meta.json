@@ -1,0 +1,86 @@
+{
+  "id": "附件：佛山市公路和城市道路桥梁桥下空间利用管理规范化指南（出版稿）",
+  "title": "附件：佛山市公路和城市道路桥梁桥下空间利用管理规范化指南",
+  "std_no": "出版稿",
+  "version": "",
+  "file": "shiguanli/93.230228佛山市交通运输局关于印发《佛山市公路和城市道路桥梁桥下空间利用管理规范化指南》的通知/附件：佛山市公路和城市道路桥梁桥下空间利用管理规范化指南（出版稿）.docx",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\93.230228佛山市交通运输局关于印发《佛山市公路和城市道路桥梁桥下空间利用管理规范化指南》的通知\\附件：佛山市公路和城市道路桥梁桥下空间利用管理规范化指南（出版稿）.docx",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\93.230228佛山市交通运输局关于印发《佛山市公路和城市道路桥梁桥下空间利用管理规范化指南》的通知\\附件：佛山市公路和城市道路桥梁桥下空间利用管理规范化指南（出版稿）.docx",
+  "pages": 34,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 34,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9842,
+    "punct_median": 0.0034,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-08-25 20:19:00",
+  "pdf_mtime": "2025-08-25 20:19:00",
+  "source_mtime_ns": 1756124340000000000,
+  "source_size": 3332114,
+  "fmt": "docx",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:28:20",
+  "toc_zone_end": 3,
+  "offset": -5,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "3",
+      "title": "第3章",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "4",
+      "title": "施工方案要点",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "5",
+      "title": "管理措施及应急预案要点",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "6",
+      "title": "桥下空间利用安全风险分析",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "7",
+      "title": "附件",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "8",
+      "title": "第8章",
+      "start": 25,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 38,
+  "status": "indexed",
+  "note": ""
+}

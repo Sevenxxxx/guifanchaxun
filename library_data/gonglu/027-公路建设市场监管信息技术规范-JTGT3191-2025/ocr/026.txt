@@ -1,0 +1,35 @@
+公路 建设 市 场 监管 信息 技术 规范 (JTGXT 3191 一 2025 )
+
+续 表 A. 1. 1-$
+
+序 、 数据 是 否
+号 中 文 名 称 字段 名 称 说 明 类 弄 数据 格式 值 域 必 填
+5 评定 日 期 evahuate date | 日 日 期 型 YYYYMMDD 是
+
+、 . 资质 证 书 上 的
+6 发 证 日 期 issue_date 发 证 日 期 日 期 型 YYYYMMDD 是
+
+、 资质 证 书 上 的
+7 换 证 日 期 renewal_date 换 证 日 基 日 期 型 YYYYMMDD 是
+
+. 资质 证 书 上 有
+
+8 | ”有效期 截至 valid_end_date 效 期 向 止 日 基 日 期 型 YYYXMMDD 是
+9 状态 data_state 存续 ;撤销 吊
+
+销 ; 注
+
+一 22 一
+
+2 Project_name 项 目 名 称 字符 型 an. . 256 是
+3 合同 段 名 称 segment_name 合同 段 名 称 字符 型 an. . 296 是
+总 包 已 建 .总
+4 建设 状态 project_status 建设 状态 字符 型 an. . 50 包 在 建 . 分 包 已 | 是
+建 、 分 包 在 建
+项 目 所 属 省 级
+属 省 级 行 Vince_code s an. .
+5 | 所 属 省 级 行政 区 | province_cod 行政 区 字符 型 50 是
+设计 单位 统一 -
+6 社会 信用 代码 credit_code 字符 型 an .18 是
+7 | 设计 单位 名 称 | company_name | 设计 单位 字符 型 an. . 256 是
+

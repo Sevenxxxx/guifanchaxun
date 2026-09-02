@@ -1,0 +1,100 @@
+{
+  "id": "4.CJJ 194-2013 城市道路路基设计规范",
+  "title": "CJJ 194-2013 城市道路路基设计规范",
+  "std_no": "",
+  "version": "",
+  "file": "gongcheng/4.CJJ 194-2013 城市道路路基设计规范.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gongcheng\\4.CJJ 194-2013 城市道路路基设计规范.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gongcheng\\4.CJJ 194-2013 城市道路路基设计规范.pdf",
+  "pages": 70,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 70,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-09-01 20:38:18",
+  "pdf_mtime": "2026-09-01 20:38:18",
+  "source_mtime_ns": 1788266298678235300,
+  "source_size": 20893059,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 70
+  },
+  "indexed_at": "2026-09-01 23:22:47",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "第1章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "一 般 路 基",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "路 基 排 水",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "路 基 防 护 与 支 挡",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "第7章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "第8章",
+      "start": 36,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 204,
+  "status": "indexed",
+  "note": ""
+}

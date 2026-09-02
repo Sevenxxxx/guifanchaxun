@@ -1,0 +1,233 @@
+{
+  "id": "3.CJJ 193-2012 城市道路路线设计规范",
+  "title": "CJJ 193-2012 城市道路路线设计规范",
+  "std_no": "",
+  "version": "",
+  "file": "gongcheng/3.CJJ 193-2012 城市道路路线设计规范.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gongcheng\\3.CJJ 193-2012 城市道路路线设计规范.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gongcheng\\3.CJJ 193-2012 城市道路路线设计规范.pdf",
+  "pages": 117,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 117,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 1.0,
+    "punct_median": 0.0435,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.222,
+    "clause_hits": 174
+  },
+  "source_mtime": "2026-09-01 20:38:12",
+  "pdf_mtime": "2026-09-01 20:38:12",
+  "source_mtime_ns": 1788266292645905900,
+  "source_size": 6185677,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 23:04:27",
+  "toc_zone_end": 7,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "",
+      "title": "封面",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "",
+      "title": "公告",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "",
+      "title": "前言",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "",
+      "title": "目次",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "1",
+      "title": "总则",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "2",
+      "title": "术语和符号",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "3",
+      "title": "基本规定",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "4",
+      "title": "总体设计",
+      "start": 18,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "5",
+      "title": "横断面设计",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "6",
+      "title": "平面设计",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "7",
+      "title": "纵断面设计",
+      "start": 37,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "8",
+      "title": "线形组合设计",
+      "start": 41,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "9",
+      "title": "道路与道路交叉",
+      "start": 45,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "10",
+      "title": "道路与轨道交通线路交叉",
+      "start": 49,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "",
+      "title": "本规范用词说明",
+      "start": 53,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "",
+      "title": "引用标准名录",
+      "start": 54,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "",
+      "title": "目次",
+      "start": 57,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "1",
+      "title": "总则",
+      "start": 59,
+      "is_expl": false
+    },
+    {
+      "no": 19,
+      "label": "2",
+      "title": "术语和符号",
+      "start": 60,
+      "is_expl": false
+    },
+    {
+      "no": 20,
+      "label": "3",
+      "title": "基本规定",
+      "start": 61,
+      "is_expl": false
+    },
+    {
+      "no": 21,
+      "label": "4",
+      "title": "总体设计",
+      "start": 66,
+      "is_expl": false
+    },
+    {
+      "no": 22,
+      "label": "5",
+      "title": "横断面设计",
+      "start": 72,
+      "is_expl": false
+    },
+    {
+      "no": 23,
+      "label": "6",
+      "title": "平面设计",
+      "start": 80,
+      "is_expl": false
+    },
+    {
+      "no": 24,
+      "label": "7",
+      "title": "纵断面设计",
+      "start": 93,
+      "is_expl": false
+    },
+    {
+      "no": 25,
+      "label": "8",
+      "title": "线形组合设计",
+      "start": 98,
+      "is_expl": false
+    },
+    {
+      "no": 26,
+      "label": "9",
+      "title": "道路与道路交叉",
+      "start": 102,
+      "is_expl": false
+    },
+    {
+      "no": 27,
+      "label": "10",
+      "title": "道路与轨道交通线路交叉",
+      "start": 109,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 437,
+  "status": "indexed",
+  "note": ""
+}

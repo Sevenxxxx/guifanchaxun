@@ -1,0 +1,107 @@
+{
+  "id": "083-公路瓦斯隧道设计与施工技术规范-JTGT3374-2020",
+  "title": "083-公路瓦斯隧道设计与施工技术规范-JTGT3374-2020",
+  "std_no": "",
+  "version": "",
+  "file": "083-公路瓦斯隧道设计与施工技术规范-JTGT3374-2020.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\083-公路瓦斯隧道设计与施工技术规范-JTGT3374-2020.pdf",
+  "pages": 99,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 99,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 0.9284,
+    "punct_median": 0.0157,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.667,
+    "clause_hits": 128
+  },
+  "pdf_mtime": "2026-08-25 22:31:03",
+  "indexed_at": "2026-08-26 02:07:31",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 99
+  },
+  "toc_zone_end": 6,
+  "offset": 6,
+  "toc_source": "clause_cluster",
+  "expl_start": 69,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "2",
+      "title": "木 语",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "4",
+      "title": "勘察",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "5",
+      "title": "设计",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "6",
+      "title": "超前 地 质 预报",
+      "start": 35,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "7",
+      "title": "施工 通风 、 瓦 斯 检测 与 监测",
+      "start": 39,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "8",
+      "title": "钻 爆 作业",
+      "start": 47,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "9",
+      "title": "电气 设备 与 作业 机 械",
+      "start": 53,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "10",
+      "title": "揭 煤 防 突",
+      "start": 60,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 69,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 212,
+  "status": "indexed",
+  "note": ""
+}

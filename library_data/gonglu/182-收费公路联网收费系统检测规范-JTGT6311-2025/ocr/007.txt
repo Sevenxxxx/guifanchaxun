@@ -1,0 +1,25 @@
+收费 公路 联网 收费 系统 检测 规范 (JTGXT 6311 一 2025 )
+
+2 术语 和 符号
+
+2.1 术语
+
+2.1.1 符合 性 检验 compliance inspection
+对 用 于 收费 公路 联网 收费 系统 的 关键 设备 抽取 样本 ， 利 前 省
+收费 公路 联网 收费 相关 标准 规定 的 检验 。 |
+
+为 评定 各 级 联网 收费 系统 是 香 生 答
+进行 的 检测 。 Ma
+
+BST 一 -一 信 标 服务 表 (Beacon Service Table) ;
+COS 一 一 卡片 操作 系统 (Chip Operating System ) ;
+CPC 一 一 复合 通行 卡 〈Compound Pass Card ) ;
+DPA 一 一 差分 功 耗 分 析 (Differential Power Analysis ) ;
+DSRC 一 一 专用 短程 通信 (Dedicated Short Range Communication ) ;
+ETC 一 一 电子 不 停车 收费 (了 ectronic Toll Collection ) ;
+IC 一 一 集成 电路 〈Integrated Circuit ) ;
+MTC 一 一 人 工 收费 (Manual Toll Collection ) ;
+OBE 一 一 车 载 设备 (On Board Equipment ) ;
+0BU 一 一 车 载 单元 (On Board Unit) ;
+
+一 2 一

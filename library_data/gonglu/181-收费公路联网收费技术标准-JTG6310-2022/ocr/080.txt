@@ -1,0 +1,116 @@
+发 行 流程
+
+B.0.4 单 片 式 0BU 二 次 发 行 流程 应 符合
+
+访问 许可 认证 数据
+
+B. 0. 4 的 规定 。
+
+单 片 式 OBU 二 发 系统 | [部 级 在 线 密 钥 管 理 与 服务 平台
+
+激活 OBU(BST)
+
+| 预 设 合同 签署 日 期 、 到 期
+日 期 以 及 车 牌号 、 车牌 颜
+
+建立 链 路 (VST, 携带 随机 数 )
+
+色 等 个 人 化 信息
+
+访问 许可 认证 数据
+(TransferChannel .rq)
+
+请 求 访问 许可
+访问 许可 认证 数据
+
+|
+
+返回 访问 许可 认证 结果
+
+| 返回 访问 许可 认证 结果
+-| (ransferChannel.rs)
+
+取 4 字 节 随 机 数
+
+取 4 字 节 随 机 数
+CTransfEerChanhcl rd
+
+返回 4 字 节 随机 数
+
+4 字 节 随机 数 返 回应 管
+
+更 新 车 辆 信息 文件
+
+(TransferChannel.rs)
+
+以 合同 序列 号 为 分 散 因 子 ，
+
+更 新 车 辆 信息 文件
+(TransferChannel.rq)
+
+更 新 车 辆 信息 文件 返回
+
+ME 选择 返回
+
+|
+
+更 新 车 辆 信息 文件 返回 应 答
+(TransferChannel rs)
+
+选择 MF
+(TransferChannel ,zd)
+
+返回 MAC
+
+ME 选择 应 和
+
+取 4 字 节 随 机 数
+
+(TransfertChannel.ri
+
+天 4 过 前 随 机 灶
+
+CIramsferCha
+
+返回 4 字 节 随机 数
+
+3 节 随 名 吉 返回 应 答
+TransferChannel， TS
+
+更 新 系统 信息 文件
+
+| 更 新 系统 信息 文件 返
+
+以 合同 序列 号 为 分 散 因子 ，
+
+公章 乏 月 基 、 合同 其 下 明和 OBU
+拆 邑 状态 (TransferCharimelsrq) 上-
+
+更 新 系统 信息 文 株 返 回应 答
+(Trans 人 IEhanneF.IS)
+
+更 浙 OBE-SAM 系 统 信息 文件 中 的
+
+返回 MAC
+
+"| 正式 应 明 维 护 密 钥 计算 MAC
+
+中正 式 系统 维护 密 铀 计算 MAC
+
+| ，
+用 尺 提 示 (SetRMI.rq)
+
+用 户 提示 返回 (SetMMI.rs )
+
+激活 MMI
+
+链 路 释放
+
+(Event_Report)
+
+B.0.4 上
+
+[生成 二 次 发 行 记 录 ]
+
+单 片 式 OBU 二 次 发 行 流程
+

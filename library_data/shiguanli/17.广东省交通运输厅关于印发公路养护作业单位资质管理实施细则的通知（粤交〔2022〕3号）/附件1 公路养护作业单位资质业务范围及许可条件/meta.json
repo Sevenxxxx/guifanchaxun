@@ -1,0 +1,51 @@
+{
+  "id": "附件1 公路养护作业单位资质业务范围及许可条件",
+  "title": "附件1 公路养护作业单位资质业务范围及许可条件",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/17.广东省交通运输厅关于印发公路养护作业单位资质管理实施细则的通知（粤交〔2022〕3号）/附件1 公路养护作业单位资质业务范围及许可条件.xlsx",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\17.广东省交通运输厅关于印发公路养护作业单位资质管理实施细则的通知（粤交〔2022〕3号）\\附件1 公路养护作业单位资质业务范围及许可条件.xlsx",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\17.广东省交通运输厅关于印发公路养护作业单位资质管理实施细则的通知（粤交〔2022〕3号）\\附件1 公路养护作业单位资质业务范围及许可条件.xlsx",
+  "pages": 7,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 7,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 1.0,
+    "punct_median": 0.0,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:15:57",
+  "pdf_mtime": "2025-02-14 18:15:57",
+  "source_mtime_ns": 1739528157000000000,
+  "source_size": 14637,
+  "fmt": "xlsx",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:19:14",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

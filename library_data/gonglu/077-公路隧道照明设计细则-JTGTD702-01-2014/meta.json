@@ -1,0 +1,114 @@
+{
+  "id": "077-公路隧道照明设计细则-JTGTD702-01-2014",
+  "title": "077-公路隧道照明设计细则-JTGTD702-01-2014",
+  "std_no": "",
+  "version": "",
+  "file": "077-公路隧道照明设计细则-JTGTD702-01-2014.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\077-公路隧道照明设计细则-JTGTD702-01-2014.pdf",
+  "pages": 52,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 52,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:26:20",
+  "indexed_at": "2026-08-26 01:49:11",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 52
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "2",
+      "title": "术语 和 符号 4",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "4",
+      "title": "入 口 段 照明 .Ne 14",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "6",
+      "title": "中 间 段 照明 .pt 22",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "8",
+      "title": "应急 照 明 与 洞 钛 引 道 照 明 . 基 et 27",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "9",
+      "title": "节能 标准 与 措施 .pp 29",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "10",
+      "title": "照明 计算 .ee 35",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "1",
+      "title": "总 则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "3",
+      "title": "一般 规 定",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "5",
+      "title": "过 渡 段 照明",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "7",
+      "title": "出 口 段 照 明",
+      "start": 32,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "11",
+      "title": "照明 控制 设计 原则",
+      "start": 45,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 108,
+  "status": "indexed",
+  "note": ""
+}

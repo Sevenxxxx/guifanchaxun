@@ -1,0 +1,93 @@
+{
+  "id": "050-盐渍土地区公路路基设计与施工技术细则-JTGT3331-08-2022",
+  "title": "050-盐渍土地区公路路基设计与施工技术细则-JTGT3331-08-2022",
+  "std_no": "",
+  "version": "",
+  "file": "050-盐渍土地区公路路基设计与施工技术细则-JTGT3331-08-2022.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\050-盐渍土地区公路路基设计与施工技术细则-JTGT3331-08-2022.pdf",
+  "pages": 78,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 78,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:21:23",
+  "indexed_at": "2026-08-26 01:11:42",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 78
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "4",
+      "title": "第4章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "5",
+      "title": "第5章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "6",
+      "title": "第6章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "7",
+      "title": "路基 拓 宽 改 建 .pe 4",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "10",
+      "title": "第10章",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "3",
+      "title": "工程 地 质 勘 察",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "1",
+      "title": "设 隔断 层 时 ， 路 基 基 小 高 度 应 满 本 细",
+      "start": 40,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 204,
+  "status": "indexed",
+  "note": ""
+}

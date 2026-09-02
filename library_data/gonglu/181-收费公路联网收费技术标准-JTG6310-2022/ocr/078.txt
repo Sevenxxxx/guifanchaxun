@@ -1,0 +1,102 @@
+发 行 流程
+
+B. 0.2 双 片 式 OBU 及 多 逻辑 通道 OBU 的 OBE-SAM 通道 二 次 发 行 流程 应 符合
+
+的 规定 。
+
+冬
+
+B. 0.2
+
+| oBU 二 发 系统 | | 部 级 在 线 密 钥 管理 与 服务 平台
+
+| ” 预 设 合 同 签 将 日 期 、 到
+| 期 日 期 以 及 车 牌号 .车
+牌 颜色 等 个 人 化 信息
+
+淫 活 OBUCBST)
+建立 链 路 (VST)
+
+选择 MEF
+CIransferChannel.rq)
+
+选择 DF0] 有 目录
+
+ME 选择 应 答
+(TransferChannel.rs)
+
+选择 DF01 应 用 目录
+CIransferChannel.rq)
+
+目录 选择 返回
+
+目录 选择 应 答
+
+取 4 字 节 随 机 数 下
+
+(TransferChannel .rs)
+
+取 4 字 节 随 机 数
+CIransferChannel.rq)
+
+|
+
+返回 4 字 节 随机 数
+
+4 字 节 随 机 数 返 回应 答
+.| (TransferChannel.rs)
+
+以 合同 序列 号 为 分 散 因子 ，
+
+更 新 车 辆 信息 文件
+
+正式 应 用 维护 密 钥 计算 MAG|
+返回 MAC
+
+更 新 车 辆 信息 文件
+(TransferChannel.zd)
+
+更 新 车 辆 信息 文件 返回 | (TransferGRanhelers)
+
+更 新 车 辆 信息 文件 返回 永 答
+
+选择 MF
+
+选择 ME
+(TransferCharmelsyg)
+
+MEF 选 择 返 回
+
+下 F 选 择 应 答
+
+取 4 字 节 随 机 数
+
+(fraiisfeeChannel.rs)
+
+”到 等 节 随 机 数 人
+(IransfgrChannglL mg)
+
+返回 4 字 节 随 椒 数
+
+4 字 节 随机 数 返 回应 答
+人 以 合同 序列 号 为 分 散 因子 ，
+
+更 新 系统 信息 文 视 /|OBU 拆 印 状态
+更 新 系统 信息 六 件 返回
+
+更 茵 OBE-SAM 系 顷 信 息 文 作 中 的 半生 和 区 二
+
+全 向
+
+更 新 系统 信息 文件 返回 应 答
+(TransfeaChannel.rS)
+
+用 户 提 示 (SetMMI.rq)
+
+链 路 释放
+(Event _Reporb
+
+生成 二 次 发 行 记录
+
+图 B. 0.2 ” 双 片 式 OBU 及 多 逻辑 通道 OBU 的 OBE-SAM 通道 二 次 发 行 流程
+

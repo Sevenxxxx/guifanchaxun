@@ -1,0 +1,33 @@
+ASN. 1 消息 集
+
+eventIType EventType ，
+-- 子 场景
+vehicleInfo VehicleInfo OPTIIONAL，
+-- 车 辆 信息
+dangerousCoodsStateInfo DangerousCoodsStateInfo OPTIONAL，
+-- 和 危险 品 货物 状态 信息
+riskyDrivingBehavior RiskyDrivingBehavior OPIIONAL，
+-- 不 良 驾 驶 行为
+hciSupType HciResType OPIIONAL ，
+
+--0OBU 支持 的 人 机 交互 类 型
+description Descrniption OPIIONAL，
+
+-= 描述 信息
+
+|
+HistoryPositionList; ， = SEQUENCE (SIZE
+HistoryPosition: ， = SEQUENCE |
+fill BIT STRING (SIZE (4
+
+EtcBinaryImformation : :， = SEQUENCE |
+fillBIT STRING (SIZE (3) ) ，
+idMsg IdFrameType，
+-- 消 息 也， 防止 相同 消息 重复 接收
+binaryFrame EtcBinary ，
+
+-- 二 进 制 数 据
+
+|
+SleepTimeIndication: : = SEQUENCE |
+fillBIT STRING (SIZE (6) ) ，

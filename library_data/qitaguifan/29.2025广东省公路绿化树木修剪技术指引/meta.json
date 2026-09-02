@@ -1,0 +1,114 @@
+{
+  "id": "29.2025广东省公路绿化树木修剪技术指引",
+  "title": "2025广东省公路绿化树木修剪技术指引",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/29.2025广东省公路绿化树木修剪技术指引.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\29.2025广东省公路绿化树木修剪技术指引.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\29.2025广东省公路绿化树木修剪技术指引.pdf",
+  "pages": 23,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 23,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9629,
+    "punct_median": 0.0334,
+    "empty_ratio": 0.077,
+    "bad_ratio": 0.375,
+    "clause_hits": 22
+  },
+  "source_mtime": "2025-05-30 19:58:49",
+  "pdf_mtime": "2025-05-30 19:58:49",
+  "source_mtime_ns": 1748606329000000000,
+  "source_size": 2626211,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:10:58",
+  "toc_zone_end": 3,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "规范性引用文件",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "术语与定义",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "树木修剪基础",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "公路绿化树木修剪要求",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "不同类型乔木的修剪方法",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "不同类型灌木的修剪方法",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "特殊情形的树木修剪要求",
+      "start": 18,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "安全作业",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "",
+      "title": "参考文献",
+      "start": 22,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 88,
+  "status": "indexed",
+  "note": ""
+}

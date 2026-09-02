@@ -1,0 +1,44 @@
+ASN. 1 消息 集
+
+FicBinaryInfo: : =SEQOUENCE |
+fill BIT STRING (SIZE (4) ) ，
+
+eventScen EnumerationDataType ，
+
+-一 应 用 场景
+
+eventType EventType，
+
+-- 子 场景
+dataType DataType，
+
+-- 数 据 的 类 型 , 1: 图 片 , 2: 音频 ，3: 视频
+name OCTET STRINC (SIZE (1..253) ) OPIIONA
+
+-= 文件 名 ，GB2312 编码 方式
+totalSize DataSize ，
+
+-- 数 据 的 总 长 度
+
+maxFrameDataLen DataSize ，
+
+-- 分 包 长 度
+
+|
+Description :: =CHOICE |
+
+Ts STRING (SIZE (1..236) )
+|
+
+DescriptionCB2312 :: = SEQUENCE |
+fil BIT STRING (SIZE (6) ) ，
+text OCTET STRING (SIZE (1. .256) )
+
+|
+FEtcBinaryData: : = SEQUENCE |
+fill BIT STRING (SIZE (4) ) ，
+dataOffset DataSize ，
+-- 当前 数据 的 偏 移 ， 从 0 开始
+dataSize DataSize ，
+
+-- 当前 数据 的 长 度 ， 最 长 4096

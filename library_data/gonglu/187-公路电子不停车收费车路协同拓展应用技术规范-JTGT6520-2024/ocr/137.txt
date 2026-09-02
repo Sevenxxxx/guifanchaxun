@@ -1,0 +1,54 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGZT 6520 一 2024 )
+
+4) 测试 系统 接收 并 保存 以 上 VST， 分 析 接 收 到 的 VST 数据 是 否 正 确 ， 各 个 数据 位
+是 否 正 确 。
+
+5) 验证 被 测 OBU2. 0 响应 是 否 正确 。
+
+4 GetSecure 检测 步骤 应 符合 下 列 规 定 :
+
+1) 设置 测试 系统 发 送 BST。
+
+2) 被 测 O0BU2. 0 接收 BST， 确 认 其 正确 性 ， 并 返回 VST。
+
+3) 测试 系统 接收 来 自 被 测 OBU2.0 的 VST， 判 断 VST 的 正确 性 ， 并 登记 其 MAC
+地 址 。
+
+4) 测试 系统 发 送 GetSecure. request 读 取 车 辆 信息 文件 。
+
+S) 被 测 OBU2. 0 接收 测试 系统 发 送 的 GetSecure. Tequest 并 返 到 中 册 ecure. response 。
+
+6) 测试 系统 接收 数据 ， 判 断 接收 到 的 GelSecure response 数据 内 容 是 否 正确 。
+
+7) 验证 安全 机 制 是 否 正确 。 一
+
+8) 验证 被 测 OBU2. 0 响应 是 否 正确 。
+
+5 TrafficInfo 检测 步骤 应 符合 下 列 规定 :
+
+1 ) 发 置 测试 系统 发 送 BST。
+
+地 址 。
+
+ICSponseo
+
+6) 吏 试 和 统 接 上 多
+
+红 测 DuU2> 2.0 接收 BST， 确 认 其 正确 性 ， 并 返回 VST。
+
+3) 测试 系统 接收 来 自 被 测 OBU2.0 的 VST， 判 断 VST 的 正确 性 ， 并 登记 其 MAC
+地 址 。
+
+4) 测试 系统 发 送 TransferChannel. Tequest。
+
+S$) 被 测 OBU2. 0 接收 来 自 测 试 系统 发 送 的 TransferChannel. Tequest 并 返回 Transfer-
+Channel. response。
+
+6) 测试 系统 接收 数据 ， 判断 接收 到 的 TransferChannel Tesponse 数据 及 内 容 是 否
+正确 D
+
+7) 需要 安全 认证 的 验证 安全 认证 是 否 正确 。
+
+8) 验证 被 测 OBU2. 0 响应 是 否 正确 。
+
+一 132 一

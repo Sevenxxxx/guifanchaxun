@@ -1,0 +1,51 @@
+{
+  "id": "2.关于印发《公路桥梁养护管理工作制度》的通知（交公路发〔2007〕336号）",
+  "title": "关于印发《公路桥梁养护管理工作制度》的通知",
+  "std_no": "交公路发〔2007〕336号",
+  "version": "2007",
+  "file": "shiguanli/2.关于印发《公路桥梁养护管理工作制度》的通知（交公路发〔2007〕336号）.docx",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\2.关于印发《公路桥梁养护管理工作制度》的通知（交公路发〔2007〕336号）.docx",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\2.关于印发《公路桥梁养护管理工作制度》的通知（交公路发〔2007〕336号）.docx",
+  "pages": 18,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 18,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.994,
+    "punct_median": 0.0,
+    "empty_ratio": 0.333,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-08-20 21:05:24",
+  "pdf_mtime": "2025-08-20 21:05:24",
+  "source_mtime_ns": 1755695124000000000,
+  "source_size": 31916,
+  "fmt": "docx",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:34:44",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

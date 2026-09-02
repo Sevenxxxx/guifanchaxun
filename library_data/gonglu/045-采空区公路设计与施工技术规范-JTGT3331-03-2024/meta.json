@@ -1,0 +1,100 @@
+{
+  "id": "045-采空区公路设计与施工技术规范-JTGT3331-03-2024",
+  "title": "045-采空区公路设计与施工技术规范-JTGT3331-03-2024",
+  "std_no": "",
+  "version": "",
+  "file": "045-采空区公路设计与施工技术规范-JTGT3331-03-2024.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\045-采空区公路设计与施工技术规范-JTGT3331-03-2024.pdf",
+  "pages": 115,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 115,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:21:06",
+  "indexed_at": "2026-08-26 00:59:50",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 115
+  },
+  "toc_zone_end": 5,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "10",
+      "title": "第10章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "采 空 区 勘察",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "和 采 空 区 稳定 性 评价",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "采 空 区 公路 设计",
+      "start": 39,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "第6章",
+      "start": 46,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "采 空 区 处 治 施 工",
+      "start": 65,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "和 采 空 区 处 治 监 测 与 检测",
+      "start": 77,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 154,
+  "status": "indexed",
+  "note": ""
+}

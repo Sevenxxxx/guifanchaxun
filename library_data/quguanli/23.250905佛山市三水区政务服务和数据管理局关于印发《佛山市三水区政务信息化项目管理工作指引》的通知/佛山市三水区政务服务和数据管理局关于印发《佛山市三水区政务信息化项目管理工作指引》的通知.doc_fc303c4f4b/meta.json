@@ -1,0 +1,93 @@
+{
+  "id": "佛山市三水区政务服务和数据管理局关于印发《佛山市三水区政务信息化项目管理工作指引》的通知.doc_fc303c4f4b",
+  "title": "佛山市三水区政务服务和数据管理局关于印发《佛山市三水区政务信息化项目管理工作指引》的通知.doc",
+  "std_no": "",
+  "version": "",
+  "file": "quguanli/23.250905佛山市三水区政务服务和数据管理局关于印发《佛山市三水区政务信息化项目管理工作指引》的通知/佛山市三水区政务服务和数据管理局关于印发《佛山市三水区政务信息化项目管理工作指引》的通知.doc.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\23.250905佛山市三水区政务服务和数据管理局关于印发《佛山市三水区政务信息化项目管理工作指引》的通知\\佛山市三水区政务服务和数据管理局关于印发《佛山市三水区政务信息化项目管理工作指引》的通知.doc.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\23.250905佛山市三水区政务服务和数据管理局关于印发《佛山市三水区政务信息化项目管理工作指引》的通知\\佛山市三水区政务服务和数据管理局关于印发《佛山市三水区政务信息化项目管理工作指引》的通知.doc.pdf",
+  "pages": 9,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 9,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9797,
+    "punct_median": 0.007,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.25,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-09-08 20:42:12",
+  "pdf_mtime": "2025-09-08 20:42:12",
+  "source_mtime_ns": 1757335332000000000,
+  "source_size": 254203,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:06:45",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "",
+      "title": "佛山市三水区政务服务和数据管理局关于印发《佛山市三水区政务信息化项目管理",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "",
+      "title": "工作指引》的通知",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "",
+      "title": "第一章  总  则",
+      "start": 2,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "",
+      "title": "第三章  项目验收指引",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "",
+      "title": "第四章  项目后评价指引",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "",
+      "title": "第五章  信息系统目录动态管理指引",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "",
+      "title": "第六章  附  则",
+      "start": 8,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed",
+  "note": ""
+}

@@ -1,0 +1,156 @@
+{
+  "id": "071-公路悬索桥设计规范-JTGTD65-05-2015",
+  "title": "071-公路悬索桥设计规范-JTGTD65-05-2015",
+  "std_no": "",
+  "version": "",
+  "file": "071-公路悬索桥设计规范-JTGTD65-05-2015.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\071-公路悬索桥设计规范-JTGTD65-05-2015.pdf",
+  "pages": 110,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 110,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:23:26",
+  "indexed_at": "2026-08-26 01:36:44",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 110
+  },
+  "toc_zone_end": 8,
+  "offset": 7,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "第1章",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "材料",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "第4章",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "第5章",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "8",
+      "title": "第8章",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "总 体 计算",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "索 境",
+      "start": 41,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "第9章",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "11",
+      "title": "第11章",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "10",
+      "title": "吊 索",
+      "start": 62,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "12",
+      "title": "第12章",
+      "start": 73,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "13",
+      "title": "第13章",
+      "start": 82,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "14",
+      "title": "第14章",
+      "start": 94,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "15",
+      "title": "附属 设施",
+      "start": 97,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "16",
+      "title": "结构 耐久 性 设计",
+      "start": 99,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "17",
+      "title": "设计 对 施工 、 监 控 和 运营 监测 的 要 求",
+      "start": 103,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 344,
+  "status": "indexed",
+  "note": ""
+}

@@ -1,0 +1,107 @@
+{
+  "id": "030-公路工程地质勘察规范-JTGC20-2011",
+  "title": "030-公路工程地质勘察规范-JTGC20-2011",
+  "std_no": "",
+  "version": "",
+  "file": "030-公路工程地质勘察规范-JTGC20-2011.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\030-公路工程地质勘察规范-JTGC20-2011.pdf",
+  "pages": 199,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 199,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:20:08",
+  "indexed_at": "2026-08-26 00:31:14",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 199
+  },
+  "toc_zone_end": 7,
+  "offset": -131,
+  "toc_source": "clause_cluster",
+  "expl_start": 147,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "公路 工程 地 质 勘 察 的 技术 要 求",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "可 行 性 研究 阶段 工程 地 质 勘察",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "初步 勘察",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "详细 勘察",
+      "start": 50,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "不 良 地 质",
+      "start": 56,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "特殊 性 知 土",
+      "start": 90,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "改建 公路 工程 地 质 勘 察",
+      "start": 124,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 147,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 573,
+  "status": "indexed",
+  "note": ""
+}

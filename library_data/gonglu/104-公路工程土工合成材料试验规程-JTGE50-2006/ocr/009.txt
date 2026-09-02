@@ -1,0 +1,42 @@
+术语 和 符号
+
+在 两 夹 持 句 内 的 试 样 呈 梯 形 , 撕 破 梯形 试 样 所 需 的 最 大 力 。
+
+2.1.10 刺 破 强力 puneturing strength
+直径 gmm 的 刚性 项 杆 以 规定 的 速率 垂直 顶 刺 试 样 ,直至 破裂 过 程 中 测 得 的 最 大 力 。
+
+2.1.11 CBR 顶 破 强力 CBR burst strength
+圆柱 形 顶 压 杆 垂直 顶 压 试 样 ,直至 破裂 过 程 中 测 得 的 最 大 顶 压 力 。
+
+2.1.12 压 屈 强度 compressive strength
+塑料 排水 带 的 芯 带 在 外 力作 用 下 抵抗 压 裂 ,倾倒 破坏 的 能 方 。
+
+2.1.13 当量 孔径 equivalent opening size
+用 于 表示 网 格 型 (如 土工 网 .土工 格 栅 ) 土工 合成 材料 孔隙 大 小 的 指标 ,是 将 某 种 形
+状 的 网 孔 换 算 为 等 面积 圆 的 直径 。
+
+2.1.14 穿 透 孔径 amount of cone penetitation
+
+规定 太 寸 的 落 锥 在 土工 合成 材料 上 方 500mim 高 度 处 自由 落下 时 , 穿 透 土工 合成 材料
+的 孔洞 直径 。
+
+2.1.15S 有 效 孔 径 ( O.) apparenit obening. size
+能 有 效 通过 土工 织物 的 近似 最 大 颗粒 直径 ,例如 0 表示 土工 织物 中 90% 的 孔径 低
+于 该 值 。
+
+2.1.16 垂直 活 透 系数 coefcient of vertical permeability
+水 流 垂直 于 土工 织物 平面 ,水 力 梯度 等 于 1 时 的 渗透 流速 。
+
+2.1.17 透水 率 permittivity
+水 位 差 等 于 1 时 垂直 于 土工 织物 平面 方向 的 渗透 流速 。
+
+2.1.18 流速 指数 velocity index
+试 样 两 侧 S0mm 水 头 差 下 的 流速 。
+
+2.1.19 梯度 比 gradient ratio
+
+湾 堵 试验 中 ,土工 织物 试 样 及 其 上 方 23mm 土 样 的 水 力 梯 度 与 织物 上 方 从 25mm 至
+75mm 之 间 土 样 的 水 力 梯 度 的 比值 。
+
+2.1.20 排水 带 通 水 量 the discharge capacity of prefabricated band-shaped drains
+-一 3 一

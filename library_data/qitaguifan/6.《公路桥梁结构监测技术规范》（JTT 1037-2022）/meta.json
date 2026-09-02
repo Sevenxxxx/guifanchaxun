@@ -1,0 +1,107 @@
+{
+  "id": "6.《公路桥梁结构监测技术规范》（JTT 1037-2022）",
+  "title": "《公路桥梁结构监测技术规范》",
+  "std_no": "JTT 1037-2022",
+  "version": "1037",
+  "file": "6.《公路桥梁结构监测技术规范》（JTT 1037-2022）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\6.《公路桥梁结构监测技术规范》（JTT 1037-2022）.pdf",
+  "pages": 60,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 60,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9945,
+    "punct_median": 0.082,
+    "empty_ratio": 0.071,
+    "bad_ratio": 0.556,
+    "clause_hits": 79
+  },
+  "pdf_mtime": "2025-02-14 17:58:07",
+  "indexed_at": "2026-08-26 19:55:19",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 2,
+  "offset": null,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "范围",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "4",
+      "title": "总则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "第3章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "5",
+      "title": "基本规定",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "6",
+      "title": "监测内容",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "7",
+      "title": "监测测点布设",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "8",
+      "title": "监测方法",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "9",
+      "title": "监测系统",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "10",
+      "title": "数据管理",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "11",
+      "title": "监测应用",
+      "start": 30,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 230,
+  "status": "indexed",
+  "note": ""
+}

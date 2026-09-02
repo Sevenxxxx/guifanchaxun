@@ -1,0 +1,62 @@
+收费 公路 联网 收费 技术 标准 (JTG 6310 一 2022 )
+
+4 SetTollData 原 语 实现 获取 OBU 计算 的 TAC 及 写 人 过 站 信息 ，
+
+可 根据 实际 应
+
+j 场 景 可 选 。
+
+1 ) SetTollData. request 参数 要 求 应 符合 表
+
+本 4.3-4 的 规定 。
+
+中 过 站 信息 写 人
+
+/|
+
+表 丁 4.3-4 SetTollData. request 参数 要 求
+参 数 取 值 参数 说 明
+mode TRUF 确认 模式 ， 需 应 答
+did Dsrc-DID ETC 应 用 等 于 1
+actionType 0 等 于 6
+accessCredentials OCTET STRING (SIZE (0..127，.. )) 可 选
+SetTollDataRq:: = SEQUENCE |
+fIBIT BIT STRING (SIZE (6)) 填充 位
+rndRSE Rand F 计 算 authenticator 的 随机 数
+ionP tacPara TacPara TAC 计算 参数
+计 te
+0 tollInfo PartOfFIle OPTIONAL 待 写 入 的 本 次 过 站 信息
+keyIdForAC INTECER (0..255) OPTIONAL 访问 许可 认证 密 钥 标识
+keyIdForAuthen INTECER (0. .255) 信息 鉴别 密 钥 版 本
+|
+iid 一 不 存在
+注 : 1. accessCredentials RSU 对 8 字 节 mdOBF 加 密 讨 算 得 到 ， 计算 访 法 傣 见 《电子 收费 专用 短程 通信 第
+4 部 分 : 设备 应 用 层 》(GBXT 208517 夺 -019 和 大 中 “8.2 访问 许可 。
+2.TAC 人 码 计算 参 数 的 ASN. 1 类 型 定 文 为 :
+TacPara:: =SEQUENCE |
+transAmount OCTETISTRINCYSIZE (大人 5
+transType OCTET STRING (SIZRL ON )
+terminalID GCTET SJRING (SIZE (6 ，
+transSN BCTETSTRINGsCSIZENC4) ) ，
+transTime OCTET STRIG-CSIZEY( ) ，
+transStationID OCTET STRING WMSIZE (3) )
+|
+3. PartOfFile 的 ASN. 1 类 型 定义 为 ;
+PariOffiles -SEQUENCE |
+Offset INTECER (0..32767，... ) ，
+length INTECER (0..127，.. )，
+和 leContent File
+|
+2 ) SetTollData. response 参数 要 求 应 符合 表 J 4.3- 的 规定 。
+表册 4.3-5 SetTollData. response 参数 要 求
+参 数 取 值 参数 说 明
+did Dsrc-DID ETC 应 用 对 应 1
+SetTollDataRs::， =SEQUENCE |
+tacInfo OCTET STRING (SIZE (4)) TAC 码
+TesponseParameter .
+authenticator ”OCTET STRING (SIZE (8) ) 鉴别 码
+1
+1
+
+一 144 一
+

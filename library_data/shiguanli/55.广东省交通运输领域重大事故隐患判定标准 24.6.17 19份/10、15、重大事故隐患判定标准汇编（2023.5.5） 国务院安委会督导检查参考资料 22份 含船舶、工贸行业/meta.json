@@ -1,0 +1,310 @@
+{
+  "id": "10、15、重大事故隐患判定标准汇编（2023.5.5） 国务院安委会督导检查参考资料 22份 含船舶、工贸行业",
+  "title": "15、重大事故隐患判定标准汇编（2023.5.5） 国务院安委会督导检查参考资料 22份 含船舶、工贸行业",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/55.广东省交通运输领域重大事故隐患判定标准 24.6.17 19份/10、15、重大事故隐患判定标准汇编（2023.5.5） 国务院安委会督导检查参考资料 22份 含船舶、工贸行业.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\55.广东省交通运输领域重大事故隐患判定标准 24.6.17 19份\\10、15、重大事故隐患判定标准汇编（2023.5.5） 国务院安委会督导检查参考资料 22份 含船舶、工贸行业.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\55.广东省交通运输领域重大事故隐患判定标准 24.6.17 19份\\10、15、重大事故隐患判定标准汇编（2023.5.5） 国务院安委会督导检查参考资料 22份 含船舶、工贸行业.pdf",
+  "pages": 185,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 185,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9851,
+    "punct_median": 0.0068,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.111,
+    "clause_hits": 80
+  },
+  "source_mtime": "2025-02-14 18:14:49",
+  "pdf_mtime": "2025-02-14 18:14:49",
+  "source_mtime_ns": 1739528089000000000,
+  "source_size": 1469513,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:22:20",
+  "toc_zone_end": 3,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "",
+      "title": "煤矿重大事故隐患判定标准",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "",
+      "title": "金属非金属矿山重大事故隐患判定标准",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "",
+      "title": "化工和危险化学品生产经营单位",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "",
+      "title": "重大生产安全事故隐患判定标准（试行）",
+      "start": 26,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "",
+      "title": "烟花爆竹生产经营单位",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "",
+      "title": "重大生产安全事故隐患判定标准（试行）",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "",
+      "title": "工贸企业重大事故隐患判定标准",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "",
+      "title": "重大火灾隐患判定方法",
+      "start": 40,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "3",
+      "title": "术语和定义",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "4",
+      "title": "判定原则和程序",
+      "start": 43,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "5",
+      "title": "判定方法",
+      "start": 44,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "6",
+      "title": "直接判定要素",
+      "start": 45,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "7",
+      "title": "综合判定要素",
+      "start": 47,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "",
+      "title": "房屋市政工程生产安全重大事故隐患",
+      "start": 51,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "",
+      "title": "判定标准",
+      "start": 52,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "",
+      "title": "自建房结构安全排查技术要点（暂行）",
+      "start": 56,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "",
+      "title": "公路水运工程建设重大事故隐患",
+      "start": 65,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "",
+      "title": "清单管理制度",
+      "start": 66,
+      "is_expl": false
+    },
+    {
+      "no": 19,
+      "label": "",
+      "title": "公路交通事故多发点段及严重安全隐患",
+      "start": 72,
+      "is_expl": false
+    },
+    {
+      "no": 20,
+      "label": "",
+      "title": "排查工作规范（试行）",
+      "start": 72,
+      "is_expl": false
+    },
+    {
+      "no": 21,
+      "label": "",
+      "title": "水上客运重大事故隐患判定指南（暂行）",
+      "start": 79,
+      "is_expl": false
+    },
+    {
+      "no": 22,
+      "label": "",
+      "title": "危险货物港口作业重大事故隐患判定指南",
+      "start": 83,
+      "is_expl": false
+    },
+    {
+      "no": 23,
+      "label": "",
+      "title": "水利工程生产安全重大事故隐患清单指南",
+      "start": 90,
+      "is_expl": false
+    },
+    {
+      "no": 24,
+      "label": "",
+      "title": "（2021年版）",
+      "start": 90,
+      "is_expl": false
+    },
+    {
+      "no": 25,
+      "label": "",
+      "title": "渔业船舶重大事故隐患判定标准（试行）",
+      "start": 97,
+      "is_expl": false
+    },
+    {
+      "no": 26,
+      "label": "",
+      "title": "农机安全生产重大事故隐患判定标准（试行）",
+      "start": 98,
+      "is_expl": false
+    },
+    {
+      "no": 27,
+      "label": "",
+      "title": "重大电力安全隐患判定标准（试行）",
+      "start": 99,
+      "is_expl": false
+    },
+    {
+      "no": 28,
+      "label": "",
+      "title": "船舶行业重大生产安全事故隐患判定标准",
+      "start": 101,
+      "is_expl": false
+    },
+    {
+      "no": 29,
+      "label": "",
+      "title": "水电站大坝工程隐患治理监督管理办法",
+      "start": 122,
+      "is_expl": false
+    },
+    {
+      "no": 30,
+      "label": "",
+      "title": "特种设备事故隐患分类分级",
+      "start": 128,
+      "is_expl": false
+    },
+    {
+      "no": 31,
+      "label": "",
+      "title": "民用爆炸物品生产、销售企业生产安全事故隐患排查治理体系建设指南",
+      "start": 136,
+      "is_expl": false
+    },
+    {
+      "no": 32,
+      "label": "8",
+      "title": "信息平台建设",
+      "start": 148,
+      "is_expl": false
+    },
+    {
+      "no": 33,
+      "label": "9",
+      "title": "事故隐患排查治理档案",
+      "start": 150,
+      "is_expl": false
+    },
+    {
+      "no": 34,
+      "label": "10",
+      "title": "持续改进",
+      "start": 151,
+      "is_expl": false
+    },
+    {
+      "no": 35,
+      "label": "",
+      "title": "民航安全风险分级管控和隐患排查治理",
+      "start": 160,
+      "is_expl": false
+    },
+    {
+      "no": 36,
+      "label": "",
+      "title": "双重预防工作机制管理规定",
+      "start": 160,
+      "is_expl": false
+    },
+    {
+      "no": 37,
+      "label": "",
+      "title": "国家粮食和物资储备局垂直管理系统",
+      "start": 178,
+      "is_expl": false
+    },
+    {
+      "no": 38,
+      "label": "",
+      "title": "重大生产安全事故隐患判定标准（试行）",
+      "start": 178,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 196,
+  "status": "indexed",
+  "note": ""
+}

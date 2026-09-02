@@ -1,0 +1,16 @@
+公路 车 辆 动态 称 重 检测 系统 技术 规范 (JTGZT 4320 一 2022 )
+
+(车 辆 特征 图 名 )
+
+检测 时 间 : XXX X-XX-XX XX:XX:XX 检测 点 名 称 终 这 XXXX 椒 号 : KXXX+XX
+车 道 ，X X ”机 动车 号 牌 ， XXXXXXX 轴 数 : XX 总 岳 晤 又 X.XX 超 限量 ，XX.X X
+唯一 标识 : XXXXXXXXXXX 人 和 X
+
+防伪 芒 息 : XXXXXX
+
+锋
+
+3.3.5
+
+车 辆 图 月 合 加 信息 属 式 示意
+

@@ -1,0 +1,57 @@
+细 集 料 试验
+
+性 能 造成 较 大 影响 。
+
+韦 落 简 法 测定 天 然 砂 时 试验 结果 波动 小 ,结果 较为 可 靠 ; 但 是 对 于 石 屑 机制 砂 ,由 于
+其 棱角 性 大 、 粉 料 含量 高 ,对 试验 结果 影响 较 大 ,误差 较 大 ,很 难 测 准 。 在 确定 饱和 面 干 状
+态 过 程 中 , 粉 料 在 集 料 表面 形成 一 个 履 盖 层 ,因此 测定 的 是 吸附 粉 料 颗粒 的 毛 体 积 密度 和
+吸水 率 , 而 不 是 单个 显 粒 的 毛 体 积 密度 和 吸水 率 。 这 种 差别 因 粉 料 含量 和 粉 料 特性 而 异 。
+当 粉 料 含量 不 大 于 59 时 ,水 洗 和 非 水 洗 的 毛 体积 相对 密度 差 可 达 0.02 ~0.03; 当 粉 料 达
+到 10% 以 上 时 , 毛 体积 相对 密度 差 可 达 0. 08 ~ 0. 13。 因 此 对 于 细 集 料 应 水 洗 筛 除
+0.075mm 以 下 颗粒 进行 试验 ,测定 的 相对 密度 和 吸水 率 代替 未 筛 除 细 集 料 的 相对 密度 和
+吸水 率 。 到
+
+4.75$mm 颗 粒 按 粗 集 料 容量 瓶 法 进行 测定 。 本 规程 原 方 和 碘 》(GBMT 14684 ) 不
+要 求 细 集 料 过 筛 0.07$Smm ;Standard Meijhod of Tesi /or Sec 所 9 时 and 4psorpirzon or Frime
+48gagregale(AASHTO T 84) 、Siardard Tesi Meijod Jor Re oOe 也 e 形 7 (SpectFic Craozy ) ar
+4bsorption of Fine 4egeregate(ASTM C 128 ) 也 没有 规 全 打 集 六 要 过 得 0.07Smm ,但 是 指出
+随 着 细 集 料 中 0.07Smm 含量 增加 ,未 过 簿 和 过 这 欧 功 屎 着 菲 常 大 ,采用 过 得 0.075Smm 试验
+结果 与 实际 真实 结果 更 接近 ;Tests Jor moechan 昌 他 C4L 训 ysical CR or ageregates 一 Part 0:
+Determzirnation or particle densiiy ad 10ater EN 109 736 esing ageregates 一 Port 2:
+Metjpods or deterrmination of dernsity 人 ( BS 台 2 刻 有 要求 基 | 第 5 本 次 修订 为 先 筛 除
+4.7S$mm 以 上 颗粒 ,然后 进行 0.0 Da 不 本 全 了 0.07 py 05
+
+3.7 韦 落 度 试验 中 确定 嫩 相 六 二 状态 是 保证 二 的
+的 饱和 面 干 状态 的 判断 非 久 国难 NS
+
+Tesis Jor mechanicah oz 殴 全 CQy Draie
+density ad Water wptio 人
+or density(BS 512 :区 规 , 秽 锯
+
+于 机 制 砂 、 石 苦 人
+
+1
+
+度 的 关键 ,但 对 于 机 制 砂 、 石 说
+
+人 Se Byageregates 一 Puri 2:1Metjods of delermination
+和 面 生 状 因 潮 大 外人 为 移 去 贡 落 简 即 出 现 拥 落 状 态 。 对
+样 完 全 | 筛 除 粉 料 时 为 图 T0330-2 中 d) 状 态 ; 当 含有 粉 料 时 会 影响 韦
+
+落 状态 of 1
+
+而 纺 ATY or Tesi Jor Spectc Craoity amd 4psorpfion of Fine 488gregate(AASHTO
+T84) 、Siandard Tesi Metpod Jor Relatioe Denstiy (Spectc Craoty ) and 4psorption of Fne
+4gsgregate(ASTM C 128 ) 和 Relative density and absorption of jine ageregate(CSA A23.2-6A)
+规定 饱和 面 干 状态 ,为 出 现 轻 微 替 落 ; 对 于 棱角 性 大 或 粉 料 含量 高 的 细 集 料 , 则 很 难 拥 落 ，
+规定 饱和 面 干 状态 为 第 一 次 出 现 一 侧 轻 微 替 落 , 接 近 图 T03302 中 b) 状 态 。
+
+另外 《建设 用 砂 》(GBXT 14684) ,对 于 天 然 砂 为 图 T0330-2 中 d) 状 态 ,机 制 砂 为
+图 T03302 中 b) 状 态 。
+
+大 量 试验 表明 ,对 于 机 制 砂 、 石 屑 ,其 饱和 面 干 时 南 落 状态 受 其 0.07Smm 含量 和 棱角 性
+影响 较 大 。 对 于 完全 水 洗 0.075mm 的 机 制 砂 、 石 届 , 其 韦 落 形 状 不 再 受 0.075mm 含量 影响 ，
+然而 仍然 受 其 棱角 性 一 定 的 影响 ,其 贡 落 状态 接近 天 然 砂 ,整体 介 于 图 T 0330-2 中 d) ~c) 状
+态 ,不 会 出 现 ec) ~a) 之 间 状 态 ; 对 于 一 般 0.075Smm 通过 率 ( 如 3% ~8% ) 的 集 料 ,其 志 落
+
+一 169 一

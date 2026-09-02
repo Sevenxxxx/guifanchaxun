@@ -1,0 +1,43 @@
+车 路 通信 协议
+
+执行 结果 。
+
+2 Tira 值 cInfo。response 的 ASN. 1 数据 结构 应 符合 下 列 规定 :
+Action-Response:: =SEQUENCE |
+fill BIT STRINC (SIZE (2) ) ，
+
+did Dsrc-DID ，
+
+responseParameter Container OPIIONAL，
+iid Dsrc-DID OPTIONAL ，
+
+ret ReturnStatus
+
+Dsrc-DID :: =INTECER (0. . 127 ，
+
+路 协同 拓展 应 用 目录 号 为 2。
+
+responseParameter Container ，Container, Type =47 f iejafoRs) ， 可 选 性 使 用 。
+TrafficImnfoRs 的 ASN. 1 数据 结构 如 下 : 、
+TrafficImnfoRs:, = SEQUENCE |
+
+transType ”TransType，
+authentication MessageMALC，
+
+-- 安 全 信息 ， 具 体 定义 参 灿
+encryptionFlag ”INTERCER
+
+packgedIndicate INTERGER (0. . 65535 ) ，
+
+-- 包 序号 ， 最 高 位 1: 首 包 ，0: 后 续 包 ， 余 位 表示 剩余 包 数
+datalen INTERCER (0. . 65535 ) ，
+
+-- data 数据 长 度
+
+setmessageData MessageFrame，
+
+-- MessageFrame 分 包 数 据
+
+|
+
+一 一 id 应 不 存在 。

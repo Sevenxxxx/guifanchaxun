@@ -1,0 +1,51 @@
+{
+  "id": "附件2：佛山市三水区因公务自驾私车使用审批表",
+  "title": "附件2：佛山市三水区因公务自驾私车使用审批表",
+  "std_no": "",
+  "version": "",
+  "file": "quguanli/14.250301三财行〔2025〕9号（佛山市三水区财政局关于调整三水区自驾私车市内公务出行交通费定额包干管理办法的通知）/附件2：佛山市三水区因公务自驾私车使用审批表.docx",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\14.250301三财行〔2025〕9号（佛山市三水区财政局关于调整三水区自驾私车市内公务出行交通费定额包干管理办法的通知）\\附件2：佛山市三水区因公务自驾私车使用审批表.docx",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\14.250301三财行〔2025〕9号（佛山市三水区财政局关于调整三水区自驾私车市内公务出行交通费定额包干管理办法的通知）\\附件2：佛山市三水区因公务自驾私车使用审批表.docx",
+  "pages": 3,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 3,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9255,
+    "punct_median": 0.0,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-03-03 18:18:05",
+  "pdf_mtime": "2025-03-03 18:18:05",
+  "source_mtime_ns": 1740997085000000000,
+  "source_size": 14761,
+  "fmt": "docx",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 23:20:02",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

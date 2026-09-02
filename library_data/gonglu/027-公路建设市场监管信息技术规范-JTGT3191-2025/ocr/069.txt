@@ -1,0 +1,44 @@
+数据 资源 表
+
+续 表 A. 3.3
+序 数据 是 否
+号 中 文 名 称 字段 名 称 说 明 类 型 数据 格式 值 域 必 填
+投标 人 统一 投标 人 统一 社
+8 社会 信用 代码 bidder_code 会 信用 代码 字符 型 an. .18 是
+9 资质 等 级 qualification_grade | ”资质 等 级 字符 型
+10 是 否 中 标 is_win_bid 是 否 中 标 数字 型
+11 合同 金额 contract_amount 单位 :万 元 数字 型
+12| 招标 代理 机 构 biqd_agent_unit 招标 代理 名 称 | 字符 型 是
+_ 招标 代理 机 构
+招标 代理 机 构 统一 | bid_agenl_unit | 下 |
+了 社会 信用 代码 code 统一 社会 信用 | 字符 弄 是
+代码
+本 采用 24 小 时 | 日 期
+14| 数据 导出 时 间 export_date 计时 法 时 间 型 民 是
+
+project_status
+
+计划 交工 验收
+日 期
+
+YYYYMMDD
+
+实际 交工 验收
+日 其
+
+YYYYMMDD
+
+Plan_end_date
+
+计划 竣工 验收
+日 期
+
+YYYYMMDD
+
+hand_allow_date
+
+实际 竣工 验收
+日 期
+
+YYYYMMDD
+

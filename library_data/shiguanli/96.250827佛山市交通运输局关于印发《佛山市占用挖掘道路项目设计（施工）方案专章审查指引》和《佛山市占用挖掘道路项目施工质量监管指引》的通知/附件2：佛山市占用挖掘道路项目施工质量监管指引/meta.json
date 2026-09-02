@@ -1,0 +1,72 @@
+{
+  "id": "附件2：佛山市占用挖掘道路项目施工质量监管指引",
+  "title": "附件2：佛山市占用挖掘道路项目施工质量监管指引",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/96.250827佛山市交通运输局关于印发《佛山市占用挖掘道路项目设计（施工）方案专章审查指引》和《佛山市占用挖掘道路项目施工质量监管指引》的通知/附件2：佛山市占用挖掘道路项目施工质量监管指引.docx",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\96.250827佛山市交通运输局关于印发《佛山市占用挖掘道路项目设计（施工）方案专章审查指引》和《佛山市占用挖掘道路项目施工质量监管指引》的通知\\附件2：佛山市占用挖掘道路项目施工质量监管指引.docx",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\96.250827佛山市交通运输局关于印发《佛山市占用挖掘道路项目设计（施工）方案专章审查指引》和《佛山市占用挖掘道路项目施工质量监管指引》的通知\\附件2：佛山市占用挖掘道路项目施工质量监管指引.docx",
+  "pages": 13,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 13,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.994,
+    "punct_median": 0.0,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-08-29 22:01:50",
+  "pdf_mtime": "2025-08-29 22:01:50",
+  "source_mtime_ns": 1756476110000000000,
+  "source_size": 3663984,
+  "fmt": "docx",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:28:20",
+  "toc_zone_end": 1,
+  "offset": null,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "占挖道路施工监管范例",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "道路塌陷隐患结论及处置意见",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "工后置换（路基脱空注浆）完工确认表",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "项目涉路分部工程质量验收表",
+      "start": 9,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed",
+  "note": ""
+}

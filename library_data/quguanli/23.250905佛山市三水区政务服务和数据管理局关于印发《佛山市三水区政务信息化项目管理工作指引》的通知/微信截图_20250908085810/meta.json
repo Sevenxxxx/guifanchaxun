@@ -1,0 +1,51 @@
+{
+  "id": "微信截图_20250908085810",
+  "title": "微信截图_20250908085810",
+  "std_no": "",
+  "version": "",
+  "file": "quguanli/23.250905佛山市三水区政务服务和数据管理局关于印发《佛山市三水区政务信息化项目管理工作指引》的通知/微信截图_20250908085810.png",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\23.250905佛山市三水区政务服务和数据管理局关于印发《佛山市三水区政务信息化项目管理工作指引》的通知\\微信截图_20250908085810.png",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\23.250905佛山市三水区政务服务和数据管理局关于印发《佛山市三水区政务信息化项目管理工作指引》的通知\\微信截图_20250908085810.png",
+  "pages": 1,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 1,
+    "rule": [
+      "image-source"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-09-08 20:42:13",
+  "pdf_mtime": "2025-09-08 20:42:13",
+  "source_mtime_ns": 1757335333000000000,
+  "source_size": 217362,
+  "fmt": "png",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 1
+  },
+  "indexed_at": "2026-09-01 01:06:46",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

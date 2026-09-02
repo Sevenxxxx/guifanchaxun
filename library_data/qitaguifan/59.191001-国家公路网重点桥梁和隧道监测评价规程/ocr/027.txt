@@ -1,0 +1,93 @@
+监督 检查 评价
+
+CI = wsDRS + wuCGS + wsMES + weMS
+CIsas = wsSCI + ouCGS + wsMES + wsMS
+式 中 :o ,一 -DRS SCI 在 CI 中 的 权重 , 取 值 为 0. 15;
+
+orCES 在 CT
+w ,一 一 MES 在 CI
+
+wo 一 一 MS 在 CI
+
+的 权重 , 取 值 为 0.40;
+的 权重 , 取 值 为 0.30;
+中 的 权重 , 取 值 为 0. 15。
+
+3 ”执行 力 指标 工 按 式 (6.3.2-7) 和 式 (6.3.2-8) 计 算 :
+II = wnIPS + wsRIS + osCDS + wxmAMS + wanRTS + omARS
+Is = wjIPS + wsEE + woFMR + ooAMS + wzRTS + woARS
+
+式 中 :o 一 一 IPS 在
+
+wii 一 一 RIS EE 在 开 中
+
+中 的 权重 , 取 值 为 0. 10;
+
+的 权重 , 取 值 为 0.25;
+
+2 FMR 在 工 中 的 权重 , 取 值 为 0.20;
+
+2 一 -AMS 在 工 上
+,一 一 RTS 在 工 上
+
+的 权重 , 取 值 为 0.20;
+的 权重 , 取 值 为 0. 15 ;
+
+0 在 开 中 的 权重 , 取 值 为 0.10。
+
+4 成 效 指标 按 式 (6.3.2-9) 和 式 (6.3.2-10) 计 算 :
+
+PIN = ownLSS + oOVG + oxsBPM + wxsPSM + wmFNT + wxsBDR
+PIN = osLSS +wuOVG +awxsAFM +mwxPSM +wmMTI+wosTSP
+
+式 中 :wo 一 -LSS 在 PIH
+
+的 权重 , 取 值 为 0. 10;
+
+wx 一 一 0OVG 在 PI 中 的 权重 , 取 值 为 0.20;
+wz 一 一 BPM AFM 在 PI 中 的 权重 , 取 值 为 0.20;
+
+w, 一 -PSM 在 PIH
+
+的 权重 , 取 值 为 0.20;
+
+ww 一 _FNT MTI 在 PI 中 的 权重 , 取 值 为 0. 10;
+w 一 _BDR TSP 在 PI 中 的 权重 , 取 值 为 0.20。
+
+s 当 各 评价 指标
+
+6 ”省 级 桥梁 / 障 道 养护 管理 状况 评
+计算 。 省 级 高 速 公路 和 普通
+
+权重 之
+
+和 不 足 1.0 时 ,各 指标 权重 应 进行 等 比例 折算 。
+价 指标 (BPZTP) 应 按 式 (6.3.2-11) ` 式 (6.3.2-12)
+
+BP =wwEBP+wxHBP
+TP =w。ETP +wxuHTP
+
+式 中 :w,, 一 EBP ETP 在 BPTP 中 的 权重 , 取 值 为 0.5;
+w, 一- HBP HTP 在 BPTP 中 的 权重 , 取 值 为 0.5。
+
+6.4 重点 桥梁 /隧道 监督 检查 评价
+
+6.4.1 监督 检查 评
+
+价 应 按
+
+表 6.4.1 建立 指标 体系 。
+
+(6.3.2-5)
+(6.3.2-6)
+
+(6.3.2-7)
+(6.3.2-8)
+
+(6.3.2-9)
+(6.3.2-10)
+
+F 线 公路 统 个 省 级 公路 管理 部 门 监管 的 可 统一 评分 。
+
+(6.3.2-11)
+(6.3.2-12)

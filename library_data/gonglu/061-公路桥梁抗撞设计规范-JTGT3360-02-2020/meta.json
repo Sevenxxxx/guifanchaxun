@@ -1,0 +1,324 @@
+{
+  "id": "061-公路桥梁抗撞设计规范-JTGT3360-02-2020",
+  "title": "061-公路桥梁抗撞设计规范-JTGT3360-02-2020",
+  "std_no": "",
+  "version": "",
+  "file": "061-公路桥梁抗撞设计规范-JTGT3360-02-2020.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\061-公路桥梁抗撞设计规范-JTGT3360-02-2020.pdf",
+  "pages": 56,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 56,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9902,
+    "punct_median": 0.0272,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.111,
+    "clause_hits": 69
+  },
+  "pdf_mtime": "2026-08-25 22:22:18",
+  "indexed_at": "2026-08-26 01:30:30",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 8,
+  "offset": 5,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语和符号",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "总体设计",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "设计基本要求",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "设防船撞力与设防代表船型",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "0",
+      "title": "第0章",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "36",
+      "title": "第36章",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "69",
+      "title": "第69章",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "18",
+      "title": "第18章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "19",
+      "title": "第19章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "20",
+      "title": "第20章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "24",
+      "title": "第24章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "25",
+      "title": "第25章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "30",
+      "title": "第30章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "31",
+      "title": "第31章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "35",
+      "title": "第35章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "50",
+      "title": "第50章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "51",
+      "title": "第51章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 19,
+      "label": "53",
+      "title": "第53章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 20,
+      "label": "62",
+      "title": "第62章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 21,
+      "label": "63",
+      "title": "第63章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 22,
+      "label": "66",
+      "title": "第66章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 23,
+      "label": "71",
+      "title": "第71章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 24,
+      "label": "73",
+      "title": "第73章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 25,
+      "label": "78",
+      "title": "第78章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 26,
+      "label": "80",
+      "title": "第80章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 27,
+      "label": "81",
+      "title": "第81章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 28,
+      "label": "86",
+      "title": "第86章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 29,
+      "label": "8",
+      "title": "第8章",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 30,
+      "label": "10",
+      "title": "第10章",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 31,
+      "label": "11",
+      "title": "第11章",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 32,
+      "label": "14",
+      "title": "第14章",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 33,
+      "label": "17",
+      "title": "第17章",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 34,
+      "label": "22",
+      "title": "第22章",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 35,
+      "label": "6",
+      "title": "船撞效应计算方法",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 36,
+      "label": "7",
+      "title": "结构性防船撞设施",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 37,
+      "label": "附录A",
+      "title": "构件抗船撞性能指标",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 38,
+      "label": "12",
+      "title": "第12章",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 39,
+      "label": "13",
+      "title": "第13章",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 40,
+      "label": "附录B",
+      "title": "船舶信息的收集和分类",
+      "start": 38,
+      "is_expl": false
+    },
+    {
+      "no": 41,
+      "label": "附录C",
+      "title": "船撞桥概率-风险分析方法",
+      "start": 43,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 275,
+  "status": "indexed",
+  "note": ""
+}

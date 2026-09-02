@@ -1,0 +1,48 @@
+ASN.、1 消息 集
+
+LaneControlList, : = SEQUENCE (SIZE (1.. 127，…) ) OF LaneControl
+
+LaneNum:: = INTEGER (0. . 255)
+LaneStatus:: = INTEGER |
+
+open (0) ， -= 通行
+close (1) ，-- 关 闭
+leff (2) ，-- 向 左
+right (3) -一 辐 右
+
+| (0. . 255 )
+LaneControl: : = SEQUENCE |
+
+laneNum LaneNum ，
+-= 车道 号
+laneStatus LaneStatus ，
+
+_ -车道 状态 ，1 -通行 ,2 关闭，3- 向 大
+
+speedLimit SpeedLimit KE
+-- 车道 限 速 。 单 位 : 千 米 / 小 时
+
+ServiceInfoList: : = SEQUENCE (SIZE 如 人 .1 生 。
+
+ServiceInfo: : = SEQUENCE |
+
+Z4AD
+fl BIT STRINCG 1 MO RN
+
+isSubscribed 马 ol 有 DA 1
+
+于 订阅
+
+vehicleInfoType VehicleInfoType，
+-- 车 辆 标识
+
+|
+ServiceAreaBasicInfo :: = SEQUENCE |
+
+fll BIT STRING (SIZE (3) ) ，
+abnormalService BOOLEAN ，
+
+-- 服 务 状 态 ，0: 正常 ，1: 异常
+serviceld IdFrameType，
+
+-- 服 务 区 标识

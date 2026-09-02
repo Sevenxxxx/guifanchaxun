@@ -1,0 +1,38 @@
+多 年 冻 土 地 区 公路 设计 与 施工 技术 规范 (JTGXT 3331-04 一 2023 )
+
+2.1. 10 不 衔接 多 年 冻 土 ”detachment permafrost
+季节 活动 层 的 冻结 深度 浅 于 天 然 上 限 的 多 年 冻 土 。
+
+2.1.11 盐 溃 化 冻 土 ”saline frozen soil
+易 浴 盐 的 含量 超过 规定 值 的 冻 土 。
+
+2.1.12 地 温 年 变化 深度 ”depth of zero annual amplitude of ground temperature
+地 表 以 下 ， 地 温 在 一 年 内 变化 不 超过 +0. 1% 的 深度 ， 也 称 年 零 较 差 深 度 。
+
+2.1.13 年 平均 地 温 mean annual ground temperature
+年 零 较 差 深 度 处 的 地 温 。
+
+2. 1. 14 融化 下 沉 系 数 thaw-settlement coe 侍 cient
+冻 土 融化 过 程 中 ， 在 自重 作用 下 产生 的 相对 融化 下 沉 量 。
+
+2.1.1S$ 冻 胀 率 frost heaving ratio
+单位 冻结 深度 的 冻 胀 量 。
+
+2.1.16 冻结 强度 freezing strefigth
+土 与 基础 侧 表面 冻结 在 寺 起 所 能 承受 的 最 大 剪 应力
+
+2.1.17 冻 土 抗 剪 强度 ”sfiare strength offoz6n'soil
+冻 土 抵抗 剪 切 破坏 的 能 力 。
+
+2.1.18 冻 胀 力 fost-heave force
+土 的 冻 胀 受到 约束 时 产生 的 力 。
+
+2.1.19 切 向 冻 胀 力 tangential frost-heave force
+地 基 土 在 冻结 膨胀 时 ， 沿 切 向 作用 在 基础 侧 表面 的 力 。
+
+2.1.20 法 向 冻 胀 力 “normal frost-heave force
+地 基 土 在 冻结 膨胀 时 ， 沿 法 向 作用 在 基础 侧 表面 的 力 。
+
+2. 1. 21 水 平 冻 胀 力 horizontal frost-heave force
+地 基 土 在 冻结 膨胀 时 ， 沿 水 平方 向 作用 在 结构 物 或 基础 表面 上 的 力 ， 包 括 沿 切 向 和
+法 向 的 作用 力 。

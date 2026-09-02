@@ -1,0 +1,36 @@
+公路 工程 智慧 工地 建设 技术 指南 (JTGZT 3603 一 2026 )
+续 表 C. 0. 13
+名 称 二 次 衬砌 施工 监测 采集 参数
+参数 名 称 参数 类 型 是 否 必须 〈YZN)
+喷射 混凝土 强度 String Y
+喷射 时 间 Date Y
+喷射 量 Float Y
+喷射 速度 Float Y
+喷射 压力 Float Y
+监测 时 间 Date 立
+C. 0.14 ， 拔 筑 隘 道 参数 宜 按 表 C. 0. 14 采集 。
+表 C.0.14 堰 筑 隧道
+名 称 围 堰 子 程 管理 采集 参数
+参数 名 称 参数 类 型 是 否 必须 〈YZN)
+监测 位 置 Sirdg TY
+水 平 位 移 FIOaE TY
+沉降 量 测 Float YY
+围 堰 内 水 位 监测 Float TY
+围 堰 外 水 位 监测 Float TY
+监测 时 间 Date TY
+名 称 基 坑 围 护 及 支 护 管理 采集 参数
+参数 名 称 人 参数 类 型 是 否 必须 〈YZN)
+监测 位 轩 String TY
+基 坑 款 压 力 Float T
+变形 系数 Float TY
+地 不 水 位 Float TY
+监测 时 间 Date YY
+名 称 钢筋 混凝土 结构 工程 管理 混凝土 施工 采集 参数
+参数 名 称 参数 类 型 是 否 必须 〈YZN)
+浇筑 点 String Y
+混凝土 量 Float TY
+混凝土 配合 比 String YY
+浇筑 速度 Float Y
+凝结 时 间 Date Y
+监测 时 间 Date YY
+

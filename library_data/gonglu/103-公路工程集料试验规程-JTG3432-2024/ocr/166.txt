@@ -1,0 +1,33 @@
+公路 工程 集 料 试验 规程 (JTC 3432 一 2024 )
+
+至 0.1。
+
+6 ”人 允许 误差
+
+6.1 一 份 试 样 的 得 分 损耗 率 应 不 大 于 0.5% 。
+
+6.2 0.075mm 通过 率 重 复 性 试验 的 允许 误差 为 1% 。
+
+6.3 细 度 模 数 重 复 性 试验 的 允许 误差 为 0.2。
+7 报告
+7.1 试验 项 目 名 称 和 执行 标准 。
+
+7.2 样品 的 编号 名称, 产地 和 规格 。
+7.3 接 样 日 期 、 样 品 描述 。
+7.4 试验 日 期 样品 缩 分 方法 。
+
+7.5 “主要 仪器 设备 的 名 称 、 弄 导
+
+『
+
+7.9 要 说 明 的 其 他 内 容 。
+条 文 说 明
+
+3 原 规程 规定 , 先 科 除 9. 5Smm 以 上 颗粒 后 再 进行 得 分 ,计算 级 配 和 细 度 模 数 时 不 考
+虑 筛 除 的 颗粒 部 分 。 根 据 《 建 设 用 卵石 、 碎 石 》(GBZT 14685 ) , 细 集 料 簿 分 之 前 要 求 簿 除
+9.5mm 以 上 颗粒 ,同时 需要 计算 其 得 余 百 分 率 , 并 与 9. 3mm 逢 下 部 分 簿 分 结果 合并 一 起
+计算 级 配 。Tesis Jor geometrical properties of aggregates 一 Part 1 : _ Determination of particle size
+dzsirizbpution-Sieving metpod(EN 933-1 ) .Siardard Metijod of Tesi jpor Sieve 4mnalysx o 太 ne and
+Coarse 48g8gregates(AASHTO T27) .Sianrdard Tesi Metjpod Jor Sieve 4mnalysis of Fire amd Coarse
+
+一 160 一

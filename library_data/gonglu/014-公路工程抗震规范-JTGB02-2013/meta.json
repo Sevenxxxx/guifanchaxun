@@ -1,0 +1,107 @@
+{
+  "id": "014-公路工程抗震规范-JTGB02-2013",
+  "title": "014-公路工程抗震规范-JTGB02-2013",
+  "std_no": "",
+  "version": "",
+  "file": "014-公路工程抗震规范-JTGB02-2013.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\014-公路工程抗震规范-JTGB02-2013.pdf",
+  "pages": 79,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 79,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:31:14",
+  "indexed_at": "2026-08-26 00:12:11",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 79
+  },
+  "toc_zone_end": 6,
+  "offset": -31,
+  "toc_source": "clause_cluster",
+  "expl_start": 47,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "第4章",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "第5章",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "隧道",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "第7章",
+      "start": 32,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "路 基",
+      "start": 35,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "第9章",
+      "start": 40,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 47,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 217,
+  "status": "indexed",
+  "note": ""
+}

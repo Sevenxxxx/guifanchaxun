@@ -1,0 +1,107 @@
+{
+  "id": "省道路交通安全工作联席会议办公室2022年9月30日附件1-2：省重点路口路段处置示例",
+  "title": "省道路交通安全工作联席会议办公室2022年9月30日附件1-2：省重点路口路段处置示例",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/33.220930关于印发重点路口路段交通安全设施精细化提升指引的通知/省道路交通安全工作联席会议办公室2022年9月30日附件1-2：省重点路口路段处置示例.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\33.220930关于印发重点路口路段交通安全设施精细化提升指引的通知\\省道路交通安全工作联席会议办公室2022年9月30日附件1-2：省重点路口路段处置示例.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\33.220930关于印发重点路口路段交通安全设施精细化提升指引的通知\\省道路交通安全工作联席会议办公室2022年9月30日附件1-2：省重点路口路段处置示例.pdf",
+  "pages": 9,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 9,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.667,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-06-26 20:49:19",
+  "pdf_mtime": "2025-06-26 20:49:19",
+  "source_mtime_ns": 1750942159000000000,
+  "source_size": 5471988,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 23:18:07",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "",
+      "title": "特殊路段隐患整治图例20220829 Model (1)",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "",
+      "title": "特殊路段隐患整治图例20220829 Model (1)",
+      "start": 2,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "",
+      "title": "特殊路段隐患整治图例20220829 Model (1)",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "",
+      "title": "特殊路段隐患整治图例20220829 Model (1)",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "",
+      "title": "特殊路段隐患整治图例20220829 Model (1)",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "",
+      "title": "特殊路段隐患整治图例20220829 Model (1)",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "",
+      "title": "特殊路段隐患整治图例20220829 Model (1)",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "",
+      "title": "特殊路段隐患整治图例20220829 Model (1)",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "",
+      "title": "特殊路段隐患整治图例20220829 Model (1)",
+      "start": 9,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed",
+  "note": ""
+}

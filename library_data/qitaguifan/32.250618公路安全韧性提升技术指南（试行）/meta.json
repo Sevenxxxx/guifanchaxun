@@ -1,0 +1,121 @@
+{
+  "id": "32.250618公路安全韧性提升技术指南（试行）",
+  "title": "250618公路安全韧性提升技术指南",
+  "std_no": "试行",
+  "version": "",
+  "file": "qitaguifan/32.250618公路安全韧性提升技术指南（试行）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\32.250618公路安全韧性提升技术指南（试行）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\32.250618公路安全韧性提升技术指南（试行）.pdf",
+  "pages": 62,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 62,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9915,
+    "punct_median": 0.0596,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.333,
+    "clause_hits": 57
+  },
+  "source_mtime": "2025-06-19 18:04:42",
+  "pdf_mtime": "2025-06-19 18:04:42",
+  "source_mtime_ns": 1750327482000000000,
+  "source_size": 2203764,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:11:01",
+  "toc_zone_end": 4,
+  "offset": null,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "安全韧性评估",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "设施安全韧性提升",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "制度体系提升",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "建设质量控制",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "验收",
+      "start": 35,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "附录A",
+      "title": "安全韧性评估、工可及设计取费",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "附录B",
+      "title": "可借鉴推广的做法清单",
+      "start": 38,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "附录C",
+      "title": "资料清单",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "附录E",
+      "title": "制度体系评估",
+      "start": 60,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 136,
+  "status": "indexed",
+  "note": ""
+}

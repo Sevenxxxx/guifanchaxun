@@ -1,0 +1,107 @@
+{
+  "id": "072-公路钢管混凝土拱桥设计规范-JTGTD65-06-2015",
+  "title": "072-公路钢管混凝土拱桥设计规范-JTGTD65-06-2015",
+  "std_no": "",
+  "version": "",
+  "file": "072-公路钢管混凝土拱桥设计规范-JTGTD65-06-2015.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\072-公路钢管混凝土拱桥设计规范-JTGTD65-06-2015.pdf",
+  "pages": 76,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 76,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:23:30",
+  "indexed_at": "2026-08-26 01:38:35",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 76
+  },
+  "toc_zone_end": 6,
+  "offset": 6,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "10",
+      "title": "第10章",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语 和 符 续",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "材料",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "计算 基本 规定",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "承载 能 力 极 限 状 态 计 算",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "正常 使 用 极限 状态 计算",
+      "start": 46,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "施工 过 程 计算",
+      "start": 48,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "总 体 设计 及 构造",
+      "start": 51,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "附属 结构",
+      "start": 67,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 191,
+  "status": "indexed",
+  "note": ""
+}

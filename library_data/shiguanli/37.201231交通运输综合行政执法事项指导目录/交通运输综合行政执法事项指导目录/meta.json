@@ -1,0 +1,121 @@
+{
+  "id": "交通运输综合行政执法事项指导目录",
+  "title": "交通运输综合行政执法事项指导目录",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/37.201231交通运输综合行政执法事项指导目录/交通运输综合行政执法事项指导目录.xls",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\37.201231交通运输综合行政执法事项指导目录\\交通运输综合行政执法事项指导目录.xls",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\37.201231交通运输综合行政执法事项指导目录\\交通运输综合行政执法事项指导目录.xls",
+  "pages": 322,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 322,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9507,
+    "punct_median": 0.0028,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:16:00",
+  "pdf_mtime": "2025-02-14 18:16:00",
+  "source_mtime_ns": 1739528160000000000,
+  "source_size": 437760,
+  "fmt": "xls",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:32:09",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "第2部分",
+      "title": "第2部分(无目录,按页均分)",
+      "start": 31,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "第3部分",
+      "title": "第3部分(无目录,按页均分)",
+      "start": 61,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "第4部分",
+      "title": "第4部分(无目录,按页均分)",
+      "start": 91,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "第5部分",
+      "title": "第5部分(无目录,按页均分)",
+      "start": 121,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "第6部分",
+      "title": "第6部分(无目录,按页均分)",
+      "start": 151,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "第7部分",
+      "title": "第7部分(无目录,按页均分)",
+      "start": 181,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "第8部分",
+      "title": "第8部分(无目录,按页均分)",
+      "start": 211,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "第9部分",
+      "title": "第9部分(无目录,按页均分)",
+      "start": 241,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "第10部分",
+      "title": "第10部分(无目录,按页均分)",
+      "start": 271,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "第11部分",
+      "title": "第11部分(无目录,按页均分)",
+      "start": 301,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

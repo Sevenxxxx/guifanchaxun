@@ -1,0 +1,51 @@
+{
+  "id": "佛山市交通运输局转发广东省大件运输许可公路桥梁验算与数字化建模工作管理办法（试行）和广东省大件运输许可公路桥梁验算与数字化建模技术规程（试行）的通知",
+  "title": "佛山市交通运输局转发广东省大件运输许可公路桥梁验算与数字化建模工作管理办法（试行）和广东省大件运输许可公路桥梁验算与数字化建模技术规程（试行）的通知",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/62.260709（路政）大件运输许可公路桥梁验算与数字化建模工作管理办法/佛山市交通运输局转发广东省大件运输许可公路桥梁验算与数字化建模工作管理办法（试行）和广东省大件运输许可公路桥梁验算与数字化建模技术规程（试行）的通知.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\62.260709（路政）大件运输许可公路桥梁验算与数字化建模工作管理办法\\佛山市交通运输局转发广东省大件运输许可公路桥梁验算与数字化建模工作管理办法（试行）和广东省大件运输许可公路桥梁验算与数字化建模技术规程（试行）的通知.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\62.260709（路政）大件运输许可公路桥梁验算与数字化建模工作管理办法\\佛山市交通运输局转发广东省大件运输许可公路桥梁验算与数字化建模工作管理办法（试行）和广东省大件运输许可公路桥梁验算与数字化建模技术规程（试行）的通知.pdf",
+  "pages": 2,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 2,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-07-15 19:57:22",
+  "pdf_mtime": "2026-07-15 19:57:22",
+  "source_mtime_ns": 1784116642000000000,
+  "source_size": 238648,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 23:19:18",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

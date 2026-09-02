@@ -1,0 +1,170 @@
+{
+  "id": "4.广东省公路路基边坡防护及排水设计指南（试行）",
+  "title": "广东省公路路基边坡防护及排水设计指南",
+  "std_no": "试行",
+  "version": "",
+  "file": "qitaguifan/18.240719广东省交通运输厅关于发布《广东省公路路基边坡防护及排水设计指南（试行）》的通知粤交基〔2024〕479号/4.广东省公路路基边坡防护及排水设计指南（试行）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\18.240719广东省交通运输厅关于发布《广东省公路路基边坡防护及排水设计指南（试行）》的通知粤交基〔2024〕479号\\4.广东省公路路基边坡防护及排水设计指南（试行）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\18.240719广东省交通运输厅关于发布《广东省公路路基边坡防护及排水设计指南（试行）》的通知粤交基〔2024〕479号\\4.广东省公路路基边坡防护及排水设计指南（试行）.pdf",
+  "pages": 129,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 129,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9971,
+    "punct_median": 0.0181,
+    "empty_ratio": 0.071,
+    "bad_ratio": 0.0,
+    "clause_hits": 149
+  },
+  "source_mtime": "2025-02-14 18:14:29",
+  "pdf_mtime": "2025-02-14 18:14:29",
+  "source_mtime_ns": 1739528069000000000,
+  "source_size": 8426921,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:58:07",
+  "toc_zone_end": 6,
+  "offset": 6,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "范围",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "规范性引用文件",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "术语与定义",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "基本规定",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "工程勘察",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "路堤边坡防护",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "路堑边坡防护",
+      "start": 45,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "地表排水",
+      "start": 72,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "16",
+      "title": "第16章",
+      "start": 72,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "地下排水",
+      "start": 91,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "10",
+      "title": "养护设计",
+      "start": 100,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "11",
+      "title": "监测",
+      "start": 106,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "附录A",
+      "title": "边坡防护与排水缺陷与病害",
+      "start": 110,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "附录B",
+      "title": "路堤稳定数值分析方法要点",
+      "start": 111,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "附录C",
+      "title": "排水棱体的反滤层设计",
+      "start": 112,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "附录E",
+      "title": "广东省部分地级市最新降雨强度公式",
+      "start": 117,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "附录F",
+      "title": "骨架防护竖骨架的间距计算",
+      "start": 119,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "附录G",
+      "title": "路堤平台截水沟的水力计算",
+      "start": 123,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 300,
+  "status": "indexed",
+  "note": ""
+}

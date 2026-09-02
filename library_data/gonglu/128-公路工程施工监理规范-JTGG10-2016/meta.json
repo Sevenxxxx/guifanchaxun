@@ -1,0 +1,114 @@
+{
+  "id": "128-公路工程施工监理规范-JTGG10-2016",
+  "title": "128-公路工程施工监理规范-JTGG10-2016",
+  "std_no": "",
+  "version": "",
+  "file": "128-公路工程施工监理规范-JTGG10-2016.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\128-公路工程施工监理规范-JTGG10-2016.pdf",
+  "pages": 57,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 57,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:38:01",
+  "indexed_at": "2026-08-26 03:25:54",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 57
+  },
+  "toc_zone_end": 5,
+  "offset": 6,
+  "toc_source": "clause_cluster",
+  "expl_start": 36,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "有 关 法 律 法 规 、 技 术 标 准 。",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "10",
+      "title": "第10章",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "施工 准备 阶段 监理",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "施工 阶段 监理",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "验收 与 缺陷 责任 期 阶段 监理",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "合同 事项 管理",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "第8章",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "监理 资料",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 36,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 196,
+  "status": "indexed",
+  "note": ""
+}

@@ -1,0 +1,79 @@
+{
+  "id": "32.（村内道路由农业局管）20年69号 佛山市人民政府办公室关于加快推进“四好农村路”建设工作的通知（佛府办函〔2020〕69号）",
+  "title": "（村内道路由农业局管）20年69号 佛山市人民政府办公室关于加快推进“四好农村路”建设工作的通知",
+  "std_no": "佛府办函〔2020〕69号",
+  "version": "2020",
+  "file": "shiguanli/32.（村内道路由农业局管）20年69号 佛山市人民政府办公室关于加快推进“四好农村路”建设工作的通知（佛府办函〔2020〕69号）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\32.（村内道路由农业局管）20年69号 佛山市人民政府办公室关于加快推进“四好农村路”建设工作的通知（佛府办函〔2020〕69号）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\32.（村内道路由农业局管）20年69号 佛山市人民政府办公室关于加快推进“四好农村路”建设工作的通知（佛府办函〔2020〕69号）.pdf",
+  "pages": 12,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 12,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 17:58:35",
+  "pdf_mtime": "2025-02-14 17:58:35",
+  "source_mtime_ns": 1739527115000000000,
+  "source_size": 1219640,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 12
+  },
+  "indexed_at": "2026-08-31 22:39:57",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "5",
+      "title": "名品",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "1",
+      "title": "融 工 长 羡 票 交 革 半 到 让 1",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "59",
+      "title": "人 萌 舟 融 工 并 消 复 妊 二 性 则 首 呈 首",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "0",
+      "title": "纺 例 次 省 Y 习 区 基 1 事 当 1",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "3",
+      "title": "和 000) 到 了 工 各 居 洛 冰 许 天守",
+      "start": 12,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed",
+  "note": ""
+}

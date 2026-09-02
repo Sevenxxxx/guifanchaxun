@@ -1,0 +1,142 @@
+{
+  "id": "5.城镇道路养护技术规范CJJ36-2016",
+  "title": "城镇道路养护技术规范CJJ36-2016",
+  "std_no": "",
+  "version": "",
+  "file": "5.城镇道路养护技术规范CJJ36-2016.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\5.城镇道路养护技术规范CJJ36-2016.pdf",
+  "pages": 105,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 105,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 0.8,
+    "punct_median": 0.0,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1.0,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2025-02-14 17:56:27",
+  "indexed_at": "2026-08-26 19:48:21",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 105
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "2",
+      "title": "第2章",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "4",
+      "title": "道路 检查 、 评 价 和 养护 对 策 阅 .内 .加 6",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "5",
+      "title": "司 U 一 般 规 定 和 9 19",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "6",
+      "title": "水 泥 混凝土 路 面 .0 25",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "7",
+      "title": "其 他 路 面 .ee 30",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "1",
+      "title": "让 掘 路 4 修复 44",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "8",
+      "title": "基层 seeoeoooooooooooooooooooooo",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "9",
+      "title": "路基 36",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "3",
+      "title": "第3章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "10",
+      "title": "道路 附属 设施",
+      "start": 48,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "11",
+      "title": "掘 路 、 修 复",
+      "start": 53,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "12",
+      "title": "第12章",
+      "start": 57,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "13",
+      "title": "第13章",
+      "start": 68,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "14",
+      "title": "道路 养护 作业 安全 防护",
+      "start": 78,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "15",
+      "title": "第15章",
+      "start": 80,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 389,
+  "status": "indexed",
+  "note": ""
+}

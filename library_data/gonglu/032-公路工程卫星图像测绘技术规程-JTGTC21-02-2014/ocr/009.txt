@@ -1,0 +1,25 @@
+公路 工程 卫星 图 像 测绘 技术 规程 (JTGVZT C21-02 一 2014)
+
+基于 RPC 的 扫描 条 带 或 区 域 整体 平 差 ， 修 正 卫星 图 像 与 探测 目标 之 间 的 空间 数学
+模型 ， 并 求解 待定 点 的 平面 位 置 、 高 程 的 方法 。
+
+2.0.11 卫星 图 像 调 绘 ”satellite imagery annotation
+利用 卫星 图 像 进行 判读 、 调 查 和 绘 注 工 作 的 总 称 。
+
+2.0. 12 不 规则 三 角 网 triangulated irregular network (TIN)
+由 不 规则 分 布 的 数据 点 连 成 的 三 角 网 ， 是 地 表 模 型 的 一 种 形式 。
+
+2.0. 13 ”数字 高 程 模 型 digital elevation model “ (DEM)
+以 规则 格 网 点 的 高 程 值 表达 地 表 起 伏 的 数据 集 。
+
+2.0.14 数字 正 射影 像 图 digital orthophoto mapy DOM)
+经 过 正 射 投 影 改正 的 影像 。
+
+2.0.1S 数字 线 划 地 形 图 digital line graphidc“ _(DLG)
+地 形 要 素 及 地 理 信息 以 数字 形式 表达 的 地 形 图 。
+
+2.0.16 地形 图 修 测 ”map revision
+按 规 定 修改 、 删 除 或 增补 地 形 图 内 容 的 工作 。
+
+2.0.17 全面 修 测 “ecompletely revision
+对 地 形 图 全 部 地 形 要 素 及 属性 进行 修 测 的 工作 。

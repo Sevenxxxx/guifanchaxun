@@ -1,0 +1,100 @@
+{
+  "id": "109-公路隧道工程现场测试规程-JTGT3530-2026",
+  "title": "109-公路隧道工程现场测试规程-JTGT3530-2026",
+  "std_no": "",
+  "version": "",
+  "file": "109-公路隧道工程现场测试规程-JTGT3530-2026.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\109-公路隧道工程现场测试规程-JTGT3530-2026.pdf",
+  "pages": 114,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 114,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.929,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:32:31",
+  "indexed_at": "2026-08-26 02:49:21",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 114
+  },
+  "toc_zone_end": 5,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "10",
+      "title": "第10章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "方法 与 步骤",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "数据 处 理",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "报告",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "8",
+      "title": "第8章",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "6",
+      "title": "第6章",
+      "start": 57,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "了 = 二 疡 (T 0545-11 )",
+      "start": 65,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 129,
+  "status": "indexed",
+  "note": ""
+}

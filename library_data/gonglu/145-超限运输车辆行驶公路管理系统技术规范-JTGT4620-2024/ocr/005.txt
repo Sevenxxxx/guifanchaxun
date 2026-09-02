@@ -1,0 +1,13 @@
+超 限 运输 车 辆 行驶 公路 管理 系统 技术 规范 (JTGVT 4620 一 2024)
+
+7. 3 运行 监管 sseesseoseseooeoeooooooooooeooooeooooeooooooooooeooooeoooooooooooooeoeooosoosoooosooo。 32
+7.4 执法 协同 管理 站 Nt 34
+7. 4 指挥 调度 管理 eeosseeoeeooososoesoseooeososoeeoeooooeooooooooooeooeoooeooooooooooosooeoooosesoosooo。 34
+7.6 大 件 运输 许可 35
+7.7 综合 分 析 与 服务 症 Nt 35
+7. 8 技术 要 求 eeesesesessesesossoesooesesoesoesooessosoosooesooeoeeoeoooeoooosoooooooecooesoeooeooeoooesoooooseioesoo。 36
+8 站 级 治 超 联 网 管理 信息 系统
+
+本 规范 用 前 用 语 刘 :和 81
+
+了 汪

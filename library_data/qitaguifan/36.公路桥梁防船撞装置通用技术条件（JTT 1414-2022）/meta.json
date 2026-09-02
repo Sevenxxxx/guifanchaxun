@@ -1,0 +1,86 @@
+{
+  "id": "36.公路桥梁防船撞装置通用技术条件（JTT 1414-2022）",
+  "title": "公路桥梁防船撞装置通用技术条件",
+  "std_no": "JTT 1414-2022",
+  "version": "1414",
+  "file": "qitaguifan/36.公路桥梁防船撞装置通用技术条件（JTT 1414-2022）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\36.公路桥梁防船撞装置通用技术条件（JTT 1414-2022）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\36.公路桥梁防船撞装置通用技术条件（JTT 1414-2022）.pdf",
+  "pages": 13,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 13,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 0.9904,
+    "punct_median": 0.0904,
+    "empty_ratio": 0.091,
+    "bad_ratio": 0.833,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-08-29 22:01:48",
+  "pdf_mtime": "2025-08-29 22:01:48",
+  "source_mtime_ns": 1756476108000000000,
+  "source_size": 4292085,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 13
+  },
+  "indexed_at": "2026-08-31 22:11:02",
+  "toc_zone_end": 2,
+  "offset": 3,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "薄 盖 0 1",
+      "start": 2,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "规范 性 引用 文件 1",
+      "start": 2,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "第3章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "分 类 、 结 构 形式 ,规格 与 型 号",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "一 一 浮动 式 连 接 件 ;",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "试验 方法",
+      "start": 10,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 42,
+  "status": "indexed",
+  "note": ""
+}

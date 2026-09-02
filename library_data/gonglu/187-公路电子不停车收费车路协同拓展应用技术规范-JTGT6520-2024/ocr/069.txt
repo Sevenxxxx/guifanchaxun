@@ -1,0 +1,47 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGZT 6520 一 2024)
+
+getVehImfList CetVehImfList OPTIONAL，
+-- 包 含 所 需 获 取 的 所 有 车 辆 应 用 场景 信息
+
+|
+EtcMessage::， = SEQUENCE |
+
+fill BIT STRING (SIZE (1) ) ，
+idMsg IdFrameType，
+-- 消 息 1， 防止 相 同 消息 重复 接收
+
+eventScen EnumerationDataType ，
+
+-一 应 用 场景
+eventType EventType，
+
+-- 子 场景
+priority RSFPriority OPTIONAL ，
+-- 消 息 紧 急 程度
+rtesEtcRTEList OPTIONAL，
+
+-- 包 含 应 用 场景 相关 的 全 部 迁 只 多 和
+
+description ”Description ，
+
+-附加 描述 信息 志和
+
+。。 7 SN 嘿
+EtecVehicleAncillaryInformakton : Sa 由
+
+coordinate HistoryPosition OPITIONAL，
+
+-- 车 辆 位 置
+historyPositionList HistoryPositionList OPIIONAL，
+
+-- 车 辆 历史 位 置
+alarmLevel AlarmLevel OPIIONAL ，
+
+-- 预 警 等 级
+significantCondition SignificantCondition ，
+-- 定 义 消 息 的 有 效 状态
+
+eventScen EnumerationDataType ，
+
+-- 应 用 场景
+一 64 一

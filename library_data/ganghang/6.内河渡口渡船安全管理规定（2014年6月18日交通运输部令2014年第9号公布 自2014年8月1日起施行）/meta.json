@@ -1,0 +1,51 @@
+{
+  "id": "6.内河渡口渡船安全管理规定（2014年6月18日交通运输部令2014年第9号公布 自2014年8月1日起施行）",
+  "title": "内河渡口渡船安全管理规定",
+  "std_no": "2014年6月18日交通运输部令2014年第9号公布 自2014年8月1日起施行",
+  "version": "2014",
+  "file": "ganghang/6.内河渡口渡船安全管理规定（2014年6月18日交通运输部令2014年第9号公布 自2014年8月1日起施行）.doc",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\ganghang\\6.内河渡口渡船安全管理规定（2014年6月18日交通运输部令2014年第9号公布 自2014年8月1日起施行）.doc",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\ganghang\\6.内河渡口渡船安全管理规定（2014年6月18日交通运输部令2014年第9号公布 自2014年8月1日起施行）.doc",
+  "pages": 13,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 13,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9293,
+    "punct_median": 0.0,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-09-01 20:38:31",
+  "pdf_mtime": "2026-09-01 20:38:31",
+  "source_mtime_ns": 1788266311194930700,
+  "source_size": 44904,
+  "fmt": "doc",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 23:03:59",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

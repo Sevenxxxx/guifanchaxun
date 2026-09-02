@@ -1,0 +1,93 @@
+{
+  "id": "085-高速公路交通工程及沿线设施设计通用规范-JTGD80-2006",
+  "title": "085-高速公路交通工程及沿线设施设计通用规范-JTGD80-2006",
+  "std_no": "",
+  "version": "",
+  "file": "085-高速公路交通工程及沿线设施设计通用规范-JTGD80-2006.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\085-高速公路交通工程及沿线设施设计通用规范-JTGD80-2006.pdf",
+  "pages": 80,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 80,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:31:11",
+  "indexed_at": "2026-08-26 02:10:13",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 80
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": 46,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "7",
+      "title": "第7章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语 与 符号",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "第3章",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "总 体 设计",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "交通 安全 设施",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "服务 设施",
+      "start": 24,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 46,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 307,
+  "status": "indexed",
+  "note": ""
+}

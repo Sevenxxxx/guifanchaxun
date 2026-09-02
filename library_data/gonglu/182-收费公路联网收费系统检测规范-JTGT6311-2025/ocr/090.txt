@@ -1,0 +1,58 @@
+OBU 检测 方法
+
+B. 4. TransferChannel 应 按 下 列 规定 测试 :
+
+1 _ DSRC 协议 测试 仪 发 送 BST;
+被 测 OBU 收 到 BST， 返 回 VST;
+DSRC 协议 测试 仪 接收 来 自 被 测 OBU 的 VST， 并 登记 其 MAC 地 址 ;
+DSRC 协议 测试 仪 发 送 TransferChannel. request;
+DSRC 协议 测试 仪 接收 来 自 被 测 OBU 的 TransferChannel. response ;
+判断 接收 到 的 TransferChannel. response 的 文件 结构 及 内 容 正确 性 ;
+涉及 安全 认证 时 ， 验 证 安全 认证 正确 性 。
+
+~ 人 小 wm 上 上 wmi
+
+B. 4.6 SetMMI 应 按 下 列 规定 测试
+1 DSRC 协议 测试 仪 发 送 BST;
+被 测 0BU 收 到 BST， 返回 VSTi
+
+wm 上 wb
+己
+[PP
+四
+中
+本 革
+生活
+和 三
+亚
+闪
+涉
+朵
+世
+三
+{ 用
+加
+了
+
+容 正确 性 ;
+6 判断 被 测 OBU 的 动作 正确 性 。-
+
+TransferChannel、 SetMMI 沽 ; 攻 本
+
+1 网 择 JSRC 协议 测试 仪 工作 信道 :
+
+2 和 协议 测试 仪 按照 一 定时 间 间 隔 顺序 发 送 多 种 BST;
+
+3 测试 设备 在 超时 时 间 范 围 内 成 功 收 到 VST 信息 ， 并 记录 数据 报 文 ;
+
+4 分 析 结 果 ， 判 断 各 个 数据 帧 中 的 VST 的 文件 结构 正确 性 ，Profile、Application
+SEQUENCE 等 值 正确 性 。
+
+B.S.4 GetTollData 应 按 下 列 规定 测试
+
+1 _DSRC 协议 测试 仪 发 送 BST;
+
+2 被 测 O0BU 收 到 BST， 返 回 VST;
+
+3 DSRC 协议 测试 仪 接收 来 自 被 测 OBU 的 VST， 并 登记 其 MAC 地 址 ;
+4 DSRC 协议 测试 仪 发 送 GetTollData. requesti

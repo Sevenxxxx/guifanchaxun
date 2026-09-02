@@ -1,0 +1,100 @@
+{
+  "id": "164-公路桥梁荷载试验规程-JTGTJ21-01-2015",
+  "title": "164-公路桥梁荷载试验规程-JTGTJ21-01-2015",
+  "std_no": "",
+  "version": "",
+  "file": "164-公路桥梁荷载试验规程-JTGTJ21-01-2015.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\164-公路桥梁荷载试验规程-JTGTJ21-01-2015.pdf",
+  "pages": 70,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 70,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:41:41",
+  "indexed_at": "2026-08-26 04:23:57",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 70
+  },
+  "toc_zone_end": 5,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "第1章",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "10",
+      "title": "第10章",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "测试 设备 与 技术 要 求",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "桥 染 静 载 试验",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "桥梁 动 载 试验",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "现场 实施",
+      "start": 53,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "试验 报告 编制",
+      "start": 56,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 142,
+  "status": "indexed",
+  "note": ""
+}

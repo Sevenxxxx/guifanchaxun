@@ -1,0 +1,93 @@
+{
+  "id": "037-公路桥梁和隧道工程设计安全风险评估指南-JTGT3302-2025",
+  "title": "037-公路桥梁和隧道工程设计安全风险评估指南-JTGT3302-2025",
+  "std_no": "",
+  "version": "",
+  "file": "037-公路桥梁和隧道工程设计安全风险评估指南-JTGT3302-2025.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\037-公路桥梁和隧道工程设计安全风险评估指南-JTGT3302-2025.pdf",
+  "pages": 70,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 70,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.929,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:20:45",
+  "indexed_at": "2026-08-26 00:42:23",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 70
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "6",
+      "title": "桥梁 工程 设计 窒 金 风 险 评 估",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "风险 等 级 标准",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "风险 评估 方法",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "隧道 工程 设计 安全 风险 评 佑",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "风险 评估 报告",
+      "start": 33,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 89,
+  "status": "indexed",
+  "note": ""
+}

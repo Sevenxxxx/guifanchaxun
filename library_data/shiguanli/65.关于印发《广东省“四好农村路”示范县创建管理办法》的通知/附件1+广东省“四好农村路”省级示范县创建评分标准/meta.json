@@ -1,0 +1,51 @@
+{
+  "id": "附件1+广东省“四好农村路”省级示范县创建评分标准",
+  "title": "附件1 广东省“四好农村路”省级示范县创建评分标准",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/65.关于印发《广东省“四好农村路”示范县创建管理办法》的通知/附件1+广东省“四好农村路”省级示范县创建评分标准.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\65.关于印发《广东省“四好农村路”示范县创建管理办法》的通知\\附件1+广东省“四好农村路”省级示范县创建评分标准.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\65.关于印发《广东省“四好农村路”示范县创建管理办法》的通知\\附件1+广东省“四好农村路”省级示范县创建评分标准.pdf",
+  "pages": 11,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 11,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9747,
+    "punct_median": 0.0484,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.0,
+    "clause_hits": 34
+  },
+  "source_mtime": "2025-02-14 18:16:31",
+  "pdf_mtime": "2025-02-14 18:16:31",
+  "source_mtime_ns": 1739528191000000000,
+  "source_size": 173049,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:23:46",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 139,
+  "status": "indexed"
+}

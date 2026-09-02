@@ -1,0 +1,51 @@
+{
+  "id": "4.1  纵断面设计(定向钻）",
+  "title": "1  纵断面设计",
+  "std_no": "定向钻",
+  "version": "",
+  "file": "shiguanli/60.240910路政-佛山市交通运输局关于印发《佛山市占用挖掘道路及修复设计（施工）方案专章编制指南》的通知/附件2 专章附图/4.1  纵断面设计(定向钻）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\60.240910路政-佛山市交通运输局关于印发《佛山市占用挖掘道路及修复设计（施工）方案专章编制指南》的通知\\附件2 专章附图\\4.1  纵断面设计(定向钻）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\60.240910路政-佛山市交通运输局关于印发《佛山市占用挖掘道路及修复设计（施工）方案专章编制指南》的通知\\附件2 专章附图\\4.1  纵断面设计(定向钻）.pdf",
+  "pages": 1,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 1,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:16:34",
+  "pdf_mtime": "2025-02-14 18:16:34",
+  "source_mtime_ns": 1739528194000000000,
+  "source_size": 302522,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:30:58",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

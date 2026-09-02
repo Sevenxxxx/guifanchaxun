@@ -1,0 +1,49 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGVZT 6520 一 2024 )
+
+-= 经度， 小 数 精确 到 7 位 数 ， 数 据 需 要 乘 以 10000000
+elevation Double2IntType OPTIONAL
+
+- 高程， 小数 精确 到 5 位 数 ， 数 据 需 要 乘 以 100000
+
+|
+EmergencyVehicleStatus : : = INTECER |
+
+unkonw (0 ) ， -- 未 定义
+
+ordinary (1) ， -- 非 紧急 的
+
+urgent (2) -- 紧 急 状态 中
+| (0..127，…)
+
+VehicleInfo: : =SEQUENCE |
+obuld OCTET STRING (SIZE (4) ) ，
+
+-- 车 载 终端 ID (4 字 节 )
+vehiclePlate OCTET STRING (SIZE (12) )
+
+-- 车 牌 (12 字 节 ) CA
+vehicleType VehicleType， 2
+
+-- 车 辆 类 型 (1 字 节 ) <
+vehiclePlateColour VehiclePlate Soleur， AAA
+
+一 车 牌 颜色 AR
+
+vehicleSpeed VehicleSpgegeOPFT
+-- 车 辆 速度 〈2 守 改 洲
+
+vehicleDirection
+
+<-1 非 紧急 状态
+--2 紧急 状态 中
+heightCarSize CarSizeOPTIONAL ，
+
+-- 车 高 2 字 节
+widthCarSize CarSize OPIIONAL，
+
+-- 车 宽 2 字 节
+lengthCarSize CarSize OPTIONAL，
+
+-- 车 长 2 字 节
+
+一 IT2 一

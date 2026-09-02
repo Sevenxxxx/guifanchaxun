@@ -1,0 +1,24 @@
+公路 桥梁 加 固 设计 规范 (JTGVXT 5431 一 2025 )
+
+2 术语 和 符号
+
+2.1 术语
+
+2.1.1 桥梁 加 固 bridge strengthening 衣
+对 桥梁 主要 部 件 或 构件 采取 补 强 、 更 换 或 调整 内 力 等 措施 六 使 其 清
+
+2.1.3 主动 加 固 active strengthening WA
+通过 施加 体外 预 应 力 、 改 变 结构 体 芝 怀 调 束 实 ;
+
+2.1.7 增 大 截面 加 固 ”structure member strengthening with increasing section area
+通过 增 大 原 构件 截面 面积 并 增 配 钢筋 ， 以 提高 其 承载 力 和 刚度 的 加 固 方法 。
+
+2.1.8 植 筋 embedded steel bar
+以 专用 的 结构 胶粘剂 将 带 肋 钢筋 或 全 螺纹 螺杆 种 植 于 基 材 混凝土 中 的 一 种 后 锚固 连
+接 方法 。
+
+2.1.9 锚 栓 anchor bolt
+将 被 连接 件 销 固 到 混凝土 基 材 上 的 销 固 组 件 ， 分 为 机 械 锚 栓 和 化 学 锁 栓 。
+
+一 2 一
+

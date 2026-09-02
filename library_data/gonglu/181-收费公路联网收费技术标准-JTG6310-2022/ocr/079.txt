@@ -1,0 +1,65 @@
+收费 公路 联网 收费 拉 术 标准 (JTG 6310 一 2022 )
+
+B.0.3 单 片 式 0BU 一 次 发 行 流程 应 符合 图 B. 0. 3 的 规定 。
+
+Caagssw] [5 征用 式 OU 肥大 平台 /一 发 加 客机
+预 设 OBU 制 造 商 呈 、
+闭 取 及 机 数 激活 OBU(BST) ESAM 提 供 南 下 、
+加 司 直 其 他 系统 信息
+建立 通信 备 路 vsT 规 芝 随机 闻 ) 请 求 访问 许可
+访问 许可 认证 数据 访问 许可 认证 数据
+返回 访问 许可 认证 结果
+选择 MF
+ME 选择 返回 占 相
+OBE-SAM 让 片 局 册
+获取 OBE- SAM 艺 片 序列 号 SN (IransferChannel.rq》
+二 覃 OBE-SAMEE 列 SN| 。 OBSAXE 佬 床下 呈 从 加
+取 4 字 节 随机 数 。 医 成 介 同 序列 号 CN NN
+到 4 字 节 随机 数 CTransferChannel ， 9
+返回 4 字 节 随机 数 人
+赫 换 OBE- SAM 系 统 主 控 密 铀
+CTmansferChannel 中 )
+
+替换 系统 主 控 密 钥
+
+取 4 字 节 随机 数 Ce ng
+返回 4 字 节 随机 数 (TransferChannel_rs)
+稚 颖 OBE- SAM 系 统 维护 密 钢
+替换 系统 维护 密 包 CTransferChannelr 电
+印 昔 扩 运 回 密 铀 营 换 返回 应 竹 |” 了 |
+
+TransferChannel.rs
+
+取 4 字 节 随机 数
+返回 4 字 节 随机 数
+
+更 新 系统 信息 文件
+到 新 系统 信息 文件 返回 可
+
+选择 DF01 目 录
+
+获取 OBE- SAM 应 用 主 控 密 铀 密 文
+返回 OBE- SAM 应 用 主 控 审 钥 密 文
+
+(TransferChannel .rq)
+| 机 数 运 加 应 党
+
+人
+二 用
+
+密 钥 奉 换 返回 应 答
+【TransferChannel .rs
+
+DEFO1 其 他 应 用 密 钥 按 照 类 似 应 用
+
+维护 密 钥 的 更 新 过 程 进 行 更 新
+用 户 提示 (SetMMILrq )
+
+用 户 提示 返回 (SetMMLrs)
+
+(Event_Report)
+
+生成 一 次 发 行 记录
+
+图 B.0.3 单 片 式 OBU 一 次 发 行 流程
+

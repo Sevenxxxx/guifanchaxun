@@ -1,0 +1,205 @@
+{
+  "id": "099-公路工程沥青及沥青混合料试验规程-JTG3410-2025",
+  "title": "099-公路工程沥青及沥青混合料试验规程-JTG3410-2025",
+  "std_no": "",
+  "version": "",
+  "file": "099-公路工程沥青及沥青混合料试验规程-JTG3410-2025.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\099-公路工程沥青及沥青混合料试验规程-JTG3410-2025.pdf",
+  "pages": 619,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 619,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:31:52",
+  "indexed_at": "2026-08-26 02:28:57",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 619
+  },
+  "toc_zone_end": 9,
+  "offset": 9,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "方法",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "第4章",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "样品 的 保护 与 储存",
+      "start": 26,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "取样 报告",
+      "start": 26,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "粉末 状 沥青 的 密度 和 相",
+      "start": 47,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "报告",
+      "start": 49,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "报告",
+      "start": 73,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "33",
+      "title": "第33章",
+      "start": 209,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "35",
+      "title": "第35章",
+      "start": 230,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "16",
+      "title": "第16章",
+      "start": 233,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "22",
+      "title": "第22章",
+      "start": 237,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "20",
+      "title": "第20章",
+      "start": 252,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "19",
+      "title": "第19章",
+      "start": 267,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "15",
+      "title": "第15章",
+      "start": 294,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "10",
+      "title": "样品 缩 分",
+      "start": 321,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "11",
+      "title": "第11章",
+      "start": 321,
+      "is_expl": false
+    },
+    {
+      "no": 19,
+      "label": "37",
+      "title": "第37章",
+      "start": 321,
+      "is_expl": false
+    },
+    {
+      "no": 20,
+      "label": "12",
+      "title": "样品 的 标识",
+      "start": 323,
+      "is_expl": false
+    },
+    {
+      "no": 21,
+      "label": "18",
+      "title": "沥青 混合 料 加 速 老 化",
+      "start": 331,
+      "is_expl": false
+    },
+    {
+      "no": 22,
+      "label": "28",
+      "title": "第28章",
+      "start": 387,
+      "is_expl": false
+    },
+    {
+      "no": 23,
+      "label": "26",
+      "title": "第26章",
+      "start": 418,
+      "is_expl": false
+    },
+    {
+      "no": 24,
+      "label": "30",
+      "title": "土 2.0",
+      "start": 418,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 4369,
+  "status": "indexed",
+  "note": ""
+}

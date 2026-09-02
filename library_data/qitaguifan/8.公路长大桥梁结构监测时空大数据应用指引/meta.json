@@ -1,0 +1,86 @@
+{
+  "id": "8.公路长大桥梁结构监测时空大数据应用指引",
+  "title": "公路长大桥梁结构监测时空大数据应用指引",
+  "std_no": "",
+  "version": "",
+  "file": "8.公路长大桥梁结构监测时空大数据应用指引.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\8.公路长大桥梁结构监测时空大数据应用指引.pdf",
+  "pages": 30,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 30,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9975,
+    "punct_median": 0.0601,
+    "empty_ratio": 0.231,
+    "bad_ratio": 0.0,
+    "clause_hits": 13
+  },
+  "pdf_mtime": "2025-02-14 17:58:22",
+  "indexed_at": "2026-08-26 19:59:04",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "",
+      "title": "版权页",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "",
+      "title": "扉页",
+      "start": 2,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "",
+      "title": "目录",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "2",
+      "title": "单桥监测数据应用",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "3",
+      "title": "省级监测数据应用",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "",
+      "title": "正文",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "1",
+      "title": "第1章",
+      "start": 7,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 41,
+  "status": "indexed",
+  "note": ""
+}

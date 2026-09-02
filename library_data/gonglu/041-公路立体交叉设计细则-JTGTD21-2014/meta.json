@@ -1,0 +1,135 @@
+{
+  "id": "041-公路立体交叉设计细则-JTGTD21-2014",
+  "title": "041-公路立体交叉设计细则-JTGTD21-2014",
+  "std_no": "",
+  "version": "",
+  "file": "041-公路立体交叉设计细则-JTGTD21-2014.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\041-公路立体交叉设计细则-JTGTD21-2014.pdf",
+  "pages": 130,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 130,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:20:52",
+  "indexed_at": "2026-08-26 00:47:50",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 130
+  },
+  "toc_zone_end": 6,
+  "offset": 6,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "功能 与 分 类",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "控制 要 素",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "第5章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "互通 式 立 体 交 叉 形 式",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "下 道 横断 面",
+      "start": 50,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "政道 平 纵 面 线形",
+      "start": 54,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "政道 超 高 与 加 帘",
+      "start": 61,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "10",
+      "title": "连接 部",
+      "start": 71,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "11",
+      "title": "第11章",
+      "start": 98,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "12",
+      "title": "第12章",
+      "start": 110,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "13",
+      "title": "分离 式 立体 交叉 与 跨 线 桥",
+      "start": 118,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "14",
+      "title": "立体 交叉 的 改 扩建",
+      "start": 123,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 295,
+  "status": "indexed",
+  "note": ""
+}

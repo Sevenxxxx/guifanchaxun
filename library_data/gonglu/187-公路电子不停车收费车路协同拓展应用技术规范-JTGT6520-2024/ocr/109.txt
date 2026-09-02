@@ -1,0 +1,35 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGZT 6520 一 2024 )
+
+OBE-SAM oOBU2.0 RSU2.0 PSAM
+人 和
+分 散 因子 、OBE-SAM 密 钥 标识 | OBE-SAM 可 全 全 内 )
+RndOBU
+VST( 揽 带 RndoBUD |
+|_ GetSecure.rq
+GetSecure rs "| 交通 事件 信息 待 加 密 数 据 内 容
+密 SM4 加 密
+交通 舍 幅 信息 部 分 守 文
+对 交通 事件 信息 (明文 与 密
+组 合 ) 进 行 帧 校 状 取 CRCO
+和 CRC1
+CRCO、CRCLI、RandOBU |
+TrafficInfo. rr [网 获取 安全 报 文
+从 C、 售 ， MessageMAC
+、 对 交通 事件 信息 ( 明
+进行 帧 校 验 获 取 CRC2 币
+MessageMAC、 交 通 事件 信息
+
+| 部 分 密 文 、CRC2、CR
+太
+使 用 CRC2、CRC3 和 RndOBU
+计算 安全 报 文 MAC2 4
+隐
+科 验 MAC2 是 否 与 KZ
+MessageMAC 政 EN
+
+] 事件 信息 播报
+
+注 : PSAM 加 解密 能 力 所 限 ， 待 加 密 事 件 信息 长 度 >255 字 节 时 ， 应 进行 分 包
+图 J. 4.2-2 ”安全 机 制 流程
+
+一 104 一

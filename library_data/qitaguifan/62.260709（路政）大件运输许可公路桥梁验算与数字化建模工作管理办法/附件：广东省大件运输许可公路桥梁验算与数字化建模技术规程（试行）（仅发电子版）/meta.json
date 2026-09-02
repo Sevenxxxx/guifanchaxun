@@ -1,0 +1,114 @@
+{
+  "id": "附件：广东省大件运输许可公路桥梁验算与数字化建模技术规程（试行）（仅发电子版）",
+  "title": "附件：广东省大件运输许可公路桥梁验算与数字化建模技术规程（试行）",
+  "std_no": "仅发电子版",
+  "version": "",
+  "file": "qitaguifan/62.260709（路政）大件运输许可公路桥梁验算与数字化建模工作管理办法/附件：广东省大件运输许可公路桥梁验算与数字化建模技术规程（试行）（仅发电子版）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\62.260709（路政）大件运输许可公路桥梁验算与数字化建模工作管理办法\\附件：广东省大件运输许可公路桥梁验算与数字化建模技术规程（试行）（仅发电子版）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\62.260709（路政）大件运输许可公路桥梁验算与数字化建模工作管理办法\\附件：广东省大件运输许可公路桥梁验算与数字化建模技术规程（试行）（仅发电子版）.pdf",
+  "pages": 48,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 48,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 1.0,
+    "punct_median": 0.0714,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.222,
+    "clause_hits": 83
+  },
+  "source_mtime": "2026-07-15 19:57:24",
+  "pdf_mtime": "2026-07-15 19:57:24",
+  "source_mtime_ns": 1784116644000000000,
+  "source_size": 2822988,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 23:19:18",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "",
+      "title": "引言",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "1",
+      "title": "范围",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "规范性引用文件",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "术语和定义",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "基本要求",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "桥梁遴选",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "建模标准",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "验算办法",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "附录A",
+      "title": "直桥入库文件参数含义及工程示例",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "附录B",
+      "title": "弯桥入库文件参数含义及工程示例",
+      "start": 38,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 162,
+  "status": "indexed",
+  "note": ""
+}

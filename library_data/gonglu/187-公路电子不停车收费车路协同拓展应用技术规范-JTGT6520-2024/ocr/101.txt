@@ -1,0 +1,41 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGZT 6520 一 2024)
+
+Dsrec-DID INTEGER (0. . 127，…) 无 扩展 ，ETC 应 用 目录 ， 取 值 为 1;， 车 路 协
+同 拓展 应 用 目录 号 为 2;
+一 一 ActionType INTEGCER (0. . 127，…) 无 扩展 ， 取 值 为 7;
+accessCredentials OCTET STRING (SIZE (0..127，…)) 无 扩展 ， 可 选 性 使
+用 ，Length 为 8， 取 值 8 ，accessCredentials 的 取 值 为 8 字 节 ，accessCredentials 为 RSU 计
+算得 到 的 访问 证 书 ， 可 用 于 accessCredentials 计算 的 随机 数 可 从 VST 中 获得 ， 计 算 过 程
+参见 《电子 收费 ”专用 短程 通信 第 4 部 分 : 设备 应 用 》(GBZT 20851. 4 一 2019 ) ;
+actionParameter Container ，Container. Type = 46 (TrafficImnfoRd ) ， 在 车 路 协同 应
+用 中 存在 。
+TrafficeImnfoRd 的 ASN. 1 数据 结构 如 下 :
+TrafficImnfoRq:: =SEQUENCE |
+
+transType TransType，
+
+authentication MessageMAC， 1 鸭
+-- 安 全 信息 ， 具 体 定义 参见 本 规范 附 受
+
+encryptionFlag INTERCER (0. .255) 9
+
+YY 克
+
+了 8
+
+，1 表示 对 数据 内 容 加 密 ，
+
+人 .655351 ，
+pakkg 可 Im jate INTERCGER (0. . 65535 ) ，
+- 包 序 号 ， 最 高 位 取 1: 首 包 ,， 取 0: 后 续 包 ， 余 位 表示 剩余 包 数
+datalen INTERCGER (0. . 65535) ，
+-- data 数据 长 度
+
+setmessageData MessageFrame ，
+
+一 一 MessageFrame 分 包 数 据
+
+也 4.8 TrafficInfo. response 应 符合 下 列 规定 ;:
+1 _ TrafcInfo. response 的 LLC 层 使 用 AGCn 命令 ， APP 层 使 用 Action. response ， 工 -
+
+APDUs = Action-Response ，TrafficImnfo. response 用 于 返回 所 对 应 TrafficInfo. request 请 求 的

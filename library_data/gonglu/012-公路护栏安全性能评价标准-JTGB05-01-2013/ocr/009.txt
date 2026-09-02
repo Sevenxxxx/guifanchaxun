@@ -1,0 +1,46 @@
+公路 护栏 安全 性 能 评价 标准 (JTG B05-01 一 2013 )
+
+试验 车 辆 在 碰撞 点 前 6m 处 的 行驶 速度 。
+
+2.0.22 碰撞 角度 impact angle
+
+对 于 护栏 标准 段 、 护 栏 过 渡 段 、 中 央 分 隅 带 开 口 护栏 和 防 撞 垫 ， 碰 撞 角 度 是 指 车 辆
+碰撞 试验 护栏 初始 瞬间 ， 车 辆 纵向 中 心 线 与 试验 护栏 纵 轴线 间 的 夹 角 ; 对 于 护栏 端 头 ，
+碰撞 角度 是 指 车 辆 碰撞 护栏 端 头 初始 瞬间 ， 和 车辆 纵向 中 心 线 与 护栏 端 头 连接 的 护栏 标准
+段 纵 轴线 间 的 夹 角 。
+
+2. 0. 23 导 向 驶 出 框 Tedirective exit box
+为 评价 试验 护栏 导向 功能 ， 对 车 辆 碰撞 试验 护栏 后 的 运行 轮 迹 所 规定 的 安全 范围 。
+
+2.0.24 乘员 碰撞 速度 〈OIV ) occupant impaect velocity
+实 车 足 尺 碰撞 试验 时 ， 小 型 客车 碰撞 试验 护栏 过 程 中 ， 假 想 的 乘员 头 部 与 乘员 舱 内
+部 碰撞 的 瞬时 相对 速度 。
+
+2.0.25 乘员 碰撞 后 加 速度 (ORA) occupant fidedown aceeleration
+实 车 足 尺 碰撞 试验 时 ， 小 型 客车 碰 擅 试验 护栏 过 程 中 % 假想 的 乘员 头 部 与 乘员 舱 内 部 伴
+撞 后 ， 假 想 的 乘员 头 部 与 车 辆 共同 经 受 的 车 辆 重心 处 加 速度 10ms 间 隅 平均 值 的 最 大 值 。
+
+2. 0. 26 ”护栏 最 大 横向 动态 变形 值 妃 ) maxiinuri dynaiiic lateral deflection of highway barri-
+
+eISs
+
+车 辆 碰撞 试 验 护栏 过 程 中 ”试验 护栏 变形 后 迎 擅 面 相对 于 其 初始 位 置 的 最 大 横向 水
+平 位 移 。
+
+2. 0. 27- 护栏 最 大 横向 动态 位 移 外 延 值 (到 ) maximum dynamic widening distance of
+lateral deflection of highway barriers
+车 辆 碰撞 试验 护栏 过 程 中 ， 试 验 护 栏 变形 后 最 外 边缘 相对 于 试验 护栏 碰 拉 前 最 内 边
+缘 的 最 大 横向 水 平 虫 离 。
+
+2.0.28 车辆 最 大 动态 外 倾 值 (VI) maximum dynamic vehicle incline-out distance
+大 中 型 车 辆 (包括 特大 型 客车 ) 碰撞 试验 护栏 过 程 中 外 倾 时 ， 和 车辆 最 外 边缘 相对
+于 试验 护栏 碰撞 前 最 内 边缘 的 最 大 横向 水 平 上 距 离 。
+
+2. 0. 29 车辆 最 大 动态 外 倾 当 量 值 (VL ) normalized maximum dynamic vehicle incline-
+
+out distance
+
+实 车 足 斥 碰撞 试验 测 出 的 车 辆 最 大 动态 外 倾 值 (VI) 按照 车 辆 总 高 4. 2m 换算 后 的
+车 辆 最 大 动态 外 倾 值 。
+
+一 4 一

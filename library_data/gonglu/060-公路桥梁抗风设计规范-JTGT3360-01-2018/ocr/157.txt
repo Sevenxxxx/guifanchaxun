@@ -1,0 +1,17 @@
+公路 桥梁 抗 风 设计 规范 (JTG《XT 3360-01 一 2018 )
+
+4 广义 正 态 分 布 〈Ceneralized Normal Distribution ，CNO)
+
+_ 好- 限
+似 2) 2 柬 《A-8)
+FCx) = 中 (7y) 〈《A-9)
+5 皮尔 逊 亚 型 分 布 (Pearson Type 1T Distrigution，PFE3 ，P-1T1)
+-1 oo
+所 2) =- ET (xz 一 巧 ”6e (A-10)
+-1 ee
+严 (x) -Ce <)”e dx (A-l11)
+
+式 中 ,上 a、 天 分别 为 位 置 参 数 、 尺 度 参 数 和 形状 参数 ， 在 皮尔 逊 模 型 分 布 中 ,上 、B、
+Q 分 别 为 位 置 参数 、 尺 度 参 数 和 形状 参数 。
+
+一 1$2 一

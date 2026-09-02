@@ -1,0 +1,86 @@
+{
+  "id": "134-公路工程建设项目概算预算编制办法-JTG3830-2018",
+  "title": "134-公路工程建设项目概算预算编制办法-JTG3830-2018",
+  "std_no": "",
+  "version": "",
+  "file": "134-公路工程建设项目概算预算编制办法-JTG3830-2018.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\134-公路工程建设项目概算预算编制办法-JTG3830-2018.pdf",
+  "pages": 123,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 123,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:38:25",
+  "indexed_at": "2026-08-26 03:35:33",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 123
+  },
+  "toc_zone_end": 6,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": 116,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "概算 预算 编制 方法",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "概算 预算 费用 标准 和 计算 方法",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "5",
+      "title": "第5章",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "7",
+      "title": "第7章",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "4",
+      "title": "世 0.15K]N (3.1.2)",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 116,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 92,
+  "status": "indexed",
+  "note": ""
+}

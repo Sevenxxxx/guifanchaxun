@@ -1,0 +1,42 @@
+智慧 工地 业务 内 容 采 集 参 数 建议 表
+
+C.0.11 基础 施工 参数 宜 按 表 C. 0. 11 采集 。
+
+表 C.0.11 基础 施工
+
+名 称 基 坑 施工 监测 参数 采集
+参数 名 称 参数 类 型 是 否 必 须 〈(YZN)
+监测 点 String TY
+文 护 顶 部 水 平 位 移 Float Y
+文 护 顶部 竖 向 位 移 Float Y
+深层 水 平 位移 Float Y
+土 压 力 Float Y
+坑 底 隆起 Float Y
+结构 应 力 Float Y
+水 位 Float Y
+名 称 沉 井 施 江 监测 参数 采集
+参数 名 称 参数 类 型 是 否 必 须 〈(YZN)
+监测 点 Stria TY
+结构 应 力 Float Y
+水 平 位移 Float Y
+垂直 位 移 Rloat Y
+下 沉 速 度 Ploat Y
+井 体 倾斜 度 了 oaf Y
+坑 底 隆起 Rloat Y
+名 称 桩 机 施工 监测 参数 采集
+参数 名 称 参数 类 型 是 否 必 须 〈(YZN)
+桩 号 String Y
+桩 长 Float Y
+垂直 度 Float Y
+承载 力 Float Y
+沉降 Float Y
+位 移 Float Y
+强度 Float Y
+名 称 蛋 卉 施工 监测 参数 采集
+参数 名 称 参数 类 型 是 否 必 须 〈(YZN)
+监测 点 String TY
+支 护 顶 部 水 平 位 移 Float Y
+支 护 顶 部 竖 向 位 移 Float Y
+土 体 深 层 水 平 位 移 Float Y
+地 下 水 位 Float Y
+

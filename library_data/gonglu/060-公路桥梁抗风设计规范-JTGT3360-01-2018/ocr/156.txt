@@ -1,0 +1,51 @@
+全 国 桥梁 抗 风 风险
+
+区 划 图 及 风速 参数 分 布 图 表
+
+表 A.4 ( 续 )
+
+条 文 说 明
+
+本 规范 采用 了 广义 极 值 分 布 池 广义 过 辑 分 布 所 广 痰 帕 累 托 分 布 、 广 义 正 态 分 布 与 皮
+尔 逊 下 型 分 布 五 种 概率 模型 进行 极 值 风速 分 布 拟 合 ,- 概 率 分 布 模型 的 表达 式 分 别 见 式
+
+(A-1) ~ 式 (A-11):
+
+1 广义 极 值 分 布 s(Ceneralized PExzyzerme Ta1BTDistribution ，CET)
+
+式 中 :
+
+y =--fll -1 二 (大 0)
+
+CG
+
+2 广义 逻辑 分 布 〈GCeneralized Logistic_ Distribution ，CLO)
+
+1
+
+用 <) = ae0 -257 (1] + e)
+1
+下 =
+《1 1 +e
+
+3 广义 帕 票 托 分 布 〈GCeneralized Pareto _ Distribution ，CP4)
+
+1
+Hz) = 一 在 而
+
+F(x) =1 二
+
+一 1531 一
+
+(《A-1)
+《A-2)
+
+(A-3)
+
+(《A-4)
+
+(A-5)
+
+(A-6)
+
+(A-7)

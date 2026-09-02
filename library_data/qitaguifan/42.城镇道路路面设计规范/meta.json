@@ -1,0 +1,86 @@
+{
+  "id": "42.城镇道路路面设计规范",
+  "title": "城镇道路路面设计规范",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/42.城镇道路路面设计规范.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\42.城镇道路路面设计规范.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\42.城镇道路路面设计规范.pdf",
+  "pages": 108,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 108,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 0.8,
+    "punct_median": 0.0,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1.0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-11-28 17:23:16",
+  "pdf_mtime": "2025-11-28 17:23:16",
+  "source_mtime_ns": 1764321796000000000,
+  "source_size": 14913901,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 108
+  },
+  "indexed_at": "2026-08-31 22:11:03",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "7",
+      "title": "条 比 中 面 :reaeraeseegreeeeaeeee",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "8",
+      "title": "其 他 路 而 .4 78",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "9",
+      "title": "路 面 排水 .pe 80",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "1",
+      "title": "第1章",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "21",
+      "title": "第21章",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "32",
+      "title": "第32章",
+      "start": 53,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 246,
+  "status": "indexed",
+  "note": ""
+}

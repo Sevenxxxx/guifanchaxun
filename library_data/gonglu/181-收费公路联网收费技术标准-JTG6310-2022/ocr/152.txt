@@ -1,0 +1,44 @@
+OBU 技术 要 求
+
+续 表 本 4. 3-5
+参 数 取 值 参数 说 明
+did Dsrc-DID ETC 应 用 对 应 1
+iid 一 不 存在
+ret ReturnStatus 必 备
+
+注 ， 1.， authenticator 的 计算 域 为 TAC 讨
+如 果 存 在 ) 。
+2019) 中
+
+算 参 数 (tacPara) 、 车 型 (vehicleClass ) 及 写 入 的 本 次 过 站 信息 (tollInfo ，
+
+“8.3 信息 鉴别 ”。
+
+计算 方法 参见 《电子 收费 专用 短程 通信 第 4 部分: 设备 应 用 层 》 (GBZT 20851. 4 一
+
+2. SetTollData 原 语 亦 可 通过 accessCredentials 和 authenticator 完成 RSU 和 OBU 的 双向 认证 ， 可 用 于 其 他 交易
+
+流程 。
+
+丁 4.4 单 片 式 0BU 应 用 安全
+
+备 应
+
+HH
+J
+
+]
+许可 。
+
+j 层 》(GBXT 20851.
+RSU 第 一 次 发 送 带 有 专
+
+2 0BU 在 通过 访问 许可 认 i
+
+一 143 一
+
+点 符合 现行 《电子 收费 ”专用 短程 通信 第 4 部 分 : 设
+4) 的 相关 规定 ， 同 时 其 访问 权限 应 满 趾 下 列 要 求 :
+用 链 路 地 址 的 下 行 链 路 数据 帧 的 服务 原 语 时 应 携带 访问
+
+后，RSU 应 具备 对 OBE 的 访问 权限 。

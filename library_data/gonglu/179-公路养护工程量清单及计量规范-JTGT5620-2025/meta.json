@@ -1,0 +1,93 @@
+{
+  "id": "179-公路养护工程量清单及计量规范-JTGT5620-2025",
+  "title": "179-公路养护工程量清单及计量规范-JTGT5620-2025",
+  "std_no": "",
+  "version": "",
+  "file": "179-公路养护工程量清单及计量规范-JTGT5620-2025.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\179-公路养护工程量清单及计量规范-JTGT5620-2025.pdf",
+  "pages": 196,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 196,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 1.0,
+    "punct_median": 0.1651,
+    "empty_ratio": 0.071,
+    "bad_ratio": 1.0,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:43:41",
+  "indexed_at": "2026-08-26 04:43:34",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 196
+  },
+  "toc_zone_end": 4,
+  "offset": 4,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "第3章",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "工程 量 清单",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "第5章",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "小 石 志 ( 或 石 届 ) 填 弘 、 找 补",
+      "start": 24,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "回填、 夯实",
+      "start": 40,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "第8章",
+      "start": 45,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 91,
+  "status": "indexed",
+  "note": ""
+}

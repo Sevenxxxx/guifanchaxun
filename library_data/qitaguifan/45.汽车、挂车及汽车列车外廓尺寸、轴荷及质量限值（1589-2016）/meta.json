@@ -1,0 +1,51 @@
+{
+  "id": "45.汽车、挂车及汽车列车外廓尺寸、轴荷及质量限值（1589-2016）",
+  "title": "汽车、挂车及汽车列车外廓尺寸、轴荷及质量限值",
+  "std_no": "1589-2016",
+  "version": "1589",
+  "file": "qitaguifan/45.汽车、挂车及汽车列车外廓尺寸、轴荷及质量限值（1589-2016）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\45.汽车、挂车及汽车列车外廓尺寸、轴荷及质量限值（1589-2016）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\45.汽车、挂车及汽车列车外廓尺寸、轴荷及质量限值（1589-2016）.pdf",
+  "pages": 15,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 15,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9851,
+    "punct_median": 0.0649,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.286,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-12-02 21:25:03",
+  "pdf_mtime": "2025-12-02 21:25:03",
+  "source_mtime_ns": 1764681903000000000,
+  "source_size": 483866,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:11:04",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 115,
+  "status": "indexed"
+}

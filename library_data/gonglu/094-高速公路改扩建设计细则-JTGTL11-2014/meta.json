@@ -1,0 +1,121 @@
+{
+  "id": "094-高速公路改扩建设计细则-JTGTL11-2014",
+  "title": "094-高速公路改扩建设计细则-JTGTL11-2014",
+  "std_no": "",
+  "version": "",
+  "file": "094-高速公路改扩建设计细则-JTGTL11-2014.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\094-高速公路改扩建设计细则-JTGTL11-2014.pdf",
+  "pages": 64,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 64,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:31:33",
+  "indexed_at": "2026-08-26 02:22:41",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 64
+  },
+  "toc_zone_end": 5,
+  "offset": 5,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "既 有 公路 调查 与 评价",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "总 体 设 计",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "路线",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "路 基",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "路 面",
+      "start": 37,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "桥涵",
+      "start": 43,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "10",
+      "title": "第10章",
+      "start": 48,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "11",
+      "title": "路线 交 叉",
+      "start": 55,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "12",
+      "title": "第12章",
+      "start": 59,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 231,
+  "status": "indexed",
+  "note": ""
+}

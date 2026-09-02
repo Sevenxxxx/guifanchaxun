@@ -1,0 +1,51 @@
+{
+  "id": "附件：佛山市高效办成大件运输“一件事”实施方案",
+  "title": "附件：佛山市高效办成大件运输“一件事”实施方案",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/73.250403（路政）关于印发《佛山市高效办成大件运输“一件事”实施方案》的通知/附件：佛山市高效办成大件运输“一件事”实施方案.wps",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\73.250403（路政）关于印发《佛山市高效办成大件运输“一件事”实施方案》的通知\\附件：佛山市高效办成大件运输“一件事”实施方案.wps",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\73.250403（路政）关于印发《佛山市高效办成大件运输“一件事”实施方案》的通知\\附件：佛山市高效办成大件运输“一件事”实施方案.wps",
+  "pages": 12,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 12,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9834,
+    "punct_median": 0.005,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-04-27 18:21:24",
+  "pdf_mtime": "2025-04-27 18:21:24",
+  "source_mtime_ns": 1745749284000000000,
+  "source_size": 2540544,
+  "fmt": "wps",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:32:25",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

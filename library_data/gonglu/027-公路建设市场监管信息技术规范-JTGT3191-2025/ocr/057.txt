@@ -1,0 +1,28 @@
+数据 资源 表
+
+续 表 A. 2.3-2
+序 、 数据 是 否
+号 中 文 名 称 字段 名 称 说 明 类 型 数据 格式 值 域 必 填
+3 标 段 名 称 Segment_name 标 段 名 称 字符 型 an. .256 是
+4 标 段 编码 segment_code 标 段 编码 字符 型 an. . 100 是
+最 高 投标 限 价 ， 最 高 投标 限 价 。
+5$ (万 元 ) biq_max_amount (万 元 ) 数字 型 n. . 18 ,4
+6 工程 类 别 segment_type 工程 类 别 字符 型 是
+项 目 招标 失败 . 项 目 招标 失败
+7 情况 bid_no_status 情况 是
+
+是
+是
+是
+， 投标 人 统一 社
+4 bidder_code 会 信用 代码 字符 型 an .18 是
+5 bidder_db 投标 人 代表 “| 字符 型 an. . 50 是
+6 manager 项 目 负责 人 | 字符 型 an. . 50 是
+项 目 负责 人 项 目 负 责 人 身
+了 身 份 证 号 码 manager_cert_code 人 证 号 码 字符 型 an .18 是
+8 | 投标 报价 (万 元 ) bidq_offer 二 数字 型 n.. 18 ,4 是
+9 排名 rank_ 排名 数字 型 n. .2 是
+10 是 否 中 标 is_win_bid 是 否 中 标 数字 型 nl 1 是 .0 否 是
+是 采用 24 小 时 | 日 期
+11| 数据 导出 时 间 export_date 计时 法 时 间 再 YYYYMMDDHHMMSS 是
+

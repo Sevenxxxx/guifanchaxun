@@ -1,0 +1,93 @@
+{
+  "id": "道路交通标志和标线 第5部分：限制速度(GB+5768.5-2017)",
+  "title": "道路交通标志和标线 第5部分：限制速度",
+  "std_no": "GB 5768.5-2017",
+  "version": "5768",
+  "file": "道路交通标志和标线 第5部分：限制速度(GB+5768.5-2017).pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\15.道路交通标志和标线\\道路交通标志和标线 第5部分：限制速度(GB+5768.5-2017).pdf",
+  "pages": 14,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 14,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 0.0,
+    "punct_median": 0.0812,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1.0,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-17 12:44:46",
+  "indexed_at": "2026-08-25 21:47:27",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 14
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "范 壮 ee",
+      "start": 2,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "3",
+      "title": "术语 和 定义",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "4",
+      "title": "一 般 规定",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "2",
+      "title": "规范 性 引用 文件",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "限制 速度 值 确定",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "限 速 标志 设置",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "可 变 限 速 标志 设置",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "路面 限 速 标记 设置",
+      "start": 9,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 33,
+  "status": "indexed",
+  "note": ""
+}

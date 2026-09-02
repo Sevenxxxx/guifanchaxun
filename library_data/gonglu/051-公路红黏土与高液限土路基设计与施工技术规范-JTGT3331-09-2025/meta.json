@@ -1,0 +1,93 @@
+{
+  "id": "051-公路红黏土与高液限土路基设计与施工技术规范-JTGT3331-09-2025",
+  "title": "051-公路红黏土与高液限土路基设计与施工技术规范-JTGT3331-09-2025",
+  "std_no": "",
+  "version": "",
+  "file": "051-公路红黏土与高液限土路基设计与施工技术规范-JTGT3331-09-2025.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\051-公路红黏土与高液限土路基设计与施工技术规范-JTGT3331-09-2025.pdf",
+  "pages": 33,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 33,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 1.0,
+    "punct_median": 0.135,
+    "empty_ratio": 0.077,
+    "bad_ratio": 1.0,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:21:30",
+  "indexed_at": "2026-08-26 01:16:35",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 33
+  },
+  "toc_zone_end": 5,
+  "offset": 4,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "第1章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "本 霹 和 符号",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "工程 地 质 勘察",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "第4章",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "9",
+      "title": "第9章",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "10",
+      "title": "第10章",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "11",
+      "title": "第11章",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "5",
+      "title": "控 方 路 基",
+      "start": 28,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 96,
+  "status": "indexed",
+  "note": ""
+}

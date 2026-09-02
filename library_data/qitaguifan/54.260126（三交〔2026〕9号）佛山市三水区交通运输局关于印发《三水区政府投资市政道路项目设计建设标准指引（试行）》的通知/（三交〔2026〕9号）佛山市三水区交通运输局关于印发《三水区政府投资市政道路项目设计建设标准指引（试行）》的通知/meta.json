@@ -1,0 +1,51 @@
+{
+  "id": "（三交〔2026〕9号）佛山市三水区交通运输局关于印发《三水区政府投资市政道路项目设计建设标准指引（试行）》的通知",
+  "title": "（三交〔2026〕9号）佛山市三水区交通运输局关于印发《三水区政府投资市政道路项目设计建设标准指引（试行）》的通知",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/54.260126（三交〔2026〕9号）佛山市三水区交通运输局关于印发《三水区政府投资市政道路项目设计建设标准指引（试行）》的通知/（三交〔2026〕9号）佛山市三水区交通运输局关于印发《三水区政府投资市政道路项目设计建设标准指引（试行）》的通知.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\54.260126（三交〔2026〕9号）佛山市三水区交通运输局关于印发《三水区政府投资市政道路项目设计建设标准指引（试行）》的通知\\（三交〔2026〕9号）佛山市三水区交通运输局关于印发《三水区政府投资市政道路项目设计建设标准指引（试行）》的通知.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\54.260126（三交〔2026〕9号）佛山市三水区交通运输局关于印发《三水区政府投资市政道路项目设计建设标准指引（试行）》的通知\\（三交〔2026〕9号）佛山市三水区交通运输局关于印发《三水区政府投资市政道路项目设计建设标准指引（试行）》的通知.pdf",
+  "pages": 2,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 2,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-04-14 18:07:40",
+  "pdf_mtime": "2026-04-14 18:07:40",
+  "source_mtime_ns": 1776161260000000000,
+  "source_size": 246396,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 23:19:18",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

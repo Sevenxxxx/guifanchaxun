@@ -1,0 +1,39 @@
+公路 工程 集 料 试验 规程 (JTC 3432 一 2024 )
+
+工 0304 一 20214 粗 集 料 高 温 稳 定性 试验 ooeseossssosesooesooseoseoooooeosooeooosoosooesosoeooooooo。 124
+工 0360 一 20214 粗 集 料 热 老 化 试验 (者 沸 法 ) eeoooesooosooseoososooooooosooeoooooooesoosooooueoo。 129
+工 0324 一 2024 集 料 碱 活性 检验 ( 岩 相 法 ) asseooseeesoeoeooseooosooooooeooeooooooeoosoooooooo。 133
+T 0325 一 2024 ” 集 料 碱 活性 检验 (快速 砂浆 棒 法 ) 140
+T0368 一 2024” 集 料 碱 活 性 检验 (混凝土 棱柱 体 法 ) 146
+工 0309 一 20214 集 料 碱 活性 检验 (岩石 柱 法 ) eeeooesoooseooeooesooooooosooesoooosooesoeooeooooos。 1 和 1
+工 0347 一 2000 集 料 碱 值 试验 oseoseeesosesoeseoesosooesooeseoosesooesoesoooooooesooesooooesooesoeooooooos。 1S4
+S 细 集 料 试验
+T 0327 一 2005
+T 0328 一 2005 人
+工 0330 一 2024 细 集 料 密度 及 吸水 率 试 验 ( 志 落 简 法 ) 人 ee 164
+下 0331 一 1994 细 集 料 堆积 密度 及 空隙 率 试 验 eesosoes。。 ee ee eeoeesosoonooones 170
+下 0332 一 2004 细 集 料 含水 率 试验 ( 烘 干 法 ) eeeossigr。 oo L eeoesooessoeesoseoeeienes 173
+工 0343 一 1994 细 集 料 含水 率 快速 试验 ( 酒精 燃 燥 活 从 二 站 174
+下 0333 一 2000 细 集 科 合 泥 量 试验 ( 逢 尝 法 7 四 SA 和 176
+T 0335 一 1994” 细 集 料 泥 块 含量 试验 …… AAS TI 本 178
+T 0334 一 2005” 细 集 料 砂 当量 试验 Ai 3 180
+T 0349 一 2024 细 集 料 亚 甲 划 试 Ar ea : 和 187
+T 0336 一 2024 含量 试验 SC 2
+工 0337 一 2024 试验 … 和
+工 0338 一 2024
+工 0341 一 2024
+T 0372 一 2024 条 最 状 险
+工 0373 一 2024 所 售 料 让 y 最 试 入 半生 入村 入 村 和 和 相生 215
+T 0339 一 = 1 唱 4 贿 集 笠 及 胀 率 试验 于 218
+T034 个 镶 4 和香 呈 图 作 二 本 生生 生生 于 220
+T 0344 一 2000 ” 细 集 料 棱角 性 试验 (间隙 率 法 ) pp 225
+工 0345 一 2024 细 集 料 楼 角 性 试验 (流动 时 间 法 ) oo 229
+T 03S0 一 2004 细 集 料 压 碎 值 试验 esoeeoesooooeooesooeooooesoooooeoooooooeoooooeoesooooeoeooooooo。 233
+0 填料 试验 eeeseueoesoososoooooooesoosooeoeooosoeoooooooesoooooeoooooooooooeooooooooooooeooooesoooooooooo 230
+工 03$1 一 2000 填料 筛 分 试验 ( 水 洗 法 ) oooeooeoocooooeooeooeooooooooooooeooooesooeoooooooo 236
+工 03S0 一 20214 填料 盘 分 试验 ( 负 压 筛 法 ) eeeeeeeseeeseeeeoeeooeeeooooeoeeseooeoeeooeeooeoesesees 238
+T 03S7 一 20214 填料 和 干 压 空 隙 率 试 验 eeooeeeoeseooesooeoeoseseeoooooooeesooesooooesooesoeoooouoos。 241
+T 03S8 一 20214 填料 比 表面 积 试验 ( 勃 氏 法 ) ooeooesooooeooeooeoooooooooeooeooooeoooooooooo 244
+工 03S$2 一 2024 填料 密度 试验 eeeseesooesosesoesooooeooesooesooooeooesoeoooooooeooesooooeoosoeoooooooen 240
+下 03S9 一 20214 填料 含水 率 试 验 ( 烘 王 法) ooeoeoeooesooooeooeooeoooooooooesooeoooesooeoooooooeo。 293
+工 03S3 一 2000 填料 亲 水 系数 试验 ooeeeseoeseosesseseeoeeeeeseoseeosesseoeeesoeeseseooeeeseseees 244

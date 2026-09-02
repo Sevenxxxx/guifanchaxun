@@ -1,0 +1,149 @@
+{
+  "id": "181-收费公路联网收费技术标准-JTG6310-2022",
+  "title": "181-收费公路联网收费技术标准-JTG6310-2022",
+  "std_no": "",
+  "version": "",
+  "file": "181-收费公路联网收费技术标准-JTG6310-2022.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\181-收费公路联网收费技术标准-JTG6310-2022.pdf",
+  "pages": 299,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 299,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 1.0,
+    "punct_median": 0.1443,
+    "empty_ratio": 0.071,
+    "bad_ratio": 1.0,
+    "clause_hits": 1
+  },
+  "pdf_mtime": "2026-08-25 22:44:02",
+  "indexed_at": "2026-08-26 04:47:57",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 299
+  },
+  "toc_zone_end": 7,
+  "offset": 7,
+  "toc_source": "clause_cluster",
+  "expl_start": 278,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 册",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "第3章",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "总 体 架 构",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "部 联网 收费 中 心 系",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "省 联网 收费 中 心 系统",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "区域 /路 段 中 心 系",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "第8章",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "收费 站 系统",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "10",
+      "title": "第10章",
+      "start": 39,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "11",
+      "title": "客户 服务 系统",
+      "start": 45,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "12",
+      "title": "第12章",
+      "start": 49,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "13",
+      "title": "第13章",
+      "start": 52,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "14",
+      "title": "网 络 安全 要 求",
+      "start": 63,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "23",
+      "title": "第23章",
+      "start": 156,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 278,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 251,
+  "status": "indexed",
+  "note": ""
+}

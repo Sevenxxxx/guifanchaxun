@@ -1,0 +1,41 @@
+公路 建设 市 场 监管 信息 技术 规范 (JTGXT 3191 一 2025 )
+
+续 表 A. 1. 1-3
+筷 | 。 中 文 名 称 字段 名 称 说 明 关 到 数据 格式 值 域 吉首
+4 | 施工 资质 类 型 | qualification_name 字符 型 an . 100 是
+5 等 级 qualificalion_grade 字符 型 an. . 50 是
+6 | 证书 编号 | qualification_code 字符 型 an. . 200 是
+7 | ”发 证 机 关 issue_department 字符 型 an . 256 是
+8 | ”发 证 日 其 issue_dale 日 期 型 | YYYYMMDD 是
+9 | 有效期 至 valid_end_date 日 期 型 | YYYYMMDDL NU 是
+10| 状态 data_stale 字符 型 ac50 7 和
+TI
+9 硬 网 忆
+
+计时 法 , 例如 FA
+11| 数据 导出 时 间 expor_date | 305221608 给 ipDHHMMSS 是
+
+表示 2018 5] 志 史 ns
+
+月 22 日 16 点 过 < 个
+
+资质 证 书 上 的
+企业 类 型
+
+资质 证 书 上 的
+法 定 代表 人
+
+legal_person_name
+
+资质 证 书 上 的
+许可 机 关
+
+licensinglepartment
+
+qualification_
+tradel_code
+
+qualification_grade
+
+qualification_code
+

@@ -1,0 +1,100 @@
+{
+  "id": "第一册+广东省农村公路中小跨径桥梁通用图 上部结构通用图(钢筋混凝土工字梁及实心板)",
+  "title": "第一册 广东省农村公路中小跨径桥梁通用图 上部结构通用图",
+  "std_no": "钢筋混凝土工字梁及实心板",
+  "version": "",
+  "file": "qitaguifan/63.广东省交通运输厅关于发布《广东省农村公路中小跨径桥梁通用图》的通知/第一册+广东省农村公路中小跨径桥梁通用图 上部结构通用图(钢筋混凝土工字梁及实心板).pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\63.广东省交通运输厅关于发布《广东省农村公路中小跨径桥梁通用图》的通知\\第一册+广东省农村公路中小跨径桥梁通用图 上部结构通用图(钢筋混凝土工字梁及实心板).pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\63.广东省交通运输厅关于发布《广东省农村公路中小跨径桥梁通用图》的通知\\第一册+广东省农村公路中小跨径桥梁通用图 上部结构通用图(钢筋混凝土工字梁及实心板).pdf",
+  "pages": 222,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 222,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.643,
+    "bad_ratio": 1,
+    "clause_hits": 21
+  },
+  "source_mtime": "2026-07-20 20:09:46",
+  "pdf_mtime": "2026-07-20 20:09:46",
+  "source_mtime_ns": 1784549386000000000,
+  "source_size": 47404796,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 23:19:24",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "第2部分",
+      "title": "第2部分(无目录,按页均分)",
+      "start": 31,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "第3部分",
+      "title": "第3部分(无目录,按页均分)",
+      "start": 61,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "第4部分",
+      "title": "第4部分(无目录,按页均分)",
+      "start": 91,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "第5部分",
+      "title": "第5部分(无目录,按页均分)",
+      "start": 121,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "第6部分",
+      "title": "第6部分(无目录,按页均分)",
+      "start": 151,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "第7部分",
+      "title": "第7部分(无目录,按页均分)",
+      "start": 181,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "第8部分",
+      "title": "第8部分(无目录,按页均分)",
+      "start": 211,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 21,
+  "status": "indexed"
+}

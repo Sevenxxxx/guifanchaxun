@@ -1,0 +1,41 @@
+ASN.、1 消息 集
+
+yield (4) ，
+-=- 让 行
+moveToLeft (5 ) ，
+-- 靠 左 缓行
+moveToRight (6) ，
+-- 靠 右 缓行
+pullOverToTheLeft (7) ，
+-- 靠 左 停车
+pulOverToTheRight (8)
+-- 靠 右 停车
+| (0. .127 ，…)
+SuggestionsStatus: : = INTECER |
+betreated (0 ) ，
+-- 已 处 置
+treating (1) ，
+-- 正 在 处 置
+remaliningtime NA、
+人 时间 训 站
+| (0..127，…)
+
+EtcRTSList: ; = SEQUENC 及 人 SS 居 FEtcRTSData
+
+EteRTSData: : = 5 As
+攻 < 严 和
+
+sorvicelnfs
+
+serviceAreaBasicJnfo ServiceAreaBasicInfo OPIIONAL，
+
+-- 服 务 区 基本 信息
+emergencyRescue EmergencyRescue OPTIONAL，
+
+-- 应 急救 援 服务 信息
+roadGuide OCTET STRING (SIZE (1..255) ) OPTIONAL，
+
+-- 路 段 分 流 诱导 信息 ， 文 字 描述
+description Description OPTIONAL，
+
+-一 服务 描述 信息

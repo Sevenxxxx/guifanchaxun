@@ -1,0 +1,93 @@
+{
+  "id": "34.250725公路路基自然灾害风险点应急处治典型案例",
+  "title": "250725公路路基自然灾害风险点应急处治典型案例",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/34.250725公路路基自然灾害风险点应急处治典型案例.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\34.250725公路路基自然灾害风险点应急处治典型案例.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\34.250725公路路基自然灾害风险点应急处治典型案例.pdf",
+  "pages": 91,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 91,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9902,
+    "punct_median": 0.0127,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-07-25 18:41:16",
+  "pdf_mtime": "2025-07-25 18:41:16",
+  "source_mtime_ns": 1753440076000000000,
+  "source_size": 7781909,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:11:01",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "",
+      "title": "一、工作要求",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "",
+      "title": "二、警示设置及交通疏解",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "",
+      "title": "三、临时处治措施",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "",
+      "title": "四、灾害发展应对",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "",
+      "title": "五、极端天气防范",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "",
+      "title": "六、高速公路典型案例",
+      "start": 32,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "",
+      "title": "七、普通国省道典型案例",
+      "start": 56,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed",
+  "note": ""
+}

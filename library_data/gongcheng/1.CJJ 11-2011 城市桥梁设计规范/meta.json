@@ -1,0 +1,114 @@
+{
+  "id": "1.CJJ 11-2011 城市桥梁设计规范",
+  "title": "CJJ 11-2011 城市桥梁设计规范",
+  "std_no": "",
+  "version": "",
+  "file": "gongcheng/1.CJJ 11-2011 城市桥梁设计规范.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gongcheng\\1.CJJ 11-2011 城市桥梁设计规范.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gongcheng\\1.CJJ 11-2011 城市桥梁设计规范.pdf",
+  "pages": 108,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 108,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-09-01 20:38:31",
+  "pdf_mtime": "2026-09-01 20:38:31",
+  "source_mtime_ns": 1788266311485908600,
+  "source_size": 1680059,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 108
+  },
+  "indexed_at": "2026-09-01 23:17:21",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "2",
+      "title": "第2章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "8",
+      "title": "立交、 高架 道路 桥梁 和 地 下 通道 .ee 8",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "9",
+      "title": "桥梁 细部 构造 及 附属 设施 站 ee 23",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "1",
+      "title": "总 则",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "10",
+      "title": "第10章",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "4",
+      "title": "桥 位 选择",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "5",
+      "title": "第5章",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "6",
+      "title": "桥梁 的 平面 、 纵 断 面 和 横断 面 设计",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "7",
+      "title": "桥 染 引 道 、 引 桥",
+      "start": 24,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 242,
+  "status": "indexed",
+  "note": ""
+}

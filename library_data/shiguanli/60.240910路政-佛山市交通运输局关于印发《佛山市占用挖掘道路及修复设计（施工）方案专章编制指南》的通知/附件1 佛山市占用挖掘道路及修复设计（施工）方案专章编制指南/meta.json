@@ -1,0 +1,93 @@
+{
+  "id": "附件1 佛山市占用挖掘道路及修复设计（施工）方案专章编制指南",
+  "title": "附件1 佛山市占用挖掘道路及修复设计（施工）方案专章编制指南",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/60.240910路政-佛山市交通运输局关于印发《佛山市占用挖掘道路及修复设计（施工）方案专章编制指南》的通知/附件1 佛山市占用挖掘道路及修复设计（施工）方案专章编制指南.docx",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\60.240910路政-佛山市交通运输局关于印发《佛山市占用挖掘道路及修复设计（施工）方案专章编制指南》的通知\\附件1 佛山市占用挖掘道路及修复设计（施工）方案专章编制指南.docx",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\60.240910路政-佛山市交通运输局关于印发《佛山市占用挖掘道路及修复设计（施工）方案专章编制指南》的通知\\附件1 佛山市占用挖掘道路及修复设计（施工）方案专章编制指南.docx",
+  "pages": 72,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 72,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9944,
+    "punct_median": 0.0065,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:15:51",
+  "pdf_mtime": "2025-02-14 18:15:51",
+  "source_mtime_ns": 1739528151000000000,
+  "source_size": 572497,
+  "fmt": "docx",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:23:46",
+  "toc_zone_end": 1,
+  "offset": 1,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "市政工程管线涉路开挖",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "市政管线工程涉路非开挖",
+      "start": 18,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "小型涉路工程项目",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "轨道交通建设等其他涉路工程项目",
+      "start": 38,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "窨井部分",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "工程验收",
+      "start": 47,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "附件",
+      "start": 50,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 34,
+  "status": "indexed",
+  "note": ""
+}

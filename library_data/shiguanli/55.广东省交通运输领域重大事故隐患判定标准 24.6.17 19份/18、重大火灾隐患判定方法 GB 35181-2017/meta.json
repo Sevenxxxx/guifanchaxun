@@ -1,0 +1,93 @@
+{
+  "id": "18、重大火灾隐患判定方法 GB 35181-2017",
+  "title": "重大火灾隐患判定方法 GB 35181-2017",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/55.广东省交通运输领域重大事故隐患判定标准 24.6.17 19份/18、重大火灾隐患判定方法 GB 35181-2017.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\55.广东省交通运输领域重大事故隐患判定标准 24.6.17 19份\\18、重大火灾隐患判定方法 GB 35181-2017.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\55.广东省交通运输领域重大事故隐患判定标准 24.6.17 19份\\18、重大火灾隐患判定方法 GB 35181-2017.pdf",
+  "pages": 10,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 10,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:14:48",
+  "pdf_mtime": "2025-02-14 18:14:48",
+  "source_mtime_ns": 1739528088000000000,
+  "source_size": 750201,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 10
+  },
+  "indexed_at": "2026-09-01 01:23:14",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "范 畏 和",
+      "start": 2,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "3",
+      "title": "术语 和 定义",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "规 沧 性 引用 文件",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "判定 原则 和 程序",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "判定 方法",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "直接 判定 要 素",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "综合 判定 要 素",
+      "start": 8,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 75,
+  "status": "indexed",
+  "note": ""
+}

@@ -1,0 +1,114 @@
+{
+  "id": "174-公路桥梁支座和伸缩装置养护与更换技术规范-JTGT5532-2023",
+  "title": "174-公路桥梁支座和伸缩装置养护与更换技术规范-JTGT5532-2023",
+  "std_no": "",
+  "version": "",
+  "file": "174-公路桥梁支座和伸缩装置养护与更换技术规范-JTGT5532-2023.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\174-公路桥梁支座和伸缩装置养护与更换技术规范-JTGT5532-2023.pdf",
+  "pages": 91,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 91,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:42:44",
+  "indexed_at": "2026-08-26 04:32:50",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 91
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "7",
+      "title": "支 座 更 换 施工 、8 伸缩 法 置 养护 与 维",
+      "start": 2,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "4",
+      "title": "支 座 养护 与 维修 . 6",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "5",
+      "title": "支 座 更 换 前 的 检查 、 检 测 与 评定 . .A",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "6",
+      "title": "支 座 更 换 设计 .| 18",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "8",
+      "title": "伸缩 装置 养 搞 与 维修 . .有 39",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "9",
+      "title": "伸缩 装置 更 换 前 的 检查 、 检 测 与 评定 . ",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "10",
+      "title": "伸缩 装置 更 换 设 计 .4 50",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "1",
+      "title": "第1章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "11",
+      "title": "第11章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "2",
+      "title": "术语",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 9,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 199,
+  "status": "indexed",
+  "note": ""
+}

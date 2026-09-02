@@ -1,0 +1,163 @@
+{
+  "id": "171-公路沥青路面再生技术规范-JTGT5521-2019",
+  "title": "171-公路沥青路面再生技术规范-JTGT5521-2019",
+  "std_no": "",
+  "version": "",
+  "file": "171-公路沥青路面再生技术规范-JTGT5521-2019.pdf",
+  "pdf_abs": "guifansrc\\gonglu\\171-公路沥青路面再生技术规范-JTGT5521-2019.pdf",
+  "pages": 104,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 104,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9958,
+    "punct_median": 0.0289,
+    "empty_ratio": 0.143,
+    "bad_ratio": 0.0,
+    "clause_hits": 140
+  },
+  "pdf_mtime": "2026-08-25 22:42:18",
+  "indexed_at": "2026-08-26 07:45:24",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 8,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "0",
+      "title": "第0章",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "1",
+      "title": "总 则",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语和符号",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "基本规定",
+      "start": 18,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "再生沥青路面结构",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "材料",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "再生混合料组成设计",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "厂拌热再生施工",
+      "start": 40,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "就地热再生施工",
+      "start": 47,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "厂拌冷再生施工",
+      "start": 53,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "10",
+      "title": "就地冷再生施工",
+      "start": 61,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "11",
+      "title": "全深式冷再生施工",
+      "start": 66,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "附录A",
+      "title": "A 再生混合料设计参数",
+      "start": 70,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "附录B",
+      "title": "B 沥青路面回收料（RMAP）取样与试验分析",
+      "start": 71,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "附录C",
+      "title": "C 泡沫沥青发泡试验方法",
+      "start": 75,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "附录D",
+      "title": "D 厂拌热再生沥青混合料配合比设计方法",
+      "start": 80,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "附录E",
+      "title": "E 就地热再生沥青混合料配合比设计方法",
+      "start": 87,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "附录F",
+      "title": "F 乳化沥青（泡沫沥青）冷再生混合料配合比设",
+      "start": 91,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 500,
+  "status": "indexed",
+  "note": ""
+}

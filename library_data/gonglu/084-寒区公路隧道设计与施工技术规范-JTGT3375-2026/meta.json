@@ -1,0 +1,135 @@
+{
+  "id": "084-寒区公路隧道设计与施工技术规范-JTGT3375-2026",
+  "title": "084-寒区公路隧道设计与施工技术规范-JTGT3375-2026",
+  "std_no": "",
+  "version": "",
+  "file": "084-寒区公路隧道设计与施工技术规范-JTGT3375-2026.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\084-寒区公路隧道设计与施工技术规范-JTGT3375-2026.pdf",
+  "pages": 84,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 84,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:31:07",
+  "indexed_at": "2026-08-26 02:10:02",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 84
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "8",
+      "title": "第8章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "9",
+      "title": "防 排 水 设计 .pp 32",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "10",
+      "title": "第10章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "1",
+      "title": "总 则",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "2",
+      "title": "术语",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "4",
+      "title": "第4章",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "5",
+      "title": "总 体 设 计",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "6",
+      "title": "建筑 材料",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "7",
+      "title": "从 载 及 结构 计算",
+      "start": 32,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "11",
+      "title": "附属 设施 设计",
+      "start": 54,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "12",
+      "title": "第12章",
+      "start": 57,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "13",
+      "title": "第13章",
+      "start": 60,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "14",
+      "title": "质量 检验",
+      "start": 70,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 195,
+  "status": "indexed",
+  "note": ""
+}

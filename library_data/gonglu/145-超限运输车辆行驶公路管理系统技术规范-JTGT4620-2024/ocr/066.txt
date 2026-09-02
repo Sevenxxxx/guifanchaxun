@@ -1,0 +1,56 @@
+超 限 检测 数据 格式 要 求
+
+续 表 A-9
+序号 字段 名 称 字段 说 明 数据 类 型 必 填 说 明
+25 limitWeigtt 最 大 允许 总 质量 | Integer 是 精确 到 个 位 。 单 位 : 千克
+26 overWeight 超 限量 Jnteger 是 精确 到 个 位 。 单 位 : 千克
+27 overRate 超 限 超载 率 Double 是 精确 到 小 数 点 后 2 位 。 单 位 :%
+28 unLoadWeight 印 载 重量 Integer 当 检 测 数 据 类 型 为 2 时 ， 此 项 必 填
+29 totalLength 车 货 总 长 度 JInteger 单位 : 毫米
+30 totalWidth 车 货 总 宽度 Integer
+31 totalHeight 车 货 总 高 度 Integer
+32 overLength 超 长 量 Integer
+33 overWidth 超 宽 量 Integer
+34 overHeight 超 高 量 Integer
+35 | isBulkvehicle 0 Integer
+36 lieNo Te 答 许 String
+
+旺 限 粮 测 站 :失信 名 音 车辆 ! 2- 普通
+册 ; 3 全 沁 证 末 处 罚 车 和
+
+37 vehicleListType 车 辆 名 单 类 型 如 1- 是 时 名 章 东 本 2 不 是 时
+
+38 obuId ETC 则 必 填
+
+39 obuVehicleNo 同上
+
+40 obuPlateColor 同上
+
+41 同上
+
+车 辆 用 户 类 型 : 0- 普 通车 ; 6- 公 务 车 ;
+
+8- 军 警车 ; 10- 紧 急 车 ; 12- 免 费 ; 14- 车 队 ;
+0 ~20 内 其 他 : 自 定义 ; 对 于 道路 运输 证 经
+
+42 营 范围 为 “货物 专用 运输 (集装箱 ) ” 且 不
+含 “ 普 通货 运 ”的 牵引 车 、 集 装 箱 车 定义
+为 : 24; 其 他 牵引 车 定义 为 : 27; 应 急救 援
+车 辆 定义 为 : 26
+
+43 obuTotalMass OBU 车 辆 总 质量 同上
+
+44 |obuMaintenanceMass| OBU 整备 质量 同上
+
+obuPermittedTow | OBU 车 辆 准 牵 引 一
+45 Weight 总 质量 Jnteger 同上
+_ . OBU 车 辆 核定 二
+
+46 |obuPermittedWeight 载 质量 JInteger 同上
+
+47 obuVehicleLength OBU 车 辆 长 JInteger 同上
+
+48 obuVehicleWidth OBTU 车 辆 宽 JInteger 同上
+
+49 obuVehicleHeight OBU 车 辆 高 Jntieger 同上
+

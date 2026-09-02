@@ -1,0 +1,135 @@
+{
+  "id": "142-公路路政勘查技术规范-JTGT4240-2024",
+  "title": "142-公路路政勘查技术规范-JTGT4240-2024",
+  "std_no": "",
+  "version": "",
+  "file": "gonglu/142-公路路政勘查技术规范-JTGT4240-2024.pdf",
+  "pdf_abs": "guifansrc\\gonglu\\142-公路路政勘查技术规范-JTGT4240-2024.pdf",
+  "pages": 54,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 54,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9857,
+    "punct_median": 0.048,
+    "empty_ratio": 0.071,
+    "bad_ratio": 0.444,
+    "clause_hits": 65
+  },
+  "pdf_mtime": "2026-08-25 22:38:52",
+  "indexed_at": "2026-08-28 18:39:52",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 4,
+  "offset": null,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本规定",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "勘查设备",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "现场防护",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "勘查方法",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "占用、挖掘",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "损坏、缺失",
+      "start": 24,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "污染",
+      "start": 26,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "10",
+      "title": "勘查记录",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "附录A",
+      "title": "路政勘查图图形符号图例",
+      "start": 31,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "附录B",
+      "title": "路政勘查图",
+      "start": 47,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "附录C",
+      "title": "勘查记录封面",
+      "start": 48,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "附录E",
+      "title": "勘查图绘制示例",
+      "start": 50,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 136,
+  "status": "indexed",
+  "note": ""
+}

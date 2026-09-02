@@ -1,0 +1,61 @@
+超 限 检测 数据 格式 要 求
+
+表 A-8 改装 企业 数据 内 容 与 格式 要 求
+
+序号 字段 说 明 字段 代码 数据 类 型 长 度 备注
+1 改装 企业 D gzqyId String 32 | 必要。 唯一 标识
+2 | 社会 统一 信用 代码 modCode String 40
+3 企业 名 称 enlerpriceName Sking 200
+4 行政 区 划 distcode String 6
+5 企业 类 型 enterpriceType String 4 工商 行政 管理 机 关 登 记 注 册 的 类 型
+6 主管 部 门 chargeDepartmenl Suing
+7 治 超 管理 部 门 orgId String
+8 单位 地 址 address String
+9 单位 邮政 编码 postcode Int
+负责 人 personincharge String
+
+联系 人
+
+Contactor
+
+联系 电话
+
+telephone
+
+说 明
+
+32 位 长 度 随机 字符 串 ， 作 为 每 条 记录 的
+唯一 标识
+
+检测 单 号 或 高 速
+公路 通行 世
+
+检测 单 号 = 称 重 检测 设备 编号 + 检测 日 期 +
+顺序 数 ;
+通行 ID = 通行 介质 ID + 人 口 时 间
+
+siteName
+
+超 限 检测 站 〈 点 )
+
+名 称 或 高 速 公路
+
+收费 站 人 《〈 出 ) 口
+名 称
+
+名 称
+
+站 (点 ) 编号
+或 高 速 公路
+收费 站 编号
+
+站 (点 ) 编号 = 行政 区 划 代 码 6 位 +4 位
+
+数字 。 站 (点 ) 编号 由 部 级 系统 统一 生成 。
+收费 站 编号 〈id) = 收费 路 段 编号 + 收费
+站 顺序 码 + 保留 位
+
+收费 车 道 编 号
+
+高 速 公 路 收费 站 非 劝 返 车 辆 必 填 ， 收 费 广
+场 编号 加 顺序 号 。 其 他 站 〈 点 ) 赋值 为 0

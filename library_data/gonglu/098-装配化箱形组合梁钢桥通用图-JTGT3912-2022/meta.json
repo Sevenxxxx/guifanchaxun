@@ -1,0 +1,114 @@
+{
+  "id": "098-装配化箱形组合梁钢桥通用图-JTGT3912-2022",
+  "title": "098-装配化箱形组合梁钢桥通用图-JTGT3912-2022",
+  "std_no": "",
+  "version": "",
+  "file": "098-装配化箱形组合梁钢桥通用图-JTGT3912-2022.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\098-装配化箱形组合梁钢桥通用图-JTGT3912-2022.pdf",
+  "pages": 101,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 101,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:31:47",
+  "indexed_at": "2026-08-26 02:27:51",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 101
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "4",
+      "title": "主要 材料",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "5",
+      "title": "设计 要 点",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "6",
+      "title": "施工 要 点",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "2",
+      "title": "第2章",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "30",
+      "title": "第30章",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "31",
+      "title": "第31章",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "25",
+      "title": "第25章",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "32",
+      "title": "第32章",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "10",
+      "title": "第10章",
+      "start": 87,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "1",
+      "title": "曙 x10x767",
+      "start": 98,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "16",
+      "title": "第16章",
+      "start": 98,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 34,
+  "status": "indexed",
+  "note": ""
+}

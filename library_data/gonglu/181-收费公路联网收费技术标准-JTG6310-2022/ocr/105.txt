@@ -1,0 +1,52 @@
+收费 公路 联网 收费 技术 标准 (JTG 6310 一 2022 )
+
+续 表 下 . 4. 6-2
+位 置 | 字 节 数 参 数 说 明
+ChannelID 1 卡 槽 号 ，0x01 ~0x04
+PsamVer 1 PSAM 卡 版 本 号
+认证 状态 ;
+认证 成 功 (包含 不 需要 认证 ) 填 0x01 ;
+3 9xN | PsamInf AuthStatus 1
+0 将 需要 认证 但 认证 失败 填 0x00;
+其 他 值 保留
+Terminalld 6 PSAM 卡 终端 机 编号 〈0016 文 作 )
+9N +3 1 RSUAlgId 算法 标识
+9N +4 2 RSUManuID 车 道 系统 RSU 厂商 代码 16 进 制 表示
+9N +6 2 RSUID 车 道 系统 RSU 编号 ) 16 进 制 表示
+9N +8 2 RSUVersion 车 道 系统 VRSU 坎 件 版 本 哮 ，16 进 制 表 示
+9N+10| 2 RSUHardWareVersion 车 道 系统 吕 SU 和 构件 版 本 号 ，16 进 制 表示
+9N+l2| 1 FEFO4OpStatus ERE04 读 取 模式 设置 状态 ，0x00- 正 常 ，0x01- 错 误
+9N 十 13 和 Reserved 保留 字 贡
+9N+18| 1 BCC 异 或 校 验 值
+
+注 : N 表示 授权 PSAM 个 数 。
+3 0OBU 系统 信息 帧 应 符合 形 刁 4.6-3 的 规定
+表 芭 4 沙 6-3 OBUx 系 统 信息 * 帧
+
+位 置 | 字 节 数 人 参 数 说 明
+0 1 FrameType 数据 帧 类 型 标识 ,了 此 处 取 值 0xB2
+1 4 0BUID OBUMXC 邢 址
+5 1 EmorCode 执行 状态 代码 s$ 取 值 为 0x00 时 有 后 续 数 据
+6 8 JSShetldenfifier 发 行商 代码
+14 CorhractType 协约 类 型
+15 1 GintractVersion 协约 版 本
+16 8 SerialNumber 合同 序列 号
+24 4 Dateoflssue 启用 日 期
+28 4 DateofExpire 过 期 日 期
+32 1 EquitmentCV 设备 类 型 及 版 本
+33 2 OBUStatus 0OBU 状态
+35 1 BCC 异 或 校 验 值
+
+注 : 1. 车 道 系统 RSU 在 搜索 到 OBU 后 发 送 OBUMAC 地 址 给 车 道 控制 器 ， 表 示 通 信 区 域内 存在 此 OBU， 同 时
+ErrorCode 为 零 。
+
+2. 车 道 系统 RSU 在 其 通信
+间隔 Ss， 作 为 心跳 信息 使
+
+道 控制 器 可 不 应 答 心跳 信息 的 B2 帧 。
+3， ErrorCode 为 0xFF 时 ， 代 表 该 帧 为 测试 帧 。
+
+区 域内 始终 搜索 不 到 OBU 的 情况 下 ， 也 需要 定时 向 车 道 控制 器 发 送 此 帧 ， 发 送
+， 表 示 和 车道 系 统 RSU 正
+
+党 工作 状态 ， 同 时 ErrorCode 非 零 ， 取 值 为 0x80。 车

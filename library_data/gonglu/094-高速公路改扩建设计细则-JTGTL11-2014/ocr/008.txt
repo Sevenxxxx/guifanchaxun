@@ -1,0 +1,21 @@
+2 术语
+
+2.0.1 拼 宽 ”widened by lateral physical contact
+公路 加 宽 新 建部 分 与 既 有 部 分 通过 横向 物理 联系 组 合成 整体 6
+
+2.0.2 拼接 splicing
+将 公路 构造 物 或 其 构件 的 加 宽 新 建部 分 与 既 有 部 分 进行 连接 。
+
+2.0.3 扩 挖 spread excavation
+对 既 有 隧道 扩大 断面 开 挖 重建 。
+
+2.0.4 线形 拟 合 alignment fitting
+利用 实测 线 位 数据 ， 按 照 逼 近 既 有 公路 现状 的 原则 ， 进 行路 线 平 纵 面 设 计 。
+
+2.0.5$ 同 辐 车 道 分 隔 带 beltrlikesdivideRfor separating unidirectional traffic flow
+单 侧 拼 宽 时 ， 既 有 中 央 分 隔 带 保 留 形成 的 作为 分 隔 同 向 行驶 车 道 用 的 带 状 设施 。
+
+2. 0.0 车 道 转换 带 belt-like regionifor changing ]ane
+
+单 侧 拼 宽 时 祭 既 有 中 央 分 隔 带 改造 为 路 面 后 ， 供 同 向 车 道 分 隅 带 两 侧 车 辆 转换 行驶
+的 带 状 区 域 。

@@ -1,0 +1,142 @@
+{
+  "id": "160-公路路面技术状况自动化检测规程-JTGT5212-2026",
+  "title": "160-公路路面技术状况自动化检测规程-JTGT5212-2026",
+  "std_no": "",
+  "version": "",
+  "file": "160-公路路面技术状况自动化检测规程-JTGT5212-2026.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\160-公路路面技术状况自动化检测规程-JTGT5212-2026.pdf",
+  "pages": 92,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 92,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.929,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:41:28",
+  "indexed_at": "2026-08-26 04:16:27",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 92
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "6",
+      "title": "第6章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "15",
+      "title": "第15章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "1",
+      "title": "第1章",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "10",
+      "title": "第10章",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "4",
+      "title": "距离 测量 与 定位",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "5",
+      "title": "几何 状况",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "7",
+      "title": "路 面 变形 及 其 他 类 损坏",
+      "start": 32,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "8",
+      "title": "路 面 平 整 度",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "9",
+      "title": "路面 车 入",
+      "start": 43,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "11",
+      "title": "路 面 磨耗",
+      "start": 50,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "12",
+      "title": "路面 抗 请 性 能",
+      "start": 54,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "13",
+      "title": "第13章",
+      "start": 58,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "14",
+      "title": "第14章",
+      "start": 62,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 200,
+  "status": "indexed",
+  "note": ""
+}

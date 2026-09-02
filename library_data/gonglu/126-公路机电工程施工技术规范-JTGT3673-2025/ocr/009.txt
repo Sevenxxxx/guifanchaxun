@@ -1,0 +1,64 @@
+术语 和 符号
+
+CCTV 一 一 闭路
+
+CPC 复合 通
+
+上 PS 应 急
+
+视 〈Closed Circuit Television ) ;
+行 卡 〈Compound Pass Card ) ;
+
+昌 源 (Energy Power Supply) ;
+ETC 一 一 电子 不 停车 收费 (Electronic Toll Collection ) ;
+
+TIAD 一 一 综合 接 人 设备 (Integrated Access Device ) ;
+
+IVR
+
+交互 式 语 音 应 答 系 统 (Interactive Voice Response ) ;
+
+/一 一 整 车 称 量 设备 总 长 度 ;
+
+LAN
+
+MTC 一 一 人 工 羊 月
+
+局 域 网 (Local Area Network ) ;
+动 收 费 系 统 (Manual Toll Collection system ) 抵
+
+ODF 一 一 光纤 配 线 架 (Optical Distribution Frame ) ;
+
+OTDR 一 一 光 时 域 反 犁
+
+PSTN 公共 交换
+
+PVC 一 一 聚 毛
+
+乙
+
+希
+
+(Polyvinyl Chloride ) ;
+
+RSU 一 一 路 侧 通信 单元 (Road Side Unit) ;
+
+S 一 一 电力
+
+SPD 一 一 滔 涌 保
+
+UPS 一 一 不 间
+
+打
+
+恤
+
+B 缆 截面 积 ;
+护 句 (Surge Protective 也 EaEey
+
+源 (Uninterrupt 邓 lgPowas Supply)5
+
+VLAN 一 一 虚拟 局 域 网 (Virtual IOcaAAea Network ) 。
+
+[ 仪 〈Optical Time Domain ReflectomEema;
+话 网 络 (Pupblic Switched Telephorie Nefonk ) ;

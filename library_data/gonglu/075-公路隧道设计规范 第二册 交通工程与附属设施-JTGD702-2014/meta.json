@@ -1,0 +1,142 @@
+{
+  "id": "075-公路隧道设计规范 第二册 交通工程与附属设施-JTGD702-2014",
+  "title": "075-公路隧道设计规范 第二册 交通工程与附属设施-JTGD702-2014",
+  "std_no": "",
+  "version": "",
+  "file": "075-公路隧道设计规范 第二册 交通工程与附属设施-JTGD702-2014.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\075-公路隧道设计规范 第二册 交通工程与附属设施-JTGD702-2014.pdf",
+  "pages": 91,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 91,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:23:43",
+  "indexed_at": "2026-08-26 01:47:00",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 91
+  },
+  "toc_zone_end": 7,
+  "offset": 7,
+  "toc_source": "clause_cluster",
+  "expl_start": 82,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "10",
+      "title": "第10章",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "公路 隧道 交通 工程 与 附属 设施 配置 等 级",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "交通 安全 设施",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "通风 设施",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "照明 设施",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "交通 监控 设施",
+      "start": 31,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "紧急 呼叫 设施",
+      "start": 35,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "火灾 探测 报警 设施",
+      "start": 37,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "11",
+      "title": "供 配 电 设施",
+      "start": 44,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "12",
+      "title": "第12章",
+      "start": 49,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "13",
+      "title": "第13章",
+      "start": 53,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "14",
+      "title": "第14章",
+      "start": 56,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 82,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 324,
+  "status": "indexed",
+  "note": ""
+}

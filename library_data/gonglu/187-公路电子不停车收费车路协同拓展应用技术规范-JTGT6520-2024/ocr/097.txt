@@ -1,0 +1,48 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGZT 6520 一 2024)
+
+在 GBXT 20851. 3 中 ，applicationParameter 的 类 型 定义 为 ApplicationContextMark ， 其
+ASN. 1 定义 如 下 :
+
+ApplicationContextMark : : = Container
+(WITH COMPONENTS | octetstring PRENSENT | )
+一 一 ApplicationContextMark 的 示例 应 符合 现行 《电子 收费 ”专用 短程 通信 第 4 部
+分 : 设备 应 用 》(GBZT 20851.4) 附录 中 SysInfoFile 的 相关 内 容 。
+本 部 分 在 符合 现行 《电子 收费 ”专用 短程 通信 第 3 部 分 : 应 用 层 》 〈GBXT
+
+20851.3) 的 基础 上 补充 规定 VST 中 的 applicationParameter 的 ASN. 1 定义 为 :
+VSTApplicationContextMark :: = SEQUENCE |
+
+sySJnfo Container，
+
+mdOBE Container OPTIONAL，
+
+privateInfo Container OPTIONAL， 风
+gbICCimfo Container OPTIIONAL 开
+TeportImd Container
+
+obuAbility Container
+reservedInfo2 ” Container
+reservedInfo3 Container
+reservedInfo4 Container
+
+|
+reservedInfo2 ~4 保留 给 素 来 后 全
+ContainerT， ”一 CHOICE 和
+
+mdO 蕊 f RaaopF ， 随机 数 ， 应 存在
+
+E t48] ReportItnd， -=- 指示 车 辆 是 否 有 数据 上 报
+bdAbi [49] ObuAbility，-- 指 示 OBU 支持 的 能 力
+
+Se 的 ASN 1 半 表 定义
+SysInfo:; =SEQUENCE |
+
+contractProvider OCTET STRINGC (SIZE (8) ) ，
+contractType INTECER (0. . 127，…) ，
+contractVerslon INTECER (0..127，…) ，
+contractSerialNumber ContractSerialNumber，
+contractSignedDate Date ，
+
+contractExpiredDate Date
+
+一 92 一

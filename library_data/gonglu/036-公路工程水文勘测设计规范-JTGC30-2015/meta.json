@@ -1,0 +1,128 @@
+{
+  "id": "036-公路工程水文勘测设计规范-JTGC30-2015",
+  "title": "036-公路工程水文勘测设计规范-JTGC30-2015",
+  "std_no": "",
+  "version": "",
+  "file": "036-公路工程水文勘测设计规范-JTGC30-2015.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\036-公路工程水文勘测设计规范-JTGC30-2015.pdf",
+  "pages": 126,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 126,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:20:46",
+  "indexed_at": "2026-08-26 00:37:49",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 126
+  },
+  "toc_zone_end": 6,
+  "offset": 7,
+  "toc_source": "clause_cluster",
+  "expl_start": 91,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "10",
+      "title": "第10章",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "各 勘测 设计 阶段 的 工作 内 容 和 要 求",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "桥 位 选择",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "水 文 调查 与 勘测",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "设计 洪水 分 析 与 计算",
+      "start": 26,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "桥 孔 设计",
+      "start": 32,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "墩 台 冲刷 计算 及 基础 埋 这",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "小 桥 凶 水 文 勤 测 设计",
+      "start": 44,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "11",
+      "title": "特殊 地 区 桥 深 水 文 勤 测 设计",
+      "start": 54,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "12",
+      "title": "第12章",
+      "start": 71,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 91,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 379,
+  "status": "indexed",
+  "note": ""
+}

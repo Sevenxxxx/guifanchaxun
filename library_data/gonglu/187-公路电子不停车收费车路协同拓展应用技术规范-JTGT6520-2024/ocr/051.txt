@@ -1,0 +1,52 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGZT 6520 一 2024)
+
+续 表 D. 0.37
+
+位 置 | 字 节 数 参数 说 明
+
+5 1 VS 车 辆 附属 信息 状态 码 : 0x00 填充 车 辆 附属 信息 ; 0x01 无 车 辆 附属 信息
+上 传 ; 其 他 VirEte 信息 获取 失败
+
+6 2 VirEicLen 车 辆 附属 信息 数据 长 度
+
+8 m VirEtce 车 辆 附属 信息 数据 内 容 ， 具 体 定义 见 本 规范 附录 G
+表 D.0.3-8 通道 操作 信息 帧
+
+位 置 | 字 节 数 参数
+
+0 1 Cmd 此 处 取 值 0xA3
+
+1 4 ObuId OBU MAC 地 址
+
+5 2 DataLen 数据 长 度 |
+
+7 nm Data 数据 内 容 7 |
+表 D.0.3-9 通道 操作 随 应 帧 二
+
+位 置 | 字 节 数 参数 = wy 说 明
+
+0 1 Cmd 此 处 取 值 0x 鸭 “AAA SN
+
+晤 报关 型 ，0x00 RSU 已 缓存 的 信息 资源 ， 此 时 MsgInfo 不 存在 ;
+符 事 件 ， 需 携带 Msgnfo
+
+6 和 一 cryptionFlag 加 密 标 志 : 0x00 表示 不 加 密 ; 0x01 表示 加 密
+
+7 1 KeyVersion 密 钥 版 本 1 字 节 ， 当 加 密 标 志 为 0x00 时 ， 不 存在
+
+8 2 EncryptionOffset 加 密 的 MessageFrame 偏 移 量 ， 不 加 密 时 取 值 0x00
+
+10 2 EnoryptionLength 加 密 的 MessageFrame 长 度 ， 不 加 密 时 取 值 0x00
+
+12 4 MsgId 当 MessageType = 0x00 指示 RSU 播报 缓存 信息 资源
+
+16 2 MsgInfoLen 拓展 应 用 业务 数据 长 度 ， 当 MessageType = 0x00 时 无 此 数据
+
+18 N MsgTngo 拓展 应 用 业务 数据 ， 具体 定义 见 附录 B MessageFrame， 当 MessageType =
+0x00 时 无 此 数据
+
+注 : 1. MsgId 车 路 协同 事件 编号 ， 事 件 和 资源 已 通过 车 路 协同 系统 将 事件 下 发 并 缓存 在 RSU。
+2.RSU 判断 0BU 设备 类 型 ， 当 设备 为 0BU1. 0 时 ，RSU 发 送 SetMML rq 指令 ， 当 设备 为 0B8U2.0 时 ，RSU
+发 送 该 指令 。
+
+一 46 一

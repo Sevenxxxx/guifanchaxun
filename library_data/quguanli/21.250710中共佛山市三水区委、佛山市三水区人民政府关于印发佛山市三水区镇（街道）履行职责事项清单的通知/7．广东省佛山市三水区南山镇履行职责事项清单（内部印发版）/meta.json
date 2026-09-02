@@ -1,0 +1,156 @@
+{
+  "id": "7．广东省佛山市三水区南山镇履行职责事项清单（内部印发版）",
+  "title": "广东省佛山市三水区南山镇履行职责事项清单",
+  "std_no": "内部印发版",
+  "version": "",
+  "file": "quguanli/21.250710中共佛山市三水区委、佛山市三水区人民政府关于印发佛山市三水区镇（街道）履行职责事项清单的通知/7．广东省佛山市三水区南山镇履行职责事项清单（内部印发版）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\21.250710中共佛山市三水区委、佛山市三水区人民政府关于印发佛山市三水区镇（街道）履行职责事项清单的通知\\7．广东省佛山市三水区南山镇履行职责事项清单（内部印发版）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\21.250710中共佛山市三水区委、佛山市三水区人民政府关于印发佛山市三水区镇（街道）履行职责事项清单的通知\\7．广东省佛山市三水区南山镇履行职责事项清单（内部印发版）.pdf",
+  "pages": 467,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 467,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9545,
+    "punct_median": 0.0243,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.222,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-07-19 17:38:29",
+  "pdf_mtime": "2025-07-19 17:38:29",
+  "source_mtime_ns": 1752917909000000000,
+  "source_size": 3397875,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:06:29",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "第2部分",
+      "title": "第2部分(无目录,按页均分)",
+      "start": 31,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "第3部分",
+      "title": "第3部分(无目录,按页均分)",
+      "start": 61,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "第4部分",
+      "title": "第4部分(无目录,按页均分)",
+      "start": 91,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "第5部分",
+      "title": "第5部分(无目录,按页均分)",
+      "start": 121,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "第6部分",
+      "title": "第6部分(无目录,按页均分)",
+      "start": 151,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "第7部分",
+      "title": "第7部分(无目录,按页均分)",
+      "start": 181,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "第8部分",
+      "title": "第8部分(无目录,按页均分)",
+      "start": 211,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "第9部分",
+      "title": "第9部分(无目录,按页均分)",
+      "start": 241,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "第10部分",
+      "title": "第10部分(无目录,按页均分)",
+      "start": 271,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "第11部分",
+      "title": "第11部分(无目录,按页均分)",
+      "start": 301,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "第12部分",
+      "title": "第12部分(无目录,按页均分)",
+      "start": 331,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "第13部分",
+      "title": "第13部分(无目录,按页均分)",
+      "start": 361,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "第14部分",
+      "title": "第14部分(无目录,按页均分)",
+      "start": 391,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "第15部分",
+      "title": "第15部分(无目录,按页均分)",
+      "start": 421,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "第16部分",
+      "title": "第16部分(无目录,按页均分)",
+      "start": 451,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

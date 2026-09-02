@@ -1,0 +1,36 @@
+公路 护栏 安全 性 能 评价 标准 (JTG B05-01 一 2013 )
+
+2 术语
+
+2.0.1 公路 护栏 highway barriers
+设置 于 公路 行车 道外 侧 或 中 央 分 隔 带 的 一 种 带 状 吸 能 结构 ， 车 辆 碰撞 时 通过 自体 变
+形 或 车 辆 疏 升 吸收 碰撞 能 量 ， 从 而 降低 乘员 的 伤害 程度 。
+
+2. 0.2 ”护栏 标准 段 standard sections of highway barriers
+断面 结构 形式 保持 不 变 并 在 一 定 长 度 范围 内 连续 设置 的 公路 护栏 结构 段 。
+
+2. 0.3 护栏 过 湾 段 transition sections of highwaybarriers
+
+设置 于 两 种 不 同 结构 形式 或 不 同 防护 等 级 的 公路 护栏 之 间 、 连 接 平 顺 、 结 构 刚 度 平
+稳 过 渡 的 公路 护栏 结构 段 。
+
+2.0.4 中 央 分 隔 带 开 口 护栏 highiway barriers of imedian opening
+设置 于 中 央 分 隔 带 开 口 处 3 其 有 开启 功能 的 公路 护栏 结构 段 。
+
+2.0.5 护栏 端 头 terminals of highwayrbarriers
+设置 于 护栏 标准 段 起 始 端 或 结束 端的 二 种 吸 能 结构 。
+
+2. 0. 6 防 撞 扫 crash cushions
+设置 于 公路 交通 分 流 处 或 障碍 物 前 端的 一 种 吸 能 结构 ， 车 辆 碰 擅 时 通过 自体 变形 吸
+收 碰 撞 能 量 ,, 从 而 降低 乘员 的 伤害 程度 。
+
+2.0.7 可 导向 防 撞 垫 redirective crash cushions
+具备 侧 帮 导 向 功能 的 防 撞 垫 。
+
+2.0.8 非 导向 防 撞 垫 non-redirective crash cushions
+不 具备 侧 磁 导 向 功能 的 防 撞 垫 。
+
+2.0.9 公路 护栏 安全 性 能 safety performance of highway barriers
+公路 护栏 所 具有 的 对 碰撞 车 辆 的 阻挡 功能 、 缓 冲 功能 和 导向 功能 。
+
+一 2 一

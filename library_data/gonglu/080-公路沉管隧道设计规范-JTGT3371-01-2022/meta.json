@@ -1,0 +1,191 @@
+{
+  "id": "080-公路沉管隧道设计规范-JTGT3371-01-2022",
+  "title": "080-公路沉管隧道设计规范-JTGT3371-01-2022",
+  "std_no": "",
+  "version": "",
+  "file": "080-公路沉管隧道设计规范-JTGT3371-01-2022.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\080-公路沉管隧道设计规范-JTGT3371-01-2022.pdf",
+  "pages": 106,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 106,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:52:59",
+  "indexed_at": "2026-08-26 01:54:52",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 106
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "10",
+      "title": "第10章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "15",
+      "title": "第15章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "1",
+      "title": "总 则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "4",
+      "title": "调查 与 勘测",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "5",
+      "title": "材料",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "6",
+      "title": "总 体 设计",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "7",
+      "title": "第7章",
+      "start": 26,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "8",
+      "title": "基 槽 、 地 基 与 基础 、 回 十",
+      "start": 41,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "9",
+      "title": "衔接 段",
+      "start": 50,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "11",
+      "title": "第11章",
+      "start": 65,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "12",
+      "title": "第12章",
+      "start": 68,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "13",
+      "title": "路 面 与 排水 系统",
+      "start": 73,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "14",
+      "title": "附属 构造",
+      "start": 78,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "16",
+      "title": "结构 监测",
+      "start": 88,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "17",
+      "title": "第17章",
+      "start": 93,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "20",
+      "title": "第20章",
+      "start": 106,
+      "is_expl": false
+    },
+    {
+      "no": 19,
+      "label": "25",
+      "title": "第25章",
+      "start": 106,
+      "is_expl": false
+    },
+    {
+      "no": 20,
+      "label": "30",
+      "title": "第30章",
+      "start": 106,
+      "is_expl": false
+    },
+    {
+      "no": 21,
+      "label": "35",
+      "title": "第35章",
+      "start": 106,
+      "is_expl": false
+    },
+    {
+      "no": 22,
+      "label": "40",
+      "title": "第40章",
+      "start": 106,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 262,
+  "status": "indexed",
+  "note": ""
+}

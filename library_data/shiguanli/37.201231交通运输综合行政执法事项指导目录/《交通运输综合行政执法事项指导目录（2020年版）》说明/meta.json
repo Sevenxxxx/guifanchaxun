@@ -1,0 +1,51 @@
+{
+  "id": "《交通运输综合行政执法事项指导目录（2020年版）》说明",
+  "title": "《交通运输综合行政执法事项指导目录（2020年版）》说明",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/37.201231交通运输综合行政执法事项指导目录/《交通运输综合行政执法事项指导目录（2020年版）》说明.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\37.201231交通运输综合行政执法事项指导目录\\《交通运输综合行政执法事项指导目录（2020年版）》说明.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\37.201231交通运输综合行政执法事项指导目录\\《交通运输综合行政执法事项指导目录（2020年版）》说明.pdf",
+  "pages": 4,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 4,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:15:59",
+  "pdf_mtime": "2025-02-14 18:15:59",
+  "source_mtime_ns": 1739528159000000000,
+  "source_size": 136882,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:21:34",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

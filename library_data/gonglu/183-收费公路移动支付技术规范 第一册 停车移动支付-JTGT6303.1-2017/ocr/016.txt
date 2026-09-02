@@ -1,0 +1,46 @@
+收费 公路 移动 支付 技术 规范 ”第 一 册 ”停车 移动 支付 (JTGC《XT 6303. 1 一 2017 )
+
+表 S$.2.1-1 扣 费 请 求 接口
+
+号 字 段 名 别名 数据 类 型
+1 交易 类 型 BusinessType unsignedByte
+2 受理 终端 编号 TermNo string (32)
+3 车 道 移 动 支付 流水 号 PayIdentifier siring (32)
+4 请 求 发 起 时 间 RequestTime dateTime
+5 二 维 码 数据 QRCode string (64)
+6 总 费 额 (单位 : 分 ) TollAmount unsignedInt
+
+表 5.2.1-2 扣 费 应 答 接 口
+序 “号 字 段 名 别 名 数据 类 型
+
+1 交易 类 型 BusinessType unsignedByte
+2 应 答 的 受理 终端 编号 TemmNo string (32)
+3 应 答 的 车 道 移动 支付 流水 号 PayIdentifief string (32)
+4 请 求 应 答 时 间 ReplyTimie dateTime
+
+5 响应 状态 ReplyStatms unsignedByte
+6 响应 消息 StatusMessage string 〈(128)
+7 移动 支付 平台 订单 号 MblPayPlatNumber string (32)
+8 第 三 方 支付 平台 代码 PayChannelCode unsignedByte
+
+条 文 说 明
+
+停车 移动 支付 系统 架构 存在 多 种 网 络 连 接 模 式 ， 其 中 一 种 是 移动 支付 平台 作为 收费
+系统 与 第 三 方 支付 平台 的 支付 网 关 做 交 淘 数据 的 转发 和 处 理 ; 另外 一 种 模式 是 受理 终端
+直 连 第 三 方 支付 平台 做 数据 交互 ji 本 规范 条 5.2.1 条 和 第 5.2.2 条 的 接口 定义 适用 于 前
+一 种 模式 。 在 扣 费 请 求 的 接口 中 ， 由 蜂 道 系统 生成 车 道 移动 支付 流水 号 作为 该 笔 交 易 的
+唯一 标识 38/ 扣 费 应 答 接口 返回 移动 支付 平台 订单 号 作为 移动 支付 平台 处 理 该 笔 交易 的 唯
+一 标识 5
+
+S$.2.2 二 维 码 支付 交易 流程 中 ， 车 道 系统 向 移动 支付 平台 发 送 冲 正 /撤销 请 求 的 数据
+接口 应 符合 表 5. 2. 2-1 的 规定 ， 移 动 支付 平台 返回 冲 正 / 撤 销 应 答 的 数据 接口 应 符合 表
+5$.2.2-2 的 规定 。
+
+表 5$.2.2-1 冲 正 /撤销 请 求 接口
+
+序 “号 字 段 名 别 名 数据 类 型
+1 交易 类 型 BusinessType unsignedByte
+2 受理 终端 编号 TermNo siring (32)
+3 车 道 移动 支付 流水 号 PayIdentifier siring (32)
+4 请 求 发 起 时 间 RequestTime dateTime
+

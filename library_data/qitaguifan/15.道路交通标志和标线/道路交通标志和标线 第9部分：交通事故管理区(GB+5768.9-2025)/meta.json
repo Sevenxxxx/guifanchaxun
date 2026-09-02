@@ -1,0 +1,72 @@
+{
+  "id": "道路交通标志和标线 第9部分：交通事故管理区(GB+5768.9-2025)",
+  "title": "道路交通标志和标线 第9部分：交通事故管理区",
+  "std_no": "GB 5768.9-2025",
+  "version": "5768",
+  "file": "道路交通标志和标线 第9部分：交通事故管理区(GB+5768.9-2025).pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\15.道路交通标志和标线\\道路交通标志和标线 第9部分：交通事故管理区(GB+5768.9-2025).pdf",
+  "pages": 11,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 11,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.982,
+    "punct_median": 0.0704,
+    "empty_ratio": 0.2,
+    "bad_ratio": 0.4,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-17 12:45:39",
+  "indexed_at": "2026-08-25 21:47:27",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 3,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "范围",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "规范性引用文件",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "术语和定义",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "一般规定",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "设置",
+      "start": 8,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 53,
+  "status": "indexed",
+  "note": ""
+}

@@ -1,0 +1,41 @@
+RSU 技术 要 求
+
+续 表 下 . 4. 5-4
+位 置 | 字 节 数 人 参 数 说 明
+5 1 StopType 0x01: 重新 搜索 OBU; 0x02: 重新 发 送 当前 帧
+注 : 1. 当 StopType =0x01 时 ， 表 示 不 对 该 OBU 进行 交易 处 理 ， 车 道 系统 RSU 须 重 新 搜索 OBU， 该 指令 对 车 道
+系统 RSU 发 送 过 来 的 B2 、B3 、B4 、B5 帧 有 效 。
+2. 当 StopType = 0x02 时 ， 指 令 只 对 车 道 系 统 RSU 发 送 过 来 的 B3 、B4 、B5 帧 有 效 。
+5 消费 并 写 站 信息 指令 应 符合 表 下 .4.5-$ 的 规定 。
+表 卫 .4.S-$ 消费 并 写 站 信息 指令
+位 置 | 字 节 数 人 参 数 说 明
+0 1 CmdType 指令 代码 ， 此 处 取 值 0xC6
+1 4 OBUID OBUMAC 地 址
+| 8 CardDivFactor 上 ETC 户 卡 级 分 散 大 子
+写 0019 记录 (默认 为 0x01 半
+0x01- 写 ICCard0019Eile 记 录 0x0 二
+0x02- 写 ICCard0019File 记 有 录 0x02 ;
+0x03- 写 ICCard0019ile 记录 (0803 ;
+13 1 WriteRecord 0x04- 写 ICCad0019FilSSE 录 0x04:
+0x05- 写 隐 Gara0ol9Tile 记录 0x05;
+0x06- 写 ICCard0019File 记录 水 06;
+0X07ESNCCaia00lo9File 记 栽 0x0 厦
+基 化 注 保 留
+14 二 ConsumeMoney 扣 款 宾 ， 高 字 莫 在 衣
+18 7 PurehaseTiRe YYYYMMDDhihmmss
+25 63 Stafon ETC 用 疡 上 过 站 信息 0019 文件 记录 (不 足 63 字 节 填充 0x00)
+0x00- 更 新 EF04 (复合 消费 :; 入 口 模式 ， 先 更 新 EF04， 更 新 EF04 成 功 ， 继
+续 复 合 消费 ; 更 新 EF04 失败 ， 停 止 复 合 消费 ， 返 回 B5 错误 人 码 ) ;
+0x01- 仅 更 新 EFO04;
+88 1 OBUTradeType 0x02- 仅 复合 消费 〈 出 口交 易 使 用 ) ;
+0x03- 复 合 消费 + 更 新 EF04 (出 口 模式 状态 名 单 拦截 时 使 用 ， 先 复合 消费 ，
+复合 消费 成 功 ， 继 续 更 新 EF04; 复合 消费 失败 ， 停 止 更 新 PPo4， 返回 B5 错
+误 码 )
+89 2 Index_EFO4 更 新 FEF04 偏 移 Index_EF04 开始 写
+91 2 Len FEF04 更 新 EF04 长 度
+| 需要 更 新 FEF04 的 信息 ， 当 0BUTradeType 字段 取 值 0x02 时 ， 全 部 填
+en 、
+93 FPOL | EF04 文件 信息 | 充 0x00;
+若 Len ”FEF04 为 0x0000 则 无 这 部 分 内 容
+6 异常 处 理 指令 应 符合 表 下 上 4. 5-6 的 规定 。
+

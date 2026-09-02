@@ -1,0 +1,107 @@
+{
+  "id": "044-公路软土地基路堤设计与施工技术细则-JTGTD31-02-2013",
+  "title": "044-公路软土地基路堤设计与施工技术细则-JTGTD31-02-2013",
+  "std_no": "",
+  "version": "",
+  "file": "044-公路软土地基路堤设计与施工技术细则-JTGTD31-02-2013.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\044-公路软土地基路堤设计与施工技术细则-JTGTD31-02-2013.pdf",
+  "pages": 96,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 96,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:21:02",
+  "indexed_at": "2026-08-26 00:53:40",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 96
+  },
+  "toc_zone_end": 5,
+  "offset": 5,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "工程 地 质 勘 察",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "稳定 与 沉降 计算",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "6",
+      "title": "第6章",
+      "start": 26,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "35",
+      "title": "第35章",
+      "start": 26,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "5",
+      "title": "地 基 处 理 设计",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "地 基 处 理 施 工",
+      "start": 62,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "路堤 施工 与 观测",
+      "start": 80,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "试验 工程",
+      "start": 87,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 418,
+  "status": "indexed",
+  "note": ""
+}

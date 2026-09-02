@@ -1,0 +1,51 @@
+{
+  "id": "佛山市三水区直单位抓机关党建工作责任清单（试行）",
+  "title": "佛山市三水区直单位抓机关党建工作责任清单",
+  "std_no": "试行",
+  "version": "",
+  "file": "quguanli/26.190409三委组通〔2019〕54号_-_关于印发《佛山市三水区直单位抓机关党建工作责任清单（试行）》的通知/佛山市三水区直单位抓机关党建工作责任清单（试行）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\26.190409三委组通〔2019〕54号_-_关于印发《佛山市三水区直单位抓机关党建工作责任清单（试行）》的通知\\佛山市三水区直单位抓机关党建工作责任清单（试行）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\26.190409三委组通〔2019〕54号_-_关于印发《佛山市三水区直单位抓机关党建工作责任清单（试行）》的通知\\佛山市三水区直单位抓机关党建工作责任清单（试行）.pdf",
+  "pages": 17,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 17,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 0.8889,
+    "punct_median": 0.0177,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1.0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-04-30 23:19:11",
+  "pdf_mtime": "2026-04-30 23:19:11",
+  "source_mtime_ns": 1777562351000000000,
+  "source_size": 229550,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 17
+  },
+  "indexed_at": "2026-09-01 01:08:15",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

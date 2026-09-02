@@ -1,0 +1,86 @@
+{
+  "id": "32.260811佛山市三水区人民政府办公室关于印发佛山市三水区道路和桥梁（隧道）突发事件应急预案的通知",
+  "title": "260811佛山市三水区人民政府办公室关于印发佛山市三水区道路和桥梁（隧道）突发事件应急预案的通知",
+  "std_no": "",
+  "version": "",
+  "file": "quguanli/32.260811佛山市三水区人民政府办公室关于印发佛山市三水区道路和桥梁（隧道）突发事件应急预案的通知.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\32.260811佛山市三水区人民政府办公室关于印发佛山市三水区道路和桥梁（隧道）突发事件应急预案的通知.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\32.260811佛山市三水区人民政府办公室关于印发佛山市三水区道路和桥梁（隧道）突发事件应急预案的通知.pdf",
+  "pages": 32,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 32,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9701,
+    "punct_median": 0.01,
+    "empty_ratio": 0.077,
+    "bad_ratio": 0.143,
+    "clause_hits": 8
+  },
+  "source_mtime": "2026-08-20 18:18:43",
+  "pdf_mtime": "2026-08-20 18:18:43",
+  "source_mtime_ns": 1787221123000000000,
+  "source_size": 753552,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:23:05",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 2,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "组织体系与职责",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "运行机制",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "应急保障",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "监督管理",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "附则",
+      "start": 28,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 46,
+  "status": "indexed",
+  "note": ""
+}

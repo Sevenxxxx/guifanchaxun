@@ -1,0 +1,51 @@
+{
+  "id": "5.交通运输部关于修改《港口经营管理规定》的决定（中华人民共和国交通运输部令2020年第21号）",
+  "title": "交通运输部关于修改《港口经营管理规定》的决定",
+  "std_no": "中华人民共和国交通运输部令2020年第21号",
+  "version": "2020",
+  "file": "ganghang/5.交通运输部关于修改《港口经营管理规定》的决定（中华人民共和国交通运输部令2020年第21号）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\ganghang\\5.交通运输部关于修改《港口经营管理规定》的决定（中华人民共和国交通运输部令2020年第21号）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\ganghang\\5.交通运输部关于修改《港口经营管理规定》的决定（中华人民共和国交通运输部令2020年第21号）.pdf",
+  "pages": 24,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 24,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 0.9495,
+    "punct_median": 0.0,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.5,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-09-01 20:38:24",
+  "pdf_mtime": "2026-09-01 20:38:24",
+  "source_mtime_ns": 1788266304056288500,
+  "source_size": 285303,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 24
+  },
+  "indexed_at": "2026-09-01 23:03:56",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

@@ -1,0 +1,100 @@
+{
+  "id": "121-跨海钢箱梁桥大节段施工技术规程-JTGT3652-2022",
+  "title": "121-跨海钢箱梁桥大节段施工技术规程-JTGT3652-2022",
+  "std_no": "",
+  "version": "",
+  "file": "121-跨海钢箱梁桥大节段施工技术规程-JTGT3652-2022.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\121-跨海钢箱梁桥大节段施工技术规程-JTGT3652-2022.pdf",
+  "pages": 26,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 26,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:37:10",
+  "indexed_at": "2026-08-26 03:10:38",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 26
+  },
+  "toc_zone_end": 4,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "工厂 制造",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "第5章",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "桥 位 吊装",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "桥 位 连接",
+      "start": 18,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "文 承 体系 转换",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "第9章",
+      "start": 23,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 127,
+  "status": "indexed",
+  "note": ""
+}

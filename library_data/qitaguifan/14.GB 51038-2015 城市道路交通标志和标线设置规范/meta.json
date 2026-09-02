@@ -1,0 +1,310 @@
+{
+  "id": "14.GB 51038-2015 城市道路交通标志和标线设置规范",
+  "title": "GB 51038-2015 城市道路交通标志和标线设置规范",
+  "std_no": "",
+  "version": "",
+  "file": "14.GB 51038-2015 城市道路交通标志和标线设置规范.PDF",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\14.GB 51038-2015 城市道路交通标志和标线设置规范.PDF",
+  "pages": 342,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 342,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9882,
+    "punct_median": 0.0326,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.222,
+    "clause_hits": 201
+  },
+  "pdf_mtime": "2025-02-14 17:57:40",
+  "indexed_at": "2026-08-26 19:40:02",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 10,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "",
+      "title": "封面",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "",
+      "title": "公告",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "",
+      "title": "前言",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "",
+      "title": "目次",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "1",
+      "title": "总则",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "2",
+      "title": "术语和符号",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "3",
+      "title": "基本规定",
+      "start": 24,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "4",
+      "title": "交通标志的基本要求",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "5",
+      "title": "指示标志",
+      "start": 62,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "6",
+      "title": "禁令标志",
+      "start": 71,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "7",
+      "title": "警告标志",
+      "start": 82,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "8",
+      "title": "干路和支路指路标志",
+      "start": 97,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "9",
+      "title": "快速路指路标志",
+      "start": 109,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "10",
+      "title": "其他标志",
+      "start": 126,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "11",
+      "title": "交通标线的基本要求",
+      "start": 131,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "12",
+      "title": "指示标线",
+      "start": 149,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "13",
+      "title": "禁止标线",
+      "start": 166,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "14",
+      "title": "警告标线",
+      "start": 179,
+      "is_expl": false
+    },
+    {
+      "no": 19,
+      "label": "15",
+      "title": "其他标线",
+      "start": 188,
+      "is_expl": false
+    },
+    {
+      "no": 20,
+      "label": "16",
+      "title": "交通标志和标线协调设置",
+      "start": 194,
+      "is_expl": false
+    },
+    {
+      "no": 21,
+      "label": "17",
+      "title": "交通标志和标线施工及验收",
+      "start": 199,
+      "is_expl": false
+    },
+    {
+      "no": 22,
+      "label": "",
+      "title": "本规范用词说明",
+      "start": 203,
+      "is_expl": false
+    },
+    {
+      "no": 23,
+      "label": "",
+      "title": "目次",
+      "start": 207,
+      "is_expl": false
+    },
+    {
+      "no": 24,
+      "label": "1",
+      "title": "总则",
+      "start": 212,
+      "is_expl": false
+    },
+    {
+      "no": 25,
+      "label": "3",
+      "title": "基本规定",
+      "start": 214,
+      "is_expl": false
+    },
+    {
+      "no": 26,
+      "label": "4",
+      "title": "交通标志的基本要求",
+      "start": 216,
+      "is_expl": false
+    },
+    {
+      "no": 27,
+      "label": "5",
+      "title": "指示标志",
+      "start": 247,
+      "is_expl": false
+    },
+    {
+      "no": 28,
+      "label": "6",
+      "title": "禁令标志",
+      "start": 255,
+      "is_expl": false
+    },
+    {
+      "no": 29,
+      "label": "7",
+      "title": "警告标志",
+      "start": 268,
+      "is_expl": false
+    },
+    {
+      "no": 30,
+      "label": "8",
+      "title": "干路和支路指路标志",
+      "start": 274,
+      "is_expl": false
+    },
+    {
+      "no": 31,
+      "label": "9",
+      "title": "快速路指路标志",
+      "start": 284,
+      "is_expl": false
+    },
+    {
+      "no": 32,
+      "label": "10",
+      "title": "其他标志",
+      "start": 298,
+      "is_expl": false
+    },
+    {
+      "no": 33,
+      "label": "11",
+      "title": "交通标线的基本要求",
+      "start": 300,
+      "is_expl": false
+    },
+    {
+      "no": 34,
+      "label": "12",
+      "title": "指示标线",
+      "start": 303,
+      "is_expl": false
+    },
+    {
+      "no": 35,
+      "label": "13",
+      "title": "禁止标线",
+      "start": 311,
+      "is_expl": false
+    },
+    {
+      "no": 36,
+      "label": "14",
+      "title": "警告标线",
+      "start": 317,
+      "is_expl": false
+    },
+    {
+      "no": 37,
+      "label": "15",
+      "title": "其他标线",
+      "start": 320,
+      "is_expl": false
+    },
+    {
+      "no": 38,
+      "label": "16",
+      "title": "交通标志和标线协调设置",
+      "start": 324,
+      "is_expl": false
+    },
+    {
+      "no": 39,
+      "label": "17",
+      "title": "交通标志和标线施工及验收",
+      "start": 342,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 1803,
+  "status": "indexed",
+  "note": ""
+}

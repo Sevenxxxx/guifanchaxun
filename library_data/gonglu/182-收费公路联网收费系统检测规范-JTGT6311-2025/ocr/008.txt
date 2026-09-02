@@ -1,0 +1,13 @@
+术语 和 符号
+
+PIN 一 一 个 人 身份 识别 码 (Personal Identification Number) ;
+Ping 因特网 包 探 索 需 〈Packet Internet Groper) ;
+PN 一 一 擅 随 机 序列 (Pseudorandom Noise ) ;
+PSAM 一 一 消费 安全 访问 模块 〈(Payment Security Access Module ) ;
+RSU 一 一 路 侧 单元 (Road Side Unit ) ;
+SAM 一 一 安全 访问 模块 〈Security Access Module) ;
+SPA 一 -一 简单 功 耗 分 析 (Simple Power Analysis ) ;
+TAC 一 交易 认证 码 (Transaction Authorization Cryptogram ) ;
+
+VST- 一 车 辆 服务 表 〈Vehicle Service Table) 。
+

@@ -1,0 +1,65 @@
+{
+  "id": "132-公路工程建设项目投资估算编制办法-JTG3820-2018",
+  "title": "132-公路工程建设项目投资估算编制办法-JTG3820-2018",
+  "std_no": "",
+  "version": "",
+  "file": "132-公路工程建设项目投资估算编制办法-JTG3820-2018.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\132-公路工程建设项目投资估算编制办法-JTG3820-2018.pdf",
+  "pages": 110,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 110,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 1.0,
+    "punct_median": 0.1625,
+    "empty_ratio": 0.071,
+    "bad_ratio": 0.778,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:38:18",
+  "indexed_at": "2026-08-26 03:32:00",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 110
+  },
+  "toc_zone_end": 4,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": 106,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "投资 估算 编 制 方法",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "投资 佑 算 费 用 标准 和 计算 方法",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 106,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 91,
+  "status": "indexed",
+  "note": ""
+}

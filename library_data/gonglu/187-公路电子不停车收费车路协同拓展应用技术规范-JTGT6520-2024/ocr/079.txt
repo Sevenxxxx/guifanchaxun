@@ -1,0 +1,56 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应
+
+技术 规范 (JTGZT 6520 一 2024 )
+
+Content OCTET S
+
+|
+EtcRTEList:: =SEQUENCE
+
+EtcRTIEData: : = SEQUENCE
+
+TRING (SIZE (1. .4096) ) OPTIONAL，
+
+(SIZE (1..127，.…) ) OF FEtcRTEData
+|
+
+fill BIT STRING (SIZE (7) ) ，
+eventIdIdFrameType ，
+
+-- 事 件 世
+
+roadId RoadDataType，
+
+-- 路 段 标识
+
+eventLane LaneDataType OPIIONAL，
+
+-- 事 件 的 受 影响 车 道 号
+distance DistanceDataType OPTIIONAL，
+
+-- 事 件 起 始 位 置 距 离 RSU 的 纵向 距离
+
+Suggestions: : = INTECGER |
+unavailable
+-= 无 效 状态
+
+stop
+
+-- 停 车
+slow
+
+-- 慢 行
+
+detour
+
+-- 绕 道
+
+《0) ，
+
+《1) ，
+
+《2) ，
+
+(3) ，
+
+一 T4 一

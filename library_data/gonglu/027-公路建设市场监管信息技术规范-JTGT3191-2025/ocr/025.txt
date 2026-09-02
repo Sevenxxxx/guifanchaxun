@@ -1,0 +1,31 @@
+数据 资源 表
+
+续 表 A. 1. 1-4
+筷 | 。 中 文 名 称 字段 名 称 说 明 类 到 数据 格式 值 域 才
+9 发 证 机 关 issue_department ai 字符 型 an. . 256 是
+10 发 证 日 期 issue_date 全 让 日 期 型 YYYYMMDD 是
+11| 。 批准 文 号 。 | approval_mumber 人 字符 型
+12| ”业务 范围 business_scope 和 字符 型
+| 和 6 基 | waanan_auae | 于 RE 的
+14| 有 效 期 规 上 日期 | valid_end_dae | 让 夺 证 下 上 的
+
+数据 导出 时 间
+
+changecontent
+
+有 效 其 家 目 期 |
+
+所 构 资质 信息 数据 宜 符合 表 A. 1. 1-5 的 规定 。
+
+YYYYMMDDHHMMSS
+
+一 21 一
+
+表 A.1.1-5 质量 检测 机 构 资质 信息 数据
+序 、 数据 是 否
+号 中 文 名 称 字段 名 称 说 明 类 型 数据 格式 值 域 必 填
+1 人 credit_code 字符 型 an . 18 是
+2 等 级 类 型 qualification_grade 等 级 类 型 字符 型 am . S0 是
+3 证 书 编号 qualification_code ai 字符 型 an. . 200 是
+4 发 证 机 构 issue_department 字符 型 an. .256 是
+

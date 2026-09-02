@@ -1,0 +1,128 @@
+{
+  "id": "156-公路路基养护技术规范-JTG5150-2020",
+  "title": "156-公路路基养护技术规范-JTG5150-2020",
+  "std_no": "",
+  "version": "",
+  "file": "156-公路路基养护技术规范-JTG5150-2020.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\156-公路路基养护技术规范-JTG5150-2020.pdf",
+  "pages": 88,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 88,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 1.0,
+    "punct_median": 0.0333,
+    "empty_ratio": 0.143,
+    "bad_ratio": 0.0,
+    "clause_hits": 159
+  },
+  "pdf_mtime": "2026-08-25 22:41:06",
+  "indexed_at": "2026-08-26 04:12:25",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 9,
+  "offset": 10,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语和符号",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本规定",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "路基状况调查与评定",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "0",
+      "title": "第0章",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "路基日常养护",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "路基养护工程设计要求",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "路堤与路床病害处治",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "边坡病害处治",
+      "start": 38,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "既有防护及支挡结构物病害处治",
+      "start": 45,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "10",
+      "title": "排水设施养护",
+      "start": 50,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "11",
+      "title": "特殊路基养护与病害处治",
+      "start": 53,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "附录A",
+      "title": "路基病害调查与技术状况评定表",
+      "start": 65,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 433,
+  "status": "indexed",
+  "note": ""
+}

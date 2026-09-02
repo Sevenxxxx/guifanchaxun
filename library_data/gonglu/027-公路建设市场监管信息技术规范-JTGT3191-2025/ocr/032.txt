@@ -1,0 +1,79 @@
+公路 建设 市 场 监管 信息 技术 规范 (JTGVT 3191 一 2025 )
+
+11
+
+监理 单位 质量 检测 机 构 试 验 检 测 设 备 信息 数据 宜 符合 表 A. 1. 1-11 的 规定 。
+表 A.1.1-11 监理 单位 质量 检测 机 构 试验 检测 设备 信息 数据
+
+字段 名 称
+
+统一 社会 信用
+代码
+
+credit_code
+
+字符 型
+
+单位 名 称
+
+company_name
+
+字符 型
+
+资质 等 级
+试验
+数量
+
+qualification_grade
+
+字符 型
+
+check_type
+
+字符 型
+
+DnUIS
+
+数字 型
+
+6 生产 厂家
+
+10| 数据 导出 时 间
+
+Production_
+
+factory_name
+
+字符 型
+
+Production_date
+
+equipment_name
+
+specification_model
+
+说 明
+
+〈 放 | YYYYMMDDHHMMSS
+
+表 A.1.2-1 从 业 人 员 个 人 信息 数据
+
+Dame
+
+在 户籍 管理 部
+门 正式 登记 注
+册 、 人 事 档案 中
+正式 记载 的 姓氏
+名 称
+
+字符 型
+
+am .
+
+SeX
+
+人 员 的 性 别
+名 称
+
+一 28 一
+

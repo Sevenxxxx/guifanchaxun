@@ -1,0 +1,41 @@
+RSU 与 RSF 接
+
+表 D.0.3-4 RSU 初始 化 响应 帧
+
+位 置 | 字 节 数 参数 说 明
+0 1 Cmd 此 处 取 值 0x20
+1 | 1 ReuStatus RSU 状态 参数 ，0x00 表示 正常 ; 其 他 表示 蜡 党
+2 1 PsamNum RSU 中 PSAM 数量 ， 记 为 n
+1 字 节 PSAM 通道 号 《通道 号 取 值 范围 1 ~ 32)
+| 和 1 字 节 PSAM 版 本 号
+1 字 节 PSAM 授权 状态 : 0x00 授权 〈 含 无 需 授权 ) ;0x01 未 授权
+6 字 节 PSAM 终端 机 编号
+3 +9n 1 RsuAlgId 算法 标识 : 默认 填写 0x00
+4+9n 4 RsuId 1 字 节 生 产 厂家 ID +3 字 节 个 体 编 号 ，
+8 +9n 2 SoftwareVer 软件 版 本 号 : 0x0201 表示 V2. 0.1 <
+10 +9n 2 HardwareVer
+12 +9n 8 AreaCode
+20 +9n 8 PsamNo
+28 +9n 7 Reserved
+
+获取 车 辆 信息 状态 码 : 0x00 获取 成 功 ; 其 他 ，VehJnfo 填充 0x00
+
+OBE-SAM DF01 下 EFO1 车 辆 信息 文件 明文 79 字 节
+
+/ 表 了 .0.3-6 继续 处 理 信息 帧
+位 置 | 字 节 数 参数 说 明
+0 1 Cmd 此 处 取 值 0xA2
+1 4 ObuId OBU MAC 地 址
+
+注 : 1. 当 OBU 过 车 信息 帧 有 上 报 标志 时 ，RSF 应 发 送 0xA2 。
+
+2. 当 OBU 过 车 信息 帧 无 上 报 标志 时 ，RSF 应 发 送 0xA5。
+
+表 D.0.3-7 ”车辆 附属 信息 响应 帧
+
+位 置 | 字 节 数 参数 说 明
+0 1 Cmd 此 处 取 值 0x22
+1 4 ObuId OBU MAC 地 址
+
+一 45 一
+

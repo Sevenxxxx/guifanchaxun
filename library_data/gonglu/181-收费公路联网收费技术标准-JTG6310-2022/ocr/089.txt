@@ -1,0 +1,80 @@
+收费 公路 联网 收费 技术 标准 (JTG 6310 一 2022 )
+
+等 ) ， 应 继续 获取 OBU 和 ETC
+
+HH
+了
+
+户 卡 文件
+
+信和
+
+忆 O
+
+C.3 ETC 门 架 系统 与 单 片 式 OBU 交易 流程
+
+C.3.1 ETC 门 架 系统 与 单 片 式 0OBU 交易 流程 〈 氏
+
+C.3.1) 应 符合 下 列 步骤 :
+
+1 RSU 与 OBU 通过 BST/VST 完成 交易 初始 化 及 获取 访问 许可 。
+2 RSU 与 OBU 通过 GetTollData 人
+3 RSU 与 OBU 通过 SetTollData 指令 完成 通行 凭证 的 获取 。
+4 RSU 发 送 EventReport， 释 放 链 路 。
+车 道 控制 器 路 侧 单元 单 片 式 OBU |
+BST
+VST ( 携带 随机 数 )
+RSU : 发 送 B2 帧 一 一 一
+PC 回应 C1 帧
+GetTollBata.rq2 蓝 取 收 费 信息
+GetIolIData. rs
+RSU : 发 送 B4 帧
+PC 回应 C6 帧
+SetTollData .局 ;获取 通行 凭证
+SetIollData , rs
+RSU :发 送 B5 帧
+-PC 回应 CI 确认 交易 完成 一
+EventReport: 释 放 链 路
+
+C.3.1 ETC 六 架 系 统
+
+C.4 ETC 门 架 系统 与 CPC 交易 流程
+
+C.4.1 ETC 门 架 系统 与 CPC 交易 流程 〈
+
+与 单 片 式 OBU 交易 流程
+
+多 C.4.1) 应 符合 下 列 步 又 :
+
+1 RSU 与 CPC 通过 BST/XVST 完成 交易
+节 ) 和 EFo02 文件 (4 字 节 ) 。
+2 RSU
+
+与 CPC 通过 TransferChannel 指令
+
+初始 化 ， 预 读 DFO1 目录 下 的 EFO1 (43 字
+
+依次 分 帧 完成 下 述 操作 〈 每 一 步 为 一 帧 ) :
+
+1 ) 外 部 认证 、 读 取 过 站 信和 目
+
+2) 更 新 过 站 信
+3) 选择 EF04 文件 、
+(C7 帧 MTCInfo2 字段 ，
+
+3 RSU
+
+息 文件
+
+息 文 件 前 101 字 节 (DFO1ZEF02 ) 。
+
+(DFOIZEF02) 前 101 字 节 (5C7 帧 MTCInfol 字段 ) 。
+
+沿 移 23 x (N -1) 字 节 更 新 过 站 信息 (DFO1/EF04) 23 字 节
+N >0 时 本 步 操 作 启
+
+人 全
+
+用 ) 。
+
+发 送 EventReport， 释 放 链 路 。

@@ -1,0 +1,26 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGZT 6520 一 2024)
+
+表 下 .0.3-10 ”认证 指令
+
+序号 字段 名 字 节 数 描述
+
+1 CmdType 1 指令 代码 ， 取 值 0xA7
+
+2 Status 1 响应 状态 : 0x00 正常 ， 其 他 异常
+
+3 Datetime 7 当前 日 期 时 间 ，YYYYMMDDhhmmss
+
+4 AuthenticationData 8 认证 数据 (RSF 自身 随机 数 )
+表 下 .0.3-11 认证 指令 响应
+
+序号 字段 名 字 节 数 描述
+
+1 CmdType 1 指令 代码 ， 取 值 0xB7
+
+2 Status 1 响应 状态 : 0x00 正常 ， 其 他 异常
+
+3 Datetime 当前 日 期 时 间 ，YYYYMMDDhkmiis
+
+4 AuthenticationRs 认证 数据 响应
+
+一 62 一

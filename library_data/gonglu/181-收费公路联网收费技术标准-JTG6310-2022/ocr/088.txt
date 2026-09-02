@@ -1,0 +1,72 @@
+ETC 门 架 系 统 处 理 流 程
+
+2) 选择 FF04 文件 并 读 取 EF04 文件 315 ~405 字 节 〈 即 1
+
+局 移 314 字 节 读 取 91 字 节 ) 。
+
+3) 更 新 EF04 文件 315 ~ 405 字 节 (〈( 即 俩 移 314 字 节 更 新 91 字 节 ， 依 据 C6 帧
+-1) 字 布 更 新 EF04 文件 4 字 节 (依据 C6 帧
+EF04Info2 字段 获取 ，V>0 时 第 2 个 APDU 启用 ) 。
+
+EF04Info 内 容 ) 并 偏 移 405 +4 x (N
+
+4) 复合 消费 初始 化 、 写 0019 文件 。
+
+5) 复合 消费 、 读 余额 。
+
+BST: 预 读 0015 文 件 、0019 玄 件
+
+是 V 人 T
+
+Geisecufre 人 :获取 车 辆 信息 一 一 -|
+
+人 etgecure.rS
+
+[一 TRansferChtmmel.mq: 读 取 0019% 文 件 .0002 文 件 一 -|
+TransferQkannelurs
+
+吉 ins 引 rcChannel.rq: 读 取 EH0 补 -入 15 一 405 字 节 --
+
+TransferChannel.rs
+
+TanosfrChannel.mq :更 新 EF04 文 件 一 一 -|
+TransferChannel.rs
+TrinsferChannelrq: 消 费 初始 化 ,更 新 0019 文 件 一 -|
+
+TransferChannel.rs
+上- TransferChannel.mq: 复合 消费 , 读 0002 文 件 一 一-
+
+TransferChannel.rs
+
+4 RSU 发 送 EventReport ， 释放 链 路 。
+车 道 控制 器 路 侧 单元
+
+RSU 发 送 B2 帧 一 一 一 一
+PC 回应 C] 帧
+RSU 发 送 B4 帧
+
+[一 PC 回应 C6 帧
+RSU 发 送 B5 帧 一 一
+
+| 一 PC 回应 Cl1 帧 确认 交易 完成 一
+
+EventReport : 释放 链 路
+
+图 C.2.1 ETC 门 架 系 统 与 双 片 式 OBU 交易 流程
+
+C.2.2 双 片 式 0BU 在 非 省 界 ETC 门 架 系统 、 省 界 ETC 门 架 系 统 的 交易 流程 应 保持
+
+一 致 。RSU 下 发 以 上 拼接 指令 时 ， 如 果 OBU
+
+或 只 上 传 部 分 数据 ， 则 进行 蜡 常 处 理 ，
+
+向 应 数据 帧 存在 异常 代码 、 不 可 识别 数据
+
+即 针对 该 OBU 下 发 单 帧 指令 进行 答 试 。 若 ETC
+
+门 架 系 统 检测 到 OBU 无 效 (包含 未 捐
+
+站 ETC 用 户 卡 、 拆 人 基 、OBU 或 ETC
+
+用 户 卡 过 期
+

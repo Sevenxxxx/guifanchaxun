@@ -1,0 +1,51 @@
+{
+  "id": "粤交基函【2023】47号",
+  "title": "粤交基函【2023】47号",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/46.230302佛山市交通运输局转发关于印发“四好农村路”全国示范县创建管理办法的通知/粤交基函【2023】47号.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\46.230302佛山市交通运输局转发关于印发“四好农村路”全国示范县创建管理办法的通知\\粤交基函【2023】47号.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\46.230302佛山市交通运输局转发关于印发“四好农村路”全国示范县创建管理办法的通知\\粤交基函【2023】47号.pdf",
+  "pages": 12,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 12,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:15:46",
+  "pdf_mtime": "2025-02-14 18:15:46",
+  "source_mtime_ns": 1739528146000000000,
+  "source_size": 5020233,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 12
+  },
+  "indexed_at": "2026-09-01 01:22:16",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

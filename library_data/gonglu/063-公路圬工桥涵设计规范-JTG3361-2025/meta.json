@@ -1,0 +1,93 @@
+{
+  "id": "063-公路圬工桥涵设计规范-JTG3361-2025",
+  "title": "063-公路圬工桥涵设计规范-JTG3361-2025",
+  "std_no": "",
+  "version": "",
+  "file": "063-公路圬工桥涵设计规范-JTG3361-2025.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\063-公路圬工桥涵设计规范-JTG3361-2025.pdf",
+  "pages": 60,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 60,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:22:25",
+  "indexed_at": "2026-08-26 01:32:03",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 60
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "10",
+      "title": "第10章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "材料",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "基本 规定",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "第5章",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "壤 人 台",
+      "start": 46,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "涵洞",
+      "start": 54,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 58,
+  "status": "indexed",
+  "note": ""
+}

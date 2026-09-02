@@ -1,0 +1,58 @@
+{
+  "id": "广东省农村公路建设计划投资预估算指标表",
+  "title": "广东省农村公路建设计划投资预估算指标表",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/87.250725佛山市交通运输局转发关于印发《关于加强农村公路新改建工程投资预估算管理的指导意见》和《广东省农村公路建设计划投资预估算指标表》的通知/广东省农村公路建设计划投资预估算指标表.doc",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\87.250725佛山市交通运输局转发关于印发《关于加强农村公路新改建工程投资预估算管理的指导意见》和《广东省农村公路建设计划投资预估算指标表》的通知\\广东省农村公路建设计划投资预估算指标表.doc",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\87.250725佛山市交通运输局转发关于印发《关于加强农村公路新改建工程投资预估算管理的指导意见》和《广东省农村公路建设计划投资预估算指标表》的通知\\广东省农村公路建设计划投资预估算指标表.doc",
+  "pages": 31,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 31,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 1.0,
+    "punct_median": 0.0643,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-07-30 21:29:39",
+  "pdf_mtime": "2025-07-30 21:29:39",
+  "source_mtime_ns": 1753882179000000000,
+  "source_size": 587264,
+  "fmt": "doc",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:32:33",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "第2部分",
+      "title": "第2部分(无目录,按页均分)",
+      "start": 31,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

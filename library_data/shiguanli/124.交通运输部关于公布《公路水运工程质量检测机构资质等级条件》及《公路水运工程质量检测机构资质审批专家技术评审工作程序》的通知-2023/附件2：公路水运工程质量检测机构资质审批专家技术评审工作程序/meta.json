@@ -1,0 +1,58 @@
+{
+  "id": "附件2：公路水运工程质量检测机构资质审批专家技术评审工作程序",
+  "title": "附件2：公路水运工程质量检测机构资质审批专家技术评审工作程序",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/124.交通运输部关于公布《公路水运工程质量检测机构资质等级条件》及《公路水运工程质量检测机构资质审批专家技术评审工作程序》的通知-2023/附件2：公路水运工程质量检测机构资质审批专家技术评审工作程序.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\124.交通运输部关于公布《公路水运工程质量检测机构资质等级条件》及《公路水运工程质量检测机构资质审批专家技术评审工作程序》的通知-2023\\附件2：公路水运工程质量检测机构资质审批专家技术评审工作程序.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\124.交通运输部关于公布《公路水运工程质量检测机构资质等级条件》及《公路水运工程质量检测机构资质审批专家技术评审工作程序》的通知-2023\\附件2：公路水运工程质量检测机构资质审批专家技术评审工作程序.pdf",
+  "pages": 47,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 47,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-08-31 12:34:53",
+  "pdf_mtime": "2026-08-31 12:34:53",
+  "source_mtime_ns": 1788150893000000000,
+  "source_size": 2344734,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 47
+  },
+  "indexed_at": "2026-09-01 01:19:13",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "第2部分",
+      "title": "第2部分(无目录,按页均分)",
+      "start": 31,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

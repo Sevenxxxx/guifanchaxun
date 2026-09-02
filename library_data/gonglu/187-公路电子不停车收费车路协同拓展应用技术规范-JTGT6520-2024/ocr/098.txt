@@ -1,0 +1,48 @@
+车 路 通信 协议
+
+|
+privateInfo 用 于 存放 各 地 方 专 有 应 用 的 相关 信息 ， 具 体 定义 自行 规定 。
+gbICCInfo 用 于 存放 ICC 中 卡片 发 行 信息 、 钱 包 余额 及 人 口 信息 等 。
+ReportIndqd: : = BIT STRING |
+
+rescueRequest (0) ，---- 数据 上 报
+
+beidouData (1) ，-- 北 斗 定 位 数据 上 报
+
+other (2) ，-- 保 留
+上 (SIZE (8) ) 。
+
+ObuAbility:: = BIT STRING |
+abilityPic (0) ，-- 支 持 图 片
+abilityVedio (1) ，-- 支 持 视频
+abilityAudio (2) ，-- 支 持 语音
+abilityBeidou (3) ，- -支持 北斗
+
+上 (SIZE (16) ) 。
+
+1 GetSecure. request 的 LLC 必 了 届 用 命 信 SA 层 使 用 Action. request ，
+porte ERSst 原 请 忆 捍 带 访问 许可 证 书 ， 用 于 获得 读 取
+
+08 中 数据 的 权限 ， 实 现 OBERSD
+2 CetSecure. requegy ne 或
+Action-Request : : =- 交 DA
+
+mode 本 一 耻 OOLE? RN S Sa
+did SC 3J Dsrc-
+ap ActionType， ，
+
+ec tials ”OCTET STRING (SIZE (0. .127，…) ) OPTIONAL，
+actionPjrameter ”Container OPTIONAL，
+iid ”′ ， Dasre-DID OPTIONAL
+
+|
+其 编码 规定 如 下 :
+一 一 mode: 采用 确认 模式 ， 取 值 为 1;
+Dsrc-DID :: =INTEGER (0..127，…) 无 扩展 ，FETC 应 用 目录 号 为 1， 取 值 1;
+ActionType:: =INTECER (0..127，…) 无 扩展 ，getSecure 为 0， 取 值 0;
+accessCredentials OCTET STRING (SIZE (0. . 127，…) ) 无 扩展 ， 可 选 性 使 用 ，
+Length 为 8 ， 取 值 8 ，accessCredentials 的 取 值 为 8 字 节 ，accessCredentials 为 RSU 计算 得
+到 的 访问 证 书 ， 可 用 于 accessCredentials 计算 的 随机 数 可 从 VST 中 获得 ， 计 算 过 程 参 见
+
+《电子 收费 ”专用 短程 通信 第 4 部分: 设备 应 用 》(GBZT 20851. 4 一 2019 ) 。
+

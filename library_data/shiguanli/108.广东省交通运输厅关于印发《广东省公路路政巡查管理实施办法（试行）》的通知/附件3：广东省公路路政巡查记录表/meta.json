@@ -1,0 +1,51 @@
+{
+  "id": "附件3：广东省公路路政巡查记录表",
+  "title": "附件3：广东省公路路政巡查记录表",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/108.广东省交通运输厅关于印发《广东省公路路政巡查管理实施办法（试行）》的通知/附件3：广东省公路路政巡查记录表.docx",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\108.广东省交通运输厅关于印发《广东省公路路政巡查管理实施办法（试行）》的通知\\附件3：广东省公路路政巡查记录表.docx",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\108.广东省交通运输厅关于印发《广东省公路路政巡查管理实施办法（试行）》的通知\\附件3：广东省公路路政巡查记录表.docx",
+  "pages": 15,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 15,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9564,
+    "punct_median": 0.0928,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-01-08 18:25:51",
+  "pdf_mtime": "2026-01-08 18:25:51",
+  "source_mtime_ns": 1767867951000000000,
+  "source_size": 110674,
+  "fmt": "docx",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:13:07",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "1．广东省佛山市三水区西南街道履行职责事项清单（内部印发版）",
+  "title": "广东省佛山市三水区西南街道履行职责事项清单",
+  "std_no": "内部印发版",
+  "version": "",
+  "file": "quguanli/21.250710中共佛山市三水区委、佛山市三水区人民政府关于印发佛山市三水区镇（街道）履行职责事项清单的通知/1．广东省佛山市三水区西南街道履行职责事项清单（内部印发版）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\21.250710中共佛山市三水区委、佛山市三水区人民政府关于印发佛山市三水区镇（街道）履行职责事项清单的通知\\1．广东省佛山市三水区西南街道履行职责事项清单（内部印发版）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\21.250710中共佛山市三水区委、佛山市三水区人民政府关于印发佛山市三水区镇（街道）履行职责事项清单的通知\\1．广东省佛山市三水区西南街道履行职责事项清单（内部印发版）.pdf",
+  "pages": 497,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 497,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 0.9477,
+    "punct_median": 0.0236,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.556,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-07-18 18:50:37",
+  "pdf_mtime": "2025-07-18 18:50:37",
+  "source_mtime_ns": 1752835837000000000,
+  "source_size": 3445067,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 497
+  },
+  "indexed_at": "2026-08-31 23:56:25",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "调查 单位 提供 业务 培训 ，",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "4",
+      "title": "号 )",
+      "start": 93,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "0",
+      "title": "项 上 级 部 门 收回 事项 第 16",
+      "start": 105,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "5",
+      "title": "项 上 级 部 门 收回 事项 第 40",
+      "start": 111,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "7",
+      "title": "号 )",
+      "start": 111,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "9",
+      "title": "生态 环保 169 项 )",
+      "start": 130,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "3",
+      "title": "了 牛 习 续",
+      "start": 236,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "6",
+      "title": "项 .",
+      "start": 285,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "2",
+      "title": "口 队 关 渗 假 、1 3 、 工作 方式 :",
+      "start": 446,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "8",
+      "title": "甘 伸 壕 记 让 蝇 不 白羽 1 坦 生 天 11",
+      "start": 465,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed",
+  "note": ""
+}

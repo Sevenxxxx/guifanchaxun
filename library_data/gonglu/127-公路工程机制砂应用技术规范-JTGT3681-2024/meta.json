@@ -1,0 +1,107 @@
+{
+  "id": "127-公路工程机制砂应用技术规范-JTGT3681-2024",
+  "title": "127-公路工程机制砂应用技术规范-JTGT3681-2024",
+  "std_no": "",
+  "version": "",
+  "file": "127-公路工程机制砂应用技术规范-JTGT3681-2024.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\127-公路工程机制砂应用技术规范-JTGT3681-2024.pdf",
+  "pages": 43,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 43,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.929,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:37:58",
+  "indexed_at": "2026-08-26 03:22:44",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 43
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "10",
+      "title": "第10章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "机 制 砂",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "机 制 砂 水 泥 混 凝 土 材 料 设计",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "机 制 砂 源 青 混合 料 材料 设计",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "机 制 砂 水 泥 混 凝 土 施工",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "机 制 砂 源 至 混合 料 施工",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "施工 质量 控制",
+      "start": 32,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 53,
+  "status": "indexed",
+  "note": ""
+}

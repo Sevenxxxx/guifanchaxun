@@ -1,0 +1,8 @@
+OBE-SAM 技术 要 求
+
+OBE-SAM 通道 的 合同 版 本 和 OBE-IC 通道 的 卡片 版 本 号 应 为 0x49 。
+
+M.S.10 OBE-SAM 通道 和 OBE-IC 通道 UPDATE KEY 命令 均 应 符合 本 标准 第 M. 3. 5
+条 的 有 关 规 定 。
+
+一 237 一

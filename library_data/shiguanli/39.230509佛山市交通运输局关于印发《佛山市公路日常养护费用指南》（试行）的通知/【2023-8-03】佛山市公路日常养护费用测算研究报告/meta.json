@@ -1,0 +1,142 @@
+{
+  "id": "【2023-8-03】佛山市公路日常养护费用测算研究报告",
+  "title": "【2023-8-03】佛山市公路日常养护费用测算研究报告",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/39.230509佛山市交通运输局关于印发《佛山市公路日常养护费用指南》（试行）的通知/【2023-8-03】佛山市公路日常养护费用测算研究报告.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\39.230509佛山市交通运输局关于印发《佛山市公路日常养护费用指南》（试行）的通知\\【2023-8-03】佛山市公路日常养护费用测算研究报告.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\39.230509佛山市交通运输局关于印发《佛山市公路日常养护费用指南》（试行）的通知\\【2023-8-03】佛山市公路日常养护费用测算研究报告.pdf",
+  "pages": 121,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 121,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9945,
+    "punct_median": 0.0198,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.111,
+    "clause_hits": 51
+  },
+  "source_mtime": "2025-02-19 20:38:53",
+  "pdf_mtime": "2025-02-19 20:38:53",
+  "source_mtime_ns": 1739968733000000000,
+  "source_size": 3592677,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:21:48",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "",
+      "title": "一、研究背景",
+      "start": 2,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "10",
+      "title": "第10章",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "5",
+      "title": "第5章",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "22",
+      "title": "第22章",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "",
+      "title": "二、国省道日常养护费用测算",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "1",
+      "title": "第1章",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "14",
+      "title": "第14章",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "2",
+      "title": "第2章",
+      "start": 26,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "24",
+      "title": "第24章",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "第9章",
+      "start": 31,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "20",
+      "title": "第20章",
+      "start": 40,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "40",
+      "title": "第40章",
+      "start": 64,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "",
+      "title": "三、农村公路养护检查费及日常养护费用测算",
+      "start": 103,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "",
+      "title": "四、研究结论",
+      "start": 120,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 251,
+  "status": "indexed",
+  "note": ""
+}

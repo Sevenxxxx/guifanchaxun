@@ -1,0 +1,39 @@
+公路 悬索桥 设计 规范 (JTC《/T D65-05 一 2015 )
+
+8.4 结构 计算 46
+9 主 约 soseosooesoooooeosoosoooooseoeooeoooooooooooooooooooooeooooeooooooooooooooooooooooosoosoooooeooeooo。 0
+9 1 一 般 规定 seeessosesoosooeooeoooooooosooesoooooooooosoosooeoooooooosoooooosoosooeooooesooeooeooooeooeoos。 0
+9.2 结构 形式 站 51]
+9.3 ”构造 要 求 怕 et 52
+9.4 结构 计算 ， 生 Nt 52
+10 吊 索 eeeeeseeeeseseessesoeoooooosooesoeosoososoosoveooooesoeoeoooeoooeoeooeeooeooeooeooeooeooooooeoeooeooeoeeeoseee。 |
+10 1 一 般 规 定 aseeseeseeeeseeseesoeseeeeseseoseoeeoeeeoeoeooeooeoeooeesoeeeoeosooeooeosooeeoeoeeoeoeeseeoseee。 |
+10 2 结构 形式 asaeenesesssseseesessessessossssossossossososeosoosoosoosesooi oooooooooososoos。ss。 54
+10.3 构造 要 求 6
+10.4 ”结构 计算 58
+11 素 淆 60
+11 1 一 般 规定 asaeessseseossssssussoosoosososssooesooosoosei onsooooooooiooooooooooooosooooeooesosoosn 60
+11. 2 结构 形式 aaesasesesssessssssssesssssssssssssssssssssiiooioaesoasooooooooooooeoeooeososoesoesoesessn 060
+11.3 构造 要 求 61
+11.4 结构 计算 64
+12 素 鞍 Ne 66
+12. 1 一 般 规 定 oo 66
+12.2 结构 形式 PN 66
+12.3 构造 要 求 ee 69
+12.4 ”结构 计算 70
+13 加 劲 梁 ee 75
+13 1 一 般 规 定 ouuousaesioiiooaoiieoooiooooooooooooooooooosooooosoooooeoosooeooooooueous en 74
+13.2 ”结构 形 直 PR 77
+13.3 .构造 要 求 丰 ee 79
+13.4 “化 构 计算 及 模型 试验 83
+14 ”约束 体系 、 伸 缩 装 置 及 桥 面 系 pp 87
+14. 1 一 般 规定 asaesnesssosusuusussuosoososssosusosoosoosoooooousououoosooooeseoosooooosooeoooooouesousaoo 87
+14.2” 竖 向 、 横 向 约束 体系 87
+14.3 纵向 约束 体系 88
+14.4 ”伸缩 装置 88
+14.5 桥 面 防 撞 护栏 89
+14.6 桥 面 铺 装 与 桥 面 排水 89
+15 附属 设施 RN 90
+1 和 . 1 一 般 规定 oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooeeooooooooooooeoeoooooo 90
+15.2” 索 塔 附属 设施 PN 90
+15.3” 错 了 三 附属 设施 PR 90

@@ -1,0 +1,149 @@
+{
+  "id": "71.250325广东省在役公路自然灾害综合防治应知应会手册 (第一册 灾害排查)(试行)",
+  "title": "250325广东省在役公路自然灾害综合防治应知应会手册 (第一册 灾害排查)",
+  "std_no": "试行",
+  "version": "",
+  "file": "shiguanli/71.250325广东省在役公路自然灾害综合防治应知应会手册 (第一册 灾害排查)(试行).pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\71.250325广东省在役公路自然灾害综合防治应知应会手册 (第一册 灾害排查)(试行).pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\71.250325广东省在役公路自然灾害综合防治应知应会手册 (第一册 灾害排查)(试行).pdf",
+  "pages": 132,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 132,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 1.0,
+    "punct_median": 0.0246,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.0,
+    "clause_hits": 96
+  },
+  "source_mtime": "2025-04-03 19:07:10",
+  "pdf_mtime": "2025-04-03 19:07:10",
+  "source_mtime_ns": 1743678430000000000,
+  "source_size": 16105884,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:53:35",
+  "toc_zone_end": 3,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "",
+      "title": "第一篇 基础知识",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "",
+      "title": "第二篇 灾害排查",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "",
+      "title": "第三篇 系统填报",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "",
+      "title": "附件",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "",
+      "title": "附件",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "",
+      "title": "附件",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "",
+      "title": "广东省公路在役公路自然灾害综合防治应知应会手册（第",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "1",
+      "title": "第1章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "2",
+      "title": "第2章",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "3",
+      "title": "第3章",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "4",
+      "title": "第4章",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "5",
+      "title": "第5章",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "6",
+      "title": "第6章",
+      "start": 26,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "7",
+      "title": "第7章",
+      "start": 46,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "8",
+      "title": "第8章",
+      "start": 77,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 105,
+  "status": "indexed",
+  "note": ""
+}

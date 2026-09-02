@@ -1,0 +1,93 @@
+{
+  "id": "广东省地级以上市、县级公路交通应急装备物资储备中心建设指南（2025年12月试行）",
+  "title": "广东省地级以上市、县级公路交通应急装备物资储备中心建设指南",
+  "std_no": "2025年12月试行",
+  "version": "2025",
+  "file": "qitaguifan/49.251224广东省公路事务中心关于印发《广东省地级以上市、县级公路交通应急装备物资储备中心建设指南（试行）》的通知/广东省地级以上市、县级公路交通应急装备物资储备中心建设指南（2025年12月试行）.docx",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\49.251224广东省公路事务中心关于印发《广东省地级以上市、县级公路交通应急装备物资储备中心建设指南（试行）》的通知\\广东省地级以上市、县级公路交通应急装备物资储备中心建设指南（2025年12月试行）.docx",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\49.251224广东省公路事务中心关于印发《广东省地级以上市、县级公路交通应急装备物资储备中心建设指南（试行）》的通知\\广东省地级以上市、县级公路交通应急装备物资储备中心建设指南（2025年12月试行）.docx",
+  "pages": 28,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 28,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9756,
+    "punct_median": 0.0271,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-01-09 18:21:57",
+  "pdf_mtime": "2026-01-09 18:21:57",
+  "source_mtime_ns": 1767954117000000000,
+  "source_size": 493895,
+  "fmt": "docx",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 23:19:17",
+  "toc_zone_end": 2,
+  "offset": 2,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本规定",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "建设内容与规模",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "建设选址与布局",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "装备物资配置",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "运营维护保障",
+      "start": 20,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 82,
+  "status": "indexed",
+  "note": ""
+}

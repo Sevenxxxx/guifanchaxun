@@ -1,0 +1,45 @@
+术语 和 符号
+
+路 基 填 筑 高 度 内 冬季 路 基 士 未 全 部 冻结 的 路 堤 。
+
+2.1.9 路 基 冻 胀 量 heave of subgrade
+路 面 横断 面 宽 度 内 各 测 点 的 冻 胀 量 平均 值 。
+
+2. T. 10 土 的 冻 胀 率 frost heave ratio of sojl
+试 件 土 体 的 冻 胀 量 与 其 冻结 厚度 的 比值 ， 以 百分率 表示 。
+
+2.1.11 路 面 防冻 层 ”frost protection layer of pavement
+路 面 结构 中 按 防 冻 要 求 所 设置 的 功能 层 。
+
+2.1.12 土 的 冻 胀 等 级 “frost heave grade of soil
+表征 季节 性 冻 土 在 一 定 的 含水 率 及 冰冻 条 件 下 的 冻 胀 特性 ， 分 为 不 冻 胀 、 弱 冻 胀 、
+冻 胀 、 强 冻 胀 和 特 强 冻 胀 5 个 冻 胀 等 级 ， 分 别 以 TI Is 亚 、W 、V 表 示 。
+
+2.1.13 沥青 路 面 低温 设计 温度 ”minimuin design'tempefature for asphalt pavement
+沥青 路 面 低温 抗 裂 设 计 采 用 的 不 少 于 \10 年 的 年 最 低 气 温 的 平均 值 。
+
+2.1. 14 水 泥 混 凝 土 年 有 害 冻 融 循环 次 数 annbal harmful freeze-thaw cycles for
+
+cement concrete
+
+水 泥 混凝土 在 一 年 内 当日 最 低地 表 温 度 小 于 或 等 于 -6 民 且 最 高 地 表 温度 大 于 0YC
+的 天 数 。
+
+2. 1. 15 冻 融 环境 等 级 freeze-thaw gade of environment
+
+表征 水 泥 混 凝 主 结构 在 冰冻 气候 条 件 和 化 学 腐蚀 环境 等 综合 影响 下 的 冻害 严重 程
+度 ， 分 为 了 个 等 级 ， 分 别 以 D1、D2、D3、D4、D5、D6、D7 表示 。
+
+2. 1. 16 水 泥 混凝土 抗 冻 等 级 frost-resistant grade of cement concrete
+
+表征 水 泥 混凝土 在 标准 试验 条 件 下 抵抗 反复 冻 融 破坏 的 能 力 ， 分 为 8 个 等 级 ， 分 别
+以 F100、F15$0、F200、FP250、F300、H350、RM00 、RM450 表示 。
+
+2.1.17 桥涵 基础 设计 冻 深 design frost depth of bridge and culvert
+根据 工程 所 在 地 的 标准 冻 深 、 地 基 士 的 类 别 及 冻 胀 性 、 地 形 坡 向 等 环境 因素 计算 确
+定 的 桥梁 与 涵洞 基础 冻 深 最 大 值 。
+
+2.1.18 冻 胀 力 ”frost-heaving force
+土 体 冻 胀 受 到 约束 时 产生 的 作用 力 ， 以 切 向 冻 胀 力 、 法 向 冻 胀 力 和 水 平 向 冻 胀 力 表示 。
+
+一 3 一

@@ -1,0 +1,51 @@
+{
+  "id": "附件：粤交基建字〔2020〕169号",
+  "title": "附件：粤交基建字〔2020〕169号",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/51.20201231佛山市交通运输局转发关于加强公路桥梁信息公开牌管理工作的通知/附件：粤交基建字〔2020〕169号.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\51.20201231佛山市交通运输局转发关于加强公路桥梁信息公开牌管理工作的通知\\附件：粤交基建字〔2020〕169号.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\51.20201231佛山市交通运输局转发关于加强公路桥梁信息公开牌管理工作的通知\\附件：粤交基建字〔2020〕169号.pdf",
+  "pages": 3,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 3,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:15:56",
+  "pdf_mtime": "2025-02-14 18:15:56",
+  "source_mtime_ns": 1739528156000000000,
+  "source_size": 289774,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:22:19",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

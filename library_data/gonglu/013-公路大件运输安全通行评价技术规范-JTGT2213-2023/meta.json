@@ -1,0 +1,128 @@
+{
+  "id": "013-公路大件运输安全通行评价技术规范-JTGT2213-2023",
+  "title": "013-公路大件运输安全通行评价技术规范-JTGT2213-2023",
+  "std_no": "",
+  "version": "",
+  "file": "013-公路大件运输安全通行评价技术规范-JTGT2213-2023.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\013-公路大件运输安全通行评价技术规范-JTGT2213-2023.pdf",
+  "pages": 105,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 105,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 0.085,
+    "punct_median": 0.0513,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1.0,
+    "clause_hits": 201
+  },
+  "pdf_mtime": "2026-08-25 21:19:01",
+  "indexed_at": "2026-08-26 00:11:45",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 105
+  },
+  "toc_zone_end": 6,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "路 线",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "8",
+      "title": "第8章",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "11",
+      "title": "第11章",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "17",
+      "title": "第17章",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "20",
+      "title": "第20章",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "5",
+      "title": "第5章",
+      "start": 41,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "6",
+      "title": "立体 交叉",
+      "start": 49,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "7",
+      "title": "桥 桨",
+      "start": 59,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "9",
+      "title": "隧道",
+      "start": 72,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "10",
+      "title": "交通 工程 及 沿线 设施",
+      "start": 74,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 77,
+  "status": "indexed",
+  "note": ""
+}

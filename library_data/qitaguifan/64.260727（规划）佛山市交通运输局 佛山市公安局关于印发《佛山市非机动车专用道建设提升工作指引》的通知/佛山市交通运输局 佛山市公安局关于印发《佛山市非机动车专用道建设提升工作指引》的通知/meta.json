@@ -1,0 +1,51 @@
+{
+  "id": "佛山市交通运输局 佛山市公安局关于印发《佛山市非机动车专用道建设提升工作指引》的通知",
+  "title": "佛山市交通运输局 佛山市公安局关于印发《佛山市非机动车专用道建设提升工作指引》的通知",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/64.260727（规划）佛山市交通运输局 佛山市公安局关于印发《佛山市非机动车专用道建设提升工作指引》的通知/佛山市交通运输局 佛山市公安局关于印发《佛山市非机动车专用道建设提升工作指引》的通知.doc",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\64.260727（规划）佛山市交通运输局 佛山市公安局关于印发《佛山市非机动车专用道建设提升工作指引》的通知\\佛山市交通运输局 佛山市公安局关于印发《佛山市非机动车专用道建设提升工作指引》的通知.doc",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\64.260727（规划）佛山市交通运输局 佛山市公安局关于印发《佛山市非机动车专用道建设提升工作指引》的通知\\佛山市交通运输局 佛山市公安局关于印发《佛山市非机动车专用道建设提升工作指引》的通知.doc",
+  "pages": 7,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 7,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9861,
+    "punct_median": 0.0104,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-07-28 18:30:22",
+  "pdf_mtime": "2026-07-28 18:30:22",
+  "source_mtime_ns": 1785234622000000000,
+  "source_size": 186368,
+  "fmt": "doc",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:31:38",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

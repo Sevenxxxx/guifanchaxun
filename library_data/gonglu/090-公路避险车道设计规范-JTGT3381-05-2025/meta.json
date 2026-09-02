@@ -1,0 +1,114 @@
+{
+  "id": "090-公路避险车道设计规范-JTGT3381-05-2025",
+  "title": "090-公路避险车道设计规范-JTGT3381-05-2025",
+  "std_no": "",
+  "version": "",
+  "file": "090-公路避险车道设计规范-JTGT3381-05-2025.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\090-公路避险车道设计规范-JTGT3381-05-2025.pdf",
+  "pages": 42,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 42,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 1.0,
+    "punct_median": 0.1611,
+    "empty_ratio": 0.071,
+    "bad_ratio": 0.889,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:31:22",
+  "indexed_at": "2026-08-26 02:18:19",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 42
+  },
+  "toc_zone_end": 4,
+  "offset": 4,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 册",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "第3章",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "总 体 设计",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "当主 线 为 直线 时 ， 避 险 车 道 与 主线 的 夹",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "制 动 床",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "救援 车 道",
+      "start": 26,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "谢 部 消 能 设施",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "第9章",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "10",
+      "title": "照明 和 监控 设施",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "11",
+      "title": "排水 设施",
+      "start": 39,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 97,
+  "status": "indexed",
+  "note": ""
+}

@@ -1,0 +1,72 @@
+{
+  "id": "110-公路交通安全设施工程测试规程-JTGT3540-2026",
+  "title": "110-公路交通安全设施工程测试规程-JTGT3540-2026",
+  "std_no": "",
+  "version": "",
+  "file": "110-公路交通安全设施工程测试规程-JTGT3540-2026.pdf",
+  "pdf_abs": "guifansrc\\gonglu\\110-公路交通安全设施工程测试规程-JTGT3540-2026.pdf",
+  "pages": 81,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 81,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": 0.0,
+    "punct_median": 0.0,
+    "empty_ratio": 0.214,
+    "bad_ratio": 1.0,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:32:35",
+  "indexed_at": "2026-08-26 06:50:36",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 81
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": 59,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "通用 测试",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "方法 与 步 又",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "数据 处 理",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 59,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 360,
+  "status": "indexed",
+  "note": ""
+}

@@ -1,0 +1,79 @@
+{
+  "id": "84.250418交通运输部办公厅关于印发《公路长大桥梁结构监测数据质量管理办法（试行）》的通知",
+  "title": "250418交通运输部办公厅关于印发《公路长大桥梁结构监测数据质量管理办法（试行）》的通知",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/84.250418交通运输部办公厅关于印发《公路长大桥梁结构监测数据质量管理办法（试行）》的通知.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\84.250418交通运输部办公厅关于印发《公路长大桥梁结构监测数据质量管理办法（试行）》的通知.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\84.250418交通运输部办公厅关于印发《公路长大桥梁结构监测数据质量管理办法（试行）》的通知.pdf",
+  "pages": 34,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 34,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-07-18 18:50:36",
+  "pdf_mtime": "2025-07-18 18:50:36",
+  "source_mtime_ns": 1752835836000000000,
+  "source_size": 1696413,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 34
+  },
+  "indexed_at": "2026-08-31 22:58:05",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "3",
+      "title": "基本 规定 弟 ee 12?",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "4",
+      "title": "和 单 恬 系 统 数 据 质 攻守",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "5",
+      "title": "省 级 监测 平台 /部 级 数据 平 全 数据 质量 评价",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "1",
+      "title": "总 则",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "2",
+      "title": "术语 和 定义",
+      "start": 11,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 64,
+  "status": "indexed",
+  "note": ""
+}

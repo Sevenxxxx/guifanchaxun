@@ -1,0 +1,58 @@
+{
+  "id": "4.2 纵断面设计",
+  "title": "2 纵断面设计",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/60.240910路政-佛山市交通运输局关于印发《佛山市占用挖掘道路及修复设计（施工）方案专章编制指南》的通知/附件2 专章附图/4.2 纵断面设计.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\60.240910路政-佛山市交通运输局关于印发《佛山市占用挖掘道路及修复设计（施工）方案专章编制指南》的通知\\附件2 专章附图\\4.2 纵断面设计.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\60.240910路政-佛山市交通运输局关于印发《佛山市占用挖掘道路及修复设计（施工）方案专章编制指南》的通知\\附件2 专章附图\\4.2 纵断面设计.pdf",
+  "pages": 1,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 1,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:16:37",
+  "pdf_mtime": "2025-02-14 18:16:37",
+  "source_mtime_ns": 1739528197000000000,
+  "source_size": 279868,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 1
+  },
+  "indexed_at": "2026-09-01 01:31:03",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "2",
+      "title": "上 EEe 昌 下 区",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "4",
+      "title": "贡 9.00 | N A\\ \\ AN 站",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 2,
+  "status": "indexed",
+  "note": ""
+}

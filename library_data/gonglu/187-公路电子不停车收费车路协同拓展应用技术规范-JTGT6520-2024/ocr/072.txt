@@ -1,0 +1,47 @@
+ASN.、1 消息 集
+
+-- 包 含 应 用 场景 相关 的 全 部 道路 交通 事件 数据
+laneControlList LaneControlList OPTIONAL ，
+
+-- 车 道 管控 信息
+vehicleInfoList VehicleInfoList OPIIONAL，
+
+-- 包 含 应 用 场景 相关 的 全 部 车 辆 信息
+suggestions Suggestions OPTIONAL，
+
+-- 针 对 本 事件 的 建议 措施 、 辅 助 策略
+suggestionsstatus SuggestionsStatus OPIIONAL，
+
+-- 针 对 本 事件 的 建议 措施 、 辅 助 策略 的 处 置 状 态
+rtss EtcRTSList OPIIONAL ，
+
+-- 包 含 应 用 场景 相关 的 全 部 道路 交通 服务 信息
+trafficLimitData TrafficLimitData OPTIONAL， 1 1 六
+
+-= 限行 数据
+carOntoLine LineType OPIIONAL，
+
+-- 压 线 信息
+
+description Description
+
+-应 用 场景 描述 候
+
+|
+CetVehInfList : :
+
+GetVehicleInfoDaias : “
+
+Te NEEG: 于
+j (0.. 127)
+
+” =- 场景 类 型
+|
+EtcBinary :: =CHOICE |
+binaryInfoFrame [0] EtceBinaryInfo ，
+-- 二 进 制 数据 描述
+binaryDataFrame [1] EteBinaryData ，
+-= 二 进 制 数据
+
+|
+HeiResType:: =BIT STRINGC |

@@ -1,0 +1,128 @@
+{
+  "id": "2.CJJ 169-2012 城镇道路路面设计规范",
+  "title": "CJJ 169-2012 城镇道路路面设计规范",
+  "std_no": "",
+  "version": "",
+  "file": "gongcheng/2.CJJ 169-2012 城镇道路路面设计规范.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gongcheng\\2.CJJ 169-2012 城镇道路路面设计规范.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gongcheng\\2.CJJ 169-2012 城镇道路路面设计规范.pdf",
+  "pages": 92,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 92,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9857,
+    "punct_median": 0.087,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.556,
+    "clause_hits": 100
+  },
+  "source_mtime": "2026-09-01 22:19:05",
+  "pdf_mtime": "2026-09-01 22:19:05",
+  "source_mtime_ns": 1788272345273825900,
+  "source_size": 26101150,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 23:04:24",
+  "toc_zone_end": 4,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "9",
+      "title": "第9章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "1",
+      "title": "拖界荷位处产生的荷载",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "10",
+      "title": "一一路段内实测路表弯沉平均值;",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "2",
+      "title": "地下水位高、排水不良，路基处",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "二450",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "3",
+      "title": "倍.",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "8",
+      "title": "一一当量圆半径",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "32",
+      "title": "第32章",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "7",
+      "title": "第7章",
+      "start": 37,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "4",
+      "title": "严寒区",
+      "start": 49,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "6",
+      "title": "时，",
+      "start": 54,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "11",
+      "title": "旦ziE叫0. 87",
+      "start": 73,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 344,
+  "status": "indexed",
+  "note": ""
+}

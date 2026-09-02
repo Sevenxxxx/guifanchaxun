@@ -1,0 +1,37 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGZT 6520 一 2024)
+表 D.0.3-2 RSU 广播 信息 由
+序号 | 字 节 数 参数 说 明
+0 1 Cmd 此 处 取 值 0xA1
+1 4 ObuId OBU MAC 地 址 ,全 FF 代表 广播
+5 2 Duration 广播 持续 时 间 : 单位 ms。 参 考 值 2 000ms
+7 1 M 信息 播报 类 型 : 0x00 RSU 已 缓存 的 信息 资源 ， 此 时 MsgInfo 不 存在 ;
+essageTyPe 0x01 临时 事件 ， 需 携带 MsgImfo
+8 1 EncryptionFlag 加 密 标志 : 0x00 表示 不 加 密 ; 0x01 表示 加 密
+9 2 EncryptionOffset 加 密 的 MessageFrame 偏 移 量 ， 不 加 密 时 取 值 bx00
+11 2 EncryptionLength 加 密 的 MessageFrame 长 度 ， 不 加 密 时 取信 0 的 ， 4
+13 2 AoEnerypiionLength us 16 的 bjs$ 取 值 等 于 Enermyp-
+15 4 MsgId 当 MessageType = 0x00 指示 RSU ; 其 的 丰 信息 资源
+AR
+19 | : Msginfolen 拓展 应 用 业务 数据 长 度 。 尼 到 0x00 时 无 此 数据
+拓展 应 用 业务 数据 ， 号 浴 G MessageFrame ， 当 MessageType =
+| Megme 0x00 时 无 此 数据 六 SA
+
+12 加
+13 1 -ST 立 SR 参考 值 10ms
+4 | 1 Sa 到 癌 和 让 托 报 成 后 ， 冻结 上 报 该 OBU 的 时 间 ， 单 位 ， s
+15 形 证 Eovenl RSU2. 0 通道 1 功率 级 数 ， 取 值 0 ~31
+16 |“T ChannelID1 RSU2. 0 信道 号 : 0x20 指示 信道 1; 0x21 指示 信道 2
+17 1 TxPower2 RSU2. 0 通道 2 功率 级 数 ， 取 值 0 ~31
+18 1 PLLChannelID2 RSU2. 0 信道 号 : 0x20 指示 信道 1; 0x21 指示 信道 2
+19 1 TxPower3 RSU1. 0 通道 3 功率 级 数 ， 取 值 0 ~31
+20 1 PLLChannelID3 RSU1. 0 信道 号 : 0x01 指示 信道 1; 0x02 指示 信道 2
+道路 朝向 :
+21 1 Direction 0x01 表示 链 路 朝向 道路 上 行 ; 0x02 表示 链 路 朝向 道路 下 行 ; 0x03 表示
+链 路 不 区 分 道路 方向 ; 其 他 保留
+22 5 Reserved 保留 字 节
+注 : 1. RSU 上 电 后 ， 等 待 RSF 连接 。
+
+2. 当 RSF 成 功 连接 到 RSU 后 ， 应 进行 认证 ， 认 证 通过 后 发 送 0xA0 进行 设备 初始 化 参数 设置 。
+3. RSU 收 到 RSF 发 送 的 0xA0 后 ， 若 RSU 初始 化 成 功 ， 则 向 RSF 发 0z20 作为 应 答 ，RSU 的 RsuStatus
+为 0x00。
+

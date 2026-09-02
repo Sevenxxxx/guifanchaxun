@@ -1,0 +1,72 @@
+{
+  "id": "006-小交通量农村公路工程技术标准-JTG2111-2019",
+  "title": "006-小交通量农村公路工程技术标准-JTG2111-2019",
+  "std_no": "",
+  "version": "",
+  "file": "006-小交通量农村公路工程技术标准-JTG2111-2019.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\006-小交通量农村公路工程技术标准-JTG2111-2019.pdf",
+  "pages": 89,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 89,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9946,
+    "punct_median": 0.0372,
+    "empty_ratio": 0.214,
+    "bad_ratio": 0.125,
+    "clause_hits": 144
+  },
+  "pdf_mtime": "2026-08-25 21:18:39",
+  "indexed_at": "2026-08-26 00:07:47",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 9,
+  "offset": 58,
+  "toc_source": "parsed",
+  "expl_start": 59,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "0",
+      "title": "第0章",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "13",
+      "title": "第13章",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "11",
+      "title": "交通安全设施",
+      "start": 43,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "12",
+      "title": "沿线设施及其他",
+      "start": 47,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 59,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 417,
+  "status": "indexed",
+  "note": ""
+}

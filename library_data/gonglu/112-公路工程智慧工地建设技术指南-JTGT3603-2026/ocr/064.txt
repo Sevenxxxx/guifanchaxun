@@ -1,0 +1,38 @@
+公路 工程 智慧 工地 建设 技术 指南 (JTGZT 3603 一 2026 )
+
+表 C.0.6 沥青 路 面 摊 铺
+
+名 称 沥青 路 面 摊 铺 采集 参数
+参数 名 称 参数 类 型 是 否 必须 (YAN)
+材料 类 型 Suing Y
+施工 桩 号 Suing Y
+结构 层 mt Y
+左右 幅 mt Y
+排 铺 速度 Float Y
+排 铺 温度 Float Y
+温度 离 析 Float Y
+经 度 Float Y
+纬度 Float Y
+C.0.7 沥青 路 面 压 实 参数 宜 按 表 C. 0.7 采集 。
+表 C. 0.7 ”沥青 路 面 压 实
+名 称 汽 青 路 面 秆 实 采集 参数
+参数 名 称 贿 表 类 型 是 否 必须 (YAN)
+施工 时 间 Date Y
+经 度 Float Y
+纬度 本 Y
+压 实 饥 数 id Y
+振动 频率 Floalt Y
+开始 时 奇 Date Y
+结束 时 疝 Date Y
+夺 实 温度 Float Y
+于 实 床 度 Float Y
+设备 类 型 mt Y
+C.0.8 混凝土 施工 参数 宜 按 表 C. 0. 8 采集 。
+表 C. 0.8 水 泥 混凝土 拌和
+名 称 水 泥 混凝土 拌和 采集 参数
+参数 名 称 参数 类 型 是 否 必须 (YAN)
+项 目 名 称 Suing Y
+标 段 Stuing Y
+拌和 站 名 称 Stuing N
+工程 部 位 Suing Y
+

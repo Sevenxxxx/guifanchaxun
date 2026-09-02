@@ -1,0 +1,149 @@
+{
+  "id": "024-公路工程设计信息模型应用标准-JTGT2421-2021",
+  "title": "024-公路工程设计信息模型应用标准-JTGT2421-2021",
+  "std_no": "",
+  "version": "",
+  "file": "gonglu/024-公路工程设计信息模型应用标准-JTGT2421-2021.pdf",
+  "pdf_abs": "guifansrc\\gonglu\\024-公路工程设计信息模型应用标准-JTGT2421-2021.pdf",
+  "pages": 158,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 158,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 1.0,
+    "punct_median": 0.0446,
+    "empty_ratio": 0.071,
+    "bad_ratio": 0.0,
+    "clause_hits": 94
+  },
+  "pdf_mtime": "2026-08-25 21:20:00",
+  "indexed_at": "2026-08-28 18:39:05",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 8,
+  "offset": 8,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本规定",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "模型要求",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "协同设计",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "应用",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "交付",
+      "start": 18,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "附录A",
+      "title": "模型精细度",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "附录B",
+      "title": "项目",
+      "start": 31,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "附录C",
+      "title": "路线",
+      "start": 32,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "附录E",
+      "title": "路面",
+      "start": 66,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "附录F",
+      "title": "桥梁",
+      "start": 73,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "附录G",
+      "title": "涵洞",
+      "start": 107,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "附录H",
+      "title": "隧道",
+      "start": 114,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "附录J",
+      "title": "交通工程及沿线设施",
+      "start": 126,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "附录K",
+      "title": "地形地质",
+      "start": 155,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 109,
+  "status": "indexed",
+  "note": ""
+}

@@ -1,0 +1,100 @@
+{
+  "id": "141-公路路政管理技术标准-JTG4110-2024",
+  "title": "141-公路路政管理技术标准-JTG4110-2024",
+  "std_no": "",
+  "version": "",
+  "file": "141-公路路政管理技术标准-JTG4110-2024.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\141-公路路政管理技术标准-JTG4110-2024.pdf",
+  "pages": 58,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 58,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:38:49",
+  "indexed_at": "2026-08-26 03:49:24",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 58
+  },
+  "toc_zone_end": 5,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "路 产 保 护",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "涉 路 施工 活动 管理",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "9",
+      "title": "第9章",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "大 件 运输 许可 管理",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "第6章",
+      "start": 48,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "保障 条 件",
+      "start": 52,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "信息 化 管理",
+      "start": 56,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 117,
+  "status": "indexed",
+  "note": ""
+}

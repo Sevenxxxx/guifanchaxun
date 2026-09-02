@@ -1,0 +1,114 @@
+{
+  "id": "附件：广东省美丽农村路建设导则（试行）-最终版(印发)",
+  "title": "附件：广东省美丽农村路建设导则（试行）-最终版",
+  "std_no": "印发",
+  "version": "",
+  "file": "shiguanli/22.广东省交通运输厅关于印发《广东省美丽农村路建设导则（试行）》的通知/附件：广东省美丽农村路建设导则（试行）-最终版(印发) .doc",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\22.广东省交通运输厅关于印发《广东省美丽农村路建设导则（试行）》的通知\\附件：广东省美丽农村路建设导则（试行）-最终版(印发) .doc",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\22.广东省交通运输厅关于印发《广东省美丽农村路建设导则（试行）》的通知\\附件：广东省美丽农村路建设导则（试行）-最终版(印发) .doc",
+  "pages": 50,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 50,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9767,
+    "punct_median": 0.0228,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:15:46",
+  "pdf_mtime": "2025-02-14 18:15:46",
+  "source_mtime_ns": 1739528146000000000,
+  "source_size": 4778888,
+  "fmt": "doc",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:32:01",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则\t1",
+      "start": 2,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "10",
+      "title": "融合发展\t49",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "规范性引用文件",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "基本要求",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "工程技术",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "管理养护",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "安全品质",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "景观生态",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "服务设施",
+      "start": 39,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "公路文化",
+      "start": 45,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 236,
+  "status": "indexed",
+  "note": ""
+}

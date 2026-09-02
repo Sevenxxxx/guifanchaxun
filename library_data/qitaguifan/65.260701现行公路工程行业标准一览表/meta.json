@@ -1,0 +1,52 @@
+{
+  "id": "65.260701现行公路工程行业标准一览表",
+  "title": "260701现行公路工程行业标准一览表",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/65.260701现行公路工程行业标准一览表.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\65.260701现行公路工程行业标准一览表.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\65.260701现行公路工程行业标准一览表.pdf",
+  "pages": 2,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 2,
+    "rule": [
+      "clean",
+      "rescued-by-fulltext-check"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1,
+    "clause_hits": 170
+  },
+  "source_mtime": "2026-07-30 19:39:19",
+  "pdf_mtime": "2026-07-30 19:39:19",
+  "source_mtime_ns": 1785411559000000000,
+  "source_size": 868642,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 2
+  },
+  "indexed_at": "2026-08-31 22:14:13",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

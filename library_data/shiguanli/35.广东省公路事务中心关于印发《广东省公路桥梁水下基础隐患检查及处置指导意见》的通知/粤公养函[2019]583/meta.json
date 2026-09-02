@@ -1,0 +1,51 @@
+{
+  "id": "粤公养函[2019]583",
+  "title": "粤公养函[2019]583",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/35.广东省公路事务中心关于印发《广东省公路桥梁水下基础隐患检查及处置指导意见》的通知/粤公养函[2019]583.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\35.广东省公路事务中心关于印发《广东省公路桥梁水下基础隐患检查及处置指导意见》的通知\\粤公养函[2019]583.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\35.广东省公路事务中心关于印发《广东省公路桥梁水下基础隐患检查及处置指导意见》的通知\\粤公养函[2019]583.pdf",
+  "pages": 2,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 2,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 0.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:16:01",
+  "pdf_mtime": "2025-02-14 18:16:01",
+  "source_mtime_ns": 1739528161000000000,
+  "source_size": 188412,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:21:34",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

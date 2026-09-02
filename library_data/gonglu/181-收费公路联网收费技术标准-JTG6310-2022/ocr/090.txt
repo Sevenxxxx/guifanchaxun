@@ -1,0 +1,13 @@
+ETC 门 架 系统 处 理 流程
+
+BST: 预 读 EF01 文 件 、EF02 文 件
+VST
+
+TransferChannel.rs
+
+RSU: 发 送 B4 帧
+PC 回应 C6 帧
+
+RSU: 发 送 B5 帧
+PC 回应 C1 确 认 交 易 完 成
+

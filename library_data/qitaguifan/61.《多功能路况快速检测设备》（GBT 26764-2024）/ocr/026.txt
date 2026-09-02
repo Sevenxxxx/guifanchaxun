@@ -1,0 +1,85 @@
+GB/T 26764 一 2024
+
+附 录 A
+(规范 性 )
+
+国际 平整 度 指 数 (IRID 计算 程序
+
+BASIC 语言 编制 的 步 长 为 0.25m 的 IRI 计算 程序 逻辑 按 表 A.1 的 规定 进行 。
+表 A.1 IRI 计算 程序
+
+1010 REM 初始 化 常量
+1020 DIM Y(26),Z(4)，Z1(4),ST(C4,4)， PRC4)
+
+1030 READ DX
+
+1040 民 = INT (.257/DX 十 .5) 十 1
+1050 IFK 过 2THENK 王 2
+
+1060 BL 一 〈(K -1) * DX
+
+1070 FOR II 二 IO14
+
+1080 FOR J 王 1TIO14
+
+1090 READ ST4IL,J)
+
+1100 NEXTJ
+
+1110 READ PRCD)
+1120 NEXTI
+
+1130 REM 初始 化 变量
+
+1140 PUT "profile elevation 11 m from start:"，Y(K)
+1150 INPUT "X = 0. Elevation 二 ",Y(1)
+
+1160 Z1(1) 王 (YCK) -YGL)) 7 11
+
+1170 2Z1(42) 一 0
+
+1180 Z1(3) 一 Z1(1)
+
+1190 Z1(4) 一 0
+
+1200 RS = 0
+1210 I 芭 三 1
+1220 工 二 0
+
+1230 REM 输入 断面 数据 计算 平整 度
+1240 工 一 工 十 1
+
+1250 PRINT "X 一 "IX * DX，
+
+1260 芭 二 芭 十 1
+
+1270 INPUT "Elev. 二 ";YCK)
+
+1280 REM 计算 输入 斜率
+
+1290 IF II 过 KTHENYCOX) = YCK)
+1300 IFIX 近 KTHEN GOTO 1250
+1310 YP = (YCK) -Y(G1)) / BL
+
+1320 FOR J 一 2 工 O 开
+
+1330 Y(J-1) 一 Y(J)
+1340 NEXT J
+1350 REM 模拟 车 辆 反应
+
+1360 FOR J 王 IIO 4
+
+1370 2() 王 PRGJ) * YP
+
+1380 FOR JJ = 1IO9O14
+
+1390 2(J) = 一 ZJ) 十 STGJ,JJ) * 2Z1(0JJ)
+1400 NEXT JJ
+
+1410 NEXT J
+
+1420 FOR J 王 1TIO14
+
+1430 Zi(J) 二 Z(J)
+
+20

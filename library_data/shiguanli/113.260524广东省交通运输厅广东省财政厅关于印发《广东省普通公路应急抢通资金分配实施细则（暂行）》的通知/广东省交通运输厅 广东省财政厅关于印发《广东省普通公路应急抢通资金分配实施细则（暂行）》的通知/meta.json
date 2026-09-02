@@ -1,0 +1,51 @@
+{
+  "id": "广东省交通运输厅 广东省财政厅关于印发《广东省普通公路应急抢通资金分配实施细则（暂行）》的通知",
+  "title": "广东省交通运输厅 广东省财政厅关于印发《广东省普通公路应急抢通资金分配实施细则（暂行）》的通知",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/113.260524广东省交通运输厅广东省财政厅关于印发《广东省普通公路应急抢通资金分配实施细则（暂行）》的通知/广东省交通运输厅 广东省财政厅关于印发《广东省普通公路应急抢通资金分配实施细则（暂行）》的通知.ofd",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\113.260524广东省交通运输厅广东省财政厅关于印发《广东省普通公路应急抢通资金分配实施细则（暂行）》的通知\\广东省交通运输厅 广东省财政厅关于印发《广东省普通公路应急抢通资金分配实施细则（暂行）》的通知.ofd",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\113.260524广东省交通运输厅广东省财政厅关于印发《广东省普通公路应急抢通资金分配实施细则（暂行）》的通知\\广东省交通运输厅 广东省财政厅关于印发《广东省普通公路应急抢通资金分配实施细则（暂行）》的通知.ofd",
+  "pages": 9,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 9,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9795,
+    "punct_median": 0.0,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-06-05 18:21:57",
+  "pdf_mtime": "2026-06-05 18:21:57",
+  "source_mtime_ns": 1780654917000000000,
+  "source_size": 23518,
+  "fmt": "ofd",
+  "virtual": false,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:13:09",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 10,
+  "status": "indexed"
+}

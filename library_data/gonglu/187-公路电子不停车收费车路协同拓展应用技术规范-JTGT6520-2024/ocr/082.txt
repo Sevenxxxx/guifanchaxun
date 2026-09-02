@@ -1,0 +1,44 @@
+ASN.、1 消息 集
+
+-- 计算 方法 : 1) 将 广播 事件 信息 消息 包 编号 〈2 字 节 ) 、 分 包 序
+-- 号 (2 字 节 ) 、 分 包 长 度 (2 字 节 ) 、 分 包 内 容 (N 字 节 ) 、 时
+-- 间 信息 (unixtime 4 字 节 ) 进行 CRC 计算 〈 多 项 式
+--XI6+XI2 +X5 +1， 起 始 0xFFFF) ， 产 生 两 字 节 CRCO0 和 CRC1 ，
+-- 生 成 CheckCRC。
+
+G.0.5 数据 元 素 应 符合 下 列 规定 :
+EventType: : =INTECGER (0. . 65535 )
+
+-- 场 景 子 类 型 及 代码
+VehiclePlateColour: : = INTEGER (0. .255)
+-- 车 牌 颜色
+IdFrameType:: =INTECER (0. .255) 二
+-- 消息 ID， We 和 1
+LineType:: =INTECER (0. . 255) 人
+-- 标 线 类 型 ，0: 纵向 标 线 ， 7 :
+ServiceType: : =INTECER (0. .255 ) ，
+-- 服务 类 型 ，0: 餐饮 ,-
+ParkingLotType:: =INTECGER (0. .
+-- 车 位 类 型 ，0:
+一 一 有
+
+-- - 车 信 上 人 了 4
+
+TransTYPp 户 =
+
+as 一
+2
+
+__ 按 自身 需要 应 答
+
+responsetype (3 )
+-- 0BU 必须 应 答 ， 车 辆 有 附属 信息 上 报 须 应 答
+
+| 〈0.. 127)
+RemainElecPowerParkingLot:: = INTECER (0.. 65535 )
+
+-- 剩余 充电 车 位 数
+ElecPowerType::; =INTEGER (0. .255)
+
+-= 充电 桩 供电 类 型 ，0: 交流 ，1: 直流
+ElecPower:: =INTECER (0. . 63535 )

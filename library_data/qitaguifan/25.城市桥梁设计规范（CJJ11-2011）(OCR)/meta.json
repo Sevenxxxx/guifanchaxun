@@ -1,0 +1,121 @@
+{
+  "id": "25.城市桥梁设计规范（CJJ11-2011）(OCR)",
+  "title": "城市桥梁设计规范（CJJ11-2011）",
+  "std_no": "OCR",
+  "version": "",
+  "file": "qitaguifan/25.城市桥梁设计规范（CJJ11-2011）(OCR).pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\25.城市桥梁设计规范（CJJ11-2011）(OCR).pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\25.城市桥梁设计规范（CJJ11-2011）(OCR).pdf",
+  "pages": 49,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 49,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9902,
+    "punct_median": 0.0276,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.222,
+    "clause_hits": 64
+  },
+  "source_mtime": "2025-12-02 21:25:05",
+  "pdf_mtime": "2025-12-02 21:25:05",
+  "source_mtime_ns": 1764681905000000000,
+  "source_size": 6632390,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:10:57",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "附录A",
+      "title": "A 特种荷载及结构验算⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯36",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语和符号",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "基 本 规定",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "桥位 选择",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "桥面净空",
+      "start": 18,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "桥梁的平面、纵断面和横断面设计计",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "桥梁引道、引桥",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "立交、高架道路桥梁和地下通道",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "桥梁细部构造及附属设施",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "10",
+      "title": "桥梁上的作用",
+      "start": 35,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 241,
+  "status": "indexed",
+  "note": ""
+}

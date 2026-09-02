@@ -1,0 +1,51 @@
+{
+  "id": "广东省交通运输厅关于印发2024年度广东省干线公路“平安公路”示范路评价标准的通知",
+  "title": "广东省交通运输厅关于印发2024年度广东省干线公路“平安公路”示范路评价标准的通知",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/58.241221广东省交通运输厅关于印发2024年度广东省干线公路“平安公路”示范路评价标准的通知/广东省交通运输厅关于印发2024年度广东省干线公路“平安公路”示范路评价标准的通知.ofd",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\58.241221广东省交通运输厅关于印发2024年度广东省干线公路“平安公路”示范路评价标准的通知\\广东省交通运输厅关于印发2024年度广东省干线公路“平安公路”示范路评价标准的通知.ofd",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\58.241221广东省交通运输厅关于印发2024年度广东省干线公路“平安公路”示范路评价标准的通知\\广东省交通运输厅关于印发2024年度广东省干线公路“平安公路”示范路评价标准的通知.ofd",
+  "pages": 3,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 3,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9725,
+    "punct_median": 0.0,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:15:59",
+  "pdf_mtime": "2025-02-14 18:15:59",
+  "source_mtime_ns": 1739528159000000000,
+  "source_size": 35132,
+  "fmt": "ofd",
+  "virtual": false,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:23:45",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

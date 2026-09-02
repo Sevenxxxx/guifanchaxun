@@ -1,0 +1,51 @@
+{
+  "id": "115.广东省高速公路运营管理办法 2022",
+  "title": "广东省高速公路运营管理办法 2022",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/115.广东省高速公路运营管理办法 2022.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\115.广东省高速公路运营管理办法 2022.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\115.广东省高速公路运营管理办法 2022.pdf",
+  "pages": 8,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 8,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.973,
+    "punct_median": 0.0,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.333,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-06-12 16:47:32",
+  "pdf_mtime": "2026-06-12 16:47:32",
+  "source_mtime_ns": 1781254052000000000,
+  "source_size": 396264,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:25:58",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

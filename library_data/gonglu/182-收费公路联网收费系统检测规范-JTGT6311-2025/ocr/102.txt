@@ -1,0 +1,29 @@
+CPC 检测 方法
+
+附录 D  CPC 检测 方法
+
+D.1 邻 道 泄漏 功率 比
+
+D.4 DSRC 协议
+
+D. 4.1 DSRC 协议 负 话
+测试 。
+
+AT
+
+D 4 了 BSF 和 VST 应 按 下 列 规定 测试 :
+
+1 开启 'DSRC 协议 测试 仪 端口 ， 进 行 初始 化 ，PSAM 通道 复位 ;
+
+2 使 DSRC 协议 测试 仪 按照 一 定时 间 间 隔 顺序 发 送 多 种 BST;
+
+3 DSRC 协议 测试 仪 在 超时 时 间 范 围 内 成 功 收 到 VST 信息 ， 并 记录 数据 报 文 ;
+
+4 分 析 结果 ， 判 断 各 个 数据 帧 中 的 VST 的 文件 结构 正确 性 ，Profile、Application
+SEQUENCE 等 值 正确 性 。
+
+D. 4. 4 TransferChannel 应 按 下 列 规定 测试 :
+1 _ DSRC 协议 测试 仪 发 送 BST;
+2 被 测 CPC 收 到 BST， 返 回 VST;
+
+3 DSRC 协议 测试 仪 接收 来 自 被 测 CPC 的 VST， 并 登记 其 MAC 地 址 ;

@@ -1,0 +1,40 @@
+RSU 技术 要 求
+
+续 表 下 . 5. 6-1
+指令 名 称 代码 功能 说 明
+开关 ETC 门 架 系 统 RSU 指令 0xC4 打开 和 关闭 ETC 门 架 系统 RSU
+对 收 到 ETC 门 架 系统 RSU 发 来 的 信息 应 答 ， 指 示 ETC 门 架 系 统
+ETC 交易 指令 0xC6 ，
+交易 指令 RSU 进入 扣 费 / 计 费 流程 (应 用 于 ETC 车 辆 )
+对 收 到 ETC 门 架 系统 RSU 发 过 来 的 信息 应 答 ， 指 示 ETC 门 架 系 统
+MTC 交易 指令 0xC7 和 ?
+交 饭 措 及 RSU 进入 计 费 和 过 站 信息 更 新 流程 (应 用 于 MTC 车 辆 )
+加 对 收 到 FTC 门 架 系统 RSU 发 来 的 信息 应 给 ”指示 ETC 门 架 系 统
+重 取 TAC 指令 0xC8 ，
+醒 取 TAC 指令 RSU 获取 OBU ( 双 片 式 O0BU) 的 TAC 和 闭 片 余额
+PSAM 初始 化 指令 OxCA 指示 ETC 门 架 系统 RSU 进 得 PSA 克 初始 化 操作
+PSAM 授权 指令 OxCB 指示 ETC 门 架 系统 RSU 完成 PSAM/ 在 线 授权 操作
+才 收 到 ETC 门 架 系 纺 之 送 过 来 的 信息 应 答 ， 指 示 通 信 连
+心跳 应 答 指令 OxGF C 门 架 系 统 RSU 发 送 过 来 的 信息 应 指示 通信 连接
+本
+测试 信号 发 送 指令 OxFA 指示 ETC 归 架 系 统 'RSU 进 人 射频 信号 发 射 测试 状态
+测试 信号 接收 指令 OxFB 指示 亚 TCJ] 架 系统 RSU 进入 射频 信号 接收 测试 状态
+BeaconID 设置 指令 OxEC 指示 ETC 门 架 系统 RSU 进入 \BeaconID 配置 状态
+2 初始 化 指令 对 ETC 八 架 际 统 RSUU 塌 行 工作 参数 设 定 ， 应 符合 表 下 .5. 6-2 的
+规定 。
+表 匡 Sx32、 初 始 化 指令
+位 置 | 字 节 数 参 为 “ 数 说 明
+0 1 GdT 外 e 指令 代码 , 沁 比 处 取 值 0xC0
+1 攻 Seconds UNIX 时 间
+5 7 Datetime 当前 日 期 时 间 ，YYYYMMDDhhmmss
+车 道 工 作 模 式 : 0xl1- 路 段 ETC 门 架 ;0xl2- 省 界 人 口 ETC 门 架 ; 0x13- 省 界
+2 LaneMode 、
+出 口 ETC 门 架
+3 BSTInterval ETC 门 架 系统 RSU 自动 发 送 BST 的 间隔 ， 单 位 : ms
+4 TxPower ETC 门 架 系统 RSU 功率 级 数 ， 最 大 值 31 (0OxlF)
+5 PLLChannelID 言 道 号 ，0x01- 信 道 1，0x02- 信 道 2
+6 TransMode Ox01 2 复合 交易
+7 3 FlagID ETC 门 架 编号
+
+一 103 一
+

@@ -1,0 +1,66 @@
+RSU 与 RSF 接
+
+表 D.0.3-1 接口 类 型
+
+CMD 通信 方向 接口 名 称 说 明
+0xA1l RSF 一 RSU RSU 广播 信息 帧 RSF 配置 RSU 广播 数据 帧
+0xA0 RSF-*RSU RSU 初始 化 信息 帧 RSF 对 RSU 发 起 初始 化 请 求
+0x20 RSF* 一 RSU RSU 初始 化 响应 帧 RSU 对 RSF 初始 化 指令 的 响应
+0x21 RSF* 一 RSU OBU 过 车 信息 帧 RSU 读 取 到 OBU 信息 上 报 给 RSF
+示 RSU 对 当前 0BU 进行
+0uA2 RSF_yRST 继续 处 理 信息 帧 ee RSU 对 当前 0BU 进行 继续 处
+0x22 RSF* 一 RSU 车 辆 附属 信息 响应 帧 焉 取 到 区 儿 队 局 情 名 上 上 报
+
+0xA3 RSF-RSI 通道 操作 信息 帧 RSF 指示 RS0 对 当前 AQBU 进行 通道 操作
+023 RSF。RSU | 。 通道 操作 响应 由 RSU 将 QBU 泛 道 操作 上 报 至 RSF
+本 Rsp_RSU | 寺中 信 息 交 瑟 通道 7“ 拓 OBU 进行 车 路 信息
+0x25 RSF* 一 RSU 车 路 信息 交互 通道 响应 帧 2 区 U 要 0OBU 车 路 信息 上 报 至 RSF
+
+VRSE 下 发 车 路 协同 信息 ，RSU 缓存 车 路 协
+二
+
+SRS 了 全 夺 路 协同 资源 ，RSU 缓存 车 路 协
+
+0xA6 RSF-RSU 车 路 协同 信息 下 发 信息
+
+0xA7 RSF- >RSU 车 路 协同 资源 下 用 本息
+
+取消 已 经 缓存 的 车 路 系统 信
+
+RSF 一 RSU
+
+RSF_,RSU Ri 信和 br ”一 二 完成 PSAM 授权 初始 化 操作
+三 亢 AM 授 秒 所 PSAM 授权 初始 化 响应
+RSF 指示 RSU 完成 PSAM 授权 操作
+
+PSAM 授权 操作 响应
+
+RSU 心跳 ;建立 连接 后 一 直 发 送 ， 间 隔 时
+间 10s; RSF 进行 非 指示 应 答
+
+0x00: RSU 非 指 示 应 答 RSF; 0x81:， RSF
+
+非 指示 应 答 帧 非 指示 应 答 RSU， 用 于 RSU 或 RSF 对 非 指示
+请 求 的 响应
+
+RSF 一 RSU 休眠 指示 帧 对 播报 后 的 0BU 设置 休 眼 模式
+RSF 一 RSU 关 路 侧 单 元 信息 帧 打开 和 关闭 路 侧 单元
+RSF 一 RSU 终止 信息 帧 停止 业务 指令
+
+RSF 一 RSU RSF 认证 RSF 发 送 认 证 的 随机 数 至 RSU
+
+RSU 加 密 RSF 随机 数 ， 同 时 携带 RSU 随机
+数 作为 响应 发 送 至 RSF
+
+RSF 加 密 RSU 随机 数 并 作为 响应 发 送
+至 RSU
+
+RSF“* -RSU 认证 响应 RSU 对 RSF 的 认证 结果 进行 响应
+2 RSU 与 RSF 接口 内 容 应 符合 表 D. 0.3-2 ~ 表 D. 0.3-23 的 规定 。
+
+一 43 一
+
+RSF* 一 RSU 认证 响应
+
+RS 一 RSU RSU 认证
+

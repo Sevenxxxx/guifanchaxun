@@ -1,0 +1,114 @@
+{
+  "id": "162-公路桥梁技术状况评定标准-JTGTH21-2011",
+  "title": "162-公路桥梁技术状况评定标准-JTGTH21-2011",
+  "std_no": "",
+  "version": "",
+  "file": "162-公路桥梁技术状况评定标准-JTGTH21-2011.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\162-公路桥梁技术状况评定标准-JTGTH21-2011.pdf",
+  "pages": 125,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 125,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:41:34",
+  "indexed_at": "2026-08-26 04:17:34",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 125
+  },
+  "toc_zone_end": 5,
+  "offset": 5,
+  "toc_source": "clause_cluster",
+  "expl_start": 109,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "评定 方法 及 等 级 分 类",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "桥梁 技术 状况 评定",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "深 式 酉 上 部 结构 构件 技术 状况 评定",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "拱 式 桥 上 部 结构 构件 技术 状况 评定",
+      "start": 32,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "量 索 桥 主要 构件 技术 状况 评定",
+      "start": 56,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "和 斜 拉 桥 主要 构件 技术 状况 评定",
+      "start": 71,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "桥 染 下 部 结构 构件 技术 状况 评定",
+      "start": 78,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "10",
+      "title": "桥 面 系 构件 技术 状况 评定",
+      "start": 92,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 109,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 181,
+  "status": "indexed",
+  "note": ""
+}

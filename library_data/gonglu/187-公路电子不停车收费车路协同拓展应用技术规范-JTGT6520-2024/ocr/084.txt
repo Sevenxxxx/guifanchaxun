@@ -1,0 +1,54 @@
+ASN. 1 消息 集
+
+parking - spaces (7) ， -= 车 位 数量
+toilet (8) ，-- 公 共 而 所
+
+hotel (9) ，-- 住 宿
+
+food (10) ，-- 餐饮
+
+bank (11) ，- -银行
+automobile - wash (12) ，-- 洗 车 美容
+medical (13 ) ，-- 医疗 救护
+
+play (14) ，-- 旅 游 休闲 娱乐
+
+other (15) -- 其 他
+| (SIZE (16) )
+DistanceDataType:: =INTEGER (0.. 65535 ) <
+-- 上 离 ， 单位: 米 1
+
+LaneDataType: : = BIT STRING | WAN 1 六
+
+emergency (0) ，-- 应 急 车 道 忆
+
+first (1) ，-- 一 车 道
+
+two (2) ，-- 二 车 道
+
+three (3) ，-- 三 车 道
+ur (0， 一 四 造 23
+five (5$) ，-- 五 车 道 忌
+
+six (6) ，-- 六 车 ;
+
+SeVeen (7) -- 夸
+| (SIZE 和 77
+RSFPriority: : = NIEGRRA
+
+-- 1: 紧急 的
+
+ordinary (2 ) ，
+-- 2: 一 般 的
+
+minor (3 )
+-- 3: 优先 级 低 的
+
+| (0..127，…)
+Timestamp:: = OCTET STRING (SIZE (4) )
+
+-- 时 间 戳 单位: 秒
+
+RoadDataType:: =INTECER (0. .255 )
+
+-- 路 段 标识 ， 路 段 唯 一 编号

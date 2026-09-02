@@ -1,0 +1,114 @@
+{
+  "id": "178-公路桥梁养护工程预算定额-JTGT5612-2020",
+  "title": "178-公路桥梁养护工程预算定额-JTGT5612-2020",
+  "std_no": "",
+  "version": "",
+  "file": "178-公路桥梁养护工程预算定额-JTGT5612-2020.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\178-公路桥梁养护工程预算定额-JTGT5612-2020.pdf",
+  "pages": 138,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 138,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:43:38",
+  "indexed_at": "2026-08-26 04:43:21",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 138
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "拆除 部 分 构件 73",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "3",
+      "title": "支 座 保养 维修 87",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "4",
+      "title": "体外 预 应 力 加 国 47",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "5",
+      "title": "增设 混凝土 横 隔 概 .7 55",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "6",
+      "title": "混凝土 桥梁 表层 缺陷 修补 93",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "7",
+      "title": "更换 拱桥 系 杆 浅 59",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "8",
+      "title": "植 筋 及 错 栓 和 99",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "10",
+      "title": "一",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "12",
+      "title": "一",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "14",
+      "title": "一",
+      "start": 24,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "32",
+      "title": "第32章",
+      "start": 127,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 2,
+  "status": "indexed",
+  "note": ""
+}

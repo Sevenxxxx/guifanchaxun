@@ -1,0 +1,56 @@
+公路
+
+电子 不 停车 收费 车 路 协同 拓展 应
+
+技术 规范 (JTGCXT 6520 一 2024 )
+
+OBU2.0
+
+必 应 用
+
+平台
+
+TrafficInfo.rs
+(响应 )
+
+EventReport
+(释放 链 路 )
+
+RSU2.0 RSF
+L_ BST
+VST ]
+Get Secure.rq
+| Get Secure.TS
+1] 0OBU 过 车 信息 (0x2D |
+根据 OBU2.0 信 息 查询 车 辆 订阅 服务
+信息 服务 业务
+TrafficInfo. _
+| ( 服 务 区 信息 ) | 车 路 信息 交互 (0xA5)
+TrafficInfo.rs
+(服务 区 信息 响应 | 革 路 信息 六 五 响应 (0 \
+TrafficInfo.rq >|
+(休眠 时 间 指示 ) 7
+
+一 108 一
+
+图 本 4.5-6 收费 站 信息 服务 系统 交互 流程
+
+拓展 应 用 平台
+<
+OBU 过 车 信息 (0x2D |
+根据 OBU2.0 信 息 查 询 车 辆 订阅
+收费 站 信息 服务 业务
+服务 资源 (交通 信息 ) 请 求 ;
+前 方 收费 站 信息 |
+服务 吏 源 ( 交 通信 息 ) 响应
+TrafficInfo.rq es 自 AR |_ 表 方 站 信息
+(收费 站 信息 ) 车 路 信息 交互 (0xA5)
+六 TrafficInfo.rs
+(收费 站 信息 响应 ) | 车 路 信息 交互 响应 (0x25) |
+TrafficInfo. 一
+(休眠 时 间 指 录 ) | 休眠 指示 (0x93)
+TrafficInfo.rs
+(响应 ) |
+EventReport
+(释放 链 路 )
+

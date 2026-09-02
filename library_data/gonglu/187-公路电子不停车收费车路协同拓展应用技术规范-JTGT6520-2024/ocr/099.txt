@@ -1,0 +1,51 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGZT 6520 一 2024 )
+
+actionParameter 为 Container 类 型 ，Container Type =20 (GetSecureRq ) ， 在 车 路 协同
+
+ETC 应 用 中 应 存在 。
+GetSecureRq 的 ASN. 1 数据 结构 说 明 如 下 :
+GetSecureRq::, =SEQOUENCE |
+
+fill BIT STRING (SIZE (7) ) ，
+
+fileid FID ，
+
+offset INTEGER (0..32767，…) ，
+
+length INTEGER (0..127，…) ，
+
+rndRsuForAuthen Rand，
+
+keyIdForAuthen INTECER (0. .255 ) ，
+
+keyIdForEncrypt INTECGER (0..255) OPTIONAL。_，
+fileid FID, FID:: = INTEGER (0.. Vi 内 权 汪 展 。ETC 拓展 应 用 目
+
+录 号 -1， 车 辆 信息 文件 的 文件 号 -1， 取 值 1。 < 避
+
+offset INTEGER (0. .32767，-- 污 无 抗 展 / 取 值 等 于 实际 的 偏 移 量 。
+length INTECGER (0.. 127， FF 地 值 等 于 需要 读 取 的 数据 的
+
+实际 长 度 。
+rndRsuForAuthen
+
+入 RSU 产生 的 随机 数 。
+keyIdForAuthen
+
+的 密 钥 标识 。
+keyIdForEncrypt 所
+
+RAT
+
+H. 4.6 GetSecure. response 应 符合 下 列 规定
+1 GetSecure. response 的 LLC 层 应 使 用 ACn 命令 ，APP 层 使 用 Action. response，T-
+APDUs = Action-Response ，CetSecure. response 原 语 应 携带 OBU 使 用 指定 密 钥 计 算得 到
+的 鉴别 报 文 (Authenticator) ， 在 保护 DSRC 传输 过 程 中 的 数据 完整 性 的 同时 ，RSU 完成
+对 OBU 的 合法 性 认证 。
+2 GetSecure. response 的 ASN. 1 数据 结构 应 符合 下 列 规定 :
+Action-Response: : =SEQUENCE |
+有 BIT STRING (SIZE (2) ) ，
+did Dsrc-DID ，
+
+responseParameter Container OPTIONAL，
+一 94 一

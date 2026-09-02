@@ -1,0 +1,79 @@
+{
+  "id": "16、特种设备事故隐患分类分级 TCPASE GT 007—2019",
+  "title": "特种设备事故隐患分类分级 TCPASE GT 007—2019",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/55.广东省交通运输领域重大事故隐患判定标准 24.6.17 19份/16、特种设备事故隐患分类分级 TCPASE GT 007—2019.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\55.广东省交通运输领域重大事故隐患判定标准 24.6.17 19份\\16、特种设备事故隐患分类分级 TCPASE GT 007—2019.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\55.广东省交通运输领域重大事故隐患判定标准 24.6.17 19份\\16、特种设备事故隐患分类分级 TCPASE GT 007—2019.pdf",
+  "pages": 21,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 21,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9796,
+    "punct_median": 0.002,
+    "empty_ratio": 0.083,
+    "bad_ratio": 0.167,
+    "clause_hits": 21
+  },
+  "source_mtime": "2025-02-14 18:14:52",
+  "pdf_mtime": "2025-02-14 18:14:52",
+  "source_mtime_ns": 1739528092000000000,
+  "source_size": 1216674,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:22:20",
+  "toc_zone_end": 2,
+  "offset": 3,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "范围",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "规范性引用文件",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "术语和定义",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "特种设备事故隐患分类分级",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "特种设备事故隐患目录",
+      "start": 5,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 21,
+  "status": "indexed",
+  "note": ""
+}

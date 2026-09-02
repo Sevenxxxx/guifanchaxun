@@ -1,0 +1,114 @@
+{
+  "id": "145-超限运输车辆行驶公路管理系统技术规范-JTGT4620-2024",
+  "title": "145-超限运输车辆行驶公路管理系统技术规范-JTGT4620-2024",
+  "std_no": "",
+  "version": "",
+  "file": "145-超限运输车辆行驶公路管理系统技术规范-JTGT4620-2024.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\145-超限运输车辆行驶公路管理系统技术规范-JTGT4620-2024.pdf",
+  "pages": 86,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 86,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:39:11",
+  "indexed_at": "2026-08-26 03:55:59",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 86
+  },
+  "toc_zone_end": 5,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "系统 淋 构 与 总 体 要 求",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "公路 超 限 检测 设备",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "部 级 治 超 联网 管理 信息 系统",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "省 级 治 超 联网 管理 信息 系统",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "市 /县 级 治 超 联 网 管理 信息 系统",
+      "start": 35,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "站 级 治 超 联网 管理 信息 系统",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "联网 与 运行 要 求",
+      "start": 49,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "10",
+      "title": "第10章",
+      "start": 54,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "11",
+      "title": "升级 改造",
+      "start": 57,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 163,
+  "status": "indexed",
+  "note": ""
+}

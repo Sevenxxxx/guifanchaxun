@@ -1,0 +1,86 @@
+{
+  "id": "129-公路工程建设项目造价文件管理导则-JTG3810-2017",
+  "title": "129-公路工程建设项目造价文件管理导则-JTG3810-2017",
+  "std_no": "",
+  "version": "",
+  "file": "129-公路工程建设项目造价文件管理导则-JTG3810-2017.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\129-公路工程建设项目造价文件管理导则-JTG3810-2017.pdf",
+  "pages": 104,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 104,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:38:06",
+  "indexed_at": "2026-08-26 03:26:24",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 104
+  },
+  "toc_zone_end": 5,
+  "offset": 5,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "公路 工程 造价 文件 体系",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "公路 工程 造价 项 目的 组 成 及 编码",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "公路 工程 前 期 阶段 造价 文件",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "公路 工程 实施 阶段 造价 文件",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "公路 工程 竣 ( 交 ) 工 阶段 造价 文件",
+      "start": 28,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 124,
+  "status": "indexed",
+  "note": ""
+}

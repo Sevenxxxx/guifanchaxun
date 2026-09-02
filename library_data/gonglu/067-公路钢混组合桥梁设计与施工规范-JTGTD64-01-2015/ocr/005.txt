@@ -1,0 +1,44 @@
+公路 钢 混 组 合 桥 梁 设 计 与 施工 规范 (JTGXT D64-01 一 2015 )
+
+9 连接 件 . 和 pe 48
+9. 1 一 般 规定 ooooooouooeuooeoooooooooooooouoooooooooooooosoooooooooooooooooooooooooooooosoeooooeeoo 48
+9.2 构造 要 求 oseoeooouuooeuoooeoeooesooooeooeooooesoooooooooooooeoooooooeooeoooooooooooooooesooeoooeoeeo S0
+9 3 计算 eueoosouesooooesooooeoooooosooesoooooooooosoeooooooooooooooooosooooeooeooooceooooooooeooeooeooooon S1
+
+10 耐久 性 设计 pe S5
+10. 1 一 般 规 定 ooeoeoeseeseeeoeeoeosiooouooooiooooooooooeeooieoooooooooooooooooooooeoooooeeioeoeooo 5
+10. 2 钢 结 构 耐 久 性 设计 ooeeeeosooosoovoooovooooooooooosoooooooosooosoooovooooooosooosooooooooeooos。 S6
+10.3” 钢 混 接触 面 耐 久 性 设计 56
+10.4 ”连接 件 耐 久 性 设计 57
+
+1L 连接 件 施 工 eeoeeousuoeooooooooooooooooooooooooooooooooooooooooooooooooooooosooooiosoooooooooooo。 S8
+11. 1 一 般 规 定 eeoeeseoseseoeoeooooooooooooooooooooooooooooooooooooiieaaoeooooooooooooooeooooooooooo S8
+11.2” 焊 钉 连接 件 施 工 58
+11.3 开 孔 板 连接 件 施 工 RN 59
+11.4 型 钢 连 接 件 施工 PN 59
+11.5 连接 件 处 混凝土 施工 59
+
+12 组 合 梁 施工 oooooovoovooooooooooooooooooooooiaooiooooooiooooooooiioooooooooooooooooooooooooooooo。 0601
+12.1 一 般 规定 61
+12.2 钢 梁 加 工 与 运输 PN 61
+12.3 钢 梁 安装 62
+12.4 ”组合 梁 节 段 制作 与 悬臂 安 装 有 和 63
+12. $ 混凝土 桥 面板 施工 ooiieooeoooooovoisooacoioviesoooeooooeooosoooeoooooooooovoeoooooeoooooooeo 04
+12. 6 组 合 深 预 应 力 施 工 oilooooooooosiooooooiooiosoooooooooooooooooooooovoooooooooooooooooooooo。 0
+
+13 ”混合 梁 结 合 部 施工 于 和 66
+13. 1 一 般 规定 Woeasoooooeoeooeoooooioesiooooooooooooooeooooooeooooeooooooooooooooooeooeoooeoeoooooeo。 0600
+13.2 ”结合 部 钢 梁 制造 Ne 66
+13.3 “化 合 部 钢 箱 粱 安装 Ne 67
+13.4 ”结合 部 混凝土 施工 Nt 67
+13. 9 预 应 力 施工 eeeeeuuoeeuosooooesouosoosooooooooooooeoosooosooooesooosoooooooooooouooeooosooooees。 69
+
+14。 索 塔 及 拱 座 钢 混 结合 部 施工 RN 71
+14. 1 一 般 规 定 ooeeeeeeeeeseseoeoeeseoeoeoseoeooooeooeeoeooeoeooeoeeoooeoeeooeooeooeoeoeoooeeooeoooeeooeoeeoeeoeeeeoeeeeon 71
+14.2 ”混合 塔 柱 及 斜 拉 索 锚固 区 钢 混 结合 部 施工 RPR 71
+14.3” 钢 横梁 〈 钢 斜 撑 ) 与 混凝土 塔 柱 结合 部 施工 .pp 73
+14. 4 ， 钢 塔 柱 与 混凝土 承 台 〈 钢 拱 肋 与 混凝土 基 座 ) 结合 部 施工 ……… 74
+
+附录 A 组 合 梁 侧 向 扭转 届 曲 的 弹性 临界 弯 和 矩 76
+
+本 规范 用 词 用 语 说 朋 79

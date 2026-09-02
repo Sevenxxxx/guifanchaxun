@@ -1,0 +1,58 @@
+{
+  "id": "05-管线横断面设计样图",
+  "title": "05-管线横断面设计样图",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/60.240910路政-佛山市交通运输局关于印发《佛山市占用挖掘道路及修复设计（施工）方案专章编制指南》的通知/附件2 专章附图/05-管线横断面设计样图.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\60.240910路政-佛山市交通运输局关于印发《佛山市占用挖掘道路及修复设计（施工）方案专章编制指南》的通知\\附件2 专章附图\\05-管线横断面设计样图.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\60.240910路政-佛山市交通运输局关于印发《佛山市占用挖掘道路及修复设计（施工）方案专章编制指南》的通知\\附件2 专章附图\\05-管线横断面设计样图.pdf",
+  "pages": 1,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 1,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:16:36",
+  "pdf_mtime": "2025-02-14 18:16:36",
+  "source_mtime_ns": 1739528196000000000,
+  "source_size": 192226,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 1
+  },
+  "indexed_at": "2026-09-01 01:30:55",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "7",
+      "title": "第7章",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "6",
+      "title": "管线 横断 面 设计 样 图",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 1,
+  "status": "indexed",
+  "note": ""
+}

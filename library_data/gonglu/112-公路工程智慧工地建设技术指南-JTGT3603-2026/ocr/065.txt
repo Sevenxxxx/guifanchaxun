@@ -1,0 +1,38 @@
+智慧 工地 业务 内 容 采 集 参 数 建议 表
+
+续 表 C.0.8
+名 称 水 泥 混凝土 拌和 采集 参数
+参数 名 称 参数 类 型 是 否 必须 (YAN)
+水 泥 用 量 Float TY
+添加 剂 用 量 Ploat Y
+水 用 量 Ploat Y
+细 骨 料 用 量 Float TY
+粗 骨 料 用 量 Float Y
+生产 时 间 Date Y
+C.0.9 水 泥 混 凝 土 构件 预制 和 安装 参数 宜 按 表 C. 0.9 采集 。
+表 C.0.9 水 泥 混 凝 土 构件 预制 和 安装
+名 称 水 泥 混 凝 二 构件 预制 采集 参数
+参数 名 称 参数 类 型 是 否 必须 (YAN)
+构件 编号 Siiitg Y
+构件 类 型 Strin 有 Y
+钢筋 绑扎 时 间 Daie Y
+模版 准备 时 间 Date Y
+水 泥 混 北 土 拌 和 时 间 Date TY
+生产 方 量 Float 立
+浇筑 时 间 Bate 了
+张 拉 伸 长 误 关 率 Float Y
+张 拉 时 间 Date TY
+压 浆 时 间 Date Y
+移 昧 压力 Float TY
+持 压 时 长 Float Y
+茸 养 时 间 Date Y
+蒸 养 温度 Float Y
+蒸 养 湿度 Float Y
+蒸 养 时 长 Ploat 立
+出 三 时 间 Date Y
+负责 人 员 String TY
+名 称 智能 设备 采集 参数
+参数 名 称 参数 类 型 是 否 必须 (YAN)
+设备 名 称 String Y
+设备 型 号 String 立
+

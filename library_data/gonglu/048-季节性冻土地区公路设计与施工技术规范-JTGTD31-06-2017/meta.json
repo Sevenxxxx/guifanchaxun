@@ -1,0 +1,93 @@
+{
+  "id": "048-季节性冻土地区公路设计与施工技术规范-JTGTD31-06-2017",
+  "title": "048-季节性冻土地区公路设计与施工技术规范-JTGTD31-06-2017",
+  "std_no": "",
+  "version": "",
+  "file": "048-季节性冻土地区公路设计与施工技术规范-JTGTD31-06-2017.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\048-季节性冻土地区公路设计与施工技术规范-JTGTD31-06-2017.pdf",
+  "pages": 87,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 87,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:21:18",
+  "indexed_at": "2026-08-26 01:07:16",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 87
+  },
+  "toc_zone_end": 6,
+  "offset": 6,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "第3章",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "抗 冻 水 泥 混凝土 和 抗 冻 水 泥 砂 浆 技 术 ",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "路 基 设 计 与 施工",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "路 面 设 计 与 施工",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "桥梁 和 涵洞 设计 与 施工",
+      "start": 50,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "隧道 设计 与 施工",
+      "start": 58,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 223,
+  "status": "indexed",
+  "note": ""
+}

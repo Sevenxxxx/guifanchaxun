@@ -1,0 +1,108 @@
+超 限 运输 车 辆 行驶 公路 管理 系统 技术 规范 {JTGZT 4620 一 2024
+
+续 表 A-6
+序号 字段 名 字段 说 明 数据 类 型 | 是 否 必要 说 明
+14 | lawEnforcementArea 执法 区 域 String (64) 执法 人 员 负 责 进行 行政 执法 的 区 域 的 地
+区 名 称
+有 . 执法 人 员 首 次 从 事 交 通 运 输 行政 执法 工
+15 workDate 从 事 执法 日 期 String (8) 作 的 日 期 数据 格 式 ，YYYYMMDD
+、 、 执法 人 员 从 事 交 通 运输 行政 执法 资格 证
+16 CertificateNo 执法 资格 证 号 String (18) 书 的 编号 。 密 文 传输
+、 . 值 域 : 01- 准 和 从; 02- 执 法 人 员 ;， 03- 退
+17 status 人 员 状 态 代码 Strng (2) 休 ; 04- 调 岗 上 SO 开除
+字段 名 瑟
+、 长 度 随机 字符 串 ， 作 为 每 条 记录
+uniqueId 、
+
+companyNumber
+
+distCode
+
+socialUnified
+CreditCode
+
+legalRepresentative
+
+roadCode
+
+roadName
+
+zh
+
+longimded js
+
+详细 地 址
+
+string (256)
+
+货物 类 型
+
+string (20)
+
+freightPs Month
+
+月 货运 量
+
+Integer (10)
+
+jurisdiction
+
+Organization
+
+负责 管辖 机 构
+
+Suing (128)
+
+contact
+
+联系 人 姓名
+
+String (30)
+
+加 密 传输
+
+phoneNumber
+
+联系 人 电话
+
+Sking (18)
+
+加 密 传输
+
+companyJImage
+
+企业 照片
+
+String
+
+isSetWeightingEquip
+
+是 否 安装 称 重 设备
+
+Integer (1)
+
+值 域 : 0- 否 ; 1- 是 ; 2- 未 知
+
+isSetRecogniton
+
+Cemara
+
+是 否 安装 车 牌
+抓 怕 设备
+
+Integer (1 )
+
+值 域 : 0- 否 ; 1- 是 ; 2- 未 知
+
+isConnectNetwork
+
+Integer 《1 )
+
+值 域 : 0- 否 ; 1- 是 ; 2- 未 知
+
+isElectronicWaybil
+
+Intieger (1)
+
+值 域 : 0- 否 ; 1- 是 ; 2- 未 知
+

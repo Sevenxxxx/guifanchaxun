@@ -1,0 +1,149 @@
+{
+  "id": "附件1：《广东省干线公路养护预算编制办法》(正式稿)-国标格式",
+  "title": "附件1：《广东省干线公路养护预算编制办法》(正式稿)-国标格式",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/48.广东省交通运输厅关于印发《广东省干线公路养护预算编制办法》及《广东省干线公路养护预算定额》的通知/附件1：《广东省干线公路养护预算编制办法》(正式稿)-国标格式.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\48.广东省交通运输厅关于印发《广东省干线公路养护预算编制办法》及《广东省干线公路养护预算定额》的通知\\附件1：《广东省干线公路养护预算编制办法》(正式稿)-国标格式.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\48.广东省交通运输厅关于印发《广东省干线公路养护预算编制办法》及《广东省干线公路养护预算定额》的通知\\附件1：《广东省干线公路养护预算编制办法》(正式稿)-国标格式.pdf",
+  "pages": 117,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 117,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9911,
+    "punct_median": 0.0311,
+    "empty_ratio": 0.143,
+    "bad_ratio": 0.222,
+    "clause_hits": 185
+  },
+  "source_mtime": "2025-12-10 18:49:23",
+  "pdf_mtime": "2025-12-10 18:49:23",
+  "source_mtime_ns": 1765363763000000000,
+  "source_size": 987848,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 23:19:12",
+  "toc_zone_end": 2,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "",
+      "title": "前  言",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "",
+      "title": "引  言",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "1",
+      "title": "范围",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "2",
+      "title": "规范性引用文件",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "3",
+      "title": "术语和定义",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "4",
+      "title": "总则",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "5",
+      "title": "养护预算编制规定",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "6",
+      "title": "路况检查及评定费",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "7",
+      "title": "日常养护费",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "8",
+      "title": "养护工程费",
+      "start": 18,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "附录A",
+      "title": "（规范性）  封面、扉页、目录及干线公路养护预算表格样式",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "附录B",
+      "title": "（规范性）  干线公路养护预算费用项目表",
+      "start": 67,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "附录C",
+      "title": "（规范性）  设备与材料的划分标准",
+      "start": 112,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "附录D",
+      "title": "（资料性）  公路养护现行标准、规范、规程、指南一览表",
+      "start": 114,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "",
+      "title": "本办法用词用语说明",
+      "start": 117,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 173,
+  "status": "indexed",
+  "note": ""
+}

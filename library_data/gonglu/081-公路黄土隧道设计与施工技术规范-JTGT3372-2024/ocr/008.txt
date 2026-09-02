@@ -1,0 +1,40 @@
+术语 和 符号
+
+2.1.5 老 黄土 (Q、Q,) old loess
+早 更 新 世 、 中 更 新 世 期 间 沉 积 的 黄土 。
+
+2.1.6 湿 陷 性 黄土 “collapsible loess
+在 一 定 压 力 下 受 水 浸 湿 ， 土 的 结构 迅速 破坏 ， 并 产生 显著 附加 下 沉 的 黄土 。
+
+2.1.7 非 湿 陷 性 黄土 “noncollapsible loess
+在 一 定 压 力 下 受 水 浸 湿 ， 无 显著 附加 下 沉 的 黄土 。
+
+2.1.8 上 自重 湿 陷 性 黄土 ”loess collapsible under overburden pressurE
+在 上 黎 土 的 饱和 目 重 压力 作用 下 受 水 浸 湿 ， 产 生 显 著 附 如 下 这 的 湿 陷 性 黄土 。
+
+2.1.9 非 自 重 湿 陷 性 黄土 “loess noncollapsible undefoyerburden pressure
+在 上 履 土 的 饱和 目 重 压力 作用 下 受 水 浸 湿 ， 不 产生 全 着 附加 下 沉 的 湿 陷 性 黄土 。
+
+2.1.10 湿 陷 变形 collapsible deformation
+湿 陷 性 黄土 或 具有 湿 陷 性 的 其 他 上 S\ 如 炙 压 实 的 素 盾 长 好 填 土 等 ) 在 一 定 压力 作
+j 下 ， 下 沉稳 定 后 ， 受 水 浸 湿 所 产生 的 附加 下 沉 。
+
+2.1.11 湿 陷 系数 coeffieient5fasolapsility
+单位 厚度 的 环 刀 谍 样 ， 作 是 压 从 由 ,二 沉稳 定 后 ， 浸 水 饱和 所 产生 的 附加
+下 沉 。
+
+2.1.12 自重 混 陷 系数 ”coefficientrof collapsility under overburden pressure
+单位 厚度 的 环 刀 试 样 ， 在 上 覆 芋 的 饱和 自重 压力 作用 下 ， 下 沉稳 定 后 ， 浸 水 饱和 产
+生 的 附加 下 沉 。
+
+2. 1. 13 黄土 隧道 地 基 loess tunnel foundation
+黄土 隧道 仰 拱 〈 基 底 ) 下 ， 承 受 隧 道 结构 作用 力 的 地 层 。
+
+2.1.14 黄土 隧道 地 基 湿 陷 量 的 计算 值 calculated collapse of loess tunnel foundation
+对 隧道 地 基 不 同 埋 深 黄土 采样 ， 通 过 室内 压缩 试验 测 取 其 实际 压力 下 的 湿 陷 系数 ，
+分 层 计 算 湿 陷 量 的 累计 值 。
+
+2.1.1S 黄土 隧道 地 基 湿 陷 等 级 “collapsility grade of loess tunnel foundation
+依据 黄土 的 自重 湿 陷 量 和 湿 陷 量 划分 的 湿 陷 性 黄土 隧道 地 基 〈 场 地 ) 的 级 别 。
+
+一 3 一

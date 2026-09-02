@@ -1,0 +1,142 @@
+{
+  "id": "096-高速公路改扩建交通组织设计规范-JTGT3392-2022",
+  "title": "096-高速公路改扩建交通组织设计规范-JTGT3392-2022",
+  "std_no": "",
+  "version": "",
+  "file": "096-高速公路改扩建交通组织设计规范-JTGT3392-2022.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\096-高速公路改扩建交通组织设计规范-JTGT3392-2022.pdf",
+  "pages": 68,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 68,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9957,
+    "punct_median": 0.0177,
+    "empty_ratio": 0.143,
+    "bad_ratio": 0.111,
+    "clause_hits": 76
+  },
+  "pdf_mtime": "2026-08-25 22:31:36",
+  "indexed_at": "2026-08-26 02:24:28",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 7,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "",
+      "title": "中华人民共和国行业推荐性标准",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "",
+      "title": "前  言",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "1",
+      "title": "总则",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "2",
+      "title": "术语",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "3",
+      "title": "调查、分析与交通量预测",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "4",
+      "title": "交通组织总体设计",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "5",
+      "title": "区域路网分流",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "6",
+      "title": "保通路段交通组织",
+      "start": 35,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "7",
+      "title": "应急情况下的交通组织",
+      "start": 48,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "8",
+      "title": "交通组织配套设施",
+      "start": 52,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "附录A",
+      "title": "作业区通行能力计算方法",
+      "start": 57,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "0",
+      "title": "第0章",
+      "start": 58,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "附录B",
+      "title": "交通组织方案专题研究报告编制要求",
+      "start": 62,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "附录C",
+      "title": "交通容差、绕行度及节点重要度的计算方法",
+      "start": 65,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "",
+      "title": "本规范用词用语说明",
+      "start": 68,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 294,
+  "status": "indexed",
+  "note": ""
+}

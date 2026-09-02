@@ -1,0 +1,43 @@
+收费 公路 联网 收费 技术 标准 (JTG 6310 一 2022 )
+
+机 支付 平台 发 送 扣 费 请 求 的 数据 接口 应 符合 表 G. 3. 1-1 的 规定 ， 手 机 支付 平台 返回 扣 费
+应 答 的 数据 接口 应 符合 表 G. 3. 1-2 的 规定 。
+表 G.3.1-1 扣 费 请 求 接 口
+序号 字 段 名 别名 数据 类 型
+1 交易 类 型 BusinessType unsignedByte
+2 手机 支付 受理 终端 编号 TemmNo string (321)
+3 车 道 手机 支付 流水 号 PayIdentifier string (321)
+4 请 求 发 起 时 间 RequestTime dateTime
+5 二 维 码 数据 QRCode sfring (64)
+6 总 费 额 (单位 : 分 ) TollAmount unSianedInt
+表 G.3.12 扣 费 应 答 接 口
+序号 字 段 名 别 各 数据 类 型
+1 交易 类 型 BusinessTy 这 unsignedByte
+2 应 答 的 手机 支付 受理 终端 编号 edNo sting (32)
+3 应 答 的 车 道 手 机 支付 流水 号 PavfdehtfiG string (321)
+4 请 求 应 答 时 间 ReplyTime dateTime
+5 响应 状态 ReplyStatug unsignedByte
+6 响应 消息 SuatusMEssage shing (128)
+7 手机 支付 平台 订单 号 Mbl]PayPlatNumFer string (32)
+8 第 三 方 支付 平台 代码 PuyChainalcode unsignedByte
+
+G.3.2 收费 第 话 系统 采
+
+日 手机 雯 和 付 记 式 二 维 码 文 付 交 易 流 程 中 ， 收 费 车 道 系统 向 手
+
+机 文 付 平台 发 送 神 Eb 撤 销 请 求 的 数据 接口 应 符合 表 G. 3. 2-1 的 规定 ， 手 机 文 付 平台 返
+
+回 冲 正 / 撤 销 让 答 的 数据 接口 应 符合 表 C. 3. 2-2 的 规定 。
+
+表 G.3.2-1 冲 正 /撤销 请 求 接口
+序号 字 段 名 别名 数据 类 型
+1 交易 类 型 BusinessType unsignedByte
+2 手机 支付 受理 终端 编号 TemmNo string (32)
+3 车 道 手 机 支付 流水 号 Payldentifier string (32)
+4 请 求 发 起 时 间 RequestTime dateTime
+表 G.3.2-2 冲 正 /撤销 应 答 接 口
+序号 字 段 名 别名 数据 类 型
+1 交易 类 型 BusinessType unsignedByte
+2 应 答 的 手机 支付 受理 终端 编号 TemmNo string (321)
+
+一 128 一

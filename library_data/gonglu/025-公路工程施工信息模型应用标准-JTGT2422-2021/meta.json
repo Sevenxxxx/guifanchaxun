@@ -1,0 +1,100 @@
+{
+  "id": "025-公路工程施工信息模型应用标准-JTGT2422-2021",
+  "title": "025-公路工程施工信息模型应用标准-JTGT2422-2021",
+  "std_no": "",
+  "version": "",
+  "file": "025-公路工程施工信息模型应用标准-JTGT2422-2021.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\025-公路工程施工信息模型应用标准-JTGT2422-2021.pdf",
+  "pages": 141,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 141,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 1.0,
+    "punct_median": 0.0169,
+    "empty_ratio": 0.143,
+    "bad_ratio": 0.0,
+    "clause_hits": 71
+  },
+  "pdf_mtime": "2026-08-25 21:20:05",
+  "indexed_at": "2026-08-26 00:23:18",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 9,
+  "offset": 10,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术 语",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本规定",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "模型要求",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "模型应用",
+      "start": 18,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "交 付",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "附录A",
+      "title": "公路工程信息模型精细度",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "附录B",
+      "title": "通用施工信息属性组",
+      "start": 135,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "附录C",
+      "title": "临时工程模型精细度",
+      "start": 137,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 63,
+  "status": "indexed",
+  "note": ""
+}

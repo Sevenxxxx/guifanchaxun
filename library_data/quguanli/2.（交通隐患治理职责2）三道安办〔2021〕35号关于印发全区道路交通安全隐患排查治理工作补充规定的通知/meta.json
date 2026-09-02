@@ -1,0 +1,44 @@
+{
+  "id": "2.（交通隐患治理职责2）三道安办〔2021〕35号关于印发全区道路交通安全隐患排查治理工作补充规定的通知",
+  "title": "（交通隐患治理职责2）三道安办〔2021〕35号关于印发全区道路交通安全隐患排查治理工作补充规定的通知",
+  "std_no": "",
+  "version": "",
+  "file": "2.（交通隐患治理职责2）三道安办〔2021〕35号关于印发全区道路交通安全隐患排查治理工作补充规定的通知.pdf",
+  "pdf_abs": "guifansrc\\quguanli\\2.（交通隐患治理职责2）三道安办〔2021〕35号关于印发全区道路交通安全隐患排查治理工作补充规定的通知.pdf",
+  "pages": 2,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 2,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2025-02-14 17:56:17",
+  "indexed_at": "2026-08-28 18:22:38",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 2
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

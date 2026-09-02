@@ -1,0 +1,51 @@
+{
+  "id": "92.广东省贯彻执行《公路长大桥隧养护管理和安全运行若干规定》实施细则（试行）（粤交基建字〔2020〕325号）",
+  "title": "广东省贯彻执行《公路长大桥隧养护管理和安全运行若干规定》实施细则（试行）",
+  "std_no": "粤交基建字〔2020〕325号",
+  "version": "2020",
+  "file": "shiguanli/92.广东省贯彻执行《公路长大桥隧养护管理和安全运行若干规定》实施细则（试行）（粤交基建字〔2020〕325号）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\92.广东省贯彻执行《公路长大桥隧养护管理和安全运行若干规定》实施细则（试行）（粤交基建字〔2020〕325号）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\92.广东省贯彻执行《公路长大桥隧养护管理和安全运行若干规定》实施细则（试行）（粤交基建字〔2020〕325号）.pdf",
+  "pages": 7,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 7,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9948,
+    "punct_median": 0.0,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-08-20 21:05:23",
+  "pdf_mtime": "2025-08-20 21:05:23",
+  "source_mtime_ns": 1755695123000000000,
+  "source_size": 333276,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:58:06",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

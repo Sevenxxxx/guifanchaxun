@@ -1,0 +1,58 @@
+{
+  "id": "9.211231佛山市三水区人民政府办公室关于印发佛山市三水区交通发展“十四五”规划的通知",
+  "title": "211231佛山市三水区人民政府办公室关于印发佛山市三水区交通发展“十四五”规划的通知",
+  "std_no": "",
+  "version": "",
+  "file": "quguanli/9.211231佛山市三水区人民政府办公室关于印发佛山市三水区交通发展“十四五”规划的通知.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\9.211231佛山市三水区人民政府办公室关于印发佛山市三水区交通发展“十四五”规划的通知.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\quguanli\\9.211231佛山市三水区人民政府办公室关于印发佛山市三水区交通发展“十四五”规划的通知.pdf",
+  "pages": 54,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 54,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9565,
+    "punct_median": 0.0,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.222,
+    "clause_hits": 6
+  },
+  "source_mtime": "2025-02-14 17:56:21",
+  "pdf_mtime": "2025-02-14 17:56:21",
+  "source_mtime_ns": 1739526981000000000,
+  "source_size": 1435042,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:19:48",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "第2部分",
+      "title": "第2部分(无目录,按页均分)",
+      "start": 31,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 161,
+  "status": "indexed"
+}

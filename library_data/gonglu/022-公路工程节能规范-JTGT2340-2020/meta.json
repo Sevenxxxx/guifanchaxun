@@ -1,0 +1,107 @@
+{
+  "id": "022-公路工程节能规范-JTGT2340-2020",
+  "title": "022-公路工程节能规范-JTGT2340-2020",
+  "std_no": "",
+  "version": "",
+  "file": "022-公路工程节能规范-JTGT2340-2020.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\022-公路工程节能规范-JTGT2340-2020.pdf",
+  "pages": 50,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 50,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9904,
+    "punct_median": 0.0222,
+    "empty_ratio": 0.071,
+    "bad_ratio": 0.111,
+    "clause_hits": 53
+  },
+  "pdf_mtime": "2026-08-25 21:19:46",
+  "indexed_at": "2026-08-26 00:23:16",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 7,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语与缩略语",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "可行性研究阶段",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "设计阶段",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "施工阶段",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "运营阶段",
+      "start": 41,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "养护阶段",
+      "start": 45,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "附录A",
+      "title": "各种能源折标准煤系数",
+      "start": 47,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "附录B",
+      "title": "采暖空调系统室内计算温度及设计新风量",
+      "start": 48,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "",
+      "title": "本规范用词说明",
+      "start": 50,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 185,
+  "status": "indexed",
+  "note": ""
+}

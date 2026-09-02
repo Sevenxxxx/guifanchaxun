@@ -1,0 +1,100 @@
+{
+  "id": "180-农村公路养护预算编制办法-JTGT5640-2020",
+  "title": "180-农村公路养护预算编制办法-JTGT5640-2020",
+  "std_no": "",
+  "version": "",
+  "file": "180-农村公路养护预算编制办法-JTGT5640-2020.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\180-农村公路养护预算编制办法-JTGT5640-2020.pdf",
+  "pages": 145,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 145,
+    "rule": [
+      "garbled"
+    ],
+    "cov_median": null,
+    "punct_median": 0.4998,
+    "empty_ratio": 0.214,
+    "bad_ratio": 1.0,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:43:46",
+  "indexed_at": "2026-08-26 04:44:26",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 145
+  },
+  "toc_zone_end": 4,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "10",
+      "title": "第10章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "养护 预算 帘 用",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "第 300 章 路 面 工程",
+      "start": 69,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "第 400 章 桥梁 、 洱 洞 工程",
+      "start": 80,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "第 S00 章 隧道 工程",
+      "start": 93,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "第 600 章 交通 工程 及 沿线 设施",
+      "start": 98,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "第 700 章 绿化 工程",
+      "start": 104,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 100,
+  "status": "indexed",
+  "note": ""
+}

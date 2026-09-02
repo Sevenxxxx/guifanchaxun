@@ -1,0 +1,163 @@
+{
+  "id": "广东省农村公路数字化设计交付指南（试行）（印发稿）",
+  "title": "广东省农村公路数字化设计交付指南（试行）",
+  "std_no": "印发稿",
+  "version": "",
+  "file": "qitaguifan/53.广东省交通运输厅关于印发《广东省农村公路数字化设计交付指南（试行）》的通知/广东省农村公路数字化设计交付指南（试行）（印发稿）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\53.广东省交通运输厅关于印发《广东省农村公路数字化设计交付指南（试行）》的通知\\广东省农村公路数字化设计交付指南（试行）（印发稿）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\53.广东省交通运输厅关于印发《广东省农村公路数字化设计交付指南（试行）》的通知\\广东省农村公路数字化设计交付指南（试行）（印发稿）.pdf",
+  "pages": 118,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 118,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9974,
+    "punct_median": 0.0407,
+    "empty_ratio": 0.071,
+    "bad_ratio": 0.0,
+    "clause_hits": 185
+  },
+  "source_mtime": "2026-03-17 18:03:48",
+  "pdf_mtime": "2026-03-17 18:03:48",
+  "source_mtime_ns": 1773741828000000000,
+  "source_size": 800501,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 23:19:17",
+  "toc_zone_end": 6,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "第1章",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "第2章",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "第3章",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "第4章",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "第5章",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "第6章",
+      "start": 18,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "第7章",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "第8章",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "第9章",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "附录A",
+      "title": "A 信息模型精细度",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "附录B",
+      "title": "B 信息交付要求",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "附录C",
+      "title": "C 标准化设计方案",
+      "start": 96,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "10",
+      "title": "第10章",
+      "start": 100,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "附录D",
+      "title": "D 主要技术经济指标表",
+      "start": 106,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "附录E",
+      "title": "E 工程数量指标表",
+      "start": 108,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "附录F",
+      "title": "F 造价指标表",
+      "start": 110,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "附录G",
+      "title": "G 设计文件组编基本要求",
+      "start": 116,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 165,
+  "status": "indexed",
+  "note": ""
+}

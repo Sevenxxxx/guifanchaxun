@@ -1,0 +1,114 @@
+{
+  "id": "21.深圳240215交通公用设施养护技术规程（SJG 140-2023）",
+  "title": "深圳240215交通公用设施养护技术规程",
+  "std_no": "SJG 140-2023",
+  "version": "2023",
+  "file": "qitaguifan/21.深圳240215交通公用设施养护技术规程（SJG 140-2023）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\21.深圳240215交通公用设施养护技术规程（SJG 140-2023）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\21.深圳240215交通公用设施养护技术规程（SJG 140-2023）.pdf",
+  "pages": 109,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 109,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9943,
+    "punct_median": 0.0247,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.111,
+    "clause_hits": 201
+  },
+  "source_mtime": "2025-02-14 17:57:21",
+  "pdf_mtime": "2025-02-14 17:57:21",
+  "source_mtime_ns": 1739527041000000000,
+  "source_size": 4605319,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:10:57",
+  "toc_zone_end": 5,
+  "offset": 8,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本规定",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "交通公用设施检查",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "路面日常养护",
+      "start": 24,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "路基日常养护",
+      "start": 37,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "桥涵日常养护",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "隧道日常养护",
+      "start": 60,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "道路附属设施日常养护",
+      "start": 78,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "10",
+      "title": "安全文明施工",
+      "start": 88,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 733,
+  "status": "indexed",
+  "note": ""
+}

@@ -1,0 +1,30 @@
+2 术语 、 符 号 和 代号
+2.1 森 语
+
+2.1.1 沥青 路 面 asphalt pavement
+铺 筑 沥青 面 层 的 路 面 。
+2.1.2 水 泥 混凝土 路 面 cement concreiE Pitinent
+铺 筑 水 泥 混 凝 土 面 层 的 路 面 。
+2.1.3 砌 块 路 面 block stone PavEinehit
+j 一 定形 状 的 石料 或 人 工 预制 彻 块 铺 筑 面 层 的 路 面 。
+2.1.4 当量 轴 次 equivalkit sihgle axle loads
+按 变 形 、 应 力 或 疲劳 断裂 损坏 等 效 原则 ， 将 契 同 引 型 、 不 同
+轴 载 作用 次 数 换算 成 与 标准 轴 载 相当 的 轴 载 作用 次 数 。
+2.1.S 累计 当量 轴 次 / ,cumulative equivalembaXle-loads
+在 设计 基准 期 肉 ， 设 计 车 道上 或 临界 茶 位 处 的 当量 轴 次
+总 和 。
+2. 1.6“ 设 计 基 准 期 design referEnae parlod
+在 进行 路 面 结构 可 靠 度 设计 时 ,考虑 持久 设计 状况 下 各 项 基
+本 变温 与 时 间 关 系 所 取 用 的 基准 时 间 参 数 。
+2.1.7 可 靠 度 reliability
+结构 在 规定 的 时 间 内 ， 规 定 的 条 件 下 ， 完 成 预定 功能 的
+概率 。
+2.1.8 目标 可 靠 度 objective reliability
+综合 考虑 工程 安全 度 和 工程 经 济 性 等 方面 的 因素 而 确定 的 最
+佳 可 靠 度 。
+2.1.9 半 刚 性 基层 ”semi-rigid base
+j 无 机 结合 料 稳定 粒 料 或 土 炎 材料 铺 筑 的 基层 。
+2.1.10 刚性 基层 rigid base
+
+2
+

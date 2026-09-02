@@ -1,0 +1,135 @@
+{
+  "id": "046-多年冻土地区公路设计与施工技术规范-JTGT3331-04-2023",
+  "title": "046-多年冻土地区公路设计与施工技术规范-JTGT3331-04-2023",
+  "std_no": "",
+  "version": "",
+  "file": "046-多年冻土地区公路设计与施工技术规范-JTGT3331-04-2023.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\046-多年冻土地区公路设计与施工技术规范-JTGT3331-04-2023.pdf",
+  "pages": 125,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 125,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:21:10",
+  "indexed_at": "2026-08-26 01:00:38",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 125
+  },
+  "toc_zone_end": 7,
+  "offset": 7,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "10",
+      "title": "第10章",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "路线",
+      "start": 16,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "工程 地 质 勤 察",
+      "start": 24,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "一 般 路 基 设 计",
+      "start": 40,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "第6章",
+      "start": 59,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "沥青 路 面 设 计",
+      "start": 70,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "桥涵 设计",
+      "start": 76,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "隧道 设计",
+      "start": 84,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "11",
+      "title": "沥青 路 面 施工",
+      "start": 100,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "12",
+      "title": "桥 闻 施工",
+      "start": 104,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "13",
+      "title": "第13章",
+      "start": 114,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "14",
+      "title": "生态 保护 与 景观",
+      "start": 121,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 554,
+  "status": "indexed",
+  "note": ""
+}

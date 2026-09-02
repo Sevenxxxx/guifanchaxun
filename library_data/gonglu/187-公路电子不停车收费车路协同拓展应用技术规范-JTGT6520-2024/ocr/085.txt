@@ -1,0 +1,48 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGZT 6520 一 2024 )
+
+VehicleType:: =INTECGER (0. . 255)
+
+-- 车 辆 类 型
+VehicleSpeed: : = INTECER (0. . 65535 )
+
+-- 车 辆 速度 ， 千 米 / 小 时
+VehicleDirection : : = INTECER (0. . 65535 )
+
+-- 车 辆 方向
+VehFaultCode:: = INTECER (0. . 255 )
+
+-- 车 辆 故障 类 型 ，0: 发 动机 故障 ，1: 车 辆 安全 制 动 故障 ，2: 警
+-- 示 灯 故 障 ，.…… 人 ，
+CarSize: : = INTECER (0. . 65535 ) SA
+-- 车 辆 尺寸 ,单位 ; 毫米 罗
+DataType:: =INTEGER (0. . 255 ) CE
+-- 数 据 的 类 型
+DataSize:: = INTEGER (0. .2147483647 )
+MSGType:: =INTECER (0..127，…)
+AlarmLevel:: = INTEGER |
+
+-- 预警 级 别
+Unknown (0) ，
+
+idns = INTEGER (0..255)
+
+大- 道路 上 下 行 标识 ，0; 上 行 ，1: 下 行 ，2: 双向 ，3: 未 知 ， 其
+-- 他 保留
+
+EnumerationDataType: : =INTECER (0..127，.…)
+
+--1 特殊 路 段 行车 风险 预警 ;
+
+--2 特定 限行 路 段 通 行 预警 ;
+
+--3 计划 性 交通 事件 管控 服务 ;
+
+--4 突 发 性 交通 事件 预警 服务 ;
+
+--5 服务 区 信息 服务 ;
+
+--6 收费 站 信息 服务 ;
+
+--7 危险 品 运输 车 辆 监测 及 预警 ;
+
+--8 安全 驾驶 行为 提醒 服务 ;

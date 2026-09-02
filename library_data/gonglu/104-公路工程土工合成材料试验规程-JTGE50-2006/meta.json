@@ -1,0 +1,93 @@
+{
+  "id": "104-公路工程土工合成材料试验规程-JTGE50-2006",
+  "title": "104-公路工程土工合成材料试验规程-JTGE50-2006",
+  "std_no": "",
+  "version": "",
+  "file": "104-公路工程土工合成材料试验规程-JTGE50-2006.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\104-公路工程土工合成材料试验规程-JTGE50-2006.pdf",
+  "pages": 115,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 115,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:32:17",
+  "indexed_at": "2026-08-26 02:36:20",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 115
+  },
+  "toc_zone_end": 5,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": 66,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "第1章",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "试 样 制备 与 数据 处 理",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "试 样 准备",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "调 湿 和 状态 调节",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "结果 计算",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "结果 计算",
+      "start": 31,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "条文说明",
+      "title": "条文说明",
+      "start": 66,
+      "is_expl": true
+    }
+  ],
+  "clause_count": 587,
+  "status": "indexed",
+  "note": ""
+}

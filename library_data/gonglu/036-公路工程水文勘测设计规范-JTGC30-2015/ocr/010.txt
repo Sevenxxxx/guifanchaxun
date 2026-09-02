@@ -1,0 +1,33 @@
+2 术语
+
+2.0.1 设计 洪水 design flood
+工程 正常 使 用 条 件 下 符合 指定 防洪 设计 标准 的 洪水 。
+
+2.0.2 设计 洪水 频率 design flood frequency
+按 有 关 技 术 标 准 规定 作为 设计 依据 的 洪水 统计 意义 上 出 现 的 频率 。
+
+2.0.3 设计 流量 design flood discharge
+与 设计 洪水 相应 的 桥 位 断面 洪峰 流量 。
+
+2.0.4 设计 水 位 design flood surfaceselevation
+与 设计 洪水 相应 的 洪水 水 面 高 程 3
+
+2.0.5 涉 河 工 程 structuresiin river affecting the bridge engineering
+河流 上 对 工程 有 影响 的 所 有 构造 物 。
+
+2.0.0 性 水 backwater
+水 流 受到 压缩 或 潮水 、 干 流水 位 天 托 而 导致 的 上 游 水 位 抬 高 现象 。
+
+2. 0.7” 水 文 断 面 hydrologic cross-section
+为 进行 水 文 观 测 和 水 文 分 析 计 算 而 选 定 的 河流 横断 面 。
+
+2. 0. 8 基本 河 槽 宽度 basic width of TiVer channel
+多 年 洪水 过 程 作用 下 形成 的 河 槽 平均 宽度 ， 由 河 相关 系 确 定 。
+
+2.0.9 造 床 流 量 ” dominant discharge
+对 河流 形成 与 变化 起 控制 作用 的 流量 。
+
+2.0.10 水 拱 the Tising of local water surface in spate
+洪水 涨 水 时 ， 横 断面 上 主流 水 面 的 局 部 府 高 。
+
+一 3 一

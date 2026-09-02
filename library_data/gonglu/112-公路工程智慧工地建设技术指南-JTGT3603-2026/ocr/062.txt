@@ -1,0 +1,36 @@
+公路 工程 智慧 工地 建设 技术 指南 (JTG/T 3603- 2026 1
+续 表 C.0.2
+名 称 边 坡 施工 路 王 采 集 参 数
+参数 名 称 参数 类 型 是 否 必 须 (YXZN)
+变形 速率 Float Y
+稳定 状态 String Y
+变形 范 填 Float Y
+经 度 Float Y
+纬度 Float Y
+时 间 Date 了
+C.0.3 水 泥 混 凝 土路 面 参 数 宜 按 表 C. 0. 3 采集 。
+表 C.0.3 水泥 混凝土 路 面
+名 称 水 泥 混 凝 半 搅拌 采集 参数
+参数 名 称 参数 类 型 是 否 必 须 (YXZN)
+搅拌 站 名 称 Strin N
+工程 部 位 Sbiig Y
+砂 石 用 量 Fiaat Y
+加 水 量 Float 了
+出 料 温度 Float Y
+生产 时 间 Date Y
+名 称 本 沽 混凝土 路 面 施工 采集 参数
+参数 名 称 参数 类 型 是 否 必 须 (YXZN)
+施工 柱 得 Shing Y
+振动 广 Float Y
+振幅 Float Y
+频率 Float Y
+路 考 温 度 Float Y
+路 表 湿 度 Float Y
+强度 Float Y
+C.0.4 沥青 路 面 混 合 料 拌和 参数 宜 按 表 C. 0. 4 采集 。
+表 C.0.4 沥青 路 面 混 合 料 拌 和
+名 称 水 稳 混 合 料 拌和 采集 参数
+参数 名 称 参数 类 型 是 否 必 须 (YXZN)
+拌和 站 名 称 Suing N
+工程 部 位 String Y
+

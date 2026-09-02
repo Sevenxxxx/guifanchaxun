@@ -1,0 +1,19 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGZT 6520 一 2024 )
+
+ReturStatus: : =INTEGER |
+
+noError (0) ，
+accessDenied (1) ，
+argumentError (2) ，
+complexityLimitation (3 ) ，
+processingFailure (4) ，
+Processing (S ) ，
+chainingError (6) ，
+| (0..127，…)
+
+一 - (7-127) 保留 给 DSRC 应 用 ;
+一 一 128 以 后 ， 为 TrafficInfoRd 分 包 回 复 ， 低 7 位 表
+
+一 包 回 00。
+
+条 文 说 明

@@ -1,0 +1,40 @@
+公路 工程 水 文 勘测 设计 规范 (JTC C30 一 2015)
+
+2.0.11 糙 率 系数 roughness coefficient
+反映 河床 对 水 流 阻 力作 用 大 小 的 系数 。
+
+2. 0. 12 中 泓 线 midstream of channel
+河流 各 横断 面 表面 最 大 流速 点 的 连 线 。
+
+2.0.13 深 泓 线 thalweg
+河流 各 横断 面 最 大 水 深 点 的 连 线 。
+
+2.0.14 行 近 流速 ”approach flow velocity
+邻近 建筑 物 上 游 某 一 臣 离 处 的 流速 。
+
+2.0.15 起 动 流速 ”threshold velocity
+河床 泥 沙 从 静止 开始 运动 的 水 流 临 界 流速 。
+
+2.0.16 起 冲 流速 the approach velocity during initial scotr of pier
+桥墩 迎 水 面 两 侧 的 泥 沙 ， 在 绕 流 切 应 力作 用 下 开始 移动 时 ， 所 对 应 的 墩 前 行 近
+流速 。
+
+2.0.17 一般 冲 刷 。 general scau
+因 桥 孔 压 缩水 流 ， 导 致 桥 下 流速 增 大 而 引起 的 桥 下 河床 冲刷 。
+
+2.0.18 局 部 冲刷 总 local scour
+桥墩 或 桥 侣 阻碍 水 流 ， 导 致 其 周围 河床 的 冲刷 。
+
+2.0. 19 . 桥 下 净空 安全 值 ”safe value of headroom under bridge superstructure
+设计 水 位 加 各 种 可 能 发 生 的 水 位 增高 值 后 ， 或 最 高 流 冰 水 位 以 上 预 留 的 安全 值 。
+
+2.0.20 波浪 高 度 ”wave height
+水 面 波浪 的 波峰 至 波 谷 的 垂直 高 度 。
+
+2.0.21 波浪 疏 高 “wave run-up
+波浪 沿 斜 坡 爬 升 的 以 静水 面 算 起 的 垂直 高 度 。
+
+2.0.22 波浪 话 高 ”wave set-up
+波浪 遇 桥 墩 后 发 生变 形 ， 在 墩 柱 迎 水 面 产生 的 水 面 蛮 高 。
+
+一 4 一

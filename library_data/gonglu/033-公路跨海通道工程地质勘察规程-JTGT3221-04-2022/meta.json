@@ -1,0 +1,107 @@
+{
+  "id": "033-公路跨海通道工程地质勘察规程-JTGT3221-04-2022",
+  "title": "033-公路跨海通道工程地质勘察规程-JTGT3221-04-2022",
+  "std_no": "",
+  "version": "",
+  "file": "gonglu/033-公路跨海通道工程地质勘察规程-JTGT3221-04-2022.pdf",
+  "source_abs": "guifansrc\\gonglu\\033-公路跨海通道工程地质勘察规程-JTGT3221-04-2022.pdf",
+  "pdf_abs": "guifansrc\\gonglu\\033-公路跨海通道工程地质勘察规程-JTGT3221-04-2022.pdf",
+  "pages": 109,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 109,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-08-25 22:30:47",
+  "pdf_mtime": "2026-08-25 22:30:47",
+  "source_mtime_ns": 1787668247092903200,
+  "source_size": 39553075,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 109
+  },
+  "indexed_at": "2026-09-01 06:14:39",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "4",
+      "title": "丙 林 有 家 与 可 肥 家 SS。 他 54",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "8",
+      "title": "不良 地 质 站 Pt 62",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "9",
+      "title": "特殊 性 岩 士 CC 71",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "1",
+      "title": "总 则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "2",
+      "title": "术语 和 符号",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "3",
+      "title": "第3章",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "5",
+      "title": "初步 勘察",
+      "start": 34,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "6",
+      "title": "详细 勘察",
+      "start": 56,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "7",
+      "title": "施工 惑 察",
+      "start": 66,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 291,
+  "status": "indexed",
+  "note": ""
+}

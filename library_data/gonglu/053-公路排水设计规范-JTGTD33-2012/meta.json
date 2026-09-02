@@ -1,0 +1,100 @@
+{
+  "id": "053-公路排水设计规范-JTGTD33-2012",
+  "title": "053-公路排水设计规范-JTGTD33-2012",
+  "std_no": "",
+  "version": "",
+  "file": "053-公路排水设计规范-JTGTD33-2012.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\053-公路排水设计规范-JTGTD33-2012.pdf",
+  "pages": 66,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 66,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:21:38",
+  "indexed_at": "2026-08-26 01:19:15",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 66
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "2",
+      "title": "术语 和 符号 2",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "4",
+      "title": "路 界 地 表 排 水 7",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "5",
+      "title": "第5章",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "7",
+      "title": "第7章",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "8",
+      "title": "第8章",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "9",
+      "title": "水文 与 水 力 计算 39",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "1",
+      "title": "总 则",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "3",
+      "title": "总 体 要 求",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "6",
+      "title": "路 界 地 下 排水",
+      "start": 22,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 262,
+  "status": "indexed",
+  "note": ""
+}

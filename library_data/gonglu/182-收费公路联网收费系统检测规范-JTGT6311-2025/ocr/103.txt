@@ -1,0 +1,39 @@
+收费 公路 联网 收费 系统 检测 规范 (JTGVZT 6311 一 2025 )
+
+4 DSRC 协议 测试 仪 发 送 TransferChannel. request;
+
+S DSRC 协议 测试 仪 接收 来 自 被 测 CPC 的 TransferChannel. response;
+6 判断 接收 到 的 TransferChannel response 的 文件 结构 及 内 容 正 确 性 ;
+7 涉及 安全 认证 时 ， 验 证 安全 认证 正确 性 。
+
+D. 4.5 Event_Report (Release) 应 按 下 列 规定 测试 :
+1 _DSRC 协议 测试 仪 发 送 BST;
+
+被 测 CPC 收 到 BST， 返 回 VST;
+
+DSRC 协议 测试 仪 接收 来 自 被 测 CPC 的 VST， 并 登记 其 二
+
+DSRC 协议 测试 仪 发 送 Event_Report (Release ) ; 汪
+
+必 上 wb
+
+判断 被 测 CPC 是 否 释放 链 路 。
+
+D.5 DSRC 交易 流程
+
+分
+
+D.5.1 苑 某 B[ 2 条 的 有 关 规 定 。
+
+D. 6.2 ETC 门 架 系统 RSU 与 CPC 互 操作 性 应 按 下 列 规定 测试
+
+1 设置 测试 用 ETC 门 架 系统 RSU 为 ETC 门 架 系统 交易 流程 ;
+
+2 ， 使 用 被 测 CPC 与 测试 用 ETC 门 架 系 统 RSU 进行 交易 ;
+
+3 判断 安全 认证 正确 性 ;
+
+4 判断 交易 过 程 数据 符合 性 ;
+
+5 更 换 另 一 型 号 ETC 门 架 系 统 RSU 重复 以 上 步 又， 检测 被 测 CPC 与 其 他 型 号
+RSU 的 互 操 作 性 ， 测 试 FTC 门 架 系 统 RSU 不 少 于 3 个 型 号 。

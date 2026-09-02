@@ -1,0 +1,57 @@
+公路 建设 市 场 监管 信息 技术 规范 (JTGXT 3191 一 2025 )
+
+续 表 A. 1.227
+
+值 域
+
+注册 造价 师 、
+
+注册 桥梁 工程
+register_type * 。 师 、 注 册 道 路 工
+程 师 、 注 册 结 构
+工程 师
+
+签发 日 期
+
+issue_date 签发 日 期
+
+签发 单位 名 称
+
+issue_unit_name 签发 单位 名 称
+
+批准 日 期
+
+allow_date 批准 日 期
+
+专业 类 型
+
+Professional_type 专业 类 型
+
+注册 号 码
+
+Te 冯 ster_code
+
+交通 运输 部 、
+
+12 发 证 机 关 issue_department 严 住 建部
+13 证 书 等 级 Erade 网 上 韦 畦 7 am. . S0 用 、 乙 一 二
+. 一 一 下 拱 人
+14 是 否 补充 5 几 WC nl 1 是 0 否
+-7 庆 是
+TA 和 Lan
+AS
+有 qate YYYYMMDDHHMMSS 是
+
+A.1.3 建设 项 目 基 础 信息 应 符合 下 列 规 定 :
+
+1 建设 项 目 基 本 信息 数据 宜 符合 表 A. 1. 3-1 的 规定 。
+表 A.1.3-1 建设 项 目 基本 信息 数据
+
+字段 名 称
+
+project_code
+
+Project_name
+
+address
+

@@ -1,0 +1,79 @@
+{
+  "id": "广东省交通运输厅关于印发《广东省大件运输许可公路桥梁验算与数字化建模工作管理办法（试行）》的通知",
+  "title": "广东省交通运输厅关于印发《广东省大件运输许可公路桥梁验算与数字化建模工作管理办法（试行）》的通知",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/62.260709（路政）大件运输许可公路桥梁验算与数字化建模工作管理办法/广东省交通运输厅关于印发《广东省大件运输许可公路桥梁验算与数字化建模工作管理办法（试行）》的通知.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\62.260709（路政）大件运输许可公路桥梁验算与数字化建模工作管理办法\\广东省交通运输厅关于印发《广东省大件运输许可公路桥梁验算与数字化建模工作管理办法（试行）》的通知.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\62.260709（路政）大件运输许可公路桥梁验算与数字化建模工作管理办法\\广东省交通运输厅关于印发《广东省大件运输许可公路桥梁验算与数字化建模工作管理办法（试行）》的通知.pdf",
+  "pages": 8,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 8,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 1.0,
+    "punct_median": 0.0,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-07-15 19:57:23",
+  "pdf_mtime": "2026-07-15 19:57:23",
+  "source_mtime_ns": 1784116643000000000,
+  "source_size": 183420,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 23:19:18",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "",
+      "title": "第一章  总  则",
+      "start": 2,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "",
+      "title": "第二章  职责分工",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "",
+      "title": "第三章  工作流程",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "",
+      "title": "第四章  保障措施",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "",
+      "title": "第五章  附则",
+      "start": 5,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed",
+  "note": ""
+}

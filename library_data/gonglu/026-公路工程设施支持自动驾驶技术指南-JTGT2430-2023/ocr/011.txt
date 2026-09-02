@@ -1,0 +1,15 @@
+术语 和 符号
+
+TLS 一 传输 层 安全 必
+
+TR069-TR 069 协议 (Technical Report 069);
+
+UDP j 户 数据 报 协议 (User Datagram Protocol);
+
+UTC 一 一 世界 协调 时 间 (Coordinated Universal Time);
+
+VxLan 一 一 虚拟 扩展
+
+局 域 网 (Virtual Extensible Local Area Netwdilo 。
+
+协议 (Transport Layer Security);

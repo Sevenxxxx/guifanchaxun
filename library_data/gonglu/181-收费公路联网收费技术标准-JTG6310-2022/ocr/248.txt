@@ -1,0 +1,44 @@
+PSAMZPCI 密码 卡 技术 要 求
+
+4 密 钥 结构 应 符合 表 N. 1. 3-2 的 规定 。
+表 N.1.3-2 密 钥 结构 的 定义
+
+密 钥 名 称 密 钥 用 途 | 密 钥 版 本 | 密 钥 长 度 | 算 法 标识 使 用 权限
+PSAM 卡片 主 控 密 钥 MK wm 00H 40H 10H 04H 5 自
+PSAM 卡片 维护 密 钥 AMK 01H 41 了 10H 04H 5 自
+PSAM 卡片 外 部 认证 密 钥 UK_w 00H 41 了 10H 04H 5 自
+PSAM 卡 应 用 1 主 控 密 钥 MK wm 00H 40H 10H 04H 5 自
+PSAM 卡 应 用 1 维护 密 钥 AMK nm 01H 41 了 10H 04 理 5 自
+ETC 用 户 卡 外 部 认证 密 钥 1 UKL nmi 48H 01H 10H 00H 一 UK
+ETC 用 户 卡 消费 密 钥 1 PK1 42H 01H 10H 00H 5 UK W
+ETC 用 户 卡 内 部 认证 密 钥 1 下 1 wm 48H 03 节 10H 00H 一 UK
+0BU 认证 主 密 钥 1 RK1 48H 02 皇 10H 00H 一 UK W
+0OBU 加 密 主 密 钥 1 RK2 59H 03 下 10H 00H 一 UK W
+ETC 用 户 卡 外 部 认证 密 钥 2 UK2 nmi 8gH 4IH 10H 04H 一 UK
+ETC 用 户 卡 消费 密 钥 3 PK3 42 百 41H I0 下 04H 15 UK W
+ETC 用 户 卡 内 部 认证 密 钥 2 IK2 wm 48H 43 于 TO 下 04H 一 UK
+OBU 认证 主 密 钥 2 RK3 48H 42 五 10H 04 开 一 UK W
+0OBU 加 密 主 密 钥 2 RK4 59 下 4 和 5 于 10H 04 开 一 UK W
+CPC 外 部 认证 密 钥 LUKI wm 48 卫 44 酝 10H 04H 一 UK
+CPC 外 部 认证 密 胃 20UK2Aroi 和 了 45H 10H 04H 一 UK
+CPC 内 部 认证 密 钥 1 IKT ww 48 理 46H 10H 04 开 一 UK
+单 片 式 0B 了 外 部 认证 密 钥 1 UK1 wm 48H 47 于 10H 04H 一 UK
+单 片 式 9BU 外 部 认证 密 钥 2 UK2 wm 48H 48H 10H 04H 一 UK
+单 片 式 -OBU 钴 部 认证 密 钥 3 UK3 wm 48H 49H 10H 04H 一 UK
+必 费 公路 ETC 访问 许可 密 钥 1 OPNKI1 wm 48 卫 4AH 10H 04 开 一 UK W
+其 他 封闭 式 应 用 访问 许可 密 钥 1 OPNK21 wm 48 卫 4BH 10H 04 开 一 UK W
+必 费 公路 ETC 访问 许可 密 钥 2 OPNK12 mr 48H 4CH 10H 04H 一 UK 必
+其 他 封闭 式 应 用 访问 许可 密 钥 2 OPNK22 wm 48 卫 4DH 10H 04 开 一 UK W
+鉴别 码 计算 密 钥 LTK wm 48H 4EH 10H 04 开 一 UK
+其 他 应 用 访问 许可 密 钥 OPNK3 wm 48 卫 4FH 10H 04H 一 UK 必
+
+5 密 钥 的 控制 关系 应 符合 下 列 规定 :
+
+1) 卡片 主 控 密 钥 应 在 自身 的 控制 下 更 新 〈 密 文 + MAC ) 。
+
+2) 卡片 主 控 密 钥 外 部 认证 通过 后 ， 应 获得 在 卡片 MF 下 创建 文件 的 权限 。
+
+3) 卡片 维护 密 钥 和 卡片 外 部 认证 密 钥 应 在 卡片 主 控 密 钥 线路 保护 控制 下 装载 、 更
+
+一 241 一
+

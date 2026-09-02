@@ -1,0 +1,40 @@
+车 路 通信 协议
+
+间 窗 数量 ; 服务 地 址 指示 了 当前 时 间 窗 所 属 的 专用 链 路 设备 地 址 ; 配置 信息 指示 了 当前
+时 间 窗 的 时 间 偏 移 量 和 持续 时 间 。 图 H-l 为 单 信 道内 一 个 传输 周期 示意 图 ， 指 示 了 两 个
+已 建立 专 有 链 路 的 OBU 正在 通信 以 及 一 个 公共 上 行 链 路 窗口 的 情况 。
+
+一 个 传输 周期 (ZW)
+OBU1 专 有 OBU1 专 有 OBU2 专 有 行 公共 上 行
+控制 由 和 | 户 训 全 | OBU2 专 有 链 路 下 行 | 全 控制 由
+人 人 1 T 了
+图 H1 时 间 窗 示意 图
+5 数据 帧 的 PDU 应 符合 现行 《电子 收费 专用 短程 通信 让 令 : 数据 链 路 层 》
+
+(GBXT 20851.2) 的 相关 规定 。
+
+H. 4.2 RSU2.0 与 0OBU2. 0 车 路 协同 拓展 应 用 扩展 直
+规定 。 A/
+
+了 H.4.3 BST 应 符合 下 列 规定 ，
+1 BST 的 IIC CN
+
+BST: : -SEQUENCE { wx
+
+ApplicationEi，
+ications ApplicationList OPTIONAL，
+SEQUENCE (SIZE (0..127，…) ) OF Profile
+
+在 车 路 协同 拓展 应 用 中 无 nonomandapplications 数据 元 。
+ApplicationList : : = SEQUENCE (SIZE (0. , 127，…) ) OF
+
+SEQUENCE |
+aid DSRCApplicationEntityID ，
+did Dasrc-DID OPTIONAL，
+
+applicationParameter ApplicationContextMarkOPTIONAL
+|
+
+ApplicationList 编码 说 明 如 下 :
+
+一 一 ApplicationList 的 SEQUENCE | } 元 素 无 扩展 ;

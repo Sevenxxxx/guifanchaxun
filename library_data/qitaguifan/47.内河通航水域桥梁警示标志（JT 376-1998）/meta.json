@@ -1,0 +1,107 @@
+{
+  "id": "47.内河通航水域桥梁警示标志（JT 376-1998）",
+  "title": "内河通航水域桥梁警示标志",
+  "std_no": "JT 376-1998",
+  "version": "1998",
+  "file": "qitaguifan/47.内河通航水域桥梁警示标志（JT 376-1998）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\47.内河通航水域桥梁警示标志（JT 376-1998）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\47.内河通航水域桥梁警示标志（JT 376-1998）.pdf",
+  "pages": 15,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 15,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9562,
+    "punct_median": 0.058,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.429,
+    "clause_hits": 8
+  },
+  "source_mtime": "2025-12-02 21:25:10",
+  "pdf_mtime": "2025-12-02 21:25:10",
+  "source_mtime_ns": 1764681910000000000,
+  "source_size": 661592,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:11:04",
+  "toc_zone_end": 2,
+  "offset": null,
+  "toc_source": "body_scan",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "3",
+      "title": "定义",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "4",
+      "title": "标志的结构、材料和技术条件",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "5",
+      "title": "标志的种类",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "6",
+      "title": "主标志",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "7",
+      "title": "附加标志",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "8",
+      "title": "提示标志",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "0",
+      "title": "号0>",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "14",
+      "title": "究线着!",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "附录B",
+      "title": "B(标准的附录)",
+      "start": 14,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 57,
+  "status": "indexed",
+  "note": ""
+}

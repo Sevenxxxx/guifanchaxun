@@ -1,0 +1,69 @@
+收费 公路 联网 收费 技术 标准 (JTG 6310 一 2022 )
+
+续 表 了 .5. 6-2
+位 置 | 字 节 数 参 数 说 明
+1 字 节 -同一 收费 单元 的 第 几 排 门 加 ， 取 值 0x01 、0x02、0x03 ， 其 他 值 保 留
+20 2 Reserved ( 知 为 其 他 值 则 作 0x01 处 理 ) ;
+1 字 节 - 预 留 填 写 0x00
+注 : 1. ETC 门 架 系统 RSU 上 电 后 设置 监听 端口 ， 等 待 车 道 控 制 器 连接 。
+2. 当 车 道 控 制 器 成 功 连接 到 ETC 门 架 系 统 RSU 后 ， 须 发 送 C0 指令 设 定 初始 化 参数 。
+3. ETC 门 架 系统 RSU 收 到 和 车道 控制 噩 发 送 的 C0 指令 后 ， 若 ETC 门 架 系统 RSU 初始 化 成 功 ， 则 向 车 道 控制
+需 发 送 B0 帧 作为 应 答 ，ETC 门 架 系 统 RSUStatus 为 0x00。
+4. ETC 门 架 系 统 RSU 依据 Reserved 字段 第 一 个 字 贡 来 配置 BeaconID 的 后 3 个 字 节 《 暂 称 RSUID ) 。 若 为 单
+排 门 架 RSUID 应 与 RlagID 保持 一 致 ; 大 为 双 排 门 架 ， 第 一 排 的 RSUID 应 -SSEFliegID 保持 一 致 ， 第 二 排 门
+架 若 为 上 行 则 RSUID 为 FlagID-1， 若 为 下 行 则 RSUID 为 FlagID + 1; 者 为 三 排 门 训 ， 规 则 保持 一 致 ， 第 三
+排 门 架 类 推 。 门 架 的 上 下 行 方向 依据 PlagID 判断 。
+5. ETC 门 架 系 统 RSU 依据 上 面 配置 的 BeaconID 为 主 用 BeaconID ， 跟 门 软 系 统 , (前 端 + 后 台 ) 进行 数据 交
+互 时 使 用 主 用 BeaconID 。 为 了 提高 门 架 成 功率 ，ETC 门 架 系 统 RSU 还 应 配置 一 个 备用 BeaconID 。
+3 ”继续 交易 指令 应 答 并 告知 ETC 门 架 系统 RSUL 继续 进行 正常 电子 收费 交易 ， 应 符
+合 表 下. $. 6-3 的 规定 。
+表 了 .5.6-3 继续 ' 银 指令
+位 置 | 字 节 数 参 数 说 为 明
+0 1 CmdType 指 会 代码 ″ 此 处 取 值 0xCI
+1 4 OBUIDZCPC-MAC OBUMAC 地 址
+9 8 OBUDivFactoxCPCDivFactors SOBU 一 级 分 散 因子
+
+注 : 本 指令 对 ETC 门 架 系 统 RSU 发 送 过 求 的 B2 、BS  B8 帧 有 效 。
+
+4 停止 交易 指
+
+令 应 符合 表 人 .5. 6 妾 的 规定 》
+
+表 卫 S“64AN 停止 交易 指令
+
+位 置 | 字 节 数 参数 说 明
+0 1 CiidType 指令 代码 ， 此 处 取 值 0xC2
+1 牙 OBUIDZCPC-MAC| 0OBUMAC 地 址
+
+StopType
+
+0x01- 结 束 交易 ， 重 新 搜索 OBU;
+0Ox0O2- 习
+
+0x03- 冻 结 当 前 OBUIDZCPC-MAC 的 OBU;
+其 他 值 保留
+
+新 发 送 当前 帧 ;
+
+4
+
+UNIXTIME 当前 时 间
+
+注 : 1. 当 StopType =0x01 时 ， 指 示 ETC 门 架 系 统 RSU 不 对 该 OBU 进行 交易 处 理 ， 重 新 搜索 OBU， 本 指令 对
+
+ETC 门
+
+架 系 统 RSU 发 送 过
+
+来 的 B2、B4 、B5 、B8 帧 有 效 。
+
+2. 当 StopType =0x02 时 ， 指 示 ETC 门 架 系统 RSU 重新 发 送 当前 帧 ， 本 指令 只 对 ETC 门 架 系 统 RSU 发 送 过
+
+来 的 B4 、B5 、B8 帧 有 效 。
+
+3. 当 StopType =0x03 时 ， 指 示 ETC 门 架 系 统 RSU 冻结 当前 OBU， 即 2min 之 内 不 再 发 送 该 OBU 的 数据 帧 给
+车 道 控制 器 ， 本 指令 只 对 ETC 门 架 系 统 RSU 发 送 过 来 的 B2 帧 有 效 。
+
+5 开关 ETC 门 架 系 统 RSU 指令 应 符合 表 眉 5. 6-5 的 规定 。
+
+一 106 一

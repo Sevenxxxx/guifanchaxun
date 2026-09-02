@@ -1,0 +1,114 @@
+{
+  "id": "032-公路工程卫星图像测绘技术规程-JTGTC21-02-2014",
+  "title": "032-公路工程卫星图像测绘技术规程-JTGTC21-02-2014",
+  "std_no": "",
+  "version": "",
+  "file": "032-公路工程卫星图像测绘技术规程-JTGTC21-02-2014.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\032-公路工程卫星图像测绘技术规程-JTGTC21-02-2014.pdf",
+  "pages": 41,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 41,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:20:15",
+  "indexed_at": "2026-08-26 00:33:31",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 41
+  },
+  "toc_zone_end": 5,
+  "offset": 5,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "测绘 成 果 高 程 系统 宜 采 用 1985. 国家 高",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "5",
+      "title": "第5章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "10",
+      "title": "第10章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "3",
+      "title": "资料 搜集 与 技术 计划 制订",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "4",
+      "title": "卫星 图 像 数据 采集",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "卫星 图 像 调 绘",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "卫星 图 像 区 域 网 平 差",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "数字 高 程 模型 生成",
+      "start": 25,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "数字 正 射影 像 图 制作",
+      "start": 29,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "11",
+      "title": "地 形 图 修 测",
+      "start": 36,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 174,
+  "status": "indexed",
+  "note": ""
+}

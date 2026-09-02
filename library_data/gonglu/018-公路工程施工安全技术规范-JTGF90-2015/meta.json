@@ -1,0 +1,121 @@
+{
+  "id": "018-公路工程施工安全技术规范-JTGF90-2015",
+  "title": "018-公路工程施工安全技术规范-JTGF90-2015",
+  "std_no": "",
+  "version": "",
+  "file": "018-公路工程施工安全技术规范-JTGF90-2015.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\018-公路工程施工安全技术规范-JTGF90-2015.pdf",
+  "pages": 124,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 124,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 21:19:30",
+  "indexed_at": "2026-08-26 00:18:33",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 124
+  },
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "4",
+      "title": "第4章",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "6",
+      "title": "第6章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "7",
+      "title": "第7章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "8",
+      "title": "第8章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "9",
+      "title": "第9章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "10",
+      "title": "第10章",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "11",
+      "title": "改 扩建 工程 85",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "12",
+      "title": "特殊 季节 与 特殊 环境 施工 Ps 88",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "1",
+      "title": "第1章",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "2",
+      "title": "术语",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "5",
+      "title": "通用 作业",
+      "start": 20,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 643,
+  "status": "indexed",
+  "note": ""
+}

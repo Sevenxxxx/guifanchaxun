@@ -1,0 +1,38 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGZT 6520 一 2024)
+
+sceneDelayList SceneDelayList OPTIONAL ，
+
+-- 应 用 场景 列表
+sleepMode SleepMode OPTIONAL ，
+
+-- 体 眠 模式
+sleepTime INTECER (0. . 65535) OPTIONAL，
+
+-= 休眠 时 间 ， 单 位 : 秒
+periodicSleepTime INTEGER (0. . 65535) OPTIONAL ，
+
+一 休 眼 重 式 为 周期 休眠 时 ， 休眠 周期 时 长 ， 单 位 : 毫秒
+
+|
+RunConfig:: =SEQUENCE |
+
+flBIT STRING (SIZE (4) ) ，
+beidouSet BeidouSetImfo
+
+|
+BeidouSetInfo: : = SEQUENCE |
+switch INTECER (0. .
+
+-一 北斗 开关 ， 人
+
+FicRTA[istj， -= SEQUENCE (SIZE (1..127，... )) OF EteRTASData
+EtcRTASData: ， = SEQUENCE |
+fillBIT STRING (SIZE (4) ) ，
+eventScen EnumerationDataType，
+-= 应 用 场景
+-- 事 件 细 分 定义 ， 结 合 eventType 来 决定
+eventType EventType ，
+-- 子 场景
+priority RSFPriority OPTIONAL，
+-= 消息 紧急 程度
+rtes EtcRTEList OPTIONAL，

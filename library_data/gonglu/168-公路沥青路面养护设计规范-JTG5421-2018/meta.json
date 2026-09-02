@@ -1,0 +1,93 @@
+{
+  "id": "168-公路沥青路面养护设计规范-JTG5421-2018",
+  "title": "168-公路沥青路面养护设计规范-JTG5421-2018",
+  "std_no": "",
+  "version": "",
+  "file": "168-公路沥青路面养护设计规范-JTG5421-2018.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\168-公路沥青路面养护设计规范-JTG5421-2018.pdf",
+  "pages": 68,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 68,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:42:02",
+  "indexed_at": "2026-08-26 04:25:22",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 68
+  },
+  "toc_zone_end": 6,
+  "offset": 6,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "10",
+      "title": "第10章",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "术语",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "4",
+      "title": "调查 与 评价",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "5",
+      "title": "病害 诊断 与 养护 对 策 选 择",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "6",
+      "title": "技术 设计",
+      "start": 24,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "施工 图 设计",
+      "start": 27,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 189,
+  "status": "indexed",
+  "note": ""
+}

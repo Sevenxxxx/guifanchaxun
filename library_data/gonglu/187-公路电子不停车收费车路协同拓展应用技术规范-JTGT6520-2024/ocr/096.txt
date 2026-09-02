@@ -1,0 +1,41 @@
+车 路 通信 协议
+
+-- MessageFrame 的 分 包 数 据
+checkCRC CheckCRC ，
+-- 校 验 信息
+
+|
+profileList 为 无 扩展 ，0 个 Profile ， 其 编码 为 “0000 0000”。
+
+H. 4.4 VST 应 符合 下 列 规定 :
+
+1 VST 的 LLC 层 应 符合 下 列 规定 :
+APP 层 使 用 Initialization. response，T -~ APDUs = Initialization - RE
+2 VST 的 ASN.1 数 据 结 构 应 符合 下 列 规 定 :
+VST:: =SEQUENCE |
+
+<
+fil BIT STRING (SIZE (4) ) 1 一
+profile Profile ， 加 T
+applications ApplicationList ，
+obuConfiguration ObuConfigusa
+
+|
+
+DSRCApplicationEntityID ，
+Dsrc-DIDOPTIONAL ，
+
+applicationParameter ApplicationContextMark OPTIIONAL
+
+|
+ApplicationList 编码 说 明 如 下 :
+一 一 SEQUENCE | 元 素 无 扩展 ;
+一 一 有 did;
+一 一 有 applicationParameter;
+aid =6。
+
+Dsrc-DID:: =INTEGER (0..127，…) ， 无 扩展 ，ETC 应 用 目录 号 为 1， 车 路 协同
+
+拓展 应 用 目录 号 为 2。
+
+一 91 一

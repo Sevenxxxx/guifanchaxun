@@ -1,0 +1,219 @@
+{
+  "id": "088-公路限速标志设计规范-JTGT3381-02-2020",
+  "title": "088-公路限速标志设计规范-JTGT3381-02-2020",
+  "std_no": "",
+  "version": "",
+  "file": "088-公路限速标志设计规范-JTGT3381-02-2020.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\088-公路限速标志设计规范-JTGT3381-02-2020.pdf",
+  "pages": 65,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 65,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 1.0,
+    "punct_median": 0.0205,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.222,
+    "clause_hits": 66
+  },
+  "pdf_mtime": "2026-08-25 21:17:24",
+  "indexed_at": "2026-08-26 02:17:30",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 5,
+  "offset": 5,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本规定",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "资料收集与现场调查",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "交通工程论证及方案设计",
+      "start": 18,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "0",
+      "title": "第0章",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "9",
+      "title": "第9章",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "25",
+      "title": "第25章",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "28",
+      "title": "第28章",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "42",
+      "title": "第42章",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "45",
+      "title": "第45章",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "47",
+      "title": "第47章",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "49",
+      "title": "第49章",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "52",
+      "title": "第52章",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "57",
+      "title": "第57章",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "62",
+      "title": "第62章",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "65",
+      "title": "第65章",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "67",
+      "title": "第67章",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 19,
+      "label": "72",
+      "title": "第72章",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 20,
+      "label": "77",
+      "title": "第77章",
+      "start": 36,
+      "is_expl": false
+    },
+    {
+      "no": 21,
+      "label": "6",
+      "title": "限速标志及相关设施设计",
+      "start": 42,
+      "is_expl": false
+    },
+    {
+      "no": 22,
+      "label": "7",
+      "title": "实施效果评价",
+      "start": 48,
+      "is_expl": false
+    },
+    {
+      "no": 23,
+      "label": "附录A",
+      "title": "风险因素论证法风险系数取值",
+      "start": 50,
+      "is_expl": false
+    },
+    {
+      "no": 24,
+      "label": "82",
+      "title": "第82章",
+      "start": 50,
+      "is_expl": false
+    },
+    {
+      "no": 25,
+      "label": "附录B",
+      "title": "限速标志版面示例",
+      "start": 59,
+      "is_expl": false
+    },
+    {
+      "no": 26,
+      "label": "附录C",
+      "title": "平面交叉限速标志设置示例",
+      "start": 63,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 221,
+  "status": "indexed",
+  "note": ""
+}

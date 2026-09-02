@@ -1,0 +1,66 @@
+桥梁 文 承 线 的 垂
+
+桥梁 纵 轴 线 存在 斜 交
+
+2.0.11 文 座 热 石 bearing pad stone
+桥梁 壤 台 顶 面 为 安放 支 座 设置 、 具有 承 压 和 传 力 功 能 的 现 浇 钢 筋 混 凝 土 垫 块 。
+
+2.0.12 弹性 元 件 elastic element
+
+模 数 式 伸缩 装置
+
+中 弹
+
+性 文 承 元 件 〈 承 压 文 座 和
+
+的 桥架 。
+
+甘 紧 支 座 ， 主要 保障 中 梁 与 支
+
+承 横梁 的 弹性 连结 ) 和 位 移 控制 元 件 (前 切
+
+匀 位 移 ) 等 的 总 称 。
+
+2.0.13 机 械 链 杆 mechanical link
+
+推动 中 染 均 匀 位 移 的 机 械 传动 装置 。
+
+2.0.14 位 移 箱 displacement box
+
+模 数 式 伸 缩 装置
+
+中 设置 在 支承 横梁 车 辟 端 用 于 伸缩 位 移 的 箱 形 空间 装置 。
+
+2.0.1S 伸缩 量 expansion displacepaeht
+
+桥梁 上 部 结构 在 温度 、 等 载 和 混 汪 :
+
+弹 和 车 和 压缩 弹 竹 ， 主 要 保障 中 深 的 均
+
+收缩 近 徐 变 等 作用 下 产生 的 纵 桥 向 伸缩
+
+总 变形 的 统称 。 包 括 计 个 允许 逢 缩 量 和 设计 伸缩 量 两 种 。
+
+2.0.16 温度 有 效 跨 多 kffictive span lerig 亿 吐 temperature
+计算 由 温度 缠 起 桥 染 结 梅 伸 纵 基 时 用 效 跨 长 取 值 。
+
+2.03- 安 装 缝 宽 expansion width for installation
+出 三 前 7 伸缩 装置 按 设 计 要 求 预 留 的 安装 初始 伸缩 量 定位 值 。
+
+2.0.18 伸缩 装置 养护
+
+坊 expansion joints maintenance
+
+伸缩 装置 的 日 常 清洁 、 保 养 和 维修 。
+
+2.0.19 伸缩 装置 零
+
+部 件
+
+伸缩 装置 部 分 组 装 零 部 件 提前 损坏 后 的 更 换 。
+
+更 换 component replacement of expansion joints
+
+2.0.20 伸缩 装置 整体 更 换 overall replacement of expansion joints
+伸缩 装置 丧失 整体 功能 后 的 整体 更 换 。
+

@@ -1,0 +1,52 @@
+公路 勘测 细则 (JTG/T C10 一 2007)
+
+2 术语 、 符 号
+
+2.1 术语
+
+2.1.1 控制 测量
+1 首 级 控制 网 first control Survey network
+为 建立 路 线 控制 网 而 施 测 的 覆盖 全 路 线 的 高 等 级 控制 测量 网 。
+2 路线 控 制 网 control survey network of highway
+为 满足 公路 路 线 测 量 而 建立 的 控制 测量 网 。
+3 工 点 控制 网 control survey network of structufaMpbuildings
+
+为 满足 桥 、 隧 .交叉 以 及 其 他 工 点 设计 需要 而 建立 的 控制 测量 网 。
+4 控制 测量 桩 stake for control measure
+
+控制 测量 的 GPS 点 、 三 角 点 .导线 点 X 水 准点 以 及 特大 型 桥 他 控 制 桩 。
+5 点 之 记 record for points-escoritroh meastUe
+
+控制 测量 桩 位 置 的 记录 表格 5
+
+6 子午线 meridian
+
+通过 地 面 某 点 并 包含 地 球 陶 北极 点 的 平面 洁 地 球 椭 球 的 交 线 ,也 称 子
+7 中央 子 午 线 LcentralT 剖 eridian
+
+地 图 投影 中 各 投影 带 中 央 的 子午 线 |
+
+8 高 斯 平面 坐标 系 Gauss-Krueger plane rectangular coordinate System
+
+根据 高 电 = 克 号 格 投影 法 则 投影 于 某 一 高 程 面 上 所 建立 的 一 种 平面 直角 坐标 系 , 其 原
+点 是 中 央 子 午 线 与 赤道 的 交点 ,以 中 央 子 午 线 为 X 轴 , 赤 道 为 工 轴 。
+
+9 独立 坐标 系 independent coordinate System
+任意 选 定 原点 和 坐标 轴 , 其 投影 面 为 固定 基准 面 的 平面 直角 坐标 系 。 独 立 坐 标 系 是
+相对 于 国家 统一 坐标 系 而 言 的 ,以 测 区 中 某 一 经 度 线 作 为 中 央 子 午 线 , 以 测 区 某 一 高 程 面
+作为 投影 面 而 建立 的 平面 直角 坐标 系 。 用 该 坐标 系 建 立 的 控制 网 可 与 国家 坐标 系 进行 换
+
+由
+蜗
+Oo
+
+10 假定 坐标 系 assumed coordinate System
+
+任意 假定 原点 、 坐标 轴 方 向 ,长 度 不 经 过 投影 变形 改正 的 平面 直角 坐标 系 。 一 般 是 假
+定 一 个 点 的 坐标 (不 要 使 测 区 出 现 负 值 坐标 ) 及 一 条 边 的 方位 角 ,在 测量 平面 上 直接 计算
+的 平面 直角 坐标 系 。
+
+11 三 角 测 量 triangulation network
+
+2
+

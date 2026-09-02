@@ -1,0 +1,86 @@
+{
+  "id": "69.250304广东省机关事务管理局关于转发广东省地方标准《党政机关办公用房配置使用规范》的通知",
+  "title": "250304广东省机关事务管理局关于转发广东省地方标准《党政机关办公用房配置使用规范》的通知",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/69.250304广东省机关事务管理局关于转发广东省地方标准《党政机关办公用房配置使用规范》的通知.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\69.250304广东省机关事务管理局关于转发广东省地方标准《党政机关办公用房配置使用规范》的通知.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\69.250304广东省机关事务管理局关于转发广东省地方标准《党政机关办公用房配置使用规范》的通知.pdf",
+  "pages": 17,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 17,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-03-24 19:51:14",
+  "pdf_mtime": "2025-03-24 19:51:14",
+  "source_mtime_ns": 1742817074000000000,
+  "source_size": 1274933,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 17
+  },
+  "indexed_at": "2026-08-31 22:53:33",
+  "toc_zone_end": 3,
+  "offset": 4,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "范围 1",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "规范 性 引用 文件 .et 1",
+      "start": 3,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "术语 和 定义",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "基本 要 求",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "配置 管理",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "使 用 管理",
+      "start": 8,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 63,
+  "status": "indexed",
+  "note": ""
+}

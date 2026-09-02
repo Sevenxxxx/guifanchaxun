@@ -1,0 +1,9 @@
+术语 和 符号
+
+B/S 一 一 浏览 句 / 服 务 硕 (Browser/Server) ;
+
+GIS 一 一 地 理 信 息 系 统 (Geographic Information System ) ;
+HTTP 一 一 超 文本 传输 协议 ( Hyper Text Transfer Protocol ) ;
+JSON 一 对 象 简谱 (JavaScript Object Notation ) ;
+
+UTF 一 一 可 变 长 度 字 符 编 码 ( Unicode Transformation Format ) 。

@@ -1,0 +1,47 @@
+RSU 检测 方法
+
+3 被 测 RSU 接收 来 自 DSRC 协议 测试 仪 的 VST， 判 断 VST 的 正确 性 ， 并 登记 其
+MAC 地 址 ;
+
+4 被 测 RSU 发 送 GetSecure. request 读 取 车 辆 信息 文件 ;
+
+5 判断 被 测 RSU 是 否 正确 发 送 GetSecure. request ;
+
+6 _DSRC 协议 测试 仪 接收 被 测 RSU 发 送 的 GetSecure. request， 并 返回 GetSecure.
+Tesponse ;
+
+7 判断 被 测 RSU 接收 到 的 GetSeceure. response 文件 结构 及 内 容 正 确 性 ;
+
+8 判断 安全 机 制 正确 性 。
+
+A. 4.5 TransferChannel 应 按 下 列 规定 测试 :
+1 设置 被 测 RSU 发 送 BST;
+2 DSRC 协议 测试 仪 接收 BST， 判 断 其 正确 性 ， 并 ;
+3 被 测 RSU 接收 来 自 DSRC 协议 测试 仪 的 和
+MAC 地 址 ;
+4 被 测 RSU 发 送 TransferChannel. request
+$ 判断 被 测 RSU 是 否 正确 发 送 TransferCiak
+6 _DSRC 协议 测试 仪 接收 来 自 被 测 RSUY
+ferChannel. response ;
+7 ”验证 被 测 RSU 接收 到 的 - 寂 改
+
+司 夺 坝 》 接收 BSP 并
+
+2 DSRC 协议 测 省 晰 其
+
+3 被 测 BSU 生 收 来 自 DSRC 志 议 测试 仪 的 VST， 判 断 VST 的 正确 性 ， 并 登记 其
+MAC 地 吉 隐
+
+4 宙 JE0 发 送 saMML request 设置 测试 设备 的 状态 ;
+
+5 测试 届 备 判断 被 测 RSU 是 否 正确 发 送 SetMML request 并 返回 SetMML. Tesponse ;
+
+6 被 测 RSU 接收 测试 设备 返回 的 SetMML response， 判 断 文件 结构 及 内 容 正确 性 ;
+
+7 被 测 RSU 发 送 Event_Report (Release) ， 测 试 设备 接收 Event_Report (〈( Release )
+并 判断 文件 结构 及 内 容 正确 性 。
+
+A.5 车 道 系统 RSU 交易 流程
+
+A.5.1 车 道 系统 RSU 交易 流程 测试 应 包括 ETC 人口 专用 车 道 交 易 流 程 测试 和 ETC
+出 口 专用 车 道 交 易 流 程 测试 。

@@ -1,0 +1,114 @@
+{
+  "id": "167-公路养护决策技术规范-JTGT5310-2026",
+  "title": "167-公路养护决策技术规范-JTGT5310-2026",
+  "std_no": "",
+  "version": "",
+  "file": "gonglu/167-公路养护决策技术规范-JTGT5310-2026.pdf",
+  "pdf_abs": "guifansrc\\gonglu\\167-公路养护决策技术规范-JTGT5310-2026.pdf",
+  "pages": 44,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 44,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9932,
+    "punct_median": 0.0587,
+    "empty_ratio": 0.071,
+    "bad_ratio": 0.333,
+    "clause_hits": 38
+  },
+  "pdf_mtime": "2026-08-25 22:41:58",
+  "indexed_at": "2026-08-28 18:39:04",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 5,
+  "offset": null,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语和符号",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本规定",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "数据准备及分析",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "公路养护需求",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "公路养护规划",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "公路年度养护计划",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "附录A",
+      "title": "公路养护决策目标",
+      "start": 30,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "附录B",
+      "title": "典型养护对策",
+      "start": 32,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "附录C",
+      "title": "公路养护需求分析样表",
+      "start": 35,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "附录E",
+      "title": "公路养护工程项目库样表",
+      "start": 42,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 114,
+  "status": "indexed",
+  "note": ""
+}

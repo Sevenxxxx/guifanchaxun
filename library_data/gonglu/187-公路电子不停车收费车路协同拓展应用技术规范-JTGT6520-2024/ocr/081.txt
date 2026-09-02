@@ -1,0 +1,46 @@
+公路 电子 不 停车 收费 车 路 协同 拓展 应 用 技术 规范 (JTGZT 6520 一 2024 )
+
+TimeInterval: : = OCTET STRING (SIZE (8) )
+-= 收费 时段，8 字 节 ，Unixrime， 前 四 个 字 节 表示 开始 时 间 ， 后 四
+-- 个 字 节 表示 结束 时 间
+ChargeRate:: = INTEGER (0.. 65535 )
+ChargeInfo:: =SEQUENCE |
+roadId RoadDataType，
+
+-- 路 段 标识
+roadLength DistanceDataType，
+
+-- 收 费 路 段 长 度
+timeInterval TimeInterval ，
+
+-- 收 费时 段 < |
+chargeRate ChargeRate ， 一
+
+- 玫 7
+description Description
+
+-一 提示 语
+
+|
+SceneDelay: : = SEQUENCE
+
+SceneDelayList， ,人 二 了
+SleepMode : :一直 证 [ 有
+
+珠 攻
+
+| -=-1: 常态 休眠 〈 关 闭 拓展 应 用 射频 接收 )
+
+--2: 周期 休眠 〈 间 断 开 启 和 关闭 拓展 应 用 射频 接收 )
+
+MessageMAC:: = OCTET STRING (SIZE (4) )
+-计算 方 法 : 由 RSU 或 0BU 使 用 国 密 算法 加 密生 成 ， 计 算
+-- 方 法 为 : 1 ) 将 MessageFrame 的 分 包 序 号 、 分 包 长 度 、 分 包
+-= 内容 加 密 后 进行 CRC 计算 〈 多 项 式 X% +X2” +X +1， 起 始
+--0xFFFF) ， 产 生 两 字 节 CRCO 和 CRC1。2) 以 OBU 返回 的 随
+-- 机 数 RndOBE (不 足 补 0x00 组 成 16 字 节 ) 作为 初始 值 。3 )
+-- 使 用 国 密 SM4 算法 对 CRCO 和 CRC1 计算 〈 不 足 补 0x00 组
+
+-- 成 16 字 节 ) 生成 MessageMAC。
+CheckCRC:: = OCTET STRING (SIZE (2) )
+一 IT6 一

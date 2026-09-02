@@ -1,0 +1,49 @@
+智慧 工地 业务 内 容 采 集 参 数 建议 表
+
+表 C. 0.13 ” 钻 爆 隧道
+
+名 称 超前 地 质 预报 采集 参数
+参数 名 称 参数 类 型 是 否 必须 (YAN)
+监测 位 置 String Y
+
+他 移 Float Y
+水 位 Float N
+钻 孔 位 置 Suing Y
+开 孔 时 间 Dute Y
+终 孔 时 间 Dute Y
+
+孔 深 Float 了
+钻 进 压 力 Float Y
+钻 进 速度 Float Y
+监测 时 间 Dute Y
+
+名 称 针 爆 开 控 采集 参数
+参数 名 称 参数 类 型 是 否 必须 (YXN)
+开 控 位 置 sa Y
+
+孔 位 Sniog Y
+
+孔 深 Fisat Y
+扬尘 Float Y
+温度 丽 k Y
+湿度 商 o 维 Y
+裂缝 位 移 Rio Y
+裂 颖 形 收 Shing Y
+监测 时 间 Date Y
+
+盈 称 初期 支 护 施工 监测 采集 参数
+参数 名 称 参数 类 型 是 否 必须 (YXN)
+支 护 位 置 String Y
+
+压力 Float Y
+
+位 移 Float Y
+温度 Float Y
+变形 系数 Float Y
+监测 时 间 Dute Y
+
+名 称 二 次 衬砌 施工 监测 采集 参数
+参数 名 称 参数 类 型 是 否 必须 (YXN)
+二 次 衬砌 位 置 String Y
+叶 射 混凝土 配合 比 String Y
+

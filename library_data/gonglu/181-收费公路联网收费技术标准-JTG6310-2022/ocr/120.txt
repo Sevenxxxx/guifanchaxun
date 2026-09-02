@@ -1,0 +1,62 @@
+RSU 技术 要 求
+
+表 卫 上. S.7-3 ETC 门 架 系 统 RSU 主 状态 参数
+
+代码 值 ETC 门 架 系 统 RSU 初始 化 状态
+
+0x00 ETC 门 架 系 统 RSU 状态 正常
+
+0x01 PSAM 复位 失败 〈 由 ETC 门 架 系统 RSU 自行 确认 ， 影 响 本 门 架 正 常 交易 时 赋值 )
+
+0x02 ETC 门 架 系 统 RSU 天 线头 连接 失败 〈 由 ETC 门 架 系 统 RSU 自行 确认 ， 影 响 本 门 架 正常 交易 时 赋值 )
+
+0x03 ETC 门 架 系统 RSU 控制 器 初始 化 异常
+
+4 ETC 门 架 系 统 RSU 定时 发 送 心跳 信息 帧 给 车 道 控 制 器 ， 指 未 ETC 门 架 系 统 RSU
+的 工作 状态 。 心 跳 信 息 帧 应 符合 表 正 . 5. 7-4 的 规定 。
+表 了 .5.7-4 心跳 信息 由
+
+位 置 “| 字 节 数 参 数 说 1 表
+
+0 1 FrameType 数据 帧 类 型 标识 ， 此 处 取舍 \0xB1
+
+ETC 门 架 系统 RSUI 控 制 足 TA(ZP 地 址 小 的 为 控制 器 1) 状态 ，
+] ] RSUControlStatus1 0x00- 主 机 + 正常 ,0201- 主 机 + 异常 ，
+0x10- 从 机 + 正常 /01I- 从 机 + 蜡 常
+
+ETC 问 架 了 系统 RSU 控制 器 2 〈 了 JR 弛 址 大 的 为 控制 器 2) 状态 ，
+2 1 RSUControlStatus2 0x00: 志 机 千 正常 ， 0x0T- 主 机 + 异常 ，
+0 区 ON 从 机 + 正常 ，0xJTS 从 机 十 异常
+
+ETc 门 架 系 统 RSU 主 备 控制 器 之 间 的 通信 连接 状态 ，
+0x00- 通 信 正 常 S 0xof1- 通 信和 异常
+
+3 1 RSUControlStatus3
+
+4 1 PSAMNunm1l ETG- 门 名 系 统 RSU 控制 器 1 的 PSAM 数量 ， 记 为 n
+
+1 字 TaPSAM 通道 号 ;
+
+1 字 节 PSAM 运行 状态 ，
+
+5 3 PSAMStatusl 0x00- 正 常 ，0x01- 异 常 〈 含 密 钥 锁 定 等 无 法 正常 工作 的 情况 ) ，
+1 字 节 PSAM 卡 授权 状态 ，
+
+0x00- 已 授权 ，0x01- 未 授权 〈 含 授权 失败 )
+
+5 +3n ] PSAMNum2 ETC 门 加 系统 RSU 控制 器 2 的 PSAM 数量 ， 记 为
+
+1 字 节 PSAM 通道 号 ;
+
+1 字 节 PSAM 运行 状态 ，
+
+6+3n | 3xm PSAMStatus2 0x00- 正 常 ，0x01- 异 常 〈 含 密 钥 锁 定 等 无 法 正常 工作 的 情况 ) ，
+1 字 节 PSAM 卡 授权 状态 ，
+
+0x00- 已 授权 ，0x01- 未 授权 〈 含 授权 失败 )
+
+6 +3n +3m ] RSUAntennaNum ETC 门 架 系 统 RSU 配置 的 天 线 数 量 ， 记 为 h
+
+7+3n+3m| 1 RSUAntennaNum2 主 用 ETC 门 架 系统 RSU 控制 器 所 连接 天 线 中 正常 工作 的 数量
+
+一 113 一

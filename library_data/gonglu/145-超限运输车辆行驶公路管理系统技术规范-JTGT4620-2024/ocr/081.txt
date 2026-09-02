@@ -1,0 +1,43 @@
+超 限 运输 车 辆 行驶 公路 管理 系统 技术 规范 {JTGZT 4620 一 2024
+
+续 表 A-20
+序号 字段 名 字段 说 明 数据 类 型 | 必 填 备注
+23 total 检测 的 车 货 总 质量 Integer 是 | 精确 到 个 位 。 单 位 : 千克
+24 axles 车 辆 轴 数 Integer 是 | 轴 数 不 能 小 于 2
+25 distOfStart 货源 地 String 是 | 车 辆 所 载 货物 货源 地 行政 区 划 代 码
+26 | distOfDestination 目的 地 String 是 | 车 辆 所 载 货物 目的 地 行政 区 划 代 码
+27 overRate 超 限 超载 比例 Double 是 | 单位 : 百分比 ， 保 留 2 位 小 数
+28 vehicleType 特殊 车 辆 类 型 Sting 是 有 《危险 化 学 品 运 答
+29 cargoInfo 货物 名 称
+30 detailDese 具体 描述
+31 fileList 核查 结果 文件 列表
+
+A.10 检测 设备 状态 信息
+表 A-21 检测 设备 状态 信
+序号 字段 代码 字段 说 明
+_ 页 灵 32 贸 长 字符 串 ， 作 为 每 条 记录 的 唯
+i 一 标识 TS 国 ”
+1 uniqueId 数据 唯 和 区 > 是 开 7 大 未 识 \
+2 sjteCode 站 《 点 AN 4 String 间 (点 ) 编号
+3 equipCode 有 是 唯一
+4 equipType 7 设备 类 型 : 1- 称 重 检测 设备 ; 2- 视 频 设 备
+7 0- 正 常 ;1- 传 感 器 故障 ;2- 光 机 故障 ;4- 线
+5 | equipsams/k。 是 | 圈 故 障 ; 8- 轮 胎 识 别 器 故障 ，16- 通 信 故 障 。
+
+当 多 种 故障 时 ， 返 回 值 为 各 故障 值 之 和
+
+注 :
+
+A.11 检测 站 (点 ) 状态 信息
+
+格式 YYYYMMDDhh24mmss
+
+表 A-22 检测 站 〈 点 ) 状态 信息 内 容 与 格式 要 求
+
+序号 字段 代码 字段 说 明 数据 类 型 | 必 填 备注
+1 uniqueld 数据 唯 _ 标 识 Suing 是 作为 每 条 记录 的 唯
+2 siteCode 站 〈 点 ) 标识 String 是 | 站 (点 ) 唯一 标识
+3 siteStatus 站 (点 ) 状态 String 是 0- 在 线 ; 1- 离 线
+4 sendTime 发 送 时 间 Sting 是 格式 YYYYMMDDhh24mmass
+注 : 每 30min 整 点 发 送 一 次 。
+

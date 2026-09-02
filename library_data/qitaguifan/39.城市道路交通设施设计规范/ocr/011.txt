@@ -1,0 +1,37 @@
+道 .无 任何 障碍 物 .可 供 失控 车 辆 重新 返回 正常 行驶 路 线 的 带 状 区
+域 。
+2.1.11 防 撞 热 crash cushion
+独立 的 防护 结构 ,在 受到 车 辆 碰撞 时 ,通过 自身 的 结构 变形 吸
+收 碰撞 能 量 ,减轻 对 乘员 的 伤害 程度 。
+2.1.12 可 导向 防 撞 热 redirective crash cushion
+具有 侧面 碰撞 导向 功能 的 防 撞 垫 。
+2.1.13 非 导 向 防 撞 热 nonmrtredirective crash cushion
+不 具有 侧面 碰撞 导向 功能 的 防 撞 垫 。
+2.1.14 相位 phase
+同时 获得 通行 权 的 一 个 或 多 个 交通 流 的 信号 显示 状态 。
+2.1.1S$ 信号 周期 signal circjle
+信号 灯 相 位 按 设 定 的 顺序 显示 一 周 所 需 的 时 间 。
+2.1.16 协调 控制 coordinated contro
+把 多 个 交叉 口 的 交通 信号 控制 参数 进行 关联 控制 的 一 种 方
+
+式 。
+2.1.17 人 行 护栏 pedestrian guardrail
+
+防止 行人 跌落 或 为 使 行人 与 车 辆 隔离 而 设置 的 保障 行人 安全
+的 设施 。
+2.1.18 分 隔 设 施 separate facilities
+
+道路 范围 内 ,机 动车 和 非 机 动车 之 间 车辆 和 行人 之 间 以 及 逆
+向 交通 之 间 ,为 规范 通行 空间 设置 的 构造 物 。
+2.1.19 防 胶 设施 antrglare facilities
+
+为 夜间 行车 的 驾驶 人 员 免 受 对 向 来 车 前 灯 有 眩光 干扰 而 设置 的
+构造 物 。
+2.1.20 限界 结构 delimitation Structure
+车 行道 净空 周边 的 主体 结构 物 。
+2.1.21 主体 结构 防 撞 设 施 collision protection facilities for
+
+main Stfucture
+
+在 容易 被 撞击 的 主体 结构 上 增加 的 抗 撞 击 构件 。
+

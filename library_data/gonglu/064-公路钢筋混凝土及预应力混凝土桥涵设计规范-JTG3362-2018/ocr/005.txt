@@ -1,0 +1,31 @@
+目 次
+和 问 则 1
+2 术语 和 符号 2
+2 1 术语 oooseoosooeoseooeoosoooooeooeoooooeooeooooeooeoosooooooooeoooooeoooooeooieeoooooooosooeoeooooeoo。 2
+2 2 符号 eeseueoseoesooeosooosooooooooeoooooooeoeooeooooooooooeooeoosooooooaeooioiooiooooooeoooooooo 人 4
+3 材料 8
+3 1 混凝土 eeeeeseeseeseseseeseeeesoeeesoeoseeeeeeoeeeooeoeeeooeeoeoeoeeoeeeoeeooeeeoeeeeoeooeeoeeoeeooeeeeeeeeee 8
+3 2 钢筋 oooeeeeseeeeseeesoesesoesoeoeosoeeoeeoooeooeeeoeeeeoeoeseieeoooeeeeoiooeooeooooeeoeeeeoeeoeeeeeoeoeeeee 9
+4 结构 设计 基本 规定 Ne 11
+4. 1 一 般 规定 oooeooeuesoooooosoeoueooeooooosoooiieeoioooooiooiooooooooooosoooeooooooooeoioeosooeooooo。 11
+4. 2 板 的 计算 12
+4. 3 梁 的 计算 14
+4. 4 拱 的 计算 17
+4. 5 耐久 性 设计 要 求 20
+5 持久 状况 承载 能 力 极 限 状态 计算 21
+4， 1 一 般 规定 oodeoooooooisoieooooooiooiooieooooiooooooooooooooooooooooeoooooooooeooeoooooeooo。 21
+5.， 2 ” 受 弯 构件 23
+.3 受 压 构件 eaiaeoooboooooooosiiooiooieoiooooooooooooooooooooooooooooooeooooooeoooooeoooooeooo。 33
+9. 人 4 受 拉 构 件 seeasaosoooesoesesooeessieooooooosooooosoeoooosoooeoesosoeeeoeeooeeooeeeooeseeeeeoseeseeseee。 40
+5. 5 受 招 构 件 ， 和 ee 42
+4，0 受 冲 切 构件 eeeosoueoveovoseoeoooooeoooooooeoooooooooooooooooooooooooooooooeooeooooooooeooooo。 46
+5. 7 局 部 承 压 构件 48
+6 持久 状况 正常 使 用 极限 状态 计算 pp 1
+6. 1 一 般 规 定 51
+6. 2 钢筋 预 应 力 损失 Ne 56
+6. 3 抗 列 验算 59
+6. 4 裂缝 宽度 验算 pp 61
+6. 5 挠 度 验算 65
+7 ”持久 状况 和 短暂 状况 构件 的 应 力 计 算 收 pp 68
+7. 1 持久 状况 预 应 力 混 凝 土 构件 应 力 计算 68
+7. 2 短暂 状况 构件 的 应 力 计算 71

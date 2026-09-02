@@ -1,0 +1,65 @@
+{
+  "id": "49.211231广东省农村公路“十四五”发展规划（粤交规〔2021〕803号）",
+  "title": "211231广东省农村公路“十四五”发展规划",
+  "std_no": "粤交规〔2021〕803号",
+  "version": "2021",
+  "file": "shiguanli/49.211231广东省农村公路“十四五”发展规划（粤交规〔2021〕803号）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\49.211231广东省农村公路“十四五”发展规划（粤交规〔2021〕803号）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\49.211231广东省农村公路“十四五”发展规划（粤交规〔2021〕803号）.pdf",
+  "pages": 36,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 36,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 17:59:00",
+  "pdf_mtime": "2025-02-14 17:59:00",
+  "source_mtime_ns": 1739527140000000000,
+  "source_size": 14316728,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 36
+  },
+  "indexed_at": "2026-08-31 22:47:36",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "通 建 制 村 公路 单 改 双 工 程 〈 公 里 ) 1",
+      "start": 32,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "路 网 联结 工程 〈 公 里 ) 13718 535107",
+      "start": 32,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "农村 公路 养护 一 604484",
+      "start": 32,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 14,
+  "status": "indexed",
+  "note": ""
+}

@@ -1,0 +1,30 @@
+数据 接
+
+参数 名 称 是 否 能 为 空 类 型 及 范围 最 大 长 度 说 明
+corpCode 否 String 6 统一 社会 信用 代码
+数据 最 后 更 新 时 间 ( 查 询 指定 最 后 更 新
+lastUpdateDate 是 String 时 间 到 现在 为 止 , 若 为 空 值 则 查询 全 部 数
+据 ) 参 数 格式 :YYYYMMDD HH :mm:ss
+currPage 否 int 当前 页 数
+pageSize 否 int 每 页 大 小 ,最 大 值 为 1000
+
+企业 组 织 机 构 编 码 或 统一 社会 信用 代码
+
+数据 最 后 更 新 时 间 ( 查 询 指定 最 后 更 新
+
+lastUpdateDate 时 间 到 现在 为 止 , 若 为 空 值 则 查询 全 部 数
+SN 据 ) 参 数 格式 :YYYYMMDD HH:mm:ss
+二 和
+om 外 人 放 7
+pagegy 引 、 | _A 每 页 大 小 ,最 大 值 为 1000
+
+输出 结果
+返回 值 字段 字段 类 型 字段 说 明
+result Boolean . . tre: 成 功 ;false: 失 败
+mesg String 返回 提示 信息
+dala List 从 业 人 员 个 人 评价 结果 信息 数据
+
+B. 4.4 监理 工程 师 信用 评价 结果 信息 列表 接口 宜 符合 下 列 规定 :
+方法 说 明 :获取 监理 工程 师 信 用 评价 结果 信息 列表
+
+输入 参数 :

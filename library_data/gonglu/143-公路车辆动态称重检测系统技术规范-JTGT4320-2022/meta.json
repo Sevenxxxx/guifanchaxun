@@ -1,0 +1,107 @@
+{
+  "id": "143-公路车辆动态称重检测系统技术规范-JTGT4320-2022",
+  "title": "143-公路车辆动态称重检测系统技术规范-JTGT4320-2022",
+  "std_no": "",
+  "version": "",
+  "file": "143-公路车辆动态称重检测系统技术规范-JTGT4320-2022.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\143-公路车辆动态称重检测系统技术规范-JTGT4320-2022.pdf",
+  "pages": 28,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 28,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "pdf_mtime": "2026-08-25 22:39:03",
+  "indexed_at": "2026-08-26 03:52:41",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 28
+  },
+  "toc_zone_end": 5,
+  "offset": 4,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总 则",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本 规定",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "公路 车 辆 动态 称 重 检测 设备",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "车 牌 识别 及 记录 设备",
+      "start": 13,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "视频 监控 设备",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "信息 发 布设 备",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "数据 处 理 系统",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "9",
+      "title": "供电 与 防 雷 接地",
+      "start": 22,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "10",
+      "title": "数据 传输",
+      "start": 23,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 97,
+  "status": "indexed",
+  "note": ""
+}

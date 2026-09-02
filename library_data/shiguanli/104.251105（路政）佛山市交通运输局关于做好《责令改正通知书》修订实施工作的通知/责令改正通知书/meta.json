@@ -1,0 +1,51 @@
+{
+  "id": "责令改正通知书",
+  "title": "责令改正通知书",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/104.251105（路政）佛山市交通运输局关于做好《责令改正通知书》修订实施工作的通知/责令改正通知书.docx",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\104.251105（路政）佛山市交通运输局关于做好《责令改正通知书》修订实施工作的通知\\责令改正通知书.docx",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\104.251105（路政）佛山市交通运输局关于做好《责令改正通知书》修订实施工作的通知\\责令改正通知书.docx",
+  "pages": 3,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 3,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9825,
+    "punct_median": 0.0122,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-11-13 18:53:33",
+  "pdf_mtime": "2025-11-13 18:53:33",
+  "source_mtime_ns": 1763031213000000000,
+  "source_size": 15520,
+  "fmt": "docx",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:13:07",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

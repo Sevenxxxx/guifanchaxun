@@ -1,0 +1,39 @@
+公路 工程 智慧 工地 建设 技术 指南 (JTG/T 3603- 2026 1
+续 表 C. 0. 15
+名 称 钢筋 混凝土 结构 工程 大 体积 混凝土 养护 数据 监测 采集 参数
+参数 名 称 参数 类 型 是 否 必 须 (YXZN)
+监测 点 String Y
+温度 Float Y
+湿度 Float Y
+喷 淋 水 量 Float Y
+喷 淋 时 间 Date Y
+名 称 工作 井 井 简 空气 监测 采集 参数
+参数 名 称 参数 类 型 是 舍 放 须 (YN)
+监测 点 String Y
+空气 质量 String Y
+温度 Float Y
+湿度 Float Y
+氧气 浓度 Float Y
+有 害 气体 浓度 Raat Y
+监测 时 间 Dale Y
+名 称 盾 构 施工 施工 监测 采集 参数
+参数 名 称 参数 类 型 是 否 必 须 (YXZN)
+盾 构 机 名称 String Y
+盾 构 位 置 Sing Y
+推进 速度 oai Y
+前 端 水 平 偏 革 Float Y
+前 端 垂直 仿效 foat Y
+后 端 水 平 偏差 Float Y
+后 端 素 平 偏差 Float Y
+滚动 角 Float Y
+仰 依 角 Float Y
+刀 盘 温度 Float Y
+刀 盘 转速 Float Y
+总 推力 Float Y
+刀 盘 扭矩 Float Y
+监测 时 间 Date Y
+名 称 盾 构 施工 环境 监测 采集 参数
+参数 名 称 参数 类 型 是 否 必 须 (YXZN)
+监测 点 String Y
+温度 Float Y
+

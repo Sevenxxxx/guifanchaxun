@@ -1,0 +1,39 @@
+学 免 免 wAN xuet ut u. Con
+
+2 术语 和 符号
+
+2.1 术 襄
+2.1.1 桥梁 结构 检测 test and measurement of bridge struc-
+
+tUTE
+
+对 桥梁 结构 进行 的 现场 测试 、 试 验 、 观 测 、 检 查 与 记录 描
+述 。 当 结构 检测 活动 在 桥梁 建造 或 运营 过 程 中 的 某 时 段 持 续 进 行
+时 ， 该 活动 又 称 为 监测 。
+2.1.2 桥 荣 结构 检 算 checking of bridge structure
+
+依据 桥 染 的 结构 检测 结果 、 使 用 荷载 与 环境 变化 ， 以 及 设
+计 、 施 工 、 维 修 、 改 造 和 加 固 文件 要 求 进行 的 结构 性 能 计算 。
+2.1.3 桥 衣 荷载 试验 load test of bridge
+
+通过 测试 桥梁 结构 在 外 部 荷载 作用 下 的 静 动 力 响应 ， 对 桥梁
+结构 的 承载 能 力 及 力学 特性 分 别 进行 评定 和 分 析 判 断 的 活动 。
+2.1.4 桥梁 结构 承载 能 力 评 定 load-bearing capacity evalua-
+tion of bridge structure
+
+通过 结构 检 算 或 荷载 试验 ， 获 得 桥梁 结构 承载 能 力 的 量化 指
+标 并 确认 其 是 否 满足 标准 或 设计 要 求 所 进行 的 活动 。
+2.1.5 缺损 defect and damage
+
+桥梁 结构 构件 出 现 缺 陷 和 损伤 等 病害 的 统称 。 缺 陷 是 因 施工
+不 符合 要 求 所 引起 ， 损 伤 是 因 除 施工 外 的 其 他 外 部 作用 所 造成 。
+2.1.6 荷载 效率 1load ratio
+
+采用 试验 荷载 与 设计 控制 荷载 ， 计 算出 两 者 在 结构 或 构件 控
+制 截 面 产 生 的 效应 的 比值 。
+2.1.7 校 验 系 数 verification coefficient
+
+试验 荷载 作用 下 实测 应 力 〈 应 变 ) 或 变形 值 与 计算 值 之 比 。
+2.1.8 结构 变 位 ”deformation and displacement of structure
+
+2

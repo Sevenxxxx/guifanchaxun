@@ -1,0 +1,51 @@
+{
+  "id": "附件2-3",
+  "title": "附件2-3",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/113.260524广东省交通运输厅广东省财政厅关于印发《广东省普通公路应急抢通资金分配实施细则（暂行）》的通知/附件2-3.doc",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\113.260524广东省交通运输厅广东省财政厅关于印发《广东省普通公路应急抢通资金分配实施细则（暂行）》的通知\\附件2-3.doc",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\113.260524广东省交通运输厅广东省财政厅关于印发《广东省普通公路应急抢通资金分配实施细则（暂行）》的通知\\附件2-3.doc",
+  "pages": 3,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 3,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9947,
+    "punct_median": 0.0189,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2026-06-05 18:21:57",
+  "pdf_mtime": "2026-06-05 18:21:57",
+  "source_mtime_ns": 1780654917000000000,
+  "source_size": 59392,
+  "fmt": "doc",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:31:57",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

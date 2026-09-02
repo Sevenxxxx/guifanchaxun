@@ -1,0 +1,26 @@
+公路 隧道 工程 现场 测试 规程 (JTGZT 3530 一 2026 )
+
+2 术语 和 符号
+
+2.1 术语
+
+2.1.1 轮廓 outline 人
+沿 隧 道 横断 面 方向 的 边缘 线 ， 包 括 隧道 开 挖 轮廓 人
+
+2.1.2 内 轮 廊 inner outline
+
+axls deviation
+
+线 偏 离 设计 轴线 的 水 平 向 距离 。
+
+2.1.7 横向 偏差 lateral deviation
+横向 方向 偏离 隧道 轴线 的 距离 。
+
+2.1.8 竖 向 偏差 vertical deviation
+实际 高 程 与 设计 高 程 的 差 值 。
+
+2.1.9 倾斜 度 inclination
+钢 架 所 在 平面 与 隧道 轴线 竖 直 线 的 夹 角 。
+
+2.1.10 锚固 密实 度 compactness of rock bolt
+一 2 一

@@ -1,0 +1,34 @@
+超 限 检测 数据 格式 要 求
+
+表 A-27 其 他 严重 失信 行为 名 单 信息
+
+序号 字段 名 称 字段 说 明 数据 类 型 | 是 否 必 填 备注
+1 unicueld 数据 唯 _ 标 识 stuing (32) | 是 32 位 长 度 随机 字符 中 ， 作为 每 条 记录 的
+唯一 标识
+2 year 上 报 年 份 Integer (4) 是 必要 。 上 报 数据 对 应 的 年 度 ， 如 : 2019
+必要 。 上 报 数据 对 应 的 周期 ，1- 第 一 季
+3 的 上 红岗 项 Iteeer (1) | 生 度 ; 2- 第 二 季度 ; 3- 第 三 季度 ; 4- 第 四 季度
+值 域 : 94 提 息 下 半 ; 05- 指 使 超 限 ;
+4 creditCategory 失信 行为 类 别 string (2) 是
+5 driverName 当事人 姓名 string (30)
+6 driverIdCard 身份 证 号 string (18) “标号 18 和
+人
+7 companyName 企业 名 称 和 rwannaraoa
+8 | uniftiedCregitCode | 统一 社会 信用 代码 狼人 2 (18 位 数字 )
+9 |legalRepresentative
+10 | idCardNumber 必要 。 填 写法 定 代表 人 18 位 身份 证 号 码
+11 nleasestanDaf 站- 布 必要 。 格 式 YYYYMMDD
+12 raleaseFgaDoss、 < 尖顶 必要 。 格 式 YYYYMMDD
+Ce 一 . 必要 。 失 信和 名 单 信息 在 省 级 系统 上 的 公
+13 PR ress4 string (512) | ”是 示 网 页 链接
+表 A-28 失信 名 单 关 联 案件 信息
+序号 字段 名 称 字段 说 明 数据 类 型 | 是 否 必 填 备注
+1 本 对 应 路 面 治 超 案件 sing (32) 是 对 应 路 面 治 超 案 件 信息 中 的 “数据 唯一
+) 信息 的 唯一 标志 D 5 标识 ”字段
+2 driverName 驾驶 人 姓名 string (30) 是 车 辆 驾驶 人 姓名
+罗 三 |
+3 driverIdCard 机 二 有 string (18) 是 车 辆 驾驶 人 身份 证 号
+4 vehicleNo 驾驶 车 辆 车 牌号 | sting (18) 是 | 必要
+5 roadTransport 驾驶 车 辆 道路 ing (18) 是 必要 。 道 路 运输 管理 机 构 为 道路 运输 车
+Number 运输 证 号 Sn8 辆 配 发 的 道路 运输 证 号 ，12 位 数字 号
+

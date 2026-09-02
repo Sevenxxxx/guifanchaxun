@@ -1,0 +1,66 @@
+{
+  "id": "附件——示例图20230130---",
+  "title": "附件——示例图20230130---",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/93.230228佛山市交通运输局关于印发《佛山市公路和城市道路桥梁桥下空间利用管理规范化指南》的通知/附件——示例图20230130---.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\93.230228佛山市交通运输局关于印发《佛山市公路和城市道路桥梁桥下空间利用管理规范化指南》的通知\\附件——示例图20230130---.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\93.230228佛山市交通运输局关于印发《佛山市公路和城市道路桥梁桥下空间利用管理规范化指南》的通知\\附件——示例图20230130---.pdf",
+  "pages": 58,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 58,
+    "rule": [
+      "scan",
+      "garbled"
+    ],
+    "cov_median": 0.488,
+    "punct_median": 0.08,
+    "empty_ratio": 0.786,
+    "bad_ratio": 1.0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-08-25 20:19:00",
+  "pdf_mtime": "2025-08-25 20:19:00",
+  "source_mtime_ns": 1756124340000000000,
+  "source_size": 14386617,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 58
+  },
+  "indexed_at": "2026-09-01 01:28:20",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "clause_cluster",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "6",
+      "title": "第6章",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "1",
+      "title": "第1章",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "2",
+      "title": "国 Z",
+      "start": 14,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 4,
+  "status": "indexed",
+  "note": ""
+}

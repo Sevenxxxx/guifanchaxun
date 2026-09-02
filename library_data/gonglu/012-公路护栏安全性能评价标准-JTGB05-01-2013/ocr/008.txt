@@ -1,0 +1,37 @@
+2.0.10 阻挡 功能 containment performance
+公路 护栏 阻挡 碰撞 车 辆 穿越 、 翻 越 和 骑 跨 的 能 力 。
+
+2.0.11 缓冲 功能 buffering performance
+公路 护栏 降低 对 碰撞 车 辆 和 车 内 乘员 冲击 程度 的 能 力 。
+
+2.0. 12 导 向 功能 redirective performance
+公路 护栏 使 碰撞 车 辆 向 行车 方向 顺利 导出 并 恢复 运行 状态 的 能 力 。
+
+2.0.13 公路 护栏 防护 等 级 protection level of highway barriers
+按照 设计 防护 能 量 或 设计 防护 速度 对 公路 护栏 安全 性 能 划分 的 等 级 。
+
+2.0.14 设计 防护 能 量 design protection energy
+护栏 标准 段 、 护 栏 过 渡 段 和 中 央 分 隔 带 开口 护栏 能 够 安全 防护 的 车 辆 最 大 碰撞 能 量 。
+
+2.0.1S 设计 防护 速度 design protection velocity
+护栏 端 头 和 防 擅 垫 能 够 安全 防护 的 小 型 客车 最 大 碰 擅 速度
+
+2.0.16 碰撞 车 型 impact vehicle type
+用 于 实 车 足 斥 碰撞 试验 的 试验 车 辆 类 型 。
+
+2.0.17 试验 碰撞 条 件 impact test conditions
+实 车 足 斥 碰 拉 试 验 时 ， 对 于 试验 护栏 所 采用 的 碰撞 车 型 、 车 辆 总 质量 、 碰 撞 速 度 和
+碰撞 角度 的 组 合 。
+
+2.0. 18  - 实 车 是 尺 磁 撞 试 验 fall-scale impact test with real vehicle
+按照 规定 的 试验 碰撞 条 件 采用 试验 车 辆 对 1:1 比例 的 试验 护栏 进行 碰撞 试验 ， 根 据
+检测 的 试验 数据 评价 试验 护栏 安全 性 能 的 试验 方法 。
+
+2.0.19 碰撞 点 impact point
+实 车 足 尺 碰撞 试验 时 ， 试 验 护 栏 上 最 先 被 车 辆 碰撞 处 的 地 面 投影 点 。
+
+2.0.20 驶 离 点 exit point
+实 车 足 尺 碰 撞 试 验 时 ， 和 车辆 首次 碰撞 试验 护栏 的 轮 迹 与 试验 护栏 碰撞 前 迎 撞 面 最 内
+边缘 的 地 面 投影 线 最 后 相交 的 点 。
+
+2.0.21 碰撞 速度 impact velocity

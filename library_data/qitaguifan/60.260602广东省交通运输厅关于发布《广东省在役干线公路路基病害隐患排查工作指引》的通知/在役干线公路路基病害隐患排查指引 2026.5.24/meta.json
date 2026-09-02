@@ -1,0 +1,135 @@
+{
+  "id": "在役干线公路路基病害隐患排查指引 2026.5.24",
+  "title": "在役干线公路路基病害隐患排查指引 2026.5.24",
+  "std_no": "",
+  "version": "",
+  "file": "qitaguifan/60.260602广东省交通运输厅关于发布《广东省在役干线公路路基病害隐患排查工作指引》的通知/在役干线公路路基病害隐患排查指引 2026.5.24.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\60.260602广东省交通运输厅关于发布《广东省在役干线公路路基病害隐患排查工作指引》的通知\\在役干线公路路基病害隐患排查指引 2026.5.24.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\60.260602广东省交通运输厅关于发布《广东省在役干线公路路基病害隐患排查工作指引》的通知\\在役干线公路路基病害隐患排查指引 2026.5.24.pdf",
+  "pages": 66,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 66,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9984,
+    "punct_median": 0.0144,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.0,
+    "clause_hits": 75
+  },
+  "source_mtime": "2026-07-02 19:21:26",
+  "pdf_mtime": "2026-07-02 19:21:26",
+  "source_mtime_ns": 1782991286000000000,
+  "source_size": 3599881,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 23:19:18",
+  "toc_zone_end": 3,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "",
+      "title": "前    言",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "",
+      "title": "引    言",
+      "start": 5,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "1",
+      "title": "范围",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "2",
+      "title": "规范性引用文件",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "3",
+      "title": "术语和定义",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "4",
+      "title": "基本规定",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "5",
+      "title": "隐患排查工作流程",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "6",
+      "title": "基础工作",
+      "start": 10,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "7",
+      "title": "排查清单整理",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "8",
+      "title": "外业排查",
+      "start": 20,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "9",
+      "title": "病害分析",
+      "start": 27,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "10",
+      "title": "病害隐患分级",
+      "start": 38,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "11",
+      "title": "防治对策与应急处置",
+      "start": 44,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 89,
+  "status": "indexed",
+  "note": ""
+}

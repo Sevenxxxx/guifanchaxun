@@ -1,0 +1,24 @@
+超 限 运输 车 辆 行驶 公路 管理 系统 技术 规范 (JTGVT 4620 一 2024)
+
+续 表 A-28
+序号 | 。 字段 名 称 字段 说 明 数据 类 型 | 是 否 必 填 备注
+2
+7 Pt 行政 处 罚 决 定 书 文 号 | Sting (32) | 。 是 和 全 科 全 让 站 人 示例 : 歼
+8 | punishmentDate 处 罚 时 间 string (8) 是 We 行政 多 习 决 定 忆 上 注 明 的 日 期 ，
+9 | panishMoney 处 辐 人 矣 | Nb (| 是 “| 必要。 数字/ 钙 位 元 。 保 全 闽 数 ， 最 大
+
+10
+
+unitName
+
+Sea8Son
+
+执法 机 构 名 称
+
+string (32)
+
+fleName
+descInfo
+
+dataContent
+

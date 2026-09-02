@@ -1,0 +1,72 @@
+{
+  "id": "附表5：三水区农村公路规划方案明细表（2035年规划方案+建设计划+2021年调整方案）",
+  "title": "附表5：三水区农村公路规划方案明细表",
+  "std_no": "2035年规划方案 建设计划 2021年调整方案",
+  "version": "2035",
+  "file": "shiguanli/31.佛山市交通运输局关于印发《佛山市农村公路网规划（2021-2035年）》的通知/附表5：三水区农村公路规划方案明细表（2035年规划方案+建设计划+2021年调整方案）.xlsx",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\31.佛山市交通运输局关于印发《佛山市农村公路网规划（2021-2035年）》的通知\\附表5：三水区农村公路规划方案明细表（2035年规划方案+建设计划+2021年调整方案）.xlsx",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\31.佛山市交通运输局关于印发《佛山市农村公路网规划（2021-2035年）》的通知\\附表5：三水区农村公路规划方案明细表（2035年规划方案+建设计划+2021年调整方案）.xlsx",
+  "pages": 97,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 97,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.8952,
+    "punct_median": 0.0312,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:15:42",
+  "pdf_mtime": "2025-02-14 18:15:42",
+  "source_mtime_ns": 1739528142000000000,
+  "source_size": 153944,
+  "fmt": "xlsx",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:21:34",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "第2部分",
+      "title": "第2部分(无目录,按页均分)",
+      "start": 31,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "第3部分",
+      "title": "第3部分(无目录,按页均分)",
+      "start": 61,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "第4部分",
+      "title": "第4部分(无目录,按页均分)",
+      "start": 91,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

@@ -1,0 +1,163 @@
+{
+  "id": "7.自然灾害综合风险公路承灾体普查技术指南（试点版）",
+  "title": "自然灾害综合风险公路承灾体普查技术指南",
+  "std_no": "试点版",
+  "version": "",
+  "file": "7.自然灾害综合风险公路承灾体普查技术指南（试点版）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\7.自然灾害综合风险公路承灾体普查技术指南（试点版）.pdf",
+  "pages": 101,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 101,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9737,
+    "punct_median": 0.0199,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.222,
+    "clause_hits": 166
+  },
+  "pdf_mtime": "2025-02-14 17:58:15",
+  "indexed_at": "2026-08-26 19:58:42",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 5,
+  "offset": 5,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语、符号",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本规定",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "公路设施属性信息采集",
+      "start": 14,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "自然灾害风险点信息采集",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "自然灾害风险点初步风险评估",
+      "start": 21,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "自然灾害风险点核查",
+      "start": 24,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "自然灾害综合风险公路路段区划及成果",
+      "start": 35,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "附录A",
+      "title": "地质灾害与水毁分类表",
+      "start": 38,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "附录B",
+      "title": "公路路线信息调查表",
+      "start": 48,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "附录C",
+      "title": "公路桥梁信息调查表",
+      "start": 50,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "附录E",
+      "title": "公路高边坡信息调查表",
+      "start": 54,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "附录F",
+      "title": "崩塌风险点信息调查表",
+      "start": 63,
+      "is_expl": false
+    },
+    {
+      "no": 14,
+      "label": "附录G",
+      "title": "滑坡风险点信息调查表",
+      "start": 66,
+      "is_expl": false
+    },
+    {
+      "no": 15,
+      "label": "附录H",
+      "title": "泥石流风险点信息调查表",
+      "start": 69,
+      "is_expl": false
+    },
+    {
+      "no": 16,
+      "label": "附录J",
+      "title": "水毁风险点信息调查表",
+      "start": 75,
+      "is_expl": false
+    },
+    {
+      "no": 17,
+      "label": "附录K",
+      "title": "自然灾害综合风险公路承灾体调查系统",
+      "start": 78,
+      "is_expl": false
+    },
+    {
+      "no": 18,
+      "label": "附录L",
+      "title": "地质灾害及水毁成因及识别",
+      "start": 81,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 160,
+  "status": "indexed",
+  "note": ""
+}

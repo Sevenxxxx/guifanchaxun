@@ -1,0 +1,51 @@
+{
+  "id": "6.广东省桥梁安全运行十项制度实施细则",
+  "title": "广东省桥梁安全运行十项制度实施细则",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/6.广东省桥梁安全运行十项制度实施细则.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\6.广东省桥梁安全运行十项制度实施细则.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\6.广东省桥梁安全运行十项制度实施细则.pdf",
+  "pages": 10,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 10,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 17:58:47",
+  "pdf_mtime": "2025-02-14 17:58:47",
+  "source_mtime_ns": 1739527127000000000,
+  "source_size": 2997242,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 10
+  },
+  "indexed_at": "2026-08-31 22:52:26",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

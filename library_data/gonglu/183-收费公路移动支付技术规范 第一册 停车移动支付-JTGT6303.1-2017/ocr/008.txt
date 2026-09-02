@@ -1,0 +1,44 @@
+收费 公路 移动 支付 技术 规范 ”第 一 册 ”停车 移动 支付 (JTC/T 6303. 1 一 2017 )
+
+条 文 说 明
+“ 冲 正 ” “撤销 ”和 “ 退 费 ”这 3 个 术语 在 不 同 应 用 领域 的 定义 存在 差异 ， 为 准确
+理解 本 规范 ， 在 此 结合 收费 公路 停车 移动 支付 应 用 给 出 定义 。
+
+2.。 工 . 15 对 账 reconciliation
+对 交易 数据 进行 核对 ， 以 确认 交易 的 一 致 性 和 准确 性 的 业务 。
+
+2.1.16 结算 settlement
+根据 对 账 结 果 或 清 分 结果 进行 资金 收 付 的 业务 。
+
+2. T. 17 安全 单元 Secure element
+在 移动 支付 中 负责 关键 数据 的 安全 存储 和 运算 功能 的 部 件 。
+
+2.1.18 数字 签名 digital signature
+
+附加 在 数据 单元 上 的 数据 ， 或 是 对 数据 单元 所 做 的 密码 变换 ， 这 种 数据 或 变换 允许
+数据 单元 的 接收 者 用 以 确认 数据 单元 的 来 源 和 完整 性 和 并 保护 数据 防止 被 人 伪造 或
+抵赖 。
+
+2.2 缩 略 语
+
+APP 一 一 应 用 软件 飞 Application ) ;
+
+BCD 一 一 BCD 代码 “(BinaPg-CodedsDecimal) ;
+
+ETC 一 一 电子 不 停车 收费 (Electrohic Toll Collection ) ;
+GUID 一 一 全 局 唯一 标识 符 〈Globally Unique Identifier) ;
+IPSEC 一 一 下联 网 协议 安全 (Intermet Protocol Security ) ;
+MTBF 一 一 平均 无 故障 时 间 (Mean Time Between Failures ) ;
+
+MTC 一 一 人 工 半 自动 收费 (Manual Toll Collection ) ;
+
+NFC 一 一 近 距 离 无 线 通信 (Near Field Communication ) ;
+
+PIN 一 一 个 人 识别 码 (Personal Identification Number ) ;
+
+POS 一 一 销售 点 (Point of Sale ) ;
+
+SE 一 一 安全 单元 (Secure Element) ;
+SNMP 一 一 简单 网 络 管理 协议 (Simple Network Management Protocol ) ;
+VLAN 一 一 虚拟 局 域 网 〈Virtual Local Area Network ) ;
+VPN 一 一 虚拟 专用 网 络 〈Virtual Private Network ) 。

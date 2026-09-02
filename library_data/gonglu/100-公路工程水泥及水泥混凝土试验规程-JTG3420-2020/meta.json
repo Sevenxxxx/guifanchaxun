@@ -1,0 +1,128 @@
+{
+  "id": "100-公路工程水泥及水泥混凝土试验规程-JTG3420-2020",
+  "title": "100-公路工程水泥及水泥混凝土试验规程-JTG3420-2020",
+  "std_no": "",
+  "version": "",
+  "file": "100-公路工程水泥及水泥混凝土试验规程-JTG3420-2020.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\gonglu\\100-公路工程水泥及水泥混凝土试验规程-JTG3420-2020.pdf",
+  "pages": 290,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 290,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9903,
+    "punct_median": 0.0276,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.0,
+    "clause_hits": 201
+  },
+  "pdf_mtime": "2026-08-25 22:31:56",
+  "indexed_at": "2026-08-26 02:29:34",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 8,
+  "offset": 6,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语和符号",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "水泥试验",
+      "start": 12,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "0",
+      "title": "第0章",
+      "start": 23,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "13",
+      "title": "第13章",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "17",
+      "title": "第17章",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "18",
+      "title": "第18章",
+      "start": 28,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "7",
+      "title": "凝结时间的测定",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "8",
+      "title": "安定性的测定（标准法）",
+      "start": 33,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "9",
+      "title": "安定性的测定（代用法）",
+      "start": 34,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "4",
+      "title": "水泥混凝土拌合物性能试验",
+      "start": 95,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "5",
+      "title": "硬化水泥混凝土性能试验",
+      "start": 149,
+      "is_expl": false
+    },
+    {
+      "no": 13,
+      "label": "6",
+      "title": "水泥砂浆性能试验",
+      "start": 262,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 1224,
+  "status": "indexed",
+  "note": ""
+}

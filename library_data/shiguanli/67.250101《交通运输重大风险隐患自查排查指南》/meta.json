@@ -1,0 +1,65 @@
+{
+  "id": "67.250101《交通运输重大风险隐患自查排查指南》",
+  "title": "250101《交通运输重大风险隐患自查排查指南》",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/67.250101《交通运输重大风险隐患自查排查指南》.wps",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\67.250101《交通运输重大风险隐患自查排查指南》.wps",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\67.250101《交通运输重大风险隐患自查排查指南》.wps",
+  "pages": 69,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 69,
+    "rule": [
+      "native-text"
+    ],
+    "cov_median": 0.9722,
+    "punct_median": 0.0109,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 17:58:36",
+  "pdf_mtime": "2025-02-14 17:58:36",
+  "source_mtime_ns": 1739527116000000000,
+  "source_size": 331264,
+  "fmt": "wps",
+  "virtual": true,
+  "pages_dir": "extracted",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-09-01 01:31:35",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "第2部分",
+      "title": "第2部分(无目录,按页均分)",
+      "start": 31,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "第3部分",
+      "title": "第3部分(无目录,按页均分)",
+      "start": 61,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

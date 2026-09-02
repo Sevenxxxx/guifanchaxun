@@ -1,0 +1,70 @@
+术语 、 符 号
+
+在 地 面 上 选 定 一 系列 点 ,构成 连续 三 角形 ,测定 三 角形 各 顶点 水 平角 ,并 根据 起 始 边
+长 方位 租 和 起 始点 坐标 ,经 数据 处 理 确 定 各 顶点 平面 位 置 的 测量 方法 。
+12 三 边 测 量 trilateral network
+
+测量 三 角形 的 边 长 ,并 根据 起 始点 坐标 ,经 数据 处 理 确定 各 顶点 平面 位 置 的 测量 方
+
+法 D
+
+13 GPS 测量 global positioning system
+通过 接收 卫星 发 布 的 定位 信息 , 求 定 测 站 点 空间 坐标 的 方法 。
+14 三 角 高 程 测 量 trigonometric leveling
+根据 已 知 点 高 程 及 两 点 间 的 垂直 角 和 距离 (或 高 差 ) 确 定 所 求 点 高 程 的 方法 。
+15 检测 check survey
+采用 某 种 测量 手段 对 平面 .高 程控 制 测 量 点 进行 测量 ,以 检查 你 入 制 测量 网 的 精度 或
+确认 原 控 制 测 量 桩 是 否 被 移动 的 活动 。
+16 复 测 repeating Survey
+采用 与 原 测 量 同 精度 的 测量 方法 对 原 有 平面 `. 总 程控 制 测量 网 进行 测量 ,并重 新平 差
+计算 提供 新 的 测量 成 果 的 活动 。
+7
+对
+
+测 距 中 误差 mean Square error of QistarceNmneasukement
+
+一 段 距 离 进行 多 次 测量 , 按 中 误差 计算 公开 计算 的 距 俱 中 误差 。
+18 点 位 中 误差 mean square erT6OROfasboint
+
+控制 测量 中 某 一 控制 点 相 双 乎 最 近 包 知 点 的 位 置 中 误差 。
+19 ”相对 中 误差 relative neafthxsgnare erTor
+
+观测 值 中 误差 与 相应 最 或 是 值 之 比 。
+20 边 长 相对 中 误差 人 relatiye meaasquarelafror of side length
+
+边 长 中 误差 与 相应 边 长 之 比 。
+21 相 邻 点 间 相 邓 中 误差 relative mean Square error of adjacent points
+控制 测 疆 中 两 分 相 邻 控制 点 间 相 对 位 置 的 中 误差 。
+
+殉 图 测绘
+1 地 形 图 勾 绘 outline drawing of relief map
+
+利用 中 线 .实测 横断 面 等 资料 ,对 路 线 范 围 内 的 地 形 图 进行 绘制 ,其 余部 分 概略 绘制
+的 地 形 图 测绘 方法 。
+2 地 形 几 数字 化 digitalizing or telief map
+将 纸 质地 形 图 的 各 要 素 以 数字 形式 表示 的 过 程 。
+到 修 测 modifying survey of relief map
+地 形 图 中 地 形 、 地 物 已 发 生变 化 部 分 的 测量 活动 。
+supplement Survey
+
+习 的 测绘 范围 不 够 或 控制 点 被 损坏 等 进行 的 补充 测量 活动 。
+
+人
+SN 区
+
+CD
+区
+NS
+
+心
+
+四
+SS 陀
+河 芝 于
+
+党
+
+SN
+
+地
+

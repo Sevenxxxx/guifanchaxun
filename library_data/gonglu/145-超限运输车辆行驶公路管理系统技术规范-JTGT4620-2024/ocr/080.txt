@@ -1,0 +1,43 @@
+超 限 检测 数据 格式 要 求
+
+A.9 特殊 超 限 车 辆 登记 信息
+表 A-20 特殊 超 限 车 辆 登记 信息 内 容 与 格式 要 求
+序号 | 。 字段 名 字段 说 明 数据 类 型 | 必 填 备注
+六 长 串 条
+| uicueld 数据 唯 _ 标 识 | su (32) | 是 | 32 位 长 度 随机 字符 串 ， 作 为 每 条 记录 的 只
+一 标识
+2 sjiteCode 站 (点 ) 编号 Strng 是
+关联 检测 信息 的 对 应 印 载 前 称 现 答 测 司 息 的 数据 唯一 标识
+3 | sheckDatald | 涩 据 叭 -标识 waioueld| Saing (32) | 是 | 字 肌 N AN
+4 recordTime 登记 时 间 Saing | 是 | 格式 TCDDDhiz4mmeett
+5 recorder 填报 人 员 Strng 是 KZ
+: AL
+6 Teviewer 审核 人 员 Strng 是 (f 核 人 员 克 名
+7 | diverName 驾驶 人 姓名 sing | 是 “人 辟
+8 | driverdCard 驾驶 人 身份 证 号 sumg 是 |
+道路 运 呈 呈 te
+9 | daverQuaCard 次 人 Swing 人 驾驶 入 纤 从 业 资 格 证 的 必须
+呈 ,而
+、 > 焕 SNL 有 证 的 、
+10 | driverQuaRegOrg | 从 业 资格 证 发 证 机 关 | ?SieS | 小 现 驶 从 有 反 业 资格 证 的 必须
+Tc -了
+1]1 vehicleNo String 证 是 1 和
+所 史 | 0- 蓝 色 ; 1 黄色; 2 黑色 3- 白色; 4 渐变
+12 | plateColor 4 8 | 绿色 ; 5- 黄 绿 双 拼 色 ，6- 蓝 白 渐变 色 ; 9- 未 确
+定 ; 11- 绿 色 ; 12- 红 色
+13 | vehicleQuaCode( 民 2 路 车 辆 为 彰 运 车 辆 的 必须
+14 | vehicleBegOfES | 和 诈 央 lsuing 车 辆 为 营运 车 辆 的 必须
+二 7 一
+15 这 挂车 牌号 String 使 用 了 挂车 的 必须
+16 挂车 道路 运输 证 号 | 。 Sting 车 辆 为 营运 车 辆 的 必须
+hangVehicle 挂车 道路 运输 证 。 、 人 分
+17 Re 公证 机 关 String 车 辆 为 萌 运 车 辆 的 必须
+18 | companyName | 所 属 运输 企业 名 称 | 。 Suing 车 辆 为 营运 车 辆 的 必须
+19 | unifedCreditCode | 运输 企业 社会 统 ”| 。 String 车 辆 为 营运 车 辆 的 必须
+信用 代码
+道路 运输 经 营 、 、。
+20 | companyQuaCode 许可 证 呈 String 车 辆 为 草 运 车 辆 的 必须
+道路 运输 经 营 许可 证 ， te
+21 | companyRegOrg 和 String 车 辆 为 营运 车 辆 的 必须
+22 | 。 limitTotal | 车 辆 最 大 允许 总 质量 | 。 Integer “| 是 | 精确 到 个 位 。 单 位 : 千克
+

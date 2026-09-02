@@ -1,0 +1,78 @@
+RSF 与 拓展 应 用 平台 接
+
+字段 名
+
+表 B. 0. 4-18 ”安全 预警 信息 参数 表
+
+说 明
+
+MsgType
+
+消息 类 型 ， 应 符合 表 下 上 0. 3 规定
+
+ReportTime
+
+消息 发 出 时 间 ，
+SSS
+
+格式 为 yyyy-MM-dd HH，mm:， ss，
+
+MsgId
+
+消息 耳 ， 范 围 为 0 ~OxFFFFFFFF， 循 环 使 用
+
+RasfId
+
+RSF 的 设备 症 ， 应 符合 表 匡 0. 4-14 规定
+
+Espld
+
+拓展 应 用 平台 ID
+
+EventId
+
+事件 卫 ， 范 转
+
+EventType
+
+EventStatus
+
+EventLevel
+
+InfoLevel
+
+EventOccurTime
+
+格式 为 yyyy-MM-dd HH，mm， ss，
+
+12 “| EventEndTime
+
+13 StartLng : 0. 0000001。
+
+14 : 0. 0000001。
+
+15 :; 0. lm
+
+16 二 单位 : 0. 0000001。
+
+17 点 纬度 ， 单 位 : 0. 0000001。
+
+18 点 高 程 ， 单 位 : 0. lm
+
+19 List < string > 是 受 影响 的 路 段 标识
+
+20 int 是 处 置 范 围 ， 单 位 : m
+
+21 string 是 起 点 桩 号
+
+22 string 是 正点 桩 号
+
+23 List < int > 是 受 交 通 事件 影响 的 车 道 号
+
+24 DevCHList List < DeviceControl > 是 设备 控制 信息 ， 应 符合 表 B, 0.4-7 规定
+25 Direction int 是 上 下 行 : 0 上行，1 下 行 ，2 双向 ，3 未 知
+26 VehList |List < TargetContent > 是 相关 车 辆 信息 ， 应 符合 表 了 .0. 4-2 规定
+27 DealInfo string 是 事件 处 置信 息
+
+28 Deseription string 是 事件 和 预警 描述
+

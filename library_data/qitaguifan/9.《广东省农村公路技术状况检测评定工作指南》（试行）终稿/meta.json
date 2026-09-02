@@ -1,0 +1,121 @@
+{
+  "id": "9.《广东省农村公路技术状况检测评定工作指南》（试行）终稿",
+  "title": "《广东省农村公路技术状况检测评定工作指南》（试行）终稿",
+  "std_no": "",
+  "version": "",
+  "file": "9.《广东省农村公路技术状况检测评定工作指南》（试行）终稿.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\9.《广东省农村公路技术状况检测评定工作指南》（试行）终稿.pdf",
+  "pages": 95,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 95,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9983,
+    "punct_median": 0.0342,
+    "empty_ratio": 0.071,
+    "bad_ratio": 0.111,
+    "clause_hits": 124
+  },
+  "pdf_mtime": "2025-02-14 17:56:23",
+  "indexed_at": "2026-08-26 19:59:04",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "toc_zone_end": 6,
+  "offset": 7,
+  "toc_source": "parsed",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 8,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "基本规定",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "损坏分类",
+      "start": 11,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "工作内容和流程",
+      "start": 15,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "校验管理",
+      "start": 17,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "过程管理",
+      "start": 19,
+      "is_expl": false
+    },
+    {
+      "no": 7,
+      "label": "7",
+      "title": "成果应用",
+      "start": 32,
+      "is_expl": false
+    },
+    {
+      "no": 8,
+      "label": "8",
+      "title": "数据管理",
+      "start": 34,
+      "is_expl": false
+    },
+    {
+      "no": 9,
+      "label": "附录A",
+      "title": "农村公路技术状况调查及评定表",
+      "start": 35,
+      "is_expl": false
+    },
+    {
+      "no": 10,
+      "label": "附录B",
+      "title": "检评报告大纲模板（包括但不限于）",
+      "start": 74,
+      "is_expl": false
+    },
+    {
+      "no": 11,
+      "label": "附录C",
+      "title": "广东省数字农村公路系统格式要求",
+      "start": 77,
+      "is_expl": false
+    },
+    {
+      "no": 12,
+      "label": "9",
+      "title": "第9章",
+      "start": 93,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 258,
+  "status": "indexed",
+  "note": ""
+}

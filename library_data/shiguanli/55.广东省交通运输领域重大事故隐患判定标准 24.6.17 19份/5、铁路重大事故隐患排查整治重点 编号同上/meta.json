@@ -1,0 +1,51 @@
+{
+  "id": "5、铁路重大事故隐患排查整治重点 编号同上",
+  "title": "铁路重大事故隐患排查整治重点 编号同上",
+  "std_no": "",
+  "version": "",
+  "file": "shiguanli/55.广东省交通运输领域重大事故隐患判定标准 24.6.17 19份/5、铁路重大事故隐患排查整治重点 编号同上.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\55.广东省交通运输领域重大事故隐患判定标准 24.6.17 19份\\5、铁路重大事故隐患排查整治重点 编号同上.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\shiguanli\\55.广东省交通运输领域重大事故隐患判定标准 24.6.17 19份\\5、铁路重大事故隐患排查整治重点 编号同上.pdf",
+  "pages": 8,
+  "type": "ocr",
+  "probe": {
+    "type": "ocr",
+    "pages": 8,
+    "rule": [
+      "scan"
+    ],
+    "cov_median": null,
+    "punct_median": null,
+    "empty_ratio": 1.0,
+    "bad_ratio": 1,
+    "clause_hits": 0
+  },
+  "source_mtime": "2025-02-14 18:15:31",
+  "pdf_mtime": "2025-02-14 18:15:31",
+  "source_mtime_ns": 1739528131000000000,
+  "source_size": 997871,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": "ocr",
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 8
+  },
+  "indexed_at": "2026-09-01 01:23:41",
+  "toc_zone_end": 0,
+  "offset": null,
+  "toc_source": "none",
+  "expl_start": null,
+  "note": "未解析到目录,章节按 30 页均分(low_confidence)",
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "第1部分",
+      "title": "第1部分(无目录,按页均分)",
+      "start": 1,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 0,
+  "status": "indexed"
+}

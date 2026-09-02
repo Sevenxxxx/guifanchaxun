@@ -1,0 +1,86 @@
+{
+  "id": "广东省普通国省干线公路服务设施建设技术指南（2024版）",
+  "title": "广东省普通国省干线公路服务设施建设技术指南",
+  "std_no": "2024版",
+  "version": "2024",
+  "file": "qitaguifan/16.240426广东省公路事务中心关于印发《广东省普通国省干线公路服务设施建设技术指南（2024版）》的通知/广东省普通国省干线公路服务设施建设技术指南（2024版）.pdf",
+  "source_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\16.240426广东省公路事务中心关于印发《广东省普通国省干线公路服务设施建设技术指南（2024版）》的通知\\广东省普通国省干线公路服务设施建设技术指南（2024版）.pdf",
+  "pdf_abs": "C:\\Users\\Seven\\Desktop\\guifanchaxun\\guifansrc\\qitaguifan\\16.240426广东省公路事务中心关于印发《广东省普通国省干线公路服务设施建设技术指南（2024版）》的通知\\广东省普通国省干线公路服务设施建设技术指南（2024版）.pdf",
+  "pages": 29,
+  "type": "text",
+  "probe": {
+    "type": "text",
+    "pages": 29,
+    "rule": [
+      "clean"
+    ],
+    "cov_median": 0.9889,
+    "punct_median": 0.0285,
+    "empty_ratio": 0.0,
+    "bad_ratio": 0.125,
+    "clause_hits": 44
+  },
+  "source_mtime": "2025-02-14 18:14:27",
+  "pdf_mtime": "2025-02-14 18:14:27",
+  "source_mtime_ns": 1739528067000000000,
+  "source_size": 1508345,
+  "fmt": "pdf",
+  "virtual": false,
+  "pages_dir": null,
+  "ocr": {
+    "failed_pages": [],
+    "pages_done": 0
+  },
+  "indexed_at": "2026-08-31 22:58:06",
+  "toc_zone_end": 4,
+  "offset": null,
+  "toc_source": "bookmark",
+  "expl_start": null,
+  "chapter_list": [
+    {
+      "no": 1,
+      "label": "1",
+      "title": "总则",
+      "start": 4,
+      "is_expl": false
+    },
+    {
+      "no": 2,
+      "label": "2",
+      "title": "术语",
+      "start": 6,
+      "is_expl": false
+    },
+    {
+      "no": 3,
+      "label": "3",
+      "title": "基本要求",
+      "start": 7,
+      "is_expl": false
+    },
+    {
+      "no": 4,
+      "label": "4",
+      "title": "平面布置要求",
+      "start": 9,
+      "is_expl": false
+    },
+    {
+      "no": 5,
+      "label": "5",
+      "title": "房建设计要求",
+      "start": 18,
+      "is_expl": false
+    },
+    {
+      "no": 6,
+      "label": "6",
+      "title": "其他设施要求",
+      "start": 22,
+      "is_expl": false
+    }
+  ],
+  "clause_count": 69,
+  "status": "indexed",
+  "note": ""
+}

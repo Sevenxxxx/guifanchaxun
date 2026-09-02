@@ -1,0 +1,46 @@
+收费 公路 联网 收费 系统 检测 规范 (JTGVXT 6311 一 2025 )
+
+5 被 测 OBU 收 到 GetTollData. request， 返 回 GetToll Tesponse ;
+6 判断 DSRC 协议 测试 仪 接收 到 的 GetToll. response 的 文件 结构 及 内 容 正 确 性 ， 并
+验证 安全 认证 正确 性 。
+
+B. $.S SetTollData 应 按 下 列 规定 测试
+
+1 DSRC 协议 测试 仪 发 送 BST;
+被 测 OBU 收 到 BST， 返 回 VST;
+DSRC 协议 测试 仪 接收 来 自 被 测 OBU 的 VST， 并 登记 其 MAC 地 址 ;
+DSRC 协议 测试 仪 发 送 SetTollData. Tequest ;
+被 测 OBU 收 到 SetTollData. request， 返 回 SetToll. responst NS
+
+判断 DSRC 协议 测试 仪 接收 到 的 SetToll. Tespomnse 的 文人 条 邓
+
+1
+
+小 mm 上 上 Wi
+
+B. S. 6 ”TransferChannel 应 按 下 列 规 定 测试 :
+1 DSRC 协议 测试 仪 发 送 BST;
+被 测 0OBU 收 到 BST， 返回 VST;
+
+anr 刘 | response ;
+
+DSRC 协议 测试 仪 接收 来 自 寝 直
+千 构 及 内 容 正确 性 ;
+
+判断 接收 到 的 TransferCbaptteL 2
+涉及 安全 认证 时 ， 验 还 发 伍 雇 证 正确
+
+3 DSREC 志 谈 出 涝 仅 接收 来 自 肢 测 OBU 的 VST， 并 登记 其 MAC 地 址 ;
+4 到 已 测试 仪 发 送 SetMML vequest 设置 被 测 OBU 的 界面 ，
+5 DSRG 有 大 议 测试 仪 接收 被 测 OBU 返回 的 SetMMI response， 并 判断 文件 格式 和 内
+容 正确 性 ;
+6 判断 被 测 0BU 的 动作 正确 性 。
+
+B.6 交易 流程
+
+B. 6.1 交易 流程 测试 包括 ETC 人 口 专用 车 道 交易 流程 测试 、ETC 出 口 专用 车 道 交易
+流程 测试 、ETC 门 架 系统 交易 流程 测试 。
+
+B,. 6.2 ”DSRC 协议 测试 仪 应 符合 本 规范 第 B. 4. 2 条 的 有 关 规 定 。
+
+一 86 一
