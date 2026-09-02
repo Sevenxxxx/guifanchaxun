@@ -60,18 +60,18 @@ C:\poc\
 
 **每个目录/文件的角色**:
 - `webapp\` : FastAPI 源码 + 启动/部署脚本。**同事访问的就是它**。
-- `library_data\` : **知识库索引**。服务器上只读(查询用);更新在**你本机**做,改完增量上传这里。
+- `library_data\` : **知识库索引**(现已入 git)。服务器上只读(查询用);更新在**你本机**做(增删书/索引),改完 `git commit`+`push`,服务器 `git pull` 即同步。
 - `guifansrc\` : 规范 PDF 源。**文字 PDF 书 `read`/`img` 会直接读它**(现场 fitz 提取页文本 / 渲染页图);OCR 书读 `library_data` 里的 `ocr/` 缓存、非 PDF 书读 `extracted/` 缓存,那些不读源。所以**服务器必须上传 guifansrc**,否则文字规范书一 `read` 就报"源文件缺失"。
 - `deepseek-harness\` : DSH 运行时。**Node 依赖已含,Windows→Windows 无需重装**,直接复制即可。**webapp 绑定特定 DSH 版本**(`config.py` 的 `DSH_VERSION`),升级 DSH 需先在本机重测;若启动日志出现"DSH 版本与绑定不一致"告警,说明服务器 DSH 与该版本不符。
 
 **上传方式(按大小)推荐**:
-- `webapp`(小)+ `library_data`(138MB):RDP 复制/共享文件夹/网盘均可。
+- `webapp`(代码,建议 git):`git clone`/`pull`。`library_data` 已入 git,随代码一起 `git pull` 即可,无需单独传。
 - `deepseek-harness`(2GB):RDP 磁盘映射或 WinSCP;**直接复制,原生二进制兼容**。
 - `guifansrc`(4GB,最大):推荐 **WinSCP(OpenSSH)断点续传** 或 **腾讯云 COS 中转**;RDP 拖拽很慢(可最后传)。
 
 > 为什么 WinSCP 断点续传好:4GB 中途断网不会从头再来;RDP 拖拽对超大目录又慢又易中断。
 
-**也可用 git 拉代码(可选)**:不必整包上传 `webapp/`,服务器上 `git clone <你的仓库> C:\poc\guifanchaxun`,以后代码更新用 `git pull`。但 `guifansrc`/`library_data`(在 .gitignore)和 `deepseek-harness`(另一仓库)**不在 guifanchaxun 仓库**里,需单独放到 `C:\poc\guifanchaxun\guifansrc`、`C:\poc\guifanchaxun\library_data`、`C:\poc\deepseek-harness`。配合第 5 步用 `GFC_DSH_CHECKOUT` 环境变量,`git pull` 不会覆盖路径设置。
+**也可用 git 拉代码(强烈推荐)**:服务器上 `git clone <你的仓库> C:\poc\guifanchaxun`,以后代码+索引更新用 `git pull`。`library_data` 已入 git(随 clone/pull);但 `guifansrc`(gitignore)与 `deepseek-harness`(另一仓库)仍需单独放到 `C:\poc\guifanchaxun\guifansrc`、`C:\poc\deepseek-harness`。配合第 5 步用 `GFC_DSH_CHECKOUT` 环境变量,`git pull` 不会覆盖路径设置。
 
 ---
 
@@ -185,7 +185,7 @@ Invoke-WebRequest http://127.0.0.1:8090/api/health -UseBasicParsing
 - `permission_mode:"read-only"`:只读沙箱,防 agent 写文件。看健康接口返回这个字段就知道沙箱生效。
 - 可以本机问一句(用 `e2e_test.py` 或浏览器 `http://127.0.0.1:8090`),确认首问成功、能正常流式回答。
 
-**进入密码(可选,默认无)**:默认不需要密码。若要在 `webapp\access.txt` 写一个密码(如 `test1`),刷新页面即要求输入;换密码 = 改文件内容;删/清空 = 关闭。该文件已 gitignore(不提交真实密码),服务器上手动建(`Set-Content webapp\access.txt 'test1' -Encoding utf8`)。输错 401,前端自动重弹。
+**进入密码(可选,默认无)**:默认不需要密码。若要在 `webapp\access.txt` 写一个密码(如 `test1`),刷新页面即要求输入;换密码 = 改文件内容;删/清空 = 关闭。注意:**access.txt 现已入 git(仓库里为空)**,在服务器上写密码后,`git pull` 会用仓库里的空文件**覆盖**你设的密码——所以要么 pull 后再设密码,要么把密码写入后不要 `git pull`(或提交时不带密码)。输错 401,前端自动重弹。
 
 ---
 
@@ -251,7 +251,7 @@ schtasks /Run /TN "DSHWebPOC"     # 立即跑一次验证
 
 ## 13. 日常维护 / 故障排查 / 看日志
 
-**维护策略**:OCR/索引在**你本机**做,完成后**只传 `library_data\`**(138MB)覆盖服务器同目录 → 生效(**云端只跑查询态**)。这避免在服务器上做沉重的 OCR/COM 转换,也符合只读沙箱。
+**维护策略**:OCR/索引在**你本机**做,完成后 `git commit`+`push`(library_data 已入 git),服务器 `git pull` 即同步 → 生效(**云端只跑查询态**)。避免在服务器上做沉重的 OCR/COM 转换,也符合只读沙箱。
 
 **看日志**:
 ```powershell
