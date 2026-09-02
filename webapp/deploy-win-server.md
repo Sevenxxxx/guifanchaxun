@@ -33,7 +33,7 @@ C:\poc\
 
 上传方式（按大小选）：
 - `webapp` + `library_data`（小）：RDP 复制粘贴 / 共享文件夹 / 网盘均可
-- `deepseek-harness`（2GB）：RDP 磁盘映射或 WinSCP；**Windows→Windows 直接复制，原生二进制兼容，无需重装依赖**
+- `deepseek-harness`（2GB）：RDP 磁盘映射或 WinSCP；**Windows→Windows 直接复制，原生二进制兼容，无需重装依赖**。webapp 绑定特定 DSH 版本（`config.py` 的 `DSH_VERSION`），升 DSH 需先在本机重测，并留意启动时版本告警。
 - `guifansrc`（4GB，最大头）：推荐 WinSCP(OpenSSH)断点续传 或 腾讯云 COS 中转。**必传**：文字 PDF 书 `read`/`img` 直接读该源（现场 fitz 提取页文本/渲染页图）；OCR/非 PDF 书靠 `library_data` 缓存、不依赖源。上线前要传完，否则文字规范书一 `read` 就报"源文件缺失"。
 
 **也可用 git 拉代码（可选）**：不必整包上传 `webapp/`，服务器上 `git clone <你的仓库> C:\poc\guifanchaxun`，以后代码更新用 `git pull`。但 `guifansrc`/`library_data`（在 .gitignore）和 `deepseek-harness`（另一仓库）**不在 guifanchaxun 仓库**，需单独放到 `C:\poc\guifanchaxun\guifansrc`、`C:\poc\guifanchaxun\library_data`、`C:\poc\deepseek-harness`（一次性上传或单独同步）。配合第 4 步用 `GFC_DSH_CHECKOUT` 环境变量，git pull 不会覆盖路径设置。

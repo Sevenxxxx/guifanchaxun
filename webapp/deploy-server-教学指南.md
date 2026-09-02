@@ -62,7 +62,7 @@ C:\poc\
 - `webapp\` : FastAPI 源码 + 启动/部署脚本。**同事访问的就是它**。
 - `library_data\` : **知识库索引**。服务器上只读(查询用);更新在**你本机**做,改完增量上传这里。
 - `guifansrc\` : 规范 PDF 源。**文字 PDF 书 `read`/`img` 会直接读它**(现场 fitz 提取页文本 / 渲染页图);OCR 书读 `library_data` 里的 `ocr/` 缓存、非 PDF 书读 `extracted/` 缓存,那些不读源。所以**服务器必须上传 guifansrc**,否则文字规范书一 `read` 就报"源文件缺失"。
-- `deepseek-harness\` : DSH 运行时。**Node 依赖已含,Windows→Windows 无需重装**,直接复制即可。
+- `deepseek-harness\` : DSH 运行时。**Node 依赖已含,Windows→Windows 无需重装**,直接复制即可。**webapp 绑定特定 DSH 版本**(`config.py` 的 `DSH_VERSION`),升级 DSH 需先在本机重测;若启动日志出现"DSH 版本与绑定不一致"告警,说明服务器 DSH 与该版本不符。
 
 **上传方式(按大小)推荐**:
 - `webapp`(小)+ `library_data`(138MB):RDP 复制/共享文件夹/网盘均可。

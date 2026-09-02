@@ -141,6 +141,21 @@ class DshService:
             if not self._started:
                 self._harness.start()
                 self._started = True
+                self._check_dsh_version()
+
+    def _check_dsh_version(self) -> None:
+        """校验实际 DSH checkout 版本与绑定版本是否一致;不一致告警(提示需重测整条链路)。"""
+        try:
+            pkg = json.loads((config.DSH_CHECKOUT / "package.json").read_text(encoding="utf-8"))
+            actual = pkg.get("version", "?")
+            if actual != config.DSH_VERSION:
+                import logging
+                logging.getLogger("poc").warning(
+                    "DSH 版本与绑定不一致: 实际=%s, 绑定=%s(commit %s)。升 DSH 后需在本机重测整条链路。",
+                    actual, config.DSH_VERSION, config.DSH_PINNED_COMMIT,
+                )
+        except Exception:  # noqa: BLE001 —— 读不到版本就不打扰(非致命)
+            pass
 
     def run_turn(self, session_id: str, message: str, emit: EventSink):
         """执行一轮对话(阻塞)。并发度受 _slots 约束;emit 从 SDK 读取线程回调,必须线程安全。"""

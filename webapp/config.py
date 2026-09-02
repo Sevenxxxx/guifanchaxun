@@ -11,6 +11,10 @@ DSH_CHECKOUT = Path(os.environ.get("GFC_DSH_CHECKOUT", r"C:\Users\Seven\Desktop\
 DSH_HOME = WEBAPP_DIR / "dsh-home"  # POC 独立 home:会话/凭据/设置与 GUI 隔离
 LAUNCHER = WEBAPP_DIR / "dsh_launcher.cmd"  # dsh CLI 启动包装
 
+# 当前 webapp 绑定/验证过的 DSH 版本(升 DSH 前先看此值,并在本机重测整条链路)
+DSH_VERSION = os.environ.get("GFC_DSH_VERSION", "0.1.2-alpha.2")
+DSH_PINNED_COMMIT = "0a53fb55be"  # 绑定时 DSH checkout 的 commit(2026-08-30)
+
 # LLM 路由(POC 默认 flash,更快更省;GUI 会话仍用 pro,互不影响)
 PROVIDER = os.environ.get("GFC_PROVIDER", "deepseek-official")
 MODEL = os.environ.get("GFC_MODEL", "deepseek-v4-flash")
