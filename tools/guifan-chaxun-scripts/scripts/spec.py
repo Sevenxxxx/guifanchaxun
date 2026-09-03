@@ -148,6 +148,13 @@ def load_config(args):
     except FileNotFoundError:
         die(f"config.json 不存在: {cfg_path}")
     cfg["_path"] = cfg_path
+    # 机器相关路径用环境变量覆盖(优先级: 环境变量 > config.json)。
+    # 这样每台机器设 GFC_LIBRARY_DIR / GFC_DATA_DIR 即可,无需改/同步两份 config.json,
+    # 避免仓库模板副本与安装副本(路径)脱节造成误用。
+    if os.environ.get("GFC_LIBRARY_DIR"):
+        cfg["library_dir"] = os.environ["GFC_LIBRARY_DIR"]
+    if os.environ.get("GFC_DATA_DIR"):
+        cfg["data_dir"] = os.environ["GFC_DATA_DIR"]
     return cfg
 
 

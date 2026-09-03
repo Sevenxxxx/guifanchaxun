@@ -48,7 +48,7 @@ guifanchaxun/
 │   │       ├── pdf_reading.md        # 强制学习方法文档(处理 PDF 前必读)
 │   │       └── query_notes.md        # 场景化防漏清单(作业区布设等,实战易漏项沉淀)
 │   └── guifan-chaxun-scripts/        # 脚本与配置
-│       ├── config.json               # library_dir(PDF 源)/ data_dir(索引)/ OCR 参数——换库唯一改动点
+│       ├── config.json               # library_dir/pdf源/data_dir/索引/OCR 参数——换库唯一改动点;亦可用 GFC_LIBRARY_DIR/GFC_DATA_DIR 环境变量覆盖(机器无关,避免仓库模板与安装副本脱节)
 │       └── scripts/
 │           ├── spec.py               # 唯一程序,全部子命令与流水线
 │           ├── common_chars.txt      # ~3500 常用字表(乱码检测资源)

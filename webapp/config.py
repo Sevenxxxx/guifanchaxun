@@ -15,6 +15,11 @@ LAUNCHER = WEBAPP_DIR / "dsh_launcher.cmd"  # dsh CLI 启动包装
 DSH_VERSION = os.environ.get("GFC_DSH_VERSION", "0.1.2-alpha.2")
 DSH_PINNED_COMMIT = "0a53fb55be"  # 绑定时 DSH checkout 的 commit(2026-08-30)
 
+# 本应用自己的 LLM key 来源(可选):设 GFC_DEEPSEEK_API_KEY 则用它,而不读全局 DEEPSEEK_API_KEY,
+# 避免与服务器上其他 DSH 应用的环境变量冲突;未设则回退全局 DEEPSEEK_API_KEY。
+# dsh_service 始终把结果以 DEEPSEEK_API_KEY 名义传给 DSH 子进程。
+DSH_API_KEY = os.environ.get("GFC_DEEPSEEK_API_KEY") or os.environ.get("DEEPSEEK_API_KEY", "")
+
 # LLM 路由(POC 默认 flash,更快更省;GUI 会话仍用 pro,互不影响)
 PROVIDER = os.environ.get("GFC_PROVIDER", "deepseek-official")
 MODEL = os.environ.get("GFC_MODEL", "deepseek-v4-flash")

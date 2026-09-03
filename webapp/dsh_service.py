@@ -116,6 +116,13 @@ class DshService:
         """懒启动运行时(幂等);阻塞至 initialize 握手完成。"""
         with self._init_lock:
             if self._harness is None:
+                run_env = {
+                    "DSH_PERMISSION_MODE": config.PERMISSION_MODE,
+                    "DSH_TELEMETRY_MODE": config.TELEMETRY_MODE,
+                }
+                # 若用自定义变量名,显式以 DEEPSEEK_API_KEY 传给 DSH 子进程,避免与全局冲突
+                if config.DSH_API_KEY:
+                    run_env["DEEPSEEK_API_KEY"] = config.DSH_API_KEY
                 self._harness = DeepSeekHarness(
                     provider=config.PROVIDER,
                     model=config.MODEL,
@@ -133,10 +140,7 @@ class DshService:
                         if config.GUARDRAIL_PATCH.exists()
                         else ()
                     ),
-                    env={
-                        "DSH_PERMISSION_MODE": config.PERMISSION_MODE,
-                        "DSH_TELEMETRY_MODE": config.TELEMETRY_MODE,
-                    },
+                    env=run_env,
                 )
             if not self._started:
                 self._harness.start()

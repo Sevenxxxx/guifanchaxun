@@ -23,6 +23,7 @@ guifansrc(规范 PDF 源) + library_data(索引:meta/toc/clauses/chapters…)
 ```
 
 **各角色的意义**:
+
 - **FastAPI 层** = 入口 + 门卫(会话令牌、限流、只读沙箱、并发上限、SSE 心跳、断流补结果)。同事只跟它打交道。
 - **DSH 运行时** = agent 大脑,读 skill 的方法去"思考"该翻哪本书、调哪个工具。
 - **spec.py** = 唯一程序,按"书架→目录→条文→原文"翻;查询态**纯文件读,零 LLM**,快且省。
@@ -34,11 +35,11 @@ guifansrc(规范 PDF 源) + library_data(索引:meta/toc/clauses/chapters…)
 
 ## 1. 你要准备的 3 样东西
 
-| # | 东西 | 说明 |
-|---|---|---|
-| 1 | 一台 Windows Server 2022(腾讯云,拿到**公网 IP** + 管理员密码) | 本文的部署目标 |
-| 2 | 本机的 `guifanchaxun` 项目(已 clone 到 `C:\Users\Seven\Desktop\guifanchaxun`) | 含 `webapp/`、`tools/`、`library_data/`、`guifansrc/` |
-| 3 | 本机的 `deepseek-harness` checkout(`C:\Users\Seven\Desktop\deepseek-harness`,约 2GB) | DSH 运行时本体,**方案 A:整个文件夹拷过来**;钉在 tag `dsh-v0.1.2-alpha.2`(commit `0a53fb55be`) |
+| # | 东西                                                                                    | 说明                                                                                                    |
+| - | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| 1 | 一台 Windows Server 2022(腾讯云,拿到**公网 IP** + 管理员密码)                     | 本文的部署目标                                                                                          |
+| 2 | 本机的`guifanchaxun` 项目(已 clone 到 `C:\Users\Seven\Desktop\guifanchaxun`)        | 含`webapp/`、`tools/`、`library_data/`、`guifansrc/`                                            |
+| 3 | 本机的`deepseek-harness` checkout(`C:\Users\Seven\Desktop\deepseek-harness`,约 2GB) | DSH 运行时本体,**方案 A:整个文件夹拷过来**;钉在 tag `dsh-v0.1.2-alpha.2`(commit `0a53fb55be`) |
 
 > **关键**:`guifansrc`(约 4GB)和 `library_data`(约 138MB)是**知识库**;`deepseek-harness` 是**大脑**。两者都要传,少一个就"有入口没知识"或"有知识没大脑"。
 
@@ -49,6 +50,7 @@ guifansrc(规范 PDF 源) + library_data(索引:meta/toc/clauses/chapters…)
 **为什么用 `C:\poc\`**:固定规划路径,脚本/配置里写死它,少踩路径不一致的坑;改路径要全局改,干脆固定。
 
 **目标结构**:
+
 ```
 C:\poc\
 ├── guifanchaxun\        ← 项目(webapp/ + guifansrc/ + library_data/)
@@ -59,25 +61,58 @@ C:\poc\
 ```
 
 **每个目录/文件的角色**:
+
 - `webapp\` : FastAPI 源码 + 启动/部署脚本。**同事访问的就是它**。
 - `library_data\` : **知识库索引**(现已入 git)。服务器上只读(查询用);更新在**你本机**做(增删书/索引),改完 `git commit`+`push`,服务器 `git pull` 即同步。
 - `guifansrc\` : 规范 PDF 源。**文字 PDF 书 `read`/`img` 会直接读它**(现场 fitz 提取页文本 / 渲染页图);OCR 书读 `library_data` 里的 `ocr/` 缓存、非 PDF 书读 `extracted/` 缓存,那些不读源。所以**服务器必须上传 guifansrc**,否则文字规范书一 `read` 就报"源文件缺失"。
-- `deepseek-harness\` : DSH 运行时。**方案 A(推荐):整文件夹拷贝**(本机就在钉住版本 `dsh-v0.1.2-alpha.2` 上,自带 node_modules + 已 build 的 `apps\cli\lib\bin.js`,**免装依赖、免 build、免联网**)。**不建议 git-clone**:clone 不含 node_modules,`lib\bin.js` 需 `pnpm install`+`pnpm build`(tsc/tsdown,2C2G 重、慢、且要联网 npm)。**webapp 绑定特定 DSH 版本**(`config.py` 的 `DSH_VERSION`),升级 DSH 需先在本机重测;若启动日志出现"DSH 版本与绑定不一致"告警,说明服务器 DSH 与该版本不符。
+- `deepseek-harness\` : DSH 运行时。**方案 A(推荐):整文件夹拷贝**(本机就在钉住版本 `dsh-v0.1.2-alpha.2`,自带 node_modules + 已 build 的 `apps\cli\lib\bin.js`)。**注意:pnpm 工作区拷到服务器会断符号链接,拷完需在服务器 `pnpm install` 重建一次(免的是 `pnpm build`,要装 pnpm、可能局部联网 npm)**。**不建议 git-clone**:clone 不含 node_modules,`lib\bin.js` 需 `pnpm install`+`pnpm build`(tsc/tsdown,2C2G 重、慢、且要联网)。**webapp 绑定特定 DSH 版本**(`config.py` 的 `DSH_VERSION`),升级 DSH 需先在本机重测;若启动日志出现"DSH 版本与绑定不一致"告警,说明服务器 DSH 与该版本不符。
 
 **上传方式(按大小)推荐**:
+
 - `webapp`(代码,建议 git):`git clone`/`pull`。`library_data` 已入 git,随代码一起 `git pull` 即可,无需单独传。
-- `deepseek-harness`(2GB,**方案 A 整文件夹拷贝**,本机即 tag `dsh-v0.1.2-alpha.2`):RDP 磁盘映射或 WinSCP;**直接复制,原生二进制兼容,自带 node_modules + build**。
+- `deepseek-harness`(2GB,**方案 A 整文件夹拷贝**,本机即 tag `dsh-v0.1.2-alpha.2`):RDP 磁盘映射或 WinSCP;**直接复制,原生二进制兼容,自带 node_modules + build;但拷贝后需在服务器 `pnpm install` 重建符号链接**。
 - `guifansrc`(4GB,最大):推荐 **WinSCP(OpenSSH)断点续传** 或 **腾讯云 COS 中转**;RDP 拖拽很慢(可最后传)。
 
 > 为什么 WinSCP 断点续传好:4GB 中途断网不会从头再来;RDP 拖拽对超大目录又慢又易中断。
 
-**也可用 git 拉代码(强烈推荐)**:服务器上 `git clone <你的仓库> C:\poc\guifanchaxun`,以后代码+索引更新用 `git pull`。`library_data` 已入 git(随 clone/pull);但 `guifansrc`(gitignore)与 `deepseek-harness`(另一仓库)仍需单独放到 `C:\poc\guifanchaxun\guifansrc`、`C:\poc\deepseek-harness`。配合第 5 步用 `GFC_DSH_CHECKOUT` 环境变量,`git pull` 不会覆盖路径设置。
+**用 git 部署/更新代码+索引(推荐;具体命令)**:
+
+前置:服务器装 **git**(git-scm.com 下 Windows 版);若仓库私有,需认证。
+
+**首次 clone**(服务器上,管理员 PowerShell):
+
+```powershell
+git clone https://github.com/Sevenxxxx/guifanchaxun.git C:\poc\guifanchaxun
+```
+
+仓库若私有 → 用 PAT 或 SSH:
+
+- HTTPS + PAT:`git clone https://<你的用户名>:<PAT>@github.com/Sevenxxxx/guifanchaxun.git C:\poc\guifanchaxun`
+- SSH:先在服务器配 `~\.ssh\id_ed25519`(公钥加到 GitHub),再 `git clone git@github.com:Sevenxxxx/guifanchaxun.git C:\poc\guifanchaxun`
+
+**之后更新(代码 + 索引)**:
+
+```powershell
+cd C:\poc\guifanchaxun
+git pull
+```
+
+**`git pull` 会带来 / 不会带来**:
+
+- 带来:**代码**(webapp/tools/docs)+ **`library_data` 索引**(已入 git)。
+- 不会带来:`guifansrc`(gitignore)、`deepseek-harness`(另一仓库)——分别单独放 `C:\poc\guifanchaxun\guifansrc`、`C:\poc\deepseek-harness`。
+
+**pull 后**:
+
+- 路径走环境变量(`GFC_DSH_CHECKOUT` 等),**不用改 config.py / dsh_launcher.cmd**(它们读 env,git pull 不影响)。
+- 代码/skill 有变时重启 webapp(停进程 + `webapp\start.ps1`)。
 
 ---
 
 ## 3. 安装环境(在服务器上,管理员 PowerShell)
 
 **步骤**:
+
 ```powershell
 # 3.1 Python 3.12:官网 python.org 下载 Windows x64 安装包,勾选 "Add python.exe to PATH"
 python --version          # 应显示 Python 3.12.x
@@ -92,6 +127,7 @@ node --version            # 应显示 v20+ 等 LTS
 ```
 
 **为什么(pymupdf 关键)**:
+
 - `spec.py` 第 34 行是模块级 `import fitz`(pymupdf)。**没装它,任何 spec.py 调用都直接 ImportError** → skill 完全不能用,连查询都做不了。
 - runbook 旧版只写 `fastapi uvicorn sse-starlette`,**漏了 pymupdf**,这是个坑。已修正为 `... pymupdf Pillow`。
 - `docx/openpyxl/pythoncom/tesseract` 只在**维护态**(你本机 index/OCR)用,服务器查询态用不到,不必装(装了也无妨)。
@@ -104,22 +140,28 @@ node --version            # 应显示 v20+ 等 LTS
 **为什么**:DSH 运行时从 `~/.agents/skills/` 发现 skill(不是仓库里的 `tools/`)。服务器上要把 `guifan-chaxun`(方法)+ `guifan-chaxun-scripts`(程序/配置)复制进去。
 
 **怎么做**:
+
 ```powershell
 # 4.1 建目录 + 复制
 New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.agents\skills"
 Copy-Item C:\poc\guifanchaxun\tools\guifan-chaxun        "$env:USERPROFILE\.agents\skills\" -Recurse
 Copy-Item C:\poc\guifanchaxun\tools\guifan-chaxun-scripts "$env:USERPROFILE\.agents\skills\" -Recurse
 ```
-**关键**:改名 `guifan-chaxun-scripts\config.json` 里两条路径,指向**服务器上**的库(换库唯一改动点):
-```json
-{
-  "library_dir": "C:\\poc\\guifanchaxun\\guifansrc",
-  "data_dir":    "C:\\poc\\guifanchaxun\\library_data",
-  "...其余字段不动..."
-}
-```
 
-**为什么**:`library_dir`/`data_dir` 就是知识库位置。服务器上这些路径必须换成 `C:\poc\...`,否则 skill 找不到书。
+**关键(两条路,任选其一)**,把 skill 指向**服务器上的库**:
+- **推荐:设环境变量**(机器无关,免改文件/免同步 config.json):spec.py 现在支持 `GFC_LIBRARY_DIR`/`GFC_DATA_DIR` 覆盖 `library_dir`/`data_dir`。
+  ```powershell
+  [Environment]::SetEnvironmentVariable('GFC_LIBRARY_DIR','C:\poc\guifanchaxun\guifansrc','Machine')
+  [Environment]::SetEnvironmentVariable('GFC_DATA_DIR','C:\poc\guifanchaxun\library_data','Machine')
+  ```
+- 或直接改这份已复制的 config.json:
+  ```json
+  { "library_dir": "C:\\poc\\guifanchaxun\\guifansrc",
+    "data_dir":    "C:\\poc\\guifanchaxun\\library_data",
+    "...其余字段不动..." }
+  ```
+
+**为什么**:`library_dir`/`data_dir` 就是知识库位置。仓库里的 config.json 是随项目提交的模板(可能残留原作者机器路径);**实际生效的是已复制到 `~\.agents\skills\` 那份**。设环境变量可统一、避免两份 config 脱节误用(仓库模板 vs 安装副本)。
 
 ---
 
@@ -128,28 +170,36 @@ Copy-Item C:\poc\guifanchaxun\tools\guifan-chaxun-scripts "$env:USERPROFILE\.age
 **为什么**:`config.py` 的 `DSH_CHECKOUT` 和 `dsh_launcher.cmd` 以前写死的是**本机** `C:\Users\Seven\Desktop\deepseek-harness`。现在改为读环境变量 `GFC_DSH_CHECKOUT`,未设则回退本机路径。服务器设它即可,**不用改文件**——这样用 git 拉代码也不会被覆盖。
 
 **怎么做**:
+
 ```powershell
 # 服务器上设 Machine 级环境变量(重启 PowerShell 会话生效)
 [Environment]::SetEnvironmentVariable('GFC_DSH_CHECKOUT','C:\poc\deepseek-harness','Machine')
 # 验证:
 [Environment]::GetEnvironmentVariable('GFC_DSH_CHECKOUT','Machine')
+# 回退
+[Environment]::SetEnvironmentVariable('GFC_DSH_CHECKOUT',$null,'Machine')
 ```
+
 `DSH_HOME`/`LAUNCHER` 相对仓库自动适应,无需改。想回退:删掉该环境变量即回本机默认路径。
 
 ---
 
-## 6. 设置 `DEEPSEEK_API_KEY` 环境变量(你自输,不落文件/脚本)
+## 6. 设置 LLM key 环境变量(你自输,不落文件/脚本)
 
-**为什么**:webapp 读 key 的顺序是「凭据文件 → 环境变量」。服务器上没有凭据文件,就用 Machine 级环境变量;**key 不进任何文件/脚本**,只进 Windows 环境变量。
+**为什么**:webapp(dsh_service.py)启动 DSH 子进程时会**显式把 key 以 `DEEPSEEK_API_KEY` 传给 DSH**;key 来源优先级 = `GFC_DEEPSEEK_API_KEY`(自定义)→ 全局 `DEEPSEEK_API_KEY` → 文件 `webapp\dsh-home\.credentials.yaml`。**key 不进任何文件/脚本**,只进 Windows 环境变量。
 
 **怎么做**:
+
 ```powershell
+# 若服务器上已有其他 DSH 应用占用了 DEEPSEEK_API_KEY,用自定义名区别(推荐):
+[Environment]::SetEnvironmentVariable('GFC_DEEPSEEK_API_KEY','sk-你的key','Machine')
+# 无冲突才用标准名:
 [Environment]::SetEnvironmentVariable('DEEPSEEK_API_KEY','sk-你的key','Machine')
-# 设置后重启 PowerShell 会话才生效;验证(只显示存在,不看值):
-[Environment]::GetEnvironmentVariable('DEEPSEEK_API_KEY','Machine')
+# 设置后重启 PowerShell 会话才生效;验证(只显示有无,不看值):
+[Environment]::GetEnvironmentVariable('GFC_DEEPSEEK_API_KEY','Machine')
 ```
 
-**为什么 Machine 级**:服务器开机、任何终端/服务都能读到,不依赖某个手动开的窗口。
+**为什么 Machine 级**:服务器开机、任何终端/服务(含任务计划启动的 webapp)都能读到,不依赖某个手动开的窗口。
 
 ---
 
@@ -158,11 +208,22 @@ Copy-Item C:\poc\guifanchaxun\tools\guifan-chaxun-scripts "$env:USERPROFILE\.age
 **为什么**:DSH 用 `--profile sdk` 组合配置(内置模板 `dsh-base`+`dsh-sdk-app`)。首次要在服务器上把它"实例化"到 `dsh-home`(离线,不联网),这样 runtime 才认。
 
 **怎么做**:
+
 ```powershell
 cd C:\poc\guifanchaxun
 powershell -ExecutionPolicy Bypass -File webapp\setup_win_server.ps1
 # 期望输出: OK: DSH_HOME = ... ; sdk profile materialized; ... (skill rows: N)
 ```
+
+**实操排错(方案 A 拷贝后必做)**:
+- 若第 7 步报 `node:internal/modules/esm/resolve ... ERR_MODULE_NOT_FOUND`(找不到 `@deepseek-ai/...` 包)→ 是 **pnpm 工作区符号链接在拷贝时断了**。先装 pnpm 并在 DSH 目录重建:
+  ```powershell
+  npm i -g pnpm@11.7.0
+  cd C:\poc\deepseek-harness
+  pnpm install            # 重建 node_modules 链接;landlock(linux)/cyclic 依赖警告无害
+  node apps\cli\lib\bin.js --version   # 应显示 dsh v0.1.2-alpha.2
+  ```
+- 验证出版本号后再回跑本步 setup_win_server.ps1。
 
 **脚本里做了什么**:建 `dsh-home`、用 `dsh_launcher.cmd --profile sdk --dump-default-config` 导出组合、检查 skill 行数。若失败,看 `webapp\dump-default-config.txt`。
 
@@ -171,6 +232,7 @@ powershell -ExecutionPolicy Bypass -File webapp\setup_win_server.ps1
 ## 8. 启动 + 验证
 
 **怎么做**:
+
 ```powershell
 # 8.1 前台启动,先验证
 powershell -ExecutionPolicy Bypass -File webapp\start.ps1
@@ -180,6 +242,7 @@ Invoke-WebRequest http://127.0.0.1:8090/api/health -UseBasicParsing
 ```
 
 **说明**:
+
 - `start.ps1` 会 **`Set-Location` 到仓库根**(任务计划无需设"起始于"),并设 `GFC_HOST=0.0.0.0`(这样才能局域网/公网访问)。
 - `runtime_started:false` 是**正常**的:DSH 运行时是**首问才懒启动**。
 - `permission_mode:"read-only"`:只读沙箱,防 agent 写文件。看健康接口返回这个字段就知道沙箱生效。
@@ -194,9 +257,11 @@ Invoke-WebRequest http://127.0.0.1:8090/api/health -UseBasicParsing
 **为什么**:Windows 防火墙默认拦入站。要让同事(公网/Tailscale)能连 8090,必须放行。
 
 **怎么做**:
+
 ```powershell
 New-NetFirewallRule -DisplayName "DSH Web POC 8090" -Direction Inbound -Action Allow -Protocol TCP -LocalPort 8090 -Profile Any
 ```
+
 **再加腾讯云安全组**:控制台 → 安全组/防火墙 → 放行 TCP 8090(来源 0.0.0.0/0 或限定网段)。
 
 > 为什么两层都要:腾讯云安全组(云侧)+ Windows 防火墙(系统侧),**两层都得放行**,否则公网打不开(本机 OK、外部不通).
@@ -208,6 +273,7 @@ New-NetFirewallRule -DisplayName "DSH Web POC 8090" -Direction Inbound -Action A
 **为什么**:DSH+Node+FastAPI 同时在 2G 内存上跑,容易爆;Windows 默认 Pagefile 太小,并发 5 时可能因内存不足被系统杀掉进程。
 
 **怎么做**:
+
 1. 增大分页文件:`sysdm.cpl` → 高级 → 性能"设置" → 高级 → 虚拟内存"更改":取消"自动管理",C 盘**初始 4096 / 最大 8192 MB**,确定后重启。
    等效命令行:
    ```powershell
@@ -226,6 +292,7 @@ New-NetFirewallRule -DisplayName "DSH Web POC 8090" -Direction Inbound -Action A
 **为什么**:服务器重启后要自动拉起 webapp,不用人手动跑。
 
 **怎么做**:
+
 ```powershell
 schtasks /Create /F /TN "DSHWebPOC" /SC ONSTART /RU SYSTEM /RL HIGHEST `
   /TR "powershell -ExecutionPolicy Bypass -File C:\poc\guifanchaxun\webapp\start.ps1"
@@ -254,6 +321,7 @@ schtasks /Run /TN "DSHWebPOC"     # 立即跑一次验证
 **维护策略**:OCR/索引在**你本机**做,完成后 `git commit`+`push`(library_data 已入 git),服务器 `git pull` 即同步 → 生效(**云端只跑查询态**)。避免在服务器上做沉重的 OCR/COM 转换,也符合只读沙箱。
 
 **看日志**:
+
 ```powershell
 # 审计日志(每次会话/轮次/拒绝都在这)
 Get-Content C:\poc\guifanchaxun\webapp\logs\poc.log -Tail 50
@@ -262,6 +330,7 @@ Get-Content C:\poc\guifanchaxun\webapp\logs\webapp_stderr.log -Tail 50
 ```
 
 **常见故障**:
+
 - 首问 `MISSING_CREDENTIAL` → `DEEPSEEK_API_KEY` 没生效:重启 PowerShell/服务器,`GetEnvironmentVariable(...,'Machine')` 确认;或确认第 6 步设置成功。
 - setup 失败 → 看 `dump-default-config.txt`;确认 `dsh_launcher.cmd` 路径对、Node 已装。
 - 公网打不开但本机 OK → 腾讯云安全组 **或** 服务器防火墙漏放行 8090。
