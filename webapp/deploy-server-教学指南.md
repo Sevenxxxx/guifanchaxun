@@ -248,6 +248,28 @@ Invoke-WebRequest http://127.0.0.1:8090/api/health -UseBasicParsing
 - `permission_mode:"read-only"`:只读沙箱,防 agent 写文件。看健康接口返回这个字段就知道沙箱生效。
 - 可以本机问一句(用 `e2e_test.py` 或浏览器 `http://127.0.0.1:8090`),确认首问成功、能正常流式回答。
 
+**启动 / 停止服务(手动,PowerShell)**:
+
+**启动(前台,先验证)**:
+```powershell
+cd C:\poc\guifanchaxun
+powershell -ExecutionPolicy Bypass -File webapp\start.ps1     # 此窗口保持打开(前台跑 python -m webapp)
+# 另开一个窗口验证:
+Invoke-WebRequest http://127.0.0.1:8090/api/health -UseBasicParsing
+```
+
+**停止(推荐,连子进程树一起关)**:
+```powershell
+# 找监听 8090 的进程 PID,连同其子进程(DSH node)强制结束
+$p = (Get-NetTCPConnection -LocalPort 8090 -State Listen -ErrorAction SilentlyContinue).OwningProcess
+if ($p) { taskkill /PID $p /T /F } else { "webapp 未在运行" }
+```
+
+**说明**:
+- 关掉前台窗口(点 ×)一般也能停,但可能残留 DSH 的 node 子进程;用上面的 `taskkill /T` 更干净。
+- 关完可确认是否已停:`Get-NetTCPConnection -LocalPort 8090 -State Listen -ErrorAction SilentlyContinue`(输出为空=已停)。
+- 长期运行/开机自启用第 11 步任务计划;停止/重启用 `schtasks /End /TN "DSHWebPOC"`、`schtasks /Run /TN "DSHWebPOC"`。
+
 **进入密码(可选,默认无)**:默认不需要密码。若要在 `webapp\access.txt` 写一个密码(如 `test1`),刷新页面即要求输入;换密码 = 改文件内容;删/清空 = 关闭。注意:**access.txt 现已入 git(仓库里为空)**,在服务器上写密码后,`git pull` 会用仓库里的空文件**覆盖**你设的密码——所以要么 pull 后再设密码,要么把密码写入后不要 `git pull`(或提交时不带密码)。输错 401,前端自动重弹。
 
 ---
